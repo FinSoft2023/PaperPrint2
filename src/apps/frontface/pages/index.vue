@@ -1,6 +1,9 @@
 <template>
   <div>
-    <h1>Paper Printing</h1>
-    <h2>The document</h2>
+    <UHeader title="Document Printing">
+    </UHeader>
+    <UContainer>
+      Select menu on the left.
+    </UContainer>
   </div>
 </template>

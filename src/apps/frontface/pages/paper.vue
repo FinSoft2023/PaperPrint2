@@ -1,12 +1,14 @@
 <template>
-  <UHeader title="Document (paper)">
-    <template #right>
-      <UButton @click="printDoc">Print</UButton>
-    </template>
-  </UHeader>
-  <UContainer class="bg-gray-400 py-4">
-    <NuxtPage />
-  </UContainer>
+  <div>
+    <UHeader title="Document (paper)">
+      <template #right>
+        <UButton @click="printDoc">Print</UButton>
+      </template>
+    </UHeader>
+    <UContainer class="bg-gray-400 py-4 print:py-0">
+      <NuxtPage />
+    </UContainer>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -14,7 +16,6 @@ function printDoc() {
   window.print();
 }
 </script>
-
 
 <style>
 @media print {

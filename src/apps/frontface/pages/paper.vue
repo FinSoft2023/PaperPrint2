@@ -27,7 +27,9 @@ function printDoc() {
   }
 
   #page {
-    /* margin: 0;
+    margin: 0;
+    padding: 0;
+    /*
       border: initial;
       border-radius: initial;
       box-shadow: initial;
@@ -36,7 +38,7 @@ function printDoc() {
     print-color-adjust: exact;
   }
 
-  #pagebreak {
+  .pagebreak {
     clear: both;
     page-break-after: always;
   }

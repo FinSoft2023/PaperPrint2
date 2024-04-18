@@ -8,7 +8,8 @@
               <FiLL :data="data?.receivedLocation" />
             </p>
             <p>วันที่
-              <FiLL :data="data?.dateReceived" />
+              <FiLL :data="data?.dateReceived"
+                date-format="short" />
             </p>
           </div>
         </div>
@@ -25,7 +26,9 @@
               <FiLL :data="data?.receivedLocation" />
             </p>
             <p>วันที่.............................................</p>
-            <p>บัญชีเงินกู้ที่...............................</p>
+            <p>บัญชีเงินกู้ที่
+              <FiLL :data="data?.loanAccountNumber" />
+            </p>
           </div>
         </div>
       </div>
@@ -50,7 +53,8 @@
         <p>
           รับราชการหรือทำงานประจำในตำแหน่ง......................................................................สังกัด.................................................................
         </p>
-        <p>ได้รับเงินได้รายเดือน <FiLL :data="data?.monthlyIncome" /> บาท
+        <p>ได้รับเงินได้รายเดือน
+          <FiLL :data="data?.monthlyIncome" /> บาท
           ขอเสนอคำขอกู้เงินเพื่อเหตุฉุกเฉินดังต่อไปนี้
         </p>
       </div>
@@ -58,7 +62,9 @@
       <div class="flex flex-col ml-10">
         <p>ข้อ ๑. ข้าพเจ้าขอกู้เงินของสหกรณ์
           จำนวน.......................................................บาท
-          ( <MoneyText :data="data?.monthlyIncome" /> )</p>
+          (
+          <MoneyText :data="data?.monthlyIncome" /> )
+        </p>
       </div>
 
       <div class="flex flex-col ">

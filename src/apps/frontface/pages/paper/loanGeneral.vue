@@ -14,30 +14,49 @@
             
         </MorePaperDoc>
         <MorePaperDoc>
-            <table class="border-separate border-spacing-2 border border-slate-400 ...">
+           อ้อนเอง
+        </MorePaperDoc>
+        <MorePaperDoc>
+            <table class="border-collapse border border-slate-400 ...">
   <thead>
     <tr>
-      <th class="border border-slate-300 ...">State</th>
-      <th class="border border-slate-300 ...">City</th>
+      <th class="border border-slate-600 ...">ความเห็นของเจ้าหน้าที่</th>
+      <th class="border border-slate-600 ...">ความเห็นของผู้มีอำนาจพิจารณา</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td class="border border-slate-300 ...">Indiana</td>
-      <td class="border border-slate-300 ...">Indianapolis</td>
+      <td class="border border-slate-600 ...">ได้ตรวจสอบเอกสารและคำขอกู้เงินแล้วพบว่ามีความถูกต้องตามระเบียบ หลักเกณฑ์และเงื่อนไขต่างๆ ทุกประเภท</td>
+      <td class="border border-slate-600 text-center">[&nbsp;] อนุมัติ จำนวน........................... บาท 
+        (....................................................)
+      </td>
     </tr>
     <tr>
-      <td class="border border-slate-300 ...">Ohio</td>
-      <td class="border border-slate-300 ...">Columbus</td>
+      <td class="border border-slate-600 ...">หักชำระ (ณ วันที่วิเคราะห์ข้อมูล)<br>
+        - หนี้เดิม <FiLL :data="data?.debt" /> บาท<br>
+        - ซื้อหุ้นตามส่วนเงินกู้ .......................บาท<br>
+        - เบี้ยประกัน/ฌาปนกิจ .....................บาท
+      </td>
+      <td class="border border-slate-600 text-center">[&nbsp;] ไม่อนุมัติ เพราะ..................................................................................</td>
     </tr>
     <tr>
-      <td class="border border-slate-300 ...">Michigan</td>
-      <td class="border border-slate-300 ...">Detroit</td>
+      <td class="border border-slate-600 text-center">(ลงชื่อ).........................เจ้าหน้าที่สหกรณ์<br>
+        (<FiLL :data="data?.officer" />)
+      </td>
+      <td class="border border-slate-600 text-center">(ลงชื่อ).........................ประธานเงินกู้<br>
+        (<FiLL :data="data?.chaiman" />)</td>
+    </tr>
+    <tr>
+      <td class="border border-slate-600 text-center">
+      </td>
+      <td class="border border-slate-600 text-center">(ลงชื่อ).........................กรรมการผู้จัดการ<br>
+        (<FiLL :data="data?.director" />)</td>
     </tr>
   </tbody>
 </table>
         </MorePaperDoc>
         <MorePaperDoc>
+<<<<<<< HEAD
             <!-- กู้สามัญทั่วไป general4 -->
         </MorePaperDoc>
         <MorePaperDoc>
@@ -61,6 +80,9 @@
 <p class="indent-24">- ข้าพเจ้าฯ ยินยอมให้สหกรณ์ออมทรัพย์ฯ ตรวจสอบข้อมูลหนี้ของข้าพเจ้ากับธนาคาร / บริษัท ข้อมูลเครดิตแห่งชาติ จํากัด ได้</p>
       </p>
     </div>
+=======
+            <!-- กู้สามัญทั่วไป general5 -->
+>>>>>>> wsggaon
         </MorePaperDoc>
         <MorePaperDoc>
             <!-- กู้สามัญทั่วไป general6 -->

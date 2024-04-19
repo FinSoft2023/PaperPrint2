@@ -1,6 +1,6 @@
 export default defineEventHandler(async (event) => {
     return {
-     fname: "กัญญารัตน์",               //ชื่อข้าพเจ้า
+      fname: "กัญญารัตน์",               //ชื่อข้าพเจ้า
      lname: "สาระพันธ์",                //นามสกุล
      housenb: 506,                    //บ้านเลขที่
      group: 5,                        //หมู่
@@ -31,9 +31,11 @@ export default defineEventHandler(async (event) => {
      chaimanLname: "บาลี",               //นามสกุลประธาน
      directorFName: "ดาดา",             //  ชื่อกรรมการ
      directorLName: "กากา",             //นามสกุลกรรมการ
-     loanLetterNumber:"255/30",
-     loanAccountNumber:"655/1",
-      receivedLocation:"สหกรณ์ออมทรัพย์ รพ. ศรีสะเกษ จำกัด",
+     affiliation: "กระทรวงกลาโหม", // สังกัด
+     remberRegistration : '12565', // ทะเบียนสมาชิก
+     agency : "ช่างประปา",  // หน่วยงาน
+     remaining : "20000" , // เงินคงเหลือ
+     makepayment : "2000" , // ชำระเงิน
       dateReceived: new Date().toISOString(),
     }
   });

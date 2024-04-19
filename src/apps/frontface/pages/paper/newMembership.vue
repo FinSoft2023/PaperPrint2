@@ -5,7 +5,7 @@
         </PaperDoc>
 
         <MorePaperDoc>
-            <div class="mx-auto max-w-2xl">
+            <div class="flex flex-col items-center">
                 <p class="text-center mb-4">ชื่อสมาชิก _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ เลขทะเบียนที่ _ _ _ _ _ _ _ _ _ _ _ หน่วย _ _ _ _ _ _ _ _ _ _ _ _ </p>
                 <hr class="my-4 border-b-2 border-black">
                 <p class="text-center mb-4">บัตรตัวอย่างลายมือชื่อสมาชิก</p>
@@ -40,7 +40,7 @@
         </MorePaperDoc>
 
         <MorePaperDoc>
-            <div class="mx-auto max-w-2xl">
+            <div class="flex flex-col items-center">
                 <table class="table-auto w-full border-collapse border">
                     <tr>
                     <td rowspan="2" class="border-2 border-black text-center">วัน เดือน ปี</td>

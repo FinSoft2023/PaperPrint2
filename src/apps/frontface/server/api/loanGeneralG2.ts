@@ -31,6 +31,9 @@ export default defineEventHandler(async (event) => {
      chaimanLname: "บาลี",
      directorFName: "ดาดา",
      directorLName: "กากา",
+     loanLetterNumber:"255/30",
+     loanAccountNumber:"655/1",
+      receivedLocation:"สหกรณ์ออมทรัพย์ รพ. ศรีสะเกษ จำกัด",
       dateReceived: new Date().toISOString(),
     }
   });

@@ -24,7 +24,9 @@ export default defineEventHandler(async (event) => {
      remain:15000,
      accruedinterest:"ไม่มีดอกเบี้ย",
      reason:"กู้ยืมเงินเพื่อการประกอบอาชีพ",
-     mint: "หน้าโง่",
+     officer: "วีวี่ ยายี",
+     chaiman: "พาลี บาลี",
+     director: "ดาดา กากา",
       dateReceived: new Date().toISOString(),
     }
   });

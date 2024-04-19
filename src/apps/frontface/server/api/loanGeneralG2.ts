@@ -1,6 +1,7 @@
 export default defineEventHandler(async (event) => {
     return {
-     mename: "กัญญารัตน์ สาระพันธ์",
+     fname: "กัญญารัตน์",
+     lname: "สาระพันธ์",
      housenb: 506,
      group: 5,
      road: "มิตรภาพ",
@@ -24,9 +25,12 @@ export default defineEventHandler(async (event) => {
      remain:15000,
      accruedinterest:"ไม่มีดอกเบี้ย",
      reason:"กู้ยืมเงินเพื่อการประกอบอาชีพ",
-     officer: "วีวี่ ยายี",
-     chaiman: "พาลี บาลี",
-     director: "ดาดา กากา",
+     officerFName: "วีวี่",
+     officerLName: "ยายี",
+     chaimanFName: "พาลี",
+     chaimanLname: "บาลี",
+     directorFName: "ดาดา",
+     directorLName: "กากา",
       dateReceived: new Date().toISOString(),
     }
   });

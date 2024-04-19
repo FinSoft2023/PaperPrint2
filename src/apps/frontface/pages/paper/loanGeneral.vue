@@ -35,16 +35,16 @@
     </tr>
     <tr>
       <td class="border border-slate-600 text-center">(ลงชื่อ).........................เจ้าหน้าที่สหกรณ์<br>
-        (<FiLL :data="data?.officer" />)
+        (<FiLL :data="data?.officerFName" /> <FiLL :data="data?.officerLName" />)
       </td>
       <td class="border border-slate-600 text-center">(ลงชื่อ).........................ประธานเงินกู้<br>
-        (<FiLL :data="data?.chaiman" />)</td>
+        (<FiLL :data="data?.chaimanFName" /> <FiLL :data="data?.chaimanLName" />)</td>
     </tr>
     <tr>
       <td class="border border-slate-600 text-center">
       </td>
       <td class="border border-slate-600 text-center">(ลงชื่อ).........................กรรมการผู้จัดการ<br>
-        (<FiLL :data="data?.director" />)</td>
+        (<FiLL :data="data?.directorFName" /> <FiLL :data="data?.directorLName" />)</td>
     </tr>
   </tbody>
 </table>

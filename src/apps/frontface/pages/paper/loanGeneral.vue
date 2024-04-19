@@ -1,7 +1,7 @@
 <template>
     <main>
         <PaperDoc>
-            <!-- กู้สามัญทั่วไป general1  -->
+            บีม จอง
         </PaperDoc>
 
         <MorePaperDoc>

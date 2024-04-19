@@ -31,6 +31,7 @@ export default defineEventHandler(async (event) => {
      chaimanLname: "บาลี",               //นามสกุลประธาน
      directorFName: "ดาดา",             //  ชื่อกรรมการ
      directorLName: "กากา",             //นามสกุลกรรมการ
+     test: "",
 
       dateReceived: new Date().toISOString(),
     }

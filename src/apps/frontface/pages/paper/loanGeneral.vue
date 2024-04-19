@@ -23,25 +23,25 @@
         <LineFiLL :data="data?.repaymentPlan"
           :limit="6">
           <template #data="{ index, item }">
-            <p class="text-start text-base ">
+            <p class="text-start text-base">
               <FiLL :data="index"
                 number
                 normal />.
-              ชื่อ 
-              <FiLL :data="item.fn" /> <FiLL :data="item.ln" /> อายุ 
-              <FiLL :data="item.age" /> ปี เลขทะเบียนที่ <FiLL :data="item.numberRegist" /><br>
-              <p class="pl-20">(ลงชื่อ).............................................................ผู้ค้ำประกัน</p>
+                ชื่อ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <FiLL :data="item.fn" /> <FiLL :data="item.ln" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; อายุ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <FiLL :data="item.age" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ปี เลขทะเบียนที่&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <FiLL :data="item.numberRegist" /><br>
+              <p class="pl-20 text-base">(ลงชื่อ).............................................................ผู้ค้ำประกัน</p>
             </p>
           </template>
           <template #default="{ index }">
-            <p class="text-start text-base">(
+            <p class="text-start text-base">
               <FiLL :data="index"
                 number
-                normal />).
+                normal />.
                 ชื่อ 
-              ........................................อายุ 
-             ......................ปี เลขทะเบียนที่ ............................<br>
-             <p class="pl-20">(ลงชื่อ).............................................................ผู้ค้ำประกัน</p>
+              ...............................................................................อายุ 
+             ......................ปี เลขทะเบียนที่ ...................................<br>
+             <p class="pl-20 text-base">(ลงชื่อ).................................................................ผู้ค้ำประกัน</p>
             </p>
           </template>
         </LineFiLL>
@@ -51,21 +51,25 @@
 
         <div class="grid grid-cols-2">
   <div></div>
-  <div class="text-center text-sm">(ลงชื่อ).......................................ผู้ขอกู้</div>
+  <div class="text-center text-base">(ลงชื่อ)..................................................................ผู้ขอกู้</div>
   <div ></div>
-  <div class="text-center text-sm">(<FiLL :data="data?.fname" />  <FiLL :data="data?.lname" />)</div>
+  <div class="text-center text-base">(<FiLL :data="data?.fname" />  <FiLL :data="data?.lname" />)</div>
   <div ></div>
-  <div class="text-center text-sm">เบอร์โทร....................................</div>
+  <div class="text-center text-base">เบอร์โทร..................................................................</div>
   <div ></div>
-  <div class="text-center text-sm">(ลงชื่อ).......................................คู่สมรสผู้กู้</div>
+  <div ><br></div>
   <div ></div>
-  <div class="text-center text-sm">(<FiLL :data="data?.spouseFName" />  <FiLL :data="data?.lname" />)</div>
+  <div class="text-center text-base">(ลงชื่อ)..................................................................คู่สมรสผู้กู้</div>
   <div ></div>
-  <div class="text-center text-sm">เบอร์โทร....................................</div>
+  <div class="text-center text-base">(<FiLL :data="data?.spouseFName" />  <FiLL :data="data?.lname" />)</div>
   <div ></div>
-  <div class="text-center text-sm">(ลงชื่อ).......................................เจ้าหน้าที่สหกรณ์</div>
+  <div class="text-center text-base">เบอร์โทร..................................................................</div>
   <div ></div>
-  <div class="text-center text-sm">(<FiLL :data="data?.officerFName" />  <FiLL :data="data?.officerLName" />)</div>
+  <div ><br></div>
+  <div ><br></div>
+  <div class="text-center text-base">(ลงชื่อ)..........................................................เจ้าหน้าที่สหกรณ์</div>
+  <div ></div>
+  <div class="text-center text-base">(<FiLL :data="data?.officerFName" />  <FiLL :data="data?.officerLName" />)</div>
 
 </div>
 

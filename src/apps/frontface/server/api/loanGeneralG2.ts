@@ -31,6 +31,11 @@ export default defineEventHandler(async (event) => {
      chaimanLname: "บาลี",
      directorFName: "ดาดา",
      directorLName: "กากา",
+     affiliation: "กระทรวงกลาโหม", // สังกัด
+     remberRegistration : '12565', // ทะเบียนสมาชิก
+     agency : "ช่างประปา", // หน่วยงาน
+     remaining : "20000" ,// เงินคงเหลือ
+     makepayment : "2000" ,// ชำระเงิน
       dateReceived: new Date().toISOString(),
     }
   });

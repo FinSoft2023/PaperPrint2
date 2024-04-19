@@ -12,7 +12,7 @@ export default defineEventHandler(async (event) => {
     year:"2567",                                      //  ปี
     officer:"สมศัก วันจิตรา",                            //   เจ้าหน้าที่
     usedTo:"การศึกษา",                                //   ใช้เพื่อการดังนี้
-    monthlyIncome: 10000,                            //   จำนวนเงิน
+    monthlyIncome: 1000,                            //   จำนวนเงิน
     intendent: "กรกนก",                              //  ประธาน / รองประธาน / ผู้จัดการ / ผู้ที่ได้ รับมอบหมาย
 
 

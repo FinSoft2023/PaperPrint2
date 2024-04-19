@@ -54,7 +54,8 @@
 
     <div class="grid justify-items-center ">
       <p class="indent-80">สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
-      <p class="indent-80">วันที่ <FiLL :data="data?.dateReceived" /> </p>
+      <p class="indent-80">วันที่ <FiLL :data="data?.dateReceived"
+                date-format="short" /> </p>
     </div>
 
     <div class="grid justify-items-start mt-6">

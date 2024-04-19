@@ -19,16 +19,6 @@ export default defineEventHandler(async (event) => {
 
 
 
-
-
-
-
-
-
-
-
-
-
       repaymentPlan: [
         { m: "มค", amount: 1000 },
         { m: "กพ", amount: 1000 },

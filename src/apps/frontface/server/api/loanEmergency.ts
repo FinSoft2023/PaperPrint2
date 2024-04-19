@@ -1,7 +1,7 @@
 export default defineEventHandler(async (event) => {
   return {
     receivedLocation: "สหกรณ์ออมทรัพย์ รพ. ศรีสะเกษ",    // ชื่อโรงบาล  / เขียนที่
-    loanAccountNumber: "250/67",                      // บัญชีเงินกู้ที่
+    loanAccountNumber: "504/67",                      // บัญชีเงินกู้ที่
     fname: "สุริยะ",                                    //  ชื่อ
     lname: "ประจันนวล",                                //  นามสกุล    
     memberNumber: "143520004343",                     //  สมาชิกเลขทะเบียนที่
@@ -9,7 +9,7 @@ export default defineEventHandler(async (event) => {
     affiliation:"โรงพยาบาลเลย",                       //  สังกัด
     day:"27/",                                         //  วัน
     month:"ธันวาคม/",                                   //  เดือน
-    year:"2567",                                      //  ปี
+    year:2567,                                      //  ปี
     officer:"สมศัก วันจิตรา",                            //   เจ้าหน้าที่
     usedTo:"การศึกษา",                                //   ใช้เพื่อการดังนี้
     monthlyIncome: 1000,                            //   จำนวนเงิน

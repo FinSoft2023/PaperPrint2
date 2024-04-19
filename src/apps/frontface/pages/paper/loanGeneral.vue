@@ -10,45 +10,54 @@
         <MorePaperDoc>
            อ้อนเอง
         </MorePaperDoc>
+
+
+
+
         <MorePaperDoc>
-            <table class="border-collapse border border-slate-400 ...">
-  <thead>
-    <tr>
-      <th class="border border-slate-600 ...">ความเห็นของเจ้าหน้าที่</th>
-      <th class="border border-slate-600 ...">ความเห็นของผู้มีอำนาจพิจารณา</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="border border-slate-600 ...">ได้ตรวจสอบเอกสารและคำขอกู้เงินแล้วพบว่ามีความถูกต้องตามระเบียบ หลักเกณฑ์และเงื่อนไขต่างๆ ทุกประเภท</td>
-      <td class="border border-slate-600 text-center">[&nbsp;] อนุมัติ จำนวน........................... บาท 
-        (....................................................)
-      </td>
-    </tr>
-    <tr>
-      <td class="border border-slate-600 ...">หักชำระ (ณ วันที่วิเคราะห์ข้อมูล)<br>
+
+            <div class="grid grid-cols-2">
+ 
+            <div class="border-solid border-2 border-slate-950 ">
+
+      <p class="text-center text-sm font-semibold">ความเห็นของเจ้าหน้าที่</p>
+      <p class="text-sm ps-2">ได้ตรวจสอบเอกสารและคำขอกู้เงินแล้วพบว่ามีความถูกต้อง ตามระเบียบ หลักเกณฑ์และเงื่อนไขต่างๆ ทุกประเภท</p>
+      <p class="text-sm ps-2">หักชำระ (ณ วันที่วิเคราะห์ข้อมูล)<br>
         - หนี้เดิม <FiLL :data="data?.debt" /> บาท<br>
-        - ซื้อหุ้นตามส่วนเงินกู้ .......................บาท<br>
-        - เบี้ยประกัน/ฌาปนกิจ .....................บาท
-      </td>
-      <td class="border border-slate-600 text-center">[&nbsp;] ไม่อนุมัติ เพราะ..................................................................................</td>
-    </tr>
-    <tr>
-      <td class="border border-slate-600 text-center">(ลงชื่อ).........................เจ้าหน้าที่สหกรณ์<br>
-        (<FiLL :data="data?.officerFName" /> <FiLL :data="data?.officerLName" />)
-      </td>
-      <td class="border border-slate-600 text-center">(ลงชื่อ).........................ประธานเงินกู้<br>
-        (<FiLL :data="data?.chaimanFName" /> <FiLL :data="data?.chaimanLName" />)</td>
-    </tr>
-    <tr>
-      <td class="border border-slate-600 text-center">
-      </td>
-      <td class="border border-slate-600 text-center">(ลงชื่อ).........................กรรมการผู้จัดการ<br>
-        (<FiLL :data="data?.directorFName" /> <FiLL :data="data?.directorLName" />)</td>
-    </tr>
-  </tbody>
-</table>
+        - ซื้อหุ้นตามส่วนเงินกู้ <FiLL :data="data?.remain" /> บาท<br>
+        - เบี้ยประกัน/ฌาปนกิจ <FiLL :data="data?.stockvalue" /> บาท</p>
+      <p class="text-center text-sm ps-2">(ลงชื่อ)................................. เจ้าหน้าที่สหกรณ์<br>
+        (<FiLL :data="data?.officerFName" /> <FiLL :data="data?.officerLName" />)</p>
+
+            </div>
+            <div class="border-solid border-2 border-slate-950 ">
+     <p class="text-center text-sm font-semibold ps-2">ความเห็นของผู้มีอำนาจพิจารณา</p>
+     <p class="text-sm ps-2">[&nbsp;] อนุมัติ จำนวน <FiLL :data="data?.debt" /> บาท 
+        (<MoneyText :data="data?.debt" />) </p>
+    <p class="text-sm ps-2">[&nbsp;] ไม่อนุมัติ เพราะ...........................................................................
+        ................................................................................................................</p>
+      <p class="text-center text-sm ps-2">(ลงชื่อ) ............................... ประธานเงินกู้<br>
+        (<FiLL :data="data?.chaimanFName" /> <FiLL :data="data?.chaimanLName" />)</p>
+      <p class="text-center text-sm ps-2">(ลงชื่อ) ............................... กรรมการผู้จัดการ<br>
+        (<FiLL :data="data?.directorFName" /> <FiLL :data="data?.directorLName" />)</p>
+</div>
+
+</div>
         </MorePaperDoc>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <MorePaperDoc>
             <!-- กู้สามัญทั่วไป general5 -->
         </MorePaperDoc>

@@ -3,53 +3,53 @@
         <PaperDoc>
             <!-- กู้สามัญทั่วไป general1  -->
 
-            <div class="grid grid-cols-3 justify-center mt-6">
-        <div class="flex items-start">
-          <div class="border-2 border-black p-2">
-            <p class="text-sm">รับที่
-              <FiLL :data="data?.receivedLocation" />
-            </p>
-            <p class="text-sm">วันที่
-              <FiLL :data="data?.dateReceived"
-                date-format="short" />
-            </p>
-            
-          </div>
-        </div>
-        <div class="flex flex-col items-center">
-          <img class="w-[120px] h-auto"
-            src="https://www.saving-sskh.com/images/logo-saving.png"
-            alt="Logo" />
-            <p class="mt-2">คำขอกู้เงินสามัญทั่วไป</p>
-        </div>
+            <div class="grid justify-items-end">
+                <p>เเบบ ส.1/2565</p>
+                </div>
 
-        <div class="flex flex-col items-end">
+            <div class="grid grid-cols-3 grid-rows-2 justify-center mt-2 h-10">
+              <div class="items-start">
+                <div class="border-2 border-black p-2">
+                  <p class="text-sm">รับที่
+                    <FiLL :data="data?.receivedLocation" />
+                  </p>
+                  <p class="text-sm">วันที่
+                    <FiLL :data="data?.dateReceived"
+                      date-format="short" />
+                  </p>
+                </div>
 
-          <div class="border-2 border-black p-2">
-            <p class="text-sm">เอกสารประกอบการกู้ ( อย่างละ 1 ฉบับ )
-            </p>
-            <p class="text-sm">1.สลิปเงินเดือน </p>
-            <p class="text-sm">2.สำเนาบัตรประจำตัวประชาชนพร้อมรับรองสำเนาถูกต้องของผู้กู้ ผู้ค้ำ เเละคู่สมรส </p>
-            <p class="text-sm">3.สำเนาทะเบียนบ้านพร้อมรับรองสำเนาถูกต้องของผู้กู้ ผู้ค้ำเเละคู่สมรส </p>
-            <p class="text-sm">4.สำเนาทะเบียนสมรสหรือใบหย่าหร้อมรับรองสำเนาถูกต้องของผู้กู้เเละผู้ค้ำ </p>
-          </div>
-        </div>
+                <div class="border-2 border-black p-1 mt-4" >
+                  <p class="text-sm">หนังสือกู้เงินที่ <FiLL :data="data?.loanLetterNumber" />
+                  </p>
+                  <p class="text-sm">วันที่ <FiLL :data="data?.dateReceived"
+                  date-format="short" /></p>
+                  <p class="text-sm">บัญชีเงินกู้ที่
+                  <FiLL :data="data?.loanAccountNumber" />
+                  </p>
+                  </div>
+                </div>
 
-        <div class="flex flex-col  items-start">
+              <div class="flex flex-col items-center row-span-2">
+                <img class="w-[120px] h-auto"
+                  src="https://www.saving-sskh.com/images/logo-saving.png"
+                  alt="Logo" />
+                  <p class="mt-2">คำขอกู้เงินสามัญทั่วไป</p>
+              </div>
 
-          <div class="border-2 border-black p-1" >
-            <p class="text-sm">หนังสือกู้เงินที่ <FiLL :data="data?.loanLetterNumber" />
-            </p>
-            <p class="text-sm">วันที่ <FiLL :data="data?.dateReceived"
-                date-format="short" /></p>
-            <p class="text-sm">บัญชีเงินกู้ที่
-              <FiLL :data="data?.loanAccountNumber" />
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid justify-items-center">
+              <div class="flex flex-col items-end row-span-2">
+                <div class="border-2 border-black p-2">
+                  <p class="text-sm">เอกสารประกอบการกู้ ( อย่างละ 1 ฉบับ )
+                  </p>
+                  <p class="text-sm">1.สลิปเงินเดือน </p>
+                  <p class="text-sm ">2.สำเนาบัตรประจำตัวประชาชนพร้อมรับรองสำเนาถูกต้องของผู้กู้ ผู้ค้ำ เเละคู่สมรส </p>
+                  <p class="text-sm ">3.สำเนาทะเบียนบ้านพร้อมรับรองสำเนาถูกต้องของผู้กู้ ผู้ค้ำเเละคู่สมรส </p>
+                  <p class="text-sm ">4.สำเนาทะเบียนสมรสหรือใบหย่าหร้อมรับรองสำเนาถูกต้องของผู้กู้เเละผู้ค้ำ </p>
+                </div>
+              </div>
+            </div>
+      
+      <div class="grid justify-items-center mt-44">
             <p class="indent-80 text-sm">เขียนที่ <FiLL :data="data?.receivedLocation" /> </p>
             <p class="indent-80 text-sm">วันที่ <FiLL :data="data?.dateReceived"
                 date-format="short" /> </p>
@@ -58,11 +58,61 @@
             <p>เรียน คณะกรรมการดำเนินการสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
             </div>
 
-            <div class="grid justify-items-start mt-6 text-justify">
-            <p class="indent-10">ข้าพเจ้า <FiLL :data="data?.fname"/> <FiLL :data="data?.lname"/> สมาชิกเลขทะเบียนที่  .................
-               
+            <div class="grid justify-items-start mt-6 " >
+            <p class="indent-10">ข้าพเจ้า <FiLL :data="data?.fname"/> <FiLL :data="data?.lname"/> สมาชิกเลขทะเบียนที่  .................อายุ..........ปี
+              เป็น [ &nbsp; ] ข้าราชการ/ลูกจ้างประจำ [ &nbsp; ] พนักงานราชการ [ &nbsp; ] พนักงานกระทรวงสาธารณสุข [&nbsp;] ลูกจ้าง
+              [ &nbsp; ] อื่นๆ................................. ตำเเหน่ง...................................สังกัด........................
+              เงินเดือน/เงินประจำตำเเหน่ง...............บาท หน่วยงาน....................เบอร์โทรภายใน................
+              ที่อยู่เลขที่................หมู่ที่.........ถนน.............ตำบล.....................อำเภอ.............................
+              จังหวัด.............................รหัสไปรษณีย์......................เบอร์โทร...........................LINE ID...................................
+              เสนอคำขอกู้เงินสามัญเพื่อโปรดพิจารณาดังต่อไปนี้
+            </p>
+            <p>1.ข้าพเจ้าขอกู้เงินสามัญทั่วไป จำนวน.................... บาท(........................................................)</p>
+            <p>2.ข้าพเจ้าจะนำเงินไปใช้ตามวัตถุประสงค์ ดังนี้ (อาจเเนบเอกสารเพื่อประกอบพิจารณาตามวัตถุประสงค์)</p>
+            <p class="indent-10" >[ &nbsp; ] 2.1 เพื่อการอันจำเป็น อันได้เเก่ จัดหาสิ่งจำเป็นสำหรับครอบครัว ,อุปการะเลี้ยงบุคคลในครอบครัว,
+              ปลดเปลื้องหนี้สิ้นของครัวเรือน,รักษาพยาบาลบุคคลในครอบครัว
+            </p>
+            <p class="indent-10" >[ &nbsp; ] 2.2 เพื่อชำระหนี้สหกรณ์ จำนวน.....................สัญญา ดังนี้
+            </p>
+            <div class="grid grid-cols-2 justify-center">
+              <div class="items-start ">
+                <p class="pl-20" > - เงินกู้สามัญทั่วไป </p>
+                <p class="pl-20"> - เงินกู้สามัญเพื่อพัฒนาคุณภาพชีวิต </p>
+                <p class="pl-20"> - เงินกู้เพื่อเหตุฉุกเฉิน </p>
+                <p class="pl-20"> - เงินกู้สามัญเพื่อการประกอบอาชีพเสริมเพิ่มรายได้ </p>
+                <p class="pl-20"> - เงินกู้พิเศษ </p>
+                <p class="pl-20"> - เงินกู้หุ้น </p>
+              </div>
+              <div class="items-end ">
+                <p class="pl-20">หนังสือกู้เงินที่...................................</p>
+                <p class="pl-20">หนังสือกู้เงินที่...................................</p>
+                <p class="pl-20">หนังสือกู้เงินที่...................................</p>
+                <p class="pl-20">หนังสือกู้เงินที่...................................</p>
+                <p class="pl-20">หนังสือกู้เงินที่...................................</p>
+                <p class="pl-20">หนังสือกู้เงินที่...................................</p>
+              </div>
+            </div>
+            </div>
+
+            <div class="grid justify-items-start" >
+            <p class="indent-10" >[ &nbsp; ] 2.3 เพื่อการศึกษาของบุตรหรือสมาชิก
+            </p>
+            <p class="indent-10" >[ &nbsp; ] 2.4 อื่นๆ (ระบุ).......................</p>
+            <p>3. ข้าพเจ้าจะส่งคืนต้นเงินกู้พร้อมดอกเบี้ยในอัตราตามที่สหกรณ์กำหนดให้เเก่สหกรณ์เป็นงวดรายเดือนภายใน
+              วันสิ้นเดือนทั้งนี้ตั้งเเต่งวดประจำเดือน.................พ.ศ.............เป็นต้นไป
+            </p>
+            <p>4. ข้าพเจ้าต้องถือหุ้นเพิ่มตามสัดส่วนของวงเงินโดยให้สหกรณ์หักจากเงินกู้เป็นจำนวน..................บาท
+              (...................................................)
+            </p>
+            <p>5. ข้าพเจ้าจะทำหนังสือกู้เงินสำหรับเงินกู้สามัญทั่วไป ให้ไว้ต่อสหกรณ์ตามที่สหกรณ์กำหนด
+            </p>
+            <p>6. (ในกรณีที่ผู้ขอกู้มีคู่สมรสเเล้ว) ในการกู้เงินตามคำขอกู้นี้ ข้าพเจ้าได้รับคำยินยอมจากคู่สมรสเเล้ว เเละได้บันทึกคำยินยอม
+              เป็นหลักการฐานในท้ายหนังสือกู้นี้ด้วย
             </p>
             </div>
+            <div class="grid justify-items-end">
+                <p>(โปรดพลิก)</p>
+                </div>
 
 
 

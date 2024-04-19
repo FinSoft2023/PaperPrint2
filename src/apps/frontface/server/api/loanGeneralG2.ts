@@ -51,11 +51,15 @@ export default defineEventHandler(async (event) => {
      loanAccountNumber:"655/1",         // บัญชีเลขที่
       receivedLocation:"สหกรณ์ออมทรัพย์ รพ. ศรีสะเกษ จำกัด", // สถานที่
 
-
-
-
-
-
       dateReceived: new Date().toISOString(), //วันที่ปัจจุบัน
+
+      repaymentPlan: [
+        { m: "Jan", amount: 1000 },
+        { m: "Feb", amount: 1000 },
+        { m: "March", amount: 1000 },
+      ],
+
+
+
     }
   });

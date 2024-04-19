@@ -70,7 +70,8 @@
 
         <MorePaperDoc>
            
-            
+                        <!-- กู้สามัญทั่วไป general2  -->
+
 
 
 
@@ -80,6 +81,8 @@
 
 
         <MorePaperDoc>
+                        <!-- กู้สามัญทั่วไป general3  -->
+
            <p class="text-base">8.ข้าพเจ้าประสงค์ขอรับเงินกู้โดย [&nbsp;] เช็ค [&nbsp;] โอน/นำเข้าบัญชีเงินฝากของข้าพเจ้า ชื่อธนาคาร <FiLL :data="data?.bank" /> 
         สาขา <FiLL :data="data?.branchBank" /> บัญชีเลขที่ <FiLL :data="data?.idaccount" />
         </p>
@@ -149,6 +152,8 @@
 
 
         <MorePaperDoc>
+                        <!-- กู้สามัญทั่วไป general4  -->
+
 
             <div class="grid grid-cols-2">
  
@@ -182,20 +187,9 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
         <MorePaperDoc>
-            <!-- กู้สามัญทั่วไป general4 -->
-        </MorePaperDoc>
-        <MorePaperDoc>
+                        <!-- กู้สามัญทั่วไป general5  -->
+
             <div class="flex flex-col items-center mt-32">
                 <p class="text-lg">หนังสือยืนยันภาระผูกพัน</p>
       </div>
@@ -216,10 +210,8 @@
       </td>
     </tr>
     </div>
-    <MorePaperDoc>
-            <!-- กู้สามัญทั่วไป general5 -->
         </MorePaperDoc>
-        </MorePaperDoc>
+
         <MorePaperDoc>
             <!-- กู้สามัญทั่วไป general6 -->
             <div class="flex flex-col items-center mt-10">
@@ -280,6 +272,9 @@
     </div>
         </MorePaperDoc>
         <MorePaperDoc>
+
+                        <!-- กู้สามัญทั่วไป general7  -->
+
         </MorePaperDoc>
     </main>
 </template>

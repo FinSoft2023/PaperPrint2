@@ -8,8 +8,7 @@
               <FiLL :data="data?.receivedLocation" />
             </p>
             <p>วันที่
-              <FiLL :data="data?.dateReceived"
-                date-format="short" />
+              <FiLL :data="data?.day"date-format="short" /><FiLL :data="data?.month"date-format="short" /><FiLL :data="data?.year"date-format="short" />
             </p>
           </div>
         </div>
@@ -25,8 +24,8 @@
             <p>หนังสือกู้ที่
               <FiLL :data="data?.receivedLocation" />
             </p>
-            <p>วันที่  <FiLL :data="data?.dateReceived"
-                date-format="short" />  </p>
+            <p>วันที่  <FiLL :data="data?.day"date-format="short" /><FiLL :data="data?.month"date-format="short" /><FiLL :data="data?.year"date-format="short" />
+            </p>
             <p>บัญชีเงินกู้ที่
               <FiLL :data="data?.loanAccountNumber" />
             </p>
@@ -36,8 +35,9 @@
 
       <p class="font-bold text-xl text-center col-span-2">คำขอและหนังสือกู้เงินเพื่อเหตุฉุกเฉิน</p>
       <div class="flex flex-col items-end mt-3">
-        <p>เขียนที่ <FiLL :data="data?.receivedLocation" /></p>
-        <p>วันที่  <FiLL :data="data?.dateReceived"date-format="short" />  </p>
+        <p>เขียนที่<FiLL :data="data?.receivedLocation" /></p>
+        <p>วันที่  <FiLL :data="data?.day"date-format="short" /><FiLL :data="data?.month"date-format="short" /><FiLL :data="data?.year"date-format="short" />
+            </p>
       </div>
 
       <div class="flex flex-col mt-1">
@@ -47,14 +47,8 @@
       <div class="flex flex-col ml-10">
         <p>
           ข้าพเจ้า <FiLL :data="data?.fname" />  <FiLL :data="data?.lname" />  สมาชิกเลขทะเบียนที่ <FiLL :data="data?.memberNumber" />
-        </p>
-      </div>
-
-      <div class="flex flex-col ">
-        <p>
           รับราชการหรือทำงานประจำในตำแหน่ง <FiLL :data="data?.location" /> สังกัด <FiLL :data="data?.affiliation" />
-        </p>
-        <p>ได้รับเงินได้รายเดือน
+          ได้รับเงินได้รายเดือน
           <FiLL :data="data?.monthlyIncome" /> บาท
           ขอเสนอคำขอกู้เงินเพื่อเหตุฉุกเฉินดังต่อไปนี้
         </p>
@@ -70,7 +64,7 @@
 
       <div class="flex flex-col ">
         <p>
-          โดยจะนำไปใช้เพื่อการดังนี้ <FiLL :data="data?.usedTo " />
+          โดยจะนำไปใช้เพื่อการดังนี้ <FiLL :data="data?.usedTo" />
         </p>
       </div>
 

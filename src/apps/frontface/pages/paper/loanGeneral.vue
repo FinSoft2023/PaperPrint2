@@ -58,6 +58,14 @@
             <p>เรียน คณะกรรมการดำเนินการสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
             </div>
 
+            <div class="grid justify-items-start mt-6 text-justify">
+            <p class="indent-10">ข้าพเจ้า <FiLL :data="data?.fname"/> <FiLL :data="data?.lname"/> สมาชิกเลขทะเบียนที่  .................
+               
+            </p>
+            </div>
+
+
+
         </PaperDoc>
 
         <MorePaperDoc>

@@ -31,9 +31,14 @@ export default defineEventHandler(async (event) => {
      chaimanLname: "บาลี",
      directorFName: "ดาดา",
      directorLName: "กากา",
-     loanLetterNumber:"255/30",
-     loanAccountNumber:"655/1",
-      receivedLocation:"สหกรณ์ออมทรัพย์ รพ. ศรีสะเกษ จำกัด",
+     affiliation: "กระทรวงกลาโหม", // สังกัด
+     remberRegistration : '12565', // ทะเบียนสมาชิก
+     agency : "ช่างประปา",  // หน่วยงาน
+     remaining : "20000" , // เงินคงเหลือ
+     makepayment : "2000" , // ชำระเงิน
+     loanLetterNumber:"255/30", // หนังสือเลขที่
+     loanAccountNumber:"655/1", // บัญชีเลขที่
+      receivedLocation:"สหกรณ์ออมทรัพย์ รพ. ศรีสะเกษ จำกัด", // สถานที่
       dateReceived: new Date().toISOString(),
     }
   });

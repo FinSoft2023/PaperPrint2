@@ -23,7 +23,7 @@
         <LineFiLL :data="data?.repaymentPlan"
           :limit="6">
           <template #data="{ index, item }">
-            <p class="text-start">
+            <p class="text-start text-base ">
               <FiLL :data="index"
                 number
                 normal />.
@@ -34,7 +34,7 @@
             </p>
           </template>
           <template #default="{ index }">
-            <p class="text-start">(
+            <p class="text-start text-base">(
               <FiLL :data="index"
                 number
                 normal />).

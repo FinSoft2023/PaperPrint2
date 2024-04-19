@@ -42,7 +42,7 @@ export default defineEventHandler(async (event) => {
      
      idaccount: '06547855551',          //เลขบัญชีธนาคาร
      bank: 'ออมสิน',                     //ชื่อธนาคาร
-     branchBank: 'เมือง',                     //สาขาธนาคาร
+     branchBank: 'ในเมือง',                     //สาขาธนาคาร
      remberRegistration : '12565',      // เลขที่ทะเบียนสมาชิก
      remaining : "20000" ,              // เงินคงเหลือ
      makepayment : "2000" ,            // ชำระเงินรายเดือน
@@ -54,9 +54,9 @@ export default defineEventHandler(async (event) => {
       dateReceived: new Date().toISOString(), //วันที่ปัจจุบัน
 
       repaymentPlan: [
-        { m: "Jan", amount: 1000 },
-        { m: "Feb", amount: 1000 },
-        { m: "March", amount: 1000 },
+        { fn: "การุ ", ln: "นาปา ", age: 50 , numberRegist: 254 },
+        { fn: "ดาฮา", ln: "นาปา ", age: 36 , numberRegist: 985 },
+        
       ],
 
 

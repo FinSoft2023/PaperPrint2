@@ -1,11 +1,11 @@
 <template>
     <main>
         <PaperDoc>
-            <!-- สมัครสมาชิกใหม่หน้า apply1  -->
+            <p class="text-center" v-for="i in 24">โต้ + ปูน</p>
         </PaperDoc>
 
         <MorePaperDoc>
-            <!-- สมัครสมาชิกใหม่หน้า apply2 -->
+            tan nontat
         </MorePaperDoc>
         <MorePaperDoc>
             <!-- สมัครสมาชิกใหม่หน้า apply3 -->

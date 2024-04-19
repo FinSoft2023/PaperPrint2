@@ -1,6 +1,6 @@
 export default defineEventHandler(async (event) => {
     return {
-     fname: "กัญญารัตน์",               //ชื่อข้าพเจ้า
+      fname: "กัญญารัตน์",               //ชื่อข้าพเจ้า
      lname: "สาระพันธ์",                //นามสกุล
      housenb: 506,                    //บ้านเลขที่
      group: 5,                        //หมู่

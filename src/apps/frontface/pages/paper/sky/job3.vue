@@ -393,5 +393,5 @@
 <script setup lang="ts">
 
 
-const { data } = await useFetch<any>('/api/sampleWithData');
+const { data } = await useFetch<any>('/api/job3');
 </script>

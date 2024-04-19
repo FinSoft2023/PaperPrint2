@@ -1,14 +1,35 @@
 <template>
     <main>
         <PaperDoc>
-            <!-- กู้สามัญทั่วไป general1  -->
+            บีม จอง
         </PaperDoc>
 
         <MorePaperDoc>
-            <!-- กู้สามัญทั่วไป general2 -->
+           เจษฎา น้อยอาสา 21
         </MorePaperDoc>
         <MorePaperDoc>
-            <!-- กู้สามัญทั่วไป general3 -->
+            <table class="border-separate border-spacing-2 border border-slate-400 ...">
+  <thead>
+    <tr>
+      <th class="border border-slate-300 ...">State</th>
+      <th class="border border-slate-300 ...">City</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="border border-slate-300 ...">Indiana</td>
+      <td class="border border-slate-300 ...">Indianapolis</td>
+    </tr>
+    <tr>
+      <td class="border border-slate-300 ...">Ohio</td>
+      <td class="border border-slate-300 ...">Columbus</td>
+    </tr>
+    <tr>
+      <td class="border border-slate-300 ...">Michigan</td>
+      <td class="border border-slate-300 ...">Detroit</td>
+    </tr>
+  </tbody>
+</table>
         </MorePaperDoc>
         <MorePaperDoc>
             <!-- กู้สามัญทั่วไป general4 -->

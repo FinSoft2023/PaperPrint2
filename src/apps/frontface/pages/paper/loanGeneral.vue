@@ -5,7 +5,7 @@
         </PaperDoc>
 
         <MorePaperDoc>
-            <!-- กู้สามัญทั่วไป general2 -->
+           เจษฎา น้อยอาสา 21
         </MorePaperDoc>
         <MorePaperDoc>
             <table class="border-separate border-spacing-2 border border-slate-400 ...">

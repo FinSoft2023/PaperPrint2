@@ -77,8 +77,72 @@
 
             
         </MorePaperDoc>
+
+
         <MorePaperDoc>
-           อ้อนเอง
+           <p class="text-base">8.ข้าพเจ้าประสงค์ขอรับเงินกู้โดย [&nbsp;] เช็ค [&nbsp;] โอน/นำเข้าบัญชีเงินฝากของข้าพเจ้า ชื่อธนาคาร <FiLL :data="data?.bank" /> 
+        สาขา <FiLL :data="data?.branchBank" /> บัญชีเลขที่ <FiLL :data="data?.idaccount" />
+        </p>
+        <p class="font-semibold text-sm underline underline-offset-1">ข้าพเจ้าขอรับรองว่า ขณะนี้ไม่อยู่ในระหว่างการถูกสอบสวนหรือต้องโทษทางวินัย และไม่อยู่ระหว่างการขอลาออกจากงานหรือโอนย้ายหน่วยงาน และข้าพเจ้ายินยอมปฏิบัติตามหลักเกณฑ์และเงื่อนไขที่กำหนอดทุกประการ
+        </p><br>
+        <p class="font-semibold text-lg text-center">บันทึกคำเสนอค้ำประกัน</p>
+        <p class="text-base tracking-tight text-center">ข้าพเจ้าผู้มีชื่อต่อไปนี้ ได้อ่านและเข้าใจจึงยินยอมผูกพันตนที่จะค้ำประกันตามคำขอกู้นี้ จึงลงลสยมือชื่อไว้เป็นสำคัญ</p>
+
+
+        <div class="flex flex-col ml-10 text-start">
+        <LineFiLL :data="data?.repaymentPlan"
+          :limit="6">
+          <template #data="{ index, item }">
+            <p class="text-start text-base">
+              <FiLL :data="index"
+                number
+                normal />.
+                ชื่อ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <FiLL :data="item.fn" /> <FiLL :data="item.ln" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; อายุ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <FiLL :data="item.age" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ปี เลขทะเบียนที่&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <FiLL :data="item.numberRegist" /><br>
+              <p class="pl-20 text-base">(ลงชื่อ).............................................................ผู้ค้ำประกัน</p>
+            </p>
+          </template>
+          <template #default="{ index }">
+            <p class="text-start text-base">
+              <FiLL :data="index"
+                number
+                normal />.
+                ชื่อ 
+              ...............................................................................อายุ 
+             ......................ปี เลขทะเบียนที่ ...................................<br>
+             <p class="pl-20 text-base">(ลงชื่อ).................................................................ผู้ค้ำประกัน</p>
+            </p>
+          </template>
+        </LineFiLL>
+
+      </div>
+<br>
+
+        <div class="grid grid-cols-2">
+  <div></div>
+  <div class="text-center text-base">(ลงชื่อ)..................................................................ผู้ขอกู้</div>
+  <div ></div>
+  <div class="text-center text-base">(<FiLL :data="data?.fname" />  <FiLL :data="data?.lname" />)</div>
+  <div ></div>
+  <div class="text-center text-base">เบอร์โทร..................................................................</div>
+  <div ></div>
+  <div ><br></div>
+  <div ></div>
+  <div class="text-center text-base">(ลงชื่อ)..................................................................คู่สมรสผู้กู้</div>
+  <div ></div>
+  <div class="text-center text-base">(<FiLL :data="data?.spouseFName" />  <FiLL :data="data?.lname" />)</div>
+  <div ></div>
+  <div class="text-center text-base">เบอร์โทร..................................................................</div>
+  <div ></div>
+  <div ><br></div>
+  <div ><br></div>
+  <div class="text-center text-base">(ลงชื่อ)..........................................................เจ้าหน้าที่สหกรณ์</div>
+  <div ></div>
+  <div class="text-center text-base">(<FiLL :data="data?.officerFName" />  <FiLL :data="data?.officerLName" />)</div>
+
+</div>
+
         </MorePaperDoc>
 
 

@@ -79,7 +79,9 @@
       </td>
     </tr>
     </div>
-    
+    <MorePaperDoc>
+            <!-- กู้สามัญทั่วไป general5 -->
+        </MorePaperDoc>
         </MorePaperDoc>
         <MorePaperDoc>
             <!-- กู้สามัญทั่วไป general6 -->

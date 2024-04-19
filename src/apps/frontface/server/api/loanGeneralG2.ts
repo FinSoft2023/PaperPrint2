@@ -1,41 +1,41 @@
 export default defineEventHandler(async (event) => {
     return {
-     fname: "กัญญารัตน์",
-     lname: "สาระพันธ์",
-     housenb: 506,
-     group: 5,
-     road: "มิตรภาพ",
-     subdistrict: "ศิลา",
-     district: "เมือง",
-     province: "ขอนแก่น",
-     zipcode: "40000",
-     phonenb: '096555542365',
-     age: 20,
-     birthday: '02/05/2004',
-     idcard: '1429900507767',
-     idaccount: '06547855551',
-     position: "อาจารย์",
-     department: "การจัดการ",
-     salary: 20050,
-     stockvalue:1200,
-     office:"สำนักงานธนาคารออมสิ้น",
-     debt:30000,
-     interest:'อัตราต่อปี 26%',
-     guarantee:"ค้ำประกัน รถยนต์",
-     remain:15000,
-     accruedinterest:"ไม่มีดอกเบี้ย",
-     reason:"กู้ยืมเงินเพื่อการประกอบอาชีพ",
-     officerFName: "วีวี่",
-     officerLName: "ยายี",
-     chaimanFName: "พาลี",
-     chaimanLname: "บาลี",
-     directorFName: "ดาดา",
-     directorLName: "กากา",
+      fname: "กัญญารัตน์",               //ชื่อข้าพเจ้า
+     lname: "สาระพันธ์",                //นามสกุล
+     housenb: 506,                    //บ้านเลขที่
+     group: 5,                        //หมู่
+     road: "มิตรภาพ ",                 //ถนน
+     subdistrict: "ศิลา",              //ตำบล
+     district: "เมือง",                //อำเภอ
+     province: "ขอนแก่น",              //  จังหวัด
+     zipcode: "40000",                //รหัสไปรษณี
+     phonenb: '096555542365',         //เบอร์โทร
+     age: 20,                           //อายุ
+     birthday: '02/05/2004',            //วันเกิด
+     idcard: '1429900507767',           //เลขบัตรประชาชน
+     idaccount: '06547855551',          //เลขบัญชีธนาคาร
+     position: "อาจารย์",                //ตำแหน่ง
+     department: "การจัดการ",            //แผนก
+     salary: 20050,                     //เงินเดือน
+     stockvalue:1200,                   //เงินอัตราเดือนละ
+     office:"สำนักงานธนาคารออมสิ้น",      //สำนักงานเงินกู้
+     debt:30000,                        //เงินกู้
+     interest:'อัตราต่อปี 26%',            //อัตราต่อปี
+     guarantee:"ค้ำประกัน รถยนต์",         //สิ่งที่ค้ำประกัน
+     remain:15000,                      //เงินคงเหลือที่ติดหนี้
+     accruedinterest:"ไม่มีดอกเบี้ย",       //ดอกเบี้ย
+     reason:"กู้ยืมเงินเพื่อการประกอบอาชีพ",   //เหตุผลการกู้
+     officerFName: "วีวี่",                //ชื่อเจ้าหน้าที่
+     officerLName: "ยายี",               //นามสกุลเจ้าหน้าที่
+     chaimanFName: "พาลี",               //ชื่อประธาน
+     chaimanLname: "บาลี",               //นามสกุลประธาน
+     directorFName: "ดาดา",             //  ชื่อกรรมการ
+     directorLName: "กากา",             //นามสกุลกรรมการ
      affiliation: "กระทรวงกลาโหม", // สังกัด
      remberRegistration : '12565', // ทะเบียนสมาชิก
-     agency : "ช่างประปา", // หน่วยงาน
-     remaining : "20000" ,// เงินคงเหลือ
-     makepayment : "2000" ,// ชำระเงิน
+     agency : "ช่างประปา",  // หน่วยงาน
+     remaining : "20000" , // เงินคงเหลือ
+     makepayment : "2000" , // ชำระเงิน
       dateReceived: new Date().toISOString(),
     }
   });

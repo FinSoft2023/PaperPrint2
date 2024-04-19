@@ -25,6 +25,8 @@ export default defineEventHandler(async (event) => {
         other: "text",              //อื่นๆ
         fnameInterestedWitness: "ธนงทวย",   //ชื่อพยานผู้มีผลประโยชน์
         lnameInterestedWitness: "คงควรคอย", //นามสกุลพยานผู้มีผลประโยชน์
+        unit: 7,
+        relation: "ลุง",
         dateReceived: new Date().toISOString(),
     }
   });

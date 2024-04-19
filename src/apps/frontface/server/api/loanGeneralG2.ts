@@ -1,6 +1,6 @@
 export default defineEventHandler(async (event) => {
     return {
-     fname: "กัญญารัตน์",               //ชื่อข้าพเจ้า
+      fname: "กัญญารัตน์",               //ชื่อข้าพเจ้า
      lname: "สาระพันธ์",                //นามสกุล
      housenb: 506,                    //บ้านเลขที่
      group: 5,                        //หมู่
@@ -31,6 +31,7 @@ export default defineEventHandler(async (event) => {
      chaimanLname: "บาลี",               //นามสกุลประธาน
      directorFName: "ดาดา",             //  ชื่อกรรมการ
      directorLName: "กากา",             //นามสกุลกรรมการ
+     test: "",
 
       dateReceived: new Date().toISOString(),
     }

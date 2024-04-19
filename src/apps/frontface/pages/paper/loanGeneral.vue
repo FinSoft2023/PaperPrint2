@@ -105,5 +105,5 @@
         lang="ts">
         import Index from '../index.vue';
 
-        const { data } = await useFetch<any>('/api/sampleWithData');
+        const { data } = await useFetch<any>('/api/loanGeneralG2');
 </script>

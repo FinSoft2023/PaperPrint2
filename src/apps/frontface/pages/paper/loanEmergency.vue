@@ -1,12 +1,12 @@
 <template>
     <main>
         <PaperDoc>
-           <!-- กู้ฉุกเฉินหน้า 2 photo1 -->
-
+            สุริยะ  ประจันนวล
         </PaperDoc>
 
         <MorePaperDoc>
-           <!-- กู้ฉุกเฉินหน้า 2 photo2 -->
+           ธงไท ผิวศิริ
+
         </MorePaperDoc>
 
         <MorePaperDoc>

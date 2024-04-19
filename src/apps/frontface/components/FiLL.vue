@@ -1,11 +1,13 @@
 <template>
-  <span class="font-bold">{{ formattedData }}</span>
+  <span :class="{ 'font-bold': !normal }">{{ formattedData }}</span>
 </template>
 
 <script setup lang="ts">
 const props = defineProps<{
   data: any;
   asIs?: boolean;
+  thaiNumber?: boolean;
+  normal?: boolean;
   dateFormat?: "short" | "full";
 }>();
 
@@ -15,7 +17,11 @@ const formattedData = computed(() => {
     return props.data;
   }
   if (typeof props.data == 'number') {
-    return props.data.toLocaleString();
+    const arabicNumber = props.data.toLocaleString();
+    if (props.thaiNumber) {
+      return arabicToThai(arabicNumber);
+    }
+    return arabicNumber;
   }
   if (props.dateFormat && Date.parse(props.data)) {
     return formatDate(props.data, props.dateFormat);
@@ -34,5 +40,12 @@ const formatDate = (date: string, format: string) => {
     return formattedDate.toLocaleDateString('th-TH', { day: '2-digit', month: 'long' }) + ' พ.ศ. ' + bcYear;
   }
   return formattedDate;
+}
+
+// Function to convert the arabic number to Thai number
+const arabicToThai = (arabicNumber: string) => {
+  const arabic = '0123456789';
+  const thai = '๐๑๒๓๔๕๖๗๘๙';
+  return arabicNumber.replace(/[0123456789]/g, (char) => thai[arabic.indexOf(char)]);
 }
 </script>

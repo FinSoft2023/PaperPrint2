@@ -5,7 +5,7 @@
         </PaperDoc>
 
         <MorePaperDoc>
-            <!-- กู้สามัญทั่วไป general2 -->
+           เจษฎา น้อยอาสา 21
         </MorePaperDoc>
         <MorePaperDoc>
             <!-- กู้สามัญทั่วไป general3 -->

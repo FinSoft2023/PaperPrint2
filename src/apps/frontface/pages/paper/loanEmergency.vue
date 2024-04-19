@@ -8,7 +8,7 @@
               <FiLL :data="data?.receivedLocation" />
             </p>
             <p>วันที่
-              <FiLL :data="data?.day"date-format="short" /><FiLL :data="data?.month"date-format="short" /><FiLL :data="data?.year"date-format="short" />
+              <FiLL :data="data?.dayMonthYear"date-format="short" />
             </p>
           </div>
         </div>
@@ -24,7 +24,7 @@
             <p>หนังสือกู้ที่
               <FiLL :data="data?.receivedLocation" />
             </p>
-            <p>วันที่  <FiLL :data="data?.day"date-format="short" /><FiLL :data="data?.month"date-format="short" /><FiLL :data="data?.year"date-format="short" />
+            <p>วันที่  <FiLL :data="data?.dayMonthYear"date-format="short" />
             </p>
             <p>บัญชีเงินกู้ที่
               <FiLL :data="data?.loanAccountNumber" />
@@ -36,7 +36,7 @@
       <p class="font-bold text-xl text-center col-span-2">คำขอและหนังสือกู้เงินเพื่อเหตุฉุกเฉิน</p>
       <div class="flex flex-col items-end mt-3">
         <p>เขียนที่<FiLL :data="data?.receivedLocation" /></p>
-        <p>วันที่  <FiLL :data="data?.day"date-format="short" /><FiLL :data="data?.month"date-format="short" /><FiLL :data="data?.year"date-format="short" />
+        <p>วันที่  <FiLL :data="data?.dayMonthYear"date-format="short" /> 
             </p>
       </div>
 

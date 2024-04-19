@@ -7,12 +7,10 @@ export default defineEventHandler(async (event) => {
     memberNumber: "143520004343",                     //  สมาชิกเลขทะเบียนที่
     location: "แพทย์",                                //  ตำแหน่ง
     affiliation:"โรงพยาบาลเลย",                       //  สังกัด
-    day:"27/",                                         //  วัน
-    month:"ธันวาคม/",                                   //  เดือน
-    year:2567,                                      //  ปี
+    dayMonthYear:"27/ธันวาคม/2567",                    //  วัน / เดือน / ปี
     officer:"สมศัก วันจิตรา",                            //   เจ้าหน้าที่
     usedTo:"การศึกษา",                                //   ใช้เพื่อการดังนี้
-    monthlyIncome: 1000,                            //   จำนวนเงิน
+    monthlyIncome: 1000,                             //   จำนวนเงิน
     intendent: "กรกนก",                              //  ประธาน / รองประธาน / ผู้จัดการ / ผู้ที่ได้ รับมอบหมาย
 
 

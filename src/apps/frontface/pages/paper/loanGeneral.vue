@@ -478,6 +478,105 @@
            
            <!-- กู้สามัญทั่วไป general8  -->
 
+           <div class="grid justify-items-end">
+                <p>เเบบ ส.3/2565</p>
+                </div>
+
+                <div class="grid grid-cols-3 justify-center">
+        <div class="flex items-start mt-6">
+          <div class="border-2 border-black p-2">
+            <p>หนังสือกู้ที่ 
+              <FiLL :data="data?.loanLetterNumber" />
+            </p>
+            <p>ชื่อผู้กู้
+              <FiLL :data="data?.fname" /> <FiLL :data="data?.lname" />
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col items-center">
+          <img class="w-[120px] h-auto"
+            src="https://www.saving-sskh.com/images/logo-saving.png"
+            alt="Logo" />
+        </div>
+
+        <div class="flex flex-col items-end mt-6">
+
+          <div class="border-2 border-black p-2">
+            <p>ทะเบียนผู้ค้ำที่
+              <FiLL :data="data?.loanAccountNumber" />
+            </p>
+            <p>เล่ม <FiLL :data="data?.contract" /> หน้า <FiLL :data="data?.contract" /> </p>
+          </div>
+        </div>
+      </div>
+
+      <p class="font-bold text-xl text-center col-span-2">หนังสือค้ำประกันเงินกู้สามัญ</p>
+      <div class="grid justify-items-center mt-6">
+            <p class="indent-80 text-sm">เขียนที่ <FiLL :data="data?.receivedLocation" /> </p>
+            <p class="indent-80 text-sm">วันที่ <FiLL :data="data?.dateReceived"
+                date-format="short" /> </p>
+            </div>
+            <div class="grid justify-items-start mt-6">
+            <p>เรียน คณะกรรมการดำเนินการสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
+            </div>
+
+            <div class="grid justify-items-start mt-6 " >
+            <p class="indent-10">ข้าพเจ้า <FiLL :data="data?.fname"/> <FiLL :data="data?.lname"/> สมาชิกเลขทะเบียนที่ <FiLL :data="data?.remberRegistration" /> อายุ <FiLL :data="data?.age" /> ปี
+              เป็น [ &nbsp; ] ข้าราชการ/ลูกจ้างประจำ [ &nbsp; ] พนักงานราชการ [ &nbsp; ] พนักงานกระทรวงสาธารณสุข [&nbsp;] ลูกจ้าง
+              [ &nbsp; ] อื่นๆ................................. ตำเเหน่ง <FiLL :data="data?.position" /> สังกัด <FiLL :data="data?.affiliation" />
+              เงินเดือน/เงินประจำตำเเหน่ง <FiLL :data="data?.salary" /> บาท หน่วยงาน <FiLL :data="data?.agency" /> เบอร์โทรภายใน <FiLL :data="data?.phonenb" />
+              ที่อยู่เลขที่ <FiLL :data="data?.housenb" /> หมู่ที่ <FiLL :data="data?.group" /> ถนน <FiLL :data="data?.road" /> ตำบล <FiLL :data="data?.subdistrict" /> อำเภอ <FiLL :data="data?.district" />
+              จังหวัด <FiLL :data="data?.province" /> รหัสไปรษณีย์ <FiLL :data="data?.zipcode" /> เบอร์โทร <FiLL :data="data?.phonenb" /> LINE ID <FiLL :data="data?.idLine" />
+              เสนอคำขอกู้เงินสามัญเพื่อโปรดพิจารณาดังต่อไปนี้
+            </p>
+            <p>1.ข้าพเจ้าขอกู้เงินสามัญทั่วไป จำนวน <FiLL :data="data?.debt" /> บาท(<MoneyText :data="data?.debt" />)</p>
+            <p>2.ข้าพเจ้าจะนำเงินไปใช้ตามวัตถุประสงค์ ดังนี้ (อาจเเนบเอกสารเพื่อประกอบพิจารณาตามวัตถุประสงค์)</p>
+            <p class="indent-10" >[ &nbsp; ] 2.1 เพื่อการอันจำเป็น อันได้เเก่ จัดหาสิ่งจำเป็นสำหรับครอบครัว ,อุปการะเลี้ยงบุคคลในครอบครัว,
+              ปลดเปลื้องหนี้สิ้นของครัวเรือน,รักษาพยาบาลบุคคลในครอบครัว
+            </p>
+            <p class="indent-10" >[ &nbsp; ] 2.2 เพื่อชำระหนี้สหกรณ์ จำนวน <FiLL :data="data?.contract" /> สัญญา ดังนี้
+            </p>
+            <div class="grid grid-cols-2 justify-center">
+              <div class="items-start  text-nowrap">
+                <p class="pl-20" > - เงินกู้สามัญทั่วไป </p>
+                <p class="pl-20"> - เงินกู้สามัญเพื่อพัฒนาคุณภาพชีวิต </p>
+                <p class="pl-20"> - เงินกู้เพื่อเหตุฉุกเฉิน </p>
+                <p class="pl-20"> - เงินกู้สามัญเพื่อการประกอบอาชีพเสริมเพิ่มรายได้ </p>
+                <p class="pl-20"> - เงินกู้พิเศษ </p>
+                <p class="pl-20"> - เงินกู้หุ้น </p>
+              </div>
+              <div class="items-end ">
+                <p class="pl-20">หนังสือกู้เงินที่ <FiLL :data="data?.loanLetterNumber" /> </p>
+                <p class="pl-20">หนังสือกู้เงินที่...................................</p>
+                <p class="pl-20">หนังสือกู้เงินที่...................................</p>
+                <p class="pl-20">หนังสือกู้เงินที่...................................</p>
+                <p class="pl-20">หนังสือกู้เงินที่...................................</p>
+                <p class="pl-20">หนังสือกู้เงินที่...................................</p>
+              </div>
+            </div>
+            </div>
+
+            <div class="grid justify-items-start" >
+            <p class="indent-10" >[ &nbsp; ] 2.3 เพื่อการศึกษาของบุตรหรือสมาชิก
+            </p>
+            <p class="indent-10" >[ &nbsp; ] 2.4 อื่นๆ (ระบุ).......................</p>
+            <p>3. ข้าพเจ้าจะส่งคืนต้นเงินกู้พร้อมดอกเบี้ยในอัตราตามที่สหกรณ์กำหนดให้เเก่สหกรณ์เป็นงวดรายเดือนภายใน
+              วันสิ้นเดือนทั้งนี้ตั้งเเต่งวดประจำเดือน <FiLL :data="data?.mout" /> พ.ศ. <FiLL :data="data?.co" /> เป็นต้นไป
+            </p>
+            <p>4. ข้าพเจ้าต้องถือหุ้นเพิ่มตามสัดส่วนของวงเงินโดยให้สหกรณ์หักจากเงินกู้เป็นจำนวน <FiLL :data="data?.makepayment" /> บาท
+              (<MoneyText :data="data?.debt" />)
+            </p>
+            <p>5. ข้าพเจ้าจะทำหนังสือกู้เงินสำหรับเงินกู้สามัญทั่วไป ให้ไว้ต่อสหกรณ์ตามที่สหกรณ์กำหนด
+            </p>
+            <p>6. (ในกรณีที่ผู้ขอกู้มีคู่สมรสเเล้ว) ในการกู้เงินตามคำขอกู้นี้ ข้าพเจ้าได้รับคำยินยอมจากคู่สมรสเเล้ว เเละได้บันทึกคำยินยอม
+              เป็นหลักการฐานในท้ายหนังสือกู้นี้ด้วย
+            </p>
+            </div>
+            <div class="grid justify-items-end">
+                <p>(โปรดพลิก)</p>
+                </div>
+
+
 </MorePaperDoc>
 <MorePaperDoc>
            

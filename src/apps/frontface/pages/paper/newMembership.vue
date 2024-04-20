@@ -1,7 +1,131 @@
 <template>
     <main>
         <PaperDoc>
-            <p class="text-center" v-for="i in 24">โต้ + ปูน</p>
+            <div>
+                <h1 class="text-2xl text-center font-semibold mb-2 mt-4 underline">สิทธิหน้าที่สมาชิก</h1>
+
+                <div class="mb-2">
+                    <h2 class="text-xl font-semibold mb-2">1.เอกสารที่ต้องใช้ประกอบการสมัครสมาชิกใหม่</h2>
+                    <table class="table-auto text-left mx-auto">
+                        <tr>
+                            <td><span class="text-xl">-</span>สำเนาบัตรประชาชน</td>
+                            <td>จำนวน</td>
+                            <td class="px-10">1</td>
+                            <td class="pr-5">ฉบับ</td>
+                        </tr>
+                        <tr>
+                            <td><span class="text-xl">-</span>สำนักงานบัญชีธนาคารกรุงไทย</td>
+                            <td>จำนวน</td>
+                            <td class="px-10">1</td>
+                            <td class="pr-5">ฉบับ</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"><span class="text-xl">-</span>ต้องมีผู้บังคับบัญชาระดับชำนาญการขึ้นไปลงนามในบัตรลายมือชื่อ</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="mb-2">
+                    <h2 class="text-xl font-semibold mb-2">2.การส่งทุนเข้าร่วมหุ้นรายเดือน</h2>
+                    <table class="table-auto text-center mx-auto border-2">
+                        <thead>
+                            <tr>
+                                <th class="px-4 py-1 border-2">เงินเดือน</th>
+                                <th class="px-4 py-1 border-2" colspan="2">การถือหุ้นรายเดือน(บาท)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="px-4 py-1 border-2">น้อยกว่า 10,000</td>
+                                <td class="px-4 py-1 border-2">ไม่น้อยกว่า</td>
+                                <td class="px-4 py-1 border-2">100</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-1 border-2">10,001-20,000</td>
+                                <td class="px-4 py-1 border-2">ไม่น้อยกว่า</td>
+                                <td class="px-4 py-1 border-2">200</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-1 border-2">20,001-30,000</td>
+                                <td class="px-4 py-1 border-2">ไม่น้อยกว่า</td>
+                                <td class="px-4 py-1 border-2">300</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-1 border-2">30,001-40,000</td>
+                                <td class="px-4 py-1 border-2">ไม่น้อยกว่า</td>
+                                <td class="px-4 py-1 border-2">400</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-1 border-2">40,001 ขึ้นไป</td>
+                                <td class="px-4 py-1 border-2">ไม่น้อยกว่า</td>
+                                <td class="px-4 py-1 border-2">500</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <p class=" pl-2 pr-24 py-2"><span class="font-bold underline">หมายเหตุ</span> ถือหุ้นได้ไม่เกินร้อยละ 30 ของเงินเดือนรวมเงินประจำตำแหน่ง</p>
+                                </td>
+                                
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="mb-2">
+                    <h2 class="text-xl font-semibold mb-2">3.การยื่นกู้ประเภทต่างๆ</h2>
+                    <ul>
+                        <li><span class="text-xl pl-24">-</span> 
+                            กู้ฉุกเฉิน เป็นสมาชิกครบ 6 เดือน สามารถกู้ฉุกเฉินได้ไม่เกินทุนเรือนหุ้นที่ถืออยู่ เช่น ครบ 6 เดือน มีหุ้นจำนวน
+                            6,000 บาท ก็กู้ฉุกเฉินได้ไม่เกิน 6,000 บาท ชำระได้ไม่เกิน 12 งวด
+                        </li>
+                        <li><span class="text-xl pl-24">-</span> 
+                            กู้สามัญ / ผู้พิเศษต้องเป็นสมาชิก 3 เดือน สามารถกู้ได้ตามระเบียบเงินกู้
+                        </li>
+                        <li><span class="text-xl pl-24">-</span> 
+                            กู้สามัญ (กู้หุ้น) เป็นสมาชิกครบ 1 ปี สามารถกู้หุ้นได้ การกู้หุ้น ต้องไม่มีหนี้สามัญหรือพิเศษมากกว่าหุ้นที่ถืออยู่
+                            ณ ตอนนั้น เพราะกู้หุ้นคือการกู้สามัญ จะมีการหักกลบลบหนี้เดิมทั้งสามัญหรือพิเศษ และฉุกเฉินให้หมด กู้หุ้นได้ไม่เกิน
+                            90% ของทุนเรือนหุ้นที่มีอยู่ในสหกรณ์
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mb-2">
+                    <h2 class="text-xl font-semibold mb-2">4.สิทธิประโยชน์อื่นๆ</h2>
+                    <ul>
+                        <li><span class="text-xl pl-24">-</span> 
+                            ทุนสวัสติการเพื่อสมาชิก กรณีบิดา มารดา คู่สมรส บุตรที่ยังไม่บรรสุนิติภาวะเสียชีวิต สมาชิกจะได้รับเงินสงเคราะห์ศพ
+                        </li>
+                        <li><span class="text-xl pl-24">-</span> 
+                            ทุนสวัสดิการเพื่อสมาชิก กรณีสมาชิกเสียชีวิต ทายาทจะได้รับเงินสงเคราะห์ศพ
+                        </li>
+                        <li><span class="text-xl pl-24">-</span> 
+                            ทุนสวัสดิการเพื่อสมาชิก กรณีเกษียณอายุราชการแล้วลาออกจากสหกรณ์ฯ
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mb-2">
+                    <h2 class="text-xl font-semibold mb-2">5.ข้อควรปฏิบัติ</h2>
+                    <p><span class="pl-24">-</span> 
+                        หากสมาชิกเงินเดือนติตลบ หรือเคยติดลบ ต้องตรวจสอบข้อมูลที่สหกรณ์ออมทรัพย์ฯ ก่อนวันสิ้นเดือน เพือนำ
+                        จ่ายให้กับสหกรณ์ออมทรัพย์ให้เสร็จก่อนวันสิ้นเดือน เป็นการรักษาสิทธิ์ในการรับ เงินเฉลี่ยคืน (เงินเฉลี่ยคืน คือ
+                        เงินจากดอกเบี้ยเงินกู้สะสมตลอดทั้งปีที่เราจ่ายให้กับสหกรณ์ออมทรัพย์ฯ จะนำมาคำนวณในวันสิ้นปีงบประมาณตามมติ
+                        ที่ประชุมใหญ่ ในการจัดสรรกำไรสุทธิ)
+                    </p>
+                </div>
+
+                <div class="mb-2">
+                    <p><span class="font-bold">6.สมาชิกที่เปลี่ยนแปลงข้อมูล</span> ต้องนำเอกสารแจ้งการเปลี่ยนแปลงข้อมูลไปยังสหกรณ์ออมทรัพย์ด้วย</p>
+                </div>
+
+                <div class="mb-2">
+                    <h2 class="text-xl font-semibold mb-2"></h2>
+                    <p>
+                        <span class="font-bold">7.เบอร์โทรศัพท์</span> สหกรณ์ออมทรัพย์ฯ โทรสายนอก 045-61 1394 โทรภายใน 3773 , 3883
+                        ช่องทางออนไลน์ ID Line : @rbe7329c เว็บไซต์ : www.saving-sskh.com
+                        Facebook : กลุ่มสมาชิกสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด
+                    </p>
+                </div>
+            </div>
         </PaperDoc>
 
         <MorePaperDoc>

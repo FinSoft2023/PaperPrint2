@@ -263,6 +263,8 @@
         </MorePaperDoc>
 
         <MorePaperDoc>
+                        <!-- กู้สามัญทั่วไป general6  -->
+
             <div class="flex flex-col items-center mt-10">
         <img class="w-[120px] h-auto"
           src="https://www.saving-sskh.com/images/logo-saving.png"
@@ -277,7 +279,7 @@
     <div class="grid justify-items-center ">
       <p class="indent-80">สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
       <p class="indent-80">วันที่ <FiLL :data="data?.dateReceived"
-                date-format="short" /> </p>
+                date-format="full" /> </p>
     </div>
     <div class="grid justify-items-start mt-6">
       <p>เรียน คณะกรรมการดำเนินการสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>

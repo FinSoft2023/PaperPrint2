@@ -49,9 +49,9 @@
               </div>
             </div>
       
-      <div class="grid justify-items-center mt-44">
-            <p class="indent-80 text-sm">เขียนที่ <FiLL :data="data?.receivedLocation" /> </p>
-            <p class="indent-80 text-sm">วันที่ <FiLL :data="data?.dateReceived"
+      <div class="grid justify-items mt-44">
+            <p class="ml-96 text-sm text-end">เขียนที่ <FiLL :data="data?.receivedLocation" /> </p>
+            <p class="mr-44 text-sm text-end">วันที่ <FiLL :data="data?.dateReceived"
                 date-format="short" /> </p>
             </div>
             <div class="grid justify-items-start mt-6">
@@ -110,7 +110,7 @@
               เป็นหลักการฐานในท้ายหนังสือกู้นี้ด้วย
             </p>
             </div>
-            <div class="grid justify-items-end">
+            <div class="grid justify-items-end mt-16">
                 <p>(โปรดพลิก)</p>
                 </div>
 
@@ -522,7 +522,121 @@
         <MorePaperDoc>
            
            <!-- กู้สามัญทั่วไป general8  -->
+           <div class="grid justify-items-end">
+                <p>เเบบ ส.3/2565</p>
+                </div>
 
+                <div class="grid grid-cols-3 justify-center">
+        <div class="flex items-start mt-4">
+          <div class="border-2 border-black p-2">
+            <p>หนังสือกู้ที่ 
+              <FiLL :data="data?.loanLetterNumber" />
+            </p>
+            <p>ชื่อผู้กู้
+              <FiLL :data="data?.fname" /> <FiLL :data="data?.lname" />
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col items-center">
+          <img class="w-[120px] h-auto"
+            src="https://www.saving-sskh.com/images/logo-saving.png"
+            alt="Logo" />
+            <p class="mt-2 font-bold text-xl text-center col-span-2">หนังสือค้ำประกันเงินกู้สามัญ</p>
+        </div>
+
+        <div class="flex flex-col items-end mt-4">
+
+          <div class="border-2 border-black p-2">
+            <p>ทะเบียนผู้ค้ำที่
+              <FiLL :data="data?.loanAccountNumber" />
+            </p>
+            <p>เล่ม <FiLL :data="data?.contract" /> หน้า <FiLL :data="data?.contract" /> </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid justify mt-2">
+            <p class="indent-80 text-sm text-end">เขียนที่ <FiLL :data="data?.receivedLocation" /> </p>
+            <p class="mr-44 text-sm text-end">วันที่ <FiLL :data="data?.dateReceived"
+                date-format="short" /> </p>
+            </div>
+
+            <div class="grid justify-items-start mt-2 text-base " >
+            <p class="indent-10">ข้าพเจ้า <FiLL :data="data?.fname"/> <FiLL :data="data?.lname"/> สมาชิกเลขทะเบียนที่ <FiLL :data="data?.remberRegistration" /> อายุ <FiLL :data="data?.age" /> ปี
+              เลขประจำตัวประชาชน [ &nbsp; ]-[ &nbsp; ][ &nbsp; ][ &nbsp; ][ &nbsp; ]-[ &nbsp; ][ &nbsp; ][ &nbsp; ][ &nbsp; ][ &nbsp; ]-[ &nbsp; ][ &nbsp; ]-[ &nbsp; ] ปรากฏตามสำเนาบัตรที่เเนบท้ายนี้
+              เป็น [ &nbsp; ] ข้าราชการ/ลูกจ้างประจำ [ &nbsp; ] พนักงานราชการ [ &nbsp; ] พนักงานกระทรวงสาธารณสุข [&nbsp;] ลูกจ้าง
+              [ &nbsp; ] อื่นๆ................................. ตำเเหน่ง <FiLL :data="data?.position" /> สังกัด <FiLL :data="data?.affiliation" />
+              เงินเดือน/เงินประจำตำเเหน่ง <FiLL :data="data?.salary" /> บาท หน่วยงาน <FiLL :data="data?.agency" /> เบอร์โทรภายใน <FiLL :data="data?.phonenb" />
+              ที่อยู่เลขที่ <FiLL :data="data?.housenb" /> หมู่ที่ <FiLL :data="data?.group" /> ถนน <FiLL :data="data?.road" /> ตำบล <FiLL :data="data?.subdistrict" /> อำเภอ <FiLL :data="data?.district" />
+              จังหวัด <FiLL :data="data?.province" /> รหัสไปรษณีย์ <FiLL :data="data?.zipcode" /> เบอร์โทร <FiLL :data="data?.phonenb" />
+            </p>
+            <p>ข้าพเจ้าทำหนังฉบับนี้ให้เเก่สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด เลขที่ 859 ถนนกสิกรรม ตำบลเมืองใต้ อำเภอเมือง จังหวัดศรีสะเกษ 33000 
+              ซึ่งต่อไปนี้เรียกว่า “ สหกรณ์ ” เพื่อเป็นหลักฐานดังต่อไปนี้
+            </p>
+            <p class="indent-10" >ข้อ 2. ถ้าผู้กู้ผิดนัดชำระหนี้ต่อสหกรณ์ ข้าพเจ้ายอมชำระหนี้ให้สหกรณ์สำหรับหนี้เงินกู้ตามข้อ 1. จำนวนที่ค้างชำระรวมทั้งดอกเบี้ย
+              เเละค่าสินไหมทดเเทน ตลอดจนค่าภาระติดพันอันเป็นอุปกรณ์เเหน่งหนี้นั้นด้วย
+            </p>
+            <p class="indent-10" >ข้อ 3. เมื่อผู้กู้ผิดนัดชำระหนี้ ให้สหกรณ์มีหนังสือบอกกล่าวเเก่ข้าพเจ้า ณ บ้านเลขที่ <FiLL :data="data?.housenb" /> หมู่ที่ <FiLL :data="data?.group" /> ถนน <FiLL :data="data?.road" /> ตำบล <FiLL :data="data?.subdistrict" /> 
+              อำเภอ <FiLL :data="data?.district" /> จังหวัด <FiLL :data="data?.province" /> รหัสไปรษณีย์ <FiLL :data="data?.zipcode" /> เบอร์โทร <FiLL :data="data?.phonenb" />
+              หรือตามที่ข้าพเจ้าได้เเจ้งเปลี่ยนเเปลงให้สหกรณ์ทราบภายหลัง
+            </p>
+            <p class="indent-10" >ข้อ 4. ถ้ามีการเปลี่ยนแปลงสถานที่บอกกล่าวโดยที่ข้าพเจ้าไม่แจ้งให้สหกรณ์ทราบ หากสหกรณ์ได้มีหนังสือบอกกล่าว ณ สถานที่
+              ตามข้อ 3. ข้าพเจ้ามิอาจปฏิเสธหรือโต้แย้งใดๆว่าหนังสือบอกกล่าวยังไปไม่ถึงหรือปฏิเสธว่าสหกรณ์ยังไม่มีหนังสือบอกกล่าวข้าพเจ้า
+            </p>
+            <p class="indent-10" >ข้อ 5. ข้าพเจ้ายอมรับผูกพันว่าการออกจากการเป็นสมาชิกสหกรณ์ของผู้กู้ ไม่ว่าเพราะเหตุใดๆ ไม่เป็นเหตุให้ข้าพเจ้าหลุดพ้นจากการค้ำประกันรายนี้ จนกว่าผู้กู้ที่ข้าพเจ้าค้ำประกันไว้นี้จะได้ให้สมาชิกอื่นซึ่งคณะกรรมการดำเนินการของสหกรณ์เห็นสมควรเข้าเป็นผู้ค้ำ
+              ประกันแทนข้าพเจ้า
+            </p>
+            <p class="indent-10" >ข้อ 6. เมื่อสหกรณ์ได้แจ้งให้ข้าพเจ้าทราบว่า ข้าพเจ้าต้องชำระหนี้ให้แก่สหกรณ์เมื่อผู้กู้ไม่ชำระหนี้ ข้าพเจ้ายินยอมให้ผู้บังคับบัญชาของข้าพเจ้าหรือหัวหน้าการเงินของหน่วยงานที่ข้าพเจ้าสังกัดผู้จ่ายเงินเดือน เงินบำเหน็จเงินบำนาญ หรือเงินได้อื่นๆ หักเงินได้ดังกล่าวของ
+              ข้าพเจ้าเพื่อส่งต่อให้สหกรณ์ รวมทั้งยินยอมให้สหกรณ์ใช้สิทธิยึดหน่วงทรัพย์สินใดๆที่ข้าพเจ้าพึงได้รับจากสหกรณ์ ได้แก่ เงินค่าหุ้น เงินปันผลเงินเฉลี่ยคืน เงินฝากและเงินอื่นๆซึ่งอยู่ในการครอบครองของสหกรณ์ไว้เพื่อรอชำระหนี้ หรือเพื่อใช้ชำระหนี้เมื่อผู้กู้ไม่ชำระ
+            </p>
+            <p class="indent-10" >ข้อ 7. ข้าพเจ้าได้ทำหนังสือยินยอมให้ผู้บังคับบัญชาหักเงินได้รายเดือนและเงินอื่นใดของข้าพเจ้ามอบไว้ให้สหกรณ์ เพื่อแสดงต่อหน่วยงานต้นสังกัดของข้าพเจ้าหักเงิน ณ ที่จ่ายให้สหกรณ์ และคำยินยอมนี้ให้มีตลอดไปจนกว่าสหกรณ์จะได้รับชำระหนี้จนสิ้นเชิง
+              การทำหนังสือค้ำประกันฉบับนี้ข้าพเจ้าพิจารณาไตร่ตรองโดยรอบคอบและสมัครใจเป็นผู้ค้ำประกัน ข้าพเจ้าทราบและเข้าใจดีแล้วว่าต้องรับผิดต่อสหกรณ์ในฐานะเป็นผู้ค้ำประกันถ้าผู้กู้ผิดนัดชำระหนี้ ดังนั้น เพื่อเป็นหลักฐานจึงลงลายมือชื่อพร้อมกับพยานไว้เป็นหลักฐาน
+            </p>
+            <div class="grid grid-cols-2 justify-center mt-8">
+              <div class="items-start  text-nowrap">
+                <tr>
+                    <td class="text-left pl-14  ">(ลงชื่อ).................................................ผู้ค้ำประกัน
+                    </td>
+                    </tr>
+                    <tr>
+                    <td class="text-center ">(<FiLL :data="data?.paymentFname" /> <FiLL :data="data?.paymentLname" />)
+                    </td>
+                    </tr>
+                    <tr>
+
+                    <td class="text-left pl-14  ">(ลงชื่อ).................................................พยาน(สมาชิก)
+                    </td>
+                    </tr>
+                    <tr>
+                    <td class="text-center ">(<FiLL :data="data?.paymentFname" /> <FiLL :data="data?.paymentLname" />)
+                    </td>
+                    </tr>
+              </div>
+              <div class="items-end ">
+                <tr>
+                    <td class="text-left  ">(ลงชื่อ).................................................คู่สมรส(ผู้ค้ำ)ให้คำยินยอม
+                    </td>
+                    </tr>
+                    <tr>
+                    <td class="pl-24 ">(<FiLL :data="data?.paymentFname" /> <FiLL :data="data?.paymentLname" />)
+                    </td>
+                    </tr>
+                    
+                    <tr>
+                    <td class="text-left  ">(ลงชื่อ).................................................พยาน (เจ้าหน้าที่สหกรณ์)
+                    </td>
+                    </tr>
+                    <tr>
+                    <td class="pl-24 ">(<FiLL :data="data?.paymentFname" /> <FiLL :data="data?.paymentLname" />)
+                    </td>
+                    </tr>
+              </div>
+            </div>
+            </div>
+
+            <div class="grid justify-items-end my-8">
+                <p>(โปรดพลิก)</p>
+                </div>
 </MorePaperDoc>
 <MorePaperDoc>
            

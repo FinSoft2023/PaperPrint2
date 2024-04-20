@@ -40,6 +40,7 @@ export default defineEventHandler(async (event) => {
      reason:"กู้ยืมเงินเพื่อการประกอบอาชีพ",   //เหตุผลการกู้
      mout: "มกราคม",                    //เดือนกู้
      co: "2566",                        //พศ.ปีกู้
+     contract: "1",                     //สัญญา
      
      idaccount: '06547855551',          //เลขบัญชีธนาคาร
      bank: 'ออมสิน',                     //ชื่อธนาคาร

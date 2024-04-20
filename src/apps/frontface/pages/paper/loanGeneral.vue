@@ -599,7 +599,7 @@
                     </td>
                     </tr>
                     <tr>
-                    <td class="text-center ">(<FiLL :data="data?.paymentFname" /> <FiLL :data="data?.paymentLname" />)
+                    <td class="text-center ">(........................................................)
                     </td>
                     </tr>
                     <tr>
@@ -608,7 +608,7 @@
                     </td>
                     </tr>
                     <tr>
-                    <td class="text-center ">(<FiLL :data="data?.paymentFname" /> <FiLL :data="data?.paymentLname" />)
+                      <td class="text-center ">(........................................................)
                     </td>
                     </tr>
               </div>
@@ -618,7 +618,7 @@
                     </td>
                     </tr>
                     <tr>
-                    <td class="pl-24 ">(<FiLL :data="data?.paymentFname" /> <FiLL :data="data?.paymentLname" />)
+                    <td class="pl-6 ">(........................................................)
                     </td>
                     </tr>
                     
@@ -627,7 +627,7 @@
                     </td>
                     </tr>
                     <tr>
-                    <td class="pl-24 ">(<FiLL :data="data?.paymentFname" /> <FiLL :data="data?.paymentLname" />)
+                    <td class="pl-24 ">(<FiLL :data="data?.officerFName" /> <FiLL :data="data?.officerLName" />)
                     </td>
                     </tr>
               </div>

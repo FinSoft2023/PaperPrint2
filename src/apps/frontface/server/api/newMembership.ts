@@ -10,7 +10,7 @@ export default defineEventHandler(async (event) => {
         canton: "โนนสูง",            //อำเภอ
         province: "โนนไกล",         //จังหวัด
         phoneNo: "0987654231",      //เบอร์โทร
-        position: "แพทย์",          //ตำแหน่ง  
+        position: "ลูกจ้างประจำ",          //ตำแหน่ง  
         memberNumber: "69696969",   //เลขทะเบียนสมาชิก
         zipCode: "42150",           //รหัสไปรษณี
         age: 29,                    //อายุ
@@ -19,14 +19,22 @@ export default defineEventHandler(async (event) => {
         birthYear: "2538",          //ปีเกิด
         idenNumber: "1929300028581",    //เลขประจำตัวประชาชน
         bankAccountNumber: "8767656542",    //เลขบัญชีธนาคาร
-        depart: "ฉุกเฉิน",            //แผนก
-        monthlyMoney: 35000,        //เงินเดือน
-        mothlyPayment: 10000,       //จ่ายรายเดือน
-        other: "text",              //อื่นๆ
+        depart: "ผู้ป่วยนอก",            //แผนก
+        monthlyMoney: 16000,        //เงินเดือน
+        mothlyPayment: 5000,       //จ่ายรายเดือน
+        office:"สำนักงานธนาคารกรุงไทย",      //สำนักงานเงินกู้
+        debt:20000,                        //เงินกู้
+        annualRate:'อัตราต่อปี 22%',            //อัตราต่อปี
+        guarantee:"ค้ำประกัน รถยนต์",         //สิ่งที่ค้ำประกัน
+        remain:11000,                      //เงินคงเหลือที่ติดหนี้
+        interest:"ไม่มีดอกเบี้ย",          //ดอกเบี้ย
+        reason:"กู้ยืมเงินเพื่อการประกอบอาชีพ",   //เหตุผลการกู้
         fnameInterestedWitness: "ธนงทวย",   //ชื่อพยานผู้มีผลประโยชน์
         lnameInterestedWitness: "คงควรคอย", //นามสกุลพยานผู้มีผลประโยชน์
         unit: 7,                    //หน่วย
         relation: "ลุง",             //ความสัมพันธ์
+        
+
         dateReceived: new Date().toISOString(),
     }
   });

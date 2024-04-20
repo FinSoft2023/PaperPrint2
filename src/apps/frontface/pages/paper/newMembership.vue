@@ -239,7 +239,7 @@
                             ได้ทราบข้อบังคับของสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด โดยตลอดแล้ว เห็นชอบในวัตถุประสงค์ จึงขอสมัครเข้าเป็นสมาชิกของสหกรณ์ฯ ในฐานะเป็นผู้เข้าซื้อขอจดทะเบียนสหกรณ์ฯ และขอให้ถ้อยคำเป็นหลักฐาน ดังต่อไปนี้.-
                         </p>
                         <p class="indent-20">
-                            ข้อ 1. ข้าพเจ้ามีอายุ <FiLL :data="data?.age" />ปี ( เกิดวันที่ <FiLL :data="data?.birthDay" /> เดือน <FiLL :data="data?.birthMonth" /> พ.ศ <FiLL :data="data?.birthYear" /> )เลขประจำตัวประชาชน <FiLL :data="data?.idenNumber" /> เลขที่บัญชีธนาคารกรุงไทย <FiLL :data="data?.bankAccountNumber" /> 
+                            ข้อ 1. ข้าพเจ้ามีอายุ <FiLL :data="data?.age" /> ปี ( เกิดวันที่ <FiLL :data="data?.birthDay" /> เดือน <FiLL :data="data?.birthMonth" /> พ.ศ <FiLL :data="data?.birthYear" /> )เลขประจำตัวประชาชน <FiLL :data="data?.idenNumber" /> เลขที่บัญชีธนาคารกรุงไทย <FiLL :data="data?.bankAccountNumber" /> 
                         </p>
                         <p class="indent-20">
                             ข้อ 2. ข้าพเจ้าเป็นข้าราชการ/ลูกจ้างประจำ/ พนักงานราชการ/พนักงานกระทรวงสาธารณสุข(ตามวุฒิ)/พนักงานกระทรวงสาธารณสุข/ลูกจ้างชั่วคราวเงินบำรุง (ตามวุฒิ)
@@ -255,7 +255,7 @@
                         หลักประกันที่ให้ไว้ จำนวนต้นเงินคงเหลือ จำนวนดอกเบี้ยค้างชำระและเป็นหนี้สินเพื่อการใดให้ครบทุกรายการ)
                         อย่างน้อยต้องเป็นไปตามอัตราซึ่งกำหนดไว้ในหนังสือขี้ชวน แต่ถ้าจะแสดงความจำนงสูงกว่าอัตราที่กำหนดไว้ก็ย่อมเป็นการดี</p>
                         <p class="pl-36">
-                            1. <FiLL :data="data?.office" /> <FiLL :data="data?.debt" /> <FiLL :data="data?.interest" /> <FiLL :data="data?.guarantee" /> <FiLL :data="data?.remain" /> <FiLL :data="data?.accruedinterest" /> <FiLL :data="data?.reason" />
+                            1. <FiLL :data="data?.office" /> <FiLL :data="data?.debt" /> <FiLL :data="data?.annualRate" /> <FiLL :data="data?.guarantee" /> <FiLL :data="data?.remain" /> <FiLL :data="data?.interest" /> <FiLL :data="data?.reason" />
                         </p>
                         <p class="pl-36">
                             2. .................................................................................................................................................

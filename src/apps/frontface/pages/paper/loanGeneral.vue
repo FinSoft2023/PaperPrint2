@@ -563,7 +563,7 @@
 
             <div class="grid justify-items-start mt-2 text-base " >
             <p class="indent-10">ข้าพเจ้า <FiLL :data="data?.fname"/> <FiLL :data="data?.lname"/> สมาชิกเลขทะเบียนที่ <FiLL :data="data?.remberRegistration" /> อายุ <FiLL :data="data?.age" /> ปี
-              เลขประจำตัวประชาชน [ &nbsp; ]-[ &nbsp; ][ &nbsp; ][ &nbsp; ][ &nbsp; ]-[ &nbsp; ][ &nbsp; ][ &nbsp; ][ &nbsp; ][ &nbsp; ]-[ &nbsp; ][ &nbsp; ]-[ &nbsp; ] ปรากฏตามสำเนาบัตรที่เเนบท้ายนี้
+              เลขประจำตัวประชาชน <FiLL :data="data?.idcard" /> ปรากฏตามสำเนาบัตรที่เเนบท้ายนี้
               เป็น [ &nbsp; ] ข้าราชการ/ลูกจ้างประจำ [ &nbsp; ] พนักงานราชการ [ &nbsp; ] พนักงานกระทรวงสาธารณสุข [&nbsp;] ลูกจ้าง
               [ &nbsp; ] อื่นๆ................................. ตำเเหน่ง <FiLL :data="data?.position" /> สังกัด <FiLL :data="data?.affiliation" />
               เงินเดือน/เงินประจำตำเเหน่ง <FiLL :data="data?.salary" /> บาท หน่วยงาน <FiLL :data="data?.agency" /> เบอร์โทรภายใน <FiLL :data="data?.phonenb" />

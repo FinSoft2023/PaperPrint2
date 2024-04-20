@@ -511,9 +511,9 @@
       </div>
 
       <p class="font-bold text-xl text-center col-span-2">หนังสือค้ำประกันเงินกู้สามัญ</p>
-      <div class="grid justify-items-center mt-6">
-            <p class="indent-80 text-sm">เขียนที่ <FiLL :data="data?.receivedLocation" /> </p>
-            <p class="indent-80 text-sm">วันที่ <FiLL :data="data?.dateReceived"
+      <div class="grid justify-items-end mt-6">
+            <p class="text-sm">เขียนที่ <FiLL :data="data?.receivedLocation" /> </p>
+            <p class="text-sm mr-44">วันที่ <FiLL :data="data?.dateReceived"
                 date-format="short" /> </p>
             </div>
             <div class="grid justify-items-start mt-6">

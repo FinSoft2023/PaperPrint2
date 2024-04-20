@@ -134,7 +134,7 @@
         <p class="font-semibold text-sm underline underline-offset-1">ข้าพเจ้าขอรับรองว่า ขณะนี้ไม่อยู่ในระหว่างการถูกสอบสวนหรือต้องโทษทางวินัย และไม่อยู่ระหว่างการขอลาออกจากงานหรือโอนย้ายหน่วยงาน และข้าพเจ้ายินยอมปฏิบัติตามหลักเกณฑ์และเงื่อนไขที่กำหนอดทุกประการ
         </p><br>
         <p class="font-semibold text-lg text-center">บันทึกคำเสนอค้ำประกัน</p>
-        <p class="text-base tracking-tight text-center">ข้าพเจ้าผู้มีชื่อต่อไปนี้ ได้อ่านและเข้าใจจึงยินยอมผูกพันตนที่จะค้ำประกันตามคำขอกู้นี้ จึงลงลสยมือชื่อไว้เป็นสำคัญ</p>
+        <p class="text-base tracking-tight text-center">ข้าพเจ้าผู้มีชื่อต่อไปนี้ ได้อ่านและเข้าใจจึงยินยอมผูกพันตนที่จะค้ำประกันตามคำขอกู้นี้ จึงลงลายมือชื่อไว้เป็นสำคัญ</p>
 
 
         <div class="flex flex-col ml-10 text-start">
@@ -272,7 +272,7 @@
     <div class="grid justify-items-start mt-6">
       <p>เรียน คณะกรรมการดำเนินการสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
     </div>
-    <div class="grid justify-items-start mt-6 text-pretty ">
+    <div class="grid justify-items-start mt-6 text-pretty text-base  ">
       <p class="indent-20 ">ข้าพเจ้า <FiLL :data="data?.mename"/> บ้านเลขที่ <FiLL :data="data?.housenb" /> หมู่ที่ <FiLL :data="data?.group" /> ถนน <FiLL :data="data?.road" /> ตำบล <FiLL :data="data?.subdistrict" />
           อำเภอ <FiLL :data="data?.district" /> จังหวัด <FiLL :data="data?.province" /> รหัสไปรษณีย์ <FiLL :data="data?.zipcode" /> เบอร์โทรศัพท์ <FiLL :data="data?.phonenb" />
           ได้ทราบข้อบังคับของสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด โดยตลอดเเล้ว เห็นชอบในวัตถุประสงค์ จึงขอสมัครเข้าเป็นสมาชิกของสหกรณ์ฯ ในฐานะเป็นผู้เข้าซื้อขอจดทะเบียนสหกรณ์ฯ เเละขอให้ถ้อยคำเป็นหลักฐาน ดังต่อไปนี้.-
@@ -302,17 +302,161 @@
       <p class="indent-20">ข้อ 6. ถ้าข้าพเจ้าได้เป็นสมาชิก ข้าพเจ้ามีความประสงค์ขอกู้เงินสหกรณ์ฯ เพื่อชำระหนี้ซึ่ง
         ข้าพเจ้ามีอยู่ดังกล่าวในข้อ 5 นั้น ข้าพเจ้าขอชี้แจงเหตุผลดังต่อไปนี้
       </p>
-      <p class="indent-20 break-all flex"><FiLL :data="data?.reason" /></p>
-      <p class="indent-20">ข้อ 7. ถ้าข้าพเจ้าได้เป็นสมาชิก ข้าพเจ้ายินยอมและขอร้องให้ผู้บังคับบัญชา หรือเจ้าหน้าที่
+      <p class="indent-20 break-all flex mt-2"><FiLL :data="data?.reason" /></p>
+      <p class="indent-20 mt-2">ข้อ 7. ถ้าข้าพเจ้าได้เป็นสมาชิก ข้าพเจ้ายินยอมและขอร้องให้ผู้บังคับบัญชา หรือเจ้าหน้าที่
         จ่ายเงินได้รายเดือนของข้าพเจ้าเมื่อได้รับมอบหมายจากสหกรณ์ฯ โปรดหักจำนวนเงินค่าหุ้นรายเดือนและ
         จำนวนเงินงวดชำระหนี้ ข้าพเจ้าต้องส่งต่อสหกรณ์ฯ นั้น จากเงินเดือนของข้าพเจ้าเมื่อจ่ายเพื่อส่งต่อให้
         สหกรณ์ฯ ด้วย
       </p>
     </div>
         </MorePaperDoc>
-
+        
 
         <MorePaperDoc>
+
+          <div class="grid justify-items-start mt-6 text-pretty text-base ">
+          <p class="indent-20">ข้อ 8. ข้าพเจ้าได้ทำหนังสือยินยอมให้ผู้บังคับบัญชาหักเงินได้รายเดือนเเละเงินได้อื่นๆ จำนวน 3 ฉบับ มอบไว้ให้
+            สหกรณ์ หน่วยงานต้นสังกัด เเละสำหรับข้าพเจ้าเก็บไว้เป็ยหนักฐาน
+          </p>
+          <p class="indent-20">ข้าพเจ้าได้อ่านข้อความในหนังสือกู้เงินนี้โดยตลอดเเล้วเห็นว่าถูกต้อง จึงได้ลงลายมือชื่อไว้เป็นสำคัญต่อหน้าพยาน
+          </p>
+
+          <div class="grid grid-cols-2 justify-center mt-6">
+              <div class="items-start  text-nowrap">
+                <tr>
+                <td class="text-left pl-24 ">(ลงชื่อ).................................................ผู้กู้
+                </td>
+                </tr>
+                <tr>
+                <td class="text-center pl-16 ">(<FiLL :data="data?.fname" /> <FiLL :data="data?.lname" />)
+                </td>
+                </tr>
+                
+                <tr>
+                <td class="text-left pl-24 ">(ลงชื่อ).................................................คู่สมรสผู้กู้
+                </td>
+                </tr>
+                <tr>
+                <td class="text-center pl-16 ">(<FiLL :data="data?.spouseFName" /> <FiLL :data="data?.lname" />)
+                </td>
+                </tr>
+
+              </div>
+              <div class="items-end ">
+                
+                <tr>
+                <td class="text-left pl-6 ">(ลงชื่อ).................................................พยาน(สมาชิก)
+                </td>
+                </tr>
+                <tr>
+                <td class="text-left pl-16">(................................................)
+                </td>
+                </tr>
+
+                <tr>
+                <td class="text-left pl-6 ">(ลงชื่อ).................................................พยาน(สมาชิก)
+                </td>
+                </tr>
+                <tr>
+                <td class="text-left pl-16">(................................................)
+                </td>
+                </tr>
+
+              </div>
+            </div>
+            <div class="grid grid-cols-2 justify-center mt-6">
+              <div class="items-start  text-nowrap">
+
+                <tr>
+                <td class="text-left pl-24 ">(ลงชื่อ).................................................เจ้าหน้าที่สหกรณ์
+                </td>
+                </tr>
+                <tr>
+                <td class="text-center ">(<FiLL :data="data?.officerFName" /> <FiLL :data="data?.officerLName" />)
+                </td>
+                </tr>
+
+                <tr>
+                <td class="text-left pl-24 ">(ลงชื่อ).................................................ประธานกรรมการเงินกู้
+                </td>
+                </tr>
+                <tr>
+                <td class="text-center ">(<FiLL :data="data?.chaimanFName" /> <FiLL :data="data?.chaimanLname" />)
+                </td>
+                </tr>
+
+                <tr>
+                <td class="text-left pl-24 ">(ลงชื่อ).................................................กรรมการผู้จักการ
+                </td>
+                </tr>
+                <tr>
+                <td class="text-center ">(<FiLL :data="data?.directorFName" /> <FiLL :data="data?.directorLName" />)
+                </td>
+                </tr>
+
+                </div>
+                </div>
+
+                <div class="grid grid-cols-1  justify-center mt-10 h-26">
+                <div class="items-start text-nowrap ">
+                  <div class="border-2 border-black pr-96 px-8 ">
+                    <p class="text-sm font-semibold">หมายเหตุ</p>
+                    <p class="text-sm">1.โปรดกรอกข้อมูลให้ถูกต้องครบถ้วย โดยไม่ต้องลงวันที่</p>
+                    <p class="text-sm ">2.ให้สมาชิกสหกรณ์เป็นพยานลายมือชื่อผู้กู้ <span class="font-semibold">ยกเว้นผู้ค้ำประกันเป็นพยานไม่ได้</span></p>
+                    <p class="text-sm mb-2">3.เงินกู้ตามสัญญานี้อาจมีผลผูกพันให้คู่สมรสเป็นลูกหนี้ร่วมกันกับผู้กู้ตาม ม.1490 ประมวลกฏหมายเเพ่งเเละพาณิชย์</p>
+                  </div>
+                </div>
+                </div>
+
+                <p class="indent-20 mt-8">ข้าพเจ้า <FiLL :data="data?.fname" /> <FiLL :data="data?.lname" /> ได้รับเงินกู้จำนวน <FiLL :data="data?.debt" /> บาท
+                  (<MoneyText :data="data?.debt" />)ตามหนังสือกู้เงินสำหรับเงินกู้สามัญทั่วไปนี้เป็นการถูกต้องเเล้ว
+                  ณ วันที่ <FiLL :data="data?.dateReceived"
+                date-format="short" />
+                </p>
+                <div class="grid grid-cols-3 justify-center mt-6">
+                    <div></div>
+                    <div class="items-start  text-nowrap">
+
+                    <tr>
+                    <td class="text-left pl-24 ">(ลงชื่อ).................................................ผู้รับเงิน
+                    </td>
+                    </tr>
+                    <tr>
+                    <td class="text-center ">(<FiLL :data="data?.officerFName" /> <FiLL :data="data?.officerLName" />)
+                    </td>
+                    </tr>
+
+                    <tr>
+                    <td></td> 
+                    </tr>
+
+                    <tr>
+                    <td></td> 
+                    </tr>
+
+                    <tr>
+                    <td></td> 
+                    </tr>
+                    
+                    <tr>
+                    <td></td> 
+                    </tr>
+
+                    <tr>
+                    <td class="text-left pl-24  ">(ลงชื่อ).................................................เจ้าหน้าที่ผู้จ่ายเงิน
+                    </td>
+                    </tr>
+                    <tr>
+                    <td class="text-center ">(<FiLL :data="data?.chaimanFName" /> <FiLL :data="data?.chaimanLname" />)
+                    </td>
+                    </tr>
+
+                    </div>
+                </div>
+
+                
+
+        </div>
 
           
         </MorePaperDoc>

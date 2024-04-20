@@ -14,9 +14,9 @@ export default defineEventHandler(async (event) => {
         memberNumber: "69696969",   //เลขทะเบียนสมาชิก
         zipCode: "42150",           //รหัสไปรษณี
         age: 29,                    //อายุ
-        birthday: "22",             //วันเกิด
-        birthmonth: "ธันวาคม",       //เดือนเกิด
-        birthyear: "2538",          //ปีเกิด
+        birthDay: "22",             //วันเกิด
+        birthMonth: "ธันวาคม",       //เดือนเกิด
+        birthYear: "2538",          //ปีเกิด
         idenNumber: "1929300028581",    //เลขประจำตัวประชาชน
         bankAccountNumber: "8767656542",    //เลขบัญชีธนาคาร
         depart: "ฉุกเฉิน",            //แผนก
@@ -25,8 +25,8 @@ export default defineEventHandler(async (event) => {
         other: "text",              //อื่นๆ
         fnameInterestedWitness: "ธนงทวย",   //ชื่อพยานผู้มีผลประโยชน์
         lnameInterestedWitness: "คงควรคอย", //นามสกุลพยานผู้มีผลประโยชน์
-        unit: 7,
-        relation: "ลุง",
+        unit: 7,                    //หน่วย
+        relation: "ลุง",             //ความสัมพันธ์
         dateReceived: new Date().toISOString(),
     }
   });

@@ -477,7 +477,6 @@
         <MorePaperDoc>
            
            <!-- กู้สามัญทั่วไป general8  -->
-
            <div class="grid justify-items-end">
                 <p>เเบบ ส.3/2565</p>
                 </div>
@@ -575,8 +574,6 @@
             <div class="grid justify-items-end">
                 <p>(โปรดพลิก)</p>
                 </div>
-
-
 </MorePaperDoc>
 <MorePaperDoc>
            

@@ -256,7 +256,7 @@
     <div class="flex flex-col items-center mt-32">
     <tr>
       <td class="text-center">(ลงชื่อ).................................................ผู้กู้<br>
-        (<FiLL :data="data?.officerFName" /> <FiLL :data="data?.officerLName" />)
+        (<FiLL :data="data?.fname" /> <FiLL :data="data?.lname" />)
       </td>
     </tr>
     </div>
@@ -325,6 +325,7 @@
         
 
         <MorePaperDoc>
+          <!-- กู้สามัญทั่วไป general7  -->
 
           <div class="grid justify-items-start mt-6 text-pretty text-base ">
           <p class="indent-20">ข้อ 8. ข้าพเจ้าได้ทำหนังสือยินยอมให้ผู้บังคับบัญชาหักเงินได้รายเดือนเเละเงินได้อื่นๆ จำนวน 3 ฉบับ มอบไว้ให้
@@ -434,7 +435,7 @@
                     </td>
                     </tr>
                     <tr>
-                    <td class="text-center ">(<FiLL :data="data?.officerFName" /> <FiLL :data="data?.officerLName" />)
+                    <td class="text-center ">(<FiLL :data="data?.fname" /> <FiLL :data="data?.lname" />)
                     </td>
                     </tr>
 
@@ -472,6 +473,35 @@
 
           
         </MorePaperDoc>
+
+        <MorePaperDoc>
+           
+           <!-- กู้สามัญทั่วไป general8  -->
+
+</MorePaperDoc>
+<MorePaperDoc>
+           
+           <!-- กู้สามัญทั่วไป general9  -->
+           <div class="border-solid border-2 border-slate-950 ">
+<br>
+<p class="text-center text-lg font-semibold ">บันทึกให้คำยินยอมของคู่สมรสผู้ค้ำประกัน</p> <br>
+<p class=" text-base pl-96">เขียนที่ &nbsp;&nbsp; <FiLL :data="data?.receivedLocation" /> &nbsp;</p>
+<p class=" text-base pl-96">วันที่ &nbsp;&nbsp; <FiLL :data="data?.dateReceived" date-format="short"/> </p><br>
+<p class=" text-base pl-8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ข้าพเจ้า &nbsp;&nbsp; <FiLL :data="data?.fname" /> <FiLL :data="data?.lname" /> 
+  &nbsp; อายุ <FiLL :data="data?.age" /> ปี อยู่บ้านเลขที่ <FiLL :data="data?.housenb" /> หมู่ที่ <FiLL :data="data?.group" /> ถนน <FiLL :data="data?.road" /> ตำบล <FiLL :data="data?.subdistrict" />  
+  <br>อำเภอ <FiLL :data="data?.district" /> จังหวัด <FiLL :data="data?.province" /> ขอทำความยินยอมให้ (นาย/นาง/นางสาว) <FiLL :data="data?.fname" /> <FiLL :data="data?.lname" /> ซึ่งเป็นคู่สมรสของข้าพเจ้าโดยถูกต้องตามกฎหมาย
+มีอำนาจทำนิติกรรมทุกชนิดกับสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด และให้ถือเสมือนหนึ่งเป็นการกระทำของข้าพเจ้า เพื่อเป็นหลักฐานแห่งการยินยอมนี้ ข้าพเจ้าได้ลงลายมือชื่อไว้เป็นสำคัญต่อหน้าพยานผู้มีนามข้างท้ายนี้
+</p>
+<p class="text-base pl-80">(ลงชื่อ)............................................................คู่สมรสผู้ให้ความยินยอม</p>
+<p class="text-base pl-96">( <FiLL :data="data?.spouseFName" /> <FiLL :data="data?.lname" /> )</p>
+<p class="text-base pl-80">(ลงชื่อ)............................................................พยาน(สมาชิก)</p>
+<p class="text-base pl-96">(.............................................................)</p>
+<p class="text-base pl-80">(ลงชื่อ)............................................................พยาน(สมาชิก)</p>
+<p class="text-base pl-96">(.............................................................)</p>
+<br><br>
+           </div>
+</MorePaperDoc>
+
     </main>
 </template>
 <script setup

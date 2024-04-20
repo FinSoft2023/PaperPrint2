@@ -163,7 +163,9 @@
           <div class="flex justify-center font-bold text-xl mt-2">(สำหรับเจ้าหน้าที่ของสหกรณ์)</div>
           <div class="flex justify-center mt-3">
             <div>
-              <p>จำนวนเงินกู้..................................................................บาท</p>
+              <p>จำนวนเงินกู้ <FiLL :data="data?.load"date-format="short" /> บาท
+                
+              </p>
   
             </div>
           </div>
@@ -209,20 +211,24 @@
               <tr class="bg-white dark:bg-gray-800">
                 <th scope="row"
                   class="px-6 py-8 font-medium text-gray-900 whitespace-nowrap dark:text-white border-r border-b border-black">
-  
+                  <FiLL :data="data?.monthlyIncome"date-format="short" />
                 </th>
   
                 <td class="px-6 py-8 border-b border-r border-black ">
+                  <FiLL :data="data?.monthlyIncome"date-format="short" />
   
                 </td>
                 <td class="px-6 py-8 border-b border-r border-black ">
-  
+                  <FiLL :data="data?.monthlyIncome"date-format="short" />
+
                 </td>
                 <td class="px-6 py-8 border-b border-r border-black ">
-  
+                  <FiLL :data="data?.monthlyIncome"date-format="short" />
+
                 </td>
                 <td class="px-6 py-8 border-b border-r border-black ">
-  
+                  <FiLL :data="data?.monthlyIncome"date-format="short" />
+
                 </td>
   
               </tr>
@@ -259,9 +265,7 @@
   
           <div class="text-md mt-2">
   
-            <div class="ml-20">๒.
-              ข้อชี้แจงอื่นๆ....................................................................................................................
-            </div>
+            <div class="ml-20">๒.ข้อชี้แจงอื่นๆ <FiLL :data="data?.monthlyIncome"date-format="short" /></div>
           </div>
   
           <div class="flex justify-center mt-3">
@@ -277,7 +281,7 @@
   
           </div>
           <p class="indent-20 break-all mt-3">
-            ............................................................................................................................เจ้าหน้าที่
+            เจ้าหน้าที่  <FiLL :data="data?.officer"date-format="short" />
   
           </p>
   
@@ -295,7 +299,7 @@
   
           </div>
           <p class="indent-20 break-all mt-3">
-            ................................................................................ประธาน / รองประธาน /
+            <FiLL :data="data?.intendent"date-format="short" />  ประธาน / รองประธาน /
             ผู้จัดการ / ผู้ที่ได้
             รับมอบหมาย
   
@@ -350,8 +354,8 @@
   
   
           <p class="indent-20 break-all ">ข้าพเจ้า
-            ..................................................................................ได้รับเงินกู้
-            จำนวน.........................................บาท
+            <FiLL :data="data?.fname" />  <FiLL :data="data?.lname" />ได้รับเงินกู้
+            จำนวน<FiLL :data="data?.load" />บาท
           </p>
   
           <p class="">

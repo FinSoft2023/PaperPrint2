@@ -225,10 +225,11 @@
                     *********************************
                 </p>
                 <div class="flex flex-col items-end mt-3">
-                    <div class="grid justify-end mt-5 mb-5 text-center">
+                    <div class="grid justify-end mt-5 mb-5 ">
                         <div class="items-center mr-10">
-                            <p>เขียนที่ สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
-                            <p>วันที่ .................. เดือน ................. พ.ศ. ................ </p>
+                            <p class="text-center">เขียนที่ สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
+                            
+                            <p> วันที่ <FiLL :data="data?.dateReceived"date-format="full" /> </p>
                         </div>
                     </div>
                 </div>
@@ -307,10 +308,10 @@
                     <p class="text-center font-bold">สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
                     <div>
                         <div class="flex flex-col items-end mt-3">
-                            <div class="grid justify-end mt-5 mb-5 text-center">
+                            <div class="grid justify-end mt-5 mb-5 ">
                                 <div class="items-center mr-10">
-                                    <p>เขียนที่ สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
-                                    <p>วันที่ .................. เดือน ................. พ.ศ. ................ </p>
+                                    <p class="text-center">เขียนที่ สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
+                                    <p> วันที่ <FiLL :data="data?.dateReceived"date-format="full" /> </p>
                                 </div>
                             </div>
                         </div>
@@ -411,10 +412,10 @@
                     <p class="text-center font-bold">สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
                     <div>
                         <div class="flex flex-col items-end mt-3">
-                            <div class="grid justify-end mt-5 mb-5 text-center">
+                            <div class="grid justify-end mt-5 mb-5 ">
                                 <div class="items-center mr-10">
-                                    <p>เขียนที่ สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
-                                    <p>วันที่ .................. เดือน ................. พ.ศ. ................ </p>
+                                    <p class="text-center">เขียนที่ สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
+                                    <p> วันที่ <FiLL :data="data?.dateReceived"date-format="full" /> </p>
                                 </div>
                             </div>
                         </div>
@@ -515,14 +516,15 @@
                 <p class=" text-xl text-center col-span-2">สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
                 <div class="flex flex-col items-end mt-3">
                     <div class="grid justify-end mt-5 mb-5">
-                        <div class="items-center mr-10">
-                            <p>เขียนที่ 
+                        <div class="mr-10">
+                            <p class="items-center">เขียนที่ 
                                 <span class="ml-2">สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</span> 
                                 <p class="ml-14">0859 ถนนกสิกรรม ตำบลเมืองใต้</p> 
                                 <p class="ml-14">อำเภอเมือง จังหวัดศรีสะเกษ 33000</p> 
                             </p>
-                            <p>วันที่ .................. เดือน ................. พ.ศ. ................ </p>
+                            
                         </div>
+                        <p class="mt-4"> วันที่ <FiLL :data="data?.dateReceived"date-format="full" /> </p> 
                     </div>
                 </div>
         

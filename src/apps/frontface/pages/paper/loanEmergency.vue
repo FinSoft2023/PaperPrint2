@@ -69,7 +69,7 @@
       </div>
 
 
-      <div class="mt-1 flex flex-col ml-10">
+      <div class="flex flex-col ml-10">
         <p>ข้อ ๒. ถ้าข้าพเจ้าได้รับเงินกู้ ข้าพเจ้าขอส่งเงินกู้คืน ดังนี้
         </p>
       </div>
@@ -78,7 +78,7 @@
         <LineFiLL :data="data?.repaymentPlan"
           :limit="12">
           <template #data="{ index, item }">
-            <p class="text-left">(
+            <p class="text-end">(
               <FiLL :data="index"
                 thai-number
                 normal />)
@@ -373,18 +373,18 @@
   
           <div class="">
   
-            <p class="mt-4 text-center ml-1">................................................................ผู้รับเงิน</p>
-            <p class=" text-center ml -0">(<FiLL :data="data?.fname" />  <FiLL :data="data?.lname" />)</p>
-            <p class="text-xs mr-8 text-center ml-10">ต้องลงลายมือชื่อในการรับเงินต่อหน้าเจ้าหน้าที่ของสหกรณ์</p>
+            <p class="mt-4">................................................................ผู้รับเงิน</p>
+            <p >(<FiLL :data="data?.fname" />  <FiLL :data="data?.lname" />)</p>
+            <p class="text-xs mr-8">ต้องลงลายมือชื่อในการรับเงินต่อหน้าเจ้าหน้าที่ของสหกรณ์</p>
   
           </div>
   
         </div>
         <p class="mt-4 text-right">
-          จ่ายเงินถูกต้องแล้ว......................................................เจ้าหน้าที่การเงิน
+          จ่ายเงินถูกต้องแล้ว........................................................................เจ้าหน้าที่การเงิน
         </p>
-        <p class="mt-4 text-right mr-40">
-          (<FiLL :data="data?.officer"date-format="short" />)</p>
+        <p class="mt-4 text-right mr-20">
+          (....................................................................................)</p>
       </MorePaperDoc>
    
   </main>

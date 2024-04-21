@@ -227,7 +227,7 @@
                 <div class="flex flex-col items-end mt-3">
                     <div class="grid justify-end mt-5 mb-5 text-center">
                         <div class="items-center mr-10">
-                            <p>สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
+                            <p>เขียนที่ สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
                             <p>วันที่ .................. เดือน ................. พ.ศ. ................ </p>
                         </div>
                     </div>
@@ -305,11 +305,11 @@
                 <div class="mt-2">
                     <p class="text-center font-bold">หนังสือยินยอมให้ส่วนราชการหักเงินชำระหนี้</p>
                     <p class="text-center font-bold">สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
-                    <div class="text-sm">
+                    <div>
                         <div class="flex flex-col items-end mt-3">
                             <div class="grid justify-end mt-5 mb-5 text-center">
                                 <div class="items-center mr-10">
-                                    <p>สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
+                                    <p>เขียนที่ สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
                                     <p>วันที่ .................. เดือน ................. พ.ศ. ................ </p>
                                 </div>
                             </div>
@@ -409,11 +409,11 @@
                 <div class="mt-2">
                     <p class="text-center font-bold">หนังสือยินยอมให้ส่วนราชการหักเงินชำระหนี้</p>
                     <p class="text-center font-bold">สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
-                    <div class="text-sm">
+                    <div>
                         <div class="flex flex-col items-end mt-3">
                             <div class="grid justify-end mt-5 mb-5 text-center">
                                 <div class="items-center mr-10">
-                                    <p>สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
+                                    <p>เขียนที่ สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
                                     <p>วันที่ .................. เดือน ................. พ.ศ. ................ </p>
                                 </div>
                             </div>

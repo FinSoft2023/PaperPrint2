@@ -5,7 +5,7 @@
                 <h1 class="text-2xl text-center font-semibold mb-2 mt-4 underline">สิทธิหน้าที่สมาชิก</h1>
 
                 <div class="mb-2">
-                    <h2 class="text-xl font-semibold mb-2">1.เอกสารที่ต้องใช้ประกอบการสมัครสมาชิกใหม่</h2>
+                    <p class="font-semibold mb-1">1.เอกสารที่ต้องใช้ประกอบการสมัครสมาชิกใหม่</p>
                     <table class="table-auto text-left ml-24">
                         <tr>
                             <td><span class="text-xl">-</span>สำเนาบัตรประชาชน</td>
@@ -26,7 +26,7 @@
                 </div>
 
                 <div class="mb-2">
-                    <h2 class="text-xl font-semibold mb-2">2.การส่งทุนเข้าร่วมหุ้นรายเดือน</h2>
+                    <p class="font-semibold mb-1">2.การส่งทุนเข้าร่วมหุ้นรายเดือน</p>
                     <table class="table-auto text-center mx-auto border-2">
                         <thead>
                             <tr>
@@ -71,7 +71,7 @@
                 </div>
 
                 <div class="mb-2">
-                    <h2 class="text-xl font-semibold mb-2">3.การยื่นกู้ประเภทต่างๆ</h2>
+                    <p class="font-semibold mb-1">3.การยื่นกู้ประเภทต่างๆ</p>
                     <ul>
                         <li><span class="text-xl pl-24">-</span> 
                             กู้ฉุกเฉิน เป็นสมาชิกครบ 6 เดือน สามารถกู้ฉุกเฉินได้ไม่เกินทุนเรือนหุ้นที่ถืออยู่ เช่น ครบ 6 เดือน มีหุ้นจำนวน
@@ -89,7 +89,7 @@
                 </div>
 
                 <div class="mb-2">
-                    <h2 class="text-xl font-semibold mb-2">4.สิทธิประโยชน์อื่นๆ</h2>
+                    <p class="font-semibold mb-1">4.สิทธิประโยชน์อื่นๆ</p>
                     <ul>
                         <li><span class="text-xl pl-24">-</span> 
                             ทุนสวัสติการเพื่อสมาชิก กรณีบิดา มารดา คู่สมรส บุตรที่ยังไม่บรรสุนิติภาวะเสียชีวิต สมาชิกจะได้รับเงินสงเคราะห์ศพ
@@ -104,7 +104,7 @@
                 </div>
 
                 <div class="mb-2">
-                    <h2 class="text-xl font-semibold mb-2">5.ข้อควรปฏิบัติ</h2>
+                    <p class="font-semibold mb-1">5.ข้อควรปฏิบัติ</p>
                     <p><span class="pl-24">-</span> 
                         หากสมาชิกเงินเดือนติตลบ หรือเคยติดลบ ต้องตรวจสอบข้อมูลที่สหกรณ์ออมทรัพย์ฯ ก่อนวันสิ้นเดือน เพือนำ
                         จ่ายให้กับสหกรณ์ออมทรัพย์ให้เสร็จก่อนวันสิ้นเดือน เป็นการรักษาสิทธิ์ในการรับ เงินเฉลี่ยคืน (เงินเฉลี่ยคืน คือ
@@ -114,13 +114,16 @@
                 </div>
 
                 <div class="mb-2">
-                    <p><span class="font-bold">6.สมาชิกที่เปลี่ยนแปลงข้อมูล</span> ต้องนำเอกสารแจ้งการเปลี่ยนแปลงข้อมูลไปยังสหกรณ์ออมทรัพย์ด้วย</p>
+                    <p>
+                        <span class="font-bold">6.สมาชิกที่เปลี่ยนแปลงข้อมูล</span> 
+                        ต้องนำเอกสารแจ้งการเปลี่ยนแปลงข้อมูลไปยังสหกรณ์ออมทรัพย์ด้วย
+                    </p>
                 </div>
 
                 <div class="mb-2">
-                    <h2 class="text-xl font-semibold mb-2"></h2>
                     <p>
-                        <span class="font-bold">7.เบอร์โทรศัพท์</span> สหกรณ์ออมทรัพย์ฯ โทรสายนอก 045-61 1394 โทรภายใน 3773 , 3883
+                        <span class="font-bold">7.เบอร์โทรศัพท์</span> 
+                        สหกรณ์ออมทรัพย์ฯ โทรสายนอก 045-61 1394 โทรภายใน 3773 , 3883
                         ช่องทางออนไลน์ ID Line : @rbe7329c เว็บไซต์ : www.saving-sskh.com
                         Facebook : กลุ่มสมาชิกสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด
                     </p>

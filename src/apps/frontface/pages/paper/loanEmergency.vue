@@ -74,22 +74,22 @@
         </p>
       </div>
 
-      <div class="flex flex-col ml-10">
+      <div class="flex flex-col ml-10 text-center ">
         <LineFiLL :data="data?.repaymentPlan"
           :limit="12">
           <template #data="{ index, item }">
-            <p class="text-left">(
+            <p>(
               <FiLL :data="index"
                 thai-number
                 normal />)
-              ภายในวันสิ้นเดือน...
-              <FiLL :data="item.m" />..ต้นเงิน..
-              <FiLL :data="item.amount" />...บาท
+              ภายในวันสิ้นเดือน
+              <FiLL :data="item.m" /> ต้นเงิน
+              <FiLL :data="item.amount" /> บาท
               พร้อมด้วยดอกเบี้ย
             </p>
           </template>
           <template #default="{ index }">
-            <p class="text-end">(
+            <p>(
               <FiLL :data="index"
                 thai-number
                 normal />)

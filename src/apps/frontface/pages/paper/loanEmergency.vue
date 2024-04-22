@@ -74,26 +74,30 @@
         </p>
       </div>
 
-  <div class="flex flex-col ml-10 text-center my-4">
-  <LineFiLL :data="data?.repaymentPlan" :limit="12">
-    <template #data="{ index, item }">
-      <p class="space-x-2">
-        (<FiLL :data="index" thai-number normal no-line/>) 
-        ภายในวันสิ้นเดือน <FiLL :data="item.m"  class="min-w-28" />
-        ต้นเงิน <FiLL :data="item.amount" class="min-w-28" />   บาท 
-        <span class="ml-4">พร้อมด้วยดอกเบี้ย</span>
-      </p>
-    </template>
-    <template #default="{ index }">
-      <p class="space-x-2">
-        (<FiLL :data="index" thai-number normal />) 
-        ภายในวันสิ้นเดือน................................................ 
-        <span class="ml-4">ต้นเงิน.......................................................บาท</span> 
-        <span class="ml-4">พร้อมด้วยดอกเบี้ย</span>
-      </p>
-    </template>
-  </LineFiLL>
-</div>
+      <div class="flex flex-col ml-10">
+        <LineFiLL :data="data?.repaymentPlan"
+          :limit="12">
+          <template #data="{ index, item }">
+            <p class="text-center">(
+              <FiLL :data="index"
+                thai-number normal no-line/>)
+              ภายในวันสิ้นเดือน
+              <FiLL :data="item.m" class="min-w-36" />ต้นเงิน
+              <FiLL :data="item.amount" class="min-w-36" />บาท
+              พร้อมด้วยดอกเบี้ย
+            </p>
+          </template>
+          <template #default="{ index }">
+            <p class="text-end">(
+              <FiLL :data="index"
+                thai-number
+                normal />)
+              ภายในวันสิ้นเดือน................................................ต้นเงิน.......................................................บาท
+              พร้อมด้วยดอกเบี้ย
+            </p>
+          </template>
+        </LineFiLL>
+      </div>
 
 
 
@@ -277,7 +281,7 @@
   
           </div>
           <p BlankSpace class="min-w-50 ml-28 break-all mt-3">
-            เจ้าหน้าที่  <FiLL :data="data?.officer"date-format="short" class="min-w-36"/>
+            เจ้าหน้าที่  <FiLL :data="data?.officer"date-format="short" class="min-w-28"/>
   
           </p>
   

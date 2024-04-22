@@ -406,7 +406,7 @@
                 </td>
                 </tr>
                 <tr>
-                <td class="text-center pl-16 ">(<FiLL :data="data?.fname" class="min-w-20"/> <FiLL :data="data?.lname" class="min-w-20"/>)
+                <td class="text-center pl-16 ">(<FiLL class="min-w-40" :data="`${data?.fname}  ${data?.lname}`"/>)
                 </td>
                 </tr>
                 
@@ -416,7 +416,7 @@
                 </tr>
                 <tr>
                   <div class="text-center pl-16">
-                    (<FiLL :data="data?.spouseFName" class="min-w-20" /> <FiLL :data="data?.lname" class="min-w-20" />)<br>
+                    (<FiLL class="min-w-40" :data="`${data?.spouseFName}  ${data?.lname}`"/>)<br>
         </div><br>
                 
                 </tr>
@@ -453,7 +453,7 @@
                 </tr>
                 <tr>
                   <div class="ps-32">
-                    (<FiLL :data="data?.officerFName" class="min-w-20" /> <FiLL :data="data?.officerLName" class="min-w-20" />)<br>
+                    (<FiLL class="min-w-40" :data="`${data?.officerFName}  ${data?.officerLName}`"/>)<br>
     
         </div><br>
                 </tr>
@@ -464,7 +464,7 @@
                 </tr>
                 <tr>
                   <div class="ps-32">
-                    (<FiLL :data="data?.chaimanFName" class="min-w-20" /> <FiLL :data="data?.chaimanLname" class="min-w-20" />)<br>
+                    (<FiLL class="min-w-40" :data="`${data?.chaimanFName}  ${data?.chaimanLname}`"/>)<br>
         </div><br>
                 </tr>
 
@@ -474,7 +474,7 @@
                 </tr>
                 <tr>
                   <div class="ps-32">
-                    (<FiLL :data="data?.directorFName" class="min-w-20" /> <FiLL :data="data?.directorLName" class="min-w-20" />)<br>
+                    (<FiLL class="min-w-40" :data="`${data?.directorFName}  ${data?.directorLName}`"/>)<br>
         </div><br>
 
                 </tr>
@@ -493,22 +493,21 @@
                 </div>
                 </div>
 
-                <p class="indent-20 mt-8">ข้าพเจ้า <FiLL :data="data?.fname" /> <FiLL :data="data?.lname" /> ได้รับเงินกู้จำนวน <FiLL :data="data?.debt" /> บาท
+                <p class="mt-16"><span class="ml-10">ข้าพเจ้า </span><FiLL class="min-w-32" :data="`${data?.fname}  ${data?.lname}`"/>ได้รับเงินกู้จำนวน <FiLL class="min-w-20" :data="`${data?.debt}`"/> บาท
                   (<MoneyText :data="data?.debt" />)ตามหนังสือกู้เงินสำหรับเงินกู้สามัญทั่วไปนี้เป็นการถูกต้องเเล้ว
-                  ณ วันที่ <FiLL :data="data?.dateReceived"
-                date-format="full" />
+                  ณ วันที่ <FiLL :data="`${data?.dateReceived}`" date-format="full" />
                 </p>
                 <div class="grid grid-cols-3 justify-center mt-6">
                     <div></div>
                     <div class="items-start  text-nowrap">
 
                     <tr>
-                    <td class="text-left pl-24 ">(ลงชื่อ).................................................ผู้รับเงิน
+                    <td class="text-left pl-24 ">(ลงชื่อ)...................................................ผู้รับเงิน
                     </td>
                     </tr>
                     <tr>
-                      <div class="ps-32">
-                        (<FiLL :data="data?.fname" class="min-w-20" /> <FiLL :data="data?.lname" class="min-w-20" />)<br>
+                      <div class="pl-32">
+                        (<FiLL class="min-w-48" :data="`${data?.fname}  ${data?.lname}`"/>)<br>
 
         </div><br>
                     </tr>
@@ -530,12 +529,12 @@
                     </tr>
 
                     <tr>
-                    <td class="text-left pl-24  ">(ลงชื่อ).................................................เจ้าหน้าที่ผู้จ่ายเงิน
+                    <td class="text-left pl-24  ">(ลงชื่อ)...................................................เจ้าหน้าที่ผู้จ่ายเงิน
                     </td>
                     </tr>
                     <tr>
                       <div class="ps-32">
-                        (<FiLL :data="data?.paymentFname" class="min-w-20" /> <FiLL :data="data?.paymentLname" class="min-w-20" />)<br>
+                        (<FiLL class="min-w-48" :data="`${data?.paymentFname}  ${data?.paymentLname}`"/>)<br>
         </div><br>
                     </tr>
 
@@ -560,10 +559,10 @@
         <div class="flex items-start mt-4">
           <div class="border-2 border-black p-2">
             <p>หนังสือกู้ที่ 
-              <FiLL :data="data?.loanLetterNumber" />
+              <FiLL class="min-w-24" :data="data?.loanLetterNumber" />
             </p>
             <p>ชื่อผู้กู้
-              <FiLL :data="data?.fname" /> <FiLL :data="data?.lname" />
+              <FiLL class="min-w-32" :data="`${data?.fname}  ${data?.lname}`"/>
             </p>
           </div>
         </div>
@@ -578,9 +577,9 @@
 
           <div class="border-2 border-black p-2">
             <p>ทะเบียนผู้ค้ำที่
-              <FiLL :data="data?.loanAccountNumber" />
+              <FiLL class="min-w-16" :data="data?.loanAccountNumber" />
             </p>
-            <p>เล่ม <FiLL :data="data?.contract" /> หน้า <FiLL :data="data?.contract" /> </p>
+            <p>เล่ม <FiLL class="min-w-12" :data="data?.contract" /> หน้า <FiLL class="min-w-12" :data="data?.contract" /> </p>
           </div>
         </div>
       </div>
@@ -592,34 +591,34 @@
             </div>
 
             <div class="grid justify-items-start  text-base " >
-            <p class="indent-10">ข้าพเจ้า <FiLL :data="data?.fname"/> <FiLL :data="data?.lname"/> สมาชิกเลขทะเบียนที่ <FiLL :data="data?.remberRegistration" /> อายุ <FiLL :data="data?.age" /> ปี
-              เลขประจำตัวประชาชน <FiLL :data="data?.idcard" /> ปรากฏตามสำเนาบัตรที่เเนบท้ายนี้
+            <p ><span class="ml-10">ข้าพเจ้า </span><FiLL class="min-w-40" :data="`${data?.fname}  ${data?.lname}`"/> สมาชิกเลขทะเบียนที่ <FiLL class="min-w-28" :data="data?.remberRegistration" /> อายุ <FiLL class="min-w-28" :data="data?.age" /> ปี
+              เลขประจำตัวประชาชน <FiLL class="min-w-44" :data="data?.idcard" /> ปรากฏตามสำเนาบัตรที่เเนบท้ายนี้
               เป็น <FiLLBox :checked="data?.monthlyIncome > 500" /> ข้าราชการ/ลูกจ้างประจำ <FiLLBox /> พนักงานราชการ <FiLLBox /> พนักงานกระทรวงสาธารณสุข <FiLLBox /> ลูกจ้าง
-              <FiLLBox /> อื่นๆ................................. ตำเเหน่ง <FiLL :data="data?.position" /> สังกัด <FiLL :data="data?.affiliation" />
-              เงินเดือน/เงินประจำตำเเหน่ง <FiLL :data="data?.salary" /> บาท หน่วยงาน <FiLL :data="data?.agency" /> เบอร์โทรภายใน <FiLL :data="data?.phonenb" />
-              ที่อยู่เลขที่ <FiLL :data="data?.housenb" /> หมู่ที่ <FiLL :data="data?.group" /> ถนน <FiLL :data="data?.road" /> ตำบล <FiLL :data="data?.subdistrict" /> อำเภอ <FiLL :data="data?.district" />
-              จังหวัด <FiLL :data="data?.province" /> รหัสไปรษณีย์ <FiLL :data="data?.zipcode" /> เบอร์โทร <FiLL :data="data?.phonenb" />
+              <FiLLBox /> อื่นๆ................................. ตำเเหน่ง <FiLL class="min-w-28" :data="data?.position" /> สังกัด <FiLL class="min-w-44" :data="data?.affiliation" />
+              เงินเดือน/เงินประจำตำเเหน่ง <FiLL class="min-w-28" :data="data?.salary" /> บาท หน่วยงาน <FiLL class="min-w-28" :data="data?.agency" /> เบอร์โทรภายใน <FiLL class="min-w-28" :data="data?.phonenb" />
+              ที่อยู่เลขที่ <FiLL class="min-w-20" :data="data?.housenb" /> หมู่ที่ <FiLL class="min-w-10" :data="data?.group" /> ถนน <FiLL class="min-w-28" :data="data?.road" /> ตำบล <FiLL class="min-w-28" :data="data?.subdistrict" /> อำเภอ <FiLL class="min-w-28" :data="data?.district" />
+              จังหวัด <FiLL class="min-w-28" :data="data?.province" /> รหัสไปรษณีย์ <FiLL class="min-w-28" :data="data?.zipcode" /> เบอร์โทร <FiLL class="min-w-36" :data="data?.phonenb" />
             </p>
             <p>ข้าพเจ้าทำหนังฉบับนี้ให้เเก่สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด เลขที่ 859 ถนนกสิกรรม ตำบลเมืองใต้ อำเภอเมือง จังหวัดศรีสะเกษ 33000 
               ซึ่งต่อไปนี้เรียกว่า “ สหกรณ์ ” เพื่อเป็นหลักฐานดังต่อไปนี้
             </p>
-            <p class="indent-10" >ข้อ 2. ถ้าผู้กู้ผิดนัดชำระหนี้ต่อสหกรณ์ ข้าพเจ้ายอมชำระหนี้ให้สหกรณ์สำหรับหนี้เงินกู้ตามข้อ 1. จำนวนที่ค้างชำระรวมทั้งดอกเบี้ย
+            <p><span class="ml-10">ข้อ 2.</span> ถ้าผู้กู้ผิดนัดชำระหนี้ต่อสหกรณ์ ข้าพเจ้ายอมชำระหนี้ให้สหกรณ์สำหรับหนี้เงินกู้ตามข้อ 1. จำนวนที่ค้างชำระรวมทั้งดอกเบี้ย
               เเละค่าสินไหมทดเเทน ตลอดจนค่าภาระติดพันอันเป็นอุปกรณ์เเหน่งหนี้นั้นด้วย
             </p>
-            <p class="indent-10" >ข้อ 3. เมื่อผู้กู้ผิดนัดชำระหนี้ ให้สหกรณ์มีหนังสือบอกกล่าวเเก่ข้าพเจ้า ณ บ้านเลขที่ <FiLL :data="data?.housenb" /> หมู่ที่ <FiLL :data="data?.group" /> ถนน <FiLL :data="data?.road" /> ตำบล <FiLL :data="data?.subdistrict" /> 
-              อำเภอ <FiLL :data="data?.district" /> จังหวัด <FiLL :data="data?.province" /> รหัสไปรษณีย์ <FiLL :data="data?.zipcode" /> เบอร์โทร <FiLL :data="data?.phonenb" />
+            <p ><span class="ml-10">ข้อ 3.</span> เมื่อผู้กู้ผิดนัดชำระหนี้ ให้สหกรณ์มีหนังสือบอกกล่าวเเก่ข้าพเจ้า ณ บ้านเลขที่ <FiLL class="min-w-20" :data="data?.housenb" /> หมู่ที่ <FiLL class="min-w-10" :data="data?.group" /> ถนน <FiLL class="min-w-28" :data="data?.road" /> ตำบล <FiLL class="min-w-28" :data="data?.subdistrict" /> 
+              อำเภอ <FiLL class="min-w-28" :data="data?.district" /> จังหวัด <FiLL class="min-w-28" :data="data?.province" /> รหัสไปรษณีย์ <FiLL class="min-w-28" :data="data?.zipcode" /> เบอร์โทร <FiLL class="min-w-36" :data="data?.phonenb" />
               หรือตามที่ข้าพเจ้าได้เเจ้งเปลี่ยนเเปลงให้สหกรณ์ทราบภายหลัง
             </p>
-            <p class="indent-10" >ข้อ 4. ถ้ามีการเปลี่ยนแปลงสถานที่บอกกล่าวโดยที่ข้าพเจ้าไม่แจ้งให้สหกรณ์ทราบ หากสหกรณ์ได้มีหนังสือบอกกล่าว ณ สถานที่
+            <p><span class="ml-10">ข้อ 4.</span> ถ้ามีการเปลี่ยนแปลงสถานที่บอกกล่าวโดยที่ข้าพเจ้าไม่แจ้งให้สหกรณ์ทราบ หากสหกรณ์ได้มีหนังสือบอกกล่าว ณ สถานที่
               ตามข้อ 3. ข้าพเจ้ามิอาจปฏิเสธหรือโต้แย้งใดๆว่าหนังสือบอกกล่าวยังไปไม่ถึงหรือปฏิเสธว่าสหกรณ์ยังไม่มีหนังสือบอกกล่าวข้าพเจ้า
             </p>
-            <p class="indent-10" >ข้อ 5. ข้าพเจ้ายอมรับผูกพันว่าการออกจากการเป็นสมาชิกสหกรณ์ของผู้กู้ ไม่ว่าเพราะเหตุใดๆ ไม่เป็นเหตุให้ข้าพเจ้าหลุดพ้นจากการค้ำประกันรายนี้ จนกว่าผู้กู้ที่ข้าพเจ้าค้ำประกันไว้นี้จะได้ให้สมาชิกอื่นซึ่งคณะกรรมการดำเนินการของสหกรณ์เห็นสมควรเข้าเป็นผู้ค้ำ
+            <p><span class="ml-10">ข้อ 5.</span> ข้าพเจ้ายอมรับผูกพันว่าการออกจากการเป็นสมาชิกสหกรณ์ของผู้กู้ ไม่ว่าเพราะเหตุใดๆ ไม่เป็นเหตุให้ข้าพเจ้าหลุดพ้นจากการค้ำประกันรายนี้ จนกว่าผู้กู้ที่ข้าพเจ้าค้ำประกันไว้นี้จะได้ให้สมาชิกอื่นซึ่งคณะกรรมการดำเนินการของสหกรณ์เห็นสมควรเข้าเป็นผู้ค้ำ
               ประกันแทนข้าพเจ้า
             </p>
-            <p class="indent-10" >ข้อ 6. เมื่อสหกรณ์ได้แจ้งให้ข้าพเจ้าทราบว่า ข้าพเจ้าต้องชำระหนี้ให้แก่สหกรณ์เมื่อผู้กู้ไม่ชำระหนี้ ข้าพเจ้ายินยอมให้ผู้บังคับบัญชาของข้าพเจ้าหรือหัวหน้าการเงินของหน่วยงานที่ข้าพเจ้าสังกัดผู้จ่ายเงินเดือน เงินบำเหน็จเงินบำนาญ หรือเงินได้อื่นๆ หักเงินได้ดังกล่าวของ
+            <p><span class="ml-10">ข้อ 6.</span> เมื่อสหกรณ์ได้แจ้งให้ข้าพเจ้าทราบว่า ข้าพเจ้าต้องชำระหนี้ให้แก่สหกรณ์เมื่อผู้กู้ไม่ชำระหนี้ ข้าพเจ้ายินยอมให้ผู้บังคับบัญชาของข้าพเจ้าหรือหัวหน้าการเงินของหน่วยงานที่ข้าพเจ้าสังกัดผู้จ่ายเงินเดือน เงินบำเหน็จเงินบำนาญ หรือเงินได้อื่นๆ หักเงินได้ดังกล่าวของ
               ข้าพเจ้าเพื่อส่งต่อให้สหกรณ์ รวมทั้งยินยอมให้สหกรณ์ใช้สิทธิยึดหน่วงทรัพย์สินใดๆที่ข้าพเจ้าพึงได้รับจากสหกรณ์ ได้แก่ เงินค่าหุ้น เงินปันผลเงินเฉลี่ยคืน เงินฝากและเงินอื่นๆซึ่งอยู่ในการครอบครองของสหกรณ์ไว้เพื่อรอชำระหนี้ หรือเพื่อใช้ชำระหนี้เมื่อผู้กู้ไม่ชำระ
             </p>
-            <p class="indent-10" >ข้อ 7. ข้าพเจ้าได้ทำหนังสือยินยอมให้ผู้บังคับบัญชาหักเงินได้รายเดือนและเงินอื่นใดของข้าพเจ้ามอบไว้ให้สหกรณ์ เพื่อแสดงต่อหน่วยงานต้นสังกัดของข้าพเจ้าหักเงิน ณ ที่จ่ายให้สหกรณ์ และคำยินยอมนี้ให้มีตลอดไปจนกว่าสหกรณ์จะได้รับชำระหนี้จนสิ้นเชิง
+            <p><span class="ml-10">ข้อ 7.</span> ข้าพเจ้าได้ทำหนังสือยินยอมให้ผู้บังคับบัญชาหักเงินได้รายเดือนและเงินอื่นใดของข้าพเจ้ามอบไว้ให้สหกรณ์ เพื่อแสดงต่อหน่วยงานต้นสังกัดของข้าพเจ้าหักเงิน ณ ที่จ่ายให้สหกรณ์ และคำยินยอมนี้ให้มีตลอดไปจนกว่าสหกรณ์จะได้รับชำระหนี้จนสิ้นเชิง
               การทำหนังสือค้ำประกันฉบับนี้ข้าพเจ้าพิจารณาไตร่ตรองโดยรอบคอบและสมัครใจเป็นผู้ค้ำประกัน ข้าพเจ้าทราบและเข้าใจดีแล้วว่าต้องรับผิดต่อสหกรณ์ในฐานะเป็นผู้ค้ำประกันถ้าผู้กู้ผิดนัดชำระหนี้ ดังนั้น เพื่อเป็นหลักฐานจึงลงลายมือชื่อพร้อมกับพยานไว้เป็นหลักฐาน
             </p>
             <div class="grid grid-cols-2 justify-center mt-1  ">
@@ -629,7 +628,7 @@
                     </td>
                     </tr>
                     <tr>
-                    <td class="text-center ">(<FiLL :data="data?.jjName" class="min-w-20" /> <FiLL :data="data?.lname" class="min-w-20" />)<br>
+                    <td class="text-center ">(<FiLL class="min-w-48" :data="`${data?.jjName}  ${data?.lname}`"/>)<br>
                     </td>
                     </tr>
                     <tr>
@@ -649,7 +648,7 @@
                     </tr>
                     <tr>
                       <div class="pl-12">
-                        (<FiLL :data="data?.spouseFName" class="min-w-20" /> <FiLL :data="data?.lname" class="min-w-20" />)<br>
+                        (<FiLL class="min-w-48" :data="`${data?.spouseFName}  ${data?.lname}`"/>)<br>
         </div><br>
                     </tr>
                     
@@ -659,7 +658,7 @@
                     </tr>
                     <tr>
                       <div class="pl-12">
-                        (<FiLL :data="data?.officerFName" class="min-w-20" /> <FiLL :data="data?.officerLName" class="min-w-20" />)<br>
+                        (<FiLL class="min-w-48" :data="`${data?.officerFName}  ${data?.officerLName}`"/>)<br>
         </div><br>
                     </tr>
               </div>
@@ -676,16 +675,16 @@
            <div class="border-solid border-2 border-slate-950 ">
 <br>
 <p class="text-center text-lg font-semibold ">บันทึกให้คำยินยอมของคู่สมรสผู้ค้ำประกัน</p> <br>
-<p class=" text-base pl-96">เขียนที่ &nbsp;&nbsp; <FiLL :data="data?.receivedLocation" class="min-w-70"/> &nbsp;</p>
-<p class=" text-base pl-96">วันที่ &nbsp;&nbsp; <FiLL :data="data?.dateReceived" class="min-w-80" date-format="full" /> </p><br>
-<p class=" text-base pl-8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ข้าพเจ้า &nbsp;&nbsp; <FiLL :data="data?.fname" class="min-w-70"/> <FiLL :data="data?.lname" class="min-w-70"/> 
-  &nbsp; อายุ <FiLL :data="data?.age" class="min-w-70"/> ปี อยู่บ้านเลขที่ <FiLL :data="data?.housenb" class="min-w-70"/> หมู่ที่ <FiLL :data="data?.group" class="min-w-70"/> ถนน <FiLL :data="data?.road" class="min-w-70"/> ตำบล <FiLL :data="data?.subdistrict" class="min-w-70"/>  
-  อำเภอ <FiLL :data="data?.district" class="min-w-70"/> จังหวัด <FiLL :data="data?.province" class="min-w-70"/> ขอทำความยินยอมให้ (นาย/นาง/นางสาว) <FiLL :data="data?.fname" class="min-w-70"/> <FiLL :data="data?.lname" class="min-w-70"/> ซึ่งเป็นคู่สมรสของข้าพเจ้าโดยถูกต้องตามกฎหมาย
+<p class=" text-base pl-96">เขียนที่ <FiLL :data="data?.receivedLocation" class="min-w-70"/></p>
+<p class=" text-base pl-96">วันที่ &nbsp; <FiLL :data="data?.dateReceived" class="min-w-72" date-format="full" /> </p><br>
+<p class=" text-base"><span class="ml-16">ข้าพเจ้า </span><FiLL class="min-w-40" :data="`${data?.fname}  ${data?.lname}`"/>
+ อายุ <FiLL class="min-w-14" :data="data?.age"/> ปี อยู่บ้านเลขที่ <FiLL class="min-w-16" :data="data?.housenb" /> หมู่ที่ <FiLL class="min-w-12" :data="data?.group"/> ถนน <FiLL class="min-w-28" :data="data?.road"/> ตำบล <FiLL class="min-w-28" :data="data?.subdistrict" />  
+  อำเภอ <FiLL class="min-w-28" :data="data?.district" /> จังหวัด <FiLL class="min-w-28" :data="data?.province" /> ขอทำความยินยอมให้ (นาย/นาง/นางสาว) <FiLL class="min-w-40" :data="`${data?.fname}  ${data?.lname}`"/> ซึ่งเป็นคู่สมรสของข้าพเจ้าโดยถูกต้องตามกฎหมาย
 มีอำนาจทำนิติกรรมทุกชนิดกับสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด และให้ถือเสมือนหนึ่งเป็นการกระทำของข้าพเจ้า เพื่อเป็นหลักฐานแห่งการยินยอมนี้ ข้าพเจ้าได้ลงลายมือชื่อไว้เป็นสำคัญต่อหน้าพยานผู้มีนามข้างท้ายนี้
 </p>
 <p class="text-base pl-80">(ลงชื่อ)............................................................คู่สมรสผู้ให้ความยินยอม</p>
-<div class="pl-96 ">
-  (<FiLL :data="data?.spouseFName" class="min-w-20" /> <FiLL :data="data?.lname" class="min-w-20" />)<br>
+<div class="pl-96">
+  (<FiLL class="min-w-52" :data="`${data?.spouseFName}  ${data?.lname}`"/>)<br>
 
         </div><br>
 <p class="text-base pl-80">(ลงชื่อ)............................................................พยาน(สมาชิก)</p>

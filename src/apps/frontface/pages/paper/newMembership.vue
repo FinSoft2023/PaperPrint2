@@ -396,11 +396,11 @@
                 </p>
                 <p class="mb-6 text-center"><table class="w-60 mx-auto">(<td class="border-black text-center min-w-52" style="border-bottom:2px dotted"></td>)</table></p>
 
-                <p class="mt-14 ml-40">
+                <span class="mt-14 ml-40">
                     <span class="ml-14">
                         ลงชื่อ....................................................................พยาน(สมาชิก)
                     </span>
-                </p>
+                </span>
                 <span class="mb-6 text-center"><table class="w-60 mx-auto">(<td class="border-black text-center min-w-52" style="border-bottom:2px dotted"></td>)</table></span>
             </div>
         </MorePaperDoc>
@@ -500,11 +500,11 @@
                 </p>
                 <p class="mb-6 text-center"><table class="w-60 mx-auto">(<td class="border-black text-center min-w-52" style="border-bottom:2px dotted"></td>)</table></p>
 
-                <p class="mt-14 ml-40">
+                <span class="mt-14 ml-40">
                     <span class="ml-14">
                         ลงชื่อ....................................................................พยาน(สมาชิก)
                     </span>
-                </p>
+                </span>
                 <span class="mb-6 text-center"><table class="w-60 mx-auto">(<td class="border-black text-center min-w-52" style="border-bottom:2px dotted"></td>)</table></span>
             </div>
         </MorePaperDoc>

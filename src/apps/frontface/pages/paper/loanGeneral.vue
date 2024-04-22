@@ -131,7 +131,9 @@
 มีอำนาจทำนิติกรรมทุกชนิดกับสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด และให้ถือเสมือนหนึ่งเป็นการกระทำของข้าพเจ้า เพื่อเป็นหลักฐานแห่งการยินยอมนี้ ข้าพเจ้าได้ลงลายมือชื่อไว้เป็นสำคัญต่อหน้าพยานผู้มีนามข้างท้ายนี้
 </p>
 <p class="text-base pl-80">(ลงชื่อ)............................................................คู่สมรสผู้ให้ความยินยอม</p>
-<p class="text-base pl-96">( <FiLL :data="data?.spouseFName" /> <FiLL :data="data?.lname" /> )</p>
+<div class="pl-96">
+  <table class="w-44 ">(<td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="data?.fname" /> <FiLL :data="data?.lname" /></td>)</table>
+</div>
 <p class="text-base pl-80">(ลงชื่อ)............................................................พยาน(สมาชิก)</p>
 <p class="text-base pl-96">(.............................................................)</p>
 <p class="text-base pl-80">(ลงชื่อ)............................................................พยาน(สมาชิก)</p>
@@ -141,18 +143,19 @@
 <br>
 <p class=" text-base pl-8">7.ช้าพเจ้าขอเสนอหลักประกันดังนี้</p>
 <p class=" text-base pl-8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.1 สมาชิกค้ำประกัน ได้แก่</p>
-<div class="flex flex-col ml-10 text-start">
+<div class="flex flex-col ml-10 text-start ">
         <LineFiLL :data="data?.repaymentPlan"
           :limit="6">
           <template #data="{ index, item }">
             <p class=" text-base pl-8"></p>
-            <p class="text-start text-base">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.1
+            <p class="text-start text-base ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.1
               <FiLL :data="index"
                 number
                 normal />.
                 ชื่อ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <FiLL :data="item.fn" /> <FiLL :data="item.ln" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; เลขทะเบียนที่&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-               <FiLL :data="item.numberRegist" /><br>
+              <table class="w-44 "><td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="item.fn" /> <FiLL :data="item.ln" /></td></table> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+              เลขทะเบียนที่&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <table class="w-44 "><td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="item.numberRegist" /></td></table>
               ตำแหน่ง <FiLL :data="item.poSition" /> สังกัด <FiLL :data="item.afiilia" />
               เบอร์โทร <FiLL :data="item.phoneNumber" /> วงเงินค้ำประกัน <FiLL :data="item.limit" />
             </p>
@@ -190,7 +193,7 @@
         <LineFiLL :data="data?.repaymentPlan"
           :limit="6">
           <template #data="{ index, item }">
-            <p class="text-start text-base">
+            <p class="text-start text-base ">
               <FiLL :data="index"
                 number
                 normal />.
@@ -221,7 +224,9 @@
   <div></div>
   <div class="text-center text-base">(ลงชื่อ)..................................................................ผู้ขอกู้</div>
   <div ></div>
-  <div class="text-center text-base">(<FiLL :data="data?.fname" />  <FiLL :data="data?.lname" />)</div>
+  <div class="ps-28">
+  <table class="w-44 ">(<td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="data?.fname" /> <FiLL :data="data?.lname" /></td>)</table><br>
+</div>
   <div ></div>
   <div class="text-center text-base">เบอร์โทร..................................................................</div>
   <div ></div>
@@ -229,7 +234,9 @@
   <div ></div>
   <div class="text-center text-base">(ลงชื่อ)..................................................................คู่สมรสผู้กู้</div>
   <div ></div>
-  <div class="text-center text-base">(<FiLL :data="data?.spouseFName" />  <FiLL :data="data?.lname" />)</div>
+  <div class="ps-28">
+  <table class="w-44 ">(<td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="data?.spouseFName" />  <FiLL :data="data?.lname" /></td>)</table><br>
+</div>
   <div ></div>
   <div class="text-center text-base">เบอร์โทร..................................................................</div>
   <div ></div>
@@ -237,8 +244,9 @@
   <div ><br></div>
   <div class="text-center text-base">(ลงชื่อ)..........................................................เจ้าหน้าที่สหกรณ์</div>
   <div ></div>
-  <div class="text-center text-base">(<FiLL :data="data?.officerFName" />  <FiLL :data="data?.officerLName" />)</div>
-
+  <div class="ps-28">
+  <table class="w-44 ">(<td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="data?.officerFName" />  <FiLL :data="data?.officerLName" /></td>)</table><br>
+</div>
 </div>
 
         </MorePaperDoc>
@@ -261,7 +269,10 @@
         - ซื้อหุ้นตามส่วนเงินกู้ <FiLL :data="data?.remain" /> บาท<br>
         - เบี้ยประกัน/ฌาปนกิจ <FiLL :data="data?.stockvalue" /> บาท</p>
       <p class="text-center text-sm ps-2">(ลงชื่อ)................................. เจ้าหน้าที่สหกรณ์<br>
-        (<FiLL :data="data?.officerFName" /> <FiLL :data="data?.officerLName" />)</p>
+      <div class="ps-20">
+  <table class="w-44 ">(<td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="data?.officerFName" />  <FiLL :data="data?.officerLName" /> </td>)</table><br>
+</div>
+        </p>
 
             </div>
             <div class="border-solid border-2 border-slate-950 ">
@@ -271,6 +282,9 @@
     <p class="text-sm ps-2">[&nbsp;] ไม่อนุมัติ เพราะ...........................................................................
         ................................................................................................................</p>
       <p class="text-center text-sm ps-2">(ลงชื่อ) ............................... ประธานเงินกู้<br>
+      <div class="ps-20">
+  <table class="w-44 ">(<td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="data?.officerFName" />  <FiLL :data="data?.officerLName" /> </td>)</table><br>
+</div>
         (<FiLL :data="data?.chaimanFName" /> <FiLL :data="data?.chaimanLName" />)</p>
       <p class="text-center text-sm ps-2">(ลงชื่อ) ............................... กรรมการผู้จัดการ<br>
         (<FiLL :data="data?.directorFName" /> <FiLL :data="data?.directorLName" />)</p>

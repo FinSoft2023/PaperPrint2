@@ -401,7 +401,7 @@
                         ลงชื่อ....................................................................พยาน(สมาชิก)
                     </span>
                 </p>
-                <p class="mb-6 text-center"><table class="w-60 mx-auto">(<td class="border-black text-center min-w-52" style="border-bottom:2px dotted"></td>)</table></p>
+                <span class="mb-6 text-center"><table class="w-60 mx-auto">(<td class="border-black text-center min-w-52" style="border-bottom:2px dotted"></td>)</table></span>
             </div>
         </MorePaperDoc>
         <MorePaperDoc> <!--หน้าที่ 8-->
@@ -505,7 +505,7 @@
                         ลงชื่อ....................................................................พยาน(สมาชิก)
                     </span>
                 </p>
-                <p class="mb-6 text-center"><table class="w-60 mx-auto">(<td class="border-black text-center min-w-52" style="border-bottom:2px dotted"></td>)</table></p>
+                <span class="mb-6 text-center"><table class="w-60 mx-auto">(<td class="border-black text-center min-w-52" style="border-bottom:2px dotted"></td>)</table></span>
             </div>
         </MorePaperDoc>
         <MorePaperDoc> <!--หน้าที่ 10-->

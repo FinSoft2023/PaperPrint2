@@ -390,13 +390,9 @@
                             ลงชื่อ<BlankSpace class="min-w-56" />ผู้ให้คำยินยอม(ผู้สมัคร)
                         </span>
                     </p>
-<<<<<<< HEAD
-                    <p class="mb-5 text-center">(<FiLL :data="data?.fname" /> <FiLL :data="data?.lname" />)</p>
-=======
                     <p class=" text-center">
                         (<FiLL :data="data?.fname" class="min-w-28" /><FiLL :data="data?.lname" class="min-w-28" />)
                     </p>
->>>>>>> Gao
                     <p class="mt-14 ml-40">
                         <span class="ml-14">
                             ลงชื่อ<BlankSpace class="min-w-56" />พยาน(สมาชิก)
@@ -500,12 +496,8 @@
                         ลงชื่อ<BlankSpace class="min-w-56" />ผู้ให้คำยินยอม(ผู้สมัคร)
                     </span>
                 </p>
-<<<<<<< HEAD
-                <p class="mb-6 text-center">(<FiLL :data="data?.fname" /> <FiLL :data="data?.lname" />)</p>
-=======
                 <p class="mb-5 text-center">(<FiLL :data="data?.fname" class="min-w-28" /><FiLL :data="data?.lname" class="min-w-28" />)</p>
 
->>>>>>> Gao
                 <p class="mt-14 ml-40">
                     <span class="ml-14">
                         ลงชื่อ<BlankSpace class="min-w-56" />พยาน(สมาชิก)

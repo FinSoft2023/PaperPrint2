@@ -298,7 +298,7 @@
             <div class="grid justify-end mt-6 text-center">
                 <div class="items-center mr-20">
                     <p class="mt-4">..............................................................</p>
-                    (<span class="mt-4 text-center underline decoration-dotted mx-1"><FiLL :data="data?.fname" /> <FiLL :data="data?.lname" /></span>)
+                    <p class="mt-4">(<FiLL :data="data?.fname" /> <FiLL :data="data?.lname" />)</p>
                     <p class="mt-4">ผู้สมัคร</p>
                 </div>
             </div>

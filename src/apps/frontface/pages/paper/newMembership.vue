@@ -558,15 +558,15 @@
                             </span>
                         </p>
                         <p class="text-center"><table class="w-60 mx-auto">(<td class="border-black text-center" style="border-bottom:2px dotted"><FiLL :data="data?.fnameInterestedWitness" /> <FiLL :data="data?.lnameInterestedWitness" /></td>)</table></p>
-                        <p class="text-center">เกี่ยวข้องเป็น <FiLL :data="data?.relation" /></p>
-                        <p class="text-center">เบอร์โทร <FiLL :data="data?.phoneNo" /></p>
+                        <span class="text-center">เกี่ยวข้องเป็น <FiLL :data="data?.relation" /></span>
+                        <span class="text-center mb-4">เบอร์โทร <FiLL :data="data?.phoneNo" /></span>
 
 
-                        <p class="mt-14 ml-40">
+                        <span class="mt-8 ml-40">
                             <span class="ml-14">
                                 ลงชื่อ..................................................................พยาน(หัวหน้าฝ่ายการเงิน)
                             </span>
-                        </p>
+                        </span>
                         <p class="mb-6 text-center"><table class="w-60 mx-auto">(<td class="border-black text-center min-w-52" style="border-bottom:2px dotted"></td>)</table></p>
 
                         <p class="mt-4 ml-40">

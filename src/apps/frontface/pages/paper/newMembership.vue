@@ -324,7 +324,7 @@
                         </div>
                         <p>
                             <span class="ml-20">ข้าพเจ้า</span> <FiLL :data="data?.fname" class="min-w-28" /><FiLL :data="data?.lname" class="min-w-28" /> 
-                            อายุ <FiLL :data="data?.age" no-line />   ปี 
+                            อายุ <FiLL :data="data?.age" class="min-w-24" />   ปี 
                             ปัจจุบันอาศัยอยู่บ้านเลขที่ <FiLL :data="data?.houseNumber" no-line /> 
                             หมู่ที่ <FiLL :data="data?.village" no-line />
                             ตรอก/ซอย <FiLL :data="data?.alley" no-line />
@@ -366,7 +366,7 @@
                 </div>
             </div>
         </MorePaperDoc>
-        <MorePaperDoc> <!--หน้าที่ 7 & 9-->
+        <MorePaperDoc> <!--หน้าที่ 7-->
             <div class="flex flex-col mx-3">
                 <p class="text-center mt-10 mb-6">-2-</p>
                 <p class="text-start">หักเงินเดือน ค่าจ้าง หรือเงินบำนาญหรือเงินบำเหน็จ หรือเงินอื่นใดในลักษณะเดียวกันที่ข้าพเจ้ามีสิทธิจะได้รับ

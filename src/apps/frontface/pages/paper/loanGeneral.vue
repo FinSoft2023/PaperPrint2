@@ -283,11 +283,13 @@
         ................................................................................................................</p>
       <p class="text-center text-sm ps-2">(ลงชื่อ) ............................... ประธานเงินกู้<br>
       <div class="ps-20">
-  <table class="w-44 ">(<td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="data?.officerFName" />  <FiLL :data="data?.officerLName" /> </td>)</table><br>
-</div>
-        (<FiLL :data="data?.chaimanFName" /> <FiLL :data="data?.chaimanLName" />)</p>
+  <table class="w-44 ">(<td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="data?.chaimanFName" /> <FiLL :data="data?.chaimanLname" /> </td>)</table><br>
+</div></p>
       <p class="text-center text-sm ps-2">(ลงชื่อ) ............................... กรรมการผู้จัดการ<br>
-        (<FiLL :data="data?.directorFName" /> <FiLL :data="data?.directorLName" />)</p>
+      <div class="ps-20">
+      <table class="w-44 ">(<td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="data?.directorFName" /> <FiLL :data="data?.directorLName" /></td>)</table>
+        </div></p><br>
+      
 </div>
 
 </div>
@@ -315,7 +317,9 @@
     <div class="flex flex-col items-center mt-32">
     <tr>
       <td class="text-center">(ลงชื่อ).................................................ผู้กู้<br>
-        (<FiLL :data="data?.fname" /> <FiLL :data="data?.lname" />)
+      <div class="ps-10">
+      <table class="w-44 ">(<td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="data?.fname" /> <FiLL :data="data?.lname" /></td>)</table>
+        </div><br>
       </td>
     </tr>
     </div>

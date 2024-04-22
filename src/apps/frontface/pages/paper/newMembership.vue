@@ -295,7 +295,7 @@
             <div class="grid justify-end mt-6 text-center">
                 <div class="items-center mr-20">
                     <p class="mt-4">..............................................................</p>
-                    (<span class="mt-4 text-center underline decoration-dotted mx-1"><FiLL :data="data?.fname" /> <FiLL :data="data?.lname" /></span>)
+                    <p class="mt-4">(<FiLL :data="data?.fname" /> <FiLL :data="data?.lname" />)</p>
                     <p class="mt-4">ผู้สมัคร</p>
                 </div>
             </div>
@@ -388,9 +388,7 @@
                             ลงชื่อ......................................................................ผู้ให้คำยินยอม(ผู้สมัคร)
                         </span>
                     </p>
-                    <p class=" text-center">
-                        (<span class="mt-4 text-center underline decoration-dotted mx-1"><FiLL :data="data?.fname" /> <FiLL :data="data?.lname" /></span>)
-                    </p>
+                    <p class="mb-5 text-center">(<FiLL :data="data?.fname" /> <FiLL :data="data?.lname" />)</p>
                     <p class="mt-14 ml-40">
                         <span class="ml-14">
                             ลงชื่อ....................................................................พยาน(สมาชิก)

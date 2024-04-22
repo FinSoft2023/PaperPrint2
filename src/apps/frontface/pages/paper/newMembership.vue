@@ -317,24 +317,24 @@
                             <div class="grid justify-end mt-5 mb-5 ">
                                 <div class="items-center mr-10">
                                     <p class="text-center">เขียนที่ สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
-                                    <p> วันที่ <FiLL :data="data?.dateReceived"date-format="full" /> </p>
+                                    <p> วันที่ <FiLL :data="data?.dateReceived"date-format="full" no-line /> </p>
                                 </div>
                             </div>
                         </div>
                         <p>
-                            <span class="ml-20">ข้าพเจ้า</span> <FiLL :data="data?.fname" /> <FiLL :data="data?.lname" /> 
-                            อายุ <FiLL :data="data?.age" />   ปี 
-                            ปัจจุบันอาศัยอยู่บ้านเลขที่ <FiLL :data="data?.houseNumber" /> 
-                            หมู่ที่ <FiLL :data="data?.village" />
-                            ตรอก/ซอย <FiLL :data="data?.alley" />
-                            ถนน <FiLL :data="data?.road" />
-                            ตำบล/แขวง <FiLL :data="data?.district" />
-                            อำเภอ/เขต <FiLL :data="data?.canton" />
-                            จังหวัด <FiLL :data="data?.province " />
-                            เบอร์โทร <FiLL :data="data?.phoneNo" />
+                            <span class="ml-20">ข้าพเจ้า</span> <FiLL :data="data?.fname" no-line /> <FiLL :data="data?.lname" no-line /> 
+                            อายุ <FiLL :data="data?.age" no-line />   ปี 
+                            ปัจจุบันอาศัยอยู่บ้านเลขที่ <FiLL :data="data?.houseNumber" no-line /> 
+                            หมู่ที่ <FiLL :data="data?.village" no-line />
+                            ตรอก/ซอย <FiLL :data="data?.alley" no-line />
+                            ถนน <FiLL :data="data?.road" no-line />
+                            ตำบล/แขวง <FiLL :data="data?.district" no-line />
+                            อำเภอ/เขต <FiLL :data="data?.canton" no-line />
+                            จังหวัด <FiLL :data="data?.province " no-line />
+                            เบอร์โทร <FiLL :data="data?.phoneNo" no-line />
                         
-                            รับราชการสังกัด <span class="font-bold">โรงพยาบาลศรีสะเกษ</span> ตำแหน่ง <FiLL :data="data?.position" />
-                            และเป็นสมาชิก <span class="font-bold">สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</span> เลขทะเบียนสมาชิก <FiLL :data="data?.memberNumber" />  
+                            รับราชการสังกัด <span class="font-bold">โรงพยาบาลศรีสะเกษ</span> ตำแหน่ง <FiLL :data="data?.position" no-line />
+                            และเป็นสมาชิก <span class="font-bold">สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</span> เลขทะเบียนสมาชิก <FiLL :data="data?.memberNumber" no-line />  
                             
                             มีความประสงค์ให้ส่วนราชการ/ หน่วยงานที่ข้าพเจ้าสังกัดอยู่หักเงิน และนำส่งเงินให้สหกรณ์ออมทรัพย์
                             ที่ข้าพเจ้าเป็นสมาชิก จึงมีหนังสือให้ความยินยอมฉบับนี้ไว้กับ <span class="font-bold">โรงพยาบาลศรีสะเกษ</span> ทั้งปัจจุบันอนาคต ดังนี้
@@ -387,23 +387,29 @@
                 <div class="item-center">
                     <p class="mt-14 ml-40">
                         <span class="ml-14">
-                            ลงชื่อ......................................................................ผู้ให้คำยินยอม(ผู้สมัคร)
+                            ลงชื่อ<BlankSpace class="min-w-56" />ผู้ให้คำยินยอม(ผู้สมัคร)
                         </span>
                     </p>
+<<<<<<< HEAD
                     <p class="mb-5 text-center">(<FiLL :data="data?.fname" /> <FiLL :data="data?.lname" />)</p>
+=======
+                    <p class=" text-center">
+                        (<FiLL :data="data?.fname" class="min-w-28" /><FiLL :data="data?.lname" class="min-w-28" />)
+                    </p>
+>>>>>>> Gao
                     <p class="mt-14 ml-40">
                         <span class="ml-14">
-                            ลงชื่อ....................................................................พยาน(สมาชิก)
+                            ลงชื่อ<BlankSpace class="min-w-56" />พยาน(สมาชิก)
                         </span>
                     </p>
-                    <p class="mb-6 text-center">(...........................................................)</p>
+                    <p class="mb-6 text-center">(<BlankSpace class="min-w-60" />)</p>
 
                     <span class="mt-14 ml-40">
                         <span class="ml-14">
-                            ลงชื่อ....................................................................พยาน(สมาชิก)
+                            ลงชื่อ<BlankSpace class="min-w-56" />พยาน(สมาชิก)
                         </span>
                     </span>
-                    <p class="mb-6 text-center">(...........................................................)</p>
+                    <p class="mb-6 text-center">(<BlankSpace class="min-w-60" />)</p>
                 </div>    
             </div>
         </MorePaperDoc>
@@ -422,24 +428,24 @@
                             <div class="grid justify-end mt-5 mb-5 ">
                                 <div class="items-center mr-10">
                                     <p class="text-center">เขียนที่ สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
-                                    <p> วันที่ <FiLL :data="data?.dateReceived"date-format="full" /> </p>
+                                    <p> วันที่ <FiLL :data="data?.dateReceived"date-format="full" no-line /> </p>
                                 </div>
                             </div>
                         </div>
                         <p>
-                            <span class="ml-20">ข้าพเจ้า</span> <FiLL :data="data?.fname" /> <FiLL :data="data?.lname" /> 
-                            อายุ <FiLL :data="data?.age" />   ปี 
-                            ปัจจุบันอาศัยอยู่บ้านเลขที่ <FiLL :data="data?.houseNumber" /> 
-                            หมู่ที่ <FiLL :data="data?.village" />
-                            ตรอก/ซอย <FiLL :data="data?.alley" />
-                            ถนน <FiLL :data="data?.road" />
-                            ตำบล/แขวง <FiLL :data="data?.district" />
-                            อำเภอ/เขต <FiLL :data="data?.canton" />
-                            จังหวัด <FiLL :data="data?.province " />
-                            เบอร์โทร <FiLL :data="data?.phoneNo" />
+                            <span class="ml-20">ข้าพเจ้า</span> <FiLL :data="data?.fname" no-line /> <FiLL :data="data?.lname" no-line /> 
+                            อายุ <FiLL :data="data?.age" no-line />   ปี 
+                            ปัจจุบันอาศัยอยู่บ้านเลขที่ <FiLL :data="data?.houseNumber" no-line /> 
+                            หมู่ที่ <FiLL :data="data?.village" no-line />
+                            ตรอก/ซอย <FiLL :data="data?.alley" no-line />
+                            ถนน <FiLL :data="data?.road" no-line />
+                            ตำบล/แขวง <FiLL :data="data?.district" no-line />
+                            อำเภอ/เขต <FiLL :data="data?.canton" no-line />
+                            จังหวัด <FiLL :data="data?.province " no-line />
+                            เบอร์โทร <FiLL :data="data?.phoneNo" no-line />
                         
-                            รับราชการสังกัด <span class="font-bold">โรงพยาบาลศรีสะเกษ</span> ตำแหน่ง <FiLL :data="data?.position" />
-                            และเป็นสมาชิก <span class="font-bold">สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</span> เลขทะเบียนสมาชิก <FiLL :data="data?.memberNumber" />  
+                            รับราชการสังกัด <span class="font-bold">โรงพยาบาลศรีสะเกษ</span> ตำแหน่ง <FiLL :data="data?.position" no-line />
+                            และเป็นสมาชิก <span class="font-bold">สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</span> เลขทะเบียนสมาชิก <FiLL :data="data?.memberNumber" no-line />  
                             
                             มีความประสงค์ให้ส่วนราชการ/ หน่วยงานที่ข้าพเจ้าสังกัดอยู่หักเงิน และนำส่งเงินให้สหกรณ์ออมทรัพย์
                             ที่ข้าพเจ้าเป็นสมาชิก จึงมีหนังสือให้ความยินยอมฉบับนี้ไว้กับ <span class="font-bold">โรงพยาบาลศรีสะเกษ</span> ทั้งปัจจุบันอนาคต ดังนี้
@@ -491,23 +497,28 @@
                 </p>
                 <p class="mt-14 ml-40">
                     <span class="ml-14">
-                        ลงชื่อ......................................................................ผู้ให้คำยินยอม(ผู้สมัคร)
+                        ลงชื่อ<BlankSpace class="min-w-56" />ผู้ให้คำยินยอม(ผู้สมัคร)
                     </span>
                 </p>
+<<<<<<< HEAD
                 <p class="mb-6 text-center">(<FiLL :data="data?.fname" /> <FiLL :data="data?.lname" />)</p>
+=======
+                <p class="mb-5 text-center">(<FiLL :data="data?.fname" class="min-w-28" /><FiLL :data="data?.lname" class="min-w-28" />)</p>
+
+>>>>>>> Gao
                 <p class="mt-14 ml-40">
                     <span class="ml-14">
-                        ลงชื่อ....................................................................พยาน(สมาชิก)
+                        ลงชื่อ<BlankSpace class="min-w-56" />พยาน(สมาชิก)
                     </span>
                 </p>
-                <p class="mb-6 text-center"><table class="w-60 mx-auto">(<td class="border-black text-center min-w-52" style="border-bottom:2px dotted"></td>)</table></p>
+                <p class="mb-6 text-center">(<BlankSpace class="min-w-60" />)</p>
 
                 <span class="mt-14 ml-40">
                     <span class="ml-14">
-                        ลงชื่อ....................................................................พยาน(สมาชิก)
+                        ลงชื่อ<BlankSpace class="min-w-56" />พยาน(สมาชิก)
                     </span>
                 </span>
-                <span class="mb-6 text-center"><table class="w-60 mx-auto">(<td class="border-black text-center min-w-52" style="border-bottom:2px dotted"></td>)</table></span>
+                <span class="mb-6 text-center">(<BlankSpace class="min-w-60" />)</span>
             </div>
         </MorePaperDoc>
         <MorePaperDoc> <!--หน้าที่ 10-->

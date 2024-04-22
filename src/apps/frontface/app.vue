@@ -22,6 +22,18 @@ const links = [ {
   label: 'Sample w Data',
   to: '/paper/sampleWithData',
   icon: 'i-heroicons-document',
+}, {
+  label: 'New Member',
+  to: '/paper/newMembership',
+  icon: 'i-heroicons-document',
+}, {
+  label: 'Loan (EM)',
+  to: '/paper/loanEmergency',
+  icon: 'i-heroicons-document',
+}, {
+  label: 'Loan (GN)',
+  to: '/paper/loanGeneral',
+  icon: 'i-heroicons-document',
 }];
 
 provide('links', links);

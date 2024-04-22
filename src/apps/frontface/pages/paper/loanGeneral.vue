@@ -59,7 +59,7 @@
             </div>
 
             <div class="grid justify-items-start mt-6 " >
-            <p class="indent-10 ">ข้าพเจ้า <FiLL :data="data?.fname"/> <FiLL :data="data?.lname"/> สมาชิกเลขทะเบียนที่ <FiLL :data="data?.remberRegistration" /> อายุ <FiLL :data="data?.age" class="min-w-20  text-start"/> ปี
+            <p><span class="ml-10">ข้าพเจ้า </span><FiLL class="min-w-32" :data="`${data?.fname}  ${data?.lname}`"/> สมาชิกเลขทะเบียนที่ <FiLL :data="data?.remberRegistration" /> อายุ <FiLL :data="data?.age" class="min-w-20  text-start"/> ปี
               เป็น <FiLLBox /> ข้าราชการ/ลูกจ้างประจำ <FiLLBox :checked="data?.monthlyIncome > 500" /> พนักงานราชการ <FiLLBox /> พนักงานกระทรวงสาธารณสุข <FiLLBox /> ลูกจ้าง
               <FiLLBox /> อื่นๆ................................. ตำเเหน่ง <FiLL :data="data?.position" /> สังกัด <FiLL :data="data?.affiliation" />
               เงินเดือน/เงินประจำตำเเหน่ง <FiLL :data="data?.salary" /> บาท หน่วยงาน <FiLL :data="data?.agency" /> เบอร์โทรภายใน <FiLL :data="data?.phonenb" />

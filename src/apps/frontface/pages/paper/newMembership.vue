@@ -233,7 +233,7 @@
                         <div class="items-center mr-10">
                             <p class="text-center">เขียนที่ สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
                             
-                            <p> วันที่ <FiLL :data="data?.dateReceived"date-format="full" /> </p>
+                            <p> วันที่ <FiLL :data="data?.dateReceived"date-format="full" no-line /> </p>
                         </div>
                     </div>
                 </div>

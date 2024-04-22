@@ -5,10 +5,10 @@
         <div class="flex items-start">
           <div class="border-2 border-black p-2">
             <p>รับที่
-              <FiLL :data="data?.receivedLocation" />
+              <FiLL :data="data?.receivedLocation" no-line />
             </p>
             <p>วันที่
-              <FiLL :data="data?.dayMonthYear"date-format="short" />
+              <FiLL :data="data?.dayMonthYear"date-format="short" no-line />
             </p>
           </div>
         </div>
@@ -22,12 +22,12 @@
 
           <div class="border-2 border-black p-2">
             <p>หนังสือกู้ที่
-              <FiLL :data="data?.receivedLocation" />
+              <FiLL :data="data?.receivedLocation" no-line />
             </p>
-            <p>วันที่  <FiLL :data="data?.dayMonthYear"date-format="short" />
+            <p>วันที่  <FiLL :data="data?.dayMonthYear"date-format="short" no-line />
             </p>
             <p>บัญชีเงินกู้ที่
-              <FiLL :data="data?.loanAccountNumber" />
+              <FiLL :data="data?.loanAccountNumber" no-line />
             </p>
           </div>
         </div>
@@ -35,8 +35,8 @@
 
       <p class="font-bold text-xl text-center col-span-2">คำขอและหนังสือกู้เงินเพื่อเหตุฉุกเฉิน</p>
       <div class="flex flex-col items-end mt-3">
-        <p>เขียนที่<FiLL :data="data?.receivedLocation" /></p>
-        <p>วันที่  <FiLL :data="data?.dayMonthYear"date-format="short" /> 
+        <p>เขียนที่<FiLL :data="data?.receivedLocation"  /></p>
+        <p>วันที่  <FiLL :data="data?.dayMonthYear"date-format="short"  /> 
             </p>
       </div>
 
@@ -79,8 +79,8 @@
     <template #data="{ index, item }">
       <p class="space-x-2">
         (<FiLL :data="index" thai-number normal />) 
-        ภายในวันสิ้นเดือน <span class="ml-4"><FiLL :data="item.m" /></span> 
-        ต้นเงิน <span class="ml-4"><FiLL :data="item.amount" /></span> บาท 
+        ภายในวันสิ้นเดือน <FiLL :data="item.m"  class="min-w-28" />
+        ต้นเงิน <FiLL :data="item.amount" class="min-w-28" />   บาท 
         <span class="ml-4">พร้อมด้วยดอกเบี้ย</span>
       </p>
     </template>
@@ -261,7 +261,7 @@
   
           <div class="text-md mt-2">
   
-            <div class="ml-20">๒.ข้อชี้แจงอื่นๆ <FiLL :data="data?.monthlyIncome"date-format="short" /></div>
+            <div class="ml-20">๒.ข้อชี้แจงอื่นๆ <FiLL :data="data?.monthlyIncome"date-format="short" no-line /></div>
           </div>
   
           <div class="flex justify-center mt-3">
@@ -277,7 +277,7 @@
   
           </div>
           <p class="indent-20 break-all mt-3">
-            เจ้าหน้าที่  <FiLL :data="data?.officer"date-format="short" />
+            เจ้าหน้าที่  <FiLL :data="data?.officer"date-format="short" no-line />
   
           </p>
   
@@ -295,7 +295,7 @@
   
           </div>
           <p class="indent-20 break-all mt-3">
-            <FiLL :data="data?.intendent"date-format="short" />  ประธาน / รองประธาน /
+            <FiLL :data="data?.intendent"date-format="short" no-line />  ประธาน / รองประธาน /
             ผู้จัดการ / ผู้ที่ได้
             รับมอบหมาย
   
@@ -349,14 +349,13 @@
         <div class="mt-3 px-2">
   
   
-          <p class="indent-20 break-all ">ข้าพเจ้า
-            <FiLL :data="data?.fname" />  <FiLL :data="data?.lname" />ได้รับเงินกู้
-            จำนวน<FiLL :data="data?.load" />บาท
-          </p>
+          <p BlankSpace class="min-w-40" /> ข้าพเจ้า
+            <FiLL :data="data?.fname" class="min-w-32"  />  <FiLL :data="data?.lname" class="min-w-32" />ได้รับเงินกู้
+            จำนวน<FiLL :data="data?.load" class="min-w-40" />บาท
   
           <p class="">
-            (<MoneyText :data="data?.monthlyIncome" /> ) ไปเป็นการถูกต้องแล้ว ณ
-            วันที่ <FiLL :data="data?.dayMonthYear" />
+            (<MoneyText :data="data?.monthlyIncome"   /> ) ไปเป็นการถูกต้องแล้ว ณ
+            วันที่ <FiLL :data="data?.dayMonthYear" class="min-w-20" />
           </p>
   
         </div>
@@ -369,14 +368,14 @@
           <div class="col-span-2">
   
             <p class="mt-4 text-center ml-1">................................................................ผู้รับเงิน</p>
-            <p class="text-center"><table class="w-60 mx-auto">(<td class="border-black text-center min-w-52" style="border-bottom:2px dotted"><FiLL :data="data?.fname" />  <FiLL :data="data?.lname" /></td>)</table></p>
+            <p class="text-center"><table class="w-60 mx-auto">(<td class="border-black text-center min-w-52" style="border-bottom:2px dotted"><FiLL :data="data?.fname" no-line />  <FiLL :data="data?.lname" no-line   /></td>)</table></p>
             <p class="text-xs mr-8 text-center ml-10">ต้องลงลายมือชื่อในการรับเงินต่อหน้าเจ้าหน้าที่ของสหกรณ์</p>
   
             <p class="mt-4 text-center">
               จ่ายเงินถูกต้องแล้ว......................................................เจ้าหน้าที่การเงิน
             </p>
             <p class="mt-4 text-center">
-              <p class="text-center"><table class="w-60 mx-auto">(<td class="border-black text-center min-w-52" style="border-bottom:2px dotted"><FiLL :data="data?.officer"date-format="short" /></td>)</table></p>
+              <p class="text-center"><table class="w-60 mx-auto">(<td class="border-black text-center min-w-52" style="border-bottom:2px dotted"><FiLL :data="data?.officer"date-format="short" no-line /></td>)</table></p>
             </p>
           </div>
   

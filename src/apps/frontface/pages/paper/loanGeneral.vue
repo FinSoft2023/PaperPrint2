@@ -9,13 +9,13 @@
 
             <div class="grid grid-cols-3 grid-rows-2 justify-center mt-2 h-10">
               <div class="items-start">
-                <div class="border-2 border-black p-2">
-                  <p class="text-sm">รับที่
-                    <FiLL :data="data?.receivedLocation" />
+                <div class="border-2 border-black p-1">
+                  <p class="text-sm ">รับที่
+                    <FiLL :data="data?.receivedLocation"/>
                   </p>
                   <p class="text-sm">วันที่
                     <FiLL :data="data?.dateReceived"
-                      date-format="short" />
+                      date-format="full" />
                   </p>
                 </div>
 
@@ -23,7 +23,7 @@
                   <p class="text-sm">หนังสือกู้เงินที่ <FiLL :data="data?.loanLetterNumber" />
                   </p>
                   <p class="text-sm">วันที่ <FiLL :data="data?.dateReceived"
-                  date-format="short" /></p>
+                  date-format="full" /></p>
                   <p class="text-sm">บัญชีเงินกู้ที่
                   <FiLL :data="data?.loanAccountNumber" />
                   </p>
@@ -51,8 +51,8 @@
       
       <div class="grid justify-items mt-44">
             <p class="ml-96 text-sm text-end">เขียนที่ <FiLL :data="data?.receivedLocation" /> </p>
-            <p class="mr-44 text-sm text-end">วันที่ <FiLL :data="data?.dateReceived"
-                date-format="short" /> </p>
+            <p class="mr-28 text-sm text-end">วันที่ <FiLL :data="data?.dateReceived"
+                date-format="full" /> </p>
             </div>
             <div class="grid justify-items-start mt-6">
             <p>เรียน คณะกรรมการดำเนินการสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
@@ -342,8 +342,8 @@
     </div>
 
     <div class="grid justify-items-center ">
-      <p class="indent-80">สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
-      <p class="indent-80">วันที่ <FiLL :data="data?.dateReceived"
+      <p class="pl-96">สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
+      <p class="pl-72">วันที่ <FiLL :data="data?.dateReceived"
                 date-format="full" /> </p>
     </div>
     <div class="grid justify-items-start mt-6">
@@ -399,16 +399,15 @@
           <p class="indent-20">ข้าพเจ้าได้อ่านข้อความในหนังสือกู้เงินนี้โดยตลอดเเล้วเห็นว่าถูกต้อง จึงได้ลงลายมือชื่อไว้เป็นสำคัญต่อหน้าพยาน
           </p>
 
-          <div class="grid grid-cols-2 justify-center mt-6">
-              <div class="items-start  text-nowrap">
+          <div class="grid grid-cols-2 justify-start mt-6">
+              <div class="items-start  text-center">
                 <tr>
                 <td class="text-left pl-24 ">(ลงชื่อ).................................................ผู้กู้
                 </td>
                 </tr>
                 <tr>
-                  <div class="ps-32">
-                    (<FiLL :data="data?.fname" class="min-w-20" /> <FiLL :data="data?.lname" class="min-w-20" />)<br>
-        </div><br>
+                <td class="text-center pl-16 ">(<FiLL :data="data?.fname" /> <FiLL :data="data?.lname" />)
+                </td>
                 </tr>
                 
                 <tr>
@@ -497,7 +496,7 @@
                 <p class="indent-20 mt-8">ข้าพเจ้า <FiLL :data="data?.fname" /> <FiLL :data="data?.lname" /> ได้รับเงินกู้จำนวน <FiLL :data="data?.debt" /> บาท
                   (<MoneyText :data="data?.debt" />)ตามหนังสือกู้เงินสำหรับเงินกู้สามัญทั่วไปนี้เป็นการถูกต้องเเล้ว
                   ณ วันที่ <FiLL :data="data?.dateReceived"
-                date-format="short" />
+                date-format="full" />
                 </p>
                 <div class="grid grid-cols-3 justify-center mt-6">
                     <div></div>
@@ -587,9 +586,9 @@
       </div>
 
       <div class="grid justify mt-2">
-            <p class="indent-80 text-sm text-end">เขียนที่ <FiLL :data="data?.receivedLocation" /> </p>
-            <p class="mr-44 text-sm text-end">วันที่ <FiLL :data="data?.dateReceived"
-                date-format="short" /> </p>
+            <p class="pl-69 text-sm text-end">เขียนที่ <FiLL :data="data?.receivedLocation" /> </p>
+            <p class="mr-28 text-sm text-end">วันที่ <FiLL :data="data?.dateReceived"
+                date-format="full" /> </p>
             </div>
 
             <div class="grid justify-items-start mt-2 text-base " >
@@ -623,7 +622,7 @@
             <p class="indent-10" >ข้อ 7. ข้าพเจ้าได้ทำหนังสือยินยอมให้ผู้บังคับบัญชาหักเงินได้รายเดือนและเงินอื่นใดของข้าพเจ้ามอบไว้ให้สหกรณ์ เพื่อแสดงต่อหน่วยงานต้นสังกัดของข้าพเจ้าหักเงิน ณ ที่จ่ายให้สหกรณ์ และคำยินยอมนี้ให้มีตลอดไปจนกว่าสหกรณ์จะได้รับชำระหนี้จนสิ้นเชิง
               การทำหนังสือค้ำประกันฉบับนี้ข้าพเจ้าพิจารณาไตร่ตรองโดยรอบคอบและสมัครใจเป็นผู้ค้ำประกัน ข้าพเจ้าทราบและเข้าใจดีแล้วว่าต้องรับผิดต่อสหกรณ์ในฐานะเป็นผู้ค้ำประกันถ้าผู้กู้ผิดนัดชำระหนี้ ดังนั้น เพื่อเป็นหลักฐานจึงลงลายมือชื่อพร้อมกับพยานไว้เป็นหลักฐาน
             </p>
-            <div class="grid grid-cols-2 justify-center mt-8">
+            <div class="grid grid-cols-2 justify-center mt-4  ">
               <div class="items-start  text-nowrap">
                 <tr>
                     <td class="text-left pl-14  ">(ลงชื่อ).................................................ผู้ค้ำประกัน
@@ -667,7 +666,7 @@
             </div>
             </div>
 
-            <div class="grid justify-items-end my-8">
+            <div class="grid justify-items-end ">
                 <p>(โปรดพลิก)</p>
                 </div>
 </MorePaperDoc>
@@ -678,7 +677,7 @@
 <br>
 <p class="text-center text-lg font-semibold ">บันทึกให้คำยินยอมของคู่สมรสผู้ค้ำประกัน</p> <br>
 <p class=" text-base pl-96">เขียนที่ &nbsp;&nbsp; <FiLL :data="data?.receivedLocation" /> &nbsp;</p>
-<p class=" text-base pl-96">วันที่ &nbsp;&nbsp; <FiLL :data="data?.dateReceived" date-format="short"/> </p><br>
+<p class=" text-base pl-96">วันที่ &nbsp;&nbsp; <FiLL :data="data?.dateReceived" date-format="full"/> </p><br>
 <p class=" text-base pl-8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ข้าพเจ้า &nbsp;&nbsp; <FiLL :data="data?.fname" /> <FiLL :data="data?.lname" /> 
   &nbsp; อายุ <FiLL :data="data?.age" /> ปี อยู่บ้านเลขที่ <FiLL :data="data?.housenb" /> หมู่ที่ <FiLL :data="data?.group" /> ถนน <FiLL :data="data?.road" /> ตำบล <FiLL :data="data?.subdistrict" />  
   อำเภอ <FiLL :data="data?.district" /> จังหวัด <FiLL :data="data?.province" /> ขอทำความยินยอมให้ (นาย/นาง/นางสาว) <FiLL :data="data?.fname" /> <FiLL :data="data?.lname" /> ซึ่งเป็นคู่สมรสของข้าพเจ้าโดยถูกต้องตามกฎหมาย

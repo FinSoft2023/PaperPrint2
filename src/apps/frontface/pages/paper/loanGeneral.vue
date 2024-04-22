@@ -60,7 +60,7 @@
 
             <div class="grid justify-items-start mt-6 " >
             <p><span class="ml-10">ข้าพเจ้า </span><FiLL class="min-w-32" :data="`${data?.fname}  ${data?.lname}`"/> สมาชิกเลขทะเบียนที่ <FiLL :data="data?.remberRegistration" /> อายุ <FiLL :data="data?.age" class="min-w-20  text-start"/> ปี
-              เป็น <FiLLBox /> ข้าราชการ/ลูกจ้างประจำ <FiLLBox :checked="data?.monthlyIncome > 500" /> พนักงานราชการ <FiLLBox /> พนักงานกระทรวงสาธารณสุข <FiLLBox /> ลูกจ้าง
+              เป็น <FiLLBox /> ข้าราชการ/ลูกจ้างประจำ <FiLLBox :checked="data?.monthlyIncome " /> พนักงานราชการ <FiLLBox /> พนักงานกระทรวงสาธารณสุข <FiLLBox /> ลูกจ้าง
               <FiLLBox /> อื่นๆ................................. ตำเเหน่ง <FiLL :data="data?.position" /> สังกัด <FiLL :data="data?.affiliation" />
               เงินเดือน/เงินประจำตำเเหน่ง <FiLL :data="data?.salary" /> บาท หน่วยงาน <FiLL :data="data?.agency" /> เบอร์โทรภายใน <FiLL :data="data?.phonenb" />
               ที่อยู่เลขที่ <FiLL :data="data?.housenb" /> หมู่ที่ <FiLL :data="data?.group" /> ถนน <FiLL :data="data?.road" /> ตำบล <FiLL :data="data?.subdistrict" /> อำเภอ <FiLL :data="data?.district" />
@@ -72,7 +72,7 @@
             <p class="indent-10" ><FiLLBox /> 2.1 เพื่อการอันจำเป็น อันได้เเก่ จัดหาสิ่งจำเป็นสำหรับครอบครัว ,อุปการะเลี้ยงบุคคลในครอบครัว,
               ปลดเปลื้องหนี้สิ้นของครัวเรือน,รักษาพยาบาลบุคคลในครอบครัว
             </p>
-            <p class="pl-10" ><FiLLBox :checked="data?.monthlyIncome > 500" /> 2.2 เพื่อชำระหนี้สหกรณ์ จำนวน <FiLL :data="data?.contract" /> สัญญา ดังนี้
+            <p class="pl-10" ><FiLLBox :checked="data?.monthlyIncome " /> 2.2 เพื่อชำระหนี้สหกรณ์ จำนวน <FiLL :data="data?.contract" /> สัญญา ดังนี้
             </p>
             <div class="grid grid-cols-2 justify-center">
               <div class="items-start  text-nowrap">
@@ -182,7 +182,7 @@
         <MorePaperDoc>
                         <!-- กู้สามัญทั่วไป general3  -->
 
-           <p class="text-base">8.ข้าพเจ้าประสงค์ขอรับเงินกู้โดย <FiLLBox /> เช็ค <FiLLBox :checked="data?.monthlyIncome > 500" /> โอน/นำเข้าบัญชีเงินฝากของข้าพเจ้า ชื่อธนาคาร <FiLL :data="data?.bank" /> 
+           <p class="text-base">8.ข้าพเจ้าประสงค์ขอรับเงินกู้โดย <FiLLBox /> เช็ค <FiLLBox :checked="data?.monthlyIncome " /> โอน/นำเข้าบัญชีเงินฝากของข้าพเจ้า ชื่อธนาคาร <FiLL :data="data?.bank" /> 
         สาขา <FiLL :data="data?.branchBank" /> บัญชีเลขที่ <FiLL :data="data?.idaccount" />
         </p>
         <p class="font-semibold text-sm underline underline-offset-1">ข้าพเจ้าขอรับรองว่า ขณะนี้ไม่อยู่ในระหว่างการถูกสอบสวนหรือต้องโทษทางวินัย และไม่อยู่ระหว่างการขอลาออกจากงานหรือโอนย้ายหน่วยงาน และข้าพเจ้ายินยอมปฏิบัติตามหลักเกณฑ์และเงื่อนไขที่กำหนอดทุกประการ
@@ -264,32 +264,33 @@
  
             <div class="border-solid border-2 border-slate-950 ">
 
+              
       <p class="text-center text-sm font-semibold">ความเห็นของเจ้าหน้าที่</p>
       <p class="text-sm ps-2">ได้ตรวจสอบเอกสารและคำขอกู้เงินแล้วพบว่ามีความถูกต้อง ตามระเบียบ หลักเกณฑ์และเงื่อนไขต่างๆ ทุกประเภท</p>
       <p class="text-sm ps-2">หักชำระ (ณ วันที่วิเคราะห์ข้อมูล)<br>
-        - หนี้เดิม <FiLL :data="data?.debt" class="min-w-20"/> บาท<br>
-        - ซื้อหุ้นตามส่วนเงินกู้ <FiLL :data="data?.remain" class="min-w-20"/> บาท<br>
-        - เบี้ยประกัน/ฌาปนกิจ <FiLL :data="data?.stockvalue" class="min-w-20"/> บาท</p>
+        - หนี้เดิม <FiLL :data="data?.debt" class="min-w-32"/> บาท<br>
+        - ซื้อหุ้นตามส่วนเงินกู้ <FiLL :data="data?.remain" class="min-w-32"/> บาท<br>
+        - เบี้ยประกัน/ฌาปนกิจ <FiLL :data="data?.stockvalue" class="min-w-32"/> บาท</p>
       <p class="text-center text-sm ps-2">(ลงชื่อ)................................. เจ้าหน้าที่สหกรณ์<br>
       <div class="text-center ">
-        (<FiLL :data="data?.officerFName" class="min-w-20" /> <FiLL :data="data?.officerLName" class="min-w-20" />)<br>
+        (<FiLL class="min-w-32" :data="`${data?.officerFName}  ${data?.officerLName}`"/>)<br>
 </div>
         </p>
 
             </div>
             <div class="border-solid border-2 border-slate-950 ">
      <p class="text-center text-sm font-semibold ps-2">ความเห็นของผู้มีอำนาจพิจารณา</p>
-     <p class="text-sm ps-2"><FiLLBox :checked="data?.monthlyIncome > 500" /> อนุมัติ จำนวน <FiLL :data="data?.debt" /> บาท 
+     <p class="text-sm ps-2"><FiLLBox :checked="data?.debt" /> อนุมัติ จำนวน <FiLL :data="data?.debt" class="min-w-32"/> บาท 
         (<MoneyText :data="data?.debt" />) </p>
     <p class="text-sm ps-2"><FiLLBox /> ไม่อนุมัติ เพราะ...........................................................................
         ................................................................................................................</p>
       <p class="text-center text-sm">(ลงชื่อ) ............................... ประธานเงินกู้<br>
       <div class="text-center ">
-        (<FiLL :data="data?.chaimanFName" class="min-w-20" /> <FiLL :data="data?.chaimanLname" class="min-w-20" />)<br>
+        (<FiLL  class="min-w-32" :data="`${data?.chaimanFName}  ${data?.chaimanLname}`" />)<br>
 </div></p>
       <p class="text-center text-sm ">(ลงชื่อ) ............................... กรรมการผู้จัดการ<br>
       <div class="text-center ">
-        (<FiLL :data="data?.directorFName" class="min-w-20" /> <FiLL :data="data?.directorLName" class="min-w-20" />)<br>
+        (<FiLL class="min-w-32" :data="`${data?.directorFName}  ${data?.directorLName}`" />)<br>
         </div></p><br>
       
 </div>
@@ -307,20 +308,20 @@
                 <p class="text-lg">หนังสือยืนยันภาระผูกพัน</p>
       </div>
     <div class="grid justify-items-start mt-6">
-      <p class="indent-24 ">ตามที่ ข้าพเจ้า ผู้กู้(นาย/นาง/นางสาว) <FiLL :data="data?.fname"/> <FiLL :data="data?.lname"/> ทะเบียนสมาชิกที่ <FiLL :data="data?.remberRegistration"/> หน่วยงาน <FiLL :data="data?.agency"/> 
-        สังกัด <FiLL :data="data?.affiliation"/> 
-        ได้ยื่นคําขอกู้เงิน <FiLLBox /> พิเศษ <FiLLBox /> สามัญ พัฒนาคุณภาพชีวิต กับสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จํากัด ในการนี้ข้าพเจ้า ขอให้ถ้อยคําตามความสัตย์จริง โดยหากข้าพเจ้าให้ถ้อยคําอันเป็นเท็จ ข้าพเจ้ายินดีให้สหกรณ์ ออมทรัพย์ฯ ดําเนินคดีตามกฎหมายแก่ข้าพเจ้าทันที</p>
-        <p class="indent-36">- ข้าพเจ้า <FiLLBox :checked="data?.monthlyIncome > 500" /> มี <FiLLBox /> ไม่มี  หนี้เงินกู้สวัสดิการกับธนาคาร  จํานวนเงินหนี้คงเหลือ <FiLL :data="data?.remaining"/> บาท ส่งชําระรายเดือน ๆ ละ <FiLL :data="data?.makepayment"/> บาท</p>
-        <p class="indent-36">- ข้าพเจ้า <FiLLBox :checked="data?.monthlyIncome > 500" /> มี <FiLLBox /> ไม่มี หนี้เงินกู้กองทุนบําเหน็จบํานาญ ฯ จํานวนเงินหนี้คงเหลือ <FiLL :data="data?.remaining"/> บาท ส่งชําระรายเดือน ๆ ละ <FiLL :data="data?.makepayment"/> บาท</p>
-        <p class="indent-36">- ข้าพเจ้า <FiLLBox /> เป็น<FiLLBox :checked="data?.monthlyIncome > 500" /> ไม่เป็น สมาชิกสหกรณ์ออมทรัพย์อื่นที่มีวัตถุประสงค์ในการให้กู้ยืมเงิน</p>
-        <p class="indent-36">- ข้าพเจ้า <FiLLBox /> อยู่ <FiLLBox :checked="data?.monthlyIncome > 500" /> ไม่อยู่ ในระหว่างถูกพิทักษ์ทรัพย์ในคดีล้มละลาย และไม่อยู่ในระหว่างถูกฟ้องในคดีล้มละลาย</p>
-        <p class="indent-36">- ข้าพเจ้าฯ ยินยอมให้สหกรณ์ออมทรัพย์ฯ ตรวจสอบข้อมูลหนี้ของข้าพเจ้ากับธนาคาร / บริษัท ข้อมูลเครดิตแห่งชาติ จํากัด ได้</p>
+      <p><span class="ml-10">ตามที่ ข้าพเจ้า ผู้กู้(นาย/นาง/นางสาว) </span><FiLL class="min-w-60" :data="`${data?.fname}  ${data?.lname}`"/> ทะเบียนสมาชิกที่ <FiLL :data="data?.remberRegistration" class="min-w-20"/> หน่วยงาน <FiLL :data="data?.agency" class="min-w-32"/> 
+        สังกัด <FiLL :data="data?.affiliation" class="min-w-40"/> 
+        ได้ยื่นคําขอกู้เงิน <FiLLBox :checked="data?.affiliation" />  พิเศษ <FiLLBox /> สามัญ พัฒนาคุณภาพชีวิต กับสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จํากัด ในการนี้ข้าพเจ้า ขอให้ถ้อยคําตามความสัตย์จริง โดยหากข้าพเจ้าให้ถ้อยคําอันเป็นเท็จ ข้าพเจ้ายินดีให้สหกรณ์ ออมทรัพย์ฯ ดําเนินคดีตามกฎหมายแก่ข้าพเจ้าทันที</p>
+        <p> <span class="ml-36"> - ข้าพเจ้า </span><FiLLBox :checked="data?.remaining" /> มี <FiLLBox /> ไม่มี  หนี้เงินกู้สวัสดิการกับธนาคาร <FiLL :data="data?.bank" class="min-w-32"/> จํานวนเงินหนี้คงเหลือ <FiLL :data="data?.remaining" class="min-w-32"/> บาท ส่งชําระรายเดือน ๆ ละ <FiLL :data="data?.makepayment" class="min-w-32"/> บาท</p>
+        <p><span class="ml-36"> - ข้าพเจ้า </span><FiLLBox :checked="data?.remaining" /> มี <FiLLBox /> ไม่มี หนี้เงินกู้กองทุนบําเหน็จบํานาญ ฯ จํานวนเงินหนี้คงเหลือ <FiLL :data="data?.remaining" class="min-w-32"/> บาท ส่งชําระรายเดือน ๆ ละ <FiLL :data="data?.makepayment" class="min-w-32" /> บาท</p>
+        <p><span class="ml-36"> - ข้าพเจ้า </span><FiLLBox /> เป็น<FiLLBox :checked="data?.remaining" /> ไม่เป็น สมาชิกสหกรณ์ออมทรัพย์อื่นที่มีวัตถุประสงค์ในการให้กู้ยืมเงิน</p>
+        <p><span class="ml-36"> - ข้าพเจ้า </span><FiLLBox /> อยู่ <FiLLBox :checked="data?.remaining" /> ไม่อยู่ ในระหว่างถูกพิทักษ์ทรัพย์ในคดีล้มละลาย และไม่อยู่ในระหว่างถูกฟ้องในคดีล้มละลาย</p>
+        <p><span class="ml-36"> - ข้าพเจ้าฯ</span> ยินยอมให้สหกรณ์ออมทรัพย์ฯ ตรวจสอบข้อมูลหนี้ของข้าพเจ้ากับธนาคาร / บริษัท ข้อมูลเครดิตแห่งชาติ จํากัด ได้</p>
     </div>
     <div class="flex flex-col items-center mt-32">
     <tr>
       <td class="text-center">(ลงชื่อ).................................................ผู้กู้<br>
       <div class="ps-10">
-        (<FiLL :data="data?.fname" class="min-w-20" /> <FiLL :data="data?.lname" class="min-w-20" />)<br>
+        (<FiLL class="min-w-40" :data="`${data?.fname}  ${data?.lname}`"/> )<br>
         </div>
       </td>
     </tr>
@@ -344,30 +345,30 @@
     <div class="grid justify-items-center ">
       <p class="pl-96">สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
       <p class="pl-72">วันที่ <FiLL :data="data?.dateReceived"
-                date-format="full" /> </p>
+                date-format="full" class="min-w-60"/> </p>
     </div>
     <div class="grid justify-items-start mt-6">
       <p>เรียน คณะกรรมการดำเนินการสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
     </div>
     <div class="grid justify-items-start mt-6 text-pretty text-base  ">
-      <p class="indent-20 ">ข้าพเจ้า <FiLL :data="data?.mename"/> บ้านเลขที่ <FiLL :data="data?.housenb" /> หมู่ที่ <FiLL :data="data?.group" /> ถนน <FiLL :data="data?.road" /> ตำบล <FiLL :data="data?.subdistrict" />
-          อำเภอ <FiLL :data="data?.district" /> จังหวัด <FiLL :data="data?.province" /> รหัสไปรษณีย์ <FiLL :data="data?.zipcode" /> เบอร์โทรศัพท์ <FiLL :data="data?.phonenb" />
+      <p><span class="ml-20"> ข้าพเจ้า </span><FiLL class="min-w-60" :data="`${data?.fname}  ${data?.lname}`"/>  บ้านเลขที่ <FiLL :data="data?.housenb" class="min-w-32"/> หมู่ที่ <FiLL :data="data?.group" class="min-w-32"/> ถนน <FiLL :data="data?.road" class="min-w-32"/> ตำบล <FiLL :data="data?.subdistrict" class="min-w-32"/>
+          อำเภอ <FiLL :data="data?.district" class="min-w-32"/> จังหวัด <FiLL :data="data?.province" class="min-w-32"/> รหัสไปรษณีย์ <FiLL :data="data?.zipcode" class="min-w-32"/> เบอร์โทรศัพท์ <FiLL :data="data?.phonenb" class="min-w-40"/>
           ได้ทราบข้อบังคับของสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด โดยตลอดเเล้ว เห็นชอบในวัตถุประสงค์ จึงขอสมัครเข้าเป็นสมาชิกของสหกรณ์ฯ ในฐานะเป็นผู้เข้าซื้อขอจดทะเบียนสหกรณ์ฯ เเละขอให้ถ้อยคำเป็นหลักฐาน ดังต่อไปนี้.-
       </p>
-      <p class="indent-20">ข้อ 1. ข้าพเจ้ามีอายุ <FiLL :data="data?.age" /> ปี (เกิดวันที่ <FiLL :data="data?.birthday" /> )
-          เลขประจำตัวประชาชน <FiLL :data="data?.idcard" /> เลขที่บัญชีธนาคารกรุงไทย <FiLL :data="data?.idaccount" />
+      <p> <span class="ml-20">ข้อ </span>1. ข้าพเจ้ามีอายุ <FiLL :data="data?.age" class="min-w-20"/> ปี (เกิดวันที่ <FiLL :data="data?.birthday" class="min-w-32"/> )
+          เลขประจำตัวประชาชน <FiLL :data="data?.idcard" class="min-w-40"/> เลขที่บัญชีธนาคารกรุงไทย <FiLL :data="data?.idaccount" class="min-w-32"/>
       </p>
-      <p class="indent-20">ข้อ 2. ข้าพเจ้าเป็นข้าราชการ/ลูกจ้างประจำ/พนักงานราชการ/พนักงานกระทรวงสาธารณสุข
+      <p> <span class="ml-20">ข้อ </span>2. ข้าพเจ้าเป็นข้าราชการ/ลูกจ้างประจำ/พนักงานราชการ/พนักงานกระทรวงสาธารณสุข
           (ตามวุฒิ)/พนักงานกระทรวงสาธารณสุข/ลูกจ้างชั่วคราวเงินบำรุง (ตามวุฒิ)/ ลูกจ้างชั่วคราวเงินบำรุง
-          ทำงานประจำตำเเหน่ง <FiLL :data="data?.position" /> เเผนก <FiLL :data="data?.department" />
-          สังกัดโรงพยาบาลศรีสะเกษ ได้รับเงินเดือน <FiLL :data="data?.salary" /> บาท( <MoneyText :data="data?.salary" /> )
+          ทำงานประจำตำเเหน่ง <FiLL :data="data?.position" class="min-w-32"/> เเผนก <FiLL :data="data?.department" class="min-w-32"/>
+          สังกัดโรงพยาบาลศรีสะเกษ ได้รับเงินเดือน <FiLL :data="data?.salary" class="min-w-20"/> บาท( <MoneyText :data="data?.salary"/> )
       </p>
-      <p class="indent-20">ข้อ 3. ข้าพเจ้ามิได้เป็นสมาชิกในสหกรณ์ฯ อื่นซึ่งมีวัตถุประสงค์ในการให้ยืมเงิน
+      <p> <span class="ml-20">ข้อ </span>3. ข้าพเจ้ามิได้เป็นสมาชิกในสหกรณ์ฯ อื่นซึ่งมีวัตถุประสงค์ในการให้ยืมเงิน
       </p>
-      <p class="indent-20">ข้อ 4. ข้าพเจ้าได้เข้าเป็นสมาชิกในชั้นนี้ ข้าพเจ้าของเเสดงความจำนงส่งเงินค่าหุ้นรายเดือน
-          ต่อสหหรณ์ฯ ในอัตราเดือนละ <FiLL :data="data?.stockvalue" /> บาท (มูลค่าหุ้นละ 10.00 บาท)
+      <p> <span class="ml-20">ข้อ </span>4. ข้าพเจ้าได้เข้าเป็นสมาชิกในชั้นนี้ ข้าพเจ้าของเเสดงความจำนงส่งเงินค่าหุ้นรายเดือน
+          ต่อสหหรณ์ฯ ในอัตราเดือนละ <FiLL :data="data?.stockvalue" class="min-w-20"/> บาท (มูลค่าหุ้นละ 10.00 บาท)
       </p>
-      <p class="indent-20">ข้อ 5. ข้าพเจ้าขอแถลงรายการหนี้สินทั้งหมดซึ่งข้าพเจ้ามีอยู่ดังนี้ (แสดงข้อความละเอียด
+      <p> <span class="ml-20">ข้อ </span>5. ข้าพเจ้าขอแถลงรายการหนี้สินทั้งหมดซึ่งข้าพเจ้ามีอยู่ดังนี้ (แสดงข้อความละเอียด
         ของแต่ละรายคือ ชื่อและสำนักงานของเจ้าหนี้ วันเป็นหนี้ จำนวนหนี้สินตั้งแต่แรก อัตราดอกเบี้ยร้อยละต่อปี
         หลักประกันที่ให้ไว้ จำนวนต้นเงินคงเหลือ จำนวนดอกเบี้ยค้างชำระและเป็นหนี้สินเพื่อการใดให้ครบทุกรายการ)
         อย่างน้อยต้องเป็นไปตามอัตราซึ่งกำหนดไว้ในหนังสือชี้ชวน แต่ถ้าจะแสดงความจำนงสูงกว่าอัตราที่กำหนดไว้ก็
@@ -376,11 +377,11 @@
       <br>
       <div class="pl-36">1. <FiLL :data="data?.office" /> <FiLL :data="data?.debt" /> <FiLL :data="data?.interest" /> <FiLL :data="data?.guarantee" /> <FiLL :data="data?.remain" /> <FiLL :data="data?.accruedinterest" /> <FiLL :data="data?.reason" /></div>
       <p class="pl-36">2. ..........................................................................................................................</p>
-      <p class="indent-20">ข้อ 6. ถ้าข้าพเจ้าได้เป็นสมาชิก ข้าพเจ้ามีความประสงค์ขอกู้เงินสหกรณ์ฯ เพื่อชำระหนี้ซึ่ง
+      <p> <span class="ml-20">ข้อ </span>6. ถ้าข้าพเจ้าได้เป็นสมาชิก ข้าพเจ้ามีความประสงค์ขอกู้เงินสหกรณ์ฯ เพื่อชำระหนี้ซึ่ง
         ข้าพเจ้ามีอยู่ดังกล่าวในข้อ 5 นั้น ข้าพเจ้าขอชี้แจงเหตุผลดังต่อไปนี้
       </p>
-      <p class="indent-20 break-all flex mt-2"><FiLL :data="data?.reason" /></p>
-      <p class="indent-20 mt-2">ข้อ 7. ถ้าข้าพเจ้าได้เป็นสมาชิก ข้าพเจ้ายินยอมและขอร้องให้ผู้บังคับบัญชา หรือเจ้าหน้าที่
+      <p > <span class="ml-20"><FiLL :data="data?.reason" class="min-w-100"/></span></p>
+      <p > <span class="ml-20">ข้อ </span>7. ถ้าข้าพเจ้าได้เป็นสมาชิก ข้าพเจ้ายินยอมและขอร้องให้ผู้บังคับบัญชา หรือเจ้าหน้าที่
         จ่ายเงินได้รายเดือนของข้าพเจ้าเมื่อได้รับมอบหมายจากสหกรณ์ฯ โปรดหักจำนวนเงินค่าหุ้นรายเดือนและ
         จำนวนเงินงวดชำระหนี้ ข้าพเจ้าต้องส่งต่อสหกรณ์ฯ นั้น จากเงินเดือนของข้าพเจ้าเมื่อจ่ายเพื่อส่งต่อให้
         สหกรณ์ฯ ด้วย
@@ -594,7 +595,7 @@
             <div class="grid justify-items-start  text-base " >
             <p class="indent-10">ข้าพเจ้า <FiLL :data="data?.fname"/> <FiLL :data="data?.lname"/> สมาชิกเลขทะเบียนที่ <FiLL :data="data?.remberRegistration" /> อายุ <FiLL :data="data?.age" /> ปี
               เลขประจำตัวประชาชน <FiLL :data="data?.idcard" /> ปรากฏตามสำเนาบัตรที่เเนบท้ายนี้
-              เป็น <FiLLBox :checked="data?.monthlyIncome > 500" /> ข้าราชการ/ลูกจ้างประจำ <FiLLBox /> พนักงานราชการ <FiLLBox /> พนักงานกระทรวงสาธารณสุข <FiLLBox /> ลูกจ้าง
+              เป็น <FiLLBox :checked="data?.monthlyIncome " /> ข้าราชการ/ลูกจ้างประจำ <FiLLBox /> พนักงานราชการ <FiLLBox /> พนักงานกระทรวงสาธารณสุข <FiLLBox /> ลูกจ้าง
               <FiLLBox /> อื่นๆ................................. ตำเเหน่ง <FiLL :data="data?.position" /> สังกัด <FiLL :data="data?.affiliation" />
               เงินเดือน/เงินประจำตำเเหน่ง <FiLL :data="data?.salary" /> บาท หน่วยงาน <FiLL :data="data?.agency" /> เบอร์โทรภายใน <FiLL :data="data?.phonenb" />
               ที่อยู่เลขที่ <FiLL :data="data?.housenb" /> หมู่ที่ <FiLL :data="data?.group" /> ถนน <FiLL :data="data?.road" /> ตำบล <FiLL :data="data?.subdistrict" /> อำเภอ <FiLL :data="data?.district" />

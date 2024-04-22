@@ -148,17 +148,32 @@
           :limit="6">
           <template #data="{ index, item }">
             <p class=" text-base pl-8"></p>
-            <p class="text-start text-base ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.1
-              
+            <p class="text-start text-base ">
               <table class="w-full">
-                <td><FiLL :data="index" number normal />.</td> 
-                <td>ชื่อ</td> 
-                <td class="border-black text-center" style="border-bottom:2px dotted"><FiLL :data="item.fn" /> <FiLL :data="item.ln" /></td>
-                <td>เลขทะเบียนที่</td>
-                <td class="border-black text-center" style="border-bottom:2px dotted"><FiLL :data="item.numberRegist" /></td>
+                <tr>
+                  <td class="max-w-8"><span class="ml-20">7.1.</span><FiLL :data="index" number normal />.</td> 
+                  <td class="max-w-2">ชื่อ</td> 
+                  <td class="text-center border-black" style="border-bottom:2px dotted"><FiLL :data="item.fn" /> <FiLL :data="item.ln" /></td>
+                  <td class="text-center max-w-8">เลขทะเบียนที่</td>
+                  <td class="text-center border-black" style="border-bottom:2px dotted"><FiLL :data="item.numberRegist" /></td>
+                </tr>
               </table>
+              <div class="grid grid-cols-4">
+                <div class="max-w-20">
+                  ตำแหน่ง
+                </div>
+                <div class="">
+                  <FiLL :data="item.poSition" />
+                </div>
+                <div class="">
+                  สังกัด
+                </div>
+                <div class="">
+                  <FiLL :data="item.afiilia" />
+                </div>
+              </div>
               ตำแหน่ง <FiLL :data="item.poSition" /> สังกัด <FiLL :data="item.afiilia" />
-              เบอร์โทร <FiLL :data="item.phoneNumber" /> วงเงินค้ำประกัน <FiLL :data="item.limit" />
+              <br>เบอร์โทร <FiLL :data="item.phoneNumber" /> วงเงินค้ำประกัน <FiLL :data="item.limit" />
             </p>
           </template>
           <template #default="{ index }">

@@ -295,7 +295,7 @@
             <div class="grid justify-end mt-6 text-center">
                 <div class="items-center mr-20">
                     <p class="mt-4">..............................................................</p>
-                    <span class="mt-4 text-center"><table class="w-52 mx-auto">(<td class="border-black text-center min-w-4" style="border-bottom:2px dotted"><FiLL :data="data?.fname" /> <FiLL :data="data?.lname" /></td>)</table></span>
+                    (<span class="mt-4 text-center underline decoration-dotted mx-1"><FiLL :data="data?.fname" /> <FiLL :data="data?.lname" /></span>)
                     <p class="mt-4">ผู้สมัคร</p>
                 </div>
             </div>
@@ -382,26 +382,29 @@
                         ฉบับที่สองเก็บไว้ที่ข้าพเจ้า และฉบับที่สามให้ไว้กับสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด
                     </span>
                 </p>
-                <p class="mt-14 ml-40">
-                    <span class="ml-14">
-                        ลงชื่อ......................................................................ผู้ให้คำยินยอม(ผู้สมัคร)
-                    </span>
-                </p>
-                <p class="mb-5 text-center"><table class="w-60 mx-auto">(<td class="border-black text-center" style="border-bottom:2px dotted"><FiLL :data="data?.fname" /> <FiLL :data="data?.lname" /></td>)</table></p>
+                <div class="item-center">
+                    <p class="mt-14 ml-40">
+                        <span class="ml-14">
+                            ลงชื่อ......................................................................ผู้ให้คำยินยอม(ผู้สมัคร)
+                        </span>
+                    </p>
+                    <p class=" text-center">
+                        (<span class="mt-4 text-center underline decoration-dotted mx-1"><FiLL :data="data?.fname" /> <FiLL :data="data?.lname" /></span>)
+                    </p>
+                    <p class="mt-14 ml-40">
+                        <span class="ml-14">
+                            ลงชื่อ....................................................................พยาน(สมาชิก)
+                        </span>
+                    </p>
+                    <p class="mb-6 text-center">(...........................................................)</p>
 
-                <p class="mt-14 ml-40">
-                    <span class="ml-14">
-                        ลงชื่อ....................................................................พยาน(สมาชิก)
+                    <span class="mt-14 ml-40">
+                        <span class="ml-14">
+                            ลงชื่อ....................................................................พยาน(สมาชิก)
+                        </span>
                     </span>
-                </p>
-                <p class="mb-6 text-center"><table class="w-60 mx-auto">(<td class="border-black text-center min-w-52" style="border-bottom:2px dotted"></td>)</table></p>
-
-                <span class="mt-14 ml-40">
-                    <span class="ml-14">
-                        ลงชื่อ....................................................................พยาน(สมาชิก)
-                    </span>
-                </span>
-                <span class="mb-6 text-center"><table class="w-60 mx-auto">(<td class="border-black text-center min-w-52" style="border-bottom:2px dotted"></td>)</table></span>
+                    <p class="mb-6 text-center">(...........................................................)</p>
+                </div>    
             </div>
         </MorePaperDoc>
         <MorePaperDoc> <!--หน้าที่ 8-->

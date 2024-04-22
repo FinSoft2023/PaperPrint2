@@ -74,32 +74,27 @@
         </p>
       </div>
 
-      <div class="flex flex-col ml-10 text-center ">
-        <LineFiLL :data="data?.repaymentPlan"
-          :limit="12">
-          <template #data="{ index, item }">
-            <p>(
-              <FiLL :data="index"
-                thai-number
-                normal />)
-              ภายในวันสิ้นเดือน
-              <FiLL :data="item.m" /> ต้นเงิน
-              <FiLL :data="item.amount" /> บาท
-              พร้อมด้วยดอกเบี้ย
-            </p>
-          </template>
-          <template #default="{ index }">
-            <p>(
-              <FiLL :data="index"
-                thai-number
-                normal />)
-              ภายในวันสิ้นเดือน................................................ต้นเงิน.......................................................บาท
-              พร้อมด้วยดอกเบี้ย
-            </p>
-          </template>
-        </LineFiLL>
+   <div class="flex flex-col ml-10 text-center my-4">
+  <LineFiLL :data="data?.repaymentPlan" :limit="12">
+    <template #data="{ index, item }">
+      <p class="space-x-2">
+        (<FiLL :data="index" thai-number normal />) 
+        ภายในวันสิ้นเดือน <span class="ml-1"><FiLL :data="item.m" /></span> 
+        ต้นเงิน <span class="ml-1"><FiLL :data="item.amount" /></span> บาท 
+        <span class="ml-1">พร้อมด้วยดอกเบี้ย</span>
+      </p>
+    </template>
+    <template #default="{ index }">
+      <p class="space-x-2">
+        (<FiLL :data="index" thai-number normal />) 
+        ภายในวันสิ้นเดือน................................................ 
+        ต้นเงิน.......................................................บาท 
+        <span class="ml-1">พร้อมด้วยดอกเบี้ย</span>
+      </p>
+    </template>
+  </LineFiLL>
+</div>
 
-      </div>
 
       <div class="flex flex-col ml-10">
         <p>ข้อ ๓. เมื่อข้าพเจ้าได้รับเงินกู้แล้ว ข้าพเจ้ายอมรับผู้พันตามข้อบังคับของสหกรณ์ ดังนี้

@@ -207,23 +207,23 @@
               <tr class="bg-white dark:bg-gray-800">
                 <th scope="row"
                   class="px-6 py-8 font-medium text-gray-900 whitespace-nowrap dark:text-white border-r border-b border-black">
-                  <FiLL :data="data?.monthlyIncome"date-format="short" />
+                  <FiLL :data="data?.monthlyIncome"date-format="short" no-line />
                 </th>
   
                 <td class="px-6 py-8 border-b border-r border-black ">
-                  <FiLL :data="data?.monthlyIncome"date-format="short" />
+                  <FiLL :data="data?.monthlyIncome"date-format="short" no-line />
   
                 </td>
                 <td class="px-6 py-8 border-b border-r border-black ">
-                  <FiLL :data="data?.monthlyIncome"date-format="short" />
+                  <FiLL :data="data?.monthlyIncome"date-format="short" no-line />
 
                 </td>
                 <td class="px-6 py-8 border-b border-r border-black ">
-                  <FiLL :data="data?.monthlyIncome"date-format="short" />
+                  <FiLL :data="data?.monthlyIncome"date-format="short" no-line />
 
                 </td>
                 <td class="px-6 py-8 border-b border-r border-black ">
-                  <FiLL :data="data?.monthlyIncome"date-format="short" />
+                  <FiLL :data="data?.monthlyIncome"date-format="short" no-line />
 
                 </td>
   
@@ -261,7 +261,7 @@
   
           <div class="text-md mt-2">
   
-            <div class="ml-20">๒.ข้อชี้แจงอื่นๆ <FiLL :data="data?.monthlyIncome"date-format="short" no-line /></div>
+            <div class="ml-20">๒.ข้อชี้แจงอื่นๆ <FiLL :data="data?.monthlyIncome"date-format="short" class="min-w-28" /></div>
           </div>
   
           <div class="flex justify-center mt-3">
@@ -276,8 +276,8 @@
             </p>
   
           </div>
-          <p class="indent-20 break-all mt-3">
-            เจ้าหน้าที่  <FiLL :data="data?.officer"date-format="short" no-line />
+          <p BlankSpace class="min-w-50 ml-28 break-all mt-3">
+            เจ้าหน้าที่  <FiLL :data="data?.officer"date-format="short" class="min-w-36"/>
   
           </p>
   
@@ -294,8 +294,8 @@
             </p>
   
           </div>
-          <p class="indent-20 break-all mt-3">
-            <FiLL :data="data?.intendent"date-format="short" no-line />  ประธาน / รองประธาน /
+          <p class="ml-40 break-all mt-3">
+            <FiLL :data="data?.intendent"date-format="short" BlankSpace class="min-w-40" />  ประธาน / รองประธาน /
             ผู้จัดการ / ผู้ที่ได้
             รับมอบหมาย
   

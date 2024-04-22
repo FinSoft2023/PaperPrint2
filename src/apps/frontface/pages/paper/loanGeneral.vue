@@ -224,9 +224,9 @@
   <div></div>
   <div class="text-start text-base">(ลงชื่อ)..................................................................ผู้ขอกู้</div>
   <div ></div>
-  <div class="ps-14">
-  <table class="w-52 text-center ">(<td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="data?.fname" /> <FiLL :data="data?.lname" /></td>)</table><br>
-</div>
+  <div class="mr-12 text-center">
+  <p class="underline underline-offset-4 decoration-dotted">(<FiLL :data="data?.fname" /> <FiLL :data="data?.lname" />)</p><br>
+  </div>
   <div ></div>
   <div class="text-start text-base">เบอร์โทร..................................................................</div>
   <div ></div>

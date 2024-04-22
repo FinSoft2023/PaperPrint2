@@ -492,8 +492,7 @@
                         ลงชื่อ......................................................................ผู้ให้คำยินยอม(ผู้สมัคร)
                     </span>
                 </p>
-                <p class="mb-5 text-center"><table class="w-60 mx-auto">(<td class="border-black text-center min-w-4" style="border-bottom:2px dotted"><FiLL :data="data?.fname" /> <FiLL :data="data?.lname" /></td>)</table></p>
-
+                <p class="mb-6 text-center">(<FiLL :data="data?.fname" /> <FiLL :data="data?.lname" />)</p>
                 <p class="mt-14 ml-40">
                     <span class="ml-14">
                         ลงชื่อ....................................................................พยาน(สมาชิก)
@@ -551,14 +550,13 @@
                                 ลงชื่อ..................................................................ผู้ให้คำยินยอม (ผู้สมัคร)
                             </span>
                         </p>
-                        <p class="mb-6 text-center"><table class="w-60 mx-auto">(<td class="border-black text-center" style="border-bottom:2px dotted"><FiLL :data="data?.fname" /> <FiLL :data="data?.lname" /></td>)</table></p>
-
+                        <p class="mb-5 text-center">(<FiLL :data="data?.fname" /> <FiLL :data="data?.lname" />)</p>
                         <p class="mt-4 ml-40">
                             <span class="ml-14">
                                 ลงชื่อ..................................................................พยาน(ผู้รับผลประโยชน์)
                             </span>
                         </p>
-                        <p class="text-center"><table class="w-60 mx-auto">(<td class="border-black text-center" style="border-bottom:2px dotted"><FiLL :data="data?.fnameInterestedWitness" /> <FiLL :data="data?.lnameInterestedWitness" /></td>)</table></p>
+                        <p class="text-center">(<FiLL :data="data?.fnameInterestedWitness" /> <FiLL :data="data?.lnameInterestedWitness" />)</p>
                         <span class="text-center">เกี่ยวข้องเป็น <FiLL :data="data?.relation" /></span>
                         <span class="text-center mb-4">เบอร์โทร <FiLL :data="data?.phoneNo" /></span>
 

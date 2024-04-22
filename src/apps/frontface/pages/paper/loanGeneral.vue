@@ -265,7 +265,7 @@
       <p class="text-center text-sm font-semibold">ความเห็นของเจ้าหน้าที่</p>
       <p class="text-sm ps-2">ได้ตรวจสอบเอกสารและคำขอกู้เงินแล้วพบว่ามีความถูกต้อง ตามระเบียบ หลักเกณฑ์และเงื่อนไขต่างๆ ทุกประเภท</p>
       <p class="text-sm ps-2">หักชำระ (ณ วันที่วิเคราะห์ข้อมูล)<br>
-        - หนี้เดิม <FiLL :data="data?.debt" /> บาท<br>
+        - หนี้เดิม <FiLL :data="data?.debt" class="min-w-80"/> บาท<br>
         - ซื้อหุ้นตามส่วนเงินกู้ <FiLL :data="data?.remain" /> บาท<br>
         - เบี้ยประกัน/ฌาปนกิจ <FiLL :data="data?.stockvalue" /> บาท</p>
       <p class="text-center text-sm ps-2">(ลงชื่อ)................................. เจ้าหน้าที่สหกรณ์<br>

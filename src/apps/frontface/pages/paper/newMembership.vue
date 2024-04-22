@@ -296,8 +296,8 @@
             </div>
             <div class="grid justify-end mt-6 text-center">
                 <div class="items-center mr-20">
-                    <p class="mt-4">..............................................................</p>
-                    <p class="mt-4">(<FiLL :data="data?.fname" /> <FiLL :data="data?.lname" />)</p>
+                    <p class="mt-4"><BlankSpace class="min-w-60" /></p>
+                    <p class="mt-4">(<FiLL :data="data?.fname" class="min-w-28"/> <FiLL :data="data?.lname" class="min-w-28"/>)</p>
                     <p class="mt-4">ผู้สมัคร</p>
                 </div>
             </div>

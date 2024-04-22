@@ -242,9 +242,9 @@
                     <div class="flex flex-col">
                         <p class="mt-6  ">
                             <span class="ml-20">ข้าพเจ้า</span>
-                            <FiLL :data="data?.fname"class="min-w-24" /> <FiLL :data="data?.lname" class="min-w-24"/> บ้านเลขที่ <FiLL :data="data?.houseNumber" class="min-w-20"/> หมู่ที่ <FiLL :data="data?.village" class="min-w-20"/>
-                            ถนน <FiLL :data="data?.road" class="min-w-20"/> ตำบล <FiLL :data="data?.district" class="min-w-20"/> อำเภอ <FiLL :data="data?.canton" class="min-w-20"/> จังหวัด <FiLL :data="data?.province" class="min-w-20"/>
-                            รหัสไปรษณีย์ <FiLL :data="data?.zipCode" class="min-w-20"/> เบอร์โทรศัพท์ <FiLL :data="data?.phoneNo" class="min-w-20"/>   
+                            <FiLL :data="data?.fname"class="min-w-36"/> <FiLL :data="data?.lname" class="min-w-36"/> บ้านเลขที่ <FiLL :data="data?.houseNumber" class="min-w-28"/> หมู่ที่ <FiLL :data="data?.village" class="min-w-24"/>
+                            ถนน <FiLL :data="data?.road" class="min-w-36"/> ตำบล <FiLL :data="data?.district" class="min-w-36"/> อำเภอ <FiLL :data="data?.canton" class="min-w-32"/> จังหวัด <FiLL :data="data?.province" class="min-w-36"/>
+                            รหัสไปรษณีย์ <FiLL :data="data?.zipCode" class="min-w-36"/> เบอร์โทรศัพท์ <FiLL :data="data?.phoneNo" class="min-w-40"/>   
                             ได้ทราบข้อบังคับของสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด โดยตลอดแล้ว เห็นชอบในวัตถุประสงค์ จึงขอสมัครเข้าเป็นสมาชิกของสหกรณ์ฯ ในฐานะเป็นผู้เข้าซื้อขอจดทะเบียนสหกรณ์ฯ และขอให้ถ้อยคำเป็นหลักฐาน ดังต่อไปนี้.-
                         </p>
                         <p class="indent-20">

@@ -132,7 +132,7 @@
 </p>
 <p class="text-base pl-80">(ลงชื่อ)............................................................คู่สมรสผู้ให้ความยินยอม</p>
 <div class="pl-96">
-  <table class="w-44 ">(<td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="data?.fname" /> <FiLL :data="data?.lname" /></td>)</table>
+   (<FiLL :data="data?.fname" class="min-w-20" /> <FiLL :data="data?.lname " class="min-w-20" />) 
 </div>
 <p class="text-base pl-80">(ลงชื่อ)............................................................พยาน(สมาชิก)</p>
 <p class="text-base pl-96">(.............................................................)</p>
@@ -143,37 +143,23 @@
 <br>
 <p class=" text-base pl-8">7.ช้าพเจ้าขอเสนอหลักประกันดังนี้</p>
 <p class=" text-base pl-8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.1 สมาชิกค้ำประกัน ได้แก่</p>
-<div class="flex flex-col ml-10 text-start ">
+<div class="flex flex-col ml-10 text-start "no-line>
         <LineFiLL :data="data?.repaymentPlan"
           :limit="6">
           <template #data="{ index, item }">
             <p class=" text-base pl-8"></p>
-            <p class="text-start text-base ">
-              <table class="w-full">
-                <tr>
-                  <td class="max-w-8"><span class="ml-20">7.1.</span><FiLL :data="index" number normal />.</td> 
-                  <td class="max-w-2">ชื่อ</td> 
-                  <td class="text-center border-black" style="border-bottom:2px dotted"><FiLL :data="item.fn" /> <FiLL :data="item.ln" /></td>
-                  <td class="text-center max-w-8">เลขทะเบียนที่</td>
-                  <td class="text-center border-black" style="border-bottom:2px dotted"><FiLL :data="item.numberRegist" /></td>
-                </tr>
-              </table>
-              <div class="grid grid-cols-4">
-                <div class="max-w-20">
-                  ตำแหน่ง
-                </div>
-                <div class="">
-                  <FiLL :data="item.poSition" />
-                </div>
-                <div class="">
-                  สังกัด
-                </div>
-                <div class="">
-                  <FiLL :data="item.afiilia" />
-                </div>
-              </div>
+            <p class="text-start text-base">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.1
+              <FiLL :data="index"
+                number
+                normal />.
+                ชื่อ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <FiLL :data="item.fn" class="min-w-20" /> <FiLL :data="item.ln" class="min-w-20" />
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+              เลขทะเบียนที่&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <FiLL :data="item.numberRegist" class="min-w-20" />
+              
               ตำแหน่ง <FiLL :data="item.poSition" /> สังกัด <FiLL :data="item.afiilia" />
-              <br>เบอร์โทร <FiLL :data="item.phoneNumber" /> วงเงินค้ำประกัน <FiLL :data="item.limit" />
+              เบอร์โทร <FiLL :data="item.phoneNumber" /> วงเงินค้ำประกัน <FiLL :data="item.limit" />
             </p>
           </template>
           <template #default="{ index }">
@@ -240,8 +226,8 @@
   <div></div>
   <div class="text-start text-base">(ลงชื่อ)..................................................................ผู้ขอกู้</div>
   <div ></div>
-  <div class="ps-14">
-  <table class="w-52 text-center ">(<td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="data?.fname" /> <FiLL :data="data?.lname" /></td>)</table><br>
+  <div class="pl-32">
+  (<FiLL :data="data?.fname" class="min-w-20" /> <FiLL :data="data?.lname " class="min-w-20" />)<br>
 </div>
   <div ></div>
   <div class="text-start text-base">เบอร์โทร..................................................................</div>
@@ -251,7 +237,7 @@
   <div class="text-start text-base">(ลงชื่อ)..................................................................คู่สมรสผู้กู้</div>
   <div ></div>
   <div class="ps-14">
-  <table class="w-52 text-center">(<td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="data?.spouseFName" />  <FiLL :data="data?.lname" /></td>)</table><br>
+    (<FiLL :data="data?.spouseFName" class="min-w-20" /> <FiLL :data="data?.lname" class="min-w-20" />)<br><br>
 </div>
   <div ></div>
   <div class="text-start text-base">เบอร์โทร..................................................................</div>
@@ -261,7 +247,7 @@
   <div class="text-start text-base">(ลงชื่อ)..............................................................เจ้าหน้าที่สหกรณ์</div>
   <div ></div>
   <div class="ps-14">
-  <table class="w-52 text-center">(<td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="data?.officerFName" />  <FiLL :data="data?.officerLName" /></td>)</table><br>
+    (<FiLL :data="data?.officerFName" class="min-w-20" /> <FiLL :data="data?.officerLName" class="min-w-20" />)<br>
 </div>
 </div>
 
@@ -286,7 +272,7 @@
         - เบี้ยประกัน/ฌาปนกิจ <FiLL :data="data?.stockvalue" /> บาท</p>
       <p class="text-center text-sm ps-2">(ลงชื่อ)................................. เจ้าหน้าที่สหกรณ์<br>
       <div class="ps-20">
-  <table class="w-44 ">(<td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="data?.officerFName" />  <FiLL :data="data?.officerLName" /> </td>)</table><br>
+        (<FiLL :data="data?.officerFName" class="min-w-20" /> <FiLL :data="data?.officerLName" class="min-w-20" />)<br>
 </div>
         </p>
 
@@ -299,11 +285,11 @@
         ................................................................................................................</p>
       <p class="text-center text-sm ps-2">(ลงชื่อ) ............................... ประธานเงินกู้<br>
       <div class="ps-20">
-  <table class="w-44 ">(<td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="data?.chaimanFName" /> <FiLL :data="data?.chaimanLname" /> </td>)</table><br>
+        (<FiLL :data="data?.chaimanFName" class="min-w-20" /> <FiLL :data="data?.chaimanLname" class="min-w-20" />)<br>
 </div></p>
       <p class="text-center text-sm ps-2">(ลงชื่อ) ............................... กรรมการผู้จัดการ<br>
       <div class="ps-20">
-      <table class="w-44 ">(<td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="data?.directorFName" /> <FiLL :data="data?.directorLName" /></td>)</table>
+        (<FiLL :data="data?.directorFName" class="min-w-20" /> <FiLL :data="data?.directorLName" class="min-w-20" />)<br>
         </div></p><br>
       
 </div>
@@ -334,8 +320,8 @@
     <tr>
       <td class="text-center">(ลงชื่อ).................................................ผู้กู้<br>
       <div class="ps-10">
-      <table class="w-44 ">(<td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="data?.fname" /> <FiLL :data="data?.lname" /></td>)</table>
-        </div><br>
+        (<FiLL :data="data?.fname" class="min-w-20" /> <FiLL :data="data?.lname" class="min-w-20" />)<br>
+        </div>
       </td>
     </tr>
     </div>
@@ -421,7 +407,7 @@
                 </tr>
                 <tr>
                   <div class="ps-32">
-      <table class="w-44 ">(<td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="data?.fname" /> <FiLL :data="data?.lname" /></td>)</table>
+                    (<FiLL :data="data?.fname" class="min-w-20" /> <FiLL :data="data?.lname" class="min-w-20" />)<br>
         </div><br>
                 </tr>
                 
@@ -431,7 +417,7 @@
                 </tr>
                 <tr>
                   <div class="ps-32">
-      <table class="w-44 ">(<td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="data?.spouseFName" /> <FiLL :data="data?.lname" /></td>)</table>
+                    (<FiLL :data="data?.spouseFName" class="min-w-20" /> <FiLL :data="data?.lname" class="min-w-20" />)<br>
         </div><br>
                 
                 </tr>
@@ -468,7 +454,8 @@
                 </tr>
                 <tr>
                   <div class="ps-32">
-      <table class="w-44 ">(<td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="data?.officerFName" /> <FiLL :data="data?.officerLName" /></td>)</table>
+                    (<FiLL :data="data?.officerFName" class="min-w-20" /> <FiLL :data="data?.officerLName" class="min-w-20" />)<br>
+    
         </div><br>
                 </tr>
 
@@ -478,7 +465,7 @@
                 </tr>
                 <tr>
                   <div class="ps-32">
-      <table class="w-44 ">(<td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="data?.chaimanFName" /> <FiLL :data="data?.chaimanLname" /></td>)</table>
+                    (<FiLL :data="data?.chaimanFName" class="min-w-20" /> <FiLL :data="data?.chaimanLname" class="min-w-20" />)<br>
         </div><br>
                 </tr>
 
@@ -488,7 +475,7 @@
                 </tr>
                 <tr>
                   <div class="ps-32">
-      <table class="w-44 ">(<td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="data?.directorFName" /> <FiLL :data="data?.directorLName" /></td>)</table>
+                    (<FiLL :data="data?.directorFName" class="min-w-20" /> <FiLL :data="data?.directorLName" class="min-w-20" />)<br>
         </div><br>
 
                 </tr>
@@ -522,7 +509,8 @@
                     </tr>
                     <tr>
                       <div class="ps-32">
-      <table class="w-44 ">(<td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="data?.fname" /> <FiLL :data="data?.lname" /></td>)</table>
+                        (<FiLL :data="data?.fname" class="min-w-20" /> <FiLL :data="data?.lname" class="min-w-20" />)<br>
+
         </div><br>
                     </tr>
 
@@ -548,7 +536,7 @@
                     </tr>
                     <tr>
                       <div class="ps-32">
-      <table class="w-44 ">(<td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="data?.paymentFname" /> <FiLL :data="data?.paymentLname" /></td>)</table>
+                        (<FiLL :data="data?.paymentFname" class="min-w-20" /> <FiLL :data="data?.paymentLname" class="min-w-20" />)<br>
         </div><br>
                     </tr>
 
@@ -642,7 +630,7 @@
                     </td>
                     </tr>
                     <tr>
-                    <td class="text-center ">(<FiLL :data="data?.jjName" /> <FiLL :data="data?.lname" />)
+                    <td class="text-center ">(<FiLL :data="data?.jjName" class="min-w-20" /> <FiLL :data="data?.lname" class="min-w-20" />)<br>
                     </td>
                     </tr>
                     <tr>
@@ -662,7 +650,7 @@
                     </tr>
                     <tr>
                       <div class="ps-32">
-      <table class="w-44 ">(<td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="data?.spouseFName" /> <FiLL :data="data?.lname" /></td>)</table>
+                        (<FiLL :data="data?.spouseFName" class="min-w-20" /> <FiLL :data="data?.lname" class="min-w-20" />)<br>
         </div><br>
                     </tr>
                     
@@ -672,7 +660,7 @@
                     </tr>
                     <tr>
                       <div class="ps-32">
-      <table class="w-44 ">(<td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="data?.officerFName" /> <FiLL :data="data?.officerLName" /></td>)</table>
+                        (<FiLL :data="data?.officerFName" class="min-w-20" /> <FiLL :data="data?.officerLName" class="min-w-20" />)<br>
         </div><br>
                     </tr>
               </div>
@@ -698,7 +686,8 @@
 </p>
 <p class="text-base pl-80">(ลงชื่อ)............................................................คู่สมรสผู้ให้ความยินยอม</p>
 <div class="pl-96 ">
-      <table class="w-44 ">(<td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="data?.spouseFName" /> <FiLL :data="data?.lname" /></td>)</table>
+  (<FiLL :data="data?.spouseFName" class="min-w-20" /> <FiLL :data="data?.lname" class="min-w-20" />)<br>
+
         </div><br>
 <p class="text-base pl-80">(ลงชื่อ)............................................................พยาน(สมาชิก)</p>
 <p class="text-base pl-96">(.............................................................)</p>

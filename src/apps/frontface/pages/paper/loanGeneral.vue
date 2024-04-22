@@ -226,7 +226,7 @@
   <div></div>
   <div class="text-start text-base">(ลงชื่อ)..................................................................ผู้ขอกู้</div>
   <div ></div>
-  <div class="pl-32">
+  <div class="text-center pr-16">
   (<FiLL :data="data?.fname" class="min-w-20" /> <FiLL :data="data?.lname " class="min-w-20" />)<br>
 </div>
   <div ></div>
@@ -236,7 +236,7 @@
   <div ></div>
   <div class="text-start text-base">(ลงชื่อ)..................................................................คู่สมรสผู้กู้</div>
   <div ></div>
-  <div class="ps-14">
+  <div class="text-center pr-16">
     (<FiLL :data="data?.spouseFName" class="min-w-20" /> <FiLL :data="data?.lname" class="min-w-20" />)<br><br>
 </div>
   <div ></div>
@@ -246,7 +246,7 @@
   <div ><br></div>
   <div class="text-start text-base">(ลงชื่อ)..............................................................เจ้าหน้าที่สหกรณ์</div>
   <div ></div>
-  <div class="ps-14">
+  <div class="text-center pr-16">
     (<FiLL :data="data?.officerFName" class="min-w-20" /> <FiLL :data="data?.officerLName" class="min-w-20" />)<br>
 </div>
 </div>
@@ -271,7 +271,7 @@
         - ซื้อหุ้นตามส่วนเงินกู้ <FiLL :data="data?.remain" class="min-w-20"/> บาท<br>
         - เบี้ยประกัน/ฌาปนกิจ <FiLL :data="data?.stockvalue" class="min-w-20"/> บาท</p>
       <p class="text-center text-sm ps-2">(ลงชื่อ)................................. เจ้าหน้าที่สหกรณ์<br>
-      <div class="ps-20">
+      <div class="text-center ">
         (<FiLL :data="data?.officerFName" class="min-w-20" /> <FiLL :data="data?.officerLName" class="min-w-20" />)<br>
 </div>
         </p>
@@ -283,12 +283,12 @@
         (<MoneyText :data="data?.debt" />) </p>
     <p class="text-sm ps-2"><FiLLBox /> ไม่อนุมัติ เพราะ...........................................................................
         ................................................................................................................</p>
-      <p class="text-center text-sm ps-2">(ลงชื่อ) ............................... ประธานเงินกู้<br>
-      <div class="ps-20">
+      <p class="text-center text-sm">(ลงชื่อ) ............................... ประธานเงินกู้<br>
+      <div class="text-center ">
         (<FiLL :data="data?.chaimanFName" class="min-w-20" /> <FiLL :data="data?.chaimanLname" class="min-w-20" />)<br>
 </div></p>
-      <p class="text-center text-sm ps-2">(ลงชื่อ) ............................... กรรมการผู้จัดการ<br>
-      <div class="ps-20">
+      <p class="text-center text-sm ">(ลงชื่อ) ............................... กรรมการผู้จัดการ<br>
+      <div class="text-center ">
         (<FiLL :data="data?.directorFName" class="min-w-20" /> <FiLL :data="data?.directorLName" class="min-w-20" />)<br>
         </div></p><br>
       
@@ -648,7 +648,7 @@
                     </td>
                     </tr>
                     <tr>
-                      <div class="ps-32">
+                      <div class="pl-12">
                         (<FiLL :data="data?.spouseFName" class="min-w-20" /> <FiLL :data="data?.lname" class="min-w-20" />)<br>
         </div><br>
                     </tr>
@@ -658,7 +658,7 @@
                     </td>
                     </tr>
                     <tr>
-                      <div class="ps-32">
+                      <div class="pl-12">
                         (<FiLL :data="data?.officerFName" class="min-w-20" /> <FiLL :data="data?.officerLName" class="min-w-20" />)<br>
         </div><br>
                     </tr>
@@ -676,11 +676,11 @@
            <div class="border-solid border-2 border-slate-950 ">
 <br>
 <p class="text-center text-lg font-semibold ">บันทึกให้คำยินยอมของคู่สมรสผู้ค้ำประกัน</p> <br>
-<p class=" text-base pl-96">เขียนที่ &nbsp;&nbsp; <FiLL :data="data?.receivedLocation" /> &nbsp;</p>
-<p class=" text-base pl-96">วันที่ &nbsp;&nbsp; <FiLL :data="data?.dateReceived" date-format="full"/> </p><br>
-<p class=" text-base pl-8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ข้าพเจ้า &nbsp;&nbsp; <FiLL :data="data?.fname" /> <FiLL :data="data?.lname" /> 
-  &nbsp; อายุ <FiLL :data="data?.age" /> ปี อยู่บ้านเลขที่ <FiLL :data="data?.housenb" /> หมู่ที่ <FiLL :data="data?.group" /> ถนน <FiLL :data="data?.road" /> ตำบล <FiLL :data="data?.subdistrict" />  
-  อำเภอ <FiLL :data="data?.district" /> จังหวัด <FiLL :data="data?.province" /> ขอทำความยินยอมให้ (นาย/นาง/นางสาว) <FiLL :data="data?.fname" /> <FiLL :data="data?.lname" /> ซึ่งเป็นคู่สมรสของข้าพเจ้าโดยถูกต้องตามกฎหมาย
+<p class=" text-base pl-96">เขียนที่ &nbsp;&nbsp; <FiLL :data="data?.receivedLocation" class="min-w-70"/> &nbsp;</p>
+<p class=" text-base pl-96">วันที่ &nbsp;&nbsp; <FiLL :data="data?.dateReceived" class="min-w-80" date-format="full" /> </p><br>
+<p class=" text-base pl-8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ข้าพเจ้า &nbsp;&nbsp; <FiLL :data="data?.fname" class="min-w-70"/> <FiLL :data="data?.lname" class="min-w-70"/> 
+  &nbsp; อายุ <FiLL :data="data?.age" class="min-w-70"/> ปี อยู่บ้านเลขที่ <FiLL :data="data?.housenb" class="min-w-70"/> หมู่ที่ <FiLL :data="data?.group" class="min-w-70"/> ถนน <FiLL :data="data?.road" class="min-w-70"/> ตำบล <FiLL :data="data?.subdistrict" class="min-w-70"/>  
+  อำเภอ <FiLL :data="data?.district" class="min-w-70"/> จังหวัด <FiLL :data="data?.province" class="min-w-70"/> ขอทำความยินยอมให้ (นาย/นาง/นางสาว) <FiLL :data="data?.fname" class="min-w-70"/> <FiLL :data="data?.lname" class="min-w-70"/> ซึ่งเป็นคู่สมรสของข้าพเจ้าโดยถูกต้องตามกฎหมาย
 มีอำนาจทำนิติกรรมทุกชนิดกับสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด และให้ถือเสมือนหนึ่งเป็นการกระทำของข้าพเจ้า เพื่อเป็นหลักฐานแห่งการยินยอมนี้ ข้าพเจ้าได้ลงลายมือชื่อไว้เป็นสำคัญต่อหน้าพยานผู้มีนามข้างท้ายนี้
 </p>
 <p class="text-base pl-80">(ลงชื่อ)............................................................คู่สมรสผู้ให้ความยินยอม</p>

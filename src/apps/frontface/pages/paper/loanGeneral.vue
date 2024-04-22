@@ -151,7 +151,7 @@
             <p class="text-start text-base">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.1
               <FiLL :data="index"
                 number
-                normal />.
+                normal no-line/>.
                 ชื่อ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   <FiLL :data="item.fn" class="min-w-20" /> <FiLL :data="item.ln" class="min-w-20" />
                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
@@ -166,7 +166,7 @@
             <p class="text-start text-base">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.1
               <FiLL :data="index"
                 number
-                normal />.
+                normal no-line/>.
                 ชื่อ 
               ................................................................................. เลขทะเบียนที่....................................<br>
             ตำแหน่ง........................................................................................สังกัด.......................................................................<br>
@@ -198,7 +198,7 @@
             <p class="text-start text-base ">
               <FiLL :data="index"
                 number
-                normal />.
+                normal no-line/>.
                 ชื่อ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <FiLL :data="item.fn" /> <FiLL :data="item.ln" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; อายุ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <FiLL :data="item.age" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ปี เลขทะเบียนที่&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -210,7 +210,7 @@
             <p class="text-start text-base">
               <FiLL :data="index"
                 number
-                normal />.
+                normal no-line/>.
                 ชื่อ 
               ...............................................................................อายุ 
              ......................ปี เลขทะเบียนที่ ...................................<br>

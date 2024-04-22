@@ -74,32 +74,27 @@
         </p>
       </div>
 
-      <div class="flex flex-col ml-10 text-center ">
-        <LineFiLL :data="data?.repaymentPlan"
-          :limit="12">
-          <template #data="{ index, item }">
-            <p>(
-              <FiLL :data="index"
-                thai-number
-                normal />)
-              ภายในวันสิ้นเดือน
-              <FiLL :data="item.m" /> ต้นเงิน
-              <FiLL :data="item.amount" /> บาท
-              พร้อมด้วยดอกเบี้ย
-            </p>
-          </template>
-          <template #default="{ index }">
-            <p>(
-              <FiLL :data="index"
-                thai-number
-                normal />)
-              ภายในวันสิ้นเดือน................................................ต้นเงิน.......................................................บาท
-              พร้อมด้วยดอกเบี้ย
-            </p>
-          </template>
-        </LineFiLL>
+   <div class="flex flex-col ml-10 text-center my-4">
+  <LineFiLL :data="data?.repaymentPlan" :limit="12">
+    <template #data="{ index, item }">
+      <p class="space-x-2">
+        (<FiLL :data="index" thai-number normal />) 
+        ภายในวันสิ้นเดือน <span class="ml-1"><FiLL :data="item.m" /></span> 
+        ต้นเงิน <span class="ml-1"><FiLL :data="item.amount" /></span> บาท 
+        <span class="ml-1">พร้อมด้วยดอกเบี้ย</span>
+      </p>
+    </template>
+    <template #default="{ index }">
+      <p class="space-x-2">
+        (<FiLL :data="index" thai-number normal />) 
+        ภายในวันสิ้นเดือน................................................ 
+        ต้นเงิน.......................................................บาท 
+        <span class="ml-1">พร้อมด้วยดอกเบี้ย</span>
+      </p>
+    </template>
+  </LineFiLL>
+</div>
 
-      </div>
 
       <div class="flex flex-col ml-10">
         <p>ข้อ ๓. เมื่อข้าพเจ้าได้รับเงินกู้แล้ว ข้าพเจ้ายอมรับผู้พันตามข้อบังคับของสหกรณ์ ดังนี้
@@ -364,27 +359,28 @@
           </p>
   
         </div>
-  
-        <div class="grid grid-cols-2 justify-center mt-3">
+
+        <div class="grid grid-cols-3 justify-center mt-3">
           <div class="flex items-start">
-  
           </div>
   
   
-          <div class="">
+          <div class="col-span-2">
   
             <p class="mt-4 text-center ml-1">................................................................ผู้รับเงิน</p>
-            <p class=" text-center ml -0">(<FiLL :data="data?.fname" />  <FiLL :data="data?.lname" />)</p>
+            <p class="text-center"><table class="w-60 mx-auto">(<td class="border-black text-center min-w-52" style="border-bottom:2px dotted"><FiLL :data="data?.fname" />  <FiLL :data="data?.lname" /></td>)</table></p>
             <p class="text-xs mr-8 text-center ml-10">ต้องลงลายมือชื่อในการรับเงินต่อหน้าเจ้าหน้าที่ของสหกรณ์</p>
   
+            <p class="mt-4 text-center">
+              จ่ายเงินถูกต้องแล้ว......................................................เจ้าหน้าที่การเงิน
+            </p>
+            <p class="mt-4 text-center">
+              <p class="text-center"><table class="w-60 mx-auto">(<td class="border-black text-center min-w-52" style="border-bottom:2px dotted"><FiLL :data="data?.officer"date-format="short" /></td>)</table></p>
+            </p>
           </div>
   
         </div>
-        <p class="mt-4 text-right">
-          จ่ายเงินถูกต้องแล้ว......................................................เจ้าหน้าที่การเงิน
-        </p>
-        <p class="mt-4 text-right mr-40">
-          (<FiLL :data="data?.officer"date-format="short" />)</p>
+        
       </MorePaperDoc>
    
   </main>

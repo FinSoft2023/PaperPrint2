@@ -236,32 +236,32 @@
       </div>
 <br>
 
-        <div class="grid grid-cols-2">
+        <div class="grid grid-cols-2 text-end">
   <div></div>
-  <div class="text-center text-base">(ลงชื่อ)..................................................................ผู้ขอกู้</div>
+  <div class="text-start text-base">(ลงชื่อ)..................................................................ผู้ขอกู้</div>
   <div ></div>
-  <div class="ps-28">
-  <table class="w-44 ">(<td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="data?.fname" /> <FiLL :data="data?.lname" /></td>)</table><br>
+  <div class="ps-14">
+  <table class="w-52 text-center ">(<td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="data?.fname" /> <FiLL :data="data?.lname" /></td>)</table><br>
 </div>
   <div ></div>
-  <div class="text-center text-base">เบอร์โทร..................................................................</div>
+  <div class="text-start text-base">เบอร์โทร..................................................................</div>
   <div ></div>
   <div ><br></div>
   <div ></div>
-  <div class="text-center text-base">(ลงชื่อ)..................................................................คู่สมรสผู้กู้</div>
+  <div class="text-start text-base">(ลงชื่อ)..................................................................คู่สมรสผู้กู้</div>
   <div ></div>
-  <div class="ps-28">
-  <table class="w-44 ">(<td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="data?.spouseFName" />  <FiLL :data="data?.lname" /></td>)</table><br>
+  <div class="ps-14">
+  <table class="w-52 text-center">(<td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="data?.spouseFName" />  <FiLL :data="data?.lname" /></td>)</table><br>
 </div>
   <div ></div>
-  <div class="text-center text-base">เบอร์โทร..................................................................</div>
+  <div class="text-start text-base">เบอร์โทร..................................................................</div>
   <div ></div>
   <div ><br></div>
   <div ><br></div>
-  <div class="text-center text-base">(ลงชื่อ)..........................................................เจ้าหน้าที่สหกรณ์</div>
+  <div class="text-start text-base">(ลงชื่อ)..............................................................เจ้าหน้าที่สหกรณ์</div>
   <div ></div>
-  <div class="ps-28">
-  <table class="w-44 ">(<td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="data?.officerFName" />  <FiLL :data="data?.officerLName" /></td>)</table><br>
+  <div class="ps-14">
+  <table class="w-52 text-center">(<td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="data?.officerFName" />  <FiLL :data="data?.officerLName" /></td>)</table><br>
 </div>
 </div>
 

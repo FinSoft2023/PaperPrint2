@@ -59,7 +59,7 @@
             </div>
 
             <div class="grid justify-items-start mt-6 " >
-            <p class="indent-10">ข้าพเจ้า <FiLL :data="data?.fname"/> <FiLL :data="data?.lname"/> สมาชิกเลขทะเบียนที่ <FiLL :data="data?.remberRegistration" /> อายุ <FiLL :data="data?.age" /> ปี
+            <p class="indent-10 ">ข้าพเจ้า <FiLL :data="data?.fname"/> <FiLL :data="data?.lname"/> สมาชิกเลขทะเบียนที่ <FiLL :data="data?.remberRegistration" /> อายุ <FiLL :data="data?.age" class="min-w-20  text-start"/> ปี
               เป็น <FiLLBox /> ข้าราชการ/ลูกจ้างประจำ <FiLLBox :checked="data?.monthlyIncome > 500" /> พนักงานราชการ <FiLLBox /> พนักงานกระทรวงสาธารณสุข <FiLLBox /> ลูกจ้าง
               <FiLLBox /> อื่นๆ................................. ตำเเหน่ง <FiLL :data="data?.position" /> สังกัด <FiLL :data="data?.affiliation" />
               เงินเดือน/เงินประจำตำเเหน่ง <FiLL :data="data?.salary" /> บาท หน่วยงาน <FiLL :data="data?.agency" /> เบอร์โทรภายใน <FiLL :data="data?.phonenb" />
@@ -72,7 +72,7 @@
             <p class="indent-10" ><FiLLBox /> 2.1 เพื่อการอันจำเป็น อันได้เเก่ จัดหาสิ่งจำเป็นสำหรับครอบครัว ,อุปการะเลี้ยงบุคคลในครอบครัว,
               ปลดเปลื้องหนี้สิ้นของครัวเรือน,รักษาพยาบาลบุคคลในครอบครัว
             </p>
-            <p class="indent-10" ><FiLLBox :checked="data?.monthlyIncome > 500" />2.2 เพื่อชำระหนี้สหกรณ์ จำนวน <FiLL :data="data?.contract" /> สัญญา ดังนี้
+            <p class="pl-10" ><FiLLBox :checked="data?.monthlyIncome > 500" /> 2.2 เพื่อชำระหนี้สหกรณ์ จำนวน <FiLL :data="data?.contract" /> สัญญา ดังนี้
             </p>
             <div class="grid grid-cols-2 justify-center">
               <div class="items-start  text-nowrap">
@@ -125,9 +125,9 @@
 <p class="text-center text-lg font-semibold ">บันทึกให้คำยินยอมของคู่สมรสผู้กู้</p> <br>
 <p class=" text-base pl-96">เขียนที่ &nbsp;&nbsp; <FiLL :data="data?.receivedLocation" /> &nbsp;</p>
 <p class=" text-base pl-96">วันที่ &nbsp;&nbsp; <FiLL :data="data?.dateReceived" date-format="full"/> </p><br>
-<p class=" text-base pl-8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ข้าพเจ้า &nbsp;&nbsp; <FiLL :data="data?.fname" /> <FiLL :data="data?.lname" /> 
-  &nbsp; อายุ <FiLL :data="data?.age" /> ปี อยู่บ้านเลขที่ <FiLL :data="data?.housenb" /> หมู่ที่ <FiLL :data="data?.group" /> ถนน <FiLL :data="data?.road" /> ตำบล <FiLL :data="data?.subdistrict" />  
-  <br>อำเภอ <FiLL :data="data?.district" /> จังหวัด <FiLL :data="data?.province" /> ขอทำความยินยอมให้ (นาย/นาง/นางสาว) <FiLL :data="data?.fname" /> <FiLL :data="data?.lname" /> ซึ่งเป็นคู่สมรสของข้าพเจ้าโดยถูกต้องตามกฎหมาย
+<p class=" text-base pl-8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ข้าพเจ้า<FiLL :data="data?.fname"class="min-w-20" /> <FiLL :data="data?.lname"class="min-w-20" /> 
+   อายุ <FiLL :data="data?.age" class="min-w-12"/> ปี อยู่บ้านเลขที่ <FiLL :data="data?.housenb" class="min-w-12"/> หมู่ที่ <FiLL :data="data?.group" class="min-w-12"/> ถนน <FiLL :data="data?.road" class="min-w-12"/> ตำบล <FiLL :data="data?.subdistrict"class="min-w-12" />  
+อำเภอ <FiLL :data="data?.district" class="min-w-12"/> จังหวัด <FiLL :data="data?.province" class="min-w-12"/> ขอทำความยินยอมให้ (นาย/นาง/นางสาว) <FiLL :data="data?.fname" /> <FiLL :data="data?.lname" /> ซึ่งเป็นคู่สมรสของข้าพเจ้าโดยถูกต้องตามกฎหมาย
 มีอำนาจทำนิติกรรมทุกชนิดกับสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด และให้ถือเสมือนหนึ่งเป็นการกระทำของข้าพเจ้า เพื่อเป็นหลักฐานแห่งการยินยอมนี้ ข้าพเจ้าได้ลงลายมือชื่อไว้เป็นสำคัญต่อหน้าพยานผู้มีนามข้างท้ายนี้
 </p>
 <p class="text-base pl-80">(ลงชื่อ)............................................................คู่สมรสผู้ให้ความยินยอม</p>
@@ -152,10 +152,10 @@
               <FiLL :data="index"
                 number
                 normal no-line/>.
-                ชื่อ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                ชื่อ
                   <FiLL :data="item.fn" class="min-w-20" /> <FiLL :data="item.ln" class="min-w-20" />
-                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-              เลขทะเบียนที่&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    
+              เลขทะเบียนที่
               <FiLL :data="item.numberRegist" class="min-w-20" />
               
               ตำแหน่ง <FiLL :data="item.poSition" /> สังกัด <FiLL :data="item.afiilia" />
@@ -199,10 +199,10 @@
               <FiLL :data="index"
                 number
                 normal no-line/>.
-                ชื่อ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <FiLL :data="item.fn" /> <FiLL :data="item.ln" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; อายุ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <FiLL :data="item.age" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ปี เลขทะเบียนที่&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-               <FiLL :data="item.numberRegist" /><br>
+                ชื่อ 
+              <FiLL :data="item.fn" class="min-w-36" /> <FiLL :data="item.ln"  class="min-w-36"/>  อายุ 
+              <FiLL :data="item.age" class="min-w-28"/> ปี เลขทะเบียนที่
+               <FiLL :data="item.numberRegist" class="min-w-28"/><br>
               <p class="pl-20 text-base">(ลงชื่อ).............................................................ผู้ค้ำประกัน</p>
             </p>
           </template>
@@ -307,7 +307,7 @@
                 <p class="text-lg">หนังสือยืนยันภาระผูกพัน</p>
       </div>
     <div class="grid justify-items-start mt-6">
-      <p class="indent-24">ตามที่ ข้าพเจ้า ผู้กู้(นาย/นาง/นางสาว) <FiLL :data="data?.fname"/> <FiLL :data="data?.lname"/> ทะเบียนสมาชิกที่ <FiLL :data="data?.remberRegistration"/> หน่วยงาน <FiLL :data="data?.agency"/> 
+      <p class="indent-24 ">ตามที่ ข้าพเจ้า ผู้กู้(นาย/นาง/นางสาว) <FiLL :data="data?.fname"/> <FiLL :data="data?.lname"/> ทะเบียนสมาชิกที่ <FiLL :data="data?.remberRegistration"/> หน่วยงาน <FiLL :data="data?.agency"/> 
         สังกัด <FiLL :data="data?.affiliation"/> 
         ได้ยื่นคําขอกู้เงิน <FiLLBox /> พิเศษ <FiLLBox /> สามัญ พัฒนาคุณภาพชีวิต กับสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จํากัด ในการนี้ข้าพเจ้า ขอให้ถ้อยคําตามความสัตย์จริง โดยหากข้าพเจ้าให้ถ้อยคําอันเป็นเท็จ ข้าพเจ้ายินดีให้สหกรณ์ ออมทรัพย์ฯ ดําเนินคดีตามกฎหมายแก่ข้าพเจ้าทันที</p>
         <p class="indent-36">- ข้าพเจ้า <FiLLBox :checked="data?.monthlyIncome > 500" /> มี <FiLLBox /> ไม่มี  หนี้เงินกู้สวัสดิการกับธนาคาร  จํานวนเงินหนี้คงเหลือ <FiLL :data="data?.remaining"/> บาท ส่งชําระรายเดือน ๆ ละ <FiLL :data="data?.makepayment"/> บาท</p>
@@ -406,7 +406,7 @@
                 </td>
                 </tr>
                 <tr>
-                <td class="text-center pl-16 ">(<FiLL :data="data?.fname" /> <FiLL :data="data?.lname" />)
+                <td class="text-center pl-16 ">(<FiLL :data="data?.fname" class="min-w-20"/> <FiLL :data="data?.lname" class="min-w-20"/>)
                 </td>
                 </tr>
                 
@@ -415,7 +415,7 @@
                 </td>
                 </tr>
                 <tr>
-                  <div class="ps-32">
+                  <div class="text-center pl-16">
                     (<FiLL :data="data?.spouseFName" class="min-w-20" /> <FiLL :data="data?.lname" class="min-w-20" />)<br>
         </div><br>
                 
@@ -571,7 +571,7 @@
           <img class="w-[120px] h-auto"
             src="https://www.saving-sskh.com/images/logo-saving.png"
             alt="Logo" />
-            <p class="mt-2 font-bold text-xl text-center col-span-2">หนังสือค้ำประกันเงินกู้สามัญ</p>
+            <p class=" font-bold text-xl text-center col-span-2">หนังสือค้ำประกันเงินกู้สามัญ</p>
         </div>
 
         <div class="flex flex-col items-end mt-4">
@@ -585,13 +585,13 @@
         </div>
       </div>
 
-      <div class="grid justify mt-2">
+      <div class="grid justify">
             <p class="pl-69 text-sm text-end">เขียนที่ <FiLL :data="data?.receivedLocation" /> </p>
             <p class="mr-28 text-sm text-end">วันที่ <FiLL :data="data?.dateReceived"
                 date-format="full" /> </p>
             </div>
 
-            <div class="grid justify-items-start mt-2 text-base " >
+            <div class="grid justify-items-start  text-base " >
             <p class="indent-10">ข้าพเจ้า <FiLL :data="data?.fname"/> <FiLL :data="data?.lname"/> สมาชิกเลขทะเบียนที่ <FiLL :data="data?.remberRegistration" /> อายุ <FiLL :data="data?.age" /> ปี
               เลขประจำตัวประชาชน <FiLL :data="data?.idcard" /> ปรากฏตามสำเนาบัตรที่เเนบท้ายนี้
               เป็น <FiLLBox :checked="data?.monthlyIncome > 500" /> ข้าราชการ/ลูกจ้างประจำ <FiLLBox /> พนักงานราชการ <FiLLBox /> พนักงานกระทรวงสาธารณสุข <FiLLBox /> ลูกจ้าง
@@ -622,7 +622,7 @@
             <p class="indent-10" >ข้อ 7. ข้าพเจ้าได้ทำหนังสือยินยอมให้ผู้บังคับบัญชาหักเงินได้รายเดือนและเงินอื่นใดของข้าพเจ้ามอบไว้ให้สหกรณ์ เพื่อแสดงต่อหน่วยงานต้นสังกัดของข้าพเจ้าหักเงิน ณ ที่จ่ายให้สหกรณ์ และคำยินยอมนี้ให้มีตลอดไปจนกว่าสหกรณ์จะได้รับชำระหนี้จนสิ้นเชิง
               การทำหนังสือค้ำประกันฉบับนี้ข้าพเจ้าพิจารณาไตร่ตรองโดยรอบคอบและสมัครใจเป็นผู้ค้ำประกัน ข้าพเจ้าทราบและเข้าใจดีแล้วว่าต้องรับผิดต่อสหกรณ์ในฐานะเป็นผู้ค้ำประกันถ้าผู้กู้ผิดนัดชำระหนี้ ดังนั้น เพื่อเป็นหลักฐานจึงลงลายมือชื่อพร้อมกับพยานไว้เป็นหลักฐาน
             </p>
-            <div class="grid grid-cols-2 justify-center mt-4  ">
+            <div class="grid grid-cols-2 justify-center mt-1  ">
               <div class="items-start  text-nowrap">
                 <tr>
                     <td class="text-left pl-14  ">(ลงชื่อ).................................................ผู้ค้ำประกัน

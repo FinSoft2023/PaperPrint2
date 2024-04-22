@@ -78,7 +78,7 @@
   <LineFiLL :data="data?.repaymentPlan" :limit="12">
     <template #data="{ index, item }">
       <p class="space-x-2">
-        (<FiLL :data="index" thai-number normal />) 
+        (<FiLL :data="index" thai-number normal no-line/>) 
         ภายในวันสิ้นเดือน <FiLL :data="item.m"  class="min-w-28" />
         ต้นเงิน <FiLL :data="item.amount" class="min-w-28" />   บาท 
         <span class="ml-4">พร้อมด้วยดอกเบี้ย</span>

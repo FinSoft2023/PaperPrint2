@@ -304,7 +304,7 @@
             </div>
         </MorePaperDoc>
         <span v-for="i in 2">
-        <MorePaperDoc> <!--หน้าที่ 6&8-->
+        <MorePaperDoc> <!--หน้าที่ 6 & 8-->
             <div class="mx-3">
                 <div class="flex flex-col items-center">
                     <img class="w-[120px] h-auto"
@@ -367,7 +367,7 @@
                 </div>
             </div>
         </MorePaperDoc>
-        <MorePaperDoc> <!--หน้าที่ 7&9-->
+        <MorePaperDoc> <!--หน้าที่ 7 & 9-->
             <div class="flex flex-col mx-3">
                 <p class="text-center mt-10 mb-6">-2-</p>
                 <p class="text-start">หักเงินเดือน ค่าจ้าง หรือเงินบำนาญหรือเงินบำเหน็จ หรือเงินอื่นใดในลักษณะเดียวกันที่ข้าพเจ้ามีสิทธิจะได้รับ

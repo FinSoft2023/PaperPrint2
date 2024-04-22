@@ -528,17 +528,17 @@
                             </p>
                             
                         </div>
-                        <p class="mt-4"> วันที่ <FiLL :data="data?.dateReceived"date-format="full" /> </p> 
+                        <p class="mt-4"> วันที่ <FiLL :data="data?.dateReceived"date-format="full" no-line /> </p> 
                     </div>
                 </div>
         
                 <div class="flex flex-col mt-1">
                     <p class="mt-4">เรียน ประธานกรรมการสหกรณ์ออมทรัทย์โรงพยาบาลศรีสะเกษ จำกัด</p>
                     <div class="flex flex-col">
-                        <p class="mt-6 indent-20 ">
-                            ข้าพเจ้า <FiLL :data="data?.fname" /> <FiLL :data="data?.lname" /> เป็นข้าราชการ/ลูกจ้างประจำ/
+                        <p class="mt-6">
+                            <span class="ml-20">ข้าพเจ้า</span> <FiLL :data="data?.fname" class="min-w-24" /><FiLL :data="data?.lname" class="min-w-24" /> เป็นข้าราชการ/ลูกจ้างประจำ/
                             พนักงานราชการ/พนักงานกระทรวงสาธารณสุข (ตามวุฒิ)/พนักงานกระทรวงสาธารณสุข/ลูกจ้างชั่วคราว
-                            เงินบำรุง (ตามวุฒิ) ลูกจ้างชั่วคราวเงินบำรุง ตำแหน่ง <FiLL :data="data?.position" /> <span class="font-bold"> สังกัดโรงพยาบาลศรีสะเกษ เป็นสมาชิกสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</span> เลขทะเบียนที่ <FiLL :data="data?.regisNumber" />
+                            เงินบำรุง (ตามวุฒิ) ลูกจ้างชั่วคราวเงินบำรุง ตำแหน่ง <FiLL :data="data?.position" class="min-w-32" /> <span class="font-bold"> สังกัดโรงพยาบาลศรีสะเกษ เป็นสมาชิกสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</span> เลขทะเบียนที่ <FiLL :data="data?.regisNumber" />
                             และยินยอมให้สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด หักเงินที่ข้าพเจ้าได้รับเงินเดือน ค่าจ้าง
                             เงินบำนาญ เงินบำเหน็จ เงินบำเหน็จตกทอด กบข. ฌกส. หรือเงินอื่นใดที่ข้าพเจ้ามีสิทธิได้รับจาก
                             ส่วนราชการต้นสังกัด เพื่อชำระค่าหุ้นหรือหนี้ตามสัญญากู้เงิน ไม่ว่าจะเป็นหนี้เงินต้นและดอกเบี้ย ค่าอุปกรณ์
@@ -547,33 +547,33 @@
                         </p>
                         <p class="mt-14 ml-40">
                             <span class="ml-14">
-                                ลงชื่อ..................................................................ผู้ให้คำยินยอม (ผู้สมัคร)
+                                ลงชื่อ<BlankSpace class="min-w-56" />ผู้ให้คำยินยอม (ผู้สมัคร)
                             </span>
                         </p>
-                        <p class="mb-5 text-center">(<FiLL :data="data?.fname" /> <FiLL :data="data?.lname" />)</p>
+                        <p class="mb-5 text-center">(<FiLL :data="data?.fname" class="min-w-28" /><FiLL :data="data?.lname" class="min-w-28" />)</p>
                         <p class="mt-4 ml-40">
                             <span class="ml-14">
-                                ลงชื่อ..................................................................พยาน(ผู้รับผลประโยชน์)
+                                ลงชื่อ<BlankSpace class="min-w-56" />พยาน(ผู้รับผลประโยชน์)
                             </span>
                         </p>
-                        <p class="text-center">(<FiLL :data="data?.fnameInterestedWitness" /> <FiLL :data="data?.lnameInterestedWitness" />)</p>
-                        <span class="text-center">เกี่ยวข้องเป็น <FiLL :data="data?.relation" /></span>
-                        <span class="text-center mb-4">เบอร์โทร <FiLL :data="data?.phoneNo" /></span>
+                        <p class="text-center">(<FiLL :data="data?.fnameInterestedWitness" class="min-w-28"/><FiLL :data="data?.lnameInterestedWitness" class="min-w-28" />)</p>
+                        <span class="text-center">เกี่ยวข้องเป็น <FiLL :data="data?.relation" class="min-w-20" /></span>
+                        <span class="text-center mb-4">เบอร์โทร <FiLL :data="data?.phoneNo" class="min-w-28" /></span>
 
 
                         <span class="mt-8 ml-40">
                             <span class="ml-14">
-                                ลงชื่อ..................................................................พยาน(หัวหน้าฝ่ายการเงิน)
+                                ลงชื่อ<BlankSpace class="min-w-56" />พยาน(หัวหน้าฝ่ายการเงิน)
                             </span>
                         </span>
-                        <p class="mb-6 text-center"><table class="w-60 mx-auto">(<td class="border-black text-center min-w-52" style="border-bottom:2px dotted"></td>)</table></p>
+                        <p class="mb-6 text-center">(<BlankSpace class="min-w-60" />)</p>
 
                         <p class="mt-4 ml-40">
                             <span class="ml-14">
-                                ลงชื่อ..................................................................ผู้อำนวยการโรงพยาบาลศรีสะเกษ
+                                ลงชื่อ<BlankSpace class="min-w-56" />ผู้อำนวยการโรงพยาบาลศรีสะเกษ
                             </span>
                         </p>
-                        <p class="text-center"><table class="w-60 mx-auto">(<td class="border-black text-center min-w-52" style="border-bottom:2px dotted"></td>)</table></p>
+                        <p class="text-center">(<BlankSpace class="min-w-60" />)</p>
                     </div>
                 </div>
             </div>
@@ -581,6 +581,7 @@
     </main>
 </template>
 <script setup lang="ts">
+import FiLL from '~/components/FiLL.vue';
 import Index from '../index.vue';
 
 const { data } = await useFetch<any>('/api/newMembership');

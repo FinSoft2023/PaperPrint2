@@ -233,20 +233,22 @@
                         <div class="items-center mr-10">
                             <p class="text-center">เขียนที่ สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
                             
-                            <p> วันที่ <FiLL :data="data?.dateReceived"date-format="full" /> </p>
+                            <p> วันที่ <FiLL :data="data?.dateReceived"date-format="full" no-line/> </p>
                         </div>
                     </div>
                 </div>
                 <div class="flex flex-col mt-1">
                     <p>เรียน คณะกรรมการดำเนินการสหกรณ๋ออมทรัพย์ โรงพยาบาลศรีสะเกษ จำกัด</p>
                     <div class="flex flex-col">
-                        <p class="mt-6 indent-20 ">
-                            ข้าพเจ้า <FiLL :data="data?.fname" /> <FiLL :data="data?.lname" /> บ้านเลขที่ <FiLL :data="data?.housenumber" /> หมู่ที่ <FiLL :data="data?.village" />
-                            ถนน <FiLL :data="data?.road" /> ตำบล <FiLL :data="data?.district" /> อำเภอ <FiLL :data="data?.canton" /> จังหวัด <FiLL :data="data?.province" />
-                            รหัสไปรษณีย์ <FiLL :data="data?.zipCode" /> เบอร์โทรศัพท์ <FiLL :data="data?.phoneNo" />   
+                        <p class="mt-6  ">
+                            <span class="ml-20">ข้าพเจ้า</span>
+                            <FiLL :data="data?.fname"class="min-w-24" /> <FiLL :data="data?.lname" class="min-w-24"/> บ้านเลขที่ <FiLL :data="data?.houseNumber" class="min-w-20"/> หมู่ที่ <FiLL :data="data?.village" class="min-w-20"/>
+                            ถนน <FiLL :data="data?.road" class="min-w-20"/> ตำบล <FiLL :data="data?.district" class="min-w-20"/> อำเภอ <FiLL :data="data?.canton" class="min-w-20"/> จังหวัด <FiLL :data="data?.province" class="min-w-20"/>
+                            รหัสไปรษณีย์ <FiLL :data="data?.zipCode" class="min-w-20"/> เบอร์โทรศัพท์ <FiLL :data="data?.phoneNo" class="min-w-20"/>   
                             ได้ทราบข้อบังคับของสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด โดยตลอดแล้ว เห็นชอบในวัตถุประสงค์ จึงขอสมัครเข้าเป็นสมาชิกของสหกรณ์ฯ ในฐานะเป็นผู้เข้าซื้อขอจดทะเบียนสหกรณ์ฯ และขอให้ถ้อยคำเป็นหลักฐาน ดังต่อไปนี้.-
                         </p>
                         <p class="indent-20">
+                            <span class="">ข้าพเจ้า</span>
                             ข้อ 1. ข้าพเจ้ามีอายุ <FiLL :data="data?.age" /> ปี ( เกิดวันที่ <FiLL :data="data?.birthDay" /> เดือน <FiLL :data="data?.birthMonth" /> พ.ศ <FiLL :data="data?.birthYear" /> )เลขประจำตัวประชาชน <FiLL :data="data?.idenNumber" /> เลขที่บัญชีธนาคารกรุงไทย <FiLL :data="data?.bankAccountNumber" /> 
                         </p>
                         <p class="indent-20">

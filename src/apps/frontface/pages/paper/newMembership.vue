@@ -323,7 +323,7 @@
                             </div>
                         </div>
                         <p>
-                            <span class="ml-20">ข้าพเจ้า</span> <FiLL :data="data?.fname" no-line /> <FiLL :data="data?.lname" no-line /> 
+                            <span class="ml-20">ข้าพเจ้า</span> <FiLL :data="data?.fname" class="min-w-28" /><FiLL :data="data?.lname" class="min-w-28" /> 
                             อายุ <FiLL :data="data?.age" no-line />   ปี 
                             ปัจจุบันอาศัยอยู่บ้านเลขที่ <FiLL :data="data?.houseNumber" no-line /> 
                             หมู่ที่ <FiLL :data="data?.village" no-line />

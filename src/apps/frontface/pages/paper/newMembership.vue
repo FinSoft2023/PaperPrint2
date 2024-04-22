@@ -233,7 +233,7 @@
                         <div class="items-center mr-10">
                             <p class="text-center">เขียนที่ สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
                             
-                            <p> วันที่ <FiLL :data="data?.dateReceived"date-format="full" no-line /> </p>
+                            <p> วันที่ <FiLL :data="data?.dateReceived"date-format="full" no-line/> </p>
                         </div>
                     </div>
                 </div>
@@ -247,9 +247,8 @@
                             รหัสไปรษณีย์ <FiLL :data="data?.zipCode" class="min-w-36"/> เบอร์โทรศัพท์ <FiLL :data="data?.phoneNo" class="min-w-40"/>   
                             ได้ทราบข้อบังคับของสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด โดยตลอดแล้ว เห็นชอบในวัตถุประสงค์ จึงขอสมัครเข้าเป็นสมาชิกของสหกรณ์ฯ ในฐานะเป็นผู้เข้าซื้อขอจดทะเบียนสหกรณ์ฯ และขอให้ถ้อยคำเป็นหลักฐาน ดังต่อไปนี้.-
                         </p>
-                        <p class="indent-20">
-                            <span class="">ข้าพเจ้า</span>
-                            ข้อ 1. ข้าพเจ้ามีอายุ <FiLL :data="data?.age" /> ปี ( เกิดวันที่ <FiLL :data="data?.birthDay" /> เดือน <FiLL :data="data?.birthMonth" /> พ.ศ <FiLL :data="data?.birthYear" /> )เลขประจำตัวประชาชน <FiLL :data="data?.idenNumber" /> เลขที่บัญชีธนาคารกรุงไทย <FiLL :data="data?.bankAccountNumber" /> 
+                        <p> 
+                            <span class="ml-20">ข้อ 1.</span> ข้าพเจ้ามีอายุ <FiLL :data="data?.age" class="min-w-24" /> ปี ( เกิดวันที่ <FiLL :data="data?.birthDay" class="min-w-20" /> เดือน <FiLL :data="data?.birthMonth" class="min-w-32" /> พ.ศ <FiLL :data="data?.birthYear" class="min-w-20" /> ) เลขประจำตัวประชาชน <FiLL :data="data?.idenNumber" class="min-w-36" /> เลขที่บัญชีธนาคารกรุงไทย <FiLL :data="data?.bankAccountNumber" class="min-w-40" /> 
                         </p>
                         <p>
                             <span class="ml-20">ข้อ 2.</span> ข้าพเจ้าเป็นข้าราชการ/ลูกจ้างประจำ/ พนักงานราชการ/พนักงานกระทรวงสาธารณสุข(ตามวุฒิ)/พนักงานกระทรวงสาธารณสุข/ลูกจ้างชั่วคราวเงินบำรุง (ตามวุฒิ)
@@ -485,6 +484,7 @@
     </main>
 </template>
 <script setup lang="ts">
+import FiLL from '~/components/FiLL.vue';
 import Index from '../index.vue';
 
 const { data } = await useFetch<any>('/api/newMembership');

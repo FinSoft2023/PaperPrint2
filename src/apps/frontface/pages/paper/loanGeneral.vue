@@ -149,13 +149,14 @@
           <template #data="{ index, item }">
             <p class=" text-base pl-8"></p>
             <p class="text-start text-base ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.1
-              <FiLL :data="index"
-                number
-                normal />.
-                ชื่อ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <table class="w-44 "><td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="item.fn" /> <FiLL :data="item.ln" /></td></table> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-              เลขทะเบียนที่&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <table class="w-44 "><td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="item.numberRegist" /></td></table>
+              
+              <table class="w-full">
+                <td><FiLL :data="index" number normal />.</td> 
+                <td>ชื่อ</td> 
+                <td class="border-black text-center" style="border-bottom:2px dotted"><FiLL :data="item.fn" /> <FiLL :data="item.ln" /></td>
+                <td>เลขทะเบียนที่</td>
+                <td class="border-black text-center" style="border-bottom:2px dotted"><FiLL :data="item.numberRegist" /></td>
+              </table>
               ตำแหน่ง <FiLL :data="item.poSition" /> สังกัด <FiLL :data="item.afiilia" />
               เบอร์โทร <FiLL :data="item.phoneNumber" /> วงเงินค้ำประกัน <FiLL :data="item.limit" />
             </p>
@@ -404,8 +405,9 @@
                 </td>
                 </tr>
                 <tr>
-                <td class="text-center pl-16 ">(<FiLL :data="data?.fname" /> <FiLL :data="data?.lname" />)
-                </td>
+                  <div class="ps-32">
+      <table class="w-44 ">(<td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="data?.fname" /> <FiLL :data="data?.lname" /></td>)</table>
+        </div><br>
                 </tr>
                 
                 <tr>
@@ -413,8 +415,10 @@
                 </td>
                 </tr>
                 <tr>
-                <td class="text-center pl-16 ">(<FiLL :data="data?.spouseFName" /> <FiLL :data="data?.lname" />)
-                </td>
+                  <div class="ps-32">
+      <table class="w-44 ">(<td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="data?.spouseFName" /> <FiLL :data="data?.lname" /></td>)</table>
+        </div><br>
+                
                 </tr>
 
               </div>
@@ -427,7 +431,7 @@
                 <tr>
                 <td class="text-left pl-16">(................................................)
                 </td>
-                </tr>
+                </tr><br>
 
                 <tr>
                 <td class="text-left pl-6 ">(ลงชื่อ).................................................พยาน(สมาชิก)
@@ -448,8 +452,9 @@
                 </td>
                 </tr>
                 <tr>
-                <td class="text-center ">(<FiLL :data="data?.officerFName" /> <FiLL :data="data?.officerLName" />)
-                </td>
+                  <div class="ps-32">
+      <table class="w-44 ">(<td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="data?.officerFName" /> <FiLL :data="data?.officerLName" /></td>)</table>
+        </div><br>
                 </tr>
 
                 <tr>
@@ -457,8 +462,9 @@
                 </td>
                 </tr>
                 <tr>
-                <td class="text-center ">(<FiLL :data="data?.chaimanFName" /> <FiLL :data="data?.chaimanLname" />)
-                </td>
+                  <div class="ps-32">
+      <table class="w-44 ">(<td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="data?.chaimanFName" /> <FiLL :data="data?.chaimanLname" /></td>)</table>
+        </div><br>
                 </tr>
 
                 <tr>
@@ -466,8 +472,10 @@
                 </td>
                 </tr>
                 <tr>
-                <td class="text-center ">(<FiLL :data="data?.directorFName" /> <FiLL :data="data?.directorLName" />)
-                </td>
+                  <div class="ps-32">
+      <table class="w-44 ">(<td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="data?.directorFName" /> <FiLL :data="data?.directorLName" /></td>)</table>
+        </div><br>
+
                 </tr>
 
                 </div>
@@ -498,8 +506,9 @@
                     </td>
                     </tr>
                     <tr>
-                    <td class="text-center ">(<FiLL :data="data?.fname" /> <FiLL :data="data?.lname" />)
-                    </td>
+                      <div class="ps-32">
+      <table class="w-44 ">(<td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="data?.fname" /> <FiLL :data="data?.lname" /></td>)</table>
+        </div><br>
                     </tr>
 
                     <tr>
@@ -523,8 +532,9 @@
                     </td>
                     </tr>
                     <tr>
-                    <td class="text-center ">(<FiLL :data="data?.paymentFname" /> <FiLL :data="data?.paymentLname" />)
-                    </td>
+                      <div class="ps-32">
+      <table class="w-44 ">(<td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="data?.paymentFname" /> <FiLL :data="data?.paymentLname" /></td>)</table>
+        </div><br>
                     </tr>
 
                     </div>
@@ -636,8 +646,9 @@
                     </td>
                     </tr>
                     <tr>
-                    <td class="pl-24 ">(<FiLL :data="data?.spouseFName" /> <FiLL :data="data?.lname" />)
-                    </td>
+                      <div class="ps-32">
+      <table class="w-44 ">(<td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="data?.spouseFName" /> <FiLL :data="data?.lname" /></td>)</table>
+        </div><br>
                     </tr>
                     
                     <tr>
@@ -645,8 +656,9 @@
                     </td>
                     </tr>
                     <tr>
-                    <td class="pl-24 ">(<FiLL :data="data?.officerFName" /> <FiLL :data="data?.officerLName" />)
-                    </td>
+                      <div class="ps-32">
+      <table class="w-44 ">(<td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="data?.officerFName" /> <FiLL :data="data?.officerLName" /></td>)</table>
+        </div><br>
                     </tr>
               </div>
             </div>
@@ -670,7 +682,9 @@
 มีอำนาจทำนิติกรรมทุกชนิดกับสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด และให้ถือเสมือนหนึ่งเป็นการกระทำของข้าพเจ้า เพื่อเป็นหลักฐานแห่งการยินยอมนี้ ข้าพเจ้าได้ลงลายมือชื่อไว้เป็นสำคัญต่อหน้าพยานผู้มีนามข้างท้ายนี้
 </p>
 <p class="text-base pl-80">(ลงชื่อ)............................................................คู่สมรสผู้ให้ความยินยอม</p>
-<p class="text-base pl-96">( <FiLL :data="data?.spouseFName" /> <FiLL :data="data?.lname" /> )</p>
+<div class="pl-96 ">
+      <table class="w-44 ">(<td class="border-black text-center min-w-4 " style="border-bottom:2px dotted"><FiLL :data="data?.spouseFName" /> <FiLL :data="data?.lname" /></td>)</table>
+        </div><br>
 <p class="text-base pl-80">(ลงชื่อ)............................................................พยาน(สมาชิก)</p>
 <p class="text-base pl-96">(.............................................................)</p>
 <p class="text-base pl-80">(ลงชื่อ)............................................................พยาน(สมาชิก)</p>

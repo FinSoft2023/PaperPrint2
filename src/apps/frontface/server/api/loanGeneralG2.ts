@@ -52,7 +52,7 @@ export default defineEventHandler(async (event) => {
 
      loanLetterNumber:"255/30",         //หนังสือที่
      loanAccountNumber:"655/1",         // บัญชีเลขที่
-      receivedLocation:"สหกรณ์ออมทรัพย์ รพ. ศรีสะเกษ", // สถานที่
+      receivedLocation:"สหกรณ์ออมทรัพย์ รพ. ศรีสะเกษ จำกัด", // สถานที่
       
       monthlyIncome: 10000,
 

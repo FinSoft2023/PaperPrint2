@@ -58,21 +58,22 @@
             <p>เรียน คณะกรรมการดำเนินการสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
             </div>
 
-            <div class="grid justify-items-start mt-6 " >
-            <p><span class="ml-10">ข้าพเจ้า </span><FiLL class="min-w-32" :data="`${data?.fname}  ${data?.lname}`"/> สมาชิกเลขทะเบียนที่ <FiLL :data="data?.remberRegistration" /> อายุ <FiLL :data="data?.age" class="min-w-20  text-start"/> ปี
-              เป็น <FiLLBox /> ข้าราชการ/ลูกจ้างประจำ <FiLLBox :checked="data?.monthlyIncome " /> พนักงานราชการ <FiLLBox /> พนักงานกระทรวงสาธารณสุข <FiLLBox /> ลูกจ้าง
-              <FiLLBox /> อื่นๆ................................. ตำเเหน่ง <FiLL :data="data?.position" /> สังกัด <FiLL :data="data?.affiliation" />
-              เงินเดือน/เงินประจำตำเเหน่ง <FiLL :data="data?.salary" /> บาท หน่วยงาน <FiLL :data="data?.agency" /> เบอร์โทรภายใน <FiLL :data="data?.phonenb" />
-              ที่อยู่เลขที่ <FiLL :data="data?.housenb" /> หมู่ที่ <FiLL :data="data?.group" /> ถนน <FiLL :data="data?.road" /> ตำบล <FiLL :data="data?.subdistrict" /> อำเภอ <FiLL :data="data?.district" />
-              จังหวัด <FiLL :data="data?.province" /> รหัสไปรษณีย์ <FiLL :data="data?.zipcode" /> เบอร์โทร <FiLL :data="data?.phonenb" /> LINE ID <FiLL :data="data?.idLine" />
+            <div class="grid justify-items-start mt-6 text-pretty text-base  ">
+            <p><span class="ml-20">ข้าพเจ้า</span>
+              <FiLL class="min-w-36" :data="`${data?.fname}  ${data?.lname}`"/> สมาชิกเลขทะเบียนที่ <FiLL :data="data?.remberRegistration" class="min-w-20" /> อายุ <FiLL :data="data?.age" class="min-w-20" /> ปี
+              เป็น <FiLLBox /> ข้าราชการ/ลูกจ้างประจำ <FiLLBox /> พนักงานราชการ <FiLLBox /> พนักงานกระทรวงสาธารณสุข <FiLLBox /> ลูกจ้าง
+              <FiLLBox /> อื่นๆ................................. ตำเเหน่ง <FiLL :data="data?.position" class="min-w-28" /> สังกัด <FiLL :data="data?.affiliation" class="min-w-44" />
+              เงินเดือน/เงินประจำตำเเหน่ง <FiLL :data="data?.salary" class="min-w-28" /> บาท หน่วยงาน <FiLL :data="data?.agency" class="min-w-32" /> เบอร์โทรภายใน <FiLL :data="data?.phonenb" class="min-w-40" />
+              ที่อยู่เลขที่ <FiLL :data="data?.housenb" class="min-w-20" /> หมู่ที่ <FiLL :data="data?.group" class="min-w-20" /> ถนน <FiLL :data="data?.road" class="min-w-28" /> ตำบล <FiLL :data="data?.subdistrict" class="min-w-28" /> อำเภอ <FiLL :data="data?.district" class="min-w-28" />
+              จังหวัด <FiLL :data="data?.province" class="min-w-28" /> รหัสไปรษณีย์ <FiLL :data="data?.zipcode" class="min-w-28" /> เบอร์โทร <FiLL :data="data?.phonenb" class="min-w-44" /> LINE ID <FiLL :data="data?.idLine" class="min-w-28" />
               เสนอคำขอกู้เงินสามัญเพื่อโปรดพิจารณาดังต่อไปนี้
             </p>
-            <p>1.ข้าพเจ้าขอกู้เงินสามัญทั่วไป จำนวน <FiLL :data="data?.debt" /> บาท(<MoneyText :data="data?.debt" />)</p>
+            <p>1.ข้าพเจ้าขอกู้เงินสามัญทั่วไป จำนวน <FiLL :data="data?.debt" class="min-w-28" /> บาท(<MoneyText :data="data?.debt" />)</p>
             <p>2.ข้าพเจ้าจะนำเงินไปใช้ตามวัตถุประสงค์ ดังนี้ (อาจเเนบเอกสารเพื่อประกอบพิจารณาตามวัตถุประสงค์)</p>
             <p class="indent-10" ><FiLLBox /> 2.1 เพื่อการอันจำเป็น อันได้เเก่ จัดหาสิ่งจำเป็นสำหรับครอบครัว ,อุปการะเลี้ยงบุคคลในครอบครัว,
               ปลดเปลื้องหนี้สิ้นของครัวเรือน,รักษาพยาบาลบุคคลในครอบครัว
             </p>
-            <p class="pl-10" ><FiLLBox :checked="data?.monthlyIncome " /> 2.2 เพื่อชำระหนี้สหกรณ์ จำนวน <FiLL :data="data?.contract" /> สัญญา ดังนี้
+            <p class="pl-10" ><FiLLBox /> 2.2 เพื่อชำระหนี้สหกรณ์ จำนวน <FiLL :data="data?.contract" class="min-w-20" /> สัญญา ดังนี้
             </p>
             <div class="grid grid-cols-2 justify-center">
               <div class="items-start  text-nowrap">
@@ -84,7 +85,7 @@
                 <p class="pl-20"> - เงินกู้หุ้น </p>
               </div>
               <div class="items-end ">
-                <p class="pl-20">หนังสือกู้เงินที่ <FiLL :data="data?.loanLetterNumber" /> </p>
+                <p class="pl-20">หนังสือกู้เงินที่ <FiLL :data="data?.loanLetterNumber" class="min-w-28" /> </p>
                 <p class="pl-20">หนังสือกู้เงินที่...................................</p>
                 <p class="pl-20">หนังสือกู้เงินที่...................................</p>
                 <p class="pl-20">หนังสือกู้เงินที่...................................</p>
@@ -99,9 +100,9 @@
             </p>
             <p class="indent-10" ><FiLLBox /> 2.4 อื่นๆ (ระบุ).......................</p>
             <p>3. ข้าพเจ้าจะส่งคืนต้นเงินกู้พร้อมดอกเบี้ยในอัตราตามที่สหกรณ์กำหนดให้เเก่สหกรณ์เป็นงวดรายเดือนภายใน
-              วันสิ้นเดือนทั้งนี้ตั้งเเต่งวดประจำเดือน <FiLL :data="data?.mout" /> พ.ศ. <FiLL :data="data?.co" /> เป็นต้นไป
+              วันสิ้นเดือนทั้งนี้ตั้งเเต่งวดประจำเดือน <FiLL :data="data?.mout" class="min-w-28" /> พ.ศ. <FiLL :data="data?.co" class="min-w-20" /> เป็นต้นไป
             </p>
-            <p>4. ข้าพเจ้าต้องถือหุ้นเพิ่มตามสัดส่วนของวงเงินโดยให้สหกรณ์หักจากเงินกู้เป็นจำนวน <FiLL :data="data?.makepayment" /> บาท
+            <p>4. ข้าพเจ้าต้องถือหุ้นเพิ่มตามสัดส่วนของวงเงินโดยให้สหกรณ์หักจากเงินกู้เป็นจำนวน <FiLL :data="data?.makepayment" class="min-w-20" /> บาท
               (<MoneyText :data="data?.debt" />)
             </p>
             <p>5. ข้าพเจ้าจะทำหนังสือกู้เงินสำหรับเงินกู้สามัญทั่วไป ให้ไว้ต่อสหกรณ์ตามที่สหกรณ์กำหนด
@@ -125,14 +126,15 @@
 <p class="text-center text-lg font-semibold ">บันทึกให้คำยินยอมของคู่สมรสผู้กู้</p> <br>
 <p class=" text-base pl-96">เขียนที่ &nbsp;&nbsp; <FiLL :data="data?.receivedLocation" /> &nbsp;</p>
 <p class=" text-base pl-96">วันที่ &nbsp;&nbsp; <FiLL :data="data?.dateReceived" date-format="full"/> </p><br>
-<p class=" text-base pl-8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ข้าพเจ้า<FiLL :data="data?.fname"class="min-w-20" /> <FiLL :data="data?.lname"class="min-w-20" /> 
-   อายุ <FiLL :data="data?.age" class="min-w-12"/> ปี อยู่บ้านเลขที่ <FiLL :data="data?.housenb" class="min-w-12"/> หมู่ที่ <FiLL :data="data?.group" class="min-w-12"/> ถนน <FiLL :data="data?.road" class="min-w-12"/> ตำบล <FiLL :data="data?.subdistrict"class="min-w-12" />  
-อำเภอ <FiLL :data="data?.district" class="min-w-12"/> จังหวัด <FiLL :data="data?.province" class="min-w-12"/> ขอทำความยินยอมให้ (นาย/นาง/นางสาว) <FiLL :data="data?.fname" /> <FiLL :data="data?.lname" /> ซึ่งเป็นคู่สมรสของข้าพเจ้าโดยถูกต้องตามกฎหมาย
+<p class=" text-base pl-8">
+  <span class="ml-20">ข้าพเจ้า</span><FiLL class="min-w-44" :data="`${data?.fname}  ${data?.lname}`"/> 
+   อายุ <FiLL :data="data?.age" class="min-w-20"/> ปี อยู่บ้านเลขที่ <FiLL :data="data?.housenb" class="min-w-20"/> หมู่ที่ <FiLL :data="data?.group" class="min-w-20"/> ถนน <FiLL :data="data?.road" class="min-w-20"/> ตำบล <FiLL :data="data?.subdistrict"class="min-w-20" />  
+อำเภอ <FiLL :data="data?.district" class="min-w-20"/> จังหวัด <FiLL :data="data?.province" class="min-w-20"/> ขอทำความยินยอมให้ (นาย/นาง/นางสาว) <FiLL class="min-w-44" :data="`${data?.fname}  ${data?.lname}`"/> ซึ่งเป็นคู่สมรสของข้าพเจ้าโดยถูกต้องตามกฎหมาย
 มีอำนาจทำนิติกรรมทุกชนิดกับสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด และให้ถือเสมือนหนึ่งเป็นการกระทำของข้าพเจ้า เพื่อเป็นหลักฐานแห่งการยินยอมนี้ ข้าพเจ้าได้ลงลายมือชื่อไว้เป็นสำคัญต่อหน้าพยานผู้มีนามข้างท้ายนี้
 </p>
 <p class="text-base pl-80">(ลงชื่อ)............................................................คู่สมรสผู้ให้ความยินยอม</p>
 <div class="pl-96">
-   (<FiLL :data="data?.fname" class="min-w-20" /> <FiLL :data="data?.lname " class="min-w-20" />) 
+   (<FiLL class="min-w-44" :data="`${data?.fname}  ${data?.lname}`"/> ) 
 </div>
 <p class="text-base pl-80">(ลงชื่อ)............................................................พยาน(สมาชิก)</p>
 <p class="text-base pl-96">(.............................................................)</p>
@@ -142,28 +144,29 @@
 </div>
 <br>
 <p class=" text-base pl-8">7.ช้าพเจ้าขอเสนอหลักประกันดังนี้</p>
-<p class=" text-base pl-8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.1 สมาชิกค้ำประกัน ได้แก่</p>
+<p class=" text-base pl-16">7.1 สมาชิกค้ำประกัน ได้แก่</p>
 <div class="flex flex-col ml-10 text-start "no-line>
         <LineFiLL :data="data?.repaymentPlan"
           :limit="6">
           <template #data="{ index, item }">
             <p class=" text-base pl-8"></p>
-            <p class="text-start text-base">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.1
+            <p class="text-start text-base"><span class="ml-20">7.1 </span>
               <FiLL :data="index"
                 number
                 normal no-line/>.
                 ชื่อ
-                  <FiLL :data="item.fn" class="min-w-20" /> <FiLL :data="item.ln" class="min-w-20" />
+                <FiLL :data="item.fn" class="min-w-36" /> <FiLL :data="item.ln"  class="min-w-36"/>  
                     
               เลขทะเบียนที่
+              
               <FiLL :data="item.numberRegist" class="min-w-20" />
               
-              ตำแหน่ง <FiLL :data="item.poSition" /> สังกัด <FiLL :data="item.afiilia" />
-              เบอร์โทร <FiLL :data="item.phoneNumber" /> วงเงินค้ำประกัน <FiLL :data="item.limit" />
+              ตำแหน่ง <FiLL :data="item.poSition" class="min-w-28" /> สังกัด <FiLL :data="item.afiilia" class="min-w-28" />
+              เบอร์โทร <FiLL :data="item.phoneNumber" class="min-w-36" /> วงเงินค้ำประกัน <FiLL :data="item.limit" class="min-w-20" />
             </p>
           </template>
           <template #default="{ index }">
-            <p class="text-start text-base">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.1
+            <p class="text-start text-base"><span class="ml-20">7.1 </span>
               <FiLL :data="index"
                 number
                 normal no-line/>.
@@ -182,8 +185,8 @@
         <MorePaperDoc>
                         <!-- กู้สามัญทั่วไป general3  -->
 
-           <p class="text-base">8.ข้าพเจ้าประสงค์ขอรับเงินกู้โดย <FiLLBox /> เช็ค <FiLLBox :checked="data?.monthlyIncome " /> โอน/นำเข้าบัญชีเงินฝากของข้าพเจ้า ชื่อธนาคาร <FiLL :data="data?.bank" /> 
-        สาขา <FiLL :data="data?.branchBank" /> บัญชีเลขที่ <FiLL :data="data?.idaccount" />
+           <p class="text-base">8.ข้าพเจ้าประสงค์ขอรับเงินกู้โดย <FiLLBox /> เช็ค <FiLLBox /> โอน/นำเข้าบัญชีเงินฝากของข้าพเจ้า ชื่อธนาคาร <FiLL :data="data?.bank" class="min-w-32" /> 
+        สาขา <FiLL :data="data?.branchBank" class="min-w-28" /> บัญชีเลขที่ <FiLL :data="data?.idaccount" class="min-w-48" />
         </p>
         <p class="font-semibold text-sm underline underline-offset-1">ข้าพเจ้าขอรับรองว่า ขณะนี้ไม่อยู่ในระหว่างการถูกสอบสวนหรือต้องโทษทางวินัย และไม่อยู่ระหว่างการขอลาออกจากงานหรือโอนย้ายหน่วยงาน และข้าพเจ้ายินยอมปฏิบัติตามหลักเกณฑ์และเงื่อนไขที่กำหนอดทุกประการ
         </p><br>
@@ -227,7 +230,7 @@
   <div class="text-start text-base">(ลงชื่อ)..................................................................ผู้ขอกู้</div>
   <div ></div>
   <div class="text-center pr-16">
-  (<FiLL :data="data?.fname" class="min-w-20" /> <FiLL :data="data?.lname " class="min-w-20" />)<br>
+  (<FiLL class="min-w-44" :data="`${data?.fname}  ${data?.lname}`"/>)<br><br>
 </div>
   <div ></div>
   <div class="text-start text-base">เบอร์โทร..................................................................</div>
@@ -237,7 +240,7 @@
   <div class="text-start text-base">(ลงชื่อ)..................................................................คู่สมรสผู้กู้</div>
   <div ></div>
   <div class="text-center pr-16">
-    (<FiLL :data="data?.spouseFName" class="min-w-20" /> <FiLL :data="data?.lname" class="min-w-20" />)<br><br>
+    ( <FiLL class="min-w-44" :data="`${data?.spouseFName}  ${data?.lname}`"/>)<br><br>
 </div>
   <div ></div>
   <div class="text-start text-base">เบอร์โทร..................................................................</div>
@@ -247,7 +250,7 @@
   <div class="text-start text-base">(ลงชื่อ)..............................................................เจ้าหน้าที่สหกรณ์</div>
   <div ></div>
   <div class="text-center pr-16">
-    (<FiLL :data="data?.officerFName" class="min-w-20" /> <FiLL :data="data?.officerLName" class="min-w-20" />)<br>
+    (<FiLL class="min-w-44" :data="`${data?.officerFName}  ${data?.officerLName}`"/>)<br>
 </div>
 </div>
 

@@ -9,11 +9,11 @@
 
             <div class="grid grid-cols-3 grid-rows-2 justify-center mt-2 h-10">
               <div class="items-start">
-                <div class="border-2 border-black p-1 ">
+                <div class="border-2 border-black p-1  ">
                   <p class="text-sm ">รับที่
-                    <FiLL class="min-w-52"  :data="data?.receivedLocation"/>
+                    <FiLL  :data="data?.receivedLocation" no-line/>
                   </p>
-                  <p class="text-sm">วันที่
+                  <p class=" text-sm">วันที่
                     <FiLL class="min-w-52" :data="data?.dateReceived"
                       date-format="full" />
                   </p>

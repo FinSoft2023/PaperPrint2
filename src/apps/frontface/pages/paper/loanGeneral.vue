@@ -9,23 +9,23 @@
 
             <div class="grid grid-cols-3 grid-rows-2 justify-center mt-2 h-10">
               <div class="items-start">
-                <div class="border-2 border-black p-1">
+                <div class="border-2 border-black p-1 ">
                   <p class="text-sm ">รับที่
-                    <FiLL :data="data?.receivedLocation"/>
+                    <FiLL class="min-w-52"  :data="data?.receivedLocation"/>
                   </p>
                   <p class="text-sm">วันที่
-                    <FiLL :data="data?.dateReceived"
+                    <FiLL class="min-w-52" :data="data?.dateReceived"
                       date-format="full" />
                   </p>
                 </div>
 
-                <div class="border-2 border-black p-1 mt-4" >
-                  <p class="text-sm">หนังสือกู้เงินที่ <FiLL :data="data?.loanLetterNumber" />
+                <div class="border-2 border-black p-1 mt-4 " >
+                  <p class="text-sm">หนังสือกู้เงินที่ <FiLL class="min-w-36" :data="data?.loanLetterNumber" />
                   </p>
-                  <p class="text-sm">วันที่ <FiLL :data="data?.dateReceived"
+                  <p class="text-sm">วันที่ <FiLL class="min-w-48" :data="data?.dateReceived"
                   date-format="full" /></p>
                   <p class="text-sm">บัญชีเงินกู้ที่
-                  <FiLL :data="data?.loanAccountNumber" />
+                  <FiLL class="min-w-40" :data="data?.loanAccountNumber" />
                   </p>
                   </div>
                 </div>
@@ -50,8 +50,8 @@
             </div>
       
       <div class="grid justify-items mt-44">
-            <p class="ml-96 text-sm text-end">เขียนที่ <FiLL :data="data?.receivedLocation" /> </p>
-            <p class="mr-28 text-sm text-end">วันที่ <FiLL :data="data?.dateReceived"
+            <p class="mr-10 text-sm text-end">เขียนที่ <FiLL :data="data?.receivedLocation" /> </p>
+            <p class="mr-10 text-sm text-end">วันที่ <FiLL  class="min-w-52" :data="data?.dateReceived"
                 date-format="full" /> </p>
             </div>
             <div class="grid justify-items-start mt-6">
@@ -124,17 +124,17 @@
                         <div class="border-solid border-2 border-slate-950 ">
 <br>
 <p class="text-center text-lg font-semibold ">บันทึกให้คำยินยอมของคู่สมรสผู้กู้</p> <br>
-<p class=" text-base pl-96">เขียนที่ &nbsp;&nbsp; <FiLL :data="data?.receivedLocation" /> &nbsp;</p>
-<p class=" text-base pl-96">วันที่ &nbsp;&nbsp; <FiLL :data="data?.dateReceived" date-format="full"/> </p><br>
+<p class=" text-base pl-96">เขียนที่ <FiLL  class="min-w-60" :data="data?.receivedLocation" /> &nbsp;</p>
+<p class=" text-base pl-96">วันที่ <FiLL  class="min-w-64" :data="data?.dateReceived" date-format="full"/> </p><br>
 <p class=" text-base pl-8">
   <span class="ml-20">ข้าพเจ้า</span><FiLL class="min-w-44" :data="`${data?.fname}  ${data?.lname}`"/> 
-   อายุ <FiLL :data="data?.age" class="min-w-20"/> ปี อยู่บ้านเลขที่ <FiLL :data="data?.housenb" class="min-w-20"/> หมู่ที่ <FiLL :data="data?.group" class="min-w-20"/> ถนน <FiLL :data="data?.road" class="min-w-20"/> ตำบล <FiLL :data="data?.subdistrict"class="min-w-20" />  
+   อายุ <FiLL :data="data?.age" class="min-w-20"/> ปี อยู่บ้านเลขที่ <FiLL :data="data?.housenb" class="min-w-20"/> หมู่ที่ <FiLL :data="data?.group" class="min-w-10"/> ถนน <FiLL :data="data?.road" class="min-w-20"/> ตำบล <FiLL :data="data?.subdistrict"class="min-w-20" />  
 อำเภอ <FiLL :data="data?.district" class="min-w-20"/> จังหวัด <FiLL :data="data?.province" class="min-w-20"/> ขอทำความยินยอมให้ (นาย/นาง/นางสาว) <FiLL class="min-w-44" :data="`${data?.fname}  ${data?.lname}`"/> ซึ่งเป็นคู่สมรสของข้าพเจ้าโดยถูกต้องตามกฎหมาย
 มีอำนาจทำนิติกรรมทุกชนิดกับสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด และให้ถือเสมือนหนึ่งเป็นการกระทำของข้าพเจ้า เพื่อเป็นหลักฐานแห่งการยินยอมนี้ ข้าพเจ้าได้ลงลายมือชื่อไว้เป็นสำคัญต่อหน้าพยานผู้มีนามข้างท้ายนี้
 </p>
 <p class="text-base pl-80">(ลงชื่อ)............................................................คู่สมรสผู้ให้ความยินยอม</p>
 <div class="pl-96">
-   (<FiLL class="min-w-44" :data="`${data?.fname}  ${data?.lname}`"/> ) 
+   (<FiLL class="min-w-52" :data="`${data?.fname}  ${data?.lname}`"/> ) 
 </div>
 <p class="text-base pl-80">(ลงชื่อ)............................................................พยาน(สมาชิก)</p>
 <p class="text-base pl-96">(.............................................................)</p>
@@ -323,7 +323,7 @@
     <div class="flex flex-col items-center mt-32">
     <tr>
       <td class="text-center">(ลงชื่อ).................................................ผู้กู้<br>
-      <div class="ps-10">
+      <div class="ps-4">
         (<FiLL class="min-w-40" :data="`${data?.fname}  ${data?.lname}`"/> )<br>
         </div>
       </td>
@@ -347,8 +347,8 @@
 
     <div class="grid justify-items-center ">
       <p class="pl-96">สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
-      <p class="pl-72">วันที่ <FiLL :data="data?.dateReceived"
-                date-format="full" class="min-w-60"/> </p>
+      <p class="pl-96">วันที่ <FiLL :data="data?.dateReceived"
+                date-format="full" class="min-w-64"/> </p>
     </div>
     <div class="grid justify-items-start mt-6">
       <p>เรียน คณะกรรมการดำเนินการสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
@@ -456,7 +456,7 @@
                 </td>
                 </tr>
                 <tr>
-                  <div class="ps-32">
+                  <div class="text-center mr-2">
                     (<FiLL class="min-w-40" :data="`${data?.officerFName}  ${data?.officerLName}`"/>)<br>
     
         </div><br>
@@ -467,7 +467,7 @@
                 </td>
                 </tr>
                 <tr>
-                  <div class="ps-32">
+                  <div class="text-center mr-2">
                     (<FiLL class="min-w-40" :data="`${data?.chaimanFName}  ${data?.chaimanLname}`"/>)<br>
         </div><br>
                 </tr>
@@ -477,7 +477,7 @@
                 </td>
                 </tr>
                 <tr>
-                  <div class="ps-32">
+                  <div class="text-center mr-2">
                     (<FiLL class="min-w-40" :data="`${data?.directorFName}  ${data?.directorLName}`"/>)<br>
         </div><br>
 
@@ -589,8 +589,8 @@
       </div>
 
       <div class="grid justify">
-            <p class="pl-69 text-sm text-end">เขียนที่ <FiLL :data="data?.receivedLocation" /> </p>
-            <p class="mr-28 text-sm text-end">วันที่ <FiLL :data="data?.dateReceived"
+            <p class="pl-69 text-sm text-end">เขียนที่ <FiLL class="min-w-56" :data="data?.receivedLocation" /> </p>
+            <p class="text-sm text-end">วันที่ <FiLL class="min-w-56" :data="data?.dateReceived"
                 date-format="full" /> </p>
             </div>
 
@@ -680,7 +680,7 @@
 <br>
 <p class="text-center text-lg font-semibold ">บันทึกให้คำยินยอมของคู่สมรสผู้ค้ำประกัน</p> <br>
 <p class=" text-base pl-96">เขียนที่ <FiLL :data="data?.receivedLocation" class="min-w-70"/></p>
-<p class=" text-base pl-96">วันที่ &nbsp; <FiLL :data="data?.dateReceived" class="min-w-72" date-format="full" /> </p><br>
+<p class=" text-base pl-96">วันที่ &nbsp; <FiLL :data="data?.dateReceived" class="min-w-60" date-format="full" /> </p><br>
 <p class=" text-base"><span class="ml-16">ข้าพเจ้า </span><FiLL class="min-w-40" :data="`${data?.fname}  ${data?.lname}`"/>
  อายุ <FiLL class="min-w-14" :data="data?.age"/> ปี อยู่บ้านเลขที่ <FiLL class="min-w-16" :data="data?.housenb" /> หมู่ที่ <FiLL class="min-w-12" :data="data?.group"/> ถนน <FiLL class="min-w-28" :data="data?.road"/> ตำบล <FiLL class="min-w-28" :data="data?.subdistrict" />  
   อำเภอ <FiLL class="min-w-28" :data="data?.district" /> จังหวัด <FiLL class="min-w-28" :data="data?.province" /> ขอทำความยินยอมให้ (นาย/นาง/นางสาว) <FiLL class="min-w-40" :data="`${data?.fname}  ${data?.lname}`"/> ซึ่งเป็นคู่สมรสของข้าพเจ้าโดยถูกต้องตามกฎหมาย

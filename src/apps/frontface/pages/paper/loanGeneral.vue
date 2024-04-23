@@ -11,7 +11,7 @@
               <div class="items-start">
                 <div class="border-2 border-black p-1  ">
                   <p class="text-sm ">รับที่
-                    <FiLL  :data="data?.receivedLocation" no-line/>
+                    <FiLL  :data="data?.receivedLocation" class="min-w-36"/>
                   </p>
                   <p class=" text-sm">วันที่
                     <FiLL class="min-w-52" :data="data?.dateReceived"
@@ -60,8 +60,8 @@
 
             <div class="grid justify-items-start mt-6 text-pretty text-base  ">
             <p><span class="ml-20">ข้าพเจ้า</span>
-              <FiLL class="min-w-36" :data="`${data?.fname}  ${data?.lname}`"/> สมาชิกเลขทะเบียนที่ <FiLL :data="data?.remberRegistration" class="min-w-20" /> อายุ <FiLL :data="data?.age" class="min-w-20" /> ปี
-              เป็น <FiLLBox /> ข้าราชการ/ลูกจ้างประจำ <FiLLBox /> พนักงานราชการ <FiLLBox /> พนักงานกระทรวงสาธารณสุข <FiLLBox /> ลูกจ้าง
+              <FiLL class="min-w-56" :data="`${data?.fname}  ${data?.lname}`"/> สมาชิกเลขทะเบียนที่ <FiLL :data="data?.remberRegistration" class="min-w-20" /> อายุ <FiLL :data="data?.age" class="min-w-20" /> ปี
+              เป็น <FiLLBox :checked="data?.fname" /> ข้าราชการ/ลูกจ้างประจำ <FiLLBox /> พนักงานราชการ <FiLLBox /> พนักงานกระทรวงสาธารณสุข <FiLLBox /> ลูกจ้าง
               <FiLLBox /> อื่นๆ................................. ตำเเหน่ง <FiLL :data="data?.position" class="min-w-28" /> สังกัด <FiLL :data="data?.affiliation" class="min-w-44" />
               เงินเดือน/เงินประจำตำเเหน่ง <FiLL :data="data?.salary" class="min-w-28" /> บาท หน่วยงาน <FiLL :data="data?.agency" class="min-w-32" /> เบอร์โทรภายใน <FiLL :data="data?.phonenb" class="min-w-40" />
               ที่อยู่เลขที่ <FiLL :data="data?.housenb" class="min-w-20" /> หมู่ที่ <FiLL :data="data?.group" class="min-w-20" /> ถนน <FiLL :data="data?.road" class="min-w-28" /> ตำบล <FiLL :data="data?.subdistrict" class="min-w-28" /> อำเภอ <FiLL :data="data?.district" class="min-w-28" />
@@ -73,7 +73,7 @@
             <p class="indent-10" ><FiLLBox /> 2.1 เพื่อการอันจำเป็น อันได้เเก่ จัดหาสิ่งจำเป็นสำหรับครอบครัว ,อุปการะเลี้ยงบุคคลในครอบครัว,
               ปลดเปลื้องหนี้สิ้นของครัวเรือน,รักษาพยาบาลบุคคลในครอบครัว
             </p>
-            <p class="pl-10" ><FiLLBox /> 2.2 เพื่อชำระหนี้สหกรณ์ จำนวน <FiLL :data="data?.contract" class="min-w-20" /> สัญญา ดังนี้
+            <p class="pl-10" ><FiLLBox :checked="data?.contract"  /> 2.2 เพื่อชำระหนี้สหกรณ์ จำนวน <FiLL :data="data?.contract" class="min-w-20" /> สัญญา ดังนี้
             </p>
             <div class="grid grid-cols-2 justify-center">
               <div class="items-start  text-nowrap">
@@ -129,12 +129,12 @@
 <p class=" text-base pl-8">
   <span class="ml-20">ข้าพเจ้า</span><FiLL class="min-w-44" :data="`${data?.fname}  ${data?.lname}`"/> 
    อายุ <FiLL :data="data?.age" class="min-w-20"/> ปี อยู่บ้านเลขที่ <FiLL :data="data?.housenb" class="min-w-20"/> หมู่ที่ <FiLL :data="data?.group" class="min-w-10"/> ถนน <FiLL :data="data?.road" class="min-w-20"/> ตำบล <FiLL :data="data?.subdistrict"class="min-w-20" />  
-อำเภอ <FiLL :data="data?.district" class="min-w-20"/> จังหวัด <FiLL :data="data?.province" class="min-w-20"/> ขอทำความยินยอมให้ (นาย/นาง/นางสาว) <FiLL class="min-w-44" :data="`${data?.fname}  ${data?.lname}`"/> ซึ่งเป็นคู่สมรสของข้าพเจ้าโดยถูกต้องตามกฎหมาย
+อำเภอ <FiLL :data="data?.district" class="min-w-20"/> จังหวัด <FiLL :data="data?.province" class="min-w-20"/> ขอทำความยินยอมให้ (นาย/นาง/นางสาว) <FiLL class="min-w-44" :data="`${data?.spouseFName}  ${data?.lname}`"/> ซึ่งเป็นคู่สมรสของข้าพเจ้าโดยถูกต้องตามกฎหมาย
 มีอำนาจทำนิติกรรมทุกชนิดกับสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด และให้ถือเสมือนหนึ่งเป็นการกระทำของข้าพเจ้า เพื่อเป็นหลักฐานแห่งการยินยอมนี้ ข้าพเจ้าได้ลงลายมือชื่อไว้เป็นสำคัญต่อหน้าพยานผู้มีนามข้างท้ายนี้
 </p>
 <p class="text-base pl-80">(ลงชื่อ)............................................................คู่สมรสผู้ให้ความยินยอม</p>
 <div class="pl-96">
-   (<FiLL class="min-w-52" :data="`${data?.fname}  ${data?.lname}`"/> ) 
+   (<FiLL class="min-w-52" :data="`${data?.spouseFName}  ${data?.lname}`"/> ) 
 </div>
 <p class="text-base pl-80">(ลงชื่อ)............................................................พยาน(สมาชิก)</p>
 <p class="text-base pl-96">(.............................................................)</p>
@@ -155,14 +155,14 @@
                 number
                 normal no-line/>.
                 ชื่อ
-                <FiLL :data="item.fn" class="min-w-36" /> <FiLL :data="item.ln"  class="min-w-36"/>  
+                <FiLL class="min-w-72" :data="`${item.fn}  ${item.ln}`" />  
                     
               เลขทะเบียนที่
               
-              <FiLL :data="item.numberRegist" class="min-w-20" />
+              <FiLL :data="item.numberRegist" class="min-w-32" />
               
-              ตำแหน่ง <FiLL :data="item.poSition" class="min-w-28" /> สังกัด <FiLL :data="item.afiilia" class="min-w-28" />
-              เบอร์โทร <FiLL :data="item.phoneNumber" class="min-w-36" /> วงเงินค้ำประกัน <FiLL :data="item.limit" class="min-w-20" />
+              <br>ตำแหน่ง <FiLL :data="item.poSition" class="min-w-80" /> สังกัด <FiLL :data="item.afiilia" class="min-w-56" />
+             <br> เบอร์โทร <FiLL :data="item.phoneNumber" class="min-w-72" /> วงเงินค้ำประกัน <FiLL :data="item.limit" class="min-w-48" />
             </p>
           </template>
           <template #default="{ index }">
@@ -185,7 +185,7 @@
         <MorePaperDoc>
                         <!-- กู้สามัญทั่วไป general3  -->
 
-           <p class="text-base">8.ข้าพเจ้าประสงค์ขอรับเงินกู้โดย <FiLLBox /> เช็ค <FiLLBox /> โอน/นำเข้าบัญชีเงินฝากของข้าพเจ้า ชื่อธนาคาร <FiLL :data="data?.bank" class="min-w-32" /> 
+           <p class="text-base">8.ข้าพเจ้าประสงค์ขอรับเงินกู้โดย <FiLLBox /> เช็ค <FiLLBox :checked="data?.bank" /> โอน/นำเข้าบัญชีเงินฝากของข้าพเจ้า ชื่อธนาคาร <FiLL :data="data?.bank" class="min-w-32" /> 
         สาขา <FiLL :data="data?.branchBank" class="min-w-28" /> บัญชีเลขที่ <FiLL :data="data?.idaccount" class="min-w-48" />
         </p>
         <p class="font-semibold text-sm underline underline-offset-1">ข้าพเจ้าขอรับรองว่า ขณะนี้ไม่อยู่ในระหว่างการถูกสอบสวนหรือต้องโทษทางวินัย และไม่อยู่ระหว่างการขอลาออกจากงานหรือโอนย้ายหน่วยงาน และข้าพเจ้ายินยอมปฏิบัติตามหลักเกณฑ์และเงื่อนไขที่กำหนอดทุกประการ
@@ -203,7 +203,7 @@
                 number
                 normal no-line/>.
                 ชื่อ 
-              <FiLL :data="item.fn" class="min-w-36" /> <FiLL :data="item.ln"  class="min-w-36"/>  อายุ 
+                <FiLL class="min-w-60" :data="`${item.fn}  ${item.ln}`" />   อายุ 
               <FiLL :data="item.age" class="min-w-28"/> ปี เลขทะเบียนที่
                <FiLL :data="item.numberRegist" class="min-w-28"/><br>
               <p class="pl-20 text-base">(ลงชื่อ).............................................................ผู้ค้ำประกัน</p>
@@ -597,7 +597,7 @@
             <div class="grid justify-items-start  text-base " >
             <p ><span class="ml-10">ข้าพเจ้า </span><FiLL class="min-w-40" :data="`${data?.fname}  ${data?.lname}`"/> สมาชิกเลขทะเบียนที่ <FiLL class="min-w-28" :data="data?.remberRegistration" /> อายุ <FiLL class="min-w-28" :data="data?.age" /> ปี
               เลขประจำตัวประชาชน <FiLL class="min-w-44" :data="data?.idcard" /> ปรากฏตามสำเนาบัตรที่เเนบท้ายนี้
-              เป็น <FiLLBox :checked="data?.monthlyIncome > 500" /> ข้าราชการ/ลูกจ้างประจำ <FiLLBox /> พนักงานราชการ <FiLLBox /> พนักงานกระทรวงสาธารณสุข <FiLLBox /> ลูกจ้าง
+              เป็น <FiLLBox :checked="data?.idcard" /> ข้าราชการ/ลูกจ้างประจำ <FiLLBox /> พนักงานราชการ <FiLLBox /> พนักงานกระทรวงสาธารณสุข <FiLLBox /> ลูกจ้าง
               <FiLLBox /> อื่นๆ................................. ตำเเหน่ง <FiLL class="min-w-28" :data="data?.position" /> สังกัด <FiLL class="min-w-44" :data="data?.affiliation" />
               เงินเดือน/เงินประจำตำเเหน่ง <FiLL class="min-w-28" :data="data?.salary" /> บาท หน่วยงาน <FiLL class="min-w-28" :data="data?.agency" /> เบอร์โทรภายใน <FiLL class="min-w-28" :data="data?.phonenb" />
               ที่อยู่เลขที่ <FiLL class="min-w-20" :data="data?.housenb" /> หมู่ที่ <FiLL class="min-w-10" :data="data?.group" /> ถนน <FiLL class="min-w-28" :data="data?.road" /> ตำบล <FiLL class="min-w-28" :data="data?.subdistrict" /> อำเภอ <FiLL class="min-w-28" :data="data?.district" />

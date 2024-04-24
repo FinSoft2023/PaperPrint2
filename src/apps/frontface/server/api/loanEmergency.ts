@@ -1,6 +1,6 @@
 export default defineEventHandler(async (event) => {
   return {
-    receivedLocation: "สหกรณ์ออมทรัพย์ รพ. ศรีสะเกษ",    // ชื่อโรงบาล  / เขียนที่
+    receivedLocation: "สหกรณ์ออมทรัพย์ รพ. ศรีสะเกษ จำกัด",    // ชื่อโรงบาล  / เขียนที่
     loanAccountNumber: "504/67",                      // บัญชีเงินกู้ที่
     fname: "สุริยะ",                                    //  ชื่อ
     lname: "ประจันนวล",                                //  นามสกุล    

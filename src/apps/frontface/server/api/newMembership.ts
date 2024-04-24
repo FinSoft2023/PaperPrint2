@@ -11,7 +11,7 @@ export default defineEventHandler(async (event) => {
         province: "โนนไกล",         //จังหวัด
         phoneNo: "0987654231",      //เบอร์โทร
         position: "ลูกจ้างประจำ",          //ตำแหน่ง  
-        memberNumber: "69696969",   //เลขทะเบียนสมาชิก
+        memberNumber: "212224236",   //เลขทะเบียนสมาชิก
         zipCode: "42150",           //รหัสไปรษณี
         age: 29,                    //อายุ
         birthDay: "22",             //วันเกิด
@@ -33,7 +33,6 @@ export default defineEventHandler(async (event) => {
         lnameInterestedWitness: "คงควรคอย", //นามสกุลพยานผู้มีผลประโยชน์
         unit: 7,                    //หน่วย
         relation: "ลุง",             //ความสัมพันธ์
-        
 
         dateReceived: new Date().toISOString(),
     }

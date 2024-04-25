@@ -2,7 +2,7 @@
     <main>
         <PaperDoc> <!--หน้าที่ 1-->
             <div class="mx-3">
-                <h1 class="text-2xl text-center font-semibold mb-2 mt-4 underline">สิทธิหน้าที่สมาชิก</h1>
+                <h1 class="text-xl text-center font-semibold mb-2 mt-4 underline">สิทธิหน้าที่สมาชิก</h1>
 
                 <div class="mb-2">
                     <p class="font-semibold mb-1">1.เอกสารที่ต้องใช้ประกอบการสมัครสมาชิกใหม่</p>
@@ -219,10 +219,10 @@
                     src="https://www.saving-sskh.com/images/logo-saving.png"
                     alt="Logo" />
                 </div>
-                <p class=" text-xl text-center col-span-2">
+                <p class="font-bold text-xl text-center col-span-2">
                     ใบสมัครเข้าเป็นสมาชิก
                 </p>
-                <p class=" text-xl text-center col-span-2">
+                <p class="font-bold text-xl text-center col-span-2">
                     สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด
                 </p>
                 <p class=" text-xl text-center col-span-2 mt-4">
@@ -312,8 +312,8 @@
                     alt="Logo" />
                 </div>
                 <div class="mt-2">
-                    <p class="text-center font-bold">หนังสือยินยอมให้ส่วนราชการหักเงินชำระหนี้</p>
-                    <p class="text-center font-bold">สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
+                    <p class="text-center font-bold text-xl">หนังสือยินยอมให้ส่วนราชการหักเงินชำระหนี้</p>
+                    <p class="text-center font-bold text-xl">สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
                     <div>
                         <div class="flex flex-col items-end mt-3">
                             <div class="grid justify-end mt-5 mb-5 ">
@@ -421,7 +421,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                 </div>
-                <p class=" text-xl text-center col-span-2">สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
+                <p class="font-bold text-xl text-center col-span-2">สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
                 <div class="flex flex-col items-end mt-3">
                     <div class="grid justify-end mt-5 mb-5">
                         <div class="mr-10">

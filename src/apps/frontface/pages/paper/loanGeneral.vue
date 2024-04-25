@@ -1,14 +1,8 @@
 <template>
     <main>
         <PaperDoc>
-
-
-            <div class="grid justify-items-end">
-                <p>เเบบ ส.1/2565</p>
-                </div>
-
-            <div class="grid grid-cols-3 grid-rows-2 justify-center mt-2 h-10">
-              <div class="items-start">
+            <div class="grid grid-cols-3 grid-rows-2 justify-center h-10">
+              <div class="items-start mt-8">
                 <div class="border-2 border-black p-1  ">
                   <p class="text-sm ">รับที่
                     <FiLL  :data="data?.receivedLocation" class="min-w-36"/>
@@ -34,10 +28,11 @@
                 <img class="w-[120px] h-auto"
                   src="https://www.saving-sskh.com/images/logo-saving.png"
                   alt="Logo" />
-                  <p class="mt-2">คำขอกู้เงินสามัญทั่วไป</p>
+                  <p class="mt-2 font-bold text-xl">คำขอกู้เงินสามัญทั่วไป</p>
               </div>
 
               <div class="flex flex-col items-end row-span-2">
+                <p class="mb-2">เเบบ ส.1/2565</p>
                 <div class="border-2 border-black p-2">
                   <p class="text-sm">เอกสารประกอบการกู้ ( อย่างละ 1 ฉบับ )
                   </p>
@@ -49,7 +44,7 @@
               </div>
             </div>
       
-      <div class="grid justify-items mt-44">
+      <div class="grid justify-items mt-52">
             <p class="mr-10 text-sm text-end">เขียนที่ <FiLL :data="data?.receivedLocation" /> </p>
             <p class="mr-10 text-sm text-end">วันที่ <FiLL  class="min-w-52" :data="data?.dateReceived"
                 date-format="full" /> </p>
@@ -308,7 +303,7 @@
                         <!-- กู้สามัญทั่วไป general5  -->
 
             <div class="flex flex-col items-center mt-32">
-                <p class="text-lg">หนังสือยืนยันภาระผูกพัน</p>
+                <p class="font-bold text-xl">หนังสือยืนยันภาระผูกพัน</p>
       </div>
     <div class="grid justify-items-start mt-6">
       <p><span class="ml-10">ตามที่ ข้าพเจ้า ผู้กู้(นาย/นาง/นางสาว) </span><FiLL class="min-w-60" :data="`${data?.fname}  ${data?.lname}`"/> ทะเบียนสมาชิกที่ <FiLL :data="data?.remberRegistration" class="min-w-20"/> หน่วยงาน <FiLL :data="data?.agency" class="min-w-32"/> 
@@ -340,8 +335,8 @@
           alt="Logo" />
       </div>
     <div class="grid justify-items-center ">
-      <p class="text-lg">ใบสมัครเข้าเป็นสมาชิก</p>
-      <p class="text-lg">สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
+      <p class="font-bold text-xl">ใบสมัครเข้าเป็นสมาชิก</p>
+      <p class="font-bold text-xl">สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
       <p class="mt-5">***************************</p>
     </div>
 

@@ -2,7 +2,7 @@
     <main>
         <PaperDoc> <!--หน้าที่ 1-->
             <div class="mx-3">
-                <h1 class="text-2xl text-center font-semibold mb-2 mt-4 underline">สิทธิหน้าที่สมาชิก</h1>
+                <h1 class="text-xl text-center font-semibold mb-2 mt-4 underline">สิทธิหน้าที่สมาชิก</h1>
 
                 <div class="mb-2">
                     <p class="font-semibold mb-1">1.เอกสารที่ต้องใช้ประกอบการสมัครสมาชิกใหม่</p>
@@ -219,10 +219,10 @@
                     src="https://www.saving-sskh.com/images/logo-saving.png"
                     alt="Logo" />
                 </div>
-                <p class=" text-xl text-center col-span-2">
+                <p class="font-bold text-xl text-center col-span-2">
                     ใบสมัครเข้าเป็นสมาชิก
                 </p>
-                <p class=" text-xl text-center col-span-2">
+                <p class="font-bold text-xl text-center col-span-2">
                     สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด
                 </p>
                 <p class=" text-xl text-center col-span-2 mt-4">
@@ -242,7 +242,7 @@
                     <div class="flex flex-col">
                         <p class="mt-6  ">
                             <span class="ml-20">ข้าพเจ้า</span>
-                            <FiLL :data="data?.fname"class="min-w-36"/> <FiLL :data="data?.lname" class="min-w-36"/> บ้านเลขที่ <FiLL :data="data?.houseNumber" class="min-w-28"/> หมู่ที่ <FiLL :data="data?.village" class="min-w-24"/>
+                            <FiLL class="min-w-60" :data="`${data?.fname}  ${data?.lname}`"/> บ้านเลขที่ <FiLL :data="data?.houseNumber" class="min-w-32"/> หมู่ที่ <FiLL :data="data?.village" class="min-w-32"/>
                             ถนน <FiLL :data="data?.road" class="min-w-36"/> ตำบล <FiLL :data="data?.district" class="min-w-36"/> อำเภอ <FiLL :data="data?.canton" class="min-w-32"/> จังหวัด <FiLL :data="data?.province" class="min-w-36"/>
                             รหัสไปรษณีย์ <FiLL :data="data?.zipCode" class="min-w-36"/> เบอร์โทรศัพท์ <FiLL :data="data?.phoneNo" class="min-w-40"/>   
                             ได้ทราบข้อบังคับของสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด โดยตลอดแล้ว เห็นชอบในวัตถุประสงค์ จึงขอสมัครเข้าเป็นสมาชิกของสหกรณ์ฯ ในฐานะเป็นผู้เข้าซื้อขอจดทะเบียนสหกรณ์ฯ และขอให้ถ้อยคำเป็นหลักฐาน ดังต่อไปนี้.-
@@ -252,7 +252,7 @@
                         </p>
                         <p>
                             <span class="ml-20">ข้อ 2.</span> ข้าพเจ้าเป็นข้าราชการ/ลูกจ้างประจำ/ พนักงานราชการ/พนักงานกระทรวงสาธารณสุข(ตามวุฒิ)/พนักงานกระทรวงสาธารณสุข/ลูกจ้างชั่วคราวเงินบำรุง (ตามวุฒิ)
-                            / ลูกจ้างชั่วคราวเงินบำรุง ทำงานประจำตำแหน่ง <FiLL :data="data?.position" class="min-w-40" /> แผนก <FiLL :data="data?.depart" class="min-w-40" /> สังกัดโรงพยาบาลศรีสะเกษ ได้รับเงินเดือน <FiLL :data="data?.monthlyMoney" class="min-w-20" /> บาท( <MoneyText :data="data?.monthlyIncome"/> )
+                            / ลูกจ้างชั่วคราวเงินบำรุง ทำงานประจำตำแหน่ง <FiLL :data="data?.position" class="min-w-40" /> แผนก <FiLL :data="data?.depart" class="min-w-40" /> สังกัดโรงพยาบาลศรีสะเกษ ได้รับเงินเดือน <FiLL :data="data?.monthlyMoney" class="min-w-20" /> บาท ( <MoneyText :data="data?.monthlyIncome"/> )
                         </p>
                         <p>
                             <span class="ml-20">ข้อ 3.</span> ข้าพเจ้ามิได้เป็นสมาชิกในสหกรณ์ฯ อื่นซึ่งมีวัตถุประสงค์ในการให้ยืมเงิน
@@ -265,10 +265,11 @@
                         หลักประกันที่ให้ไว้ จำนวนต้นเงินคงเหลือ จำนวนดอกเบี้ยค้างชำระและเป็นหนี้สินเพื่อการใดให้ครบทุกรายการ)
                         อย่างน้อยต้องเป็นไปตามอัตราซึ่งกำหนดไว้ในหนังสือขี้ชวน แต่ถ้าจะแสดงความจำนงสูงกว่าอัตราที่กำหนดไว้ก็ย่อมเป็นการดี</p>
                         <p class="pl-36">
-                            1. <FiLL :data="data?.office" /> <FiLL :data="data?.debt" /> <FiLL :data="data?.annualRate" /> <FiLL :data="data?.guarantee" /> <FiLL :data="data?.remain" /> <FiLL :data="data?.interest" /> <FiLL :data="data?.reason" />
-                        </p>
+                            1. <FiLL class="min-w-80" :data="`${data?.office}  ${data?.debt} ${data?.annualRate} ${data?.guarantee} ${data?.remain}`"/>
+                           
+                        </p>    
                         <p class="pl-36">
-                            2. .................................................................................................................................................
+                            <FiLL class="min-w-80" :data="`${data?.interest} ${data?.reason}`"/>
                         </p>
                         <p>
                             <span class="ml-20">ข้อ 6.</span>ถ้าข้าพเจ้าได้เป็นสมาชิก ข้าพเจ้ามีความประสงค์ขอกู้เงินสหกรณ์ฯ เพื่อชำระหนี้ซึ่งข้าพเจ้ามีอยู่ดังกล่าวในข้อ 5 นั้น ข้าพเจ้าขอขี้แจงเหตุผลตังต่อไปนี้.
@@ -296,8 +297,8 @@
             </div>
             <div class="grid justify-end mt-6 text-center">
                 <div class="items-center mr-20">
-                    <p class="mt-4"><BlankSpace class="min-w-60" /></p>
-                    <p class="mt-4">(<FiLL :data="data?.fname" class="min-w-28"/> <FiLL :data="data?.lname" class="min-w-28"/>)</p>
+                    <p class="mt-4"><BlankSpace class="min-w-56" /></p>
+                    <p class="mt-4">(<FiLL class="min-w-56" :data="`${data?.fname}  ${data?.lname}`"/>)</p>
                     <p class="mt-4">ผู้สมัคร</p>
                 </div>
             </div>
@@ -311,8 +312,8 @@
                     alt="Logo" />
                 </div>
                 <div class="mt-2">
-                    <p class="text-center font-bold">หนังสือยินยอมให้ส่วนราชการหักเงินชำระหนี้</p>
-                    <p class="text-center font-bold">สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
+                    <p class="text-center font-bold text-xl">หนังสือยินยอมให้ส่วนราชการหักเงินชำระหนี้</p>
+                    <p class="text-center font-bold text-xl">สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
                     <div>
                         <div class="flex flex-col items-end mt-3">
                             <div class="grid justify-end mt-5 mb-5 ">
@@ -323,19 +324,19 @@
                             </div>
                         </div>
                         <p>
-                            <span class="ml-20">ข้าพเจ้า</span> <FiLL :data="data?.fname" no-line /> <FiLL :data="data?.lname" no-line /> 
-                            อายุ <FiLL :data="data?.age" no-line />   ปี 
-                            ปัจจุบันอาศัยอยู่บ้านเลขที่ <FiLL :data="data?.houseNumber" no-line /> 
-                            หมู่ที่ <FiLL :data="data?.village" no-line />
-                            ตรอก/ซอย <FiLL :data="data?.alley" no-line />
-                            ถนน <FiLL :data="data?.road" no-line />
-                            ตำบล/แขวง <FiLL :data="data?.district" no-line />
-                            อำเภอ/เขต <FiLL :data="data?.canton" no-line />
-                            จังหวัด <FiLL :data="data?.province " no-line />
-                            เบอร์โทร <FiLL :data="data?.phoneNo" no-line />
+                            <span class="ml-20">ข้าพเจ้า</span> <FiLL class="min-w-80" :data="`${data?.fname}  ${data?.lname}`"/> 
+                            อายุ <FiLL :data="data?.age" class="min-w-28" />   ปี 
+                            ปัจจุบันอาศัยอยู่บ้านเลขที่ <FiLL :data="data?.houseNumber" class="min-w-20" />
+                            หมู่ที่ <FiLL :data="data?.village" class="min-w-10" />
+                            ตรอก/ซอย <FiLL :data="data?.alley" class="min-w-28" />
+                            ถนน <FiLL :data="data?.road" class="min-w-28" />
+                            ตำบล/แขวง <FiLL :data="data?.district" class="min-w-28" />
+                            อำเภอ/เขต <FiLL :data="data?.canton" class="min-w-48" />
+                            จังหวัด <FiLL :data="data?.province " class="min-w-44" />
+                            เบอร์โทร <FiLL :data="data?.phoneNo" class="min-w-48" /> 
                         
-                            รับราชการสังกัด <span class="font-bold">โรงพยาบาลศรีสะเกษ</span> ตำแหน่ง <FiLL :data="data?.position" no-line />
-                            และเป็นสมาชิก <span class="font-bold">สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</span> เลขทะเบียนสมาชิก <FiLL :data="data?.memberNumber" no-line />  
+                            รับราชการสังกัด <span class="font-bold">โรงพยาบาลศรีสะเกษ</span> ตำแหน่ง <FiLL :data="data?.position" class="min-w-80" />
+                            และเป็นสมาชิก <span class="font-bold">สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</span> เลขทะเบียนสมาชิก <FiLL :data="data?.memberNumber" class="min-w-48" />  
                             
                             มีความประสงค์ให้ส่วนราชการ/ หน่วยงานที่ข้าพเจ้าสังกัดอยู่หักเงิน และนำส่งเงินให้สหกรณ์ออมทรัพย์
                             ที่ข้าพเจ้าเป็นสมาชิก จึงมีหนังสือให้ความยินยอมฉบับนี้ไว้กับ <span class="font-bold">โรงพยาบาลศรีสะเกษ</span> ทั้งปัจจุบันอนาคต ดังนี้
@@ -392,21 +393,21 @@
                         </span>
                     </p>
                     <p class=" text-center">
-                        (<FiLL :data="data?.fname" class="min-w-28" /><FiLL :data="data?.lname" class="min-w-28" />)
+                        (<FiLL class="min-w-56" :data="`${data?.fname}  ${data?.lname}`"/>)
                     </p>
                     <p class="mt-14 ml-40">
                         <span class="ml-14">
                             ลงชื่อ<BlankSpace class="min-w-56" />พยาน(สมาชิก)
                         </span>
                     </p>
-                    <p class="mb-6 text-center">(<BlankSpace class="min-w-60" />)</p>
+                    <p class="mb-6 text-center">(<BlankSpace class="min-w-56" />)</p>
 
                     <span class="mt-14 ml-40">
                         <span class="ml-14">
                             ลงชื่อ<BlankSpace class="min-w-56" />พยาน(สมาชิก)
                         </span>
                     </span>
-                    <p class="mb-6 text-center">(<BlankSpace class="min-w-60" />)</p>
+                    <p class="mb-6 text-center">(<BlankSpace class="min-w-56" />)</p>
                 </div>    
             </div>
         </MorePaperDoc>
@@ -420,7 +421,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                 </div>
-                <p class=" text-xl text-center col-span-2">สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
+                <p class="font-bold text-xl text-center col-span-2">สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
                 <div class="flex flex-col items-end mt-3">
                     <div class="grid justify-end mt-5 mb-5">
                         <div class="mr-10">
@@ -439,9 +440,9 @@
                     <p class="mt-4">เรียน ประธานกรรมการสหกรณ์ออมทรัทย์โรงพยาบาลศรีสะเกษ จำกัด</p>
                     <div class="flex flex-col">
                         <p class="mt-6">
-                            <span class="ml-20">ข้าพเจ้า</span> <FiLL :data="data?.fname" class="min-w-24" /><FiLL :data="data?.lname" class="min-w-24" /> เป็นข้าราชการ/ลูกจ้างประจำ/
+                            <span class="ml-20">ข้าพเจ้า</span> <FiLL class="min-w-80" :data="`${data?.fname}  ${data?.lname}`"/> เป็นข้าราชการ/ลูกจ้างประจำ/
                             พนักงานราชการ/พนักงานกระทรวงสาธารณสุข (ตามวุฒิ)/พนักงานกระทรวงสาธารณสุข/ลูกจ้างชั่วคราว
-                            เงินบำรุง (ตามวุฒิ) ลูกจ้างชั่วคราวเงินบำรุง ตำแหน่ง <FiLL :data="data?.position" class="min-w-48" /> <span class="font-bold"> สังกัดโรงพยาบาลศรีสะเกษ เป็นสมาชิกสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</span> เลขทะเบียนที่ <FiLL :data="data?.regisNumber" />
+                            เงินบำรุง (ตามวุฒิ) ลูกจ้างชั่วคราวเงินบำรุง ตำแหน่ง <FiLL :data="data?.position" class="min-w-64" /> <span class="font-bold"> สังกัดโรงพยาบาลศรีสะเกษ เป็นสมาชิกสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</span> เลขทะเบียนที่ <FiLL :data="data?.memberNumber" class="min-w-28" />
                             และยินยอมให้สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด หักเงินที่ข้าพเจ้าได้รับเงินเดือน ค่าจ้าง
                             เงินบำนาญ เงินบำเหน็จ เงินบำเหน็จตกทอด กบข. ฌกส. หรือเงินอื่นใดที่ข้าพเจ้ามีสิทธิได้รับจาก
                             ส่วนราชการต้นสังกัด เพื่อชำระค่าหุ้นหรือหนี้ตามสัญญากู้เงิน ไม่ว่าจะเป็นหนี้เงินต้นและดอกเบี้ย ค่าอุปกรณ์
@@ -453,13 +454,13 @@
                                 ลงชื่อ<BlankSpace class="min-w-56" />ผู้ให้คำยินยอม (ผู้สมัคร)
                             </span>
                         </p>
-                        <p class="mb-5 text-center">(<FiLL :data="data?.fname" class="min-w-28" /><FiLL :data="data?.lname" class="min-w-28" />)</p>
+                        <p class="mb-5 text-center">(<FiLL class="min-w-56" :data="`${data?.fname}  ${data?.lname}`"/>)</p>
                         <p class="mt-4 ml-40">
                             <span class="ml-14">
                                 ลงชื่อ<BlankSpace class="min-w-56" />พยาน(ผู้รับผลประโยชน์)
                             </span>
                         </p>
-                        <p class="text-center">(<FiLL :data="data?.fnameInterestedWitness" class="min-w-28"/><FiLL :data="data?.lnameInterestedWitness" class="min-w-28" />)</p>
+                        <p class="text-center">(<FiLL class="min-w-56" :data="`${data?.fnameInterestedWitness}  ${data?.lnameInterestedWitness}`"/>)</p>
                         <span class="text-center">เกี่ยวข้องเป็น <FiLL :data="data?.relation" class="min-w-20" /></span>
                         <span class="text-center mb-4">เบอร์โทร <FiLL :data="data?.phoneNo" class="min-w-28" /></span>
 
@@ -469,14 +470,14 @@
                                 ลงชื่อ<BlankSpace class="min-w-56" />พยาน(หัวหน้าฝ่ายการเงิน)
                             </span>
                         </span>
-                        <p class="mb-6 text-center">(<BlankSpace class="min-w-60" />)</p>
+                        <p class="mb-6 text-center">(<BlankSpace class="min-w-56" />)</p>
 
                         <p class="mt-4 ml-40">
                             <span class="ml-14">
                                 ลงชื่อ<BlankSpace class="min-w-56" />ผู้อำนวยการโรงพยาบาลศรีสะเกษ
                             </span>
                         </p>
-                        <p class="text-center">(<BlankSpace class="min-w-60" />)</p>
+                        <p class="text-center">(<BlankSpace class="min-w-56" />)</p>
                     </div>
                 </div>
             </div>

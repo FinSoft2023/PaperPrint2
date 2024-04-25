@@ -210,23 +210,23 @@
   
               <tr class="bg-white dark:bg-gray-800">
                 <th scope="row"
-                  class="px-6 py-8 font-medium text-gray-900 whitespace-nowrap dark:text-white border-r border-b border-black">
+                  class="px-6 py-8 font-medium text-gray-900 whitespace-nowrap dark:text-white border-r border-b border-black text-center ">
                   <FiLL :data="data?.monthlyIncome"date-format="short" no-line />
                 </th>
   
-                <td class="px-6 py-8 border-b border-r border-black ">
+                <td  class="px-6 py-8 font-medium text-gray-900 whitespace-nowrap dark:text-white border-r border-b border-black text-center ">
                   <FiLL :data="data?.monthlyIncome"date-format="short" no-line />
   
                 </td>
-                <td class="px-6 py-8 border-b border-r border-black ">
+                <td  class="px-6 py-8 font-medium text-gray-900 whitespace-nowrap dark:text-white border-r border-b border-black text-center ">
                   <FiLL :data="data?.monthlyIncome"date-format="short" no-line />
 
                 </td>
-                <td class="px-6 py-8 border-b border-r border-black ">
+                <td  class="px-6 py-8 font-medium text-gray-900 whitespace-nowrap dark:text-white border-r border-b border-black text-center ">
                   <FiLL :data="data?.monthlyIncome"date-format="short" no-line />
 
                 </td>
-                <td class="px-6 py-8 border-b border-r border-black ">
+                <td  class="px-6 py-8 font-medium text-gray-900 whitespace-nowrap dark:text-white border-r border-b border-black text-center ">
                   <FiLL :data="data?.monthlyIncome"date-format="short" no-line />
 
                 </td>

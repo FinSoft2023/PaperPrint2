@@ -155,7 +155,7 @@
                 number
                 normal no-line/>.
                 ชื่อ
-                <FiLL :data="item.fn" class="min-w-36" /> <FiLL :data="item.ln"  class="min-w-36"/>  
+              
                     
               เลขทะเบียนที่
               

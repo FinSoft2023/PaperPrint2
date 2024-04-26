@@ -28,7 +28,7 @@
             ..........................................
           </span> <span class="font-normal ml-10">  บาท</span> </p>
           
-          <p class="text-center font-semibold ml-28"><FiLLBox /><span class="ml-2"> ขอลด </span><span class="font-normal ml-8">  ส่งเป็นเดือนละ
+          <p class="text-center font-semibold ml-28"><FiLLBox :checked="data?.stockValueno" /><span class="ml-2"> ขอลด </span><span class="font-normal ml-8">  ส่งเป็นเดือนละ
             <FiLL class="min-w-36" :data="`${data?.stockValueno} `"/>
           </span> <span class="font-normal ml-10">  บาท</span> </p>
         </div>
@@ -43,14 +43,14 @@
         <div class="border-solid border-2 border-slate-950 "></div>
         <p class=" font-semibold underline mt-4">บันทึกเจ้าหน้าที่สหกรณ์ฯ</p><br>
         <p><span class="ml-28 ">สมาชิกส่งชำระหุ้นมาแล้ว
-            .................
+          <FiLL class="min-w-36" :data="`${data?.nb} `"/>
           </span> <span class="font-normal ml-2"> งวด </span>
           <p><span class="ml-28 ">มีเรือนหุ้น
-            <FiLL class="min-w-36" :data="`${data?.togetherBath} `"/>
+            <FiLL class="min-w-36" :data="`${data?.bath} `"/>
           </span> <span class="font-normal ml-6"> บาท </span>
         </p>
         <p><span class="ml-28 ">มีหนี้ทั้งสิ้น
-            ............................................
+          <FiLL class="min-w-36" :data="`${data?.togetherBath} `"/>
           </span> <span class="font-normal ml-2"> บาท </span>
           </p>
         </p><br>

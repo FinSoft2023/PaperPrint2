@@ -19,19 +19,19 @@
           </p>
         </div>
         <div class="grid justify-items-start mt-6">
-          <p class="text-center font-semibold "><FiLLBox /><span class="ml-4"> เปลี่ยนคำนำหน้า </span><span class="font-normal ml-12">  จากเดิม 
+          <p class="text-center font-semibold "><FiLLBox :checked="data?.prefix" /><span class="ml-4"> เปลี่ยนคำนำหน้า </span><span class="font-normal ml-12">  จากเดิม 
             <FiLL class="min-w-36" :data="`${data?.prefix} `"/> </span></p>
           <p><span class="ml-52"> ชื่อที่เปลี่ยนใหม่ <FiLL class="min-w-36" :data="`${data?.newprefix} `"/> </span></p>
-          <p class="text-center font-semibold "><FiLLBox /><span class="ml-4"> เปลี่ยนชื่อ </span><span class="font-normal ml-24">  จากเดิม
+          <p class="text-center font-semibold "><FiLLBox :checked="data?.fName" /><span class="ml-4"> เปลี่ยนชื่อ </span><span class="font-normal ml-24">  จากเดิม
             <FiLL class="min-w-36" :data="`${data?.fName} `"/>
           </span></p>
           <p><span class="ml-52"> ชื่อที่เปลี่ยนใหม่ <FiLL class="min-w-36" :data="`${data?.newfName} `"/> </span></p>
           
-          <p class="text-center font-semibold "><FiLLBox /><span class="ml-4"> เปลี่ยนนามสกุล </span><span class="font-normal ml-14">  จากเดิม
+          <p class="text-center font-semibold "><FiLLBox :checked="data?.lName" /><span class="ml-4"> เปลี่ยนนามสกุล </span><span class="font-normal ml-14">  จากเดิม
             <FiLL class="min-w-36" :data="`${data?.lName} `"/>
           </span></p>
           <p><span class="ml-52"> นามสกุลที่เปลี่ยนใหม่ <FiLL class="min-w-36" :data="`${data?.newlName} `"/> </span></p>
-          <p class="text-center font-semibold "><FiLLBox /><span class="ml-4"> เปลี่ยนเลขบัญชีธนาคาร </span><span class="font-normal ">  จากเดิม
+          <p class="text-center font-semibold "><FiLLBox :checked="data?.nbAccount" /><span class="ml-4"> เปลี่ยนเลขบัญชีธนาคาร </span><span class="font-normal ">  จากเดิม
             <FiLL class="min-w-36" :data="`${data?.nbAccount} `"/>
           </span></p>
           <p><span class="ml-52"> เลขบัญชีที่เปลี่ยนใหม่ <FiLL class="min-w-36" :data="`${data?.newnbAccount} `"/> </span></p>

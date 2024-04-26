@@ -6,13 +6,13 @@
             </diV>
             <div class="grid grid-cols-3 grid-rows-2 justify-center h-10">
               <div class="flex-col items-center row-span-2">
-                <img class="w-[100px] h-auto"
+                <img class="w-[80px] h-auto"
                   src="https://www.saving-sskh.com/images/logo-saving.png"
                   alt="Logo" />
               </div>
             </div>
             
-            <div class="mt-20 text-2xl font-medium">
+            <div class="mt-12 text-xl font-medium">
                 <p>
                     ส่วนราชการ ______________________________________________________________ ที่_________________________________วันที่___________________________________
                     เรื่อง______________________________________________________________________
@@ -34,7 +34,7 @@
               </p>
             </div>
 
-            <div class="grid grid-cols-2 text-end mt-14">
+            <div class="grid grid-cols-2 text-end mt-10">
   <div></div>
   <div></div>
   <div ></div>
@@ -202,7 +202,6 @@
 </template>
 <script setup
         lang="ts">
-        import Index from '../index.vue';
 
         const { data } = await useFetch<any>('/api/group2');
 </script>

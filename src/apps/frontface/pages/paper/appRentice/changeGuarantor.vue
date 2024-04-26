@@ -27,7 +27,7 @@
               <p><span class="ml-20">ด้วย ข้าพเจ้า</span><FiLL class="min-w-56" :data="`${data?.fName}  ${data?.lName}`"/>ตำเเหน่ง <FiLL :data="data?.position" class="min-w-28" /> สังกัดโรงพยาบาลศรีสะเกษ สมาชิกสหกรณ์ออมทรัพย์ฯ 
                 เลขทะเบียนที่<FiLL :data="data?.numberRegis" class="min-w-20" />มีความประสงค์ขอเปลี่ยนเเปลงผู้ค้ำประกันเงินกู้สามัญ / เงินกู้พิเศษ ตามสัญญาเลขที่<FiLL :data="data?.nb" class="min-w-16" />ลงวันที่<FiLL  class="min-w-52" :data="data?.dateReceived"date-format="full" />
                 จำนวนเงินกู้<FiLL :data="data?.salary" class="min-w-28" /> บาท จากเดิม (นาย/นาง/นางสาว)<FiLL class="min-w-56" :data="`${data?.prefix} ${data?.fName}  ${data?.lName}`"/>ตำเเหน่ง<FiLL :data="data?.position" class="min-w-36" />สมาชิกเลขที่<FiLL :data="data?.member" class="min-w-24" />
-                สังกัด<FiLL :data="data?.affiliation" class="min-w-60" />เปลี่ยนเเปลงเป็น(นาย/นาง/นางสาว)<FiLL class="min-w-56" :data="`${data?.newprefix} ${data?.newfName}  ${data?.newlName}`"/>ตำเเหน่ง<FiLL :data="data?.officerPOsition" class="min-w-36" />สมิกเลขที่<FiLL :data="data?.satang" class="min-w-24" />สังกัด<FiLL :data="data?.affiliation" class="min-w-60" />
+                สังกัด<FiLL :data="data?.affiliation" class="min-w-60" />เปลี่ยนเเปลงเป็น(นาย/นาง/นางสาว)<FiLL class="min-w-56" :data="`${data?.newprefix} ${data?.officerLName}  ${data?.newlName}`"/>ตำเเหน่ง<FiLL :data="data?.officerPOsition" class="min-w-36" />สมิกเลขที่<FiLL :data="data?.satang" class="min-w-24" />สังกัด<FiLL :data="data?.affiliation" class="min-w-60" />
               </p>
               <p class="mt-4 text-base ">
                   <span class="ml-20">จึงเรียนมาเพื่อโปรดพิจารณา</span>
@@ -104,9 +104,9 @@
             <div class="grid justify-items-start mt-2 text-pretty text-base  ">
             <p><span class="ml-10">ข้าพเจ้า</span>
               <FiLL class="min-w-56" :data="`${data?.fName}  ${data?.lName}`"/> สมาชิกเลขทะเบียนที่ <FiLL :data="data?.member" class="min-w-16" /> อายุ <FiLL :data="data?.age" class="min-w-20" /> ปี
-              เลขประจำตัวชาชน <FiLL :data="data?.idcard" class="min-w-20" /> &nbsp;&nbsp;  เป็น <FiLLBox :checked="data?.fname" /> ข้าราชการ <FiLLBox /> ลูกจ้างประจำ <FiLLBox /> พนักงานกระทรวงสาธารณสุข 
+              เลขประจำตัวชาชน <FiLL :data="data?.idcard" class="min-w-20" /> &nbsp;&nbsp;  เป็น <FiLLBox /> ข้าราชการ <FiLLBox /> ลูกจ้างประจำ <FiLLBox :checked="data?.fName" /> พนักงานกระทรวงสาธารณสุข 
               <FiLLBox /> อื่นๆ................... ตำเเหน่ง <FiLL :data="data?.position" class="min-w-28" /> สังกัด <FiLL :data="data?.affiliation" class="min-w-44" />
-              ได้รับเงอนเดือน/ค่าจ้าง เดือนละ <FiLL :data="data?.salary" class="min-w-28" /> บาท ที่อยู่ปัจจุบัน บ้านเลขที่ <FiLL :data="data?.housenb" class="min-w-20" /> หมู่ที่ <FiLL :data="data?.group" class="min-w-10" /> ถนน <FiLL :data="data?.road" class="min-w-28" /> ตำบล/เเขวง <FiLL :data="data?.district" class="min-w-28" />
+              ได้รับเงินเดือน/ค่าจ้าง เดือนละ <FiLL :data="data?.salary" class="min-w-28" /> บาท ที่อยู่ปัจจุบัน บ้านเลขที่ <FiLL :data="data?.housenb" class="min-w-20" /> หมู่ที่ <FiLL :data="data?.group" class="min-w-10" /> ถนน <FiLL :data="data?.road" class="min-w-28" /> ตำบล/เเขวง <FiLL :data="data?.district" class="min-w-24" />
               อำเภอ <FiLL :data="data?.district" class="min-w-20" /> จังหวัด <FiLL :data="data?.province" class="min-w-28" /> รหัสไปรษณีย์ <FiLL :data="data?.zipcode" class="min-w-20" /> โทรศัพท์ <FiLL :data="data?.nbPhon" class="min-w-28" />
               ได้ทำหนังสือค้ำประกันให้ไว้ต่อสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด <span class="ml-0">ซึ่งต่อไปนี้ในหนังสือค้ำประกันนี้จะใช้คำว่า "สหกรณ์" เพื่อเป็นหลักฐานดังต่อไปนี้</span>
             </p>
@@ -132,7 +132,7 @@
             <div class="grid grid-cols-1 text-center mt-4">
             <div class="text-center text-base mr-7">ลงชื่อ.................................................................ผู้ค้ำประกัน</div>
             <div class="text-center pr-8 mr-8">
-              ( <FiLL class="min-w-56" :data="`${data?.newfName}  ${data?.newlName}`"/>)<br><br>
+              ( <FiLL class="min-w-56" :data="`${data?.officerLName}  ${data?.newlName}`"/>)<br><br>
             </div>
             <div class="text-center text-base ">ลงชื่อ.................................................................พยาน (สมาชิก)</div>
             <div class="text-center pr-8 mr-8 mt-2">
@@ -152,33 +152,33 @@
         <MorePaperDoc>
                         <!-- กู้สามัญทั่วไป general3  -->
 
-                        <div class="border-solid border-2 border-slate-950 mt-10">
+                        <div class="border-solid border-2 border-slate-950 mt-10 p-4">
 <br>
 <p class="text-center text-lg font-semibold ">คำยินยอมของคู่สมรส</p> 
 <p  class="text-center text-base ">(ใช้เฉพาะกรณีที่ผู้ค้ำประกันมีคู่สมรส)</p>
-<p class=" text-end text-base mr-80 mt-10">เขียนที่ <FiLL :data="data?.receivedLocation" class="min-w-70"/></p>
+<p class=" text-end text-base mr-10 mt-10">เขียนที่ <FiLL :data="data?.location" class="min-w-70"/></p>
 <p class=" text-end text-base mr-32">วันที่ <FiLL :data="data?.dateReceived" class="min-w-60" date-format="full" /> </p><br>
 
-<p class=" text-base mt-4"><span class="ml-16">ข้าพเจ้า นาย/นาง </span><FiLL class="min-w-96" :data="`${data?.fname}  ${data?.lname}`"/>
-  <span class="ml-20">เป็นคู่สมรสของ นาย/นาง</span><FiLL class="min-w-96" :data="`${data?.fname}  ${data?.lname}`"/> &nbsp;&nbsp;&nbsp; ยินยอมให้คู่สมรสของข้าพเจ้าเป็นผู้ค้ำประกันเงินกู้สามัญของสหกรณ์ออมทรัพย์แห่งนี้  
-  <span class="ml-20">ตามหนังสือค้ำประกันเงินกู้ข้างต้นนี้และข้าพเจ้าได้ลงลายมือชื่อไว้เป็นสำคัญ</span>
+<p class=" text-base mt-4"><span class="ml-16">ข้าพเจ้า นาย/นาง </span><FiLL class="min-w-96" :data="`${data?.prefix} ${data?.fName}  ${data?.lName}`"/>
+  <span class="ml-20">เป็นคู่สมรสของ นาย/นาง</span><FiLL class="min-w-96" :data="`${data?.prefixMrs} ${data?.ofFname}  ${data?.lName}`"/> <span class="ml-6">ยินยอมให้คู่สมรสของข้าพเจ้าเป็นผู้ค้ำประกันเงินกู้สามัญของสหกรณ์ออมทรัพย์แห่งนี้</span>  
+  <span class="ml-32">ตามหนังสือค้ำประกันเงินกู้ข้างต้นนี้และข้าพเจ้าได้ลงลายมือชื่อไว้เป็นสำคัญ</span>
 </p>
 <div class="grid grid-cols-1 text-center mt-4 pl-48">
             <div class="text-center text-base">ลงชื่อ.................................................................คู่สมรสผู้ให้คำยินยอม</div>
             <div class="text-center pr-24">
-              ( <FiLL class="min-w-56" :data="`${data?.spouseFName}  ${data?.lname}`"/>)<br><br>
+              ( <FiLL class="min-w-56" :data="`${data?.fName}  ${data?.lName}`"/>)<br><br>
             </div>
             <div class="text-center text-base mr-16 mt-4">ลงชื่อ.................................................................ผู้ค้ำประกัน</div>
             <div class="text-center pr-24">
-              ( <FiLL class="min-w-56" :data="`${data?.spouseFName}  ${data?.lname}`"/>)<br><br>
+              ( <FiLL class="min-w-56" :data="`${data?.ofFname}  ${data?.lName}`"/>)<br><br>
             </div>
             <div class="text-center text-base mr-10 mt-10">ลงชื่อ.................................................................พยาน (สมาชิก)</div>
             <div class="text-center pr-24">
-              ( <FiLL class="min-w-56" :data="`${data?.spouseFName}  ${data?.lname}`"/>)<br><br>
+              (...................................................................)<br><br>
             </div>
             <div class="text-center text-base mr-10 mt-10">ลงชื่อ.................................................................พยาน (สมาชิก)</div>
             <div class="text-center pr-24">
-              ( <FiLL class="min-w-56" :data="`${data?.spouseFName}  ${data?.lname}`"/>)<br><br>
+              (...................................................................)<br><br>
             </div>
             </div>
             

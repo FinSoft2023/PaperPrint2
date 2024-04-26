@@ -34,6 +34,7 @@ export default defineEventHandler(async (event) => {
      newnbAccount: "6895420004" ,       //เลขบัญชีใหม่
      prefix:"นาย",              //คำนำหน้า
      newprefix:"นางสาว",              //คำนำหน้าใหม่
+     prefixMrs:"นาง",              //คำนำหน้าคู่สมรส
      salary:50000,          //เงินเดือนขอเปลี่ยนแปลงค่าหุ้น  &  //เงินกู้
      stockValue: 5000,          //ส่งค่าหุ้น
      stockValueno: 3500,           //ขอลดค่าหุ้น

@@ -17,9 +17,9 @@ export default defineEventHandler(async (event) => {
      province: "ขอนแก่น",              //จังหวัด
      zipcode: "40000",                //รหัสไปรษณี
      money:"ฌาปนกิจศพ",                           //เป็นเงินค่า
-     satang: 25,                   //สตางค์
+     satang: 0,                   //สตางค์
      bath: 20000,                   //เงินฝาก &  //ทุนเรือนหุ้น
-     togetherBath:40000.50,               //รวมเงินฝาก   &  //หนี้สินทั้งสิ้น
+     togetherBath:60000,               //รวมเงินฝาก   &  //หนี้สินทั้งสิ้น
      Explanation:"ไม่มี",            //คำชี้แจง
     ofFname: "นาตาชา",             //ชื่อคนโดนฌาปนกิจ
     ofLname: "โรมานอฟ",             //นามสกุล
@@ -28,7 +28,7 @@ export default defineEventHandler(async (event) => {
     nbPhon:"0865579988",            //เบอร์โทรข้าพเจ้า
      position: "ประธาน",           //ตำแหน่งข้าพเจ้า
      member: 21,               //สมาชิกเลขที่
-     numberRegis: "563",        //เลขทะเบียน
+     numberRegis: 563,        //เลขทะเบียน
      nb: 10,                    //ที่  &  // ส่งหุ้น
      Agency: "กระทรวงสาธารณสุข",   //หน่วยงาน
      newnbAccount: "6895420004" ,       //เลขบัญชีใหม่

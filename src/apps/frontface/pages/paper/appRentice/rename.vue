@@ -5,20 +5,20 @@
           <p class="pl-96">สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
           <p class="pl-72">วันที่ <FiLL :data="data?.dateReceived" date-format="full" class="min-w-60"/></p>
         </div>
-        <div class="grid justify-items-start mt-6 ml-20">
+        <div class="grid justify-items-start mt-6 ">
           <p>เรื่อง ขอแจ้งเปลี่ยนชื่อ/ชื่อสกุล/เลขบัญชีธนาคาร</p>
         </div>
-        <div class="grid justify-items-start mt-6 ml-20">
+        <div class="grid justify-items-start mt-6 ">
           <p>เรียน ผู้จัดการสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
         </div>
         <div class="grid justify-items-start mt-6 text-pretty text-base">
-          <p><span class="ml-44"> ข้าพเจ้า (นาย/นาง/นางสาว)</span>
+          <p><span class="ml-28"> ข้าพเจ้า (นาย/นาง/นางสาว)</span>
             <FiLL class="min-w-36" :data="`${data?.fName}  ${data?.lName}`"/> สมาชิกเลขทะเบียนที่ <FiLL :data="data?.numberRegis" class="min-w-20" />
             ตำเเหน่ง <FiLL :data="data?.position" class="min-w-28" /> สังกัดโรงพยาบาลศรีสะเกษ อำเภอเมือง จังหวัดศรีสะเกษ
               เบอร์โทรศัพท์ <FiLL :data="data?.nbPhon" class="min-w-40"/>
           </p>
         </div>
-        <div class="grid justify-items-start mt-6 ml-20">
+        <div class="grid justify-items-start mt-6">
           <p class="text-center font-semibold "><FiLLBox /><span class="ml-4"> เปลี่ยนคำนำหน้า </span><span class="font-normal ml-12">  จากเดิม 
             <FiLL class="min-w-36" :data="`${data?.prefix} `"/> </span></p>
           <p><span class="ml-52"> ชื่อที่เปลี่ยนใหม่ <FiLL class="min-w-36" :data="`${data?.newprefix} `"/> </span></p>
@@ -67,8 +67,8 @@
     </main>
   </template>
   
-  <script setup lang="ts">
-  import Index from '../index.vue';
-  
+  <script setup
+  lang="ts">
+
   const { data } = await useFetch<any>('/api/group2');
-  </script>
+</script>

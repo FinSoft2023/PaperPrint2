@@ -28,7 +28,7 @@ export default defineEventHandler(async (event) => {
     nbPhon:"0865579988",            //เบอร์โทรข้าพเจ้า
      position: "ประธาน",           //ตำแหน่งข้าพเจ้า
      member: 21,               //สมาชิกเลขที่
-     numberRegis: "563",        //เลขทะเบียน
+     numberRegis: 563,        //เลขทะเบียน
      nb: 10,                    //ที่  &  // ส่งหุ้น
      Agency: "กระทรวงสาธารณสุข",   //หน่วยงาน
      newnbAccount: "6895420004" ,       //เลขบัญชีใหม่

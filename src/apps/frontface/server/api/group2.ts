@@ -41,6 +41,7 @@ export default defineEventHandler(async (event) => {
         year:"2566",                //ปี
         affiliation:"โรงพยาบาลศรีสะเกษ",  //สังกัด
         loanbook:"405/96",         //หนังสือเงินกู้ที่
+        location:"สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด",
 
            dateReceived: new Date().toISOString(), //วันที่ปัจจุบัน  full จะได้ผลลัพธ์ 1 เมษายน พศ.2567    short ผลลัพธ์  01/04/2567
 

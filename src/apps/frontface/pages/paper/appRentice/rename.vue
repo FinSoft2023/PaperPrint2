@@ -31,7 +31,7 @@
             <FiLL class="min-w-36" :data="`${data?.lName} `"/>
           </span></p>
           <p><span class="ml-52"> นามสกุลที่เปลี่ยนใหม่ <FiLL class="min-w-36" :data="`${data?.newlName} `"/> </span></p>
-          <p class="text-center font-semibold "><FiLLBox /><span class="ml-4"> เปลี่ยนเลขบัญชีธนาคาร </span><span class="font-normal ml-0">  จากเดิม
+          <p class="text-center font-semibold "><FiLLBox /><span class="ml-4"> เปลี่ยนเลขบัญชีธนาคาร </span><span class="font-normal ">  จากเดิม
             <FiLL class="min-w-36" :data="`${data?.nbAccount} `"/>
           </span></p>
           <p><span class="ml-52"> เลขบัญชีที่เปลี่ยนใหม่ <FiLL class="min-w-36" :data="`${data?.newnbAccount} `"/> </span></p>
@@ -45,7 +45,7 @@
         <p class="pl-72">สมาชิกเลขที่<FiLL :data="data?.member" class="min-w-20" /></p>
         </div><br><br>
         <div class="border-solid border-2 border-slate-950 "></div>
-        <p class=" font-semibold underline mt-10">บันทึกเจ้าหน้าที่สหกรณ์</p>
+        <p class=" font-semibold underline mt-10">บันทึกเจ้าหน้าที่สหกรณ์ฯ</p>
         <p><span class="ml-28">เจ้าหน้าที่ได้ดำเนินการเปลี่ยนแปลงในระบบโปรแกรมเรียบร้อยแล้ว</span>
         </p><br>
    

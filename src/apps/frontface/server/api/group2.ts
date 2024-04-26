@@ -17,9 +17,9 @@ export default defineEventHandler(async (event) => {
      province: "ขอนแก่น",              //จังหวัด
      zipcode: "40000",                //รหัสไปรษณี
      money:"ฌาปนกิจศพ",                           //เป็นเงินค่า
-     satang: 25,                   //สตางค์
+     satang: 0,                   //สตางค์
      bath: 20000,                   //เงินฝาก &  //ทุนเรือนหุ้น
-     togetherBath:40000.50,               //รวมเงินฝาก   &  //หนี้สินทั้งสิ้น
+     togetherBath:60000,               //รวมเงินฝาก   &  //หนี้สินทั้งสิ้น
      Explanation:"ไม่มี",            //คำชี้แจง
     ofFname: "นาตาชา",             //ชื่อคนโดนฌาปนกิจ
     ofLname: "โรมานอฟ",             //นามสกุล

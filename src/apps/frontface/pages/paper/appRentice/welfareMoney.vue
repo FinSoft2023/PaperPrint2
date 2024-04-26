@@ -31,7 +31,42 @@
                     สมาชิกเลขทะเบียนที่ <FiLL class="min-w-40" :data="data?.numberRegis" /> ตำแหน่งหรือตำบลที่อยู่ <FiLL class="min-w-80" :data="data?.district" />
                 ได้รับเงินจาก  <FiLL class="min-w-20" :data="data?.location" /> ดังรายการต่อไปนี้
                 </p>
+                ___________________________________________________________________________________________________________________
+              
+              <div class="flex ">
+                
+                <p class=" text-xl ml-8 mt-14">เป็นเงินค่า <FiLL class="min-w-80" :data="data?.money" /> <FiLL class="min-w-80" :data="data?.bath" />
+                บาท <FiLL class="min-w-80" :data="data?.togetherBath" /> รวม
+                </p>
+                
 
+                <table class="border-collapse border border-slate-400 ...">
+  <thead>
+    <tr>
+      <th class="border border-slate-300 ...">&nbsp;บาท&nbsp;</th>
+      <th class="border border-slate-300 ...">&nbsp;สตางค์&nbsp;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="border border-slate-300 ..."><FiLL  :data="data?.bath" no-line/></td>
+      <td class="border border-slate-300 text-center"><FiLL  :data="data?.satang" no-line/></td>
+    </tr>
+    <tr>
+      <td class="border border-slate-300 ..."><FiLL  :data="data?.bath" no-line/></td>
+      <td class="border border-slate-300 text-center"><FiLL  :data="data?.satang" no-line/></td>
+    </tr>
+    <tr>
+      <td class="border border-slate-300 ..."><FiLL  :data="data?.bath" no-line/></td>
+      <td class="border border-slate-300 text-center"><FiLL  :data="data?.satang" no-line/></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p class="underline underline-offset-1  text-xl ">คำชี้แจง <FiLL class="min-w-80" :data="data?.Explanation" /></p>
+<br>
+<p class=" text-xl text-center "><FiLL class="min-w-60" :data="`${data?.fName}  ${data?.lName}`"/> ผู้รับเงิน </p>
 
       </MorePaperDoc>
     </main>

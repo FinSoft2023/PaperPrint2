@@ -30,7 +30,7 @@ export default defineEventHandler(async (event) => {
      member: 21,               //สมาชิกเลขที่
      numberRegis: 563,        //เลขทะเบียน
      nb: 10,                    //ที่  &  // ส่งหุ้น
-     Agency: "กระทรวงสาธารณสุข",   //หน่วยงาน
+     agency: "กระทรวงสาธารณสุข",   //หน่วยงาน
      newnbAccount: "6895420004" ,       //เลขบัญชีใหม่
      prefix:"นาย",              //คำนำหน้า
      newprefix:"นางสาว",              //คำนำหน้าใหม่

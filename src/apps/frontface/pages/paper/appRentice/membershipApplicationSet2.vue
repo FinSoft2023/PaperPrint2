@@ -6,24 +6,24 @@
         </PaperDoc>
 
 
-        <MorePaperDoc>
+        <PaperDoc>
                         <!-- กู้สามัญทั่วไป general2  -->
-        </MorePaperDoc>
+        </PaperDoc>
 
 
-        <MorePaperDoc>
+        <PaperDoc>
                         <!-- กู้สามัญทั่วไป general3  -->
-        </MorePaperDoc>
+        </PaperDoc>
 
 
-        <MorePaperDoc>
+        <PaperDoc>
                         <!-- กู้สามัญทั่วไป general4  -->
-        </MorePaperDoc>
+        </PaperDoc>
 
-        <MorePaperDoc>
+        <PaperDoc>
                         <!-- กู้สามัญทั่วไป general5  -->
 
-                        <div class="mx-3">
+                        <div class="mr-3">
                         <div class="grid grid-cols-1 grid-rows-2 justify-center h-10">
                         <div ></div>
 
@@ -130,7 +130,7 @@
               </p>
             </div>
                 </div>
-                <div class="row-span-2 col-span-2 ml-10 ml-4">
+                <div class="row-span-2 col-span-2  ">
                   <div ></div>
             <div class="text-center text-base mr-4">ลงชื่อ..................................................................</div>
             <div ></div>
@@ -155,45 +155,67 @@
 
                         
 
-        </MorePaperDoc>
+        </PaperDoc>
 
-        <MorePaperDoc>
+        <PaperDoc>
                         <!-- กู้สามัญทั่วไป general6  -->
 
-                        <div class="border-solid border-2 border-slate-950 mt-10 p-4">
-<br>
-<p class="text-center text-lg font-semibold ">คำยินยอมของคู่สมรส</p> 
-<p  class="text-center text-base ">(ใช้เฉพาะกรณีที่ผู้ค้ำประกันมีคู่สมรส)</p>
-<p class=" text-end text-base mr-10 mt-10">เขียนที่ <FiLL :data="data?.location" class="min-w-70"/></p>
-<p class=" text-end text-base mr-32">วันที่ <FiLL :data="data?.dateReceived" class="min-w-60" date-format="full" /> </p><br>
+                          <div class="grid grid-cols-3 grid-rows-2 justify-center h-10">
+                        <div class="items-start mt-8">
+                          
+                          </div>
 
-<p class=" text-base mt-4"><span class="ml-16">ข้าพเจ้า นาย/นาง </span><FiLL class="min-w-96" :data="`${data?.prefix} ${data?.fName}  ${data?.lName}`"/>
-  <span class="ml-20">เป็นคู่สมรสของ นาย/นาง</span><FiLL class="min-w-96" :data="`${data?.prefixMrs} ${data?.ofFname}  ${data?.lName}`"/> <span class="ml-6">ยินยอมให้คู่สมรสของข้าพเจ้าเป็นผู้ค้ำประกันเงินกู้สามัญของสหกรณ์ออมทรัพย์แห่งนี้</span>  
-  <span class="ml-32">ตามหนังสือค้ำประกันเงินกู้ข้างต้นนี้และข้าพเจ้าได้ลงลายมือชื่อไว้เป็นสำคัญ</span>
-</p>
-<div class="grid grid-cols-1 text-center mt-4 pl-48">
-            <div class="text-center text-base">ลงชื่อ.................................................................คู่สมรสผู้ให้คำยินยอม</div>
-            <div class="text-center pr-24">
-              ( <FiLL class="min-w-56" :data="`${data?.fName}  ${data?.lName}`"/>)<br><br>
+              <div class="flex flex-col items-center row-span-2 mt-16">
+                <img class="w-[120px] h-auto"
+                            src="https://cypphcoop.com/mediafiles/data/sorsortortor.png"
+                            alt="Logo" />
+              </div>
+
+              <div class="flex flex-col items-end row-span-2">
+                <p class="mb-2 mr-12">สสธท. 3</p>
+              </div>
             </div>
-            <div class="text-center text-base mr-16 mt-4">ลงชื่อ.................................................................ผู้ค้ำประกัน</div>
-            <div class="text-center pr-24">
-              ( <FiLL class="min-w-56" :data="`${data?.ofFname}  ${data?.lName}`"/>)<br><br>
+
+            <div class="grid justify-items-center mt-36 text-lg font-semibold">
+            <p>หนังสือแสดงเจตนาการมอบให้รับเงินสงเคราะห์</p>
+            <p>สมาคมฌาปนกิจสงเคราะห์สมาชิกสหกรณ์ออมทรัพย์สาธารณสุขไทย</p>
             </div>
-            <div class="text-center text-base mr-10 mt-10">ลงชื่อ.................................................................พยาน (สมาชิก)</div>
-            <div class="text-center pr-24">
-              (...................................................................)<br><br>
+
+            <div class="mr-14">
+            <div class="grid justify-items-end mt-2 text-base ">
+            <p>เขียนที่ <FiLL :data="data?.location" class="min-w-80" /></p>
+            <p>วันที่ <FiLL class="min-w-80 mr-2" :data="data?.dateReceived"
+                      date-format="full" /></p>
             </div>
-            <div class="text-center text-base mr-10 mt-10">ลงชื่อ.................................................................พยาน (สมาชิก)</div>
-            <div class="text-center pr-24">
-              (...................................................................)<br><br>
-            </div>
-            </div>
+
+            <div class="grid justify-items-start mt-2 text-pretty text-base ">
+            <p><span class="ml-20">ข้าพเจ้า </span> 
+              <FiLL class="min-w-60" :data="` ${data?.fName}  ${data?.lName}`"/> อายุ <FiLL :data="data?.age" class="min-w-16" /> ปี วันเกิดที่ 
+              <FiLL class="min-w-44" :data="data?.dateReceived"
+                      date-format="full" /> สมาชิกสมาคมฌาปนกิจสงเคราะห์สมาชิกสหกรณ์ออมทรัพย์สาธารณสุขไทย เลขทะเบียนที่ <FiLL :data="data?.numberRegis" class="min-w-36" />
+              อยู่บ้านเลขที่ <FiLL :data="data?.housenb" class="min-w-16" /> หมู่ที่ <FiLL :data="data?.group" class="min-w-10" /> ถนน <FiLL :data="data?.road" class="min-w-20" /> 
+              ตำบล <FiLL :data="data?.district" class="min-w-16" /> อำเภอ <FiLL :data="data?.district" class="min-w-16" /> จังหวัด <FiLL :data="data?.province" class="min-w-24" /> 
+              รหัสไปรษณีย์ <FiLL :data="data?.zipcode" class="min-w-16" /> โทรศัพท์ <FiLL :data="data?.nbPhon" class="min-w-56 " /> มือถือ <FiLL :data="data?.nbPhon" class="min-w-60" />
+            </p>
+          </div>
+
+          <div class="grid justify-items-start mt-8 text-pretty text-base ">
+            <p><span class="ml-20">1. สถานภาพ</span></p>
+            <p></p>
+
             
-           </div>
-        </MorePaperDoc>
+            
+          </div>
+              
 
-        <MorePaperDoc>
+            
+ 
+            
+            </div>
+
+        </PaperDoc>
+
+        <PaperDoc>
                         <!-- กู้สามัญทั่วไป general7  -->
 
                         <div class="border-solid border-2 border-slate-950 mt-10 p-4">
@@ -227,7 +249,7 @@
             </div>
             
            </div>
-        </MorePaperDoc>
+        </PaperDoc>
 
     </main>
 </template>

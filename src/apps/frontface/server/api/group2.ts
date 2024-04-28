@@ -44,6 +44,7 @@ export default defineEventHandler(async (event) => {
         loanbook:"405/96",         //หนังสือเงินกู้ที่
         location:"สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด",
         subject:"ขอเปลี่ยนเเปลงผู้ค้ำประกันเงินกู้",       //เรื่อง
+        newStatus:"คู่สมรส", //สถานะ
 
 
 
@@ -56,7 +57,7 @@ export default defineEventHandler(async (event) => {
 
            dateReceived: new Date().toISOString(), //วันที่ปัจจุบัน  full จะได้ผลลัพธ์ 1 เมษายน พศ.2567    short ผลลัพธ์  01/04/2567
            repaymentPlan: [
-            { fn: "สารีกา ", ln: "สุขสำราญ ", status: 'คู่สมรส' , share: 40  },
+            { fn: "นาตาชา ", ln: "สุขสำราญ ", status: 'คู่สมรส' , share: 40  },
             { fn: "เจริญดี", ln: "สุขสำราญ ", status: 'บุตร' , share: 60 },
             //เอาไปใส่หน้าที่ 6
             // ชื่อนามสกุล                เกี่ยวข้อง         ส่วนเเบ่งเงิน         

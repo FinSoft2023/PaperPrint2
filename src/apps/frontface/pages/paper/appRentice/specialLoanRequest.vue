@@ -174,6 +174,71 @@
         </MorePaperDoc>
 
         <MorePaperDoc> <!-- หน้า 3 -->
+            <div class="mt-4"> 
+                <div class="text-xl text-center font-bold underline">
+                    <p>คำรับรองของผู้บังคับบัญชา</p>
+                </div>
+            </div>  
+            <p class="mt-2"><span class="ml-12">ข้าพเจ้า </span> <FiLL class="min-w-80" :data="`${data?.fName}  ${data?.lName}`"/> ตำแหน่ง <FiLL :data="data?.position" class="min-w-60" /> </p>
+            <p>สังกัด <FiLL :data="data?.affiliation" class="min-w-80" /> อำเภอ <FiLL :data="data?.district" class="min-w-52" />จังหวัด ศรีสะเกษ</p>
+            <p>ขอรับรองว่าตามที่ <BlankSpace class="min-w-44" /> รับราชการหรือทำงานประจำในตำแหน่ง <FiLL :data="data?.position" class="min-w-44" /> </p>
+            <p>สังกัด <FiLL :data="data?.affiliation" class="min-w-80" /> ได้รับเงินได้รายเดือน <FiLL :data="data?.salary" class="min-w-48" /> บาท</p>
+            <p>ขอกู้เงินจากสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด ตามคำขอกู้ข้างต้นจำนวนเงิน <FiLL :data="data?.salary" class="min-w-32" /> บาท</p>
+            <p>( <MoneyText :data="data?.monthlyIncome"/> ) นั้น ข้าพเจ้าทราบและได้สอบถามผู้ขอกู้แล้ว เห็นว่ามีความจำเป็นจริงควรให้กู้ตามความประสงค์</p>
+            <p class="ml-12">เพื่อเป็นหลักฐานจึงลงลายมือชื่อไว้เป็นหลักฐาน</p>
+            <div class="flex flex-col items-end">
+                <p class="mt-14 ">
+                        <span class="mr-10">
+                            ลงชื่อ<BlankSpace class="min-w-56" />ผู้รับรอง
+                        </span>
+                    </p>
+                    <p class="mr-20 text-center">
+                        (<BlankSpace class="min-w-56" />)
+                    </p>
+            </div>  
+            <hr class="mt-12 my-4 border-b-2 border-black">
+            <div class="mt-4"> 
+                <div class="text-xl text-center font-bold underline">
+                    <p>บันทึกของพนักงานสหกรณ์</p>
+                </div>
+            </div> 
+            <div class="ml-12 mt-4">
+            <p >1. ผู้กู้รายนี้เป็นสมาชิกสหกรณ์ติดต่อกันมาจนถึงวันยื่นคำขอกู้เป็นเวลา ปี เดือน</p>
+            <p>2. ปัจจุบันผู้กู้ส่งหุ้นรายเดือนๆ ละ บาท รวมมีหุ้นอยู่ในสหกรณ์ทั้งสิ้น บาท</p>
+            <p>3. ผู้ขอกู้มีหนี้อยู่ในสหกรณ์ในวันสิ้นเดือน พ.ศ. จำนวน บาท</p>
+            <p>4. ผู้ขอกู้เคยผิดนัดการส่งเงินงวดชำระหนี้หรือไม่อย่างไร ( ) ไม่เคย ( ) เคย งวด</p>
+            <p>5. ข้อชี้แจงอื่นๆ (เงินได้รายเดือนของผู้กู้และคู่สมรส, ควรให้กู้เท่าใด, ต้องใช้หลักประกันอย่างไรบ้าง เป็นต้น) </p>
+            </div>
+            <div class="flex flex-col items-end">
+                <p class="mt-14 ">
+                        <span class="mr-20">
+                            ลงชื่อ<BlankSpace class="min-w-56" />พนักงานสหกรณ์
+                        </span>
+                    </p>
+                    <p class="mr-44 text-center">
+                        <BlankSpace class="min-w-20" />/<BlankSpace class="min-w-20" />/<BlankSpace class="min-w-20" />
+                    </p>
+            </div>  
+            
+            <hr class="mt-12 my-4 border-b-2 border-black">
+            <div class="mt-4"> 
+                <div class="text-xl text-center font-bold underline">
+                    <p>บันทึกการพิจารณาของคณะกรรมการดำเนินการ</p>
+                </div>
+            </div> 
+            <p>ในการประชุมคณะกรรมการประจำเดือนครั้งที่ เมื่อวันที่ เดือน พ.ศ.
+                มีคณะกรรมการเข้าร่วมพิจารณาคำขอกู้พิเศษรายนี้จำนวน คนที่ประชุมลงมติให้กู้โดยคะแนนเสียง ต่อ
+                จึงเป็นอันว่า</p>
+            <div class="flex flex-col items-end">
+                <p class="mt-14 ">
+                    <span class="mr-20">
+                        ลงชื่อ<BlankSpace class="min-w-56" />เลขานุการ
+                    </span>
+                </p>
+                <p class="mr-44 text-center">
+                    <BlankSpace class="min-w-20" />/<BlankSpace class="min-w-20" />/<BlankSpace class="min-w-20" />
+                </p>
+            </div> 
             
         </MorePaperDoc>
         <MorePaperDoc> <!-- หน้า 4 -->

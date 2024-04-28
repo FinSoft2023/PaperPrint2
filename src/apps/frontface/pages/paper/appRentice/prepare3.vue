@@ -1,6 +1,15 @@
 <template>
     <main class="font-sans">
+      <PaperDoc>
+                        <!-- กู้สามัญทั่วไป general1  -->
+
+        </PaperDoc>
+        <PaperDoc>
+                        <!-- กู้สามัญทั่วไป general2  -->
+
+        </PaperDoc>
       <MorePaperDoc>
+                      <!-- กู้สามัญทั่วไป general3  -->
         <div class="grid justify-items-start font-bold mt-12 ml-48">
           <p class="pl-96">สส.ชสอ. ส.1/2(สามัญ)</p>
         </div>

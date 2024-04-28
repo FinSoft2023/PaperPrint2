@@ -31,21 +31,21 @@
         </PaperDoc>
 
 
-        <PaperDoc>
+        <MorePaperDoc>
                         <!-- กู้สามัญทั่วไป general2  -->
-        </PaperDoc>
+        </MorePaperDoc>
 
 
-        <PaperDoc>
+        <MorePaperDoc>
                         <!-- กู้สามัญทั่วไป general3  -->
-        </PaperDoc>
+        </MorePaperDoc>
 
 
-        <PaperDoc>
+        <MorePaperDoc>
                         <!-- กู้สามัญทั่วไป general4  -->
-        </PaperDoc>
+        </MorePaperDoc>
 
-        <PaperDoc>
+        <MorePaperDoc>
                         <!-- กู้สามัญทั่วไป general5  -->
 
                         <div class="mr-3">
@@ -79,9 +79,9 @@
             <p>เลขประจำตัวประชาชน <FiLL :data="data?.idcard" class="min-w-44" /> อายุ <FiLL :data="data?.age" class="min-w-20" /> ปี</p>
             <p><span class="ml-14">ข้าพเจ้า</span>ข้าพเจ้าขอให้ประวัติสุขภาพของข้าพเจ้าเพื่อประกอบการสมัครสมาชิก สสธท. ดังนี้
             </p>
-            <p><FiLLBox /> 1. มีสุขภาพแข็งแรง</p>
-            <p><FiLLBox /> 2. ไม่เป็นผู้มีกายทุพพลภาพ จนไม่สามารถปฏิบัติหน้าที่ได้</p>
-            <p><FiLLBox /> 3. ไม่มีจิตฟันเฟือน ไม่สมประกอบ</p>
+            <p><FiLLBox  :checked="data?.fName"  /> 1. มีสุขภาพแข็งแรง</p>
+            <p><FiLLBox  :checked="data?.fName"  /> 2. ไม่เป็นผู้มีกายทุพพลภาพ จนไม่สามารถปฏิบัติหน้าที่ได้</p>
+            <p><FiLLBox  :checked="data?.fName"  /> 3. ไม่มีจิตฟันเฟือน ไม่สมประกอบ</p>
             <p><span class="ml-5">4.</span> <span class="underline">ประวัติการรักษาโรคต่อไปนี้</span></p>
             
 
@@ -98,15 +98,15 @@
                   <p class="pl-10"> (4.9) โรคเอสแอลอี (SLE) </p>
                 </div>
                 <div class="row-span-2 col-span-2 ml-10">
-                  <p><FiLLBox /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
-                  <p><FiLLBox /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
-                  <p><FiLLBox /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
-                  <p><FiLLBox /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
-                  <p><FiLLBox /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
-                  <p><FiLLBox /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
-                  <p><FiLLBox /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
-                  <p><FiLLBox /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
-                  <p><FiLLBox /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
+                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
+                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
+                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
+                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
+                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
+                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
+                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
+                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
+                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
                 </div>
             </div>
           </div>
@@ -135,8 +135,8 @@
             <div ></div>
             <div class="text-center text-base mr-4">ลงชื่อ..................................................................</div>
             <div ></div>
-            <div class="text-center ">
-              ( <FiLL class="min-w-60" :data="`${data?.fName}  ${data?.lName}`"/>)
+            <div class="text-center mt-2">
+              (.......................................................................)
               <p class="text-center text-base mt-2">
                 (ผู้สมัครสมาชิก สสธท.)
               </p>
@@ -148,8 +148,8 @@
                   <div ></div>
             <div class="text-start text-base mr-4">ลงชื่อ..................................................................</div>
             <div ></div>
-            <div class="text-start ml-4">
-              ( <FiLL class="min-w-60" :data="`${data?.fName}  ${data?.lName}`"/>)
+            <div class="text-start ml-4 mt-2">
+              (.......................................................................)
               <p class="text-start text-base mt-2 ml-5">
                 พยาน/เจ้าหน้าที่ศูนย์ประสานงาน
               </p>
@@ -159,8 +159,8 @@
                   <div ></div>
             <div class="text-center text-base mr-4">ลงชื่อ..................................................................</div>
             <div ></div>
-            <div class="text-center ">
-              ( <FiLL class="min-w-60" :data="`${data?.fName}  ${data?.lName}`"/>)
+            <div class="text-center mt-2 ">
+              (.......................................................................)
               <p class="text-center text-base mt-2">
                 พยาน/ผู้มีชื่อรับเงินสงเคราะห์
               </p>
@@ -180,9 +180,9 @@
 
                         
 
-        </PaperDoc>
+        </MorePaperDoc>
 
-        <PaperDoc>
+        <MorePaperDoc>
                         <!-- กู้สามัญทั่วไป general6  -->
 
                           <div class="grid grid-cols-3 grid-rows-2 justify-center h-10">
@@ -229,7 +229,7 @@
             <p class="ml-20"><FiLLBox /> โสด <span class="ml-10"><FiLLBox  :checked="data?.fName"  />สมรส คู่สมรสชื่อ </span><FiLL class="min-w-60" :data="` ${data?.ofFname}  ${data?.lName}`"/>
             <FiLLBox /> หย่า หรือ หม้าย </p>
             <p><span class="ml-20">2. ข้าพเจ้าขอแสดงเจตนาการรับเงินสงเคราะห์ที่ สสธท. พึงจ่าย ให้ผู้จัดการศพข้าพเจ้า</span></p>
-            <p>คือ <FiLL class="min-w-60" :data="` ${data?.ofFname}  ${data?.lName}`"/> เกี่ยวข้องเป็น <FiLL :data="data?.status" class="min-w-32" /> ของข้าพเจ้า(10%ของเงินสงเคราะห์)
+            <p>คือ <FiLL class="min-w-60" :data="` ${data?.ofFname}  ${data?.lName}`"/> เกี่ยวข้องเป็น <FiLL :data="data?.newStatus" class="min-w-32" /> ของข้าพเจ้า(10%ของเงินสงเคราะห์)
               ส่วนที่เหลือมอบให้บุคคล ดังต่อไปนี้เป็นผู้รับเงินสงเคราะห์ คือ</p>
               
             <div class="mt-8">
@@ -265,7 +265,7 @@
           </div>
 
           <div class="mt-6">
-            <p><span class="ml-20">โดยมีเงื่อนไขดังนี้</span> <FiLLBox /> ได้รับเต็มจำนวนเพียงผู้เดียว  <FiLLBox /> ได้รับส่วนแบ่งเท่าๆกัน</p>
+            <p><span class="ml-20">โดยมีเงื่อนไขดังนี้</span> <FiLLBox /> ได้รับเต็มจำนวนเพียงผู้เดียว  <FiLLBox  :checked="data?.fName"  /> ได้รับส่วนแบ่งเท่าๆกัน</p>
             <p class="ml-10"><span class="ml-40"><FiLLBox />อื่นๆ ระบุ.................................................................................................................................</span> </p>
             <p><span class="ml-20">อนึ่ง ข้าพเจ้าขอรับรองว่า การแสดงเจตนาครั้งนี้เป็นไปด้วยความสมัครใจ ไม่มีผู้ใดบังคับ ข่มขู่ หรือกระทำการใดๆ 
             ให้ข้าพเจ้าแสดงเจตนาดังกล่าว จึงได้ลงลายมือชื่อไว้เป็นสำคัญ ท้ายหนังสือนี้</span> </p>
@@ -281,7 +281,7 @@
                   <div class="text-center text-base ml-72 mr-6">(ลงชื่อ)..........................................................ผู้ให้คำยินยอม</div>
                   <div ></div>
                   <div class="text-center ml-56">
-                    (...................................................................)
+                    (..................................................................)
                     <p class="text-center text-base">
                       ผู้สมัครสมาชิก สสธท.
                     </p>
@@ -289,13 +289,13 @@
                   <div class="text-center text-base ml-56 mt-2 mr-2">(ลงชื่อ)..........................................................พยาน</div>
                   <div ></div>
                   <div class="text-center ml-56">
-                    (...................................................................)
+                    (..................................................................)
                     
                   </div>
                   <div class="text-center text-base ml-72 mt-2 ">(ลงชื่อ)...........................................................เจ้าหน้าที่ สสธท.</div>
                   <div ></div>
                   <div class="text-center ml-56">
-                    (...................................................................)
+                    (<FiLL class="min-w-56" :data="` ${data?.officerFName}  ${data?.officerLName}`"/>)
                     
                   </div>
                 </div>
@@ -307,12 +307,164 @@
             
             </div>
 
-        </PaperDoc>
+        </MorePaperDoc>
 
-        <PaperDoc>
+        <MorePaperDoc>
                         <!-- กู้สามัญทั่วไป general7  -->
 
-        </PaperDoc>
+                        <div class="grid grid-cols-3 grid-rows-2 justify-center h-10">
+                        <div class="items-start mt-2">
+                          
+                          </div>
+
+              <div class="flex flex-col items-center row-span-2 mt-2">
+                
+              </div>
+
+              <div class="flex flex-col items-end row-span-2">
+                <p class="mb-2 mr-12">สสธท. 9</p>
+              </div>
+            </div>
+
+            <div class="grid justify-items-center mt-10 text-lg font-semibold">
+            <p>หนังสือยินยอมและมอบอำนาจการรับเงินสงเคราะห์</p>
+            <p>สมาคมฌาปนกิจสงเคราะห์สมาชิกสหกรณ์ออมทรัพย์สาธารณสุขไทย (สสธท.)</p>
+            </div>
+
+            <div class="mr-14 mt-4">
+            <div class="grid justify-items-center mt-2 text-base ">
+            <p class="ml-12">เขียนที่ <FiLL :data="data?.location" class="min-w-96" /></p>
+            <p class="ml-16">วันที่ <FiLL class="min-w-96" :data="data?.dateReceived"
+                      date-format="full" /></p>
+            </div>
+
+            <div class="grid justify-items-start mt-6 text-pretty text-base ">
+            <p><span class="ml-14">โดยหนังสือฉบับนี้ข้าพเจ้า </span> 
+              <FiLL class="min-w-60" :data="` ${data?.fName}  ${data?.lName}`"/> ซึ่งเป็นผู้ถือบัตรประจำตัวประชาชนเลขที่ <FiLL :data="data?.idcard" class="min-w-40" /> 
+              ที่อยู่ปัจจุบันเลขที่ <FiLL :data="data?.housenb" class="min-w-20" /> หมู่ที่ <FiLL :data="data?.group" class="min-w-14" />  ซอย <FiLL :data="data?.group" class="min-w-14" /> ถนน <FiLL :data="data?.road" class="min-w-32" /> 
+              ตำบล(แขวง) <FiLL :data="data?.district" class="min-w-24" /> อำเภอ(เขต) <FiLL :data="data?.district" class="min-w-24" /> จังหวัด <FiLL :data="data?.province" class="min-w-28" /> 
+              รหัสไปรษณีย์ <FiLL :data="data?.zipcode" class="min-w-24" /> โทรศัพท์บ้าน <FiLL :data="data?.nbPhon" class="min-w-44 " /> โทรศัพท์มือถือ <FiLL :data="data?.nbPhon" class="min-w-44" />
+              ยินยอมและมอบอำนาจให้สหกรณ์ออมทรัพย์ <FiLL :data="data?.agency" class="min-w-52" /> จำกัด หรือ <FiLL class="min-w-52" :data="` ${data?.ofFname}  ${data?.lName}`"/> ซึ่งเป็นผู้ถือบัตรประจำตัวประชาชนเลขที่ <FiLL :data="data?.idcard" class="min-w-40" /> 
+              ที่อยู่ปัจจุบันเลขที่ <FiLL :data="data?.housenb" class="min-w-20" /> หมู่ที่ <FiLL :data="data?.group" class="min-w-12" />  ซอย <FiLL :data="data?.group" class="min-w-12" /> ถนน <FiLL :data="data?.road" class="min-w-32" /> 
+              ตำบล(แขวง) <FiLL :data="data?.district" class="min-w-28" /> อำเภอ(เขต) <FiLL :data="data?.district" class="min-w-28" /> จังหวัด <FiLL :data="data?.province" class="min-w-36" /> 
+              รหัสไปรษณีย์ <FiLL :data="data?.zipcode" class="min-w-24" /> โทรศัพท์บ้าน <FiLL :data="data?.nbPhon" class="min-w-44 " /> โทรศัพท์มือถือ <FiLL :data="data?.nbPhon" class="min-w-48" />
+              เป็นผู้ ( ) รับเงินค่าจัดการศพ ( ) รับเงินสงเคราะห์ ( ) อื่นๆ ที่พึ่งได้รับ
+            </p>
+            <p>แทนข้าพเจ้าเพื่อนำเงินดังกล่าวชำระหนี้ของ <FiLL :data="data?.affiliation" class="min-w-40" /> ที่มีต่อสหกรณ์ออมทรัพย์<FiLL :data="data?.savings" class="min-w-28" /> จำกัด จนเสร็จการ </p>
+            <p>
+              <span class="ml-14">ข้าพเจ้าขอรับผิดชอบในการที่ผู้รับยินยอมและรับมอบอำนาจได้กระทำไปตามหนังสือยินยอมและมอบอำนาจนี้
+              เสมือนว่าข้าพเจ้าได้กระทำด้วยตนเองทั้งสิ้น</span>
+            </p>
+            <p>
+              <span class="ml-14">เพื่อเป็นหลักฐานข้าพเจ้าได้ลงลายมือชื่อ / ลายพิมพ์นิ้วมือ ไว้เป็นสำคัญต่อหน้าพยานแล้ว</span>
+            </p>
+          </div>
+
+          
+          <div class="grid grid-rows-2 grid-flow-col mt-4">
+                <div class="row-span-3">
+                  <div ></div>
+                </div>
+                <div class="row-span-2 col-span-2  ">
+                  <div ></div>
+                  <div class="text-center text-base ml-60 mr-6">(ลงชื่อ)..........................................................ผู้ยินยอมและมอบอำนาจ</div>
+                  <div ></div>
+                  <div class="text-center ml-28">
+                    (...........................................................)
+                  </div>
+                </div>
+            </div>
+            <div class="grid grid-rows-2 grid-flow-col mt-2">
+                <div class="row-span-3">
+                  <div ></div>
+            <div class="text-center text-base mr-4">(ลงชื่อ)............................................ผู้ยินยอมและมอบอำนาจ</div>
+            <div ></div>
+            <div class="text-start">
+              <p class="text-start text-base  ml-12">(...........................................)</p>
+              <p class="text-start text-base ">
+                บัตรปชช.เลขที่ .................................
+              </p>
+            </div>
+                </div>
+                <div class="row-span-2 col-span-2  ">
+                  <div ></div>
+                  <div class="text-end text-base">(ลงชื่อ)............................................ผู้ยินยอมและมอบอำนาจ</div>
+            <div ></div>
+            <div class="text-start">
+              <p class="text-start text-base  ml-12">(...........................................)</p>
+              <p class="text-start text-base ">
+                บัตรปชช.เลขที่ .................................
+              </p>
+            </div>
+                </div>
+            </div>
+            <div class="grid grid-rows-2 grid-flow-col mt-2">
+                <div class="row-span-3">
+                  <div ></div>
+            <div class="text-center text-base mr-4">(ลงชื่อ)............................................ผู้ยินยอมและมอบอำนาจ</div>
+            <div ></div>
+            <div class="text-start">
+              <p class="text-start text-base  ml-12">(...........................................)</p>
+              <p class="text-start text-base ">
+                บัตรปชช.เลขที่ .................................
+              </p>
+            </div>
+                </div>
+                <div class="row-span-2 col-span-2  ">
+                  <div ></div>
+                  <div class="text-end text-base">(ลงชื่อ)............................................ผู้ยินยอมและมอบอำนาจ</div>
+            <div ></div>
+            <div class="text-start">
+              <p class="text-start text-base  ml-12">(...........................................)</p>
+              <p class="text-start text-base ">
+                บัตรปชช.เลขที่ .................................
+              </p>
+            </div>
+                </div>
+            </div>
+            <div class="grid grid-rows-2 grid-flow-col mt-6">
+                <div class="row-span-3">
+                  <div ></div>
+                </div>
+                <div class="row-span-2 col-span-2  ">
+                  <div ></div>
+                  <div class="text-center text-base ml-60 mr-6">(ลงชื่อ)..........................................................ผู้ยินยอมและมอบอำนาจ</div>
+                  <div ></div>
+                  <div class="text-center ml-28">
+                    (...........................................................)
+                  </div>
+                </div>
+            </div>
+            <p>
+              <span class="ml-14">ข้าพเจ้าขอรับรองว่าเป็นลายมือชื่อ&nbsp; /&nbsp; ลายพิมพ์นิ้วมือของผู้ยืนยอมและมอบอำนาจและผู้รับยินยอม
+                และรับมอบอำนาจจริงและได้ลงลายมือชื่อ&nbsp;/&nbsp; ลายพิมพ์นิ้วมือต่อหน้าข้าพเจ้า</span>
+            </p>
+            <div class="grid grid-rows-2 grid-flow-col mt-2">
+                <div class="row-span-3">
+                  <div ></div>
+            <div class="text-end text-base mr-4">(ลงชื่อ)............................................พยาน</div>
+            <div ></div>
+            <div class="text-end">
+              <p class="text-center text-base ml-16">(................................................)</p>
+            </div>
+                </div>
+                <div class="row-span-2 col-span-2  ">
+                  <div ></div>
+                  <div class="text-center text-base">(ลงชื่อ)............................................พยาน</div>
+            <div ></div>
+            <div class="text-center">
+              <p class="text-center text-base ml-1">(................................................)</p>
+            </div>
+                </div>
+            </div>
+              
+
+            
+ 
+            
+            </div>
+
+        </MorePaperDoc>
 
     </main>
 </template>

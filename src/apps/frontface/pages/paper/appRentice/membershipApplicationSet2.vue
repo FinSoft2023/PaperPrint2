@@ -199,13 +199,82 @@
             </p>
           </div>
 
-          <div class="grid justify-items-start mt-8 text-pretty text-base ">
+          <div class="grid justify-items-start mt-8 text-pretty text-base p-1 ">
             <p><span class="ml-20">1. สถานภาพ</span></p>
-            <p></p>
-
-            
-            
+            <p class="ml-20"><FiLLBox /> โสด <span class="ml-10"><FiLLBox  :checked="data?.fName"  />สมรส คู่สมรสชื่อ </span><FiLL class="min-w-60" :data="` ${data?.ofFname}  ${data?.lName}`"/>
+            <FiLLBox /> หย่า หรือ หม้าย </p>
+            <p><span class="ml-20">2. ข้าพเจ้าขอแสดงเจตนาการรับเงินสงเคราะห์ที่ สสธท. พึงจ่าย ให้ผู้จัดการศพข้าพเจ้า</span></p>
+            <p>คือ <FiLL class="min-w-60" :data="` ${data?.ofFname}  ${data?.lName}`"/> เกี่ยวข้องเป็น <FiLL :data="data?.status" class="min-w-32" /> ของข้าพเจ้า(10%ของเงินสงเคราะห์)
+              ส่วนที่เหลือมอบให้บุคคล ดังต่อไปนี้เป็นผู้รับเงินสงเคราะห์ คือ</p>
+              
+            <div class="mt-8">
+              <LineFiLL :data="data?.repaymentPlan"
+          :limit="5">
+          <template #data="{ index, item }">
+            <p class=" text-base pl-8"></p>
+            <p class="text-start text-base"><span class="ml-20">2. </span>
+              <FiLL :data="index"
+                number
+                normal no-line/>
+                
+                <FiLL class="min-w-56" :data="`${item.fn}  ${item.ln}`" />  
+                    
+              เกี่ยวข้องเป็น
+              
+              <FiLL :data="item.status" class="min-w-20" />
+              
+              ของข้าพเจ้า สัดส่วน <FiLL :data="item.share" class="min-w-16" /> % 
+            </p>
+          </template>
+          <template #default="{ index }">
+            <p class="text-start text-base"><span class="ml-20">2. </span>
+              <FiLL :data="index"
+                number
+                normal no-line/>
+                
+              ................................................................ เกี่ยวข้องเป็น........................
+              ของข้าพเจ้า สัดส่วน.................... %
+            </p>
+          </template>
+        </LineFiLL>
           </div>
+
+          <div class="mt-6">
+            <p><span class="ml-20">โดยมีเงื่อนไขดังนี้</span> <FiLLBox /> ได้รับเต็มจำนวนเพียงผู้เดียว  <FiLLBox /> ได้รับส่วนแบ่งเท่าๆกัน</p>
+            <p class="ml-10"><span class="ml-40"><FiLLBox />อื่นๆ ระบุ.................................................................................................................................</span> </p>
+            <p><span class="ml-20">อนึ่ง ข้าพเจ้าขอรับรองว่า การแสดงเจตนาครั้งนี้เป็นไปด้วยความสมัครใจ ไม่มีผู้ใดบังคับ ข่มขู่ หรือกระทำการใดๆ 
+            ให้ข้าพเจ้าแสดงเจตนาดังกล่าว จึงได้ลงลายมือชื่อไว้เป็นสำคัญ ท้ายหนังสือนี้</span> </p>
+
+          </div>
+            </div>
+          <div class="grid grid-rows-2 grid-flow-col mt-6">
+                <div class="row-span-3">
+                  <div ></div>
+                </div>
+                <div class="row-span-2 col-span-2  ">
+                  <div ></div>
+                  <div class="text-center text-base ml-72 mr-6">(ลงชื่อ)..........................................................ผู้ให้คำยินยอม</div>
+                  <div ></div>
+                  <div class="text-center ml-56">
+                    (...................................................................)
+                    <p class="text-center text-base">
+                      ผู้สมัครสมาชิก สสธท.
+                    </p>
+                  </div>
+                  <div class="text-center text-base ml-56 mt-2 mr-2">(ลงชื่อ)..........................................................พยาน</div>
+                  <div ></div>
+                  <div class="text-center ml-56">
+                    (...................................................................)
+                    
+                  </div>
+                  <div class="text-center text-base ml-72 mt-2 ">(ลงชื่อ)...........................................................เจ้าหน้าที่ สสธท.</div>
+                  <div ></div>
+                  <div class="text-center ml-56">
+                    (...................................................................)
+                    
+                  </div>
+                </div>
+            </div>
               
 
             
@@ -218,37 +287,6 @@
         <PaperDoc>
                         <!-- กู้สามัญทั่วไป general7  -->
 
-                        <div class="border-solid border-2 border-slate-950 mt-10 p-4">
-<br>
-<p class="text-center text-lg font-semibold ">คำยินยอมของคู่สมรส</p> 
-<p  class="text-center text-base ">(ใช้เฉพาะกรณีที่ผู้ค้ำประกันมีคู่สมรส)</p>
-<p class=" text-end text-base mr-10 mt-10">เขียนที่ <FiLL :data="data?.location" class="min-w-70"/></p>
-<p class=" text-end text-base mr-32">วันที่ <FiLL :data="data?.dateReceived" class="min-w-60" date-format="full" /> </p><br>
-
-<p class=" text-base mt-4"><span class="ml-16">ข้าพเจ้า นาย/นาง </span><FiLL class="min-w-96" :data="`${data?.prefix} ${data?.fName}  ${data?.lName}`"/>
-  <span class="ml-20">เป็นคู่สมรสของ นาย/นาง</span><FiLL class="min-w-96" :data="`${data?.prefixMrs} ${data?.ofFname}  ${data?.lName}`"/> <span class="ml-6">ยินยอมให้คู่สมรสของข้าพเจ้าเป็นผู้ค้ำประกันเงินกู้สามัญของสหกรณ์ออมทรัพย์แห่งนี้</span>  
-  <span class="ml-32">ตามหนังสือค้ำประกันเงินกู้ข้างต้นนี้และข้าพเจ้าได้ลงลายมือชื่อไว้เป็นสำคัญ</span>
-</p>
-<div class="grid grid-cols-1 text-center mt-4 pl-48">
-            <div class="text-center text-base">ลงชื่อ.................................................................คู่สมรสผู้ให้คำยินยอม</div>
-            <div class="text-center pr-24">
-              ( <FiLL class="min-w-56" :data="`${data?.fName}  ${data?.lName}`"/>)<br><br>
-            </div>
-            <div class="text-center text-base mr-16 mt-4">ลงชื่อ.................................................................ผู้ค้ำประกัน</div>
-            <div class="text-center pr-24">
-              ( <FiLL class="min-w-56" :data="`${data?.ofFname}  ${data?.lName}`"/>)<br><br>
-            </div>
-            <div class="text-center text-base mr-10 mt-10">ลงชื่อ.................................................................พยาน (สมาชิก)</div>
-            <div class="text-center pr-24">
-              (...................................................................)<br><br>
-            </div>
-            <div class="text-center text-base mr-10 mt-10">ลงชื่อ.................................................................พยาน (สมาชิก)</div>
-            <div class="text-center pr-24">
-              (...................................................................)<br><br>
-            </div>
-            </div>
-            
-           </div>
         </PaperDoc>
 
     </main>

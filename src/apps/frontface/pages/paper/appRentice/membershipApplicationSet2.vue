@@ -6,21 +6,21 @@
         </PaperDoc>
 
 
-        <PaperDoc>
+        <MorePaperDoc>
                         <!-- กู้สามัญทั่วไป general2  -->
-        </PaperDoc>
+        </MorePaperDoc>
 
 
-        <PaperDoc>
+        <MorePaperDoc>
                         <!-- กู้สามัญทั่วไป general3  -->
-        </PaperDoc>
+        </MorePaperDoc>
 
 
-        <PaperDoc>
+        <MorePaperDoc>
                         <!-- กู้สามัญทั่วไป general4  -->
-        </PaperDoc>
+        </MorePaperDoc>
 
-        <PaperDoc>
+        <MorePaperDoc>
                         <!-- กู้สามัญทั่วไป general5  -->
 
                         <div class="mr-3">
@@ -155,9 +155,9 @@
 
                         
 
-        </PaperDoc>
+        </MorePaperDoc>
 
-        <PaperDoc>
+        <MorePaperDoc>
                         <!-- กู้สามัญทั่วไป general6  -->
 
                           <div class="grid grid-cols-3 grid-rows-2 justify-center h-10">
@@ -282,12 +282,132 @@
             
             </div>
 
-        </PaperDoc>
+        </MorePaperDoc>
 
-        <PaperDoc>
+        <MorePaperDoc>
                         <!-- กู้สามัญทั่วไป general7  -->
 
-        </PaperDoc>
+                        <div class="grid grid-cols-3 grid-rows-2 justify-center h-10">
+                        <div class="items-start mt-2">
+                          
+                          </div>
+
+              <div class="flex flex-col items-center row-span-2 mt-2">
+                
+              </div>
+
+              <div class="flex flex-col items-end row-span-2">
+                <p class="mb-2 mr-12">สสธท. 9</p>
+              </div>
+            </div>
+
+            <div class="grid justify-items-center mt-10 text-lg font-semibold">
+            <p>หนังสือแสดงเจตนาการมอบให้รับเงินสงเคราะห์</p>
+            <p>สมาคมฌาปนกิจสงเคราะห์สมาชิกสหกรณ์ออมทรัพย์สาธารณสุขไทย</p>
+            </div>
+
+            <div class="mr-14">
+            <div class="grid justify-items-end mt-2 text-base ">
+            <p>เขียนที่ <FiLL :data="data?.location" class="min-w-80" /></p>
+            <p>วันที่ <FiLL class="min-w-80 mr-2" :data="data?.dateReceived"
+                      date-format="full" /></p>
+            </div>
+
+            <div class="grid justify-items-start mt-2 text-pretty text-base ">
+            <p><span class="ml-20">ข้าพเจ้า </span> 
+              <FiLL class="min-w-60" :data="` ${data?.fName}  ${data?.lName}`"/> อายุ <FiLL :data="data?.age" class="min-w-16" /> ปี วันเกิดที่ 
+              <FiLL class="min-w-44" :data="data?.dateReceived"
+                      date-format="full" /> สมาชิกสมาคมฌาปนกิจสงเคราะห์สมาชิกสหกรณ์ออมทรัพย์สาธารณสุขไทย เลขทะเบียนที่ <FiLL :data="data?.numberRegis" class="min-w-36" />
+              อยู่บ้านเลขที่ <FiLL :data="data?.housenb" class="min-w-16" /> หมู่ที่ <FiLL :data="data?.group" class="min-w-10" /> ถนน <FiLL :data="data?.road" class="min-w-20" /> 
+              ตำบล <FiLL :data="data?.district" class="min-w-16" /> อำเภอ <FiLL :data="data?.district" class="min-w-16" /> จังหวัด <FiLL :data="data?.province" class="min-w-24" /> 
+              รหัสไปรษณีย์ <FiLL :data="data?.zipcode" class="min-w-16" /> โทรศัพท์ <FiLL :data="data?.nbPhon" class="min-w-56 " /> มือถือ <FiLL :data="data?.nbPhon" class="min-w-60" />
+            </p>
+          </div>
+
+          <div class="grid justify-items-start mt-8 text-pretty text-base p-1 ">
+            <p><span class="ml-20">1. สถานภาพ</span></p>
+            <p class="ml-20"><FiLLBox /> โสด <span class="ml-10"><FiLLBox  :checked="data?.fName"  />สมรส คู่สมรสชื่อ </span><FiLL class="min-w-60" :data="` ${data?.ofFname}  ${data?.lName}`"/>
+            <FiLLBox /> หย่า หรือ หม้าย </p>
+            <p><span class="ml-20">2. ข้าพเจ้าขอแสดงเจตนาการรับเงินสงเคราะห์ที่ สสธท. พึงจ่าย ให้ผู้จัดการศพข้าพเจ้า</span></p>
+            <p>คือ <FiLL class="min-w-60" :data="` ${data?.ofFname}  ${data?.lName}`"/> เกี่ยวข้องเป็น <FiLL :data="data?.status" class="min-w-32" /> ของข้าพเจ้า(10%ของเงินสงเคราะห์)
+              ส่วนที่เหลือมอบให้บุคคล ดังต่อไปนี้เป็นผู้รับเงินสงเคราะห์ คือ</p>
+              
+            <div class="mt-8">
+              <LineFiLL :data="data?.repaymentPlan"
+          :limit="5">
+          <template #data="{ index, item }">
+            <p class=" text-base pl-8"></p>
+            <p class="text-start text-base"><span class="ml-20">2. </span>
+              <FiLL :data="index"
+                number
+                normal no-line/>
+                
+                <FiLL class="min-w-56" :data="`${item.fn}  ${item.ln}`" />  
+                    
+              เกี่ยวข้องเป็น
+              
+              <FiLL :data="item.status" class="min-w-20" />
+              
+              ของข้าพเจ้า สัดส่วน <FiLL :data="item.share" class="min-w-16" /> % 
+            </p>
+          </template>
+          <template #default="{ index }">
+            <p class="text-start text-base"><span class="ml-20">2. </span>
+              <FiLL :data="index"
+                number
+                normal no-line/>
+                
+              ................................................................ เกี่ยวข้องเป็น........................
+              ของข้าพเจ้า สัดส่วน.................... %
+            </p>
+          </template>
+        </LineFiLL>
+          </div>
+
+          <div class="mt-6">
+            <p><span class="ml-20">โดยมีเงื่อนไขดังนี้</span> <FiLLBox /> ได้รับเต็มจำนวนเพียงผู้เดียว  <FiLLBox /> ได้รับส่วนแบ่งเท่าๆกัน</p>
+            <p class="ml-10"><span class="ml-40"><FiLLBox />อื่นๆ ระบุ.................................................................................................................................</span> </p>
+            <p><span class="ml-20">อนึ่ง ข้าพเจ้าขอรับรองว่า การแสดงเจตนาครั้งนี้เป็นไปด้วยความสมัครใจ ไม่มีผู้ใดบังคับ ข่มขู่ หรือกระทำการใดๆ 
+            ให้ข้าพเจ้าแสดงเจตนาดังกล่าว จึงได้ลงลายมือชื่อไว้เป็นสำคัญ ท้ายหนังสือนี้</span> </p>
+
+          </div>
+            </div>
+          <div class="grid grid-rows-2 grid-flow-col mt-6">
+                <div class="row-span-3">
+                  <div ></div>
+                </div>
+                <div class="row-span-2 col-span-2  ">
+                  <div ></div>
+                  <div class="text-center text-base ml-72 mr-6">(ลงชื่อ)..........................................................ผู้ให้คำยินยอม</div>
+                  <div ></div>
+                  <div class="text-center ml-56">
+                    (...................................................................)
+                    <p class="text-center text-base">
+                      ผู้สมัครสมาชิก สสธท.
+                    </p>
+                  </div>
+                  <div class="text-center text-base ml-56 mt-2 mr-2">(ลงชื่อ)..........................................................พยาน</div>
+                  <div ></div>
+                  <div class="text-center ml-56">
+                    (...................................................................)
+                    
+                  </div>
+                  <div class="text-center text-base ml-72 mt-2 ">(ลงชื่อ)...........................................................เจ้าหน้าที่ สสธท.</div>
+                  <div ></div>
+                  <div class="text-center ml-56">
+                    (...................................................................)
+                    
+                  </div>
+                </div>
+            </div>
+              
+
+            
+ 
+            
+            </div>
+
+        </MorePaperDoc>
 
     </main>
 </template>

@@ -31,21 +31,114 @@
         </PaperDoc>
 
 
-        <PaperDoc>
+        <MorePaperDoc>
                         <!-- กู้สามัญทั่วไป general2  -->
-        </PaperDoc>
+                        <div class="grid grid-cols-3 grid-rows-2 justify-center h-10">
+              <div class="items-start mt-8">
+                <div class="border-2 border-black p-1  ">
+                  <p class="text-xs font-semibold tracking-tighter">โปรดเขียนตัวบรรจงและกรอกข้อมูลให้ครบทุกช่อง
+                  </p>
+                </div>
+                <div class="border-2 border-black p-1  ">
+
+                  <p class=" text-xs font-semibold">เอกสารประกอบ
+                   <p class="text-xs font-semibold" > <FiLLBox /> 1. สำเนาบัตรข้าราชการหรือบัตรประชาชน</p>
+                   <p class="text-xs font-semibold" > <FiLLBox /> 2. สำเนาทะเบียนบ้าน</p>
+                   <p class="text-xs font-semibold" > <FiLLBox /> 3. สำเนาทะเบียนสมรส (ถ้ามี)</p>
+                   <p class="text-xs font-semibold" > <FiLLBox /> 4. ใบสำคัญการเปลี่ยนชื่อ-นามสกุล (ถ้ามี)</p>
+                   <p class="text-xs font-semibold" > <FiLLBox /> 5. ใบรับรองแพทย์ฉบับจริง ที่ สสธท.กำหนด มีอายุไม่เกิน 30 วัน</p>
+                   <p class="text-xs font-semibold" > <FiLLBox /> 6. สำเนาบัตรและสำเนาทะเบียนบ้านผู้รับเงินสงเคราะห์</p>
+                   <p class="text-xs font-semibold" > <FiLLBox /> 7. กรณีสมาชิกสมัครตรง ต้องมีใบเสร็จรับเงินงวดสุดท้าย หรือใบรับรองของสหกรณ์ต้นสังกัด</p>
 
 
-        <PaperDoc>
+
+                  </p>
+                </div>
+
+             
+                </div>
+
+              <div class="flex flex-col items-center row-span-2 mt-20">
+                          <img class="w-[100px] h-auto"
+                            src="https://cypphcoop.com/mediafiles/data/sorsortortor.png"
+                            alt="Logo" />
+              </div>
+
+              <div class="flex flex-col items-end row-span-2">
+                  <p class="text-sm mt-8 mr-12 font-semibold">สสธท.1
+                  </p>
+                  <p class="text-sm font-semibold underline underline-offset-2">ใบเสร็จรับเงิน สสธท.เล่มที่ <FiLL class="min-w-20" :data="data?.nb" /></p>
+                  <p class="text-sm font-semibold underline underline-offset-2">เลขที่ <FiLL class="min-w-20" :data="data?.member" /></p>
+                  
+              </div>
+
+            </div>
+            <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>
+      <p class="text-lg text-center font-semibold ml-32"> ใบสมัครสมาชิก <span class="underline underline-offset-2">ประเภทสามัญ</span>
+      (วาระปกติ)
+      <br> สมาคมฌาปนกิจสงเคราะห์สมาชิกสหกรณ์ออมทรัพย์สาธารณะสุขไทย (สสธท.)
+      </p>
+      <p class="text-base ml-96"> เขียนที่ <FiLL :data="data?.location" class="min-w-80" />
+       <br>วันที่ <FiLL  class="min-w-56 " :data="data?.dateReceived" date-format="full" /></p>
+     <p class="text-base ml-12 "> <span class="ml-12">ข้าพเจ้า</span> (นางสาว/นาง/นาย) 
+              <FiLL class="min-w-80" :data="`${data?.prefix} ${data?.fName}  ${data?.lName}`"/>
+            อายุ <FiLL :data="data?.age" class="min-w-24" /> ปี เลขประจำตัวประชาชน <FiLL :data="data?.idcard" class="min-w-96" />
+            เกิดวันที่ <FiLL  class="min-w-56 " :data="data?.dateReceived" date-format="full" /> คู่สมรสชื่อ <FiLL class="min-w-96" :data="`${data?.newprefix} ${data?.newfName}  ${data?.lName}`"/>
+          </p> 
+          <p class="text-base ml-10"> (1) <FiLLBox /> สมาชิกสามัญของสหกรณ์ออมทรัพย์ <FiLL :data="data?.savings" class="min-w-40" />จำกัด เลขสมาชิกสหกรณ์ <FiLL :data="data?.member" class="min-w-32" />
+          <span class="text-base ml-6"><FiLLBox /> อื่นๆ </span>(ระบุ).....................................................................................................
+          </p>
+          <p class="text-base ml-10"> (2) ตำแหน่ง <FiLL :data="data?.position" class="min-w-40" /> หรือปฏิบัติหน้าที่ <FiLL :data="data?.position" class="min-w-40" />
+      <br> <span class="text-base ml-6"> สถานที่ปฏิบัติงาน / ชื่อหน่วยงาน </span><FiLL :data="data?.agency" class="min-w-80" /> <br> <span class="text-base ml-6">ตำบล (แขวง)</span> <FiLL :data="data?.district" class="min-w-44" />
+      อำเภอ (เขต) <FiLL :data="data?.district" class="min-w-32" /> <br> <span class="text-base ml-6">จังหวัด</span> <FiLL :data="data?.province" class="min-w-32" /> รหัสไปรษณี <FiLL :data="data?.zipcode" class="min-w-32" />
+      <br> <span class="text-base ml-6">โทรศัพท์ (ที่ทำงาน)</span> <FiLL :data="data?.nbPhon" class="min-w-32" /> 
+    </p>
+<p class="text-base ml-10 ">(3)  สถานที่อยู่(ในการจัดส่งเอกสาร) <br>
+<span class="text-base ml-6">บ้านเลขที่ </span><FiLL :data="data?.housenb" class="min-w-32" /> หมู่ที่ <FiLL :data="data?.group" class="min-w-32" /> ซอย .................... ถนน <FiLL :data="data?.road" class="min-w-32" />
+<br> <span class="text-base ml-6">ตำบล (แขวง)</span> <FiLL :data="data?.district" class="min-w-32" />
+      อำเภอ (เขต) <FiLL :data="data?.district" class="min-w-32" /> จังหวัด <FiLL :data="data?.province" class="min-w-32" /><br>  <span class="text-base ml-6">รหัสไปรษณี</span> <FiLL :data="data?.zipcode" class="min-w-32" />
+      โทรศัพท์ (บ้าน) <FiLL :data="data?.nbPhon" class="min-w-32" />  โทรศัพท์ (มือถือ) <FiLL :data="data?.nbPhon" class="min-w-32" /> 
+</p> 
+<p class="text-base ml-10 ">(4) การชำระเงิน ดังนี้ <br>
+<span class="text-base ml-12">4.1การชำระเงินครั้งแรก</span>
+<br>
+<div class="grid grid-rows-2 grid-flow-col">
+                <div class="row-span-3">
+                  <p class="ml-12" ><FiLLBox/> ค่าสมัครสมาชิกครั้งแรก</p>
+                  <p class="ml-12"> <FiLLBox/> ค่าบำรุงรายปี </p>
+                 
+                </div>
+                <div class="row-span-2 col-span-2 ml-10">
+                  <p>เป็นเงิน 20 บาท</p>
+                  <p>เป็นเงิน 20 บาท</p>                  
+                </div>
+            </div>
+            <span class="text-base ml-12"><FiLLBox/> เงินสงเคราะห์ล่วงหน้า..............5,500.....บาท</span> <br>
+            <span class="text-base ml-20">รวมชำระหนี้ครั้งนี้ เป็นเงิน..........5,500.....บาท</span> (ห้าพันห้าร้อยยี่สิบบาทถ้วน)<br>
+            <span class="text-base ml-12">4.2 การชำระเงินครั้งต่อไป ข้าพเจ้ายินยอมให้หักและชำระเงินสงเคราะห์ล่วงหน้า ดังน้ี</span><br>
+            <span class="text-base ml-12"> <FiLLBox /> ชำเป็นเงินสดที่สมาคมหรือศุนย์ประสานงานสมาคม</span><br>
+            <span class="text-base ml-12"> <FiLLBox /> ชำระเงินเข้าบัญชีสมาคมธนาคารไทยพาณิชย์ สาขาเดอะคริสตัล ราชพฤกษ์ ชื่อบัญชี สมาคมฌาปนกิจ</span>สงเคราะห์สมาชิกสหกรณ์ออมทรัพย์สาธารณสุขไทย
+            สมาคมฌาปนกิจสงเคราะห์สมาชิกสหกรณ์ออมทรัพย์สาธารณสุขไทย ประเภทกระแสรายวัน (Bill Payment Pay- In Slip) เลขบัญชี 458-0-39888-5<br>
+            <span class="text-base ml-12"> <FiLLBox /> ชำระจากเงินปันผล เฉลี่ยคืน จากสหกรณ์ต้นสังกัด <br>
+              <span class="text-base ml-12"> ข้าพเจ้าได้ทราบและเข้าใจวัตถุประสงค์ </span> ข้อบังคับ ระเบียบ และประกาศของสมาคมฌาปนกิจสงเคราะห์</span>
+            สมาชิกสามัญของสหกรณ์ออมทรัพย์สาธารณสุขไทย แล้ว มีความประสงค์สมัครเป็นสมาชิก และยินยอมปฏิบัติตามข้อบังคับและเงื่อไขดังกล่าวทุกประการ<br>
+</p> 
+<p class="text-base pl-96 ">ลงชื่อ...........................................................ผู้สมัคร </p>
+<p class="text-base pl-96 ">( <FiLL class="min-w-52" :data="`${data?.prefix} ${data?.fName}  ${data?.lName}`"/> )</p>
+
+        </MorePaperDoc>
+
+
+        <MorePaperDoc>
                         <!-- กู้สามัญทั่วไป general3  -->
-        </PaperDoc>
+        </MorePaperDoc>
 
 
-        <PaperDoc>
+        <MorePaperDoc>
                         <!-- กู้สามัญทั่วไป general4  -->
-        </PaperDoc>
+        </MorePaperDoc>
 
-        <PaperDoc>
+        <MorePaperDoc>
                         <!-- กู้สามัญทั่วไป general5  -->
 
                         <div class="mr-3">
@@ -180,7 +273,7 @@
 
                         
 
-        </PaperDoc>
+        </MorePaperDoc>
 
         <PaperDoc>
                         <!-- กู้สามัญทั่วไป general6  -->

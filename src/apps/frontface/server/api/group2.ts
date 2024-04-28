@@ -20,7 +20,7 @@ export default defineEventHandler(async (event) => {
      satang: 0,                   //สตางค์
      bath: 20000,                   //เงินฝาก &  //ทุนเรือนหุ้น
      togetherBath:60000,               //รวมเงินฝาก   &  //หนี้สินทั้งสิ้น
-     Explanation:"ไม่มี",            //คำชี้แจง
+     explanation:"ไม่มี",            //คำชี้แจง
     ofFname: "นาตาชา",             //ชื่อคนโดนฌาปนกิจ
     ofLname: "โรมานอฟ",             //นามสกุล
     deaddate: 20/12/2564 ,       //วันที่ตาย

@@ -45,6 +45,15 @@ export default defineEventHandler(async (event) => {
         location:"สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด",
         subject:"ขอเปลี่ยนเเปลงผู้ค้ำประกันเงินกู้",       //เรื่อง
 
+
+
+
+
+
+
+
+        economize:"ออมทรัพย์",           //ประเภทเงินฝาก
+
            dateReceived: new Date().toISOString(), //วันที่ปัจจุบัน  full จะได้ผลลัพธ์ 1 เมษายน พศ.2567    short ผลลัพธ์  01/04/2567
 
     }

@@ -46,7 +46,7 @@ export default defineEventHandler(async (event) => {
       subject:"ขอเปลี่ยนเเปลงผู้ค้ำประกันเงินกู้",       //เรื่อง
       newStatus:"คู่สมรส", //สถานะ
       economize:"ออมทรัพย์",           //ประเภทเงินฝาก
-      loanContract:"สัญญายืมใช้สิ้นเปลือง",   //รูปแบบสัญญาเงินกู้
+      loanContract:"สามัญ/พิเศษ",   //รูปแบบสัญญาเงินกู้
       loanOnDay:"1",                      //กู้เมื่อ(วัน)
       loanOnMonth:"มีนาคม",               //กู้เมื่อ(เดือน)
       loanOnYear:"2567",                  //กู้เมื่อ(ปี)
@@ -56,10 +56,10 @@ export default defineEventHandler(async (event) => {
       oldInterestRate:"5%",  //อัตราดอกเบี้ยเก่า
       newInterestRate:"10%",  //อัตราดอกเบี้ยใหม่
       sentPayMent:"รายเดือน", //ส่งชำระแบบ
-      oldDebtEachInstallment:"4375",    //ส่งหนี้งวดละ(เก่า)
-      newDebtEachInstallment:"2300",       //ส่งหนี้งวดละ(ใหม่)
-      oldInstallments:"1",               //จ่ายแล้วกี่งวด
-      newInstallments:"24",               //จ่ายแล้วกี่งวด
+      oldDebtEachInstallment:5250,    //ส่งหนี้งวดละ(เก่า)
+      newDebtEachInstallment:2300,       //ส่งหนี้งวดละ(ใหม่)
+      paidInstallments:3,               //จ่ายแล้วกี่งวด
+      newInstallments:24,               //หนี้ใหม่กี่งวด
 
 
          dateReceived: new Date().toISOString(), //วันที่ปัจจุบัน  full จะได้ผลลัพธ์ 1 เมษายน พศ.2567    short ผลลัพธ์  01/04/2567

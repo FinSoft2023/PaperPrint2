@@ -198,17 +198,25 @@
 
         <MorePaperDoc>
                         <!-- กู้สามัญทั่วไป general4  -->
+              
 
-                        <div class="grid grid-cols-3"> 
+                        <div class="grid grid-cols-3 grid-rows-2 justify-center h-10"> 
 <div></div>
-<div></div>
+<div class="flex flex-col items-center row-span-2 mt-12">
+                          <img class="w-[90px] h-auto"
+                            src="https://wikiwandv2-19431.kxcdn.com/_next/image?url=https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Regular_octagon.svg/langth-1500px-Regular_octagon.svg.png&w=1200&q=50"
+                            alt="Logo" />
+              </div>
 <div class="flex flex-col items-center row-span-2 mt-12">
                           <img class="w-[90px] h-auto"
                             src="https://cypphcoop.com/mediafiles/data/sorsortortor.png"
                             alt="Logo" />
                             <p class="text-base font-semibold">สสธท.2</p>
               </div>
-                        </div>
+            </div>
+            <br>
+              <p class="text-xs text-center"> ตราประทับ<br>สถานพยาบาล<br>ของรัฐ</p>
+<br><br>
                         <p class="text-base font-semibold text-center">ใบรับรองแพทย์</p>
                         <p class="text-base font-semibold ">ส่วนที่ 1 ของผู้ขอใบรับรองแพทย์สมัครสมาชิก สสธท.</p>
                         <p class="text-base"> <span class="ml-12">ข้าพเจ้า</span> นาย/นาง/นางสาว 

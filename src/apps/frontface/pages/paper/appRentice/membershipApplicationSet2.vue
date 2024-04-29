@@ -513,7 +513,7 @@
                   <div class="text-center text-base ml-72 mr-6">(ลงชื่อ)..........................................................ผู้ให้คำยินยอม</div>
                   <div ></div>
                   <div class="text-center ml-56">
-                    (..................................................................)
+                    (<FiLL class="min-w-52" :data="`${data?.fName}  ${data?.lName}`"/>)
                     <p class="text-center text-base">
                       ผู้สมัครสมาชิก สสธท.
                     </p>
@@ -521,13 +521,13 @@
                   <div class="text-center text-base ml-56 mt-2 mr-2">(ลงชื่อ)..........................................................พยาน</div>
                   <div ></div>
                   <div class="text-center ml-56">
-                    (..................................................................)
+                    (<FiLL class="min-w-52" :data="`${data?.fNameWitness1}  ${data?.lNameWitness1}`"/>)
                     
                   </div>
                   <div class="text-center text-base ml-72 mt-2 ">(ลงชื่อ)...........................................................เจ้าหน้าที่ สสธท.</div>
                   <div ></div>
                   <div class="text-center ml-56">
-                    (..................................................................)
+                    (<FiLL class="min-w-52" :data="`${data?.officerFName}  ${data?.officerLName}`"/>)
                     
                   </div>
                 </div>

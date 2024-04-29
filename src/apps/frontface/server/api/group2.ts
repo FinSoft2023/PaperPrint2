@@ -63,17 +63,21 @@ export default defineEventHandler(async (event) => {
       fOwnerCollateral1:"มั่นมง",            //ชื่อเจ้าของหลักทรัพ
       lOwnerCollateral1:"ยั่งยืน",            //นามสกุลเจ้าของหลักทรัพ
       fMarryOwnerCollateral1:"ฝันดี",            //ชื่อคู่สมรสเจ้าของหลักทรัพ
-      lMarryOwnerCollateral1:"มีสุข",            //นามสกุลคู่สมรสเจ้าของหลักทรัพ
+      lMarryOwnerCollateral1:"ยั่งยืน",            //นามสกุลคู่สมรสเจ้าของหลักทรัพ
       fOwnerCollateral2:"นอนเช้า",            //ชื่อเจ้าของหลักทรัพคนที่ 2
       lOwnerCollateral2:"หลับเย็น",            //นามสกุลเจ้าของหลักทรัพคนที่ 2
       fMarryOwnerCollateral2:"บัวผัน",            //ชื่อคู่สมรสเจ้าของหลักทรัพคนที่ 2
-      lMarryOwnerCollateral2:"ปันสุข",            //นามสกุลคู่สมรสเจ้าของหลักทรัพคนที่ 2
+      lMarryOwnerCollateral2:"หลับเย็น",            //นามสกุลคู่สมรสเจ้าของหลักทรัพคนที่ 2
       fNameManager:"สุริยัน",                 //ชื่อผู้จัดการ
       lNameManager:"แผดเผา",                 //นามสกุลผู้จัดการ
       
 
 
          dateReceived: new Date().toISOString(), //วันที่ปัจจุบัน  full จะได้ผลลัพธ์ 1 เมษายน พศ.2567    short ผลลัพธ์  01/04/2567
+         collateral:[
+            {collateral: "รถจักรยานยนต์"},
+            {collateral: "ทอง 1 บาท"},
+         ], //หลักทรัพย์คํ้าประกัน
          repaymentPlan: [
             { fn: "นาตาชา ", ln: "สุขสำราญ ", status: 'คู่สมรส' , share: 40  },
             { fn: "เจริญดี", ln: "สุขสำราญ ", status: 'บุตร' , share: 60 },

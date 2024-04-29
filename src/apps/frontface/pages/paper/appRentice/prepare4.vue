@@ -11,15 +11,16 @@
       <MorePaperDoc>
                       <!-- กู้สามัญทั่วไป general3  -->
                       <PaperDoc>
-
+                        <div class="flex flex-col items-end row-span-2">
+                <p class="font-bold mb-2">สส.ชสอ. ส.2/1 (สามัญ)</p>
+                </div>
               <div class="flex flex-col items-center row-span-2">
                 <img class="w-[120px] h-auto"
-                  src="https://www.saving-sskh.com/images/logo-saving.png"
+                  src="https://cypphcoop.com/mediafiles/data/sorsortortor.png"
                   alt="Logo" />
                   <p class="mt-2 font-bold text-base">หนังสือให้ความยินยอมในการหักเงิน และแสดงเจตนาการรับเงินสงเคราะห์</p>
                   <p class="mt-2 font-bold text-base">สมาคมฌาปนกิจสงเคราะห์สหกรณ์สมาชิกของชุมนุมสหกรณ์ออมทรัพย์แห่งประเทศไทย (สส.ชสอ.)</p>
               </div>
-      
               <div class="grid justify-items mt-8">
 <p class=" text-base pl-96 ml-16">เขียนที่ ................................................. &nbsp;</p>
 <p class=" text-base pl-96 ml-16" >วันที่ ................................................. </p><br>

@@ -112,12 +112,12 @@
                     <div class="grid grid-cols-2 mt-4">
                         <div class="mt-4">
                             <p class="ml-12">(ลงชื่อ) <BlankSpace class="min-w-40" /> พยาน(ผู้จัดการ)</p>
-                            <p class="ml-16 mt-2">( <BlankSpace class="min-w-56" /> )</p>
+                            <p class="ml-16 mt-2">( <FiLL class="min-w-56" :data="`${data?.fNameManager}  ${data?.lNameManager}`"/> )</p>
                         </div>
 
                         <div class="mt-4">
                             <p class="ml-12">(ลงชื่อ) <BlankSpace class="min-w-40" /> พยาน(เจ้าหน้าที่)</p>
-                            <p class="ml-16 mt-2">( <BlankSpace class="min-w-56" /> )</p>
+                            <p class="ml-16 mt-2">( <FiLL class="min-w-56" :data="`${data?.officerFName}  ${data?.officerLName}`"/> )</p>
                         </div>
                     </div>
                 </div>
@@ -140,13 +140,13 @@
                 <p class="mt-4 mb-4">เรียน <span class="ml-6">คณะกรรมการดำเนินการสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</span></p>
                 <div> 
                     <p><span class="ml-20">ข้าพเจ้า</span> <FiLL class="min-w-60" :data="`${data?.fName}  ${data?.lName}`"/> สมาชิกสหกรณ์เลขที่ <FiLL :data="data?.member" class="min-w-24" /> อายุ <FiLL :data="data?.age" class="min-w-20" /> ปี</p>
-                    <p>ตำแหน่ง <FiLL :data="data?.position" class="min-w-32" /> ขอปรับโครงสร้างหนี้โดยขอขยายงวดการผ่อนชำระเงินกู้ <FiLLBox /> เงินกู้สามัญ <FiLLBox /> เงินกู้พิเศษ</p>
+                    <p>ตำแหน่ง <FiLL :data="data?.position" class="min-w-32" /> ขอปรับโครงสร้างหนี้โดยขอขยายงวดการผ่อนชำระเงินกู้ <FiLLBox checked /> เงินกู้สามัญ <FiLLBox /> เงินกู้พิเศษ</p>
                     <p>
-                        สัญญาเลขที่ <FiLL :data="data?.loanbook" class="min-w-36" /> ลงวันที่ <FiLL :data="data?.test" class="min-w-40" /> ชำระมาแล้ว <FiLL :data="data?.test" class="min-w-12" /> งวด คงเหลือ <FiLL :data="data?.test" class="min-w-16" /> งวด 
-                        จากเดิมในสัญญาดังกล่าวต้องผ่อนชำระให้เสร็จภายใน <FiLL :data="data?.test" class="min-w-16" /> งวด
+                        สัญญาเลขที่ <FiLL :data="data?.loanbook" class="min-w-36" /> ลงวันที่ <FiLL  class="text-base min-w-40" :data="data?.dateReceived"date-format="full" /> ชำระมาแล้ว <FiLL :data="data?.paidInstallments" class="min-w-12" /> งวด คงเหลือ <FiLL :data="`${data?.nb - data?.paidInstallments}`" class="min-w-16" /> งวด 
+                        จากเดิมในสัญญาดังกล่าวต้องผ่อนชำระให้เสร็จภายใน <FiLL :data="data?.nb" class="min-w-16" /> งวด
                     </p>
-                    <p><span class="ml-20">ข้าพเจ้า</span>ขอปรับโครงสร้างหนี้โดยขยายงวดการผ่อนชำระเงินต้นรายเดือนทุกเดือน  งวดละ <FiLL :data="data?.stockValue" class="min-w-20" /> บาท 
-                        เป็นจำนวน <FiLL :data="data?.nb" class="min-w-20" /> งวด โดยที่คู่สมรสของข้าพเจ้า(ถ้ามี) ผู้ค้ำประกันในสัญญาเงินกู้เลขที่ <FiLL :data="data?.loanbook" class="min-w-20" /> ลงวันที่
+                    <p><span class="ml-20">ข้าพเจ้า</span>ขอปรับโครงสร้างหนี้โดยขยายงวดการผ่อนชำระเงินต้นรายเดือนทุกเดือน  งวดละ <FiLL :data="data?.newDebtEachInstallment" class="min-w-20" /> บาท 
+                        เป็นจำนวน <FiLL :data="data?.newInstallments" class="min-w-20" /> งวด โดยที่คู่สมรสของข้าพเจ้า(ถ้ามี) ผู้ค้ำประกันในสัญญาเงินกู้เลขที่ <FiLL :data="data?.loanbook" class="min-w-20" /> ลงวันที่
                         <FiLL  class="text-base" :data="data?.dateReceived"date-format="full" />
                         ยินยอมให้ข้าพเจ้าปรับโครงสร้างหนี้โดยขยายงวดผ่อนชำระหนี้เงินกู้ในสัญญาดังกล่าว
                     </p>
@@ -162,14 +162,25 @@
                         </div>
                     </div>
                     <p class="mt-2 mb-4 font-bold">หลักทรัพคํ้าประกัน</p>
-                    <p class="mb-2">1. ...................................................................................................................................................................................................................</p>
-                    <p class="mb-2">2. ...................................................................................................................................................................................................................</p>
-                    <p>3. ...................................................................................................................................................................................................................</p>
-                    <p class="mb-4"><span class="font-bold">เจ้าของหลักทรัพย์ค้ำประกันลงนามรับทราบการปรับโครงสร้างหนี้</span> จำนวน <FiLL :data="data?.test" class="min-w-20" /> คน</p>
+
+                    <LineFiLL :data="data?.collateral" :limit="3">
+                        <template #data="{ index, item }">
+                            <p class="text-start"> <FiLL :data="index" number no-line normal />.
+                                <FiLL :data="item.collateral" class="min-w-80" />
+                            </p>
+                        </template>
+                        <template #default="{ index }">
+                            <p class="text-start mt-2"> <FiLL :data="index" number no-line normal />.
+                                <BlankSpace class="min-w-80" />
+                            </p>
+                        </template>
+                        </LineFiLL>
+
+                    <p class="mb-4 mt-2"><span class="font-bold">เจ้าของหลักทรัพย์ค้ำประกันลงนามรับทราบการปรับโครงสร้างหนี้</span> จำนวน <FiLL :data="data?.test" class="min-w-20" /> คน</p>
                     1.ข้าพเจ้า(ลงชื่อ) <BlankSpace class="min-w-32" /> รับทราบการปรับโครงสร้างหนี้   (ลงชื่อ) <BlankSpace class="min-w-32" /> คู่สมรสผู้ค้ำประกัน
-                    <p class="mt-2 mb-2"><span class="ml-16">(<BlankSpace class="min-w-56" />)</span> <span class="ml-32">( <BlankSpace class="min-w-56" /> )</span></p>
+                    <p class="mt-2 mb-2"><span class="ml-16">( <FiLL class="min-w-56" :data="`${data?.fOwnerCollateral1}  ${data?.lOwnerCollateral1}`"/> )</span> <span class="ml-32">( <FiLL class="min-w-56" :data="`${data?.fMarryOwnerCollateral1}  ${data?.lMarryOwnerCollateral1}`"/> )</span></p>
                     2.ข้าพเจ้า(ลงชื่อ) <BlankSpace class="min-w-32" /> รับทราบการปรับโครงสร้างหนี้   (ลงชื่อ) <BlankSpace class="min-w-32" /> คู่สมรสผู้ค้ำประกัน
-                    <p class="mt-2"><span class="ml-16">(<BlankSpace class="min-w-56" />)</span> <span class="ml-32">( <BlankSpace class="min-w-56" /> )</span></p>
+                    <p class="mt-2"><span class="ml-16">( <FiLL class="min-w-56" :data="`${data?.fOwnerCollateral2}  ${data?.lOwnerCollateral2}`"/> )</span> <span class="ml-32">( <FiLL class="min-w-56" :data="`${data?.fMarryOwnerCollateral2}  ${data?.lMarryOwnerCollateral2}`"/> )</span></p>
                     <div class="mt-10">
                         <p class="mt-2 ml-40">
                             <span class="ml-14">
@@ -177,7 +188,7 @@
                             </span>
                         </p>
                         <p class="mt-2 ml-40">
-                            <span class="ml-24">(<BlankSpace class="min-w-56" />)</span>
+                            <span class="ml-24">( <FiLL class="min-w-56" :data="`${data?.fNameManager}  ${data?.lNameManager}`"/> )</span>
                         </p>
                         <p class="mt-2 ml-40">
                             <span class="ml-14">
@@ -185,7 +196,7 @@
                             </span>
                         </p>
                         <p class="mt-2 ml-40">
-                            <span class="ml-24">(<BlankSpace class="min-w-56" />)</span>
+                            <span class="ml-24">( <FiLL class="min-w-56" :data="`${data?.officerFName}  ${data?.officerLName}`"/> )</span>
                         </p>
                     </div>
                 </div>

@@ -63,17 +63,46 @@ export default defineEventHandler(async (event) => {
       fOwnerCollateral1:"มั่นมง",            //ชื่อเจ้าของหลักทรัพ
       lOwnerCollateral1:"ยั่งยืน",            //นามสกุลเจ้าของหลักทรัพ
       fMarryOwnerCollateral1:"ฝันดี",            //ชื่อคู่สมรสเจ้าของหลักทรัพ
-      lMarryOwnerCollateral1:"มีสุข",            //นามสกุลคู่สมรสเจ้าของหลักทรัพ
+      lMarryOwnerCollateral1:"ยั่งยืน",            //นามสกุลคู่สมรสเจ้าของหลักทรัพ
       fOwnerCollateral2:"นอนเช้า",            //ชื่อเจ้าของหลักทรัพคนที่ 2
       lOwnerCollateral2:"หลับเย็น",            //นามสกุลเจ้าของหลักทรัพคนที่ 2
       fMarryOwnerCollateral2:"บัวผัน",            //ชื่อคู่สมรสเจ้าของหลักทรัพคนที่ 2
-      lMarryOwnerCollateral2:"ปันสุข",            //นามสกุลคู่สมรสเจ้าของหลักทรัพคนที่ 2
+      lMarryOwnerCollateral2:"หลับเย็น",            //นามสกุลคู่สมรสเจ้าของหลักทรัพคนที่ 2
       fNameManager:"สุริยัน",                 //ชื่อผู้จัดการ
       lNameManager:"แผดเผา",                 //นามสกุลผู้จัดการ
-      
+      fNameWitness1: "ธรรมดา",            //ชื่อพยานคนที่1
+      lNameWitness1: "นอนนา",           //นามสกุลพยานคนที่1
+      fNameWitness2: "สมศรี",            //ชื่อพยานคนที่2
+      lNameWitness2: "คนรวย",           //นามสกุลพยานคนที่2
+      fNameGuarantor1: "ชุติมา",            //ชื่อบุคคลค้ำประกันคนที่1
+      lNameGuarantor1: "ทรัพย์มั้นคง",           //นามสกุลบุคคลค้ำประกันคนที่1
+      fNameGuarantor2: "นิษา",            //ชื่อบุคคลค้ำประกันคนที่2
+      lNameGuarantor2: "รักษาทรัพย์",           //นามสกุลบุคคลค้ำประกันคนที่2
+      positionGuarantor1: "พยาบาล",         //ตำแหน่งบุคคลค้ำประกัน1
+      positionGuarantor2: "แพทย์",         //ตำแหน่งบุคคลค้ำประกัน2
+      salaryGuarantor1:30000,          //เงินเดือนบุคคลค้ำประกัน1
+      salaryGuarantor2:50000,          //เงินเดือนบุคคลค้ำประกัน2
+      memberGuarantor1: 31,               //สมาชิกเลขที่บุคคลค้ำประกัน1
+      memberGuarantor2: 44,               //สมาชิกเลขที่บุคคลค้ำประกัน2
+      workGroup1:"ห้องผู้ป่วยภายนอก",           //กลุ่มงาน1
+      workGroup2:"ห้องเอกซเรย์",           //กลุ่มงาน2
+      positionCommander: "ผู้อำนวยการ",         //ตำแหน่งผู้บังคับบัญชา
+      fNameCommander:"ชาญวิทย์",                //ชื่อผู้บังคับบัญชา
+      lNameCommander:"ยิ่งงาม",                //นามสกุลผู้บังคับบัญชา
+      fNameSecretary:"กนกนุช",                  //ชื่อเลขานุการ
+      lNameSecretary:"สันติสุข",                  //นามสกุลเลขานุการ
+      noMeeting: "1 / 2" ,                         //ประชุมกรรมการประจำเดือนครั้งที่
+      numberBoard:"8",                          //จำนวนคณะกรรมการ
+      numberBoardYes:"6",                          //จำนวนคณะกรรมการให้ผ่าน
+      numberBoardNo:"2",                          //จำนวนคณะกรรมการไม่ให้ผ่าน
+      summaryLoan:"ผ่านการพิจารณาจากคณะกรรมการ",            //สรุปการกู้   
 
 
          dateReceived: new Date().toISOString(), //วันที่ปัจจุบัน  full จะได้ผลลัพธ์ 1 เมษายน พศ.2567    short ผลลัพธ์  01/04/2567
+         collateral:[
+            {collateral: "รถจักรยานยนต์"},
+            {collateral: "ทอง 1 บาท"},
+         ], //หลักทรัพย์คํ้าประกัน
          repaymentPlan: [
             { fn: "นาตาชา ", ln: "สุขสำราญ ", status: 'คู่สมรส' , share: 40  },
             { fn: "เจริญดี", ln: "สุขสำราญ ", status: 'บุตร' , share: 60 },

@@ -124,13 +124,74 @@
             สมาชิกสามัญของสหกรณ์ออมทรัพย์สาธารณสุขไทย แล้ว มีความประสงค์สมัครเป็นสมาชิก และยินยอมปฏิบัติตามข้อบังคับและเงื่อไขดังกล่าวทุกประการ<br>
 </p> 
 <p class="text-base pl-96 ">ลงชื่อ...........................................................ผู้สมัคร </p>
-<p class="text-base pl-96 ">( <FiLL class="min-w-52" :data="`${data?.prefix} ${data?.fName}  ${data?.lName}`"/> )</p>
+<p class="text-base pl-96 ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;( <FiLL class="min-w-52" :data="`${data?.prefix} ${data?.fName}  ${data?.lName}`"/> )</p>
 
         </MorePaperDoc>
 
 
         <MorePaperDoc>
                         <!-- กู้สามัญทั่วไป general3  -->
+              
+              <div class="flex flex-col items-center row-span-2 mt-20">
+                          <img class="w-[100px] h-auto"
+                            src="https://cypphcoop.com/mediafiles/data/sorsortortor.png"
+                            alt="Logo" />
+              </div>
+  <p class="text-base font-semibold text-center"> คำรับรองคุณสมบัติผู้สมัครเป็นสมาชิก <br> 
+  ผู้รับรองต้องเป็นสมาชิกสมาคมฌาปนกิจสงเคราะห์สมาชิกสหกรณ์ออมทรัพย์สาธารณสุขไทย
+  </p>
+  <p class="text-base ml-12 "> <span class="ml-12">ข้าพเจ้า</span> 
+              <FiLL class="min-w-80" :data="`${data?.fName}  ${data?.lName}`"/>สมาชิกสมาคมฌาปนกิจสงเคราะห์สมาชิกสหกรณ์ออมทรัพย์สาธารณสุขไทย
+              ทะเบียนเลขประจำตัว<FiLL :data="data?.idcard" class="min-w-40" /> อยู่บ้านเลขที่ <FiLL :data="data?.housenb" class="min-w-32" /> 
+              หมู่ที่ <FiLL :data="data?.group" class="min-w-32" /> ตรอก/ซอย .................... ถนน <FiLL :data="data?.road" class="min-w-32" />
+              ตำบล/แขวง <FiLL :data="data?.district" class="min-w-32" />
+      อำเภอ/เขต <FiLL :data="data?.district" class="min-w-32" /> จังหวัด <FiLL :data="data?.province" class="min-w-32" />
+      โทรศัพท์<FiLL :data="data?.nbPhon" class="min-w-32" /> 
+</p> 
+<p class="text-base ml-12 "> <span class="ml-6">ขอรับรองว่าผู้สมัคร</span>  นาย/นาง/นางสาว <FiLL class="min-w-52" :data="`${data?.newprefix} ${data?.newfName}  ${data?.lName}`"/>ฃ
+มีคุณสมบัติตามข้อบังคับ ข้อ 10.1 ของสมาคมฌาปนกิจสงเคราะห์สมาชิกออมทรัพย์สาธารณสุขไทยทุกประการ
+</p>
+<p class="text-base ml-96"> ลงชื่อ.......................................ผู้รับรอง <br>
+วันที่  <FiLL  class="min-w-56 " :data="data?.dateReceived" date-format="short" />
+</p>
+<p class="text-center text-lg font-semibold"> สำหรับเจ้าหน้าที่สมาคม</p><br>
+<p class="text-base ml-12 "><span class="ml-12">ตรวจสอบแล้วขอรับรองว่าผู้สมัครเป็นผู้มีคุณสมบัติในการสมัครสมาชิก</span>  สสธท. และได้แนบหลักฐานประกอบกาสมัครครบถ้วน พร้อมชำระเงินค่าสมัคร
+และเงินค่าสงเคราะห์ล่วงหน้า ตามข้อบังคับ ระเบียบและประกาศการรับสมัครสมาชิก สสธท. ตามรอบการรับสมัคร หรือ การเปิดรับสมัครเป็นกรณีพิเศษ แล้วแต่กรณี
+</p>
+<p class="text-base ml-96"> ลงชื่อ <FiLL class="min-w-56" :data="` ${data?.fName}  ${data?.lName}`"/><br>
+ตำแหน่ง  <FiLL  class="min-w-56 " :data="data?.position" date-format="short" />
+</p>
+<p class="text-center text-lg font-semibold">ความเห็นของกรรมการ</p><br>
+<p class="text-sm ml-12 "> เสนอ <FiLLBox /> เห็นควรอนุมัติให้สมัครเป็นสมาชิก สสธท. <br> <span class="ml-9"><FiLLBox /> ไม่เห็นควรอนุมัติ </span>เนื่องจาก...................................................................
+</p>
+<p class="text-base ml-96"> ลงชื่อ....................................................................<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;( <FiLL class="min-w-52" :data="` ${data?.ofFname}  ${data?.ofLname}`"/> ) <br>
+</p>
+<p class="text-sm pl-96"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  กรรมการผู้ได้รับมอบหมาย</p>
+<p class="text-center text-lg font-semibold">ความเห็นสำหรับคณะกรรมการสมาคม สสธท.</p><br>
+<p class="text-sm ml-12 "> คำสั่ง <FiLLBox /> อนุมัติรับเข้าเป็นสมาชิก สสธท. ตั้งแต่วันที่ <FiLL  class="min-w-56 " :data="data?.dateReceived" date-format="short" />
+  ตามมติที่ประชุมคณะกรรมการสมาคม ครั้งที่ <FiLL  class="min-w-20 " :data="data?.member" /> เมื่อวันที่ <FiLL  class="min-w-56 " :data="data?.dateReceived" date-format="short" />
+  <br> <span class="ml-9"><FiLLBox /> ไม่อนุมัติ </span>  เนื่องจาก.........................................................................................
+</p>
+
+<div class="grid grid-cols-3 grid-rows-2 justify-center h-1 ml-14">
+          <div class="items-start mt-4">
+                <div class="border-2 border-black p-2">
+                  <p class="text-sm font-bold ">ผู้มีอำนาจอนุมัติ (แล้วแต่กรณี)
+                  </p>
+                  <p class="text-sm"><FiLLBox /> นายกสมาคม สสธท. </p>            
+                  <p class="text-sm "><FiLLBox /> กรรมการ สสธท. ปฏิบัติการแทน <span class="ml-4">นายกสมาคม สสธท. </span></p>
+                </div>
+                </div>
+                </div>
+        <div class="grid justify-items-center mt-4">
+        <p class="pl-72">ลงชื่อ............................................................</p>
+        <div class="pl-80">
+   (<FiLL class="min-w-52" :data="`${data?.fName}  ${data?.lName}`"/> ) 
+        </div><br>
+        <p class="pl-72">ตำเเหน่ง <FiLL :data="data?.position" class="min-w-28" /></p>
+ </div>
+ <br> 
         </MorePaperDoc>
 
 

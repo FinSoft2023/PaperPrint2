@@ -96,6 +96,7 @@ export default defineEventHandler(async (event) => {
       numberBoardYes:"6",                          //จำนวนคณะกรรมการให้ผ่าน
       numberBoardNo:"2",                          //จำนวนคณะกรรมการไม่ให้ผ่าน
       summaryLoan:"ผ่านการพิจารณาจากคณะกรรมการ",            //สรุปการกู้   
+      email:"oo@gmail.com",
 
 
          dateReceived: new Date().toISOString(), //วันที่ปัจจุบัน  full จะได้ผลลัพธ์ 1 เมษายน พศ.2567    short ผลลัพธ์  01/04/2567

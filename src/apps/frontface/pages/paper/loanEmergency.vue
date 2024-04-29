@@ -154,7 +154,7 @@
       </div>
     </PaperDoc>
 
-    <MorePaperDoc>
+    <PaperDoc>
         <div class="border-t border-r border-l border-b border-gray-900 p-2">
           <div class="flex justify-center font-bold text-xl mt-2">(สำหรับเจ้าหน้าที่ของสหกรณ์)</div>
           <div class="flex justify-center mt-3">
@@ -381,7 +381,7 @@
   
         </div>
         
-      </MorePaperDoc>
+      </PaperDoc>
    
   </main>
 </template>

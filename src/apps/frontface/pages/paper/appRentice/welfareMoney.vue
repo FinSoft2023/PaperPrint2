@@ -23,8 +23,8 @@
             </div>
             <div class="grid justify-items-start mt-10 text-pretty text-base " >
               <p><span class="ml-20">ด้วย ข้าพเจ้า</span><FiLL class="min-w-56" :data="`${data?.fName}  ${data?.lName}`"/>ตำเเหน่ง <FiLL :data="data?.position" class="min-w-28" />
-                สมาชิกสหกรณ์ฯเลขทะเบียนที่<FiLL :data="data?.numberRegis" class="min-w-20" />หน่วยงาน<FiLL :data="data?.Agency" class="min-w-16" /> สังกัดโรงพยาบาลศรีสะเกษ 
-                มีความประสงค์ขอเบิกเงินสวัสดิการสมาชิกเพื่อการฌาปนกิจศพ <FiLLBox :checked="data?.Agency" /> คู่สมรส <FiLLBox/> บิดา <FiLLBox/> มารดา <FiLLBox/> บุตรที่ยังไม่บรรลุนิติภาวะ
+                สมาชิกสหกรณ์ฯเลขทะเบียนที่<FiLL :data="data?.numberRegis" class="min-w-20" />หน่วยงาน<FiLL :data="data?.agency" class="min-w-16" /> สังกัดโรงพยาบาลศรีสะเกษ 
+                มีความประสงค์ขอเบิกเงินสวัสดิการสมาชิกเพื่อการฌาปนกิจศพ <FiLLBox :checked="data?.agency" /> คู่สมรส <FiLLBox/> บิดา <FiLLBox/> มารดา <FiLLBox/> บุตรที่ยังไม่บรรลุนิติภาวะ
                 ชื่อ-สกุล <FiLL class="min-w-56" :data="`${data?.newfName}  ${data?.lName}`"/> ซึ่งได้ถึงแก่กรรม เมื่อวันที่ <FiLL :data="data?.deaddate" class="min-w-28" />
                 โดยขอรับเงินดังกล่าวเป็น <FiLLBox/> เช็คเงินสด <FiLLBox :checked="data?.newnbAccount" /> โอนเข้า
                 <br>ธนาคารกรุงไทย จำกัด (มหาชน) เลขที่บัญชี <FiLL :data="data?.newnbAccount" class="min-w-30" /> พร้อมแนบเอกสารหลักฐาน ดังนี้.-

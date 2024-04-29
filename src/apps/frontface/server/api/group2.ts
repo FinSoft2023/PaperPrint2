@@ -70,6 +70,7 @@ export default defineEventHandler(async (event) => {
       lMarryOwnerCollateral2:"หลับเย็น",            //นามสกุลคู่สมรสเจ้าของหลักทรัพคนที่ 2
       fNameManager:"สุริยัน",                 //ชื่อผู้จัดการ
       lNameManager:"แผดเผา",                 //นามสกุลผู้จัดการ
+      numberPeople:2,                     //จำนวนเจ้าของหลักทรัพย๋
       fNameWitness1: "ธรรมดา",            //ชื่อพยานคนที่1
       lNameWitness1: "นอนนา",           //นามสกุลพยานคนที่1
       fNameWitness2: "สมศรี",            //ชื่อพยานคนที่2

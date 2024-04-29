@@ -42,13 +42,13 @@
                 <div class="border-2 border-black p-1  ">
 
                   <p class=" text-xs font-semibold">เอกสารประกอบ
-                   <p class="text-xs font-semibold" > <FiLLBox /> 1. สำเนาบัตรข้าราชการหรือบัตรประชาชน</p>
-                   <p class="text-xs font-semibold" > <FiLLBox /> 2. สำเนาทะเบียนบ้าน</p>
-                   <p class="text-xs font-semibold" > <FiLLBox /> 3. สำเนาทะเบียนสมรส (ถ้ามี)</p>
-                   <p class="text-xs font-semibold" > <FiLLBox /> 4. ใบสำคัญการเปลี่ยนชื่อ-นามสกุล (ถ้ามี)</p>
-                   <p class="text-xs font-semibold" > <FiLLBox /> 5. ใบรับรองแพทย์ฉบับจริง ที่ สสธท.กำหนด มีอายุไม่เกิน 30 วัน</p>
-                   <p class="text-xs font-semibold" > <FiLLBox /> 6. สำเนาบัตรและสำเนาทะเบียนบ้านผู้รับเงินสงเคราะห์</p>
-                   <p class="text-xs font-semibold" > <FiLLBox /> 7. กรณีสมาชิกสมัครตรง ต้องมีใบเสร็จรับเงินงวดสุดท้าย หรือใบรับรองของสหกรณ์ต้นสังกัด</p>
+                   <p class="text-xs font-semibold" > <FiLLBox :checked="data?.newInstallments"/> 1. สำเนาบัตรข้าราชการหรือบัตรประชาชน</p>
+                   <p class="text-xs font-semibold" > <FiLLBox :checked="data?.newInstallments"/> 2. สำเนาทะเบียนบ้าน</p>
+                   <p class="text-xs font-semibold" > <FiLLBox :checked="data?.newInstallments"/> 3. สำเนาทะเบียนสมรส (ถ้ามี)</p>
+                   <p class="text-xs font-semibold" > <FiLLBox :checked="data?.newInstallments"/> 4. ใบสำคัญการเปลี่ยนชื่อ-นามสกุล (ถ้ามี)</p>
+                   <p class="text-xs font-semibold" > <FiLLBox :checked="data?.newInstallments"/> 5. ใบรับรองแพทย์ฉบับจริง ที่ สสธท.กำหนด มีอายุไม่เกิน 30 วัน</p>
+                   <p class="text-xs font-semibold" > <FiLLBox :checked="data?.newInstallments"/> 6. สำเนาบัตรและสำเนาทะเบียนบ้านผู้รับเงินสงเคราะห์</p>
+                   <p class="text-xs font-semibold" > <FiLLBox :checked="data?.newInstallments"/> 7. กรณีสมาชิกสมัครตรง ต้องมีใบเสร็จรับเงินงวดสุดท้าย หรือใบรับรองของสหกรณ์ต้นสังกัด</p>
 
 
 
@@ -80,32 +80,33 @@
       </p>
       <p class="text-base ml-96"> เขียนที่ <FiLL :data="data?.location" class="min-w-80" />
        <br>วันที่ <FiLL  class="min-w-56 " :data="data?.dateReceived" date-format="full" /></p>
-     <p class="text-base ml-12 "> <span class="ml-12">ข้าพเจ้า</span> (นางสาว/นาง/นาย) 
+     
+       <p class="text-base"> <span class="ml-12">ข้าพเจ้า</span> (นางสาว/นาง/นาย) 
               <FiLL class="min-w-80" :data="`${data?.prefix} ${data?.fName}  ${data?.lName}`"/>
             อายุ <FiLL :data="data?.age" class="min-w-24" /> ปี เลขประจำตัวประชาชน <FiLL :data="data?.idcard" class="min-w-96" />
             เกิดวันที่ <FiLL  class="min-w-56 " :data="data?.dateReceived" date-format="full" /> คู่สมรสชื่อ <FiLL class="min-w-96" :data="`${data?.newprefix} ${data?.newfName}  ${data?.lName}`"/>
           </p> 
-          <p class="text-base ml-10"> (1) <FiLLBox /> สมาชิกสามัญของสหกรณ์ออมทรัพย์ <FiLL :data="data?.savings" class="min-w-40" />จำกัด เลขสมาชิกสหกรณ์ <FiLL :data="data?.member" class="min-w-32" />
+          <p class="text-base"> (1) <FiLLBox :checked="data?.savings"/> สมาชิกสามัญของสหกรณ์ออมทรัพย์ <FiLL :data="data?.savings" class="min-w-40" />จำกัด เลขสมาชิกสหกรณ์ <FiLL :data="data?.member" class="min-w-32" />
           <span class="text-base ml-6"><FiLLBox /> อื่นๆ </span>(ระบุ).....................................................................................................
           </p>
-          <p class="text-base ml-10"> (2) ตำแหน่ง <FiLL :data="data?.position" class="min-w-40" /> หรือปฏิบัติหน้าที่ <FiLL :data="data?.position" class="min-w-40" />
+          <p class="text-base"> (2) ตำแหน่ง <FiLL :data="data?.position" class="min-w-40" /> หรือปฏิบัติหน้าที่ <FiLL :data="data?.position" class="min-w-40" />
       <br> <span class="text-base ml-6"> สถานที่ปฏิบัติงาน / ชื่อหน่วยงาน </span><FiLL :data="data?.agency" class="min-w-80" /> <br> <span class="text-base ml-6">ตำบล (แขวง)</span> <FiLL :data="data?.district" class="min-w-44" />
       อำเภอ (เขต) <FiLL :data="data?.district" class="min-w-32" /> <br> <span class="text-base ml-6">จังหวัด</span> <FiLL :data="data?.province" class="min-w-32" /> รหัสไปรษณี <FiLL :data="data?.zipcode" class="min-w-32" />
       <br> <span class="text-base ml-6">โทรศัพท์ (ที่ทำงาน)</span> <FiLL :data="data?.nbPhon" class="min-w-32" /> 
     </p>
-<p class="text-base ml-10 ">(3)  สถานที่อยู่(ในการจัดส่งเอกสาร) <br>
+<p class="text-base ">(3)  สถานที่อยู่(ในการจัดส่งเอกสาร) <br>
 <span class="text-base ml-6">บ้านเลขที่ </span><FiLL :data="data?.housenb" class="min-w-32" /> หมู่ที่ <FiLL :data="data?.group" class="min-w-32" /> ซอย .................... ถนน <FiLL :data="data?.road" class="min-w-32" />
 <br> <span class="text-base ml-6">ตำบล (แขวง)</span> <FiLL :data="data?.district" class="min-w-32" />
       อำเภอ (เขต) <FiLL :data="data?.district" class="min-w-32" /> จังหวัด <FiLL :data="data?.province" class="min-w-32" /><br>  <span class="text-base ml-6">รหัสไปรษณี</span> <FiLL :data="data?.zipcode" class="min-w-32" />
       โทรศัพท์ (บ้าน) <FiLL :data="data?.nbPhon" class="min-w-32" />  โทรศัพท์ (มือถือ) <FiLL :data="data?.nbPhon" class="min-w-32" /> 
 </p> 
-<p class="text-base ml-10 ">(4) การชำระเงิน ดังนี้ <br>
+<p class="text-base ">(4) การชำระเงิน ดังนี้ <br>
 <span class="text-base ml-12">4.1การชำระเงินครั้งแรก</span>
 <br>
 <div class="grid grid-rows-2 grid-flow-col">
                 <div class="row-span-3">
-                  <p class="ml-12" ><FiLLBox/> ค่าสมัครสมาชิกครั้งแรก</p>
-                  <p class="ml-12"> <FiLLBox/> ค่าบำรุงรายปี </p>
+                  <p class="ml-12" ><FiLLBox :checked="data?.savings"/> ค่าสมัครสมาชิกครั้งแรก</p>
+                  <p class="ml-12"> <FiLLBox :checked="data?.savings"/> ค่าบำรุงรายปี </p>
                  
                 </div>
                 <div class="row-span-2 col-span-2 ml-10">
@@ -113,13 +114,13 @@
                   <p>เป็นเงิน 20 บาท</p>                  
                 </div>
             </div>
-            <span class="text-base ml-12"><FiLLBox/> เงินสงเคราะห์ล่วงหน้า..............5,500.....บาท</span> <br>
+            <span class="text-base ml-12"><FiLLBox :checked="data?.savings"/> เงินสงเคราะห์ล่วงหน้า..............5,500.....บาท</span> <br>
             <span class="text-base ml-20">รวมชำระหนี้ครั้งนี้ เป็นเงิน..........5,500.....บาท</span> (ห้าพันห้าร้อยยี่สิบบาทถ้วน)<br>
             <span class="text-base ml-12">4.2 การชำระเงินครั้งต่อไป ข้าพเจ้ายินยอมให้หักและชำระเงินสงเคราะห์ล่วงหน้า ดังน้ี</span><br>
-            <span class="text-base ml-12"> <FiLLBox /> ชำเป็นเงินสดที่สมาคมหรือศุนย์ประสานงานสมาคม</span><br>
-            <span class="text-base ml-12"> <FiLLBox /> ชำระเงินเข้าบัญชีสมาคมธนาคารไทยพาณิชย์ สาขาเดอะคริสตัล ราชพฤกษ์ ชื่อบัญชี สมาคมฌาปนกิจ</span>สงเคราะห์สมาชิกสหกรณ์ออมทรัพย์สาธารณสุขไทย
+            <span class="text-base ml-12"> <FiLLBox :checked="data?.savings"/> ชำเป็นเงินสดที่สมาคมหรือศุนย์ประสานงานสมาคม</span><br>
+            <span class="text-base ml-12"> <FiLLBox :checked="data?.savings"/> ชำระเงินเข้าบัญชีสมาคมธนาคารไทยพาณิชย์ สาขาเดอะคริสตัล ราชพฤกษ์ ชื่อบัญชี สมาคมฌาปนกิจ</span>สงเคราะห์สมาชิกสหกรณ์ออมทรัพย์สาธารณสุขไทย
             สมาคมฌาปนกิจสงเคราะห์สมาชิกสหกรณ์ออมทรัพย์สาธารณสุขไทย ประเภทกระแสรายวัน (Bill Payment Pay- In Slip) เลขบัญชี 458-0-39888-5<br>
-            <span class="text-base ml-12"> <FiLLBox /> ชำระจากเงินปันผล เฉลี่ยคืน จากสหกรณ์ต้นสังกัด <br>
+            <span class="text-base ml-12"> <FiLLBox :checked="data?.savings"/> ชำระจากเงินปันผล เฉลี่ยคืน จากสหกรณ์ต้นสังกัด <br>
               <span class="text-base ml-12"> ข้าพเจ้าได้ทราบและเข้าใจวัตถุประสงค์ </span> ข้อบังคับ ระเบียบ และประกาศของสมาคมฌาปนกิจสงเคราะห์</span>
             สมาชิกสามัญของสหกรณ์ออมทรัพย์สาธารณสุขไทย แล้ว มีความประสงค์สมัครเป็นสมาชิก และยินยอมปฏิบัติตามข้อบังคับและเงื่อไขดังกล่าวทุกประการ<br>
 </p> 
@@ -140,7 +141,7 @@
   <p class="text-base font-semibold text-center"> คำรับรองคุณสมบัติผู้สมัครเป็นสมาชิก <br> 
   ผู้รับรองต้องเป็นสมาชิกสมาคมฌาปนกิจสงเคราะห์สมาชิกสหกรณ์ออมทรัพย์สาธารณสุขไทย
   </p>
-  <p class="text-base ml-12 "> <span class="ml-12">ข้าพเจ้า</span> 
+  <p class="text-base "> <span class="ml-12">ข้าพเจ้า</span> 
               <FiLL class="min-w-80" :data="`${data?.fName}  ${data?.lName}`"/>สมาชิกสมาคมฌาปนกิจสงเคราะห์สมาชิกสหกรณ์ออมทรัพย์สาธารณสุขไทย
               ทะเบียนเลขประจำตัว<FiLL :data="data?.idcard" class="min-w-40" /> อยู่บ้านเลขที่ <FiLL :data="data?.housenb" class="min-w-32" /> 
               หมู่ที่ <FiLL :data="data?.group" class="min-w-32" /> ตรอก/ซอย .................... ถนน <FiLL :data="data?.road" class="min-w-32" />
@@ -148,33 +149,33 @@
       อำเภอ/เขต <FiLL :data="data?.district" class="min-w-32" /> จังหวัด <FiLL :data="data?.province" class="min-w-32" />
       โทรศัพท์<FiLL :data="data?.nbPhon" class="min-w-32" /> 
 </p> 
-<p class="text-base ml-12 "> <span class="ml-6">ขอรับรองว่าผู้สมัคร</span>  นาย/นาง/นางสาว <FiLL class="min-w-52" :data="`${data?.newprefix} ${data?.newfName}  ${data?.lName}`"/>ฃ
+<p class="text-base "> <span class="ml-6">ขอรับรองว่าผู้สมัคร</span>  นาย/นาง/นางสาว <FiLL class="min-w-52" :data="`${data?.newprefix} ${data?.newfName}  ${data?.lName}`"/>ฃ
 มีคุณสมบัติตามข้อบังคับ ข้อ 10.1 ของสมาคมฌาปนกิจสงเคราะห์สมาชิกออมทรัพย์สาธารณสุขไทยทุกประการ
 </p>
-<p class="text-base ml-96"> ลงชื่อ.......................................ผู้รับรอง <br>
+<p class="text-base ml-96"> ลงชื่อ......................................................................ผู้รับรอง <br>
 วันที่  <FiLL  class="min-w-56 " :data="data?.dateReceived" date-format="short" />
 </p>
 <p class="text-center text-lg font-semibold"> สำหรับเจ้าหน้าที่สมาคม</p><br>
-<p class="text-base ml-12 "><span class="ml-12">ตรวจสอบแล้วขอรับรองว่าผู้สมัครเป็นผู้มีคุณสมบัติในการสมัครสมาชิก</span>  สสธท. และได้แนบหลักฐานประกอบกาสมัครครบถ้วน พร้อมชำระเงินค่าสมัคร
+<p class="text-base "><span class="ml-12">ตรวจสอบแล้วขอรับรองว่าผู้สมัครเป็นผู้มีคุณสมบัติในการสมัครสมาชิก</span>  สสธท. และได้แนบหลักฐานประกอบกาสมัครครบถ้วน พร้อมชำระเงินค่าสมัคร
 และเงินค่าสงเคราะห์ล่วงหน้า ตามข้อบังคับ ระเบียบและประกาศการรับสมัครสมาชิก สสธท. ตามรอบการรับสมัคร หรือ การเปิดรับสมัครเป็นกรณีพิเศษ แล้วแต่กรณี
 </p>
 <p class="text-base ml-96"> ลงชื่อ <FiLL class="min-w-56" :data="` ${data?.fName}  ${data?.lName}`"/><br>
 ตำแหน่ง  <FiLL  class="min-w-56 " :data="data?.position" date-format="short" />
 </p>
 <p class="text-center text-lg font-semibold">ความเห็นของกรรมการ</p><br>
-<p class="text-sm ml-12 "> เสนอ <FiLLBox /> เห็นควรอนุมัติให้สมัครเป็นสมาชิก สสธท. <br> <span class="ml-9"><FiLLBox /> ไม่เห็นควรอนุมัติ </span>เนื่องจาก...................................................................
+<p class="text-sm ml-12 "> เสนอ <FiLLBox :checked="data?.savings"/> เห็นควรอนุมัติให้สมัครเป็นสมาชิก สสธท. <br> <span class="ml-9"><FiLLBox /> ไม่เห็นควรอนุมัติ </span>เนื่องจาก...................................................................
 </p>
 <p class="text-base ml-96"> ลงชื่อ....................................................................<br>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;( <FiLL class="min-w-52" :data="` ${data?.ofFname}  ${data?.ofLname}`"/> ) <br>
 </p>
 <p class="text-sm pl-96"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  กรรมการผู้ได้รับมอบหมาย</p>
 <p class="text-center text-lg font-semibold">ความเห็นสำหรับคณะกรรมการสมาคม สสธท.</p><br>
-<p class="text-sm ml-12 "> คำสั่ง <FiLLBox /> อนุมัติรับเข้าเป็นสมาชิก สสธท. ตั้งแต่วันที่ <FiLL  class="min-w-56 " :data="data?.dateReceived" date-format="short" />
+<p class="text-sm ml-12 "> คำสั่ง <FiLLBox :checked="data?.savings"/> อนุมัติรับเข้าเป็นสมาชิก สสธท. ตั้งแต่วันที่ <FiLL  class="min-w-56 " :data="data?.dateReceived" date-format="short" />
   ตามมติที่ประชุมคณะกรรมการสมาคม ครั้งที่ <FiLL  class="min-w-20 " :data="data?.member" /> เมื่อวันที่ <FiLL  class="min-w-56 " :data="data?.dateReceived" date-format="short" />
   <br> <span class="ml-9"><FiLLBox /> ไม่อนุมัติ </span>  เนื่องจาก.........................................................................................
 </p>
 
-<div class="grid grid-cols-3 grid-rows-2 justify-center h-1 ml-14">
+<div class="grid grid-cols-3 grid-rows-2 justify-center h-1">
           <div class="items-start mt-4">
                 <div class="border-2 border-black p-2">
                   <p class="text-sm font-bold ">ผู้มีอำนาจอนุมัติ (แล้วแต่กรณี)
@@ -197,6 +198,83 @@
 
         <MorePaperDoc>
                         <!-- กู้สามัญทั่วไป general4  -->
+              
+
+                        <div class="grid grid-cols-3 grid-rows-2 justify-center h-10"> 
+<div></div>
+<div class="flex flex-col items-center row-span-2 mt-12">
+                          <img class="w-[90px] h-auto"
+                            src="https://wikiwandv2-19431.kxcdn.com/_next/image?url=https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Regular_octagon.svg/langth-1500px-Regular_octagon.svg.png&w=1200&q=50"
+                            alt="Logo" />
+              </div>
+<div class="flex flex-col items-center row-span-2 mt-12">
+                          <img class="w-[90px] h-auto"
+                            src="https://cypphcoop.com/mediafiles/data/sorsortortor.png"
+                            alt="Logo" />
+                            <p class="text-base font-semibold">สสธท.2</p>
+              </div>
+            </div>
+            <br>
+              <p class="text-xs text-center"> ตราประทับ<br>สถานพยาบาล<br>ของรัฐ</p>
+<br><br>
+                        <p class="text-base font-semibold text-center">ใบรับรองแพทย์</p>
+                        <p class="text-base font-semibold ">ส่วนที่ 1 ของผู้ขอใบรับรองแพทย์สมัครสมาชิก สสธท.</p>
+                        <p class="text-base"> <span class="ml-12">ข้าพเจ้า</span> นาย/นาง/นางสาว 
+              <FiLL class="min-w-80" :data="`${data?.fName}  ${data?.lName}`"/>
+              อายุ <FiLL :data="data?.age" class="min-w-24" /> ปี เลขประจำตัวประชาชน <FiLL :data="data?.idcard" class="min-w-96" />
+            ข้าพเจ้ามีสุขภาพดังนี้ โรคตามข้อ (3.1) - (3.9) ในส่วนที่ 2 ของแพทย์ <FiLLBox :checked="data?.savings"/> ไม่มี <FiLLBox /> มี (ระบุ)................................................................................................................
+          โรคประจำตัวอื่นๆ....................................................................................................................................................................................
+         <br> <span class="ml-12">ข้าพเจ้าขอรับรองว่าข้อความข้างต้นเป็นความจริงทุกประการ</span>
+        <br>  <span class="ml-12">ลงชื่อ <FiLL class="min-w-60" :data="`${data?.fName}  ${data?.lName}`"/></span>วันที่<FiLL  class="min-w-56 " :data="data?.dateReceived" date-format="full" />
+
+          </p> 
+          <p class="text-base font-semibold ">ส่วนที่ 2 ของแพทย์</p>
+          <p class="text-base"> สถานที่ตรวจ <FiLL :data="data?.affiliation" class="min-w-96" />วันที่<FiLL  class="min-w-56 " :data="data?.dateReceived" date-format="full" />
+          <span class="ml-12">ข้าพเจ้า</span>นายแพทย์/แพทย์หญิง  <FiLL class="min-w-96" :data="`${data?.lOwnerCollateral1}  ${data?.lMarryOwnerCollateral1}`"/>
+<br> ใบอนุญาติประกอบวิชาชีพเวชกรรม เลขที่ <FiLL :data="data?.newInstallments" class="min-w-96" /><br>
+ได้ตรวจร่างกายและสอบประวัติ นาย/นาง/นางสาว <FiLL class="min-w-52" :data="`${data?.prefix} ${data?.fName}  ${data?.lName}`"/> แล้ว มีรายละเอียด ดังนี้
+<br><span class="ml-12 font-semibold"><FiLLBox :checked="data?.savings"/> (1) </span> ไม่เป็นผู้ผู้มีกายทุพพลภาพ จนไม่สามารถปฏิบัติหน้าที่ได้ 
+<br><span class="ml-12 font-semibold"><FiLLBox :checked="data?.savings"/> (2) </span> ไม่มีจิตฟั่นเฟือน ไม่สมประกอบ
+<br><span class="ml-16 font-semibold underline underline-offset-1"> (3) ประวัติการรักษาโรคต่อไปนี้ในโรงพยาบาลหรือสถานพยาบาลแห่งนี้</span> 
+</p> 
+<div class="grid grid-rows-2 grid-flow-col">
+                <div class="row-span-3 text-sm">
+                  <p class="pl-20" >(3.1) โรคมะเร็ง </p>
+                  <p class="pl-20"> (3.2) โรคหัวใจ </p>
+                  <p class="pl-20"> (3.3) โรควัณโรค </p>
+                  <p class="pl-20"> (3.4) โรคปอดเรื้อรัง </p>
+                  <p class="pl-20"> (3.5) โรคเบาหวานขั้นรุนแรง </p>
+                  <p class="pl-20"> (3.6) ภาวะไตวาย(ล้างไต) </p>
+                  <p class="pl-20"> (3.7) โรคเอดส์ </p>
+                  <p class="pl-20"> (3.8) โรคตับแข็ง </p>
+                  <p class="pl-20"> (3.9) โรคเอสแอลอี (SLE) </p>
+                </div>
+                <div class="row-span-2 col-span-2 ml-10 text-sm">
+                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
+                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
+                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
+                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
+                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
+                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
+                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
+                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
+                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
+                </div>
+            </div>
+            <p class="ml-16 font-semibold"> (4) โรคร้ายแรงอื่นๆ (ระบุ)..............................................................................................................</p>
+            <p class="ml-16 font-semibold"> สรุปความเห็นและข้อแนะนำของแพทย์.......................................................................................
+              <br>.............................................................................................................................................................</p> 
+              <p class="text-base ml-96"> ลงชื่อ....................................................................<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;( <FiLL class="min-w-56" :data="`${data?.lOwnerCollateral1}  ${data?.lMarryOwnerCollateral1}`"/> ) <br>
+</p>
+<p class="text-sm pl-96"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;แพทย์ผู้ตรวจร่างกาย</p>
+<p class="text-sm "> <span class="font-semibold">หมายเหตุ</span> <span class="ml-4">(1) </span> ต้องเป็นแพทย์แผนปัจจุบันชั้นหนึ่ง จากสถานพยาบาลของรัฐตามกฎหมายว่าด้วยสถานพยาบาล
+  <br><span class="ml-20">(2) </span> ใบรับรองแพทย์ฉบับนี้ให้ใช้ได้ไม่เกิน 30 วัน นับแต่วันที่ตรวจร่างกาย
+  <br><span class="ml-20 font-semibold underline underline-offset-1 ">(3)  หากพบว่าเป็นโรค ตาม ข้อ (3) หรือตามที่คระกรรมการเห็นว่าอันตราย ให้การสมัครเป็นสมาชิิกตกเป็นโมฆะทันที</span>
+  <br><span class="ml-20 font-semibold ">(4)  ให้ผู้สมัครใช้ใบรับรองแพทย์ตามแบบที่สมาคมฯ กำหนดนี้เท่านั้นเพื่อประกอบการสมัครเป็นสมาชิก สสธท. เริ่มใช้ตั้งแต่</span><span class="underline underline-offset-1 font-semibold">วันที่ 1 เมษายน 2564</span> 
+  <span class="font-semibold"> เป็นต้นไป</span>
+</p>
+
         </MorePaperDoc>
 
         <MorePaperDoc>

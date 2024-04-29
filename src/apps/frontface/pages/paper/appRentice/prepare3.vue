@@ -308,7 +308,11 @@
               </p>
               <br>
             </MorePaperDoc>
+
+
             <MorePaperDoc>
+
+                        <!-- กู้สามัญทั่วไป general5  -->
               <div class="flex flex-col items-end row-span-2">
                 <p class="font-bold mb-2">สส.ชสอ. ส.2/2 (สามัญ)</p>
                 </div>
@@ -427,6 +431,19 @@
  </div>
               <br>
             </MorePaperDoc>
+
+
+
+            <MorePaperDoc>
+
+<!-- กู้สามัญทั่วไป general6  -->
+</MorePaperDoc>
+
+<MorePaperDoc>
+
+<!-- กู้สามัญทั่วไป general7  -->
+</MorePaperDoc>
+
     </main>
   </template>
   

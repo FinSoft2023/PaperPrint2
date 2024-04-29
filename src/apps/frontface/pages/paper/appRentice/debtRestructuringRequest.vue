@@ -176,7 +176,7 @@
                         </template>
                         </LineFiLL>
 
-                    <p class="mb-4 mt-2"><span class="font-bold">เจ้าของหลักทรัพย์ค้ำประกันลงนามรับทราบการปรับโครงสร้างหนี้</span> จำนวน <FiLL :data="data?.test" class="min-w-20" /> คน</p>
+                    <p class="mb-4 mt-2"><span class="font-bold">เจ้าของหลักทรัพย์ค้ำประกันลงนามรับทราบการปรับโครงสร้างหนี้</span> จำนวน <FiLL :data="data?.numberPeople" class="min-w-20" /> คน</p>
                     1.ข้าพเจ้า(ลงชื่อ) <BlankSpace class="min-w-32" /> รับทราบการปรับโครงสร้างหนี้   (ลงชื่อ) <BlankSpace class="min-w-32" /> คู่สมรสผู้ค้ำประกัน
                     <p class="mt-2 mb-2"><span class="ml-16">( <FiLL class="min-w-56" :data="`${data?.fOwnerCollateral1}  ${data?.lOwnerCollateral1}`"/> )</span> <span class="ml-32">( <FiLL class="min-w-56" :data="`${data?.fMarryOwnerCollateral1}  ${data?.lMarryOwnerCollateral1}`"/> )</span></p>
                     2.ข้าพเจ้า(ลงชื่อ) <BlankSpace class="min-w-32" /> รับทราบการปรับโครงสร้างหนี้   (ลงชื่อ) <BlankSpace class="min-w-32" /> คู่สมรสผู้ค้ำประกัน

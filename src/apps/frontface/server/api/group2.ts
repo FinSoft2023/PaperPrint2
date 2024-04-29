@@ -49,6 +49,12 @@ export default defineEventHandler(async (event) => {
       loanOnDay:"1",                  //กู้เมื่อ(วัน)
       loanOnMonth:"กันยายน",                  //กู้เมื่อ(เดือน)
       loanOnYear:"2565",                  //กู้เมื่อ(ปี)
+      unablePayDebtDueTo: "เศรษฐกิจแย่ ขาดทุนสูง",   //เหตุผลที่ไม่สามารถชำระเงินได้
+      evidenceReason: "รายการการเดือนบัญชีบบริษัท",   //หลักฐานที่แสดงว่ามีเหตุจำเป็น
+      requestDebtRestructuring:"ขอยืดระยะเวลาในการชำระหนี้อีก 5 ปี", //ขอยื่นปรับโครงสร้างหนี้
+      oldInterestRate:"5%",  //อัตราดอกเบี้ยเก่า
+      newInterestRate:"10%",  //อัตราดอกเบี้ยใหม่
+
 
          dateReceived: new Date().toISOString(), //วันที่ปัจจุบัน  full จะได้ผลลัพธ์ 1 เมษายน พศ.2567    short ผลลัพธ์  01/04/2567
          repaymentPlan: [

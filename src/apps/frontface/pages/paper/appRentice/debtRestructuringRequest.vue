@@ -107,7 +107,7 @@
                 <div>
                     <p class="font-bold">เจ้าของหลักทรัพย์ค้ำประกันลงนามรับทราบการปรับโครงสร้างหนี้ จำนวน 1 คน</p>
                         1.ข้าพเจ้า(ลงชื่อ) <BlankSpace class="min-w-32" /> รับทราบการปรับโครงสร้างหนี้   (ลงชื่อ) <BlankSpace class="min-w-32" /> คู่สมรสผู้ค้ำประกัน
-                        <p class="mt-2"><span class="ml-16">(<BlankSpace class="min-w-56" />)</span> <span class="ml-32">( <BlankSpace class="min-w-56" /> )</span></p>
+                        <p class="mt-2"><span class="ml-16">(<FiLL class="min-w-56" :data="`${data?.fOwnerCollateral1}  ${data?.lOwnerCollateral1}`"/>)</span> <span class="ml-32">(<FiLL class="min-w-56" :data="`${data?.fMarryOwnerCollateral1}  ${data?.lMarryOwnerCollateral1}`"/>)</span></p>
                             
                     <div class="grid grid-cols-2 mt-4">
                         <div class="mt-4">

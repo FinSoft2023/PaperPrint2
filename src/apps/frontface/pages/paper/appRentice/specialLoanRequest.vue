@@ -54,7 +54,7 @@
 
             <p class="mt-2 ml-12"> ข้อ 2. ข้าพเจ้าได้แนบหลักฐานมาพร้อมนี้คือ</p>
             <div class="grid grid-cols-2 justify-center flex flex-col ml-8 ">
-            <p class="ml-16">(1) <FiLLBox :checked="data?.newnbAccount" /> สำเนาโดนดที่ดินจำนวน 2 ชุด</p>
+            <p class="ml-16">(1) <FiLLBox :checked="data?.newnbAccount" /> สำเนาโฉนดที่ดินจำนวน 2 ชุด</p>
             <p>(2) <FiLLBox :checked="data?.newnbAccount" /> แผนที่สังเขปทางไปที่ดิน</p>
             <p class="ml-16">(3) <FiLLBox :checked="data?.newnbAccount" /> สำเนาหนังสือจะซื้อจะขายอาคารและที่ดิน </p>
             <p>(4) <FiLLBox :checked="data?.newnbAccount" /> สำเนาหนังสืออนุญาตสร้างหรือต่อเติมอาคาร</p>

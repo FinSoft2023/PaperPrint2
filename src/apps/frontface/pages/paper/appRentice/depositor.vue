@@ -8,8 +8,6 @@
                 <p class="text-lg text-center font-semibold  mb-4">บัตรตัวอย่างลายมือชื่อผู้ฝากเงินประเภท
                     <FiLL :data="data?.economize"date-format="full" class="min-w-40" />
 
-                  
-
 
                 </p>
 
@@ -55,26 +53,99 @@
             ....................................................................................................................................................................................................
         </p>
       </div>
-
     </PaperDoc>
 
-    <PaperDoc>
-        <div class="flex flex-col mb-4 mt-20 mx-12">
-        <p>
-          ผู้ขอเปิดบัญชี <FiLL class="min-w-72 " :data="`${data?.fName}  ${data?.lName}`" />  สมาชิกเลขทะเบียนที่ <FiLL  class="min-w-40" :data="data?.member" />
-          ที่อยู่เลขที่ <FiLL  class="min-w-28" :data="data?.housenb" /> ถนน <FiLL class="min-w-48" :data="data?.road" />ตำบล/แขวง<FiLL class="min-w-48" :data="data?.district" /> 
+    <MorePaperDoc>
+        <div class="mx-7">
+        <p class="text-xl text-center font-semibold  mb-4 mt-32 ">
+                    หนังสือขอเปิดบัญชีเงินฝากออมทรัพย์พิเศษ
+                </p>
+
+                <div class="grid grid-cols-2 justify-center">
+        <div class="flex items-start ">
+            <p class=" mb-1 mt-20">สมาชิกเลขทะเบียนที่<FiLL class="min-w-40" :data="data?.numberRegis"  /></p>
+                    
+        </div>
+        
+
+        <div class="flex flex-col items-end">
+          <div class="border-2 border-black p-2 mt-16">
+            <p>เลขที่บัญชี
+                        <FiLL class="min-w-40" :data="data?.nbAccount"  />
+                    </p>
+          </div>
+        </div>
+      </div>   
+      <div class="flex flex-col items-end">
+          <div class=" mt-12">
+            <p>วันที่
+                <FiLL class="min-w-80" :data="data?.dateReceived" date-format="full"/>
+                    </p>
+          </div>
+        </div>
+            <div class="mt-8">
+         เรียน ผู้จัดการสหกรณ์ออมทรัพย์<FiLL class="min-w-96" :data="data?.savings"/>จำกัด
+        </div>
+        <div class="mt-12">
+            <span class="ml-10">ข้าพเจ้า <FiLL class="min-w-96 " :data="`${data?.fName}  ${data?.lName}`" />  อายุ <FiLL  class="min-w-40" :data="data?.member" />ปี 
+            ที่อยู่เลขที่<FiLL  class="min-w-28" :data="data?.housenb" /> ถนน <FiLL class="min-w-48" :data="data?.road" />ตำบล/แขวง<FiLL class="min-w-48" :data="data?.district" /> 
             อำเภอ/เขต<FiLL  class="min-w-40" :data="data?.district" /> จังหวัด<FiLL class="min-w-40" :data="data?.province" /> โทรศัพท์ <FiLL class="min-w-44" :data="data?.nbPhon" />
-            สถานที่ทำงาน<FiLL class="min-w-80" :data="data?.economize" /><br> 
-            โทรศัพท์<FiLL class="min-w-72" :data="data?.nbPhon" /> โทรสาร<FiLL class="min-w-72" :data="data?.nbPhon" /> 
-            เปิดบัญชีเมื่อวันที่<FiLL class="min-w-80" :data="data?.dateReceived" date-format="full"/> 
-            หมายเหตุ..................................................................................................................................................................................
-            ....................................................................................................................................................................................................
-            ....................................................................................................................................................................................................
-        </p>
-      </div>
+            สถานที่ทำงาน<FiLL class="min-w-48" :data="data?.economize" />โทรศัพท์<FiLL class="min-w-36" :data="data?.nbPhon" /> โทรสาร<FiLL class="min-w-36" :data="data?.nbPhon" />
+        </span>
+        <div class="mt-2">
+            มีความประสงค์ขอเปิดบัญชีเงินฝากออมทรัพย์พิเศษในชื่อข้าพเจ้าไว้กับสหกรณ์นี้
+                </div>
+                <div class="mt-6">
+                <span class="ml-12">โดยข้าพเจ้าได้ลงลายมือชื่อในบัตรตัวอย่างลายมือชื่อเรียบร้อย กับยินยอมผูกพันและปฏิบัติตาม
+                    ระแบบของสหกรณ์นี้ ในส่วนที่ว่าด้วยเงินฝากออมทรัพย์พิเศษทุกประการ
+                </span>
+            </div>
+            <div class="mt-32">
+          <div class="grid grid-cols-2 justify-start mt-6">
+              <div class="items-start  text-center">
+                <tr>
+                <td class="text-left pl-16 ">(ลงชื่อ).................................................ผู้กู้
+                </td>
+                </tr>
+                <tr>
+                <td class="text-center pl-24">(<FiLL class="min-w-40" :data="`${data?.fname}  ${data?.lname}`"/>)
+                </td>
+                </tr>
+                
+                <tr>
+                <td class="text-left pl-16 ">(ลงชื่อ).................................................
+                </td>
+                </tr>
+                <tr>
+                  <div class="text-center pl-24">
+                    (<FiLL class="min-w-40" :data="`${data?.fName}  ${data?.lName}`"/>)<br>
+        </div><br>
+                
+                </tr>
 
-    </PaperDoc>
+              </div>
+              <div class="items-end ">
+                
+                <tr>
+                <td class="text-left pl-6 ">(ลงชื่อ).................................................พยาน(สมาชิก)
+                </td>
+                </tr>
+                <tr>
+                <td class="text-left pl-16">(................................................)
+                </td>
+                </tr><br>
 
+            </div>
+            <div class="grid grid-cols-2 justify-center mt-6">
+              <div class="items-start  text-nowrap">
+        </div><br>
+    </div>
+                    </div>
+                </div>
+
+        </div>
+            </div>
+    </MorePaperDoc>
     </main>
   </template>
 

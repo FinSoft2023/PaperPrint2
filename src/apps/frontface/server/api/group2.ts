@@ -55,6 +55,8 @@ export default defineEventHandler(async (event) => {
 
         economize:"ออมทรัพย์",           //ประเภทเงินฝาก
 
+        
+
            dateReceived: new Date().toISOString(), //วันที่ปัจจุบัน  full จะได้ผลลัพธ์ 1 เมษายน พศ.2567    short ผลลัพธ์  01/04/2567
            repaymentPlan: [
             { fn: "นาตาชา ", ln: "สุขสำราญ ", status: 'คู่สมรส' , share: 40  },

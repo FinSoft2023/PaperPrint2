@@ -37,14 +37,14 @@
             <p>เป็นสมาชิกแล้ว <FiLL :data="data?.alreadyMember" class="min-w-12" /> ปี อยู่บ้านเลขที่ <FiLL :data="data?.housenb" class="min-w-20" /> หมู่ที่ <FiLL :data="data?.group" class="min-w-12" /> ถนน <FiLL :data="data?.road" class="min-w-28" /> ตำบล <FiLL :data="data?.district" class="min-w-32" /></p>
             <p> อำเภอ <FiLL :data="data?.district" class="min-w-28" />จังหวัด <FiLL :data="data?.province" class="min-w-36" /> หมายเลขโทรศัพท์ <FiLL :data="data?.nbPhon" class="min-w-36" /> มีเงินได้รายเดือน <FiLL :data="data?.salary" class="min-w-28" /> บาท</p>
 
-            <p>สถานภาพสมรส <FiLLBox /> โสด, <FiLLBox :checked="data?.Agency" /> สมรสแล้ว, <FiLLBox /> เป็นหม้าย กรณีสมรสแลัวคู่สมรสชื่อ <FiLL class="min-w-56" :data="`${data?.newfName}  ${data?.lName}`"/> </p>
+            <p>สถานภาพสมรส <FiLLBox /> โสด, <FiLLBox :checked="data?.agency" /> สมรสแล้ว, <FiLLBox /> เป็นหม้าย กรณีสมรสแลัวคู่สมรสชื่อ <FiLL class="min-w-56" :data="`${data?.newfName}  ${data?.lName}`"/> </p>
             <p><BlankSpace class="min-w-20" />อาชีพ <FiLL :data="data?.officerPOsition" class="min-w-28" /> มีเงินได้เดือนละ <FiLL :data="data?.salary" class="min-w-28" /> บาท สถานที่ทำงาน  <FiLL :data="data?.affiliation" class="min-w-28" /></p>
             <p><BlankSpace class="min-w-20" /> หมายเลขโทรศัพท์ <FiLL :data="data?.nbPhon" class="min-w-36" /> </p>
 
             <p class="mt-2 ml-12"> ข้อ 1. วัตถุประสงค์ในการขอกู้ ( โปรดกาเครื่องหมาย ถูก ใน <FiLLBox /> ที่ต้องการ )</p>
             <div class="grid grid-cols-2 justify-center flex flex-col ml-8 ">
             <p class="mt-2 ml-16">(1) <FiLLBox /> เพื่อการเคหะ</p>
-            <p>(2) <FiLLBox :checked="data?.newnbAccount" /> เพื่อการลงทุนประกอบอาชีพ</p>
+            <p>(2) <FiLLBox checked /> เพื่อการลงทุนประกอบอาชีพ</p>
             <p class="ml-16">(3) <FiLLBox /> เพื่อซื้อรถยนต์หรือจักรยานยนต์</p>
             <p>(4) <FiLLBox /> เพื่อการไถ่ถอนจำนอง <BlankSpace class="min-w-32" /></p>
             </div>
@@ -54,21 +54,21 @@
 
             <p class="mt-2 ml-12"> ข้อ 2. ข้าพเจ้าได้แนบหลักฐานมาพร้อมนี้คือ</p>
             <div class="grid grid-cols-2 justify-center flex flex-col ml-8 ">
-            <p class="ml-16">(1) <FiLLBox :checked="data?.newnbAccount" /> สำเนาโฉนดที่ดินจำนวน 2 ชุด</p>
-            <p>(2) <FiLLBox :checked="data?.newnbAccount" /> แผนที่สังเขปทางไปที่ดิน</p>
-            <p class="ml-16">(3) <FiLLBox :checked="data?.newnbAccount" /> สำเนาหนังสือจะซื้อจะขายอาคารและที่ดิน </p>
-            <p>(4) <FiLLBox :checked="data?.newnbAccount" /> สำเนาหนังสืออนุญาตสร้างหรือต่อเติมอาคาร</p>
-            <p class="ml-16">(5) <FiLLBox :checked="data?.newnbAccount" /> สำเนาบัตรประจำตัวผู้ค้ำประกัน </p>
-            <p>(6) <FiLLBox :checked="data?.newnbAccount" /> หนังสือรับรองประเมินราคาที่ดินจากทางราชการ</p>
+            <p class="ml-16">(1) <FiLLBox checked /> สำเนาโฉนดที่ดินจำนวน 2 ชุด</p>
+            <p>(2) <FiLLBox checked /> แผนที่สังเขปทางไปที่ดิน</p>
+            <p class="ml-16">(3) <FiLLBox checked /> สำเนาหนังสือจะซื้อจะขายอาคารและที่ดิน </p>
+            <p>(4) <FiLLBox checked /> สำเนาหนังสืออนุญาตสร้างหรือต่อเติมอาคาร</p>
+            <p class="ml-16">(5) <FiLLBox checked /> สำเนาบัตรประจำตัวผู้ค้ำประกัน </p>
+            <p>(6) <FiLLBox checked /> หนังสือรับรองประเมินราคาที่ดินจากทางราชการ</p>
             </div>
             <div class="grid grid-cols-1 justify-center flex flex-col ml-8 ">
-                <p class="ml-16">(7) <FiLLBox :checked="data?.newnbAccount" /> สำเนาบัตรประจำตัวผู้กู้ คู่สมรสผู้กู้ สำนาทะเบียนบ้านผู้กู้ และทะเบียนสมรสหรือทะเบียนหย่าผู้กู้</p>
+                <p class="ml-16">(7) <FiLLBox checked /> สำเนาบัตรประจำตัวผู้กู้ คู่สมรสผู้กู้ สำนาทะเบียนบ้านผู้กู้ และทะเบียนสมรสหรือทะเบียนหย่าผู้กู้</p>
             </div>
             <div class="grid grid-cols-1 justify-center flex flex-col ml-8 ">
-                <p class="ml-16">(8) <FiLLBox :checked="data?.newnbAccount" /> บัตรประจำตัวเจ้าของที่ดินและคู่สมรส พร้อมทะเบียนบ้าน และทะเบียนสมรส หรือทะเบียนหย่าของเจ้าของที่ดิน (กรณีที่ดินของบุคคลอื่น) </p>
+                <p class="ml-16">(8) <FiLLBox checked /> บัตรประจำตัวเจ้าของที่ดินและคู่สมรส พร้อมทะเบียนบ้าน และทะเบียนสมรส หรือทะเบียนหย่าของเจ้าของที่ดิน (กรณีที่ดินของบุคคลอื่น) </p>
             </div>
             <div class="grid grid-cols-1 justify-center flex flex-col ml-8 ">
-                <p class="ml-16">(9) <FiLLBox :checked="data?.newnbAccount" /> กรณีไถ่ตอนจำนองให้แจ้งหนี้ค้างหรือมีเอกสารแสดงจำนวนนี้ที่ค้างชำระและสำเนาสัญญาจำนอง </p>
+                <p class="ml-16">(9) <FiLLBox checked /> กรณีไถ่ตอนจำนองให้แจ้งหนี้ค้างหรือมีเอกสารแสดงจำนวนนี้ที่ค้างชำระและสำเนาสัญญาจำนอง </p>
             </div>
             <div class="grid grid-cols-1 justify-center flex flex-col ml-8 ">
                 <p class="ml-16">(10) <FiLLBox /> อื่น ๆ <BlankSpace class="min-w-60" /></p>
@@ -80,7 +80,7 @@
             <p class="mt-4 ml-12">ข้อ 4. นอกจากการค้ำประกันด้วยเงินค่าหุ้น ซึ่งข้พเจ้ามือยู่ในสหกรณ์และเงินสิทธิเรียกร้องจากสหกรณ์ฯ แล้ว </p>
             <p>ข้าพเจ้า ขอเสนอหลักประกันในการขอกู้เงินพิเศษดังนี้อีกคือ</p>
             <div class="grid grid-cols-1 justify-center flex flex-col ml-8 ">
-            <p class=" ml-16">(1) <FiLLBox :checked="data?.newnbAccount" /> ที่ดินอันปลอดภาระจำนองรายอื่น เพื่อจำนองเป็นประกัน</p>
+            <p class=" ml-16">(1) <FiLLBox checked /> ที่ดินอันปลอดภาระจำนองรายอื่น เพื่อจำนองเป็นประกัน</p>
             
             </div>
             
@@ -94,18 +94,18 @@
             
             <div class="grid grid-cols-1 justify-center flex flex-col ml-8 mt-4">
             
-            <p class=" ml-16">(2) <FiLLBox :checked="data?.newnbAccount" /> ที่ดินพร้อมสิ่งปถูกสร้างบนที่ดิน (แนบหลักฐานที่ดินและสำเนาทะเบียนบ้าน)</p>
-            <p class=" ml-16">(3) <FiLLBox :checked="data?.newnbAccount" /> พันธบัตรรัฐบาล หรือเงินฝากในสหกรณ์ (ต้องแนบสำเนาเอกสารดังกล่าวด้วย)</p>
-            <p class=" ml-16">(4) <FiLLBox :checked="data?.newnbAccount" /> บุคคลค้ำประกัน</p>
+            <p class=" ml-16">(2) <FiLLBox checked /> ที่ดินพร้อมสิ่งปถูกสร้างบนที่ดิน (แนบหลักฐานที่ดินและสำเนาทะเบียนบ้าน)</p>
+            <p class=" ml-16">(3) <FiLLBox checked /> พันธบัตรรัฐบาล หรือเงินฝากในสหกรณ์ (ต้องแนบสำเนาเอกสารดังกล่าวด้วย)</p>
+            <p class=" ml-16">(4) <FiLLBox checked /> บุคคลค้ำประกัน</p>
             </div>
-            <p><span class="ml-20">(ก) ชื่อ </span><FiLL class="min-w-80" :data="`${data?.officerLName}  ${data?.lName}`"/> สมาชิกเลขทะเบียน <FiLL :data="data?.group" class="min-w-40" /></p>
-            <p>ตำแหน่ง <FiLL :data="data?.officerPOsition" class="min-w-40" /> สังกัด <FiLL :data="data?.affiliation" class="min-w-52" /> กลุ่มงาน <FiLL :data="data?.Agency" class="min-w-52" /></p>
-            <p>อำเภอ <FiLL :data="data?.district" class="min-w-52" /> จังหวัดศรีสะเกษ เงินได้รายเดือน <FiLL :data="data?.salary" class="min-w-48" /> บาท</p>
+            <p><span class="ml-20">(ก) ชื่อ </span><FiLL class="min-w-80" :data="`${data?.fNameGuarantor1}  ${data?.lNameGuarantor1}`"/> สมาชิกเลขทะเบียน <FiLL :data="data?.memberGuarantor1" class="min-w-40" /></p>
+            <p>ตำแหน่ง <FiLL :data="data?.positionGuarantor1" class="min-w-40" /> สังกัด <FiLL :data="data?.affiliation" class="min-w-52" /> กลุ่มงาน <FiLL :data="data?.workGroup1" class="min-w-52" /></p>
+            <p>อำเภอ <FiLL :data="data?.district" class="min-w-52" /> จังหวัดศรีสะเกษ เงินได้รายเดือน <FiLL :data="data?.salaryGuarantor1" class="min-w-48" /> บาท</p>
             <p class="mt-2">ลายมือชื่อผู้ค้ำประกัน <BlankSpace class="min-w-60" /></p>
 
-            <p><span class="ml-20">(ข) ชื่อ </span><FiLL class="min-w-80" :data="`${data?.ofFname}  ${data?.newlName}`"/> สมาชิกเลขทะเบียน <FiLL :data="data?.nb" class="min-w-40" /></p>
-            <p>ตำแหน่ง <FiLL :data="data?.position" class="min-w-40" /> สังกัด <FiLL :data="data?.affiliation" class="min-w-52" /> กลุ่มงาน <FiLL :data="data?.Agency" class="min-w-52" /></p>
-            <p>อำเภอ <FiLL :data="data?.district" class="min-w-52" /> จังหวัดศรีสะเกษ เงินได้รายเดือน <FiLL :data="data?.salary" class="min-w-48" /> บาท</p>
+            <p><span class="ml-20">(ข) ชื่อ </span><FiLL class="min-w-80" :data="`${data?.fNameGuarantor2}  ${data?.lNameGuarantor2}`"/> สมาชิกเลขทะเบียน <FiLL :data="data?.memberGuarantor2" class="min-w-40" /></p>
+            <p>ตำแหน่ง <FiLL :data="data?.positionGuarantor2" class="min-w-40" /> สังกัด <FiLL :data="data?.affiliation" class="min-w-52" /> กลุ่มงาน <FiLL :data="data?.workGroup2" class="min-w-52" /></p>
+            <p>อำเภอ <FiLL :data="data?.district" class="min-w-52" /> จังหวัดศรีสะเกษ เงินได้รายเดือน <FiLL :data="data?.salaryGuarantor2" class="min-w-48" /> บาท</p>
             <p class="mt-2">ลายมือชื่อผู้ค้ำประกัน <BlankSpace class="min-w-60" /></p>
 
             <p class="mt-2"><span class="ml-12">ข้อ 5. </span> ข้าพเจ้าขอรับรองว่า ข้อความข้างตันเป็นความจริงทุกประการ และข้าพเจ้าจะให้ความร่วมมือแก่คณะกรรมการ
@@ -158,14 +158,14 @@
                             ลงชื่อ<BlankSpace class="min-w-56" />พยาน
                         </span>
                     </p>
-                    <p class="mr-20 text-center">(<BlankSpace class="min-w-56" />)</p>
+                    <p class="mr-20 text-center">(<FiLL class="min-w-56" :data="`${data?.fNameWitness1}  ${data?.lNameWitness1}`"/>)</p>
 
                     <span class="mt-6 ">
                         <span class="mr-10">
                             ลงชื่อ<BlankSpace class="min-w-56" />พยาน
                         </span>
                     </span>
-                    <p class="mr-20 text-center">(<BlankSpace class="min-w-56" />)</p>
+                    <p class="mr-20 text-center">(<FiLL class="min-w-56" :data="`${data?.fNameWitness2}  ${data?.lNameWitness2}`"/>)</p>
             </div>
             </div>
                
@@ -179,7 +179,7 @@
                     <p>คำรับรองของผู้บังคับบัญชา</p>
                 </div>
             </div>  
-            <p class="mt-2"><span class="ml-12">ข้าพเจ้า </span><FiLL class="min-w-80" :data="`${data?.officerLName}  ${data?.newlName}`"/>  ตำแหน่ง <FiLL :data="data?.position" class="min-w-60" /> </p>
+            <p class="mt-2"><span class="ml-12">ข้าพเจ้า </span><FiLL class="min-w-80" :data="`${data?.fNameCommander}  ${data?.lNameCommander}`"/>  ตำแหน่ง <FiLL :data="data?.positionCommander" class="min-w-60" /> </p>
             <p>สังกัด <FiLL :data="data?.affiliation" class="min-w-80" /> อำเภอ <FiLL :data="data?.district" class="min-w-52" />จังหวัด ศรีสะเกษ</p>
             <p>ขอรับรองว่าตามที่ <FiLL class="min-w-56" :data="`${data?.fName}  ${data?.lName}`"/> รับราชการหรือทำงานประจำในตำแหน่ง <FiLL :data="data?.position" class="min-w-44" /> </p>
             <p>สังกัด <FiLL :data="data?.affiliation" class="min-w-80" /> ได้รับเงินได้รายเดือน <FiLL :data="data?.salary" class="min-w-48" /> บาท</p>
@@ -193,7 +193,7 @@
                         </span>
                     </p>
                     <p class="mr-20 text-center">
-                        ( <FiLL class="min-w-56" :data="`${data?.officerLName}  ${data?.newlName}`"/> ) 
+                        ( <FiLL class="min-w-56" :data="`${data?.fNameCommander}  ${data?.lNameCommander}`"/> ) 
                     </p>
             </div>  
             <hr class="mt-12 my-4 border-b-2 border-black">
@@ -203,10 +203,10 @@
                 </div>
             </div> 
             <div class="ml-12 mt-4">
-            <p >1. ผู้กู้รายนี้เป็นสมาชิกสหกรณ์ติดต่อกันมาจนถึงวันยื่นคำขอกู้เป็นเวลา ปี เดือน</p>
-            <p>2. ปัจจุบันผู้กู้ส่งหุ้นรายเดือนๆ ละ บาท รวมมีหุ้นอยู่ในสหกรณ์ทั้งสิ้น บาท</p>
-            <p>3. ผู้ขอกู้มีหนี้อยู่ในสหกรณ์ในวันสิ้นเดือน พ.ศ. จำนวน บาท</p>
-            <p>4. ผู้ขอกู้เคยผิดนัดการส่งเงินงวดชำระหนี้หรือไม่อย่างไร ( ) ไม่เคย ( ) เคย งวด</p>
+            <p >1. ผู้กู้รายนี้เป็นสมาชิกสหกรณ์ติดต่อกันมาจนถึงวันยื่นคำขอกู้เป็นเวลา <FiLL :data="data?.loanOnDay" class="min-w-24" /> ปี <FiLL :data="data?.loanOnDay" class="min-w-24" /> เดือน</p>
+            <p>2. ปัจจุบันผู้กู้ส่งหุ้นรายเดือนๆ ละ <FiLL :data="data?.stockValue" class="min-w-28" />บาท รวมมีหุ้นอยู่ในสหกรณ์ทั้งสิ้น <FiLL :data="data?.salary" class="min-w-32" />บาท</p>
+            <p>3. ผู้ขอกู้มีหนี้อยู่ในสหกรณ์ในวันสิ้นเดือน <FiLL :data="data?.loanOnMonth" class="min-w-24" />พ.ศ.<FiLL :data="data?.loanOnYear" class="min-w-28" /> จำนวน <FiLL :data="data?.stockValue" class="min-w-28" />บาท</p>
+            <p>4. ผู้ขอกู้เคยผิดนัดการส่งเงินงวดชำระหนี้หรือไม่อย่างไร <FiLLBox checked /> ไม่เคย <FiLLBox/> เคย <BlankSpace class="min-w-32" />งวด</p>
             <p>5. ข้อชี้แจงอื่นๆ (เงินได้รายเดือนของผู้กู้และคู่สมรส, ควรให้กู้เท่าใด, ต้องใช้หลักประกันอย่างไรบ้าง เป็นต้น) </p>
             </div>
             <div class="flex flex-col items-end">
@@ -227,14 +227,14 @@
                     <p>บันทึกการพิจารณาของคณะกรรมการดำเนินการ</p>
                 </div>
             </div>
-            <p class="ml-12 mt-4">ในการประชุมคณะกรรมการประจำเดือนครั้งที่ เมื่อวันที่ เดือน พ.ศ.</p>
-            <p>มีคณะกรรมการเข้าร่วมพิจารณาคำขอกู้พิเศษรายนี้จำนวน คนที่ประชุมลงมติให้กู้โดยคะแนนเสียง ต่อ</p>
-            <p>จึงเป็นอันว่า</p>
+            <p class="ml-12 mt-4">ในการประชุมคณะกรรมการประจำเดือนครั้งที่ <FiLL :data="data?.noMeeting" class="min-w-24" /> เมื่อวันที่ <FiLL class="min-w-12" :data="`${data?.loanOnDay}`"/> เดือน<FiLL class="min-w-20" :data="`  ${data?.loanOnMonth}`"/> พ.ศ.<FiLL class="min-w-16" :data="`${data?.loanOnYear}`"/></p>
+            <p>มีคณะกรรมการเข้าร่วมพิจารณาคำขอกู้พิเศษรายนี้จำนวน<FiLL :data="data?.numberBoard" class="min-w-12" /> คนที่ประชุมลงมติให้กู้โดยคะแนนเสียง<FiLL :data="data?.numberBoardYes" class="min-w-12" /> ต่อ</p>
+            <p><FiLL :data="data?.numberBoardNo" class="min-w-12" />จึงเป็นอันว่า <FiLL :data="data?.summaryLoan" class="min-w-80" /></p>
            
             <div class="flex flex-col items-end">
                 <p class="mt-14 ">
                     <span class="mr-20">
-                        ลงชื่อ <FiLL class="min-w-56" :data="`${data?.officerFName}  ${data?.officerLName}`"/> เลขานุการ
+                        ลงชื่อ <FiLL class="min-w-56" :data="`${data?.fNameSecretary}  ${data?.lNameSecretary}`"/> เลขานุการ
                     </span>
                 </p>
                 <p class="mr-48 text-center">

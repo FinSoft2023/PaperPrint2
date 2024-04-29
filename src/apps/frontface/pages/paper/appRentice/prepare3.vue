@@ -139,7 +139,7 @@
         </div>
 
         <div class=" grid justify-items-center mt-6">
-            <p class=" font-medium font-bold text-xl">สำหรับเจ้าหน้าที่ศูนย์ประสานงาน</p>
+            <p class=" font-bold text-xl">สำหรับเจ้าหน้าที่ศูนย์ประสานงาน</p>
         </div>
         <div class="grid justify-items-start text-pretty text-base mt-1">
           <p><span class="ml-11">ตรวจสอบแล้วขอรับรองว่า </span>
@@ -158,7 +158,7 @@
         <p class="pl-72">ตำเเหน่ง <FiLL :data="data?.position" class="min-w-28" /></p>
  </div>
  <div class=" grid justify-items-center mt-2">
-            <p class="mt-2 font-medium font-bold text-xl">สำหรับคณะกรรมการศูนย์ประสานงาน</p>
+            <p class="mt-2  font-bold text-xl">สำหรับคณะกรรมการศูนย์ประสานงาน</p>
         </div>  
         <div class="grid justify-items-start  mt-2">
           <p>เรียน <span class=" ml-2"> นายก สส.ชสอ.</span></p>
@@ -188,7 +188,7 @@
 
         <div class="border-solid border-2 border-slate-950 "></div>
         <div class=" grid justify-items-center mt-4">
-            <p class=" font-medium font-bold text-xl">สำหรับเจ้าหน้าที่ สส.ชสอ.</p>
+            <p class=" font-bold text-xl">สำหรับเจ้าหน้าที่ สส.ชสอ.</p>
         </div>
         <div class="grid justify-items-start text-pretty text-base mt-2">
           <p><span class="ml-11">ตรวจสอบแล้วขอรับรองว่า </span>
@@ -205,7 +205,7 @@
         <p class="pl-72">ตำเเหน่ง <FiLL :data="data?.position" class="min-w-28" /></p>
  </div>
  <div class=" grid justify-items-center mt-6">
-            <p class=" font-medium font-bold text-xl">สำหรับคณะกรรมการ สส.ชสอ.</p>
+            <p class="  font-bold text-xl">สำหรับคณะกรรมการ สส.ชสอ.</p>
         </div>
         <div class="grid justify-items-start  mt-4">
           <p class=" font-semibold ">คำสั่ง <FiLLBox  :checked="data?.fName"  /> <span class="font-normal">อนุมัติรับเข้าเป็นสมาชิกตั้งแต่วันที่ <FiLL :data="data?.dateReceived" date-format="full" class="min-w-60"/></span></p>

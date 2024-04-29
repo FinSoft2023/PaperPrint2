@@ -1,6 +1,6 @@
 <template>
     <main class="font-sans">
-      <MorePaperDoc>
+      <PaperDoc> <!-- หน้า 1 -->
         <div class=" grid justify-items-center mt-24">
             <p class="mt-2 font-medium font-bold text-3xl">บันทึกข้อความ</p>
         </div><br>    
@@ -20,16 +20,16 @@
         </div>
         <div class="grid justify-items-start mt-6 text-pretty text-base">
           <p><span class="ml-28">ด้วย ข้าพเจ้า</span>
-            <FiLL class="min-w-36" :data="`${data?.fName}  ${data?.lName}`"/> 
-            ตำเเหน่ง <FiLL :data="data?.position" class="min-w-28" /> สังกัดโรงพยาบาลศรีสะเกษ สมาชิกสหกรณ์ฯเลขทะเบียนที่ <FiLL :data="data?.numberRegis" class="min-w-20" />
+            <FiLL class="min-w-80" :data="`${data?.fName}  ${data?.lName}`"/> 
+            ตำเเหน่ง <FiLL :data="data?.position" class="min-w-48" /> สังกัดโรงพยาบาลศรีสะเกษ สมาชิกสหกรณ์ฯเลขทะเบียนที่ <FiLL :data="data?.numberRegis" class="min-w-20" />
             มีความประสงค์ขอรับคืนเงินฝากส่วนเกิน
             เนื่องจากได้โอนเงินเข้าบัญชีธนาคารกรุงไทย จำกัด (มหาชน) สาขาโรงพยาบาลศรีสะเกษ ชื่อบัญชี
-            สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด เลขบัญชี 980-1-43747-2 จำนวน<FiLL :data="data?.position" class="min-w-24" />บาท เมื่อวันที่<FiLL :data="data?.position" class="min-w-28" />
+            สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด เลขบัญชี 980-1-43747-2 จำนวน<FiLL :data="data?.bath" class="min-w-24" />บาท เมื่อวันที่<FiLL class="min-w-40" :data="`${data?.loanOnDay}  ${data?.loanOnMonth}  ${data?.loanOnYear}`"/>
             เนื่องจากสหกรณ์ออมทรัพย์ฯได้ประกาศเรื่องลดการฝากเงินฝากออมทรัพย์พิเศษ มีผลตั้งแต่วันที่ 1 พฤศจิกายน 2563 สมาชิกฝากเงินได้ไม่เกิน 20,000 .- บาท /คน/เดือน
           </p>
           <p><span class="ml-28">ดังนั้นข้าพเจ้าจึงขอรับคืนเงินฝากส่วนเกิน จำนวน</span>
-            <FiLL :data="data?.numberRegis" class="min-w-20" /> บาท โดยนำฝากเข้าบัญชีธนาคารกรุงไทย จำกัด (มหาชน) สาขา<FiLL :data="data?.position" class="min-w-24" />
-            เลขบัญชี<FiLL :data="data?.position" class="min-w-24" />ต่อไป
+            <BlankSpace class="min-w-20" /> บาท โดยนำฝากเข้าบัญชีธนาคารกรุงไทย จำกัด (มหาชน) สาขา <BlankSpace class="min-w-20" />
+            เลขบัญชี <BlankSpace class="min-w-20" /> ต่อไป
           </p>
         </div>
         
@@ -43,7 +43,7 @@
  </div>
  <br>
  <br>
-      </MorePaperDoc>
+</PaperDoc>
     </main>
   </template>
   

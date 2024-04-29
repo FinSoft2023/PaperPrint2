@@ -178,9 +178,9 @@
 
                     <p class="mb-4 mt-2"><span class="font-bold">เจ้าของหลักทรัพย์ค้ำประกันลงนามรับทราบการปรับโครงสร้างหนี้</span> จำนวน <FiLL :data="data?.test" class="min-w-20" /> คน</p>
                     1.ข้าพเจ้า(ลงชื่อ) <BlankSpace class="min-w-32" /> รับทราบการปรับโครงสร้างหนี้   (ลงชื่อ) <BlankSpace class="min-w-32" /> คู่สมรสผู้ค้ำประกัน
-                    <p class="mt-2 mb-2"><span class="ml-16">(<BlankSpace class="min-w-56" />)</span> <span class="ml-32">( <BlankSpace class="min-w-56" /> )</span></p>
+                    <p class="mt-2 mb-2"><span class="ml-16">( <FiLL class="min-w-56" :data="`${data?.fOwnerCollateral1}  ${data?.lOwnerCollateral1}`"/> )</span> <span class="ml-32">( <FiLL class="min-w-56" :data="`${data?.fMarryOwnerCollateral1}  ${data?.lMarryOwnerCollateral1}`"/> )</span></p>
                     2.ข้าพเจ้า(ลงชื่อ) <BlankSpace class="min-w-32" /> รับทราบการปรับโครงสร้างหนี้   (ลงชื่อ) <BlankSpace class="min-w-32" /> คู่สมรสผู้ค้ำประกัน
-                    <p class="mt-2"><span class="ml-16">(<BlankSpace class="min-w-56" />)</span> <span class="ml-32">( <BlankSpace class="min-w-56" /> )</span></p>
+                    <p class="mt-2"><span class="ml-16">( <FiLL class="min-w-56" :data="`${data?.fOwnerCollateral2}  ${data?.lOwnerCollateral2}`"/> )</span> <span class="ml-32">( <FiLL class="min-w-56" :data="`${data?.fMarryOwnerCollateral2}  ${data?.lMarryOwnerCollateral2}`"/> )</span></p>
                     <div class="mt-10">
                         <p class="mt-2 ml-40">
                             <span class="ml-14">
@@ -188,7 +188,7 @@
                             </span>
                         </p>
                         <p class="mt-2 ml-40">
-                            <span class="ml-24">(<BlankSpace class="min-w-56" />)</span>
+                            <span class="ml-24">( <FiLL class="min-w-56" :data="`${data?.fNameManager}  ${data?.lNameManager}`"/> )</span>
                         </p>
                         <p class="mt-2 ml-40">
                             <span class="ml-14">
@@ -196,7 +196,7 @@
                             </span>
                         </p>
                         <p class="mt-2 ml-40">
-                            <span class="ml-24">(<BlankSpace class="min-w-56" />)</span>
+                            <span class="ml-24">( <FiLL class="min-w-56" :data="`${data?.officerFName}  ${data?.officerLName}`"/> )</span>
                         </p>
                     </div>
                 </div>

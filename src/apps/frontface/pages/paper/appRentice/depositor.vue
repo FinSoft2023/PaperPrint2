@@ -104,21 +104,21 @@
           <div class="grid grid-cols-2 justify-start mt-6">
               <div class="items-start  text-center">
                 <tr>
-                <td class="text-left pl-16 ">(ลงชื่อ).................................................ผู้กู้
+                <td class="text-left pl-16 ">ผู้อนุมัติ.................................................
                 </td>
                 </tr>
                 <tr>
-                <td class="text-center pl-24">(<FiLL class="min-w-40" :data="`${data?.fname}  ${data?.lname}`"/>)
+                <td class="text-center pl-24">(<FiLL class="min-w-40" :data="`${data?.officerFName}  ${data?.officerLName}`"/>)
                 </td>
                 </tr>
                 
                 <tr>
-                <td class="text-left pl-16 ">(ลงชื่อ).................................................
+                <td class="text-left pl-16 ">ผู้บันทึก.................................................
                 </td>
                 </tr>
                 <tr>
                   <div class="text-center pl-24">
-                    (<FiLL class="min-w-40" :data="`${data?.fName}  ${data?.lName}`"/>)<br>
+                    (<FiLL class="min-w-40" :data="`${data?.fNameManager}  ${data?.lNameManager}`"/>)<br>
         </div><br>
                 
                 </tr>
@@ -127,11 +127,11 @@
               <div class="items-end ">
                 
                 <tr>
-                <td class="text-left pl-6 ">(ลงชื่อ).................................................พยาน(สมาชิก)
+                <td class="text-left pl-12 ">...........................................................
                 </td>
                 </tr>
                 <tr>
-                <td class="text-left pl-16">(................................................)
+                <td class="text-left pl-16">(<FiLL class="min-w-40" :data="`${data?.fName}  ${data?.lName}`"/>)
                 </td>
                 </tr><br>
 

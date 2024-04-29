@@ -11,9 +11,9 @@
             </div>
             <div class="flex flex-col items-end">
                 <div class=" p-2">
-                    <p>รับที่<BlankSpace class="min-w-32" /></p>
-                    <p>วันที่<BlankSpace class="min-w-32" /></p>
-                    <p>สัญญาที่กู้ที่<BlankSpace class="min-w-20" /></p>
+                    <p>รับที่ <FiLL :data="data?.location" class="min-w-40" /></p>
+                    <p>วันที่ <FiLL  class="text-base" :data="data?.dateReceived"date-format="short"  /></p>
+                    <p>สัญญาที่กู้ที่ <FiLL :data="data?.loanbook" class="min-w-20" /></p>
                 </div>
             </div> 
             <div></div>
@@ -32,19 +32,19 @@
         <p class="text-left mt-6">เรียน คณะกรรมการดำเนินการสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
         <div> 
             <p class="mt-2"><span class="ml-12">ข้าพเจ้า นาย/นาง/นางสาว </span> <FiLL class="min-w-60" :data="`${data?.fName}  ${data?.lName}`"/> อายุ <FiLL :data="data?.age" class="min-w-20" /> ปี สมาชิกเลขที่ <FiLL :data="data?.member" class="min-w-20" /> </p>
-            <p>เป็น <FiLLBox /> ข้าราชการ <FiLLBox /> พนักงาน <FiLLBox /> ลูกจ้างประจำ ตำแหน่ง <BlankSpace class="min-w-80" /></p>
+            <p>เป็น <FiLLBox :checked="data?.position" /> ข้าราชการ <FiLLBox /> พนักงาน <FiLLBox /> ลูกจ้างประจำ ตำแหน่ง <FiLL :data="data?.position" class="min-w-60" /></p>
             <p>สังกัด <FiLL :data="data?.affiliation" class="min-w-52" /> ตำบล <FiLL :data="data?.district" class="min-w-24" /> อำเภอ <FiLL :data="data?.district" class="min-w-28" />จังหวัด <FiLL :data="data?.province" class="min-w-36" />  </p>
             <p>เป็นสมาชิกแล้ว <FiLL :data="data?.alreadyMember" class="min-w-12" /> ปี อยู่บ้านเลขที่ <FiLL :data="data?.housenb" class="min-w-20" /> หมู่ที่ <FiLL :data="data?.group" class="min-w-12" /> ถนน <FiLL :data="data?.road" class="min-w-28" /> ตำบล <FiLL :data="data?.district" class="min-w-32" /></p>
             <p> อำเภอ <FiLL :data="data?.district" class="min-w-28" />จังหวัด <FiLL :data="data?.province" class="min-w-36" /> หมายเลขโทรศัพท์ <FiLL :data="data?.nbPhon" class="min-w-36" /> มีเงินได้รายเดือน <FiLL :data="data?.salary" class="min-w-28" /> บาท</p>
 
-            <p>สถานภาพสมรส <FiLLBox /> โสด, <FiLLBox /> สมรสแล้ว, <FiLLBox /> เป็นหม้าย กรณีสมรสแลัวคู่สมรสชื่อ <BlankSpace class="min-w-32" /> </p>
-            <p><BlankSpace class="min-w-32" />อาชีพ <BlankSpace class="min-w-32" /> มีเงินได้เดือนละ <BlankSpace class="min-w-32" /> บาท สถานที่ทำงาน  <BlankSpace class="min-w-32" /></p>
-            <p><BlankSpace class="min-w-32" /> หมายเลขโทรศัพท์ <BlankSpace class="min-w-32" /> </p>
+            <p>สถานภาพสมรส <FiLLBox /> โสด, <FiLLBox :checked="data?.Agency" /> สมรสแล้ว, <FiLLBox /> เป็นหม้าย กรณีสมรสแลัวคู่สมรสชื่อ <FiLL class="min-w-56" :data="`${data?.newfName}  ${data?.lName}`"/> </p>
+            <p><BlankSpace class="min-w-20" />อาชีพ <FiLL :data="data?.officerPOsition" class="min-w-28" /> มีเงินได้เดือนละ <FiLL :data="data?.salary" class="min-w-28" /> บาท สถานที่ทำงาน  <FiLL :data="data?.affiliation" class="min-w-28" /></p>
+            <p><BlankSpace class="min-w-20" /> หมายเลขโทรศัพท์ <FiLL :data="data?.nbPhon" class="min-w-36" /> </p>
 
             <p class="mt-2 ml-12"> ข้อ 1. วัตถุประสงค์ในการขอกู้ ( โปรดกาเครื่องหมาย ถูก ใน <FiLLBox /> ที่ต้องการ )</p>
             <div class="grid grid-cols-2 justify-center flex flex-col ml-8 ">
             <p class="mt-2 ml-16">(1) <FiLLBox /> เพื่อการเคหะ</p>
-            <p>(2) <FiLLBox /> เพื่อการลงทุนประกอบอาชีพ</p>
+            <p>(2) <FiLLBox :checked="data?.newnbAccount" /> เพื่อการลงทุนประกอบอาชีพ</p>
             <p class="ml-16">(3) <FiLLBox /> เพื่อซื้อรถยนต์หรือจักรยานยนต์</p>
             <p>(4) <FiLLBox /> เพื่อการไถ่ถอนจำนอง <BlankSpace class="min-w-32" /></p>
             </div>
@@ -54,21 +54,21 @@
 
             <p class="mt-2 ml-12"> ข้อ 2. ข้าพเจ้าได้แนบหลักฐานมาพร้อมนี้คือ</p>
             <div class="grid grid-cols-2 justify-center flex flex-col ml-8 ">
-            <p class="ml-16">(1) <FiLLBox /> สำเนาโดนดที่ดินจำนวน 2 ชุด</p>
-            <p>(2) <FiLLBox /> แผนที่สังเขปทางไปที่ดิน</p>
-            <p class="ml-16">(3) <FiLLBox /> สำเนาหนังสือจะซื้อจะขายอาคารและที่ดิน </p>
-            <p>(4) <FiLLBox /> สำเนาหนังสืออนุญาตสร้างหรือต่อเติมอาคาร</p>
-            <p class="ml-16">(5) <FiLLBox /> สำเนาบัตรประจำตัวผู้ค้ำประกัน </p>
-            <p>(6) <FiLLBox /> หนังสือรับรองประเมินราคาที่ดินจากทางราชการ</p>
+            <p class="ml-16">(1) <FiLLBox :checked="data?.newnbAccount" /> สำเนาโดนดที่ดินจำนวน 2 ชุด</p>
+            <p>(2) <FiLLBox :checked="data?.newnbAccount" /> แผนที่สังเขปทางไปที่ดิน</p>
+            <p class="ml-16">(3) <FiLLBox :checked="data?.newnbAccount" /> สำเนาหนังสือจะซื้อจะขายอาคารและที่ดิน </p>
+            <p>(4) <FiLLBox :checked="data?.newnbAccount" /> สำเนาหนังสืออนุญาตสร้างหรือต่อเติมอาคาร</p>
+            <p class="ml-16">(5) <FiLLBox :checked="data?.newnbAccount" /> สำเนาบัตรประจำตัวผู้ค้ำประกัน </p>
+            <p>(6) <FiLLBox :checked="data?.newnbAccount" /> หนังสือรับรองประเมินราคาที่ดินจากทางราชการ</p>
             </div>
             <div class="grid grid-cols-1 justify-center flex flex-col ml-8 ">
-                <p class="ml-16">(7) <FiLLBox /> สำเนาบัตรประจำตัวผู้กู้ คู่สมรสผู้กู้ สำนาทะเบียนบ้านผู้กู้ และทะเบียนสมรสหรือทะเบียนหย่าผู้กู้</p>
+                <p class="ml-16">(7) <FiLLBox :checked="data?.newnbAccount" /> สำเนาบัตรประจำตัวผู้กู้ คู่สมรสผู้กู้ สำนาทะเบียนบ้านผู้กู้ และทะเบียนสมรสหรือทะเบียนหย่าผู้กู้</p>
             </div>
             <div class="grid grid-cols-1 justify-center flex flex-col ml-8 ">
-                <p class="ml-16">(8) <FiLLBox /> บัตรประจำตัวเจ้าของที่ดินและคู่สมรส พร้อมทะเบียนบ้าน และทะเบียนสมรส หรือทะเบียนหย่าของเจ้าของที่ดิน (กรณีที่ดินของบุคคลอื่น) </p>
+                <p class="ml-16">(8) <FiLLBox :checked="data?.newnbAccount" /> บัตรประจำตัวเจ้าของที่ดินและคู่สมรส พร้อมทะเบียนบ้าน และทะเบียนสมรส หรือทะเบียนหย่าของเจ้าของที่ดิน (กรณีที่ดินของบุคคลอื่น) </p>
             </div>
             <div class="grid grid-cols-1 justify-center flex flex-col ml-8 ">
-                <p class="ml-16">(9) <FiLLBox /> กรณีไถ่ตอนจำนองให้แจ้งหนี้ค้างหรือมีเอกสารแสดงจำนวนนี้ที่ค้างชำระและสำเนาสัญญาจำนอง </p>
+                <p class="ml-16">(9) <FiLLBox :checked="data?.newnbAccount" /> กรณีไถ่ตอนจำนองให้แจ้งหนี้ค้างหรือมีเอกสารแสดงจำนวนนี้ที่ค้างชำระและสำเนาสัญญาจำนอง </p>
             </div>
             <div class="grid grid-cols-1 justify-center flex flex-col ml-8 ">
                 <p class="ml-16">(10) <FiLLBox /> อื่น ๆ <BlankSpace class="min-w-60" /></p>
@@ -80,7 +80,7 @@
             <p class="mt-4 ml-12">ข้อ 4. นอกจากการค้ำประกันด้วยเงินค่าหุ้น ซึ่งข้พเจ้ามือยู่ในสหกรณ์และเงินสิทธิเรียกร้องจากสหกรณ์ฯ แล้ว </p>
             <p>ข้าพเจ้า ขอเสนอหลักประกันในการขอกู้เงินพิเศษดังนี้อีกคือ</p>
             <div class="grid grid-cols-1 justify-center flex flex-col ml-8 ">
-            <p class=" ml-16">(1) <FiLLBox /> ที่ดินอันปลอดภาระจำนองรายอื่น เพื่อจำนองเป็นประกัน</p>
+            <p class=" ml-16">(1) <FiLLBox :checked="data?.newnbAccount" /> ที่ดินอันปลอดภาระจำนองรายอื่น เพื่อจำนองเป็นประกัน</p>
             
             </div>
             
@@ -94,19 +94,19 @@
             
             <div class="grid grid-cols-1 justify-center flex flex-col ml-8 mt-4">
             
-            <p class=" ml-16">(2) <FiLLBox /> ที่ดินพร้อมสิ่งปถูกสร้างบนที่ดิน (แนบหลักฐานที่ดินและสำเนาทะเบียนบ้าน)</p>
-            <p class=" ml-16">(3) <FiLLBox /> พันธบัตรรัฐบาล หรือเงินฝากในสหกรณ์ (ต้องแนบสำเนาเอกสารดังกล่าวด้วย)</p>
-            <p class=" ml-16">(4) <FiLLBox /> บุคคลค้ำประกัน</p>
+            <p class=" ml-16">(2) <FiLLBox :checked="data?.newnbAccount" /> ที่ดินพร้อมสิ่งปถูกสร้างบนที่ดิน (แนบหลักฐานที่ดินและสำเนาทะเบียนบ้าน)</p>
+            <p class=" ml-16">(3) <FiLLBox :checked="data?.newnbAccount" /> พันธบัตรรัฐบาล หรือเงินฝากในสหกรณ์ (ต้องแนบสำเนาเอกสารดังกล่าวด้วย)</p>
+            <p class=" ml-16">(4) <FiLLBox :checked="data?.newnbAccount" /> บุคคลค้ำประกัน</p>
             </div>
-            <p><span class="ml-20">(ก) ชื่อ </span><FiLL class="min-w-80" :data="`${data?.fName}  ${data?.lName}`"/> สมาชิกเลขทะเบียน <FiLL :data="data?.member" class="min-w-40" /></p>
-            <p>ตำแหน่ง <FiLL :data="data?.position" class="min-w-40" /> สังกัด <FiLL :data="data?.affiliation" class="min-w-52" /> กลุ่มงาน <FiLL :data="data?.Agency" class="min-w-52" /></p>
+            <p><span class="ml-20">(ก) ชื่อ </span><FiLL class="min-w-80" :data="`${data?.officerLName}  ${data?.lName}`"/> สมาชิกเลขทะเบียน <FiLL :data="data?.group" class="min-w-40" /></p>
+            <p>ตำแหน่ง <FiLL :data="data?.officerPOsition" class="min-w-40" /> สังกัด <FiLL :data="data?.affiliation" class="min-w-52" /> กลุ่มงาน <FiLL :data="data?.Agency" class="min-w-52" /></p>
             <p>อำเภอ <FiLL :data="data?.district" class="min-w-52" /> จังหวัดศรีสะเกษ เงินได้รายเดือน <FiLL :data="data?.salary" class="min-w-48" /> บาท</p>
-            <p>ลายมือชื่อผู้ค้ำประกัน <BlankSpace class="min-w-60" /></p>
+            <p class="mt-2">ลายมือชื่อผู้ค้ำประกัน <BlankSpace class="min-w-60" /></p>
 
-            <p><span class="ml-20">(ข) ชื่อ </span><FiLL class="min-w-80" :data="`${data?.fName}  ${data?.lName}`"/> สมาชิกเลขทะเบียน <FiLL :data="data?.member" class="min-w-40" /></p>
+            <p><span class="ml-20">(ข) ชื่อ </span><FiLL class="min-w-80" :data="`${data?.ofFname}  ${data?.newlName}`"/> สมาชิกเลขทะเบียน <FiLL :data="data?.nb" class="min-w-40" /></p>
             <p>ตำแหน่ง <FiLL :data="data?.position" class="min-w-40" /> สังกัด <FiLL :data="data?.affiliation" class="min-w-52" /> กลุ่มงาน <FiLL :data="data?.Agency" class="min-w-52" /></p>
             <p>อำเภอ <FiLL :data="data?.district" class="min-w-52" /> จังหวัดศรีสะเกษ เงินได้รายเดือน <FiLL :data="data?.salary" class="min-w-48" /> บาท</p>
-            <p>ลายมือชื่อผู้ค้ำประกัน <BlankSpace class="min-w-60" /></p>
+            <p class="mt-2">ลายมือชื่อผู้ค้ำประกัน <BlankSpace class="min-w-60" /></p>
 
             <p class="mt-2"><span class="ml-12">ข้อ 5. </span> ข้าพเจ้าขอรับรองว่า ข้อความข้างตันเป็นความจริงทุกประการ และข้าพเจ้าจะให้ความร่วมมือแก่คณะกรรมการ
                 ดำเนินการหรือบุคคลที่สหกรณ์มอบหมายให้ตรวจสอบ และทำรายงานเกี่ยวกับคำขอกู้เงินพิเศษรายนี้</p>
@@ -137,7 +137,7 @@
                     <p class="mt-2">วันที่ <FiLL  class="text-base" :data="data?.dateReceived"date-format="full"  /></p>
                 </div>
             </div> 
-            <p class="mt-2"><span class="ml-16 "> ข้าพเจ้า นาย/นาง <FiLL class="min-w-56" :data="`${data?.fName}  ${data?.lName}`"/> เป็นคู่สมรสของ นาย/นาง <FiLL class="min-w-52" :data="`${data?.fName}  ${data?.lName}`"/> </span> ได้ให้คำยินยอมแก่ นาย/นาง <FiLL class="min-w-60" :data="`${data?.fName}  ${data?.lName}`"/> ซึ่งเป็นสามี/ภรรยา ของข้าพเจ้า ทำการกู้เงินพิเศษของ
+            <p class="mt-2"><span class="ml-16 "> ข้าพเจ้า นาย/นาง <FiLL class="min-w-56" :data="`${data?.newfName}  ${data?.lName}`"/> เป็นคู่สมรสของ นาย/นาง <FiLL class="min-w-52" :data="`${data?.fName}  ${data?.lName}`"/> </span> ได้ให้คำยินยอมแก่ นาย/นาง <FiLL class="min-w-60" :data="`${data?.fName}  ${data?.lName}`"/> ซึ่งเป็นสามี/ภรรยา ของข้าพเจ้า ทำการกู้เงินพิเศษของ
                 สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด ตามคำขอกู้ดังกล่าวแล้วครั้งนี้ได้
             </p>
             <div class="grid grid-cols-2 justify-center">
@@ -151,7 +151,7 @@
                         </span>
                     </p>
                     <p class="mr-20 text-center">
-                        (<FiLL class="min-w-56" :data="`${data?.fName}  ${data?.lName}`"/>)
+                        (<FiLL class="min-w-56" :data="`${data?.newfName}  ${data?.lName}`"/>)
                     </p>
                     <p class="mt-6 ">
                         <span class="mr-10">
@@ -179,9 +179,9 @@
                     <p>คำรับรองของผู้บังคับบัญชา</p>
                 </div>
             </div>  
-            <p class="mt-2"><span class="ml-12">ข้าพเจ้า </span> <FiLL class="min-w-80" :data="`${data?.fName}  ${data?.lName}`"/> ตำแหน่ง <FiLL :data="data?.position" class="min-w-60" /> </p>
+            <p class="mt-2"><span class="ml-12">ข้าพเจ้า </span><FiLL class="min-w-80" :data="`${data?.officerLName}  ${data?.newlName}`"/>  ตำแหน่ง <FiLL :data="data?.position" class="min-w-60" /> </p>
             <p>สังกัด <FiLL :data="data?.affiliation" class="min-w-80" /> อำเภอ <FiLL :data="data?.district" class="min-w-52" />จังหวัด ศรีสะเกษ</p>
-            <p>ขอรับรองว่าตามที่ <BlankSpace class="min-w-44" /> รับราชการหรือทำงานประจำในตำแหน่ง <FiLL :data="data?.position" class="min-w-44" /> </p>
+            <p>ขอรับรองว่าตามที่ <FiLL class="min-w-56" :data="`${data?.fName}  ${data?.lName}`"/> รับราชการหรือทำงานประจำในตำแหน่ง <FiLL :data="data?.position" class="min-w-44" /> </p>
             <p>สังกัด <FiLL :data="data?.affiliation" class="min-w-80" /> ได้รับเงินได้รายเดือน <FiLL :data="data?.salary" class="min-w-48" /> บาท</p>
             <p>ขอกู้เงินจากสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด ตามคำขอกู้ข้างต้นจำนวนเงิน <FiLL :data="data?.salary" class="min-w-32" /> บาท</p>
             <p>( <MoneyText :data="data?.monthlyIncome"/> ) นั้น ข้าพเจ้าทราบและได้สอบถามผู้ขอกู้แล้ว เห็นว่ามีความจำเป็นจริงควรให้กู้ตามความประสงค์</p>
@@ -193,7 +193,7 @@
                         </span>
                     </p>
                     <p class="mr-20 text-center">
-                        (<BlankSpace class="min-w-56" />)
+                        ( <FiLL class="min-w-56" :data="`${data?.officerLName}  ${data?.newlName}`"/> ) 
                     </p>
             </div>  
             <hr class="mt-12 my-4 border-b-2 border-black">
@@ -212,36 +212,52 @@
             <div class="flex flex-col items-end">
                 <p class="mt-14 ">
                         <span class="mr-20">
-                            ลงชื่อ<BlankSpace class="min-w-56" />พนักงานสหกรณ์
+                            ลงชื่อ <FiLL class="min-w-56" :data="`${data?.officerFName}  ${data?.officerLName}`"/>  พนักงานสหกรณ์
                         </span>
                     </p>
-                    <p class="mr-44 text-center">
-                        <BlankSpace class="min-w-20" />/<BlankSpace class="min-w-20" />/<BlankSpace class="min-w-20" />
+                    <p class="mr-52 text-center">
+                        <FiLL  class="text-base" :data="data?.dateReceived"date-format="full"  />
                     </p>
             </div>  
             
             <hr class="mt-12 my-4 border-b-2 border-black">
+
             <div class="mt-4"> 
                 <div class="text-xl text-center font-bold underline">
                     <p>บันทึกการพิจารณาของคณะกรรมการดำเนินการ</p>
                 </div>
-            </div> 
-            <p>ในการประชุมคณะกรรมการประจำเดือนครั้งที่ เมื่อวันที่ เดือน พ.ศ.
-                มีคณะกรรมการเข้าร่วมพิจารณาคำขอกู้พิเศษรายนี้จำนวน คนที่ประชุมลงมติให้กู้โดยคะแนนเสียง ต่อ
-                จึงเป็นอันว่า</p>
+            </div>
+            <p class="ml-12 mt-4">ในการประชุมคณะกรรมการประจำเดือนครั้งที่ เมื่อวันที่ เดือน พ.ศ.</p>
+            <p>มีคณะกรรมการเข้าร่วมพิจารณาคำขอกู้พิเศษรายนี้จำนวน คนที่ประชุมลงมติให้กู้โดยคะแนนเสียง ต่อ</p>
+            <p>จึงเป็นอันว่า</p>
+           
             <div class="flex flex-col items-end">
                 <p class="mt-14 ">
                     <span class="mr-20">
-                        ลงชื่อ<BlankSpace class="min-w-56" />เลขานุการ
+                        ลงชื่อ <FiLL class="min-w-56" :data="`${data?.officerFName}  ${data?.officerLName}`"/> เลขานุการ
                     </span>
                 </p>
-                <p class="mr-44 text-center">
-                    <BlankSpace class="min-w-20" />/<BlankSpace class="min-w-20" />/<BlankSpace class="min-w-20" />
+                <p class="mr-48 text-center">
+                    <FiLL  class="text-base" :data="data?.dateReceived"date-format="full"  />
                 </p>
             </div> 
             
         </MorePaperDoc>
         <MorePaperDoc> <!-- หน้า 4 -->
+            <div class="mt-4"> 
+                <div class="text-xl text-center font-bold underline">
+                    <p>แผนที่พอสังเขปที่ดิน และทางไปที่ดินที่ทำเป็นหลักประกัน</p>
+                </div>
+            </div>  
+
+  <div class="flex justify-center items-center h-full">
+    <div class="grid grid-cols-1 grid-rows-1 w-full h-full  border border-b-2 border-black mt-2">
+      <!-- Content Here -->&nbsp;
+    </div>
+  </div>
+
+
+
         </MorePaperDoc>
     </main>
 </template>

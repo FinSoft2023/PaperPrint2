@@ -70,6 +70,7 @@ export default defineEventHandler(async (event) => {
       lMarryOwnerCollateral2:"ปันสุข",            //นามสกุลคู่สมรสเจ้าของหลักทรัพคนที่ 2
       fNameManager:"สุริยัน",                 //ชื่อผู้จัดการ
       lNameManager:"แผดเผา",                 //นามสกุลผู้จัดการ
+      email:"oo@gmail.com",               //อีเมล์
       
 
 

@@ -30,7 +30,7 @@
                         <!-- กู้สามัญทั่วไป general2  -->
 
                         <div class="grid grid-cols-3 grid-rows-2 justify-center h-10">
-              <div class="items-start mt-4">
+              <div class="items-start ">
                 <div class="border-2 border-black p-1 ">
                   <p class="text-xs font-semibold tracking-tighter">โปรดเขียนตัวบรรจงและกรอกข้อมูลให้ครบทุกช่อง
                   </p>
@@ -56,16 +56,16 @@
              
                 </div>
 
-              <div class="flex flex-col items-center row-span-2 mt-48">
+              <div class="flex flex-col items-center row-span-2 mt-40">
                           <img class="w-[100px] h-auto"
                             src="https://cypphcoop.com/mediafiles/data/sorsortortor.png"
                             alt="Logo" />
                             
               </div>
 
-              <div class="items-start mt-2 mr-14">
+              <div class="items-start  mr-14">
                 <p class="text-end mr-2  font-semibold">สส.ชสอ. ส.1/1 (สามัญ)</p>
-                <div class="border-2 border-black p-1 mt-4">
+                <div class="border-2 border-black p-1 mt-1">
                   <p class="text-xs font-semibold tracking-tighter text-center">สมัครผ่าน
                   </p>
                 </div>
@@ -88,7 +88,7 @@
 
             </div>
             <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>
-      <p class="text-lg text-center font-semibold mt-16 "> ใบสมัครสมาชิก <span class="underline underline-offset-2">ประเภทสามัญ</span><br>
+      <p class="text-lg text-center font-semibold mt-6 "> ใบสมัครสมาชิก <span class="underline underline-offset-2">ประเภทสามัญ</span><br>
       </p>
       <p class="text-base text-center font-semibold ">สมาคมฌาปนกิจสงเคราะห์สหกรณ์สมาชิกของชุมนุมสหกรณ์ออมทรัพย์แห่งประเทศไทย (สส.ชสอ.)</p>
       <div class="mt-2 mr-14">
@@ -97,38 +97,38 @@
        <p  class="text-base text-start font-semibold">(1) <span class="underline underline-offset-2">ข้อมูลสมาชิก</span> :</p>
      <p class="text-base mt-1 "> ข้าพเจ้า (นางสาว/นาง/นาย) 
               <FiLL class="min-w-60" :data="`${data?.prefix} ${data?.fName}  ${data?.lName}`"/> วัน/เดือน/ปี/ เกิด <FiLL  class="min-w-40 " :data="data?.dateReceived" date-format="full" />
-            อายุ <FiLL :data="data?.age" class="min-w-20" /> ปี เลขประจำตัวประชาชน <FiLL :data="data?.idcard" class="min-w-60" /> เพศ <FiLLBox /> ชาย <FiLLBox /> หญิง
+            อายุ <FiLL :data="data?.age" class="min-w-20" /> ปี เลขประจำตัวประชาชน <FiLL :data="data?.idcard" class="min-w-60" /> เพศ <FiLLBox  :checked="data?.fName"  /> ชาย <FiLLBox /> หญิง
           </p> 
-          <p>สถานภาพ <FiLLBox /> โสด <FiLLBox /> สมรส คู่สมรสชื่อ <FiLL class="min-w-96" :data="`${data?.newprefix} ${data?.newfName}  ${data?.lName}`"/> <FiLLBox /> หย่า หรือ หม้าย
-            เป็นสมาชิกสามัญของสหกรณ์ออมทรัพย์ <FiLL :data="data?.affiliation" class="min-w-52" /> เลขทะเบียนสมาชิก <FiLL :data="data?.member" class="min-w-20" /> โทรศัพท์มือถือ <FiLL :data="data?.nbPhon" class="min-w-24" />
-            โทรศัพท์บ้าน <FiLL :data="data?.nbPhon" class="min-w-24" /> โทรศัพท์ที่ทำงาน <FiLL :data="data?.nbPhon" class="min-w-24" /> Email <FiLL :data="data?.email" class="min-w-24" />
+          <p>สถานภาพ <FiLLBox /> โสด <FiLLBox  :checked="data?.fName"  /> สมรส คู่สมรสชื่อ <FiLL class="min-w-96" :data="`${data?.newprefix} ${data?.newfName}  ${data?.lName}`"/> <FiLLBox /> หย่า หรือ หม้าย
+            เป็นสมาชิกสามัญของสหกรณ์ออมทรัพย์ <FiLL :data="data?.savings" class="min-w-52" /> เลขทะเบียนสมาชิก <FiLL :data="data?.member" class="min-w-20" /> โทรศัพท์มือถือ <FiLL :data="data?.nbPhon" class="min-w-36" />
+            โทรศัพท์บ้าน <FiLL :data="data?.nbPhon" class="min-w-32" /> โทรศัพท์ที่ทำงาน <FiLL :data="data?.nbPhon" class="min-w-32" /> Email <FiLL :data="data?.email" class="min-w-36" />
           </p>
-          <p  class="text-base text-start font-semibold">(2) <span class="underline underline-offset-2">กลุ่มวิชาชีพของศูนย์ประสานงานดันสังกัย</span> :</p>
-          <p class="ml-6"><FiLLBox /> ครู <FiLLBox /> สาธารณสุข <FiLLBox /> ทหาร <FiLLBox /> ตำรวจ <FiLLBox /> ราชการ <FiLLBox /> รัฐวิสาหกิจ <FiLLBox /> ประกอบการ </p> 
-          <p class="mt-2">สังกัด <FiLL :data="data?.age" class="min-w-24" /> หน่วยงาน <FiLL :data="data?.age" class="min-w-24" /> ดำรงตำเเหน่ง <FiLL :data="data?.age" class="min-w-24" /></p>
+          <p  class="text-base text-start font-semibold">(2) <span class="underline underline-offset-2">กลุ่มวิชาชีพของศูนย์ประสานงานต้นสังกัด</span> :</p>
+          <p class="ml-6"><FiLLBox /> ครู <FiLLBox /> สาธารณสุข <FiLLBox /> ทหาร <FiLLBox /> ตำรวจ <FiLLBox /> ราชการ <FiLLBox  :checked="data?.fName"  /> รัฐวิสาหกิจ <FiLLBox /> ประกอบการ </p> 
+          <p class="mt-1">สังกัด <FiLL :data="data?.affiliation" class="min-w-52" /> หน่วยงาน <FiLL :data="data?.agency" class="min-w-52" /> ดำรงตำเเหน่ง <FiLL :data="data?.position" class="min-w-24" /></p>
 
           <p  class="text-base text-start font-semibold">(3) <span class="underline underline-offset-2"> ที่อยู่ตามทะเบียนบ้าน </span> :</p>
-          <p class="mt-2">บ้านเลขที่ <FiLL :data="data?.age" class="min-w-24" /> หมู่ที่ <FiLL :data="data?.age" class="min-w-24" /> ซอย <FiLL :data="data?.age" class="min-w-24" /> ถนน <FiLL :data="data?.age" class="min-w-24" />
-            ตำบล/แขวง <FiLL :data="data?.age" class="min-w-24" /> อำเภอ/เขต <FiLL :data="data?.age" class="min-w-24" /> จังหวัด <FiLL :data="data?.age" class="min-w-24" /> รหัสไปรษณีย์ <FiLL :data="data?.age" class="min-w-24" />
+          <p class="mt-1">บ้านเลขที่ <FiLL :data="data?.housenb" class="min-w-24" /> หมู่ที่ <FiLL :data="data?.group" class="min-w-20" /> ซอย <FiLL :data="data?.group" class="min-w-20" /> ถนน <FiLL :data="data?.road" class="min-w-24" />
+            ตำบล/แขวง <FiLL :data="data?.district" class="min-w-24" /> อำเภอ/เขต <FiLL :data="data?.district" class="min-w-24" /> จังหวัด <FiLL :data="data?.province" class="min-w-28" /> รหัสไปรษณีย์ <FiLL :data="data?.zipcode" class="min-w-24" />
           </p>
           <p  class="text-base text-start font-semibold">(4) <span class="underline underline-offset-2"> ที่อยู่ปัจจุบันที่สามารถติดต่อได้  </span> :</p>
-          <p class="mt-2">บ้านเลขที่ <FiLL :data="data?.age" class="min-w-24" /> หมู่ที่ <FiLL :data="data?.age" class="min-w-24" /> ซอย <FiLL :data="data?.age" class="min-w-24" /> ถนน <FiLL :data="data?.age" class="min-w-24" />
-            ตำบล/แขวง <FiLL :data="data?.age" class="min-w-24" /> อำเภอ/เขต <FiLL :data="data?.age" class="min-w-24" /> จังหวัด <FiLL :data="data?.age" class="min-w-24" /> รหัสไปรษณีย์ <FiLL :data="data?.age" class="min-w-24" />
+          <p class="mt-1">บ้านเลขที่ <FiLL :data="data?.housenb" class="min-w-24" /> หมู่ที่ <FiLL :data="data?.group" class="min-w-20" /> ซอย <FiLL :data="data?.group" class="min-w-20" /> ถนน <FiLL :data="data?.road" class="min-w-24" />
+            ตำบล/แขวง <FiLL :data="data?.district" class="min-w-24" /> อำเภอ/เขต <FiLL :data="data?.district" class="min-w-24" /> จังหวัด <FiLL :data="data?.province" class="min-w-28" /> รหัสไปรษณีย์ <FiLL :data="data?.zipcode" class="min-w-24" />
           </p>
           <p  class="text-base text-start font-semibold">(5) <span class="underline underline-offset-2"> การชำระเงิน  </span> :</p>
-          <p class="mt-2"><span class="ml-14"> (5.1) การชำระเงินค่าสมัครสมาชิกครั้งแรก จำนวน 4,840 บาท ดังนี้ </span></p>
-          <p class="ml-24"><FiLLBox /> ชำระเป็นเงินสด <span class="ml-28"> <FiLLBox /> ชำระจากการเพิ่มเงินในการกู้สามัญ/กู้ฉุกเฉิน </span> </p>
-          <p class="mt-2"><span class="ml-14"> (5.2) การชำระเงินสงเคราะห์ล่วงหน้ารายปีครั้งต่อไป โดยให้สหกรณ์หัก ดังนี้ </span></p>
+          <p ><span class="ml-14"> (5.1) การชำระเงินค่าสมัครสมาชิกครั้งแรก จำนวน 4,840 บาท ดังนี้ </span></p>
+          <p class="ml-24"><FiLLBox  :checked="data?.fName"  /> ชำระเป็นเงินสด <span class="ml-28"> <FiLLBox /> ชำระจากการเพิ่มเงินในการกู้สามัญ/กู้ฉุกเฉิน </span> </p>
+          <p ><span class="ml-14"> (5.2) การชำระเงินสงเคราะห์ล่วงหน้ารายปีครั้งต่อไป โดยให้สหกรณ์หัก ดังนี้ </span></p>
           <p class="ml-24"><FiLLBox /> ชำระเป็นรายเดือน (12 งวด) <span class="ml-9"> <FiLLBox /> ชำระจากเงินปันผล,เฉลี่ยคืน </span> </p>
           <p class="ml-24"><FiLLBox /> ชำระเป็นราย 3 เดือน (4 งวด) <span class="ml-7"> <FiLLBox /> ชำระจากการเพิ่มเงินในการกู้สามัญ/กู้ฉุกเฉิน </span> </p>
-          <p class="ml-24"><FiLLBox /> ชำระเป็นราย 6 เดือน (2 งวด) <span class="ml-7"> <FiLLBox /> ชำระจากการเก็บเงินล่วงหน้า จากเงินกู้สามัญ </span> </p>
+          <p class="ml-24"><FiLLBox  :checked="data?.fName"  /> ชำระเป็นราย 6 เดือน (2 งวด) <span class="ml-7"> <FiLLBox /> ชำระจากการเก็บเงินล่วงหน้า จากเงินกู้สามัญ </span> </p>
           <p class="ml-24"><FiLLBox /> ชำระจากบัญชีโครงการฝากเพื่อสวัสดิการ/เงินฝากในสหกรณ์สมาชิก  </p>
           <p class="mt-2 text-base text-start font-semibold"><span class="ml-14"> ** ข้าพเจ้า </span>ได้รับทราบ และเข้าใจวัตถุประสงค์ของข้อบังคับ สมาคมณาปนกิจสงเคราะห์สหกรณ์สมาชิกของชุมนุมสหกรณ์
             ออมทรัพย์แห่งประเทศไทยแล้ว มีความประสงค์สมัครเป็นสมาชิก และยินยอมปฏิบัติตามข้อบังคับ และเงื่อนไขดังกล่าวทุกประการ **</p>
           
  
-          <p class="text-base pl-96 ">ลงชื่อ...........................................................ผู้สมัคร </p>
-          <p class="text-base pl-96 ">( <FiLL class="min-w-52" :data="`${data?.prefix} ${data?.fName}  ${data?.lName}`"/> )</p>
+          <p class="text-base text-end mr-7 ">ลงชื่อ...........................................................ผู้สมัคร </p>
+          <p class="text-base text-end mr-16 ">( <FiLL class="min-w-52" :data="`${data?.prefix} ${data?.fName}  ${data?.lName}`"/> )</p>
           </div>
 
         </MorePaperDoc>
@@ -143,14 +143,14 @@
         </div>
         <div class="grid justify-items-start text-pretty text-base mt-1">
           <p><span class="ml-11">ตรวจสอบแล้วขอรับรองว่า </span>
-            นาย/นาง/นางสาว <FiLL class="min-w-36" :data="`${data?.fName}  ${data?.lName}`"/> เป็นผู้มีคุณสมบัติ
+            นาย/นาง/นางสาว <FiLL class="min-w-52" :data="`${data?.prefix} ${data?.fName}  ${data?.lName}`"/> เป็นผู้มีคุณสมบัติ
             ในการสมัครสมาชิก สส.ชสอ. รวมทั้งได้แบบเอกสารหลักฐานประกอบการสมัคร และชำระเงินค่าสมัคร เงินบำรุง และ
             เงินค่าสงเคราะห์ล่วงหน้าครบถ้วน ตามข้อบังคับ ระเบียบ และประกาศ สส.ชสอ. เรื่อง การรับสมัครสมาชิก สส.ชสอ. หรือ
             การเปิดรับสมัครเป็นกรณีพิเศษ แล้วแต่กรณี
           </p>
         </div>
   
-        <div class="grid justify-items-center mt-4">
+        <div class="grid justify-items-center">
         <p class="pl-72">ลงชื่อ............................................................</p>
         <div class="pl-80">
    (<FiLL class="min-w-52" :data="`${data?.fName}  ${data?.lName}`"/> ) 
@@ -160,10 +160,10 @@
  <div class=" grid justify-items-center mt-2">
             <p class="mt-2 font-medium font-bold text-xl">สำหรับคณะกรรมการศูนย์ประสานงาน</p>
         </div>  
-        <div class="grid justify-items-start  mt-4">
+        <div class="grid justify-items-start  mt-2">
           <p>เรียน <span class=" ml-2"> นายก สส.ชสอ.</span></p>
           <p><span class="ml-11">ตรวจสอบแล้วขอรับรองว่า สมาชิกมีคุณสมบัติครบถูกต้อง </span></p>
-          <p><span class="ml-11"><FiLLBox /> เห็นควรรับเป็นสมาชิก สส.ชสอ. </span></p>
+          <p><span class="ml-11"><FiLLBox  :checked="data?.fName"  /> เห็นควรรับเป็นสมาชิก สส.ชสอ. </span></p>
           <p><span class="ml-11"><FiLLBox /> ไม่ควรรับเป็นสมาชิก สส.ชสอ. เนื่องจาก........................................................................................................................</span></p>
         </div>
         <div class="grid grid-cols-3 grid-rows-2 justify-center h-1 ml-14">
@@ -187,7 +187,7 @@
  <br> 
 
         <div class="border-solid border-2 border-slate-950 "></div>
-        <div class=" grid justify-items-center mt-6">
+        <div class=" grid justify-items-center mt-4">
             <p class=" font-medium font-bold text-xl">สำหรับเจ้าหน้าที่ สส.ชสอ.</p>
         </div>
         <div class="grid justify-items-start text-pretty text-base mt-2">
@@ -208,8 +208,8 @@
             <p class=" font-medium font-bold text-xl">สำหรับคณะกรรมการ สส.ชสอ.</p>
         </div>
         <div class="grid justify-items-start  mt-4">
-          <p class=" font-semibold ">คำสั่ง <FiLLBox /> <span class="font-normal">อนุมัติรับเข้าเป็นสมาชิกตั้งแต่วันที่ <FiLL :data="data?.dateReceived" date-format="full" class="min-w-60"/></span></p>
-          <p><span class="ml-11">(คณะกรรมการ...............................คราวประชุมครั้งที่.............เมื่อวันที่ <FiLL :data="data?.dateReceived" date-format="full" class="min-w-60"/> ) </span></p>
+          <p class=" font-semibold ">คำสั่ง <FiLLBox  :checked="data?.fName"  /> <span class="font-normal">อนุมัติรับเข้าเป็นสมาชิกตั้งแต่วันที่ <FiLL :data="data?.dateReceived" date-format="full" class="min-w-60"/></span></p>
+          <p><span class="ml-11">(คณะกรรมการ <FiLL :data="data?.agency" class="min-w-44" /> คราวประชุมครั้งที่ <FiLL :data="data?.paidInstallments" class="min-w-14" /> เมื่อวันที่ <FiLL :data="data?.dateReceived" date-format="full" class="min-w-40"/> ) </span></p>
           <p><span class="ml-11"><FiLLBox /> ไม่อนุมัติ เนื่องจาก........................................................................................................................</span></p>
         </div>
         <div class="grid grid-cols-3 grid-rows-2 justify-center h-1 ml-14">

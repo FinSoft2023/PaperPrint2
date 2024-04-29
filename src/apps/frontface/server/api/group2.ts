@@ -105,7 +105,7 @@ export default defineEventHandler(async (event) => {
             {collateral: "ทอง 1 บาท"},
          ], //หลักทรัพย์คํ้าประกัน
          repaymentPlan: [
-            { fn: "นาตาชา ", ln: "สุขสำราญ ", status: 'คู่สมรส' , share: 40  },
+            { fn: "สารีกา ", ln: "สุขสำราญ ", status: 'คู่สมรส' , share: 40  },
             { fn: "เจริญดี", ln: "สุขสำราญ ", status: 'บุตร' , share: 60 },
             //เอาไปใส่หน้าที่ 6
             // ชื่อนามสกุล                เกี่ยวข้อง         ส่วนเเบ่งเงิน         

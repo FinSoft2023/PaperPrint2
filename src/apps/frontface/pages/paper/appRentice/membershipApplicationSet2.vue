@@ -290,7 +290,7 @@
             <div class="text-center text-base mr-4">ลงชื่อ..................................................................</div>
             <div ></div>
             <div class="text-center mt-2">
-              (.......................................................................)
+              (<FiLL class="min-w-52" :data="`${data?.fName}  ${data?.lName}`"/>)
               <p class="text-center text-base mt-2">
                 (ผู้สมัครสมาชิก สสธท.)
               </p>
@@ -302,9 +302,9 @@
                   <div ></div>
             <div class="text-start text-base mr-4">ลงชื่อ..................................................................</div>
             <div ></div>
-            <div class="text-start ml-4 mt-2">
-              (.......................................................................)
-              <p class="text-start text-base mt-2 ml-5">
+            <div class="text-start ml-8 mt-2">
+              (<FiLL class="min-w-52" :data="`${data?.officerFName}  ${data?.officerLName}`"/>)
+              <p class="text-start text-base mt-2 ml-1">
                 พยาน/เจ้าหน้าที่ศูนย์ประสานงาน
               </p>
             </div>
@@ -314,7 +314,7 @@
             <div class="text-center text-base mr-4">ลงชื่อ..................................................................</div>
             <div ></div>
             <div class="text-center mt-2 ">
-              (.......................................................................)
+              (<FiLL class="min-w-52" :data="`${data?.fNameWitness1}  ${data?.lNameWitness1}`"/>)
               <p class="text-center text-base mt-2">
                 พยาน/ผู้มีชื่อรับเงินสงเคราะห์
               </p>
@@ -380,10 +380,10 @@
 
           <div class="grid justify-items-start mt-8 text-pretty text-base p-1 ">
             <p><span class="ml-20">1. สถานภาพ</span></p>
-            <p class="ml-20"><FiLLBox /> โสด <span class="ml-10"><FiLLBox  :checked="data?.fName"  />สมรส คู่สมรสชื่อ </span><FiLL class="min-w-60" :data="` ${data?.ofFname}  ${data?.lName}`"/>
+            <p class="ml-20"><FiLLBox /> โสด <span class="ml-10"><FiLLBox  :checked="data?.fName"  />สมรส คู่สมรสชื่อ </span><FiLL class="min-w-60" :data="` ${data?.newfName}  ${data?.lName}`"/>
             <FiLLBox /> หย่า หรือ หม้าย </p>
             <p><span class="ml-20">2. ข้าพเจ้าขอแสดงเจตนาการรับเงินสงเคราะห์ที่ สสธท. พึงจ่าย ให้ผู้จัดการศพข้าพเจ้า</span></p>
-            <p>คือ <FiLL class="min-w-60" :data="` ${data?.ofFname}  ${data?.lName}`"/> เกี่ยวข้องเป็น <FiLL :data="data?.newStatus" class="min-w-32" /> ของข้าพเจ้า(10%ของเงินสงเคราะห์)
+            <p>คือ <FiLL class="min-w-60" :data="` ${data?.newfName}  ${data?.lName}`"/> เกี่ยวข้องเป็น <FiLL :data="data?.newStatus" class="min-w-32" /> ของข้าพเจ้า(10%ของเงินสงเคราะห์)
               ส่วนที่เหลือมอบให้บุคคล ดังต่อไปนี้เป็นผู้รับเงินสงเคราะห์ คือ</p>
               
             <div class="mt-8">
@@ -449,7 +449,7 @@
                   <div class="text-center text-base ml-72 mt-2 ">(ลงชื่อ)...........................................................เจ้าหน้าที่ สสธท.</div>
                   <div ></div>
                   <div class="text-center ml-56">
-                    (<FiLL class="min-w-56" :data="` ${data?.officerFName}  ${data?.officerLName}`"/>)
+                    (..................................................................)
                     
                   </div>
                 </div>

@@ -58,14 +58,14 @@
 
     </PaperDoc>
 
-    <PaperDoc>
+    <MorePaperDoc>
         <div class="flex flex-col mb-4 mt-20 mx-12">
         <p>
           ผู้ขอเปิดบัญชี <FiLL class="min-w-72 " :data="`${data?.fName}  ${data?.lName}`" />  สมาชิกเลขทะเบียนที่ <FiLL  class="min-w-40" :data="data?.member" />
           ที่อยู่เลขที่ <FiLL  class="min-w-28" :data="data?.housenb" /> ถนน <FiLL class="min-w-48" :data="data?.road" />ตำบล/แขวง<FiLL class="min-w-48" :data="data?.district" /> 
             อำเภอ/เขต<FiLL  class="min-w-40" :data="data?.district" /> จังหวัด<FiLL class="min-w-40" :data="data?.province" /> โทรศัพท์ <FiLL class="min-w-44" :data="data?.nbPhon" />
             สถานที่ทำงาน<FiLL class="min-w-48" :data="data?.economize" />โทรศัพท์<FiLL class="min-w-36" :data="data?.nbPhon" /> โทรสาร<FiLL class="min-w-36" :data="data?.nbPhon" />
-        </span>
+        </p>
         <div class="mt-2">
             มีความประสงค์ขอเปิดบัญชีเงินฝากออมทรัพย์พิเศษในชื่อข้าพเจ้าไว้กับสหกรณ์นี้
                 </div>
@@ -118,9 +118,10 @@
                 </div>
 
         </div>
-            </div>
+        
     </MorePaperDoc>
-    </main>
+   
+</main>
   </template>
 
   <script setup

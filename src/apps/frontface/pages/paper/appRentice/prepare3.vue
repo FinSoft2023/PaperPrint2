@@ -250,23 +250,23 @@
                   <p class="mt-2 font-bold text-base">สมาคมฌาปนกิจสงเคราะห์สหกรณ์สมาชิกของชุมนุมสหกรณ์ออมทรัพย์แห่งประเทศไทย (สส.ชสอ.)</p>
               </div>
               <div class="grid justify-items mt-8">
-<p class=" text-base pl-96 ml-16">เขียนที่ ................................................. &nbsp;</p>
-<p class=" text-base pl-96 ml-16" >วันที่ ................................................. </p><br>
+<p class=" text-base text-end">เขียนที่ <FiLL :data="data?.location" class="min-w-80" /> &nbsp;</p>
+<p class=" text-base text-end" >วันที่ <FiLL  class="min-w-80 " :data="data?.dateReceived" date-format="full" /> </p><br>
             </div>
             <div class="grid justify-items-start text-pretty text-base  ">
             <p><span class="ml-20">1. ข้าพเจ้า</span>
-              ................................................. อายุ ....................... ปี เกิดวันที่ ................ เดือน...................... พศ.....................
-              สมาชิกสหกรณ์ออมทรัพย์ ................................................. เลขทะเบียนสมาชิก................. 
-              ปัจจุบันอยู่บ้านเลขที่ .................... หมู่ที่ .................... ถนน .................... ตำบล ....................
-          อำเภอ .................... จังหวัด .................... รหัสไปรษณีย์ .................... เบอร์โทรศัพท์ ....................
-              ทำงานประจำในตำแหน่ง.................... สถานที่ทำงาน.................... ตำบล/แขวง ....................
-          อำเภอ/เขต .................... จังหวัด .................... รหัสไปรษณีย์ .................... โทรศัพท์ที่ทำงาน ....................
+               <FiLL class="min-w-60" :data="`${data?.fName}  ${data?.lName}`"/> อายุ <FiLL :data="data?.age" class="min-w-20" /> ปี เกิดวันที่ <FiLL  class="min-w-40 " :data="data?.dateReceived" date-format="full" />
+              สมาชิกสหกรณ์ออมทรัพย์ <FiLL :data="data?.savings" class="min-w-52" /> เลขทะเบียนสมาชิก<FiLL :data="data?.member" class="min-w-20" />
+              ปัจจุบันอยู่บ้านเลขที่ <FiLL :data="data?.housenb" class="min-w-24" /> หมู่ที่ <FiLL :data="data?.group" class="min-w-24" /> ถนน <FiLL :data="data?.road" class="min-w-24" /> ตำบล <FiLL :data="data?.district" class="min-w-24" />
+          อำเภอ <FiLL :data="data?.district" class="min-w-24" /> จังหวัด <FiLL :data="data?.province" class="min-w-24" /> รหัสไปรษณีย์ <FiLL :data="data?.zipcode" class="min-w-24" /> เบอร์โทรศัพท์  <FiLL :data="data?.nbPhon" class="min-w-32" />
+              ทำงานประจำในตำแหน่ง<FiLL :data="data?.position" class="min-w-24" /> สถานที่ทำงานง<FiLL :data="data?.location" class="min-w-24" /> ตำบล/แขวง <FiLL :data="data?.district" class="min-w-24" />
+          อำเภอ/เขต <FiLL :data="data?.district" class="min-w-24" /> จังหวัด <FiLL :data="data?.province" class="min-w-24" /> รหัสไปรษณีย์ <FiLL :data="data?.zipcode" class="min-w-24" /> โทรศัพท์ที่ทำงาน <FiLL :data="data?.nbPhon" class="min-w-32" />
             </p>
-            <p> <span class="ml-20"></span>2. หากข้าพเจ้าถึงแก่ความตาย ข้าพเจ้าขอมอบสิทธิให้....................
-              เลขประจำตัวประชาชน.................... เกี่ยวข้องเป็น.................... เป็นผู้จัดการศพของข้าพเจ้า
+            <p> <span class="ml-20"></span>2. หากข้าพเจ้าถึงแก่ความตาย ข้าพเจ้าขอมอบสิทธิให้<FiLL class="min-w-60" :data="`${data?.newfName}  ${data?.lName}`"/> 
+              เลขประจำตัวประชาชน<FiLL :data="data?.idcard" class="min-w-24" /> เกี่ยวข้องเป็น<FiLL :data="data?.newStatus" class="min-w-24" /> เป็นผู้จัดการศพของข้าพเจ้า
       </p>
       <p> <span class="ml-20"></span>3. ข้าพเจ้าขอแสดงเจตนารับการเงินสงเคราะห์ที่ สส.ขสอ. พึงจ่าย หลังจากจ่ายค่าจัดงานศพให้บุคคลที่ระบุไว้และ
-        ยินยอมให้สหกรณ์ออมทรัพย์ฯ....................จำกัด หักเงินชำระหนี้ให้เสร็จสิ้น
+        ยินยอมให้สหกรณ์ออมทรัพย์ฯ<FiLL :data="data?.affiliation" class="min-w-24" />จำกัด หักเงินชำระหนี้ให้เสร็จสิ้น
         เท่ากับจำนวนหนี้สินที่ข้าพเจ้าผูกพันอยู่ในขณะนั้นเป็นอันดับแรก (ถ้ามี) ส่วนที่เหลือขอมอบให้บุคคลดังต่อไปนี้
       </p>
             </div>
@@ -279,10 +279,9 @@
               <FiLL :data="index"
                 number
                 normal no-line/>.
-                ชื่อ 
-              ................................................................................. เลขประจำตัวประชาชน....................................<br>
-            ตำแหน่ง........................................................................................<br>
-             เบอร์โทรศัพท์.......................................................................................เกี่ยวข้องเป็น.....................................................
+                ชื่อ <FiLL class="min-w-72" :data="`${item.fn}  ${item.ln}`" />   เลขประจำตัวประชาชน<FiLL :data="item.idCards" class="min-w-32" /><br>
+            ตำแหน่ง<FiLL :data="item.usPosition" class="min-w-80" /><br>
+             เบอร์โทรศัพท์<FiLL :data="item.nbPhone" class="min-w-72" />เกี่ยวข้องเป็น<FiLL :data="item.status" class="min-w-48" />
             </p>
           </template>
           <template #default="{ index }">
@@ -344,10 +343,10 @@
   <div class="pl-14 text-base mt-4">2.1 ลงชื่อ...........................................................</div>
   <div ></div>
   <div class="text-center pl-12">
-    (............................................................)<br>
+    (<FiLL class="min-w-60" :data="`${data?.newfName}  ${data?.lName}`"/>)<br>
 </div>
 <div ></div>
-<div class="pl-14 text-base mt-4">เกี่ยวข้องเป็น....................................................</div>
+<div class="pl-14 text-base mt-4">เกี่ยวข้องเป็น<FiLL :data="data?.newStatus" class="min-w-44" /></div>
 </p>
 
  </div>

@@ -106,8 +106,8 @@ export default defineEventHandler(async (event) => {
             {collateral: "ทอง 1 บาท"},
          ], //หลักทรัพย์คํ้าประกัน
          repaymentPlan: [
-            { fn: "สารีกา ", ln: "สุขสำราญ ", status: 'คู่สมรส' , share: 40  },
-            { fn: "เจริญดี", ln: "สุขสำราญ ", status: 'บุตร' , share: 60 },
+            { fn: "สารีกา ", ln: "สุขสำราญ ", status: 'คู่สมรส' , share: 40  ,nbPhone: '0896657231' ,idCards:'1458975554522' ,usPosition:"ว่างงาน"},
+            { fn: "เจริญดี", ln: "สุขสำราญ ", status: 'บุตร' , share: 60 ,nbPhone: '0965845512' ,idCards:'1698542554522' ,usPosition:"ว่างงาน"},
             //เอาไปใส่หน้าที่ 6
             // ชื่อนามสกุล                เกี่ยวข้อง         ส่วนเเบ่งเงิน         
          ],

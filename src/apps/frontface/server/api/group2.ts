@@ -97,6 +97,8 @@ export default defineEventHandler(async (event) => {
       numberBoardYes:"6",                          //จำนวนคณะกรรมการให้ผ่าน
       numberBoardNo:"2",                          //จำนวนคณะกรรมการไม่ให้ผ่าน
       summaryLoan:"ผ่านการพิจารณาจากคณะกรรมการ",            //สรุปการกู้   
+      fNamePresident:"อุทัย",                                //ชื่อนายกสมาคมฌาปนกิจสงเคราะห์
+      lNamePresident:"ศรีเทพ",                                //นามสกุลนายกสมาคมฌาปนกิจสงเคราะห์
       email:"oo@gmail.com",
 
 

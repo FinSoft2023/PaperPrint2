@@ -513,7 +513,7 @@
                   <div class="text-center text-base ml-72 mr-6">(ลงชื่อ)..........................................................ผู้ให้คำยินยอม</div>
                   <div ></div>
                   <div class="text-center ml-56">
-                    (..................................................................)
+                    (<FiLL class="min-w-52" :data="`${data?.fName}  ${data?.lName}`"/>)
                     <p class="text-center text-base">
                       ผู้สมัครสมาชิก สสธท.
                     </p>
@@ -521,13 +521,13 @@
                   <div class="text-center text-base ml-56 mt-2 mr-2">(ลงชื่อ)..........................................................พยาน</div>
                   <div ></div>
                   <div class="text-center ml-56">
-                    (..................................................................)
+                    (<FiLL class="min-w-52" :data="`${data?.fNameWitness1}  ${data?.lNameWitness1}`"/>)
                     
                   </div>
                   <div class="text-center text-base ml-72 mt-2 ">(ลงชื่อ)...........................................................เจ้าหน้าที่ สสธท.</div>
                   <div ></div>
                   <div class="text-center ml-56">
-                    (..................................................................)
+                    (<FiLL class="min-w-52" :data="`${data?.officerFName}  ${data?.officerLName}`"/>)
                     
                   </div>
                 </div>
@@ -602,7 +602,7 @@
                   <div class="text-center text-base ml-60 mr-6">(ลงชื่อ)..........................................................ผู้ยินยอมและมอบอำนาจ</div>
                   <div ></div>
                   <div class="text-center ml-28">
-                    (...........................................................)
+                    (<FiLL class="min-w-52" :data="`${data?.fName}  ${data?.lName}`"/>)
                   </div>
                 </div>
             </div>
@@ -612,9 +612,9 @@
             <div class="text-center text-base mr-4">(ลงชื่อ)............................................ผู้ยินยอมและมอบอำนาจ</div>
             <div ></div>
             <div class="text-start">
-              <p class="text-start text-base  ml-12">(...........................................)</p>
+              <p class="text-start text-base  ml-12">(<FiLL class="min-w-40" :data="`${data?.newlName}  ${data?.fName}`"/>)</p>
               <p class="text-start text-base ">
-                บัตรปชช.เลขที่ .................................
+                บัตรปชช.เลขที่ <FiLL :data="data?.idcard" class="min-w-32" />
               </p>
             </div>
                 </div>
@@ -623,9 +623,9 @@
                   <div class="text-end text-base">(ลงชื่อ)............................................ผู้ยินยอมและมอบอำนาจ</div>
             <div ></div>
             <div class="text-start">
-              <p class="text-start text-base  ml-12">(...........................................)</p>
+              <p class="text-start text-base  ml-12">(<FiLL class="min-w-40" :data="`${data?.officerLName}  ${data?.newlName}`"/>)</p>
               <p class="text-start text-base ">
-                บัตรปชช.เลขที่ .................................
+                บัตรปชช.เลขที่ <FiLL :data="data?.idcard" class="min-w-32" />
               </p>
             </div>
                 </div>
@@ -636,9 +636,9 @@
             <div class="text-center text-base mr-4">(ลงชื่อ)............................................ผู้ยินยอมและมอบอำนาจ</div>
             <div ></div>
             <div class="text-start">
-              <p class="text-start text-base  ml-12">(...........................................)</p>
+              <p class="text-start text-base  ml-12">(<FiLL class="min-w-40" :data="`${data?.fNameGuarantor1}  ${data?.lNameGuarantor1}`"/>)</p>
               <p class="text-start text-base ">
-                บัตรปชช.เลขที่ .................................
+                บัตรปชช.เลขที่ <FiLL :data="data?.idcard" class="min-w-32" />
               </p>
             </div>
                 </div>
@@ -647,9 +647,9 @@
                   <div class="text-end text-base">(ลงชื่อ)............................................ผู้ยินยอมและมอบอำนาจ</div>
             <div ></div>
             <div class="text-start">
-              <p class="text-start text-base  ml-12">(...........................................)</p>
+              <p class="text-start text-base  ml-12">(<FiLL class="min-w-40" :data="`${data?.fNameGuarantor2}  ${data?.lNameGuarantor2}`"/>)</p>
               <p class="text-start text-base ">
-                บัตรปชช.เลขที่ .................................
+                บัตรปชช.เลขที่ <FiLL :data="data?.idcard" class="min-w-32" />
               </p>
             </div>
                 </div>
@@ -663,7 +663,7 @@
                   <div class="text-center text-base ml-60 mr-6">(ลงชื่อ)..........................................................ผู้ยินยอมและมอบอำนาจ</div>
                   <div ></div>
                   <div class="text-center ml-28">
-                    (...........................................................)
+                    (<FiLL class="min-w-52" :data="`${data?.newfName}  ${data?.lName}`"/>)
                   </div>
                 </div>
             </div>
@@ -677,7 +677,7 @@
             <div class="text-end text-base mr-4">(ลงชื่อ)............................................พยาน</div>
             <div ></div>
             <div class="text-end">
-              <p class="text-center text-base ml-16">(................................................)</p>
+              <p class="text-center text-base ml-16">(<FiLL class="min-w-40" :data="`${data?.fNameGuarantor1}  ${data?.lNameGuarantor1}`"/>)</p>
             </div>
                 </div>
                 <div class="row-span-2 col-span-2  ">
@@ -685,7 +685,7 @@
                   <div class="text-center text-base">(ลงชื่อ)............................................พยาน</div>
             <div ></div>
             <div class="text-center">
-              <p class="text-center text-base ml-1">(................................................)</p>
+              <p class="text-center text-base ml-1">(<FiLL class="min-w-40" :data="`${data?.fNameGuarantor2}  ${data?.lNameGuarantor2}`"/>)</p>
             </div>
                 </div>
             </div>

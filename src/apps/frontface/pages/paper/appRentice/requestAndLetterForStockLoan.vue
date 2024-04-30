@@ -93,12 +93,49 @@
           <p><span class="ml-36">ผู้กู้<FiLL :data="data?.test" class="min-w-40" />(ลายเซ็น)<FiLL :data="data?.test" class="min-w-40" />(ตัวบรรจง)</span></p>
           <p><span class="ml-24">เจ้าหน้าที่<FiLL :data="data?.test" class="min-w-40" />(ลายเซ็น)<FiLL :data="data?.test" class="min-w-40" />(ตัวบรรจง)</span></p>
        
-    
-    
-    
-    
-    
         </PaperDoc>
+
+        <MorePaperDoc>  <!-- หน้า 2 -->
+          <p class="text-right mt-20">วันที่<FiLL :data="data?.test" class="min-w-24" /> เดือน <FiLL :data="data?.test" class="min-w-24" />พ.ศ.<FiLL :data="data?.test" class="min-w-24" /></p>
+          <p class="font-bold mt-8">ข้าพเจ้าขอทำหนังสือค้ำประกันไว้ต่อสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
+          <p class="mt-2">ข้อ 1. ตามที่<FiLL :data="data?.test" class="min-w-28" />สมาชิกเลขที่<FiLL :data="data?.test" class="min-w-24" />ได้ขอกู้เงินสหกรณ์โดยใช้หุ้นค้ำประกันนั้นข้าพเจ้ายินยอมนำหุ้นของตนเองมาค้ำประกันตามจำนวนเงินกู้ที่ได้กู้อย่างไม่มีจำกัด</p>
+          <p>ข้อ 2. ในกรณีที่สหกรณ์ผ่อนเวลาส์งงวดชำระหนี้ตามที่ทำหนดไว้เดิม ถือเป็นความยินยอมของข้าพเจ้าด้วย</p>
+          <p>ข้อ 3. เมื่อข้าพเจ้าลาออกจากการเป็นสมาชิกสหกรณ์ ไม่เป็นเหตุให้ข้าพเจ้าหลุดพันจากการชำระหนี้</p>
+          <p>ข้อ 4. ในกรณีที่ข้าพเจ้าไม่จัดการชำระหนี้ให้เสร็จสิ้นตามที่กล่าว ข้าพเจ้ายินยอมให้เจ้าหน้าที่ผู้จ่ายเงินเดือนหักงวดชำระหนี้เงินบำเหน็จ บำนาญ โบนัส หรือเงินสำรองเลี้ยงชีพหรือเงินอื่นใดที่ข้าพเจ้าได้รับ ให้นำไปชำระหนี้พร้อมดอกเบี้ยที่ยังดงด้างโดยไม่มีข้อแม้ใดๆ</p>
+          
+          <p class="mt-2"><span class="ml-20">ผู้กู้<FiLL :data="data?.test" class="min-w-48" />(ลายเซ็น)(นาย/นาง/นส.)<FiLL :data="data?.test" class="min-w-48" />(ตัวบรรจง)</span></p>
+          <p ><span class="ml-16">พยาน<FiLL :data="data?.test" class="min-w-48" />(ลายเซ็น)(นาย/นาง/นส.)<FiLL :data="data?.test" class="min-w-48" />(ตัวบรรจง)</span></p>
+          <p ><span class="ml-16">พยาน<FiLL :data="data?.test" class="min-w-48" />(ลายเซ็น)(นาย/นาง/นส.)<FiLL :data="data?.test" class="min-w-48" />(ตัวบรรจง)</span></p>
+
+          <p class="text-center mt-16 text-xl font-bold">ข้อตกลงต่อท้ายสัญญา</p>
+          <p class="ml-20 mt-2">ข้าพเจ้าสัญญาว่าจะส่งคืนต้นเงินกู้เป็นงวดรายเดือน งวดละ (ตัวอักษร)<FiLL :data="data?.test" class="min-w-40"/>บาท</p>
+          <p>พร้อมด้วยดอกเบี้ยในอัตราร้อยละ (ตัวอักษร)<FiLL :data="data?.test" class="min-w-32"/>ต่อปี รวม (ตัวอักษร)<FiLL :data="data?.test" class="min-w-40"/>งวด </p>
+          <p>เว้นแต่งวดสุดท้ายเป็นจำนวนเงิน (ตัวอักษร)<FiLL :data="data?.test" class="min-w-32"/>บาท ทั้งนี้ตั้งแต่งวดประจำเดือน<FiLL :data="data?.test" class="min-w-24"/>เป็นต้นไป </p>
+          <p><span class="ml-20">ในกรณี</span>ที่มีเหตุจำเป็นที่สหกรณ์จะต้องเปลี่ยนแปลงอัตราดอกเบี้ยเงินกู้แล้ว ข้าพเจ้ายินยอมให้สหกรณ์เปลี่ยนแปลงอัตราดอกเบี้ยที่กำหนดไว้ในวรรดก่อนได้ตามที่เห็นสมควรเมื่อใดก็ได้ ทั้งนี้สหกรณ์ไม่จำเป็นต้องแจ้งให้ข้าพเจ้าทราบล่วงหน้า</p>
+
+          <p class="mt-14"><span class="ml-20">ผู้กู้<FiLL :data="data?.test" class="min-w-48" />(ลายเซ็น)(นาย/นาง/นส.)<FiLL :data="data?.test" class="min-w-48" />(ตัวบรรจง)</span></p>
+
+          <table class="border border-black mt-28">
+                    <thead class="border border-black border-b-2">
+                        <tr>
+                            <th class="border border-r-2 border-black px-4 py-2">สำหรับเจ้าหน้าที่โดยเฉพาะ</th>
+                            <th class="border border-black px-4 py-2 underline text-left">หมายเหตุ</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td class="border-r border-r-black px-4">ประธานกรรมการเงินกู้<FiLL :data="data?.test" class="min-w-52" /></td>
+                        <td class="border-r border-r-black px-4">- กรอกรายการด้วยตนเอง โดยใช้หมึกสีเดียวกัน</td>
+                    </tr>
+                    <tr>
+                        <td class="border-r border-r-black px-4">ผู้จัดการ<FiLL :data="data?.test" class="min-w-72" /></td>
+                        <td class="border-r border-r-black px-4">- แก้ไขดำผิดโดยการขีดฆ่า ให้เซ็นชื่อกำกับ</td>
+                    </tr>
+                    <tr>
+                        <td class="border-r border-r-black px-4">เจ้าหน้าที่ผู้ตรวจสัญญา<FiLL :data="data?.test" class="min-w-52" /></td>
+                        <td class="border-r border-r-black px-4">และห้ามใช้น้ำยาลบคำผิด</td>
+                    </tr>
+                </table>
+        </MorePaperDoc>
   </main>
 </template>
 

@@ -30,26 +30,27 @@
                 <br>ธนาคารกรุงไทย จำกัด (มหาชน) เลขที่บัญชี <FiLL :data="data?.newnbAccount" class="min-w-30" /> พร้อมแนบเอกสารหลักฐาน ดังนี้.-
 
               </p>
-
-              <div class="flex">
-              <p class="ml-20 text-base "> <FiLLBox :checked="data?.newnbAccount" /> สำเนาบัตรประชาชนของผู้เสียชีวิต</p> <p class="ml-44">จำนวน 1 ฉบับ</p>
+              <div class="grid grid-rows-2 grid-flow-col">
+                <div class="row-span-3 text-sm">
+                  <p class="pl-20" ><FiLLBox :checked="data?.newnbAccount" /> สำเนาบัตรประชาชนของผู้เสียชีวิต</p>
+                  <p class="pl-20"> <FiLLBox :checked="data?.newnbAccount" /> สำเนาทะเบียนบ้านของผู้เสียชีวิต (ประทับตราคำว่า *ตาย*)</p>
+                  <p class="pl-20"> <FiLLBox :checked="data?.newnbAccount" /> สำเนาใบมรณบัตร</p>
+                  <p class="pl-20"> <FiLLBox :checked="data?.newnbAccount" /> สำเนาบัตรประชาชนของสมาชิก </p>
+                  <p class="pl-20"> <FiLLBox :checked="data?.newnbAccount" /> สำเนาทะเบียนบ้านของสมาชิก</p>
+                  <p class="pl-20"> <FiLLBox :checked="data?.newnbAccount" /> สำเนาทะเบียนสมรส (ในกรณีคู่สมรสเสียชีวิต)</p>
+                  
+                </div>
+                <div class="row-span-2 col-span-2 ml-10 text-sm">
+                  <p>จำนวน 1 ฉบับ</p>
+                  <p>จำนวน 1 ฉบับ</p>
+                  <p>จำนวน 1 ฉบับ</p>
+                  <p>จำนวน 1 ฉบับ</p>
+                  <p>จำนวน 1 ฉบับ</p>
+                  <p>จำนวน 1 ฉบับ</p>
+                 
+                </div>
             </div>
-            <div class="flex">
-              <p class="ml-20 text-base "> <FiLLBox :checked="data?.newnbAccount" /> สำเนาทะเบียนบ้านของผู้เสียชีวิต (ประทับตราคำว่า *ตาย*)</p> <p p class="ml-8">จำนวน 1 ฉบับ</p>
-            </div>
-              <div class="flex">
-              <p class="ml-20 text-base "> <FiLLBox :checked="data?.newnbAccount" /> สำเนาใบมรณบัตร</p> <p p class="ml-72">จำนวน 1 ฉบับ</p>
-            </div>
-              <div class="flex">
-              <p class="ml-20 text-base "> <FiLLBox :checked="data?.newnbAccount" /> สำเนาบัตรประชาชนของสมาชิก</p> <p p class="ml-52">จำนวน 1 ฉบับ</p>
-            </div>
-              <div class="flex">
-                <p class="ml-20 text-base "> <FiLLBox :checked="data?.newnbAccount" /> สำเนาทะเบียนบ้านของสมาชิก</p> <p p class="ml-52">จำนวน 1 ฉบับ</p>
-              </div>
-                <div class="flex">
-         <p class="ml-20 text-base "> <FiLLBox :checked="data?.newnbAccount" /> สำเนาทะเบียนสมรส (ในกรณีคู่สมรสเสียชีวิต)</p> <p p class="ml-28">จำนวน 1 ฉบับ</p>
-        </div>
-         <br>
+           <br>
               <p class="ml-20 text-base ">จึงเรียนมาเพื่อโปรดพิจารณาอนุมัติ</p>
              
              

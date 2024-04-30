@@ -61,6 +61,9 @@
     <p class="pl-4 font-semibold">หมายเหตุ <span class="font-normal ml-2">แนบเอกสารเปลี่ยนแปลง จำนวน 1 ชุด</span></p>
  </div>
  </div>
+ <div class="border-solid border-2 border-slate-950 ">
+
+  </div>
  <br>
  <br>
       </MorePaperDoc>

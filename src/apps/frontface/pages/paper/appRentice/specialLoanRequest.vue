@@ -31,7 +31,7 @@
         </div>
         <p class="text-left mt-6">เรียน คณะกรรมการดำเนินการสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
         <div> 
-            <p class="mt-2"><span class="ml-12">ข้าพเจ้า นาย/นาง/นางสาว </span> <FiLL class="min-w-60" :data="`${data?.fName}  ${data?.lName}`"/> อายุ <FiLL :data="data?.age" class="min-w-20" /> ปี สมาชิกเลขที่ <FiLL :data="data?.member" class="min-w-20" /> </p>
+            <p class="mt-2"><span class="ml-12">ข้าพเจ้า นาย/นาง/นางสาว </span> <FiLL class="min-w-60" :data="`${data?.prefix} ${data?.fName}  ${data?.lName}`"/> อายุ <FiLL :data="data?.age" class="min-w-20" /> ปี สมาชิกเลขที่ <FiLL :data="data?.member" class="min-w-20" /> </p>
             <p>เป็น <FiLLBox :checked="data?.position" /> ข้าราชการ <FiLLBox /> พนักงาน <FiLLBox /> ลูกจ้างประจำ ตำแหน่ง <FiLL :data="data?.position" class="min-w-60" /></p>
             <p>สังกัด <FiLL :data="data?.affiliation" class="min-w-52" /> ตำบล <FiLL :data="data?.district" class="min-w-24" /> อำเภอ <FiLL :data="data?.district" class="min-w-28" />จังหวัด <FiLL :data="data?.province" class="min-w-36" />  </p>
             <p>เป็นสมาชิกแล้ว <FiLL :data="data?.alreadyMember" class="min-w-12" /> ปี อยู่บ้านเลขที่ <FiLL :data="data?.housenb" class="min-w-20" /> หมู่ที่ <FiLL :data="data?.group" class="min-w-12" /> ถนน <FiLL :data="data?.road" class="min-w-28" /> ตำบล <FiLL :data="data?.district" class="min-w-32" /></p>
@@ -137,7 +137,7 @@
                     <p class="mt-2">วันที่ <FiLL  class="text-base" :data="data?.dateReceived"date-format="full"  /></p>
                 </div>
             </div> 
-            <p class="mt-2"><span class="ml-16 "> ข้าพเจ้า นาย/นาง <FiLL class="min-w-56" :data="`${data?.newfName}  ${data?.lName}`"/> เป็นคู่สมรสของ นาย/นาง <FiLL class="min-w-52" :data="`${data?.fName}  ${data?.lName}`"/> </span> ได้ให้คำยินยอมแก่ นาย/นาง <FiLL class="min-w-60" :data="`${data?.fName}  ${data?.lName}`"/> ซึ่งเป็นสามี/ภรรยา ของข้าพเจ้า ทำการกู้เงินพิเศษของ
+            <p class="mt-2"><span class="ml-16 "> ข้าพเจ้า นาย/นาง <FiLL class="min-w-56" :data="`${data?.prefixMrs} ${data?.newfName}  ${data?.lName}`"/> เป็นคู่สมรสของ นาย/นาง <FiLL class="min-w-52" :data="`${data?.prefix} ${data?.fName}  ${data?.lName}`"/> </span> ได้ให้คำยินยอมแก่ นาย/นาง <FiLL class="min-w-60" :data="`${data?.prefix} ${data?.fName}  ${data?.lName}`"/> ซึ่งเป็นสามี/ภรรยา ของข้าพเจ้า ทำการกู้เงินพิเศษของ
                 สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด ตามคำขอกู้ดังกล่าวแล้วครั้งนี้ได้
             </p>
             <div class="grid grid-cols-2 justify-center">

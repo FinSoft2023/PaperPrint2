@@ -9,7 +9,7 @@
                 <div class="grid grid-cols-2">
                     <div></div>
                     <div class="text-start">
-                        <p class="mt-6">เขียนที่ <FiLL :data="data?.location" class="underline underline-offset-4 text-base text-right" no-line /></p>
+                        <p class="mt-6">เขียนที่ <FiLL :data="data?.location"  /></p>
                         <p class="mt-2">วันที่ <FiLL  class="text-base" :data="data?.dateReceived"date-format="full" no-line /></p>
                     </div>
                     

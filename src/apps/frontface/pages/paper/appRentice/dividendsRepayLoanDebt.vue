@@ -15,7 +15,7 @@
         </div>
         <div class="grid justify-items-start mt-6 text-pretty text-base">
           <p><span class="ml-28">ด้วย ข้าพเจ้า นาย/นาง/นางสาว </span>
-            <FiLL class="min-w-60" :data="`${data?.fName}  ${data?.lName}`"/> 
+            <FiLL class="min-w-60" :data="`${data?.prefix} ${data?.fName}  ${data?.lName}`"/> 
             สมาชิกเลขที่ <FiLL :data="data?.member" class="min-w-28" /> สังกัดโรงพยาบาลศรีสะเกษ มีความประสงค์ขอโอนเงินปันผลและเงินเฉลี่ยคืนทั้งจำนวนที่ได้รับประจำปี<FiLL :data="data?.stockValue" class="min-w-28" />
             ชำระหนี้เงินกู้สามัญตามสัญญาเลขที่<FiLL :data="data?.loanbook" class="min-w-28" />ลงวันที่ <FiLL class="min-w-40" :data="`${data?.loanOnDay}  ${data?.loanOnMonth}  ${data?.loanOnYear}`"/> เมื่อสหกรณ์ฯได้จัดประชุมใหญ่สามัญเสร็จเรียบร้อยแล้ว
           </p>

@@ -238,7 +238,7 @@
 <br><span class="ml-16 font-semibold underline underline-offset-1"> (3) ประวัติการรักษาโรคต่อไปนี้ในโรงพยาบาลหรือสถานพยาบาลแห่งนี้</span> 
 </p> 
 <div class="grid grid-rows-2 grid-flow-col">
-                <div class="row-span-3 text-sm">
+                <div class="row-span-3 text-base">
                   <p class="pl-20" >(3.1) โรคมะเร็ง </p>
                   <p class="pl-20"> (3.2) โรคหัวใจ </p>
                   <p class="pl-20"> (3.3) โรควัณโรค </p>
@@ -249,7 +249,7 @@
                   <p class="pl-20"> (3.8) โรคตับแข็ง </p>
                   <p class="pl-20"> (3.9) โรคเอสแอลอี (SLE) </p>
                 </div>
-                <div class="row-span-2 col-span-2 ml-10 text-sm">
+                <div class="row-span-2 col-span-2 ml-10 text-base">
                   <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
                   <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
                   <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>

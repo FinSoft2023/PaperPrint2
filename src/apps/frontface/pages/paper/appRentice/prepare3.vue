@@ -153,9 +153,9 @@
         <div class="grid justify-items-center">
         <p class="pl-72">ลงชื่อ............................................................</p>
         <div class="pl-80">
-   (<FiLL class="min-w-52" :data="`${data?.fName}  ${data?.lName}`"/> ) 
+   (<FiLL class="min-w-52" :data="`${data?.lNameCommander}  ${data?.lNameSecretary}`"/> ) 
         </div><br>
-        <p class="pl-72">ตำเเหน่ง <FiLL :data="data?.position" class="min-w-28" /></p>
+        <p class="pl-72">ตำเเหน่ง <FiLL :data="data?.positionCommander" class="min-w-28" /></p>
  </div>
  <div class=" grid justify-items-center mt-2">
             <p class="mt-2  font-bold text-xl">สำหรับคณะกรรมการศูนย์ประสานงาน</p>
@@ -173,14 +173,14 @@
                   </p>
                   <p class="text-sm"><FiLLBox /> เหรัญยิก/เลขานุการ ศุนย์ฯ </p>            
                   <p class="text-sm "><FiLLBox /> อุปนายก ศูนย์ฯ </p>
-                  <p class="text-sm "><FiLLBox /> ประธาน ศูนย์ฯ </p>
+                  <p class="text-sm "><FiLLBox :checked="data?.fName" /> ประธาน ศูนย์ฯ </p>
                 </div>
                 </div>
                 </div>
         <div class="grid justify-items-center mt-4">
         <p class="pl-72">ลงชื่อ............................................................</p>
         <div class="pl-80">
-   (<FiLL class="min-w-52" :data="`${data?.fName}  ${data?.lName}`"/> ) 
+   (<FiLL class="min-w-52" :data="`${data?.fNameWitness2}  ${data?.lNameWitness1}`"/> ) 
         </div><br>
         <p class="pl-72">ตำเเหน่ง <FiLL :data="data?.position" class="min-w-28" /></p>
  </div>
@@ -200,7 +200,7 @@
         <div class="grid justify-items-center mt-8">
         <p class="pl-72">ลงชื่อ............................................................</p>
         <div class="pl-80">
-   (<FiLL class="min-w-52" :data="`${data?.fName}  ${data?.lName}`"/> ) 
+   (<FiLL class="min-w-52" :data="`${data?.fNameGuarantor1}  ${data?.lNameGuarantor1}`"/> ) 
         </div><br>
         <p class="pl-72">ตำเเหน่ง <FiLL :data="data?.position" class="min-w-28" /></p>
  </div>
@@ -219,14 +219,14 @@
                   </p>
                   <p class="text-sm"><FiLLBox /> กรรมการ สส.ชสอ. </p>            
                   <p class="text-sm "><FiLLBox /> อุปนายก สส.ชสอ. </p>
-                  <p class="text-sm "><FiLLBox /> นายก สส.ชสอ. </p>
+                  <p class="text-sm "><FiLLBox :checked="data?.fName" /> นายก สส.ชสอ. </p>
                 </div>
                 </div>
                 </div>
         <div class="grid justify-items-center mt-4">
         <p class="pl-72">ลงชื่อ............................................................</p>
         <div class="pl-80">
-   (<FiLL class="min-w-52" :data="`${data?.fName}  ${data?.lName}`"/> ) 
+   (<FiLL class="min-w-52" :data="`${data?.fNameGuarantor2}  ${data?.lNameGuarantor2}`"/> ) 
         </div><br>
         <p class="pl-72">ตำเเหน่ง <FiLL :data="data?.position" class="min-w-28" /></p>
  </div>
@@ -423,10 +423,10 @@
 <div class="grid justify-items-center mt-16">
         <p class="pl-72">ลงชื่อ............................................................</p>
         <div class="pl-80">
-   (............................................................ ) 
+   (<FiLL class="min-w-60" :data="`${data?.newfName}  ${data?.lName}`"/> ) 
         </div>
         <div ></div>
-        <p class="pl-72">ณ วันที่..................................................</p>
+        <p class="pl-72">ณ วันที่<FiLL  class="min-w-80 " :data="data?.dateReceived" date-format="full" /></p>
  </div>
               <br>
             </MorePaperDoc>
@@ -458,19 +458,19 @@
              อายุ <FiLL :data="data?.age" class="min-w-20" /> ปี
           </p> 
           <p class="text-base  mt-2 "> ข้าพเจ้าขอให้ประวัติสุขภาพของข้าพเจ้าเพื่อประกอบการสมัครสมาชิก สส.ชสอ. ดังนี้ </p>
-          <p class="text-base pl-8 "><FiLLBox /> 1. มีสุขภาพแข็งแรง </p>
-          <p class="text-base pl-8 "><FiLLBox /> 2. ไม่เป็นผู้เป็นผู้มีกายทุพพลภาพ จนไม่สามารถปฏิบัติหน้าที่ได้ </p>
-          <p class="text-base pl-8 "><FiLLBox /> 3. ไม่มีจิตฟั่นเฟือน ไม่สมประกอบ</p>
+          <p class="text-base pl-8 "><FiLLBox :checked="data?.fName"/> 1. มีสุขภาพแข็งแรง </p>
+          <p class="text-base pl-8 "><FiLLBox :checked="data?.fName"/> 2. ไม่เป็นผู้เป็นผู้มีกายทุพพลภาพ จนไม่สามารถปฏิบัติหน้าที่ได้ </p>
+          <p class="text-base pl-8 "><FiLLBox :checked="data?.fName"/> 3. ไม่มีจิตฟั่นเฟือน ไม่สมประกอบ</p>
           <p  class="text-base text-start pl-14 font-semibold">4. <span class="underline underline-offset-2"> ประวัติการรักษาโรคต่อไปนี้  </span> </p>
-          <p class="text-base pl-20 mt-2"> (4.1) โรคมะเร็ง <span class="ml-32"> <FiLLBox /> ไม่มี <FiLLBox /> มี ระบุ...................................................................... </span></p>
-          <p class="text-base pl-20 "> (4.2) โรคหัวใจ หรือหลอดลม <span class="ml-10"> <FiLLBox /> ไม่มี <FiLLBox /> มี ระบุ...................................................................... </span></p>
-          <p class="text-base pl-20 "> (4.3) โรควัณโรคในระยะอันตราย <span class="ml-5"> <FiLLBox /> ไม่มี <FiLLBox /> มี ระบุ...................................................................... </span></p>
-          <p class="text-base pl-20 "> (4.4) โรคเบาหวานขั้นรุนแรง <span class="ml-12"> <FiLLBox /> ไม่มี <FiLLBox /> มี ระบุ...................................................................... </span></p>
-          <p class="text-base pl-20 "> (4.5) โรคเอดส์ <span class="pl-1.5 ml-32"> <FiLLBox /> ไม่มี <FiLLBox /> มี ระบุ...................................................................... </span></p>
-          <p class="text-base pl-20 "> (4.6) โรคเอสแอลอี (SLE) <span class="pl-1 ml-16"> <FiLLBox /> ไม่มี <FiLLBox /> มี ระบุ...................................................................... </span></p>
-          <p class="text-base pl-20 "> (4.7) โรคตับแข็ง <span class="pl-2.5 ml-28"> <FiLLBox /> ไม่มี <FiLLBox /> มี ระบุ...................................................................... </span></p>
-          <p class="text-base pl-20 "> (4.8) โรคปอดเรื้อรัง <span class="pl-2 ml-24"> <FiLLBox /> ไม่มี <FiLLBox /> มี ระบุ...................................................................... </span></p>
-          <p class="text-base pl-20 "> (4.9) ภาวะไตวาย (ล้างไต) <span class="pl-1.5 ml-14"> <FiLLBox /> ไม่มี <FiLLBox /> มี ระบุ...................................................................... </span></p>
+          <p class="text-base pl-20 mt-2"> (4.1) โรคมะเร็ง <span class="ml-32"> <FiLLBox :checked="data?.fName"/> ไม่มี <FiLLBox /> มี ระบุ...................................................................... </span></p>
+          <p class="text-base pl-20 "> (4.2) โรคหัวใจ หรือหลอดลม <span class="ml-10"> <FiLLBox :checked="data?.fName"/> ไม่มี <FiLLBox /> มี ระบุ...................................................................... </span></p>
+          <p class="text-base pl-20 "> (4.3) โรควัณโรคในระยะอันตราย <span class="ml-5"> <FiLLBox :checked="data?.fName"/> ไม่มี <FiLLBox /> มี ระบุ...................................................................... </span></p>
+          <p class="text-base pl-20 "> (4.4) โรคเบาหวานขั้นรุนแรง <span class="ml-12"> <FiLLBox :checked="data?.fName"/> ไม่มี <FiLLBox /> มี ระบุ...................................................................... </span></p>
+          <p class="text-base pl-20 "> (4.5) โรคเอดส์ <span class="pl-1.5 ml-32"> <FiLLBox :checked="data?.fName"/> ไม่มี <FiLLBox /> มี ระบุ...................................................................... </span></p>
+          <p class="text-base pl-20 "> (4.6) โรคเอสแอลอี (SLE) <span class="pl-1 ml-16"> <FiLLBox :checked="data?.fName"/> ไม่มี <FiLLBox /> มี ระบุ...................................................................... </span></p>
+          <p class="text-base pl-20 "> (4.7) โรคตับแข็ง <span class="pl-2.5 ml-28"> <FiLLBox :checked="data?.fName"/> ไม่มี <FiLLBox /> มี ระบุ...................................................................... </span></p>
+          <p class="text-base pl-20 "> (4.8) โรคปอดเรื้อรัง <span class="pl-2 ml-24"> <FiLLBox :checked="data?.fName"/> ไม่มี <FiLLBox /> มี ระบุ...................................................................... </span></p>
+          <p class="text-base pl-20 "> (4.9) ภาวะไตวาย (ล้างไต) <span class="pl-1.5 ml-14"> <FiLLBox :checked="data?.fName"/> ไม่มี <FiLLBox /> มี ระบุ...................................................................... </span></p>
           <p  class="text-base text-start pl-14">5. <span> โรคร้ายแรงอื่นๆ (ระบุ)....................................................................................................................................  </span> </p>
           <p  class="text-base text-start "><span class="pl-14">ข้าพเจ้าขอรับรองและยืนยันว่า บันทึกถ้อยคำดังกล่าวที่ได้ให้ไว้ข้างต้น เป็นความสัตย์จริงทุกประการ </span>
             <span class="underline underline-offset-2 font-semibold"> หากบันทึกถ้อยที่ได้แจ้งไว้ไม่ตรงกับวามเป็นจริงแล้ว ขอให้ สส.ชสอ. ตัดสิทธิให้ข้าพเจ้าเป็นผู้ขาดคุณสมบัติการเป็นสมาชิกได้
@@ -481,13 +481,13 @@
               <p class="text-base  "><span class="pl-14"> ข้าพเจ้ายินยอมเปิดเผยประวัติสุขภาพของข้าพเจ้า และขอมอบอำนาจให้ สส.ชสอ. ขอประวัติการรักษาของข้าพเจ้า
                 จากสถานพยาบาลที่เกี่ยวข้องได้ </span></p>
                 <p class="mt-4 text-center">ลงชื่อ............................................................</p>
-                <p class="mt-2 text-center">ตัวบรรจง(............................................................)</p>
+                <p class="mt-2 text-center">ตัวบรรจง(<FiLL class="min-w-56" :data="`${data?.fNameWitness1}  ${data?.lNameWitness1}`"/>)</p>
                 <p class="mt-2 text-center">(ผู้สมัครสมาชิก สส.ชสอ.)</p>
 
                 <p class="mt-4 text-center">ลงชื่อ............................................................
                 <span class="ml-8"> ลงชื่อ............................................................ </span></p>
-                <p class="mt-2 text-center">ตัวบรรจง(............................................................)
-                <span class="ml-8"> ตัวบรรจง(............................................................) </span></p>
+                <p class="mt-2 text-center">ตัวบรรจง(<FiLL class="min-w-56" :data="`${data?.fNameGuarantor2}  ${data?.lNameGuarantor2}`"/>)
+                <span class="ml-8"> ตัวบรรจง(<FiLL class="min-w-56" :data="`${data?.fNameGuarantor1}  ${data?.lNameGuarantor1}`"/>) </span></p>
                 <p class="mt-2 text-center">พยาน (เจ้าหน้าที่ศูนย์ประสานงาน)
                   <span class="ml-16"> พยาน (ผู้มีชื่อรับเงินวงเคราะห์) </span>
                 </p>
@@ -514,20 +514,20 @@
 
             </div>
             <p class="text-base font-semibold pl-4 mt-2 "> เอกสารหลักฐานการสมัคร สส.ชสอ. ดังนี้ </p>
-          <p class="text-base pl-5 "><FiLLBox /> 1. ใบสมัครสมาชิก : สส.ชสอ.ส.1/1 </p>
-          <p class="text-base pl-5 "><FiLLBox /> 2. สําหรับเจ้าหน้าที่ กรรมการ ศูนย์ประสานงานและสมาคม : สส.ชสอ.ส.1/2 </p>
-          <p class="text-base pl-5 "><FiLLBox /> 3. หนังสือให้คํายินยอมในการหักเงิน และแสดงเจตนาการรับเงินสงเคราะห์ : สส.ชสอ.ส.1/3</p>
-          <p class="text-base pl-5 "><FiLLBox /> 4. ลงลายมือชื่อผู้รับเงินสงเคราะห์ไว้เป็นหลักฐานการยินยอมให้หักเงินเพื่อชําระหนี้ : สส.ชสอ.ส.1/4</p>
-          <p class="text-base pl-5 "><FiLLBox /> 5. แบบคํารับรองสุขภาพตนเอง : สส.ชสอ.ส.5 (30 ก.ย.63)</p>
-          <p class="text-base pl-5 "><FiLLBox /> 6. รูปถ่าย ณ วันยื่นเอกสาร ตามแบบฟอร์มที่สมาคมกําหนด</p>
-          <p class="text-base pl-5 "><FiLLBox /> 7. สําเนาบัตรประชาชน หรือ บัตรข้าราชการของผู้สมัคร</p>
-          <p class="text-base pl-5 "><FiLLBox /> 8. สําเนาทะเบียนบ้านของผู้สมัคร</p>
-          <p class="text-base pl-5 "><FiLLBox /> 9. สําเนาบัตรประชาชน หรือ บัตรข้าราชการของผู้รับเงินสงเคราะห์ จํานวน.............คน</p>
-          <p class="text-base pl-5 "><FiLLBox /> 10. สําเนาทะเบียนบ้านของผู้รับเงินสงเคราะห์ จํานวน..............คน</p>
-          <p class="text-base pl-5 "><FiLLBox /> 11. ใบรับรองแพทย์ออกโดยโรงพยาบาล หรือสถานพยาบาลของรัฐฉบับจริง (อายุไม่เกิน 30 วัน นับถึงวันที่สมัคร)</p>
-          <p class="text-base pl-5 "><FiLLBox /> 12. หลักฐานการเป็นสมาชิกประเภทสามัญของสหกรณ์ออมทรัพย์ต้นสังกัด</p>
-          <p class="text-base pl-5 "><FiLLBox /> 13. สําเนาทะเบียนสมรส (ถ้ามี)</p>
-          <p class="text-base pl-5 "><FiLLBox /> 14. เอกสารหลักฐานอื่นๆ....................................................................................................................................................</p>
+          <p class="text-base pl-5 "><FiLLBox :checked="data?.memberGuarantor2"/> 1. ใบสมัครสมาชิก : สส.ชสอ.ส.1/1 </p>
+          <p class="text-base pl-5 "><FiLLBox :checked="data?.memberGuarantor2"/> 2. สําหรับเจ้าหน้าที่ กรรมการ ศูนย์ประสานงานและสมาคม : สส.ชสอ.ส.1/2 </p>
+          <p class="text-base pl-5 "><FiLLBox :checked="data?.memberGuarantor2"/> 3. หนังสือให้คํายินยอมในการหักเงิน และแสดงเจตนาการรับเงินสงเคราะห์ : สส.ชสอ.ส.1/3</p>
+          <p class="text-base pl-5 "><FiLLBox :checked="data?.memberGuarantor2"/> 4. ลงลายมือชื่อผู้รับเงินสงเคราะห์ไว้เป็นหลักฐานการยินยอมให้หักเงินเพื่อชําระหนี้ : สส.ชสอ.ส.1/4</p>
+          <p class="text-base pl-5 "><FiLLBox :checked="data?.memberGuarantor2"/> 5. แบบคํารับรองสุขภาพตนเอง : สส.ชสอ.ส.5 (30 ก.ย.63)</p>
+          <p class="text-base pl-5 "><FiLLBox :checked="data?.memberGuarantor2"/> 6. รูปถ่าย ณ วันยื่นเอกสาร ตามแบบฟอร์มที่สมาคมกําหนด</p>
+          <p class="text-base pl-5 "><FiLLBox :checked="data?.memberGuarantor2"/> 7. สําเนาบัตรประชาชน หรือ บัตรข้าราชการของผู้สมัคร</p>
+          <p class="text-base pl-5 "><FiLLBox :checked="data?.memberGuarantor2"/> 8. สําเนาทะเบียนบ้านของผู้สมัคร</p>
+          <p class="text-base pl-5 "><FiLLBox :checked="data?.memberGuarantor2"/> 9. สําเนาบัตรประชาชน หรือ บัตรข้าราชการของผู้รับเงินสงเคราะห์ จํานวน.............คน</p>
+          <p class="text-base pl-5 "><FiLLBox :checked="data?.memberGuarantor2"/> 10. สําเนาทะเบียนบ้านของผู้รับเงินสงเคราะห์ จํานวน..............คน</p>
+          <p class="text-base pl-5 "><FiLLBox :checked="data?.memberGuarantor2"/> 11. ใบรับรองแพทย์ออกโดยโรงพยาบาล หรือสถานพยาบาลของรัฐฉบับจริง (อายุไม่เกิน 30 วัน นับถึงวันที่สมัคร)</p>
+          <p class="text-base pl-5 "><FiLLBox :checked="data?.memberGuarantor2"/> 12. หลักฐานการเป็นสมาชิกประเภทสามัญของสหกรณ์ออมทรัพย์ต้นสังกัด</p>
+          <p class="text-base pl-5 "><FiLLBox :checked="data?.memberGuarantor2"/> 13. สําเนาทะเบียนสมรส (ถ้ามี)</p>
+          <p class="text-base pl-5 "><FiLLBox :checked="data?.memberGuarantor2"/> 14. เอกสารหลักฐานอื่นๆ....................................................................................................................................................</p>
  
             <div class="grid grid-cols-2 mt-4">
  

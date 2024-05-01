@@ -1,7 +1,6 @@
 <template>
     <main class="font-sans">
-      <MorePaperDoc>
-                        <!-- กู้สามัญทั่วไป general1  -->
+      <MorePaperDoc>  <!-- กู้สามัญทั่วไป general1  -->
 
                         <br><br> 
             <div class="border-2 border-slate-950">
@@ -26,8 +25,7 @@
             </div>
 
         </MorePaperDoc>
-        <MorePaperDoc>
-                        <!-- กู้สามัญทั่วไป general2  -->
+        <MorePaperDoc>  <!-- กู้สามัญทั่วไป general2  -->
 
                         <div class="grid grid-cols-3 grid-rows-2 justify-center h-10">
               <div class="items-start ">
@@ -127,13 +125,13 @@
             ออมทรัพย์แห่งประเทศไทยแล้ว มีความประสงค์สมัครเป็นสมาชิก และยินยอมปฏิบัติตามข้อบังคับ และเงื่อนไขดังกล่าวทุกประการ **</p>
           
  
-          <p class="text-base text-end mr-7 ">ลงชื่อ...........................................................ผู้สมัคร </p>
+          <p class="text-base text-end mr-7 ">ลงชื่อ<BlankSpace class="min-w-52" />ผู้สมัคร </p>
           <p class="text-base text-end mr-16 ">( <FiLL class="min-w-52" :data="`${data?.prefix} ${data?.fName}  ${data?.lName}`"/> )</p>
           </div>
 
         </MorePaperDoc>
-      <MorePaperDoc>
-                      <!-- กู้สามัญทั่วไป general3  -->
+      <MorePaperDoc>  <!-- กู้สามัญทั่วไป general3  -->
+                      
         <div class="grid justify-items-start font-bold  ml-48">
           <p class="pl-96">สส.ชสอ. ส.1/2(สามัญ)</p>
         </div>
@@ -151,7 +149,7 @@
         </div>
   
         <div class="grid justify-items-center">
-        <p class="pl-72">ลงชื่อ............................................................</p>
+        <p class="pl-72">ลงชื่อ<BlankSpace class="min-w-52" /></p>
         <div class="pl-80">
    (<FiLL class="min-w-52" :data="`${data?.lNameCommander}  ${data?.lNameSecretary}`"/> ) 
         </div><br>
@@ -164,7 +162,7 @@
           <p>เรียน <span class=" ml-2"> นายก สส.ชสอ.</span></p>
           <p><span class="ml-11">ตรวจสอบแล้วขอรับรองว่า สมาชิกมีคุณสมบัติครบถูกต้อง </span></p>
           <p><span class="ml-11"><FiLLBox  :checked="data?.fName"  /> เห็นควรรับเป็นสมาชิก สส.ชสอ. </span></p>
-          <p><span class="ml-11"><FiLLBox /> ไม่ควรรับเป็นสมาชิก สส.ชสอ. เนื่องจาก........................................................................................................................</span></p>
+          <p><span class="ml-11"><FiLLBox /> ไม่ควรรับเป็นสมาชิก สส.ชสอ. เนื่องจาก<BlankSpace class="min-w-96" /><BlankSpace class="min-w-6" /></span></p>
         </div>
         <div class="grid grid-cols-3 grid-rows-2 justify-center h-1 ml-14">
           <div class="items-start mt-4">
@@ -178,7 +176,7 @@
                 </div>
                 </div>
         <div class="grid justify-items-center mt-4">
-        <p class="pl-72">ลงชื่อ............................................................</p>
+        <p class="pl-72">ลงชื่อ<BlankSpace class="min-w-52" /></p>
         <div class="pl-80">
    (<FiLL class="min-w-52" :data="`${data?.fNameWitness2}  ${data?.lNameWitness1}`"/> ) 
         </div><br>
@@ -198,7 +196,7 @@
           </p>
         </div>
         <div class="grid justify-items-center mt-8">
-        <p class="pl-72">ลงชื่อ............................................................</p>
+        <p class="pl-72">ลงชื่อ<BlankSpace class="min-w-52" /></p>
         <div class="pl-80">
    (<FiLL class="min-w-52" :data="`${data?.fNameGuarantor1}  ${data?.lNameGuarantor1}`"/> ) 
         </div><br>
@@ -210,7 +208,7 @@
         <div class="grid justify-items-start  mt-4">
           <p class=" font-semibold ">คำสั่ง <FiLLBox  :checked="data?.fName"  /> <span class="font-normal">อนุมัติรับเข้าเป็นสมาชิกตั้งแต่วันที่ <FiLL :data="data?.dateReceived" date-format="full" class="min-w-60"/></span></p>
           <p><span class="ml-11">(คณะกรรมการ <FiLL :data="data?.agency" class="min-w-44" /> คราวประชุมครั้งที่ <FiLL :data="data?.paidInstallments" class="min-w-14" /> เมื่อวันที่ <FiLL :data="data?.dateReceived" date-format="full" class="min-w-40"/> ) </span></p>
-          <p><span class="ml-11"><FiLLBox /> ไม่อนุมัติ เนื่องจาก........................................................................................................................</span></p>
+          <p><span class="ml-11"><FiLLBox /> ไม่อนุมัติ เนื่องจาก<BlankSpace class="min-w-96" /><BlankSpace class="min-w-8" /></span></p>
         </div>
         <div class="grid grid-cols-3 grid-rows-2 justify-center h-1 ml-14">
           <div class="items-start mt-4">
@@ -224,7 +222,7 @@
                 </div>
                 </div>
         <div class="grid justify-items-center mt-4">
-        <p class="pl-72">ลงชื่อ............................................................</p>
+        <p class="pl-72">ลงชื่อ<BlankSpace class="min-w-52" /></p>
         <div class="pl-80">
    (<FiLL class="min-w-52" :data="`${data?.fNameGuarantor2}  ${data?.lNameGuarantor2}`"/> ) 
         </div><br>
@@ -233,11 +231,7 @@
  <br> 
  
       </MorePaperDoc>
-      <MorePaperDoc>
-
-      
-      
-                        <!-- กู้สามัญทั่วไป general4  -->
+      <MorePaperDoc>  <!-- กู้สามัญทั่วไป general4  -->
 
                         <div class="flex flex-col items-end row-span-2">
                 <p class="font-bold mb-2">สส.ชสอ. ส.2/1 (สามัญ)</p>
@@ -300,18 +294,17 @@
         </div>
         <p> <span class="ml-20 font-bold">อนึ่งข้าพเจ้าขอรับรองว่า การแสดงเจตาครั้งนี้เป็นไปด้วยความสมุครใจ ไม่มีผู้ใดบังคับ ข่มขู่ หรือกระทำการ
               ใดๆ ให้ข้าพเจ้าแสดงเจตนาดังกล่าว จึงได้ลงมือไว้เป็นสำคัญ ท้ายหนังสือนี้</span></p>
-              <p class="mt-2">(ลงชื่อ)............................................................ผู้ให้คำยินยอม
-                <span class="ml-4"> (ลงชื่อ)............................................................พยาน </span></p>
-              <p class="mt-2">(ลงชื่อ)............................................................ผู้จัดการ/จนท.ศูนย์ฯ
-                <span class="ml-4"> (ลงชื่อ)............................................................ประธาน ศูนย์ฯ </span>
+              <p class="mt-2">(ลงชื่อ)<BlankSpace class="min-w-52" />ผู้ให้คำยินยอม
+                <span class="ml-4"> (ลงชื่อ)<BlankSpace class="min-w-52" />พยาน </span></p>
+              <p class="mt-2">(ลงชื่อ)<BlankSpace class="min-w-52" />ผู้จัดการ/จนท.ศูนย์ฯ
+                <span class="ml-4"> (ลงชื่อ)<BlankSpace class="min-w-52" />ประธาน ศูนย์ฯ </span>
               </p>
               <br>
             </MorePaperDoc>
 
 
-            <MorePaperDoc>
+            <MorePaperDoc>    <!-- กู้สามัญทั่วไป general5  -->
 
-                        <!-- กู้สามัญทั่วไป general5  -->
               <div class="flex flex-col items-end row-span-2">
                 <p class="font-bold mb-2">สส.ชสอ. ส.2/2 (สามัญ)</p>
                 </div>
@@ -340,7 +333,7 @@
  
  <div class="border-solid border-2 border-slate-950 ">
 <p>
-  <div class="pl-14 text-base mt-4">2.1 ลงชื่อ...........................................................</div>
+  <div class="pl-14 text-base mt-4">2.1 ลงชื่อ<BlankSpace class="min-w-52" /></div>
   <div ></div>
   <div class="text-center pl-12">
     (<FiLL class="min-w-60" :data="`${data?.newfName}  ${data?.lName}`"/>)<br>
@@ -352,13 +345,13 @@
  </div>
  <div class="border-solid border-2 border-slate-950 ">
   <p>
-  <div class="pl-14 text-base mt-4">2.2 ลงชื่อ...........................................................</div>
+  <div class="pl-14 text-base mt-4">2.2 ลงชื่อ<BlankSpace class="min-w-52" /></div>
   <div ></div>
   <div class="text-center pl-12">
-    (............................................................)<br>
+    (<BlankSpace class="min-w-52" />)<br>
 </div>
 <div ></div>
-<div class="pl-14 text-base mt-4">เกี่ยวข้องเป็น....................................................</div>
+<div class="pl-14 text-base mt-4">เกี่ยวข้องเป็น<BlankSpace class="min-w-44" /></div>
 </p>
 <br>
 
@@ -368,25 +361,25 @@
  
  <div class="border-solid border-2 border-slate-950 ">
 <p>
-  <div class="pl-14 text-base mt-4">2.3 ลงชื่อ...........................................................</div>
+  <div class="pl-14 text-base mt-4">2.3 ลงชื่อ<BlankSpace class="min-w-52" /></div>
   <div ></div>
   <div class="text-center pl-12">
-    (............................................................)<br>
+    (<BlankSpace class="min-w-52" />)<br>
 </div>
 <div ></div>
-<div class="pl-14 text-base mt-4">เกี่ยวข้องเป็น....................................................</div>
+<div class="pl-14 text-base mt-4">เกี่ยวข้องเป็น.<BlankSpace class="min-w-44" /></div>
 </p>
 
  </div>
  <div class="border-solid border-2 border-slate-950 ">
   <p>
-  <div class="pl-14 text-base mt-4">2.4 ลงชื่อ...........................................................</div>
+  <div class="pl-14 text-base mt-4">2.4 ลงชื่อ<BlankSpace class="min-w-52" /></div>
   <div ></div>
   <div class="text-center pl-12">
-    (............................................................)<br>
+    (<BlankSpace class="min-w-52" />)<br>
 </div>
 <div ></div>
-<div class="pl-14 text-base mt-4">เกี่ยวข้องเป็น....................................................</div>
+<div class="pl-14 text-base mt-4">เกี่ยวข้องเป็น<BlankSpace class="min-w-44" /></div>
 </p>
 <br>
 
@@ -396,32 +389,32 @@
  
  <div class="border-solid border-2 border-slate-950 ">
 <p>
-  <div class="pl-14 text-base mt-4">2.5 ลงชื่อ...........................................................</div>
+  <div class="pl-14 text-base mt-4">2.5 ลงชื่อ<BlankSpace class="min-w-52" /></div>
   <div ></div>
   <div class="text-center pl-12">
-    (............................................................)<br>
+    (<BlankSpace class="min-w-52" />)<br>
 </div>
 <div ></div>
-<div class="pl-14 text-base mt-4">เกี่ยวข้องเป็น....................................................</div>
+<div class="pl-14 text-base mt-4">เกี่ยวข้องเป็น<BlankSpace class="min-w-44" /></div>
 </p>
 
  </div>
  <div class="border-solid border-2 border-slate-950 ">
   <p>
-  <div class="pl-14 text-base mt-4">2.6 ลงชื่อ...........................................................</div>
+  <div class="pl-14 text-base mt-4">2.6 ลงชื่อ<BlankSpace class="min-w-52" /></div>
   <div ></div>
   <div class="text-center pl-12">
-    (............................................................)<br>
+    (<BlankSpace class="min-w-52" />)<br>
 </div>
 <div ></div>
-<div class="pl-14 text-base mt-4">เกี่ยวข้องเป็น....................................................</div>
+<div class="pl-14 text-base mt-4">เกี่ยวข้องเป็น<BlankSpace class="min-w-44" /></div>
 </p>
 <br>
 
 </div>
 </div>
 <div class="grid justify-items-center mt-16">
-        <p class="pl-72">ลงชื่อ............................................................</p>
+        <p class="pl-72">ลงชื่อ<BlankSpace class="min-w-56" /></p>
         <div class="pl-80">
    (<FiLL class="min-w-60" :data="`${data?.newfName}  ${data?.lName}`"/> ) 
         </div>
@@ -433,8 +426,8 @@
 
 
 
-            <MorePaperDoc>
-              <!-- กู้สามัญทั่วไป general6  -->
+            <MorePaperDoc>  <!-- กู้สามัญทั่วไป general6  -->
+              
 
               <div class="flex flex-col items-end row-span-2">
                 <p class="font-bold mb-2">สส.ชสอ. ส.5</p>
@@ -462,16 +455,16 @@
           <p class="text-base pl-8 "><FiLLBox :checked="data?.fName"/> 2. ไม่เป็นผู้เป็นผู้มีกายทุพพลภาพ จนไม่สามารถปฏิบัติหน้าที่ได้ </p>
           <p class="text-base pl-8 "><FiLLBox :checked="data?.fName"/> 3. ไม่มีจิตฟั่นเฟือน ไม่สมประกอบ</p>
           <p  class="text-base text-start pl-14 font-semibold">4. <span class="underline underline-offset-2"> ประวัติการรักษาโรคต่อไปนี้  </span> </p>
-          <p class="text-base pl-20 mt-2"> (4.1) โรคมะเร็ง <span class="ml-32"> <FiLLBox :checked="data?.fName"/> ไม่มี <FiLLBox /> มี ระบุ...................................................................... </span></p>
-          <p class="text-base pl-20 "> (4.2) โรคหัวใจ หรือหลอดลม <span class="ml-10"> <FiLLBox :checked="data?.fName"/> ไม่มี <FiLLBox /> มี ระบุ...................................................................... </span></p>
-          <p class="text-base pl-20 "> (4.3) โรควัณโรคในระยะอันตราย <span class="ml-5"> <FiLLBox :checked="data?.fName"/> ไม่มี <FiLLBox /> มี ระบุ...................................................................... </span></p>
-          <p class="text-base pl-20 "> (4.4) โรคเบาหวานขั้นรุนแรง <span class="ml-12"> <FiLLBox :checked="data?.fName"/> ไม่มี <FiLLBox /> มี ระบุ...................................................................... </span></p>
-          <p class="text-base pl-20 "> (4.5) โรคเอดส์ <span class="pl-1.5 ml-32"> <FiLLBox :checked="data?.fName"/> ไม่มี <FiLLBox /> มี ระบุ...................................................................... </span></p>
-          <p class="text-base pl-20 "> (4.6) โรคเอสแอลอี (SLE) <span class="pl-1 ml-16"> <FiLLBox :checked="data?.fName"/> ไม่มี <FiLLBox /> มี ระบุ...................................................................... </span></p>
-          <p class="text-base pl-20 "> (4.7) โรคตับแข็ง <span class="pl-2.5 ml-28"> <FiLLBox :checked="data?.fName"/> ไม่มี <FiLLBox /> มี ระบุ...................................................................... </span></p>
-          <p class="text-base pl-20 "> (4.8) โรคปอดเรื้อรัง <span class="pl-2 ml-24"> <FiLLBox :checked="data?.fName"/> ไม่มี <FiLLBox /> มี ระบุ...................................................................... </span></p>
-          <p class="text-base pl-20 "> (4.9) ภาวะไตวาย (ล้างไต) <span class="pl-1.5 ml-14"> <FiLLBox :checked="data?.fName"/> ไม่มี <FiLLBox /> มี ระบุ...................................................................... </span></p>
-          <p  class="text-base text-start pl-14">5. <span> โรคร้ายแรงอื่นๆ (ระบุ)....................................................................................................................................  </span> </p>
+          <p class="text-base pl-20 mt-2"> (4.1) โรคมะเร็ง <span class="ml-32"> <FiLLBox :checked="data?.fName"/> ไม่มี <FiLLBox /> มี ระบุ<BlankSpace class="min-w-60" /> </span></p>
+          <p class="text-base pl-20 "> (4.2) โรคหัวใจ หรือหลอดลม <span class="ml-10"> <FiLLBox :checked="data?.fName"/> ไม่มี <FiLLBox /> มี ระบุ<BlankSpace class="min-w-60" /> </span></p>
+          <p class="text-base pl-20 "> (4.3) โรควัณโรคในระยะอันตราย <span class="ml-5"> <FiLLBox :checked="data?.fName"/> ไม่มี <FiLLBox /> มี ระบุ<BlankSpace class="min-w-60" /> </span></p>
+          <p class="text-base pl-20 "> (4.4) โรคเบาหวานขั้นรุนแรง <span class="ml-12"> <FiLLBox :checked="data?.fName"/> ไม่มี <FiLLBox /> มี ระบุ<BlankSpace class="min-w-60" /> </span></p>
+          <p class="text-base pl-20 "> (4.5) โรคเอดส์ <span class="pl-1.5 ml-32"> <FiLLBox :checked="data?.fName"/> ไม่มี <FiLLBox /> มี ระบุ<BlankSpace class="min-w-60" /> </span></p>
+          <p class="text-base pl-20 "> (4.6) โรคเอสแอลอี (SLE) <span class="pl-1 ml-16"> <FiLLBox :checked="data?.fName"/> ไม่มี <FiLLBox /> มี ระบุ<BlankSpace class="min-w-60" /> </span></p>
+          <p class="text-base pl-20 "> (4.7) โรคตับแข็ง <span class="pl-2.5 ml-28"> <FiLLBox :checked="data?.fName"/> ไม่มี <FiLLBox /> มี ระบุ<BlankSpace class="min-w-60" /> </span></p>
+          <p class="text-base pl-20 "> (4.8) โรคปอดเรื้อรัง <span class="pl-2 ml-24"> <FiLLBox :checked="data?.fName"/> ไม่มี <FiLLBox /> มี ระบุ<BlankSpace class="min-w-60" /> </span></p>
+          <p class="text-base pl-20 "> (4.9) ภาวะไตวาย (ล้างไต) <span class="pl-1.5 ml-14"> <FiLLBox :checked="data?.fName"/> ไม่มี <FiLLBox /> มี ระบุ<BlankSpace class="min-w-60" /> </span></p>
+          <p  class="text-base text-start pl-14">5. <span> โรคร้ายแรงอื่นๆ (ระบุ)<BlankSpace class="min-w-96" /><BlankSpace class="min-w-16" /><BlankSpace class="min-w-2" />  </span> </p>
           <p  class="text-base text-start "><span class="pl-14">ข้าพเจ้าขอรับรองและยืนยันว่า บันทึกถ้อยคำดังกล่าวที่ได้ให้ไว้ข้างต้น เป็นความสัตย์จริงทุกประการ </span>
             <span class="underline underline-offset-2 font-semibold"> หากบันทึกถ้อยที่ได้แจ้งไว้ไม่ตรงกับวามเป็นจริงแล้ว ขอให้ สส.ชสอ. ตัดสิทธิให้ข้าพเจ้าเป็นผู้ขาดคุณสมบัติการเป็นสมาชิกได้
               ความคิดคณพกรรมการ สส.ชสอ. ข้าพเจ้าและผู้รับเงินสงเคราะห์ของข้าพเจ้าจะไม่ขอรับสิทธิและสิทธิใดๆ ในการที่
@@ -480,20 +473,20 @@
               หากข้าพเจ้าเสียชีวิตก่อนกำหนด 1 ปี ทาง สส.ชสอ. จะไม่จ่าเงินสงเคราะห์ให้ผู้รับเงินสงเคราะห์ </span></p>
               <p class="text-base  "><span class="pl-14"> ข้าพเจ้ายินยอมเปิดเผยประวัติสุขภาพของข้าพเจ้า และขอมอบอำนาจให้ สส.ชสอ. ขอประวัติการรักษาของข้าพเจ้า
                 จากสถานพยาบาลที่เกี่ยวข้องได้ </span></p>
-                <p class="mt-4 text-center">ลงชื่อ............................................................</p>
-                <p class="mt-2 text-center">ตัวบรรจง(............................................................ )</p>
+                <p class="mt-4 text-center">ลงชื่อ<BlankSpace class="min-w-52" /></p>
+                <p class="mt-2 text-center">ตัวบรรจง(<BlankSpace class="min-w-52" />)</p>
                 <p class="mt-2 text-center">(ผู้สมัครสมาชิก สส.ชสอ.)</p>
 
-                <p class="mt-4 text-center">ลงชื่อ............................................................
-                <span class="ml-8"> ลงชื่อ............................................................ </span></p>
-                <p class="mt-2 text-center">ตัวบรรจง(............................................................ )
-                <span class="ml-8"> ตัวบรรจง(............................................................ ) </span></p>
+                <p class="mt-4 text-center">ลงชื่อ<BlankSpace class="min-w-56" />
+                <span class="ml-10"> ลงชื่อ<BlankSpace class="min-w-56" /> </span></p>
+                <p class="mt-2 text-center">ตัวบรรจง(<BlankSpace class="min-w-52" />)
+                <span class="ml-8"> ตัวบรรจง(<BlankSpace class="min-w-52" />) </span></p>
                 <p class="mt-2 text-center">พยาน (เจ้าหน้าที่ศูนย์ประสานงาน)
-                  <span class="ml-16"> พยาน (ผู้มีชื่อรับเงินวงเคราะห์) </span>
+                  <span class="ml-28"> พยาน (ผู้มีชื่อรับเงินวงเคราะห์) </span>
                 </p>
 </MorePaperDoc> 
-<MorePaperDoc>
-<!-- กู้สามัญทั่วไป general7  -->
+<MorePaperDoc>  <!-- กู้สามัญทั่วไป general7  -->
+
 <br><br> 
 <div class="flex flex-col items-end row-span-2 mt-14">
                 <p class="font-bold mb-2">สส.ชสอ. ส.7</p>

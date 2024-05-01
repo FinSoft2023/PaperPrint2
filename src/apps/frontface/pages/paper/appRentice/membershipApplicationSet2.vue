@@ -481,74 +481,59 @@
         </MorePaperDoc>
 
         <MorePaperDoc>    <!-- กู้สามัญทั่วไป general7  -->
-                        
-
-                        <div class="grid grid-cols-3 grid-rows-2 justify-center h-10">
-                        <div class="items-start mt-2">
-                          
-                          </div>
-
-              <div class="flex flex-col items-center row-span-2 mt-2">
-                
-              </div>
-
-              <div class="flex flex-col items-end row-span-2">
-                <p class="mb-2 mr-12">สสธท. 9</p>
-              </div>
+            <div class="text-end">
+                <div class="flex flex-col items-end row-span-2">
+                    <p class="mb-2 mr-12">สสธท. 9</p>
+                </div>  
             </div>
 
             <div class="grid justify-items-center mt-10 text-lg font-semibold">
-            <p>หนังสือยินยอมและมอบอำนาจการรับเงินสงเคราะห์</p>
-            <p>สมาคมฌาปนกิจสงเคราะห์สมาชิกสหกรณ์ออมทรัพย์สาธารณสุขไทย (สสธท.)</p>
+                <p>หนังสือยินยอมและมอบอำนาจการรับเงินสงเคราะห์</p>
+                <p>สมาคมฌาปนกิจสงเคราะห์สมาชิกสหกรณ์ออมทรัพย์สาธารณสุขไทย (สสธท.)</p>
             </div>
 
             <div class="mr-14 mt-4">
-            <div class="grid justify-items-center mt-2 text-base ">
-            <p class="ml-12">เขียนที่ <FiLL :data="data?.location" class="min-w-96" /></p>
-            <p class="ml-16">วันที่ <FiLL class="min-w-96" :data="data?.dateReceived"
-                      date-format="full" /></p>
-            </div>
-
-            <div class="grid justify-items-start mt-6 text-pretty text-base ">
-            <p><span class="ml-14">โดยหนังสือฉบับนี้ข้าพเจ้า </span> 
-              <FiLL class="min-w-60" :data="` ${data?.fName}  ${data?.lName}`"/> ซึ่งเป็นผู้ถือบัตรประจำตัวประชาชนเลขที่ <FiLL :data="data?.idcard" class="min-w-40" /> 
-              ที่อยู่ปัจจุบันเลขที่ <FiLL :data="data?.housenb" class="min-w-20" /> หมู่ที่ <FiLL :data="data?.group" class="min-w-14" />  ซอย <FiLL :data="data?.group" class="min-w-14" /> ถนน <FiLL :data="data?.road" class="min-w-32" /> 
-              ตำบล(แขวง) <FiLL :data="data?.district" class="min-w-24" /> อำเภอ(เขต) <FiLL :data="data?.district" class="min-w-24" /> จังหวัด <FiLL :data="data?.province" class="min-w-28" /> 
-              รหัสไปรษณีย์ <FiLL :data="data?.zipcode" class="min-w-24" /> โทรศัพท์บ้าน <FiLL :data="data?.nbPhon" class="min-w-44 " /> โทรศัพท์มือถือ <FiLL :data="data?.nbPhon" class="min-w-44" />
-              ยินยอมและมอบอำนาจให้สหกรณ์ออมทรัพย์ <FiLL :data="data?.agency" class="min-w-52" /> จำกัด หรือ <FiLL class="min-w-52" :data="` ${data?.ofFname}  ${data?.lName}`"/> ซึ่งเป็นผู้ถือบัตรประจำตัวประชาชนเลขที่ <FiLL :data="data?.idcard" class="min-w-40" /> 
-              ที่อยู่ปัจจุบันเลขที่ <FiLL :data="data?.housenb" class="min-w-20" /> หมู่ที่ <FiLL :data="data?.group" class="min-w-12" />  ซอย <FiLL :data="data?.group" class="min-w-12" /> ถนน <FiLL :data="data?.road" class="min-w-32" /> 
-              ตำบล(แขวง) <FiLL :data="data?.district" class="min-w-28" /> อำเภอ(เขต) <FiLL :data="data?.district" class="min-w-28" /> จังหวัด <FiLL :data="data?.province" class="min-w-36" /> 
-              รหัสไปรษณีย์ <FiLL :data="data?.zipcode" class="min-w-24" /> โทรศัพท์บ้าน <FiLL :data="data?.nbPhon" class="min-w-44 " /> โทรศัพท์มือถือ <FiLL :data="data?.nbPhon" class="min-w-48" />
-              เป็นผู้ ( ) รับเงินค่าจัดการศพ ( ) รับเงินสงเคราะห์ ( ) อื่นๆ ที่พึ่งได้รับ
-            </p>
-            <p>แทนข้าพเจ้าเพื่อนำเงินดังกล่าวชำระหนี้ของ <FiLL :data="data?.affiliation" class="min-w-40" /> ที่มีต่อสหกรณ์ออมทรัพย์<FiLL :data="data?.savings" class="min-w-28" /> จำกัด จนเสร็จการ </p>
-            <p>
-              <span class="ml-14">ข้าพเจ้าขอรับผิดชอบในการที่ผู้รับยินยอมและรับมอบอำนาจได้กระทำไปตามหนังสือยินยอมและมอบอำนาจนี้
-              เสมือนว่าข้าพเจ้าได้กระทำด้วยตนเองทั้งสิ้น</span>
-            </p>
-            <p>
-              <span class="ml-14">เพื่อเป็นหลักฐานข้าพเจ้าได้ลงลายมือชื่อ / ลายพิมพ์นิ้วมือ ไว้เป็นสำคัญต่อหน้าพยานแล้ว</span>
-            </p>
-          </div>
-
-          
-          <div class="grid grid-rows-2 grid-flow-col mt-4">
-                <div class="row-span-3">
-                  <div ></div>
+                <div class="grid justify-items-center mt-2 text-base ">
+                    <p class="ml-12">เขียนที่ <FiLL :data="data?.location" class="min-w-96" /></p>
+                    <p class="ml-16">วันที่ <FiLL class="min-w-96" :data="data?.dateReceived" date-format="full" /></p>
                 </div>
-                <div class="row-span-2 col-span-2  ">
-                  <div ></div>
-                  <div class="text-center text-base ml-60 mr-6">(ลงชื่อ)..........................................................ผู้ยินยอมและมอบอำนาจ</div>
-                  <div ></div>
-                  <div class="text-center ml-28">
-                    (<FiLL class="min-w-52" :data="`${data?.fName}  ${data?.lName}`"/>)
-                  </div>
+
+                <div class="grid justify-items-start mt-6 text-pretty text-base ">
+                    <p><span class="ml-14">โดยหนังสือฉบับนี้ข้าพเจ้า </span> 
+                        <FiLL class="min-w-60" :data="` ${data?.fName}  ${data?.lName}`"/> ซึ่งเป็นผู้ถือบัตรประจำตัวประชาชนเลขที่ <FiLL :data="data?.idcard" class="min-w-40" /> 
+                        ที่อยู่ปัจจุบันเลขที่ <FiLL :data="data?.housenb" class="min-w-20" /> หมู่ที่ <FiLL :data="data?.group" class="min-w-14" />  ซอย <FiLL :data="data?.group" class="min-w-14" /> ถนน <FiLL :data="data?.road" class="min-w-32" /> 
+                        ตำบล(แขวง) <FiLL :data="data?.district" class="min-w-24" /> อำเภอ(เขต) <FiLL :data="data?.district" class="min-w-24" /> จังหวัด <FiLL :data="data?.province" class="min-w-28" /> 
+                        รหัสไปรษณีย์ <FiLL :data="data?.zipcode" class="min-w-24" /> โทรศัพท์บ้าน <FiLL :data="data?.nbPhon" class="min-w-44 " /> โทรศัพท์มือถือ <FiLL :data="data?.nbPhon" class="min-w-44" />
+                        ยินยอมและมอบอำนาจให้สหกรณ์ออมทรัพย์ <FiLL :data="data?.agency" class="min-w-52" /> จำกัด หรือ <FiLL class="min-w-52" :data="` ${data?.ofFname}  ${data?.lName}`"/> ซึ่งเป็นผู้ถือบัตรประจำตัวประชาชนเลขที่ <FiLL :data="data?.idcard" class="min-w-40" /> 
+                        ที่อยู่ปัจจุบันเลขที่ <FiLL :data="data?.housenb" class="min-w-20" /> หมู่ที่ <FiLL :data="data?.group" class="min-w-12" />  ซอย <FiLL :data="data?.group" class="min-w-12" /> ถนน <FiLL :data="data?.road" class="min-w-32" /> 
+                        ตำบล(แขวง) <FiLL :data="data?.district" class="min-w-28" /> อำเภอ(เขต) <FiLL :data="data?.district" class="min-w-28" /> จังหวัด <FiLL :data="data?.province" class="min-w-36" /> 
+                        รหัสไปรษณีย์ <FiLL :data="data?.zipcode" class="min-w-24" /> โทรศัพท์บ้าน <FiLL :data="data?.nbPhon" class="min-w-44 " /> โทรศัพท์มือถือ <FiLL :data="data?.nbPhon" class="min-w-48" />
+                        เป็นผู้ <FiLLBox /> รับเงินค่าจัดการศพ <FiLLBox /> รับเงินสงเคราะห์ <FiLLBox /> อื่นๆ ที่พึ่งได้รับ
+                    </p>
+                    <p>แทนข้าพเจ้าเพื่อนำเงินดังกล่าวชำระหนี้ของ <FiLL :data="data?.affiliation" class="min-w-40" /> ที่มีต่อสหกรณ์ออมทรัพย์<FiLL :data="data?.savings" class="min-w-28" /> จำกัด จนเสร็จการ </p>
+                    <p>
+                        <span class="ml-14">ข้าพเจ้าขอรับผิดชอบในการที่ผู้รับยินยอมและรับมอบอำนาจได้กระทำไปตามหนังสือยินยอมและมอบอำนาจนี้
+                        เสมือนว่าข้าพเจ้าได้กระทำด้วยตนเองทั้งสิ้น</span>
+                    </p>
+                    <p>
+                        <span class="ml-14">เพื่อเป็นหลักฐานข้าพเจ้าได้ลงลายมือชื่อ / ลายพิมพ์นิ้วมือ ไว้เป็นสำคัญต่อหน้าพยานแล้ว</span>
+                    </p>
                 </div>
             </div>
+            
+            <div class="grid grid-cols-3 mt-4">
+                <div ></div>
+                <div class="col-span-2">
+                    <p class="ml-14">(ลงชื่อ) <BlankSpace class="min-w-52" /> ผู้ยอมและมอบอำนาจ</p>
+                    <p class="ml-24"><span class="ml-2">(<FiLL class="min-w-52" :data="`${data?.fName}  ${data?.lName}`"/>)</span></p>
+                </div>
+            </div>
+
+            
             <div class="grid grid-rows-2 grid-flow-col mt-2">
                 <div class="row-span-3">
                   <div ></div>
-            <div class="text-center text-base mr-4">(ลงชื่อ)............................................ผู้ยินยอมและมอบอำนาจ</div>
+            <div class="text-center text-base mr-4">(ลงชื่อ)<BlankSpace class="min-w-40" />ผู้ยินยอมและมอบอำนาจ</div>
             <div ></div>
             <div class="text-start">
               <p class="text-start text-base  ml-12">(<FiLL class="min-w-40" :data="`${data?.newlName}  ${data?.fName}`"/>)</p>
@@ -559,7 +544,7 @@
                 </div>
                 <div class="row-span-2 col-span-2  ">
                   <div ></div>
-                  <div class="text-end text-base">(ลงชื่อ)............................................ผู้ยินยอมและมอบอำนาจ</div>
+                  <div class="text-end text-base">(ลงชื่อ)<BlankSpace class="min-w-40" />ผู้ยินยอมและมอบอำนาจ</div>
             <div ></div>
             <div class="text-start">
               <p class="text-start text-base  ml-12">(<FiLL class="min-w-40" :data="`${data?.officerLName}  ${data?.newlName}`"/>)</p>
@@ -572,7 +557,7 @@
             <div class="grid grid-rows-2 grid-flow-col mt-2">
                 <div class="row-span-3">
                   <div ></div>
-            <div class="text-center text-base mr-4">(ลงชื่อ)............................................ผู้ยินยอมและมอบอำนาจ</div>
+            <div class="text-center text-base mr-4">(ลงชื่อ)<BlankSpace class="min-w-40" />ผู้ยินยอมและมอบอำนาจ</div>
             <div ></div>
             <div class="text-start">
               <p class="text-start text-base  ml-12">(<FiLL class="min-w-40" :data="`${data?.fNameGuarantor1}  ${data?.lNameGuarantor1}`"/>)</p>
@@ -583,7 +568,7 @@
                 </div>
                 <div class="row-span-2 col-span-2  ">
                   <div ></div>
-                  <div class="text-end text-base">(ลงชื่อ)............................................ผู้ยินยอมและมอบอำนาจ</div>
+                  <div class="text-end text-base">(ลงชื่อ)<BlankSpace class="min-w-40" />ผู้ยินยอมและมอบอำนาจ</div>
             <div ></div>
             <div class="text-start">
               <p class="text-start text-base  ml-12">(<FiLL class="min-w-40" :data="`${data?.fNameGuarantor2}  ${data?.lNameGuarantor2}`"/>)</p>
@@ -599,7 +584,7 @@
                 </div>
                 <div class="row-span-2 col-span-2  ">
                   <div ></div>
-                  <div class="text-center text-base ml-60 mr-6">(ลงชื่อ)..........................................................ผู้ยินยอมและมอบอำนาจ</div>
+                  <div class="text-center text-base ml-60 mr-6">(ลงชื่อ)<BlankSpace class="min-w-52" />ผู้ยินยอมและมอบอำนาจ</div>
                   <div ></div>
                   <div class="text-center ml-28">
                     (<FiLL class="min-w-52" :data="`${data?.newfName}  ${data?.lName}`"/>)
@@ -612,29 +597,22 @@
             </p>
             <div class="grid grid-rows-2 grid-flow-col mt-2">
                 <div class="row-span-3">
-                  <div ></div>
-            <div class="text-end text-base mr-4">(ลงชื่อ)............................................พยาน</div>
-            <div ></div>
-            <div class="text-end">
-              <p class="text-center text-base ml-16">(<FiLL class="min-w-40" :data="`${data?.fNameGuarantor1}  ${data?.lNameGuarantor1}`"/>)</p>
-            </div>
+                    <div ></div>
+                    <div class="text-end text-base mr-4">(ลงชื่อ)<BlankSpace class="min-w-40" />พยาน</div>
+                    <div ></div>
+                    <div class="text-end">
+                      <p class="text-center text-base ml-16">(<FiLL class="min-w-40" :data="`${data?.fNameGuarantor1}  ${data?.lNameGuarantor1}`"/>)</p>
+                    </div>
                 </div>
                 <div class="row-span-2 col-span-2  ">
-                  <div ></div>
-                  <div class="text-center text-base">(ลงชื่อ)............................................พยาน</div>
-            <div ></div>
-            <div class="text-center">
-              <p class="text-center text-base ml-1">(<FiLL class="min-w-40" :data="`${data?.fNameGuarantor2}  ${data?.lNameGuarantor2}`"/>)</p>
-            </div>
+                <div ></div>
+                <div class="text-center text-base">(ลงชื่อ)<BlankSpace class="min-w-40" />พยาน</div>
+                    <div ></div>
+                    <div class="text-center">
+                      <p class="text-center text-base ml-1">(<FiLL class="min-w-40" :data="`${data?.fNameGuarantor2}  ${data?.lNameGuarantor2}`"/>)</p>
+                    </div>
                 </div>
             </div>
-              
-
-            
- 
-            
-            </div>
-
         </MorePaperDoc>
 
     </main>

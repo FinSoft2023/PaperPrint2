@@ -447,7 +447,7 @@
                         <div></div>
                         <div class="text-center col-span-2">
                             <p><BlankSpace class="min-w-56" /></p>
-                            <p class="mb-2">(<FiLL class="min-w-56" :data="`${data?.prefix}${data?.fNamePresident}  ${data?.lNamePresident}`"/>)</p>
+                            <p class="mb-2">(<FiLL class="min-w-56" :data="`${data?.fNamePresident}  ${data?.lNamePresident}`"/>)</p>
                             <p>นายกสมาคมฌาปนกิจสงเคราะห์</p>
                             <p>สมาชิกสหกรณ์ออมทรัพย์สาธารณสุขไทย</p>
                         </div>
@@ -590,12 +590,97 @@
                         <span class="ml-14">เพื่อเป็นหลักฐานข้าพเจ้าได้ลงลายมือชื่อ / ลายพิมพ์นิ้วมือ ไว้เป็นสำคัญต่อหน้าพยานแล้ว</span>
                     </p>
                 </div>
-                
-                <div class="grid grid-cols-3 mt-4">
+            </div>
+            
+            <div class="grid grid-cols-3 mt-4">
+                <div ></div>
+                <div class="col-span-2">
+                    <p class="ml-14">(ลงชื่อ) <BlankSpace class="min-w-52" /> ผู้ยอมและมอบอำนาจ</p>
+                    <p class="ml-24"><span class="ml-2">(<FiLL class="min-w-52" :data="`${data?.fName}  ${data?.lName}`"/>)</span></p>
+                </div>
+            </div>
+
+            
+            <div class="grid grid-rows-2 grid-flow-col mt-2">
+                <div class="row-span-3">
+                  <div ></div>
+            <div class="text-center text-base mr-4">(ลงชื่อ)<BlankSpace class="min-w-40" />ผู้ยินยอมและมอบอำนาจ</div>
+            <div ></div>
+            <div class="text-start">
+              <p class="text-start text-base  ml-12">(<FiLL class="min-w-40" :data="`${data?.newlName}  ${data?.fName}`"/>)</p>
+              <p class="text-start text-base ">
+                บัตรปชช.เลขที่ <FiLL :data="data?.idcard" class="min-w-32" />
+              </p>
+            </div>
+                </div>
+                <div class="row-span-2 col-span-2  ">
+                  <div ></div>
+                  <div class="text-end text-base">(ลงชื่อ)<BlankSpace class="min-w-40" />ผู้ยินยอมและมอบอำนาจ</div>
+            <div ></div>
+            <div class="text-start">
+              <p class="text-start text-base  ml-12">(<FiLL class="min-w-40" :data="`${data?.officerLName}  ${data?.newlName}`"/>)</p>
+              <p class="text-start text-base ">
+                บัตรปชช.เลขที่ <FiLL :data="data?.idcard" class="min-w-32" />
+              </p>
+            </div>
+                </div>
+            </div>
+            <div class="grid grid-rows-2 grid-flow-col mt-2">
+                <div class="row-span-3">
+                  <div ></div>
+            <div class="text-center text-base mr-4">(ลงชื่อ)<BlankSpace class="min-w-40" />ผู้ยินยอมและมอบอำนาจ</div>
+            <div ></div>
+            <div class="text-start">
+              <p class="text-start text-base  ml-12">(<FiLL class="min-w-40" :data="`${data?.fNameGuarantor1}  ${data?.lNameGuarantor1}`"/>)</p>
+              <p class="text-start text-base ">
+                บัตรปชช.เลขที่ <FiLL :data="data?.idcard" class="min-w-32" />
+              </p>
+            </div>
+                </div>
+                <div class="row-span-2 col-span-2  ">
+                  <div ></div>
+                  <div class="text-end text-base">(ลงชื่อ)<BlankSpace class="min-w-40" />ผู้ยินยอมและมอบอำนาจ</div>
+            <div ></div>
+            <div class="text-start">
+              <p class="text-start text-base  ml-12">(<FiLL class="min-w-40" :data="`${data?.fNameGuarantor2}  ${data?.lNameGuarantor2}`"/>)</p>
+              <p class="text-start text-base ">
+                บัตรปชช.เลขที่ <FiLL :data="data?.idcard" class="min-w-32" />
+              </p>
+            </div>
+                </div>
+            </div>
+            <div class="grid grid-rows-2 grid-flow-col mt-6">
+                <div class="row-span-3">
+                  <div ></div>
+                </div>
+                <div class="row-span-2 col-span-2  ">
+                  <div ></div>
+                  <div class="text-center text-base ml-60 mr-6">(ลงชื่อ)<BlankSpace class="min-w-52" />ผู้ยินยอมและมอบอำนาจ</div>
+                  <div ></div>
+                  <div class="text-center ml-28">
+                    (<FiLL class="min-w-52" :data="`${data?.newfName}  ${data?.lName}`"/>)
+                  </div>
+                </div>
+            </div>
+            <p>
+              <span class="ml-14">ข้าพเจ้าขอรับรองว่าเป็นลายมือชื่อ&nbsp; /&nbsp; ลายพิมพ์นิ้วมือของผู้ยืนยอมและมอบอำนาจและผู้รับยินยอม
+                และรับมอบอำนาจจริงและได้ลงลายมือชื่อ&nbsp;/&nbsp; ลายพิมพ์นิ้วมือต่อหน้าข้าพเจ้า</span>
+            </p>
+            <div class="grid grid-rows-2 grid-flow-col mt-2">
+                <div class="row-span-3">
                     <div ></div>
-                    <div class="col-span-2">
-                        <p class="ml-14">(ลงชื่อ) <BlankSpace class="min-w-52" /> ผู้ยอมและมอบอำนาจ</p>
-                        <p class="ml-24"><span class="ml-2">(<FiLL class="min-w-52" :data="`${data?.fName}  ${data?.lName}`"/>)</span></p>
+                    <div class="text-end text-base mr-4">(ลงชื่อ)<BlankSpace class="min-w-40" />พยาน</div>
+                    <div ></div>
+                    <div class="text-end">
+                      <p class="text-center text-base ml-16">(<FiLL class="min-w-40" :data="`${data?.fNameGuarantor1}  ${data?.lNameGuarantor1}`"/>)</p>
+                    </div>
+                </div>
+                <div class="row-span-2 col-span-2  ">
+                <div ></div>
+                <div class="text-center text-base">(ลงชื่อ)<BlankSpace class="min-w-40" />พยาน</div>
+                    <div ></div>
+                    <div class="text-center">
+                      <p class="text-center text-base ml-1">(<FiLL class="min-w-40" :data="`${data?.fNameGuarantor2}  ${data?.lNameGuarantor2}`"/>)</p>
                     </div>
                 </div>
             </div>

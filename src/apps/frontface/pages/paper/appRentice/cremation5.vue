@@ -113,7 +113,7 @@
         <MorePaperDoc> <!-- หน้า 8 -->
             <div>
                 <p>
-0cx                    ซึ่งจะถือว่าการสมัครเป็นโมฆะตั้งแต่วันรับสมัครทันที ทั้งนี้ ผู้สมัครหรือสมาชิกรายนั้นจะไม่มีสิทธิ์ ได้รับเงิน
+                    ซึ่งจะถือว่าการสมัครเป็นโมฆะตั้งแต่วันรับสมัครทันที ทั้งนี้ ผู้สมัครหรือสมาชิกรายนั้นจะไม่มีสิทธิ์ ได้รับเงิน
                     สงเคราะห์ครอบครัวไม่ว่ากรณีใดๆ ทั้งสิ้น
                     <p class="mt-8 ml-20">ประกาศ ณ วันที่ 29 พฤษภาคม 2566 เป็นต้นไป</p>
                     <div class="grid grid-cols-3 mt-16">
@@ -130,7 +130,67 @@
         </MorePaperDoc>
 
         <MorePaperDoc> <!-- หน้า 9 -->
-            
+            <div>
+                <div class="text-center">
+                    <img class="w-[120px] h-auto mx-auto" src="https://cypphcoop.com/mediafiles/data/sorsortortor.png" alt="Logo" />
+                </div>
+                <div class="mb-2">
+                    <p class="text-center font-bold mt-2 text-xl">สงเคราะห์เงินรับให้มอบการเจตนาแสดงหนังสือ</p>
+                    <p class="text-center font-bold text-xl">สมาคมฌาปนกิจสงเคราะห์สมาชิกสหกรณ์ออมทรัพย์สาธารณสุขไทย</p>
+                </div>
+                <div class="text-base text-end mb-2">
+                    <p> เขียนที่ <FiLL :data="data?.location" class="min-w-96" /></p>
+                    <p> วันที่ <FiLL  :data="data?.dateReceived" class="min-w-96 "  date-format="full" /></p>
+                </div>
+                <p>
+                    <span class="ml-20">ข้าพเจ้า</span> <FiLL class="min-w-60" :data="`${data?.fName}  ${data?.lName}`"/> อายุ <FiLL :data="data?.age" class="min-w-20" /> ปี เกิดวันที่ <FiLL  class="min-w-52 " :data="data?.dateReceived" date-format="full" />
+                    <p>สมาชิกสมาคมฌาปนกิจสงเคราะห์สมาชิกสหกรณ์ออมทรัพย์สาธารณสุขไทย เลขทะเบียนที่<FiLL :data="data?.member" class="min-w-52" /></p>
+                    <p>อยู่บ้านเลขที่ <FiLL :data="data?.housenb" class="min-w-24" /> หมู่ที่ <FiLL :data="data?.group" class="min-w-16" /> ถนน <FiLL :data="data?.road" class="min-w-52" /> ตำบล <FiLL :data="data?.district" class="min-w-52" /></p>
+                    <p>อำเภอ <FiLL :data="data?.district" class="min-w-60" /> จังหวัด <FiLL :data="data?.province" class="min-w-60" /> รหัสไปรษณีย์ <FiLL :data="data?.zipcode" class="min-w-28" /> </p>
+                    <p>โทรศัพท์  <FiLL :data="data?.nbPhon" class="min-w-32" /> มือถือ <FiLL :data="data?.nbPhon" class="min-w-96" /></p>
+                </p>
+                <div class="mt-10">
+                    <p class="ml-20">1. สถานภาพ</p>
+                    <p class="ml-20"><FiLLBox />โสด <span class="ml-12"><FiLLBox :checked="data?.newfName" />สมรส คู่สมรสชื่อ </span><FiLL class="min-w-60" :data="`${data?.newfName}  ${data?.newlName}`"/> <FiLLBox />หย่า หรือ หม้าย</p>
+                    <p><span class="ml-20">2.</span> ข้าพเจ้าขอแสดงเจตนาการรับเงินสงเคราะห์ที่ สสธท. พึงจ่าย ให้ผู้จัดการศพข้าพเจ้าคือ <FiLL class="min-w-60" :data="`${data?.newfName}  ${data?.newlName}`"/> เกี่ยวข้องเป็น <FiLL :data="data?.newStatus" class="min-w-28" /> ของข้าพเจ้า(10%ของเงินสงเคราะห์) ส่วนที่เหลือมอบให้บุคคล ดังต่อไปนี้เป็นผู้รับเงินสงเคราะห์ คือ</p>
+                </div>
+                <LineFiLL :data="data?.beneficiary" :limit="5" class="mt-6 mb-6">
+                    <template #data="{ index, item }">
+                        <p class="text-center">
+                            2.<FiLL :data="index" decimal normal no-line />
+                            <FiLL :data="`${item.prefix}${item.fn}  ${item.ln}`" class="min-w-56" />
+                            เกี่ยวข้องเป็น
+                            <FiLL :data="item.status" class="min-w-20" />
+                            ของข้าพเจ้า สัดส่วน
+                            <FiLL :data="item.ratio" class="min-w-10" />
+                            %
+                        </p>
+                    </template>
+                    <template #default="{ index }">
+                        <p class="text-center">
+                            2.<FiLL :data="index" decimal normal no-line />
+                            <BlankSpace class="min-w-56" />
+                            เกี่ยวข้องเป็น
+                            <BlankSpace class="min-w-20" />
+                            ของข้าพเจ้า สัดส่วน
+                            <BlankSpace class="min-w-10" />
+                            %
+                        </p>
+                    </template>
+                </LineFiLL>
+                <div class="mx-20">
+                    โดยมีเงื่อนไขดังนี้ 
+                    <span class="ml-2"><FiLLBox /> ได้รับเต็มจำนวนเพียงผู้เดียว <FiLLBox /> ได้รับส่วนแบ่งเท่าๆกัน</span>
+                    <br><span class="ml-32"><FiLLBox /> อื่นๆระบุ <BlankSpace class="min-w-96" /></span>
+                </div>
+                <p>
+                    <span class="ml-20">อนึ่ง</span> ข้าพเจ้าขอรับรองว่า การแสดงเจตนาครั้งนี้เป็นไปด้วยความสมัครใจ ไม่มีผู้ใดบังคับ ข่มขู่ หรือกระทำ
+                    การใดๆ ให้ข้าพเจ้าแสดงเจตนาดังกล่าว จึงได้ลงลายมือชื่อไว้เป็นสำคัญ ท้ายหนังสือนี้
+                </p>
+                <div>
+                    
+                </div>
+            </div>
         </MorePaperDoc>
 
         <MorePaperDoc> <!-- หน้า 10 -->

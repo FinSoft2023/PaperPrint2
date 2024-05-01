@@ -113,6 +113,10 @@ export default defineEventHandler(async (event) => {
             //เอาไปใส่หน้าที่ 6
             // ชื่อนามสกุล                เกี่ยวข้อง         ส่วนเเบ่งเงิน         
          ],
+         beneficiary:[
+            {prefix: "นาง", fn: "สารีกา", ln: "สุขสำราญ", status: "คู่สมรส", ratio: "50"},
+            {prefix: "นาย", fn: "สมพง", ln: "สุขสำราญ", status: "บุตร", ratio: "50"}
+         ]
 
    }
 });

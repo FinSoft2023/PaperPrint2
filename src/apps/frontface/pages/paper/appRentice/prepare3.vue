@@ -528,7 +528,7 @@
           <p class="text-base pl-5 "><FiLLBox :checked="data?.memberGuarantor2"/> 11. ใบรับรองแพทย์ออกโดยโรงพยาบาล หรือสถานพยาบาลของรัฐฉบับจริง (อายุไม่เกิน 30 วัน นับถึงวันที่สมัคร)</p>
           <p class="text-base pl-5 "><FiLLBox :checked="data?.memberGuarantor2"/> 12. หลักฐานการเป็นสมาชิกประเภทสามัญของสหกรณ์ออมทรัพย์ต้นสังกัด</p>
           <p class="text-base pl-5 "><FiLLBox :checked="data?.memberGuarantor2"/> 13. สําเนาทะเบียนสมรส (ถ้ามี)</p>
-          <p class="text-base pl-5 "><FiLLBox /> 14. เอกสารหลักฐานอื่นๆ....................................................................................................................................................</p>
+          <p class="text-base pl-5 "><FiLLBox /> 14. เอกสารหลักฐานอื่นๆ <BlankSpace class="min-w-96" /></p>
  
             <div class="grid grid-cols-2 mt-4">
  
@@ -544,7 +544,7 @@
    
 
 <p class="text-base pl-6">เอกสารหลักฐาน <span class="pl-4"><FiLLBox :checked="data?.memberGuarantor2"/> ครบถ้วน <FiLLBox /> ไม่ครบ</span></p>
-<p class="text-base pl-6">อื่นๆ..............................................................................</p>
+<p class="text-base pl-6">อื่นๆ <BlankSpace class="min-w-60" /></p>
 <p class="text-base text-center mt-4">(<FiLL class="min-w-56" :data="`${data?.fNameWitness1}  ${data?.lNameWitness1}`"/>)</p>
 <p class="text-base pl-14 mt-2">ตำแหน่ง<FiLL :data="data?.position" class="min-w-28" /></p>
 <p class="text-base text-center mt-1">ผู้ตรวจสอบเอกสาร</p>
@@ -552,7 +552,7 @@
  </div>
  <div class="border-solid border-2 border-slate-950 ">
   <p class="text-base pl-6">เอกสารหลักฐาน <span class="pl-4"><FiLLBox :checked="data?.memberGuarantor2"/> ครบถ้วน <FiLLBox /> ไม่ครบ</span></p>
-<p class="text-base pl-6">อื่นๆ..............................................................................</p>
+<p class="text-base pl-6">อื่นๆ <BlankSpace class="min-w-60" /></p>
 <p class="text-base text-center mt-4">(<FiLL class="min-w-56" :data="`${data?.fNameGuarantor1}  ${data?.lNameGuarantor1}`"/>)</p>
 <p class="text-base pl-14 mt-2">ตำแหน่ง<FiLL :data="data?.positionCommander" class="min-w-28" /></p>
 <p class="text-base text-center mt-1">ผู้พิจรณาคุณสมบัติ</p>

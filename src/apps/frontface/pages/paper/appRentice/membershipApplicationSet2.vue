@@ -1,7 +1,7 @@
 <template>
     <main>
-        <PaperDoc>
-            <!-- กู้สามัญทั่วไป general1  -->
+        <PaperDoc>    <!-- กู้สามัญทั่วไป general1  -->
+            
             <br><br> <br><br> <br><br>
             <div class="border-2 border-slate-950">
               <p class="underline underline-offset-1 text-lg font-semibold "> ขั้นตอนการสมัครสมาชิก สสธท. ประเภทสามัญ (แอดไลน์ 0943934878 เพื่อสอบถามรายละเอียด)</p>
@@ -31,8 +31,8 @@
         </PaperDoc>
 
 
-        <MorePaperDoc>
-                        <!-- กู้สามัญทั่วไป general2  -->
+        <MorePaperDoc>    <!-- กู้สามัญทั่วไป general2  -->
+                        
                         <div class="grid grid-cols-3 grid-rows-2 justify-center h-10">
               <div class="items-start mt-8">
                 <div class="border-2 border-black p-1  ">
@@ -130,8 +130,8 @@
         </MorePaperDoc>
 
 
-        <MorePaperDoc>
-                        <!-- กู้สามัญทั่วไป general3  -->
+        <MorePaperDoc>    <!-- กู้สามัญทั่วไป general3  -->
+                        
               
               <div class="flex flex-col items-center row-span-2 mt-20">
                           <img class="w-[100px] h-auto"
@@ -196,8 +196,8 @@
         </MorePaperDoc>
 
 
-        <MorePaperDoc>
-                        <!-- กู้สามัญทั่วไป general4  -->
+        <MorePaperDoc>    <!-- กู้สามัญทั่วไป general4  -->
+                        
               
 
                         <div class="grid grid-cols-3 grid-rows-2 justify-center h-10"> 
@@ -276,8 +276,8 @@
 
         </MorePaperDoc>
 
-        <MorePaperDoc>
-                        <!-- กู้สามัญทั่วไป general5  -->
+        <MorePaperDoc>    <!-- กู้สามัญทั่วไป general5  -->
+                        
 
                         <div class="mr-3">
                         <div class="grid grid-cols-1 grid-rows-2 justify-center h-10">
@@ -413,8 +413,8 @@
 
         </MorePaperDoc>
 
-        <MorePaperDoc>
-                        <!-- กู้สามัญทั่วไป general6  -->
+        <MorePaperDoc>      <!-- กู้สามัญทั่วไป general6  -->
+                        
 
                           <div class="grid grid-cols-3 grid-rows-2 justify-center h-10">
                         <div class="items-start mt-8">
@@ -540,8 +540,8 @@
 
         </MorePaperDoc>
 
-        <MorePaperDoc>
-                        <!-- กู้สามัญทั่วไป general7  -->
+        <MorePaperDoc>    <!-- กู้สามัญทั่วไป general7  -->
+                        
 
                         <div class="grid grid-cols-3 grid-rows-2 justify-center h-10">
                         <div class="items-start mt-2">

@@ -125,7 +125,7 @@
             สมาชิกสามัญของสหกรณ์ออมทรัพย์สาธารณสุขไทย แล้ว มีความประสงค์สมัครเป็นสมาชิก และยินยอมปฏิบัติตามข้อบังคับและเงื่อไขดังกล่าวทุกประการ<br>
 </p> 
 <p class="text-base pl-96 ">ลงชื่อ...........................................................ผู้สมัคร </p>
-<p class="text-base pl-96 ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;( <FiLL class="min-w-52" :data="`${data?.prefix} ${data?.fName}  ${data?.lName}`"/> )</p>
+<p class="text-base pl-96 ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;( <FiLL class="min-w-52" :data="` ${data?.fName}  ${data?.lName}`"/> )</p>
 
         </MorePaperDoc>
 
@@ -159,7 +159,7 @@
 <p class="text-base "><span class="ml-12">ตรวจสอบแล้วขอรับรองว่าผู้สมัครเป็นผู้มีคุณสมบัติในการสมัครสมาชิก</span>  สสธท. และได้แนบหลักฐานประกอบกาสมัครครบถ้วน พร้อมชำระเงินค่าสมัคร
 และเงินค่าสงเคราะห์ล่วงหน้า ตามข้อบังคับ ระเบียบและประกาศการรับสมัครสมาชิก สสธท. ตามรอบการรับสมัคร หรือ การเปิดรับสมัครเป็นกรณีพิเศษ แล้วแต่กรณี
 </p>
-<p class="text-base ml-96"> ลงชื่อ <FiLL class="min-w-56" :data="` ${data?.fName}  ${data?.lName}`"/><br>
+<p class="text-base ml-96"> ลงชื่อ......................................................................<br>
 ตำแหน่ง  <FiLL  class="min-w-56 " :data="data?.position" date-format="short" />
 </p>
 <p class="text-center text-lg font-semibold">ความเห็นของกรรมการ</p><br>
@@ -180,7 +180,7 @@
                 <div class="border-2 border-black p-2">
                   <p class="text-sm font-bold ">ผู้มีอำนาจอนุมัติ (แล้วแต่กรณี)
                   </p>
-                  <p class="text-sm"><FiLLBox /> นายกสมาคม สสธท. </p>            
+                  <p class="text-sm"><FiLLBox :checked="data?.savings"/> นายกสมาคม สสธท. </p>            
                   <p class="text-sm "><FiLLBox /> กรรมการ สสธท. ปฏิบัติการแทน <span class="ml-4">นายกสมาคม สสธท. </span></p>
                 </div>
                 </div>

@@ -2,18 +2,26 @@
   <main>
   <PaperDoc>
     <div class="mx-3">
-                <h1 class="text-xl text-center font-semibold mb-2 mt-20 border-2 border-black p-2 ">สิทธิหน้าที่สมาชิก</h1>
+        <div class="flex text-cenetr">
+        <div class="items-start ">
+                <img class="w-[80px] h-auto mt-8"
+                  src="https://www.saving-sskh.com/images/logo-saving.png"
+                  alt="Logo" />
+                  </div>
+                  <h1 class="text-xl text-center font-semibold mb-2 mt-16 border-2 border-black p-2 w-72 ml-32">ใบลาออกจากสมาชิกสหกรณ์</h1>
+            </div>
+                
       <div class="mx-7">
-        <div class="flex flex-col items-end mt-10">
+        <div class="flex flex-col items-end mt-4">
         <p>เขียนที่ <FiLL :data="data?.location"  /></p>
         <div class="text-center mt-2 ">
-        <p>วันที่  <FiLL :data="data?.dateReceived"date-format="full"  /> 
+        <p class="mr-52">วันที่  <FiLL :data="data?.dateReceived"date-format="full"  /> 
         </p>
         </div>
       </div>
             </div>
 
-              <div class="mb-2 mt-6">
+              <div class="mb-2 mt-4">
                   <p class="mb-1">เรื่อง ขอลาออกจากสมาชิกสหกรณ์ฯ
                   </p>
                   <p class="mb-1">เรียน ประธานกรรมการสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด
@@ -27,15 +35,69 @@
                ต้องใช้เงิน/ต้องการปลดหนี้/ย้ายไปปฏิบัติราชการที่อื่น/ลาออกจากราชการ/เกษียณอายุราชการ
             </p>
         </span>
+        <div class="mt-4">
             <span class="ml-32">
                 เมื่อที่ประชุมคณะกรรมการดำเนินการได้มีมติอนุมัติให้ข้าพเจ้าลาออกจากสหกรณ์ฯแล้ว ข้าพเจ้า
             </span>
             <span>
                 จะมารับเงินค่าหุ้นที่มีอยู่ในสหกรณ์ด้วยตนเอง
             </span>
+        </div>
             <br>
-            <div class="mb-2 mt-4">
+            <div class="mb-2">
             <span class="ml-32">จึงเรียนมาเพื่อโปรดพิจารณาและดำเนินการต่อไป
+
+                <div class="mt-4">
+        <div class="grid grid-cols-2 justify-start mt-4">
+            <div class="items-start  text-center">
+            </div>
+            <div class="items-end ">
+                
+              <p class="text-left pl-20 mt-4">ขอแสดงความนับถือ
+              </p>
+
+              <p class="text-left pl-12 mt-6 ">...........................................................
+            </p>
+
+              <tr>
+              <p class="text-left pl-16">(<FiLL class="min-w-40" :data="`${data?.fName}  ${data?.lName}`"/>)
+              </p>
+              </tr><br>
+
+              <p class="text-left pl-12 mt-2 ">...........................................................พยาน(สมาชิก)
+            </p>
+
+              <tr>
+              <p class="text-left pl-16">(<FiLL class="min-w-40" :data="`${data?.fNameWitness1}  ${data?.fNameWitness2}`"/>)
+              </p>
+              </tr><br>
+          </div>
+          <div class="grid grid-cols-2 justify-center">
+            <div class="items-start  text-nowrap">
+      </div><br>
+  </div>
+</div>
+</div>
+            <p class="pl-6">...................................................................................................................................................................................................
+            </p>
+            <div class="font-semibold underline ml-6">บันทึกข้อมูลเจ้าหน้าที่สหกรณ์
+            </div>
+            <div class="mt-8 ml-6">เงินค่าหุ้นชึ่งมีอยู่ในสหกรณ์ฯ  <span class="ml-2">เมื่อวันที่ <FiLL :data="data?.dateReceived"date-format="short"  />
+                 ส่งงวดละ <FiLL class="min-w-16":data="data?.stockValue" />บาท จำนวนเงิน<FiLL class="min-w-16" :data="data?.stockValue" />บาท</span><br>
+                                   หนี้คงเหลืออยู่ในสหกรณ์ฯ    <span class="ml-6">เมื่อวันที่ <FiLL :data="data?.dateReceived"date-format="short"  />
+                ส่งงวดละ <FiLL class="min-w-16 ":data="data?.stockValue" />บาท จำนวนเงิน<FiLL class="min-w-16" :data="data?.satang" />บาท</span>
+                                    
+                    <p class="text-center ml-56"> ดอกเบี้ย ณ วันนี้ <FiLL class="min-w-28" :data="data?.satang" />คิดเป็นเงิน<FiLL class="min-w-16" :data="data?.satang" />บาท
+                    </p>
+                    <div class="mt-8 ml-60">................................................เจ้าหน้าที่สหกรณ์ฯ
+                    </div>
+                    <div class="ml-60">(<FiLL class="min-w-40 ":data="`${data?.fMarryOwnerCollateral1}  ${data?.lMarryOwnerCollateral1}`" />)
+                    </div>
+                    <div class="ml-60"><FiLL class="min-w-40 ":data="data?.dateReceived"date-format="short"  />
+
+                    </div>
+
+            </div>
 
 
 
@@ -44,65 +106,55 @@
           </div>
   </PaperDoc>
   <MorePaperDoc>
-      <div class="flex flex-col mb-4 mt-20 mx-12">
-      <p>
-        ผู้ขอเปิดบัญชี <FiLL class="min-w-72 " :data="`${data?.fName}  ${data?.lName}`" />  สมาชิกเลขทะเบียนที่ <FiLL  class="min-w-40" :data="data?.member" />
-        ที่อยู่เลขที่ <FiLL  class="min-w-28" :data="data?.housenb" /> ถนน <FiLL class="min-w-48" :data="data?.road" />ตำบล/แขวง<FiLL class="min-w-48" :data="data?.district" /> 
-          อำเภอ/เขต<FiLL  class="min-w-40" :data="data?.district" /> จังหวัด<FiLL class="min-w-40" :data="data?.province" /> โทรศัพท์ <FiLL class="min-w-44" :data="data?.nbPhon" />
-          สถานที่ทำงาน<FiLL class="min-w-48" :data="data?.economize" />โทรศัพท์<FiLL class="min-w-36" :data="data?.nbPhon" /> โทรสาร<FiLL class="min-w-36" :data="data?.nbPhon" />
-      </p>
-      <div class="mt-2">
-          มีความประสงค์ขอเปิดบัญชีเงินฝากออมทรัพย์พิเศษในชื่อข้าพเจ้าไว้กับสหกรณ์นี้
-              </div>
-              <div class="mt-6">
-              <span class="ml-12">โดยข้าพเจ้าได้ลงลายมือชื่อในบัตรตัวอย่างลายมือชื่อเรียบร้อย กับยินยอมผูกพันและปฏิบัติตาม
-                  ระแบบของสหกรณ์นี้ ในส่วนที่ว่าด้วยเงินฝากออมทรัพย์พิเศษทุกประการ
-              </span>
-          </div>
-          <div class="mt-32">
-        <div class="grid grid-cols-2 justify-start mt-6">
-            <div class="items-start  text-center">
-              <tr>
-              <td class="text-left pl-16 ">ผู้อนุมัติ.................................................
-              </td>
-              </tr>
-              <tr>
-              <td class="text-center pl-24">(<FiLL class="min-w-40" :data="`${data?.officerFName}  ${data?.officerLName}`"/>)
-              </td>
-              </tr>
-              
-              <tr>
-              <td class="text-left pl-16 ">ผู้บันทึก.................................................
-              </td>
-              </tr>
-              <tr>
-                <div class="text-center pl-24">
-                  (<FiLL class="min-w-40" :data="`${data?.fNameManager}  ${data?.lNameManager}`"/>)<br>
-      </div><br>
-              
-              </tr>
+    <br><br>  <br><br>
+        <br><br>
 
-            </div>
-            <div class="items-end ">
+        <p class="text-2xl text-center">
+                  <FiLL class="min-w-20" :data="data?.location" />
+                  </p>
+                  <p class="underline underline-offset-2 text-2xl text-center font-semibold">ใบสำคัญทางการเงิน</p>
+ <p class="pl-96 text-xl">วันที่ <FiLL class="min-w-60" :data="data?.dateReceived"
+                      date-format="full" /></p>
+                      <p class=" text-xl"><span class="ml-20">ข้าพเจ้า </span><FiLL class="min-w-60" :data="`${data?.fName}  ${data?.lName}`"/>
+                    สมาชิกเลขทะเบียนที่ <FiLL class="min-w-40" :data="data?.numberRegis" /> ตำแหน่งหรือตำบลที่อยู่ <FiLL class="min-w-80" :data="data?.district" />
+                ได้รับเงินจาก  <FiLL class="min-w-20" :data="data?.location" /> ดังรายการต่อไปนี้
+                </p>
+                ___________________________________________________________________________________________________________________
               
-              <tr>
-              <td class="text-left pl-12 ">...........................................................
-              </td>
-              </tr>
-              <tr>
-              <td class="text-left pl-16">(<FiLL class="min-w-40" :data="`${data?.fName}  ${data?.lName}`"/>)
-              </td>
-              </tr><br>
+              <div class="flex ">
+                
+                <p class=" text-xl ml-8 mt-14">เป็นเงินค่า <FiLL class="min-w-80" :data="data?.lNameGuarantor2" /> <FiLL class="min-w-80" :data="data?.bath" />
+                บาท <FiLL class="min-w-80" :data="data?.togetherBath" /> รวม
+                </p>
+                
 
-          </div>
-          <div class="grid grid-cols-2 justify-center mt-6">
-            <div class="items-start  text-nowrap">
-      </div><br>
-  </div>
-                  </div>
-              </div>
+                <table class="border-collapse border border-slate-400 ...">
+  <thead>
+    <tr>
+      <th class="border border-slate-300 ...">&nbsp;บาท&nbsp;</th>
+      <th class="border border-slate-300 ...">&nbsp;สตางค์&nbsp;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="border border-slate-300 ..."><FiLL  :data="data?.bath" no-line/></td>
+      <td class="border border-slate-300 text-center"><FiLL  :data="data?.satang" no-line/></td>
+    </tr>
+    <tr>
+      <td class="border border-slate-300 ..."><FiLL  :data="data?.bath" no-line/></td>
+      <td class="border border-slate-300 text-center"><FiLL  :data="data?.satang" no-line/></td>
+    </tr>
+    <tr>
+      <td class="border border-slate-300 ..."><FiLL  :data="data?.bath" no-line/></td>
+      <td class="border border-slate-300 text-center"><FiLL  :data="data?.satang" no-line/></td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
-      </div>
+<p class="underline underline-offset-1  text-xl ">คำชี้แจง <FiLL class="min-w-80" :data="data?.Explanation" /></p>
+<br>
+<p class=" text-xl text-center "><FiLL class="min-w-60" :data="`${data?.fName}  ${data?.lName}`"/> ผู้รับเงิน </p>
       
   </MorePaperDoc>
  

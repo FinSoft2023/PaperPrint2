@@ -59,10 +59,19 @@
     </MorePaperDoc>
 
     <MorePaperDoc>
-        <p>หนังสือขอเปิดบัญชีเงินฝากออมทรัพย์พิเศษ</p>
-        <div class="flex flex-col mb-4 mt-20 mx-12">
-        <p>
-          ผู้ขอเปิดบัญชี <FiLL class="min-w-72 " :data="`${data?.fName}  ${data?.lName}`" />  สมาชิกเลขทะเบียนที่ <FiLL  class="min-w-40" :data="data?.member" />
+        <p class="text-center text-xl font-semibold mt-12">หนังสือขอเปิดบัญชีเงินฝากออมทรัพย์พิเศษ</p>
+        <div class="grid grid-cols-2 mt-14 ">
+<div class="text-base p-2">สมาชิกเลขทะเบียนที่<FiLL  class="min-w-28" :data="data?.member" /></div>
+<div class="border-2 border-slate-950">
+<div class="text-base p-2">เลขที่บัญชี<FiLL  class="min-w-56" :data="data?.newnbAccount" /></div>
+</div>
+</div>
+<p class="text-base pl-96 mt-8">วันที่<FiLL  class="min-w-56 " :data="data?.dateReceived" date-format="full" /></p>
+        <div class="flex flex-col mt-8">
+        
+        <p class="mt-2">เรียน ผู้จัดการสหกรณ์ออมทรัพย์<FiLL  class="min-w-40" :data="data?.affiliation" />จำกัด</p>
+            <p class="mt-8">
+          <span class="ml-12">ข้าพเจ้า</span> <FiLL class="min-w-72 " :data="`${data?.fName}  ${data?.lName}`" />  อายุ <FiLL  class="min-w-40" :data="data?.member" /> ปี
           ที่อยู่เลขที่ <FiLL  class="min-w-28" :data="data?.housenb" /> ถนน <FiLL class="min-w-48" :data="data?.road" />ตำบล/แขวง<FiLL class="min-w-48" :data="data?.district" /> 
             อำเภอ/เขต<FiLL  class="min-w-40" :data="data?.district" /> จังหวัด<FiLL class="min-w-40" :data="data?.province" /> โทรศัพท์ <FiLL class="min-w-44" :data="data?.nbPhon" />
             สถานที่ทำงาน<FiLL class="min-w-48" :data="data?.economize" />โทรศัพท์<FiLL class="min-w-36" :data="data?.nbPhon" /> โทรสาร<FiLL class="min-w-36" :data="data?.nbPhon" />

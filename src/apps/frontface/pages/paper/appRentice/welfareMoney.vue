@@ -66,7 +66,7 @@
             <div ></div>
             <div ><br></div>
             <div ></div>
-            <div class="text-center text-base">..................................................................</div>
+            <div class="text-center text-base"><BlankSpace class="min-w-48" /></div>
             <div ></div>
             <div class="text-center mt-4">
               ( <FiLL class="min-w-44" :data="`${data?.fName}  ${data?.lName}`"/>)<br><br>

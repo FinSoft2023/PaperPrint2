@@ -29,7 +29,7 @@
         
         <p class=" ml-28 mt-8">จึงเรียนมาเพื่อโปรดพิจารณาอนุมัติ</p><br>
         <div class="grid justify-items-center mt-10">
-        <p class="pl-72">ลงชื่อ............................................................</p>
+        <p class="pl-72">ลงชื่อ<BlankSpace class="min-w-52" /></p> 
         <div class="pl-80">
    (<FiLL class="min-w-52" :data="`${data?.fName}  ${data?.lName}`"/> ) 
         </div><br>

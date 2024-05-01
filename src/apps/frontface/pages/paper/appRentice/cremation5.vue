@@ -88,7 +88,7 @@
   <span class="ml-12">ข้าพเจ้า</span> 
   <FiLL class="min-w-80" :data="`${data?.fName}  ${data?.lName}`"/>สมาชิกสมาคมฌาปนกิจสงเคราะห์สมาชิกสหกรณ์ออมทรัพย์สาธารณสุขไทย
   ทะเบียนเลขประจำตัว<FiLL :data="data?.idcard" class="min-w-48" /> อยู่บ้านเลขที่ <FiLL :data="data?.housenb" class="min-w-32" /> 
-  <br>หมู่ที่ <FiLL :data="data?.group" class="min-w-28" /> ตรอก/ซอย .................... ถนน <FiLL :data="data?.road" class="min-w-40" />
+  <br>หมู่ที่ <FiLL :data="data?.group" class="min-w-28" /> ตรอก/ซอย <BlankSpace class="min-w-16" /> ถนน <FiLL :data="data?.road" class="min-w-40" />
   ตำบล/แขวง <FiLL :data="data?.district" class="min-w-36" />
   <br>อำเภอ/เขต <FiLL :data="data?.district" class="min-w-32" /> จังหวัด <FiLL :data="data?.province" class="min-w-36" />
   โทรศัพท์<FiLL :data="data?.nbPhon" class="min-w-40" /> 
@@ -216,9 +216,9 @@
 </div>
 
 <p class="ml-16 font-semibold"> สรุปความเห็นและข้อแนะนำของแพทย์<BlankSpace class="min-w-96" />
-    <br><BlankSpace class="min-w-96" />......................................................................
+    <br><BlankSpace class="min-w-96" /><BlankSpace class="min-w-60" /><BlankSpace class="min-w-6" />
 </p> 
-<p class="text-base text-end mr-8"> ลงชื่อ....................................................................<br>
+<p class="text-base text-end mr-8 mt-2"> ลงชื่อ<BlankSpace class="min-w-56" /><br>
     ( <FiLL class="min-w-56" :data="`${data?.lOwnerCollateral1}  ${data?.lMarryOwnerCollateral1}`"/> ) <br>
 </p>
 <p class="text-sm text-end mr-24"> แพทย์ผู้ตรวจร่างกาย</p>
@@ -306,7 +306,7 @@
         </p>
         <div class="grid grid-cols-1 text-center ">
             
-            <div class="text-center text-base mr-4 mt-12">ลงชื่อ..................................................................</div>
+            <div class="text-center text-base mr-4 mt-12">ลงชื่อ<BlankSpace class="min-w-56" /></div>
             <div ></div>
             <div class="text-center mt-2">
               (<FiLL class="min-w-52" :data="`${data?.fName}  ${data?.lName}`"/>)
@@ -319,7 +319,7 @@
             <div class="grid grid-rows-2 grid-flow-col mt-6 ml-12">
                 <div class="row-span-3">
                   <div ></div>
-            <div class="text-start text-base mr-4">ลงชื่อ..................................................................</div>
+            <div class="text-start text-base mr-4">ลงชื่อ<BlankSpace class="min-w-56" /></div>
             <div ></div>
             <div class="text-start ml-8 mt-2">
               (<FiLL class="min-w-52" :data="`${data?.officerFName}  ${data?.officerLName}`"/>)
@@ -330,7 +330,7 @@
                 </div>
                 <div class="row-span-2 col-span-2  ">
                   <div ></div>
-            <div class="text-center text-base mr-4">ลงชื่อ..................................................................</div>
+            <div class="text-center text-base mr-4">ลงชื่อ<BlankSpace class="min-w-56" /></div>
             <div ></div>
             <div class="text-center mt-2 ">
               (<FiLL class="min-w-52" :data="`${data?.fNameWitness1}  ${data?.lNameWitness1}`"/>)

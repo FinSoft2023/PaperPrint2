@@ -22,18 +22,18 @@
                     <p class="font-semibold mb-1 text-left ml-12">ตัวอย่างลายมือชื่อ</p>
 
                            <p class="text-center text-base">
-                           1. ...........................................................................................................................................
+                           1. <BlankSpace class="min-w-60" /><BlankSpace class="min-w-60" />
                            <p class="text-center text-base">
-                           2. ...........................................................................................................................................
+                           2. <BlankSpace class="min-w-60" /><BlankSpace class="min-w-60" />
                            <p class="text-center text-base">
-                           3. ...........................................................................................................................................
+                           3. <BlankSpace class="min-w-60" /><BlankSpace class="min-w-60" />
                         </p>
                     </p>
                 </p>
                 <br>
                 <div class="mb-2">
-                    <p class="font-semibold">เงื่อนไขการถอนเงิน</p>.............................................................................................................................................................................
-                        .............................................................................................................................................................................
+                    <p class="font-semibold">เงื่อนไขการถอนเงิน</p><BlankSpace class="min-w-80" /><BlankSpace class="min-w-80" /><br>
+                    <BlankSpace class="min-w-80" /><BlankSpace class="min-w-80" />
                     
                     </div>
             </div>
@@ -47,10 +47,10 @@
             อำเภอ/เขต<FiLL  class="min-w-40" :data="data?.district" /> จังหวัด<FiLL class="min-w-40" :data="data?.province" /> โทรศัพท์ <FiLL class="min-w-44" :data="data?.nbPhon" />
             สถานที่ทำงาน<FiLL class="min-w-80" :data="data?.economize" /><br> 
             โทรศัพท์<FiLL class="min-w-72" :data="data?.nbPhon" /> โทรสาร<FiLL class="min-w-72" :data="data?.nbPhon" /> 
-            เปิดบัญชีเมื่อวันที่<FiLL class="min-w-80" :data="data?.dateReceived" date-format="full"/> 
-            หมายเหตุ..................................................................................................................................................................................
-            ....................................................................................................................................................................................................
-            ....................................................................................................................................................................................................
+            เปิดบัญชีเมื่อวันที่<FiLL class="min-w-80" :data="data?.dateReceived" date-format="full"/> <br>
+            หมายเหตุ<BlankSpace class="min-w-80" /><BlankSpace class="min-w-64" /><br>
+            <BlankSpace class="min-w-80" /><BlankSpace class="min-w-80" /><br>
+            <BlankSpace class="min-w-80" /><BlankSpace class="min-w-80" />
         </p>
       </div>
     </PaperDoc>
@@ -104,7 +104,7 @@
           <div class="grid grid-cols-2 justify-start mt-6">
               <div class="items-start  text-center">
                 <tr>
-                <td class="text-left pl-16 ">ผู้อนุมัติ.................................................
+                <td class="text-left pl-16 ">ผู้อนุมัติ<BlankSpace class="min-w-44" />
                 </td>
                 </tr>
                 <tr>
@@ -113,7 +113,7 @@
                 </tr>
                 
                 <tr>
-                <td class="text-left pl-16 ">ผู้บันทึก.................................................
+                <td class="text-left pl-16 ">ผู้บันทึก<BlankSpace class="min-w-44" />
                 </td>
                 </tr>
                 <tr>
@@ -127,7 +127,7 @@
               <div class="items-end ">
                 
                 <tr>
-                <td class="text-left pl-12 ">...........................................................
+                <td class="text-left pl-12 "><BlankSpace class="min-w-48" />
                 </td>
                 </tr>
                 <tr>

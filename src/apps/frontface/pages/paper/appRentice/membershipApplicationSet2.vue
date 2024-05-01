@@ -87,7 +87,7 @@
             เกิดวันที่ <FiLL  class="min-w-56 " :data="data?.dateReceived" date-format="full" /> คู่สมรสชื่อ <FiLL class="min-w-96" :data="`${data?.newprefix} ${data?.newfName}  ${data?.lName}`"/>
           </p> 
           <p class="text-base"> (1) <FiLLBox :checked="data?.savings"/> สมาชิกสามัญของสหกรณ์ออมทรัพย์ <FiLL :data="data?.savings" class="min-w-40" />จำกัด เลขสมาชิกสหกรณ์ <FiLL :data="data?.member" class="min-w-32" />
-          <span class="text-base ml-6"><FiLLBox /> อื่นๆ </span>(ระบุ).....................................................................................................
+          <span class="text-base ml-6"><FiLLBox /> อื่นๆ </span>(ระบุ)<BlankSpace class="min-w-80" /><BlankSpace class="min-w-8" />
           </p>
           <p class="text-base"> (2) ตำแหน่ง <FiLL :data="data?.position" class="min-w-40" /> หรือปฏิบัติหน้าที่ <FiLL :data="data?.position" class="min-w-40" />
       <br> <span class="text-base ml-6"> สถานที่ปฏิบัติงาน / ชื่อหน่วยงาน </span><FiLL :data="data?.agency" class="min-w-80" /> <br> <span class="text-base ml-6">ตำบล (แขวง)</span> <FiLL :data="data?.district" class="min-w-44" />
@@ -95,7 +95,7 @@
       <br> <span class="text-base ml-6">โทรศัพท์ (ที่ทำงาน)</span> <FiLL :data="data?.nbPhon" class="min-w-32" /> 
     </p>
 <p class="text-base ">(3)  สถานที่อยู่(ในการจัดส่งเอกสาร) <br>
-<span class="text-base ml-6">บ้านเลขที่ </span><FiLL :data="data?.housenb" class="min-w-32" /> หมู่ที่ <FiLL :data="data?.group" class="min-w-32" /> ซอย .................... ถนน <FiLL :data="data?.road" class="min-w-32" />
+<span class="text-base ml-6">บ้านเลขที่ </span><FiLL :data="data?.housenb" class="min-w-32" /> หมู่ที่ <FiLL :data="data?.group" class="min-w-32" /> ซอย <BlankSpace class="min-w-16" /> ถนน <FiLL :data="data?.road" class="min-w-32" />
 <br> <span class="text-base ml-6">ตำบล (แขวง)</span> <FiLL :data="data?.district" class="min-w-32" />
       อำเภอ (เขต) <FiLL :data="data?.district" class="min-w-32" /> จังหวัด <FiLL :data="data?.province" class="min-w-32" /><br>  <span class="text-base ml-6">รหัสไปรษณี</span> <FiLL :data="data?.zipcode" class="min-w-32" />
       โทรศัพท์ (บ้าน) <FiLL :data="data?.nbPhon" class="min-w-32" />  โทรศัพท์ (มือถือ) <FiLL :data="data?.nbPhon" class="min-w-32" /> 
@@ -124,7 +124,7 @@
               <span class="text-base ml-12"> ข้าพเจ้าได้ทราบและเข้าใจวัตถุประสงค์ </span> ข้อบังคับ ระเบียบ และประกาศของสมาคมฌาปนกิจสงเคราะห์</span>
             สมาชิกสามัญของสหกรณ์ออมทรัพย์สาธารณสุขไทย แล้ว มีความประสงค์สมัครเป็นสมาชิก และยินยอมปฏิบัติตามข้อบังคับและเงื่อไขดังกล่าวทุกประการ<br>
 </p> 
-<p class="text-base pl-96 ">ลงชื่อ...........................................................ผู้สมัคร </p>
+<p class="text-base pl-96 ">ลงชื่อ<BlankSpace class="min-w-52" />ผู้สมัคร </p>
 <p class="text-base pl-96 ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;( <FiLL class="min-w-52" :data="`${data?.prefix} ${data?.fName}  ${data?.lName}`"/> )</p>
 
         </MorePaperDoc>
@@ -144,7 +144,7 @@
   <p class="text-base "> <span class="ml-12">ข้าพเจ้า</span> 
               <FiLL class="min-w-80" :data="`${data?.fName}  ${data?.lName}`"/>สมาชิกสมาคมฌาปนกิจสงเคราะห์สมาชิกสหกรณ์ออมทรัพย์สาธารณสุขไทย
               ทะเบียนเลขประจำตัว<FiLL :data="data?.idcard" class="min-w-40" /> อยู่บ้านเลขที่ <FiLL :data="data?.housenb" class="min-w-32" /> 
-              หมู่ที่ <FiLL :data="data?.group" class="min-w-32" /> ตรอก/ซอย .................... ถนน <FiLL :data="data?.road" class="min-w-32" />
+              หมู่ที่ <FiLL :data="data?.group" class="min-w-32" /> ตรอก/ซอย <BlankSpace class="min-w-16" /> ถนน <FiLL :data="data?.road" class="min-w-32" />
               ตำบล/แขวง <FiLL :data="data?.district" class="min-w-32" />
       อำเภอ/เขต <FiLL :data="data?.district" class="min-w-32" /> จังหวัด <FiLL :data="data?.province" class="min-w-32" />
       โทรศัพท์<FiLL :data="data?.nbPhon" class="min-w-32" /> 
@@ -152,7 +152,7 @@
 <p class="text-base "> <span class="ml-6">ขอรับรองว่าผู้สมัคร</span>  นาย/นาง/นางสาว <FiLL class="min-w-52" :data="`${data?.newprefix} ${data?.newfName}  ${data?.lName}`"/>ฃ
 มีคุณสมบัติตามข้อบังคับ ข้อ 10.1 ของสมาคมฌาปนกิจสงเคราะห์สมาชิกออมทรัพย์สาธารณสุขไทยทุกประการ
 </p>
-<p class="text-base ml-96"> ลงชื่อ......................................................................ผู้รับรอง <br>
+<p class="text-base ml-96"> ลงชื่อ<BlankSpace class="min-w-60" />ผู้รับรอง <br>
 วันที่  <FiLL  class="min-w-56 " :data="data?.dateReceived" date-format="short" />
 </p>
 <p class="text-center text-lg font-semibold"> สำหรับเจ้าหน้าที่สมาคม</p><br>
@@ -163,16 +163,16 @@
 ตำแหน่ง  <FiLL  class="min-w-56 " :data="data?.position" date-format="short" />
 </p>
 <p class="text-center text-lg font-semibold">ความเห็นของกรรมการ</p><br>
-<p class="text-sm ml-12 "> เสนอ <FiLLBox :checked="data?.savings"/> เห็นควรอนุมัติให้สมัครเป็นสมาชิก สสธท. <br> <span class="ml-9"><FiLLBox /> ไม่เห็นควรอนุมัติ </span>เนื่องจาก...................................................................
+<p class="text-sm ml-12 "> เสนอ <FiLLBox :checked="data?.savings"/> เห็นควรอนุมัติให้สมัครเป็นสมาชิก สสธท. <br> <span class="ml-9"><FiLLBox /> ไม่เห็นควรอนุมัติ </span>เนื่องจาก<BlankSpace class="min-w-52" />
 </p>
-<p class="text-base ml-96"> ลงชื่อ....................................................................<br>
+<p class="text-base ml-96"> ลงชื่อ<BlankSpace class="min-w-56" /><br>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;( <FiLL class="min-w-52" :data="` ${data?.ofFname}  ${data?.ofLname}`"/> ) <br>
 </p>
 <p class="text-sm pl-96"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  กรรมการผู้ได้รับมอบหมาย</p>
 <p class="text-center text-lg font-semibold">ความเห็นสำหรับคณะกรรมการสมาคม สสธท.</p><br>
 <p class="text-sm ml-12 "> คำสั่ง <FiLLBox :checked="data?.savings"/> อนุมัติรับเข้าเป็นสมาชิก สสธท. ตั้งแต่วันที่ <FiLL  class="min-w-56 " :data="data?.dateReceived" date-format="short" />
   ตามมติที่ประชุมคณะกรรมการสมาคม ครั้งที่ <FiLL  class="min-w-20 " :data="data?.member" /> เมื่อวันที่ <FiLL  class="min-w-56 " :data="data?.dateReceived" date-format="short" />
-  <br> <span class="ml-9"><FiLLBox /> ไม่อนุมัติ </span>  เนื่องจาก.........................................................................................
+  <br> <span class="ml-9"><FiLLBox /> ไม่อนุมัติ </span>  เนื่องจาก<BlankSpace class="min-w-64" />
 </p>
 
 <div class="grid grid-cols-3 grid-rows-2 justify-center h-1">
@@ -186,7 +186,7 @@
                 </div>
                 </div>
         <div class="grid justify-items-center mt-4">
-        <p class="pl-72">ลงชื่อ............................................................</p>
+        <p class="pl-72">ลงชื่อ<BlankSpace class="min-w-52" /></p>
         <div class="pl-80">
    (<FiLL class="min-w-52" :data="`${data?.fName}  ${data?.lName}`"/> ) 
         </div><br>
@@ -222,9 +222,8 @@
                         <p class="text-base"> <span class="ml-12">ข้าพเจ้า</span> นาย/นาง/นางสาว 
               <FiLL class="min-w-80" :data="`${data?.fName}  ${data?.lName}`"/>
               อายุ <FiLL :data="data?.age" class="min-w-24" /> ปี เลขประจำตัวประชาชน <FiLL :data="data?.idcard" class="min-w-96" />
-            ข้าพเจ้ามีสุขภาพดังนี้ โรคตามข้อ (3.1) - (3.9) ในส่วนที่ 2 ของแพทย์ <FiLLBox :checked="data?.savings"/> ไม่มี <FiLLBox /> มี (ระบุ)................................................................................................................
-          โรคประจำตัวอื่นๆ....................................................................................................................................................................................
-         <br> <span class="ml-12">ข้าพเจ้าขอรับรองว่าข้อความข้างต้นเป็นความจริงทุกประการ</span>
+            ข้าพเจ้ามีสุขภาพดังนี้ โรคตามข้อ (3.1) - (3.9) ในส่วนที่ 2 ของแพทย์ <FiLLBox :checked="data?.savings"/> ไม่มี <FiLLBox /> มี (ระบุ) <BlankSpace class="min-w-96" />
+          โรคประจำตัวอื่นๆ<BlankSpace class="min-w-80" /><BlankSpace class="min-w-64" /><BlankSpace class="min-w-12" />
         <br>  <span class="ml-12">ลงชื่อ <FiLL class="min-w-60" :data="`${data?.fName}  ${data?.lName}`"/></span>วันที่<FiLL  class="min-w-56 " :data="data?.dateReceived" date-format="full" />
 
           </p> 
@@ -250,21 +249,21 @@
                   <p class="pl-20"> (3.9) โรคเอสแอลอี (SLE) </p>
                 </div>
                 <div class="row-span-2 col-span-2 ml-10 text-sm">
-                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
-                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
-                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
-                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
-                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
-                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
-                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
-                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
-                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
+                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) <BlankSpace class="min-w-56" /></p>
+                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) <BlankSpace class="min-w-56" /></p>
+                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) <BlankSpace class="min-w-56" /></p>
+                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) <BlankSpace class="min-w-56" /></p>
+                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) <BlankSpace class="min-w-56" /></p>
+                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) <BlankSpace class="min-w-56" /></p>
+                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) <BlankSpace class="min-w-56" /></p>
+                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) <BlankSpace class="min-w-56" /></p>
+                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) <BlankSpace class="min-w-56" /></p>
                 </div>
             </div>
-            <p class="ml-16 font-semibold"> (4) โรคร้ายแรงอื่นๆ (ระบุ)..............................................................................................................</p>
-            <p class="ml-16 font-semibold"> สรุปความเห็นและข้อแนะนำของแพทย์.......................................................................................
-              <br>.............................................................................................................................................................</p> 
-              <p class="text-base ml-96"> ลงชื่อ....................................................................<br>
+            <p class="ml-16 font-semibold"> (4) โรคร้ายแรงอื่นๆ (ระบุ)<BlankSpace class="min-w-60" /><BlankSpace class="min-w-44" /></p>
+            <p class="ml-16 font-semibold"> สรุปความเห็นและข้อแนะนำของแพทย์<BlankSpace class="min-w-60" /><BlankSpace class="min-w-20" /></p> 
+              <BlankSpace class="min-w-80" /><BlankSpace class="min-w-80" /><BlankSpace class="min-w-28" />
+              <p class="text-base ml-96"> ลงชื่อ<BlankSpace class="min-w-60" /><br>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;( <FiLL class="min-w-56" :data="`${data?.lOwnerCollateral1}  ${data?.lMarryOwnerCollateral1}`"/> ) <br>
 </p>
 <p class="text-sm pl-96"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;แพทย์ผู้ตรวจร่างกาย</p>
@@ -330,20 +329,20 @@
                   <p class="pl-10"> (4.9) โรคเอสแอลอี (SLE) </p>
                 </div>
                 <div class="row-span-2 col-span-2 ml-10">
-                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
-                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
-                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
-                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
-                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
-                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
-                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
-                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
-                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) ..............................................................................</p>
+                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) <BlankSpace class="min-w-56" /></p>
+                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) <BlankSpace class="min-w-56" /></p>
+                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) <BlankSpace class="min-w-56" /></p>
+                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) <BlankSpace class="min-w-56" /></p>
+                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) <BlankSpace class="min-w-56" /></p>
+                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) <BlankSpace class="min-w-56" /></p>
+                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) <BlankSpace class="min-w-56" /></p>
+                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) <BlankSpace class="min-w-56" /></p>
+                  <p><FiLLBox  :checked="data?.fName"  /> ไม่มี &nbsp;<FiLLBox /> มี (ระบุ) <BlankSpace class="min-w-56" /></p>
                 </div>
             </div>
           </div>
             <div>
-              <p class="mr-2"><span class="ml-14">5.</span> โรคร้ายแรงอื่น ๆ (ระบุ)............................................................................................................................................</p>
+              <p class="mr-2"><span class="ml-14">5.</span> โรคร้ายแรงอื่น ๆ (ระบุ)<BlankSpace class="min-w-60" /><BlankSpace class="min-w-52" /></p>
              <div class="mt-2 mr-20">
               <p><span class="ml-10 mt-16 text-pretty">ข้าพเจ้าขอยืนยันว่าถ้อยแถลงที่ให้ไว้เป็นความจริงทุกประการ</span> <span class="underline">หากข้าพเจ้าแถลงข้อความอันเป็นเท็จแล้ว
                   ให้ สสธท. ตัดสิทธิ์จากการเป็นสมาชิก สสธท. ตามข้อบังคับสมาคม พ.ศ. 2564 ข้อ 15(4) ได้ทันที 
@@ -365,7 +364,7 @@
             <div ></div>
             <div ><br></div>
             <div ></div>
-            <div class="text-center text-base mr-4">ลงชื่อ..................................................................</div>
+            <div class="text-center text-base mr-4">ลงชื่อ<BlankSpace class="min-w-56" /></div>
             <div ></div>
             <div class="text-center mt-2">
               (<FiLL class="min-w-52" :data="`${data?.fName}  ${data?.lName}`"/>)
@@ -378,7 +377,7 @@
             <div class="grid grid-rows-2 grid-flow-col mt-6">
                 <div class="row-span-3">
                   <div ></div>
-            <div class="text-start text-base mr-4">ลงชื่อ..................................................................</div>
+            <div class="text-start text-base mr-4">ลงชื่อ<BlankSpace class="min-w-56" /></div>
             <div ></div>
             <div class="text-start ml-8 mt-2">
               (<FiLL class="min-w-52" :data="`${data?.officerFName}  ${data?.officerLName}`"/>)
@@ -389,7 +388,7 @@
                 </div>
                 <div class="row-span-2 col-span-2  ">
                   <div ></div>
-            <div class="text-center text-base mr-4">ลงชื่อ..................................................................</div>
+            <div class="text-center text-base mr-4">ลงชื่อ<BlankSpace class="min-w-56" /></div>
             <div ></div>
             <div class="text-center mt-2 ">
               (<FiLL class="min-w-52" :data="`${data?.fNameWitness1}  ${data?.lNameWitness1}`"/>)
@@ -489,8 +488,8 @@
                 number
                 normal no-line/>
                 
-              ................................................................ เกี่ยวข้องเป็น........................
-              ของข้าพเจ้า สัดส่วน.................... %
+                <BlankSpace class="min-w-56" /> เกี่ยวข้องเป็น <BlankSpace class="min-w-20" />
+              ของข้าพเจ้า สัดส่วน<BlankSpace class="min-w-16" /> %
             </p>
           </template>
         </LineFiLL>
@@ -498,7 +497,7 @@
 
           <div class="mt-6">
             <p><span class="ml-20">โดยมีเงื่อนไขดังนี้</span> <FiLLBox /> ได้รับเต็มจำนวนเพียงผู้เดียว  <FiLLBox  :checked="data?.fName"  /> ได้รับส่วนแบ่งเท่าๆกัน</p>
-            <p class="ml-10"><span class="ml-40"><FiLLBox />อื่นๆ ระบุ.................................................................................................................................</span> </p>
+            <p class="ml-10"><span class="ml-40"><FiLLBox />อื่นๆ ระบุ<BlankSpace class="min-w-96" /><BlankSpace class="min-w-12" /></span> </p>
             <p><span class="ml-20">อนึ่ง ข้าพเจ้าขอรับรองว่า การแสดงเจตนาครั้งนี้เป็นไปด้วยความสมัครใจ ไม่มีผู้ใดบังคับ ข่มขู่ หรือกระทำการใดๆ 
             ให้ข้าพเจ้าแสดงเจตนาดังกล่าว จึงได้ลงลายมือชื่อไว้เป็นสำคัญ ท้ายหนังสือนี้</span> </p>
 
@@ -510,7 +509,7 @@
                 </div>
                 <div class="row-span-2 col-span-2  ">
                   <div ></div>
-                  <div class="text-center text-base ml-72 mr-6">(ลงชื่อ)..........................................................ผู้ให้คำยินยอม</div>
+                  <div class="text-center text-base ml-72 mr-6">(ลงชื่อ)<BlankSpace class="min-w-52" />ผู้ให้คำยินยอม</div>
                   <div ></div>
                   <div class="text-center ml-56">
                     (<FiLL class="min-w-52" :data="`${data?.fName}  ${data?.lName}`"/>)
@@ -518,13 +517,13 @@
                       ผู้สมัครสมาชิก สสธท.
                     </p>
                   </div>
-                  <div class="text-center text-base ml-56 mt-2 mr-2">(ลงชื่อ)..........................................................พยาน</div>
+                  <div class="text-center text-base ml-56 mt-2 mr-2">(ลงชื่อ)<BlankSpace class="min-w-52" />พยาน</div>
                   <div ></div>
                   <div class="text-center ml-56">
                     (<FiLL class="min-w-52" :data="`${data?.fNameWitness1}  ${data?.lNameWitness1}`"/>)
                     
                   </div>
-                  <div class="text-center text-base ml-72 mt-2 ">(ลงชื่อ)...........................................................เจ้าหน้าที่ สสธท.</div>
+                  <div class="text-center text-base ml-72 mt-2 ">(ลงชื่อ)<BlankSpace class="min-w-52" />เจ้าหน้าที่ สสธท.</div>
                   <div ></div>
                   <div class="text-center ml-56">
                     (<FiLL class="min-w-52" :data="`${data?.officerFName}  ${data?.officerLName}`"/>)

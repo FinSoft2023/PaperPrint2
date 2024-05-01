@@ -44,7 +44,7 @@
             <div ></div>
             <div ><br></div>
             <div ></div>
-            <div class="text-center text-base">..................................................................</div>
+            <div class="text-center text-base"><BlankSpace class="min-w-60" /></div>
             <div ></div>
             <div class="text-center mt-4">
               ( <FiLL class="min-w-44" :data="`${data?.fName}  ${data?.lName}`"/>)<br><br>
@@ -130,17 +130,17 @@
           </div>
 
             <div class="grid grid-cols-1 text-center mt-4">
-            <div class="text-center text-base mr-7">ลงชื่อ.................................................................ผู้ค้ำประกัน</div>
+            <div class="text-center text-base mr-7">ลงชื่อ<BlankSpace class="min-w-56" />ผู้ค้ำประกัน</div>
             <div class="text-center pr-8 mr-8">
-              ( <FiLL class="min-w-56" :data="`${data?.officerLName}  ${data?.newlName}`"/>)<br><br>
+              (<FiLL class="min-w-56" :data="`${data?.officerLName}  ${data?.newlName}`"/>)<br><br>
             </div>
-            <div class="text-center text-base ">ลงชื่อ.................................................................พยาน (สมาชิก)</div>
+            <div class="text-center text-base ">ลงชื่อ<BlankSpace class="min-w-56" />พยาน (สมาชิก)</div>
             <div class="text-center pr-8 mr-8 mt-2">
-              ( ..................................................................)<br><br>
+              (<BlankSpace class="min-w-56" />)<br><br>
             </div>
-            <div class="text-center text-base">ลงชื่อ.................................................................พยาน (สมาชิก)</div>
+            <div class="text-center text-base">ลงชื่อ<BlankSpace class="min-w-56" />พยาน (สมาชิก)</div>
             <div class="text-center pr-8 mr-8 mt-2">
-              ( ..................................................................)<br><br>
+              (<BlankSpace class="min-w-56" />)<br><br>
             </div>
             </div>
             <div class="grid justify-items-end">
@@ -164,21 +164,21 @@
   <span class="ml-32">ตามหนังสือค้ำประกันเงินกู้ข้างต้นนี้และข้าพเจ้าได้ลงลายมือชื่อไว้เป็นสำคัญ</span>
 </p>
 <div class="grid grid-cols-1 text-center mt-4 pl-48">
-            <div class="text-center text-base">ลงชื่อ.................................................................คู่สมรสผู้ให้คำยินยอม</div>
+            <div class="text-center text-base">ลงชื่อ<BlankSpace class="min-w-56" />คู่สมรสผู้ให้คำยินยอม</div>
             <div class="text-center pr-24">
               ( <FiLL class="min-w-56" :data="`${data?.fName}  ${data?.lName}`"/>)<br><br>
             </div>
-            <div class="text-center text-base mr-16 mt-4">ลงชื่อ.................................................................ผู้ค้ำประกัน</div>
+            <div class="text-center text-base mr-16 mt-4">ลงชื่อ<BlankSpace class="min-w-56" />ผู้ค้ำประกัน</div>
             <div class="text-center pr-24">
               ( <FiLL class="min-w-56" :data="`${data?.ofFname}  ${data?.lName}`"/>)<br><br>
             </div>
-            <div class="text-center text-base mr-10 mt-10">ลงชื่อ.................................................................พยาน (สมาชิก)</div>
+            <div class="text-center text-base mr-10 mt-10">ลงชื่อ<BlankSpace class="min-w-56" />พยาน (สมาชิก)</div>
             <div class="text-center pr-24">
-              (...................................................................)<br><br>
+              (<BlankSpace class="min-w-56" />)<br><br>
             </div>
-            <div class="text-center text-base mr-10 mt-10">ลงชื่อ.................................................................พยาน (สมาชิก)</div>
+            <div class="text-center text-base mr-10 mt-10">ลงชื่อ<BlankSpace class="min-w-56" />พยาน (สมาชิก)</div>
             <div class="text-center pr-24">
-              (...................................................................)<br><br>
+              (<BlankSpace class="min-w-56" />)<br><br>
             </div>
             </div>
             

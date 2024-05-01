@@ -552,7 +552,7 @@
  <div class="border-solid border-2 border-slate-950 ">
   <p class="text-base pl-6">เอกสารหลักฐาน <span class="pl-4"><FiLLBox /> ครบถ้วน <FiLLBox /> ไม่ครบ</span></p>
 <p class="text-base pl-6">อื่นๆ..............................................................................</p>
-<p class="text-base text-center mt-4">(........................................................)</p>
+<p class="text-base text-center mt-4">(.......................................................)</p>
 <p class="text-base pl-14 mt-2">ตำแหน่ง.......................................................</p>
 <p class="text-base text-center mt-1">ผู้พิจรณาคุณสมบัติ</p>
 <p class="text-base text-center mt-1">........../........../..........</p>

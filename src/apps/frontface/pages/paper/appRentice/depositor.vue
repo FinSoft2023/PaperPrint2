@@ -59,6 +59,7 @@
     </MorePaperDoc>
 
     <MorePaperDoc>
+        <p>หนังสือขอเปิดบัญชีเงินฝากออมทรัพย์พิเศษ</p>
         <div class="flex flex-col mb-4 mt-20 mx-12">
         <p>
           ผู้ขอเปิดบัญชี <FiLL class="min-w-72 " :data="`${data?.fName}  ${data?.lName}`" />  สมาชิกเลขทะเบียนที่ <FiLL  class="min-w-40" :data="data?.member" />

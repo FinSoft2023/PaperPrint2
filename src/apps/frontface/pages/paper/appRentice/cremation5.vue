@@ -143,10 +143,10 @@
                     <p> วันที่ <FiLL  :data="data?.dateReceived" class="min-w-96 "  date-format="full" /></p>
                 </div>
                 <p>
-                    <span class="ml-20">ข้าพเจ้า</span> <FiLL class="min-w-60" :data="`${data?.fName}  ${data?.lName}`"/> อายุ <FiLL :data="data?.age" class="min-w-20" /> ปี เกิดวันที่ <FiLL  class="min-w-52 " :data="data?.dateReceived" date-format="full" />
-                    <p>สมาชิกสมาคมฌาปนกิจสงเคราะห์สมาชิกสหกรณ์ออมทรัพย์สาธารณสุขไทย เลขทะเบียนที่<FiLL :data="data?.member" class="min-w-52" /></p>
-                    <p>อยู่บ้านเลขที่ <FiLL :data="data?.housenb" class="min-w-24" /> หมู่ที่ <FiLL :data="data?.group" class="min-w-16" /> ถนน <FiLL :data="data?.road" class="min-w-52" /> ตำบล <FiLL :data="data?.district" class="min-w-52" /></p>
-                    <p>อำเภอ <FiLL :data="data?.district" class="min-w-60" /> จังหวัด <FiLL :data="data?.province" class="min-w-60" /> รหัสไปรษณีย์ <FiLL :data="data?.zipcode" class="min-w-28" /> </p>
+                    <span class="ml-20">ข้าพเจ้า</span> <FiLL class="min-w-60" :data="`${data?.fName}  ${data?.lName}`"/> อายุ <FiLL :data="data?.age" class="min-w-20" /> ปี เกิดวันที่ <FiLL  class="min-w-44 " :data="data?.dateReceived" date-format="full" />
+                    <p>สมาชิกสมาคมฌาปนกิจสงเคราะห์สมาชิกสหกรณ์ออมทรัพย์สาธารณสุขไทย เลขทะเบียนที่<FiLL :data="data?.member" class="min-w-40" /></p>
+                    <p>อยู่บ้านเลขที่ <FiLL :data="data?.housenb" class="min-w-24" /> หมู่ที่ <FiLL :data="data?.group" class="min-w-16" /> ถนน <FiLL :data="data?.road" class="min-w-44" /> ตำบล <FiLL :data="data?.district" class="min-w-48" /></p>
+                    <p>อำเภอ <FiLL :data="data?.district" class="min-w-56" /> จังหวัด <FiLL :data="data?.province" class="min-w-56" /> รหัสไปรษณีย์ <FiLL :data="data?.zipcode" class="min-w-24" /> </p>
                     <p>โทรศัพท์  <FiLL :data="data?.nbPhon" class="min-w-32" /> มือถือ <FiLL :data="data?.nbPhon" class="min-w-96" /></p>
                 </p>
                 <div class="mt-10">
@@ -187,14 +187,88 @@
                     <span class="ml-20">อนึ่ง</span> ข้าพเจ้าขอรับรองว่า การแสดงเจตนาครั้งนี้เป็นไปด้วยความสมัครใจ ไม่มีผู้ใดบังคับ ข่มขู่ หรือกระทำ
                     การใดๆ ให้ข้าพเจ้าแสดงเจตนาดังกล่าว จึงได้ลงลายมือชื่อไว้เป็นสำคัญ ท้ายหนังสือนี้
                 </p>
-                <div>
-                    
+
+
+
+                <div class="grid grid-rows-2 grid-flow-col mt-6">
+                    <div class="row-span-3">
+                    <div ></div>
+                    </div>
+                    <div class="row-span-2 col-span-2  ">
+                    <div ></div>
+                    <div class="text-center text-base ml-72 mr-6">(ลงชื่อ)<BlankSpace class="min-w-52" />ผู้ให้คำยินยอม</div>
+                    <div ></div>
+                    <div class="text-center ml-56">
+                        (<FiLL class="min-w-52" :data="`${data?.fName}  ${data?.lName}`"/>)
+                        <p class="text-center text-base">
+                        ผู้สมัครสมาชิก สสธท.
+                        </p>
+                    </div>
+                    <div class="text-center text-base ml-56 mt-2 mr-2">(ลงชื่อ)<BlankSpace class="min-w-52" />พยาน</div>
+                    <div ></div>
+                    <div class="text-center ml-56">
+                        (<FiLL class="min-w-52" :data="`${data?.fNameWitness1}  ${data?.lNameWitness1}`"/>)
+                        
+                    </div>
+                    <div class="text-center text-base ml-72 mt-2 ">(ลงชื่อ)<BlankSpace class="min-w-52" />เจ้าหน้าที่ สสธท.</div>
+                    <div ></div>
+                    <div class="text-center ml-56">
+                        (<FiLL class="min-w-52" :data="`${data?.officerFName}  ${data?.officerLName}`"/>)
+                        
+                    </div>
+                    </div>
                 </div>
             </div>
         </MorePaperDoc>
 
         <MorePaperDoc> <!-- หน้า 10 -->
-            
+            <div class="text-end">
+                <div class="flex flex-col items-end row-span-2">
+                    <p class="mb-2 mr-12">สสธท. 9</p>
+                </div>  
+            </div>
+
+            <div class="grid justify-items-center mt-10 text-lg font-semibold">
+                <p>หนังสือยินยอมและมอบอำนาจการรับเงินสงเคราะห์</p>
+                <p>สมาคมฌาปนกิจสงเคราะห์สมาชิกสหกรณ์ออมทรัพย์สาธารณสุขไทย (สสธท.)</p>
+            </div>
+
+            <div class="mr-14 mt-4">
+                <div class="grid justify-items-center mt-2 text-base ">
+                    <p class="ml-12">เขียนที่ <FiLL :data="data?.location" class="min-w-96" /></p>
+                    <p class="ml-16">วันที่ <FiLL class="min-w-96" :data="data?.dateReceived" date-format="full" /></p>
+                </div>
+
+                <div class="grid justify-items-start mt-6 text-pretty text-base ">
+                    <p><span class="ml-14">โดยหนังสือฉบับนี้ข้าพเจ้า </span> 
+                        <FiLL class="min-w-60" :data="` ${data?.fName}  ${data?.lName}`"/> ซึ่งเป็นผู้ถือบัตรประจำตัวประชาชนเลขที่ <FiLL :data="data?.idcard" class="min-w-40" /> 
+                        ที่อยู่ปัจจุบันเลขที่ <FiLL :data="data?.housenb" class="min-w-20" /> หมู่ที่ <FiLL :data="data?.group" class="min-w-14" />  ซอย <FiLL :data="data?.group" class="min-w-14" /> ถนน <FiLL :data="data?.road" class="min-w-32" /> 
+                        ตำบล(แขวง) <FiLL :data="data?.district" class="min-w-24" /> อำเภอ(เขต) <FiLL :data="data?.district" class="min-w-24" /> จังหวัด <FiLL :data="data?.province" class="min-w-28" /> 
+                        รหัสไปรษณีย์ <FiLL :data="data?.zipcode" class="min-w-24" /> โทรศัพท์บ้าน <FiLL :data="data?.nbPhon" class="min-w-44 " /> โทรศัพท์มือถือ <FiLL :data="data?.nbPhon" class="min-w-44" />
+                        ยินยอมและมอบอำนาจให้สหกรณ์ออมทรัพย์ <FiLL :data="data?.agency" class="min-w-52" /> จำกัด หรือ <FiLL class="min-w-52" :data="` ${data?.ofFname}  ${data?.lName}`"/> ซึ่งเป็นผู้ถือบัตรประจำตัวประชาชนเลขที่ <FiLL :data="data?.idcard" class="min-w-40" /> 
+                        ที่อยู่ปัจจุบันเลขที่ <FiLL :data="data?.housenb" class="min-w-20" /> หมู่ที่ <FiLL :data="data?.group" class="min-w-12" />  ซอย <FiLL :data="data?.group" class="min-w-12" /> ถนน <FiLL :data="data?.road" class="min-w-32" /> 
+                        ตำบล(แขวง) <FiLL :data="data?.district" class="min-w-28" /> อำเภอ(เขต) <FiLL :data="data?.district" class="min-w-28" /> จังหวัด <FiLL :data="data?.province" class="min-w-36" /> 
+                        รหัสไปรษณีย์ <FiLL :data="data?.zipcode" class="min-w-24" /> โทรศัพท์บ้าน <FiLL :data="data?.nbPhon" class="min-w-44 " /> โทรศัพท์มือถือ <FiLL :data="data?.nbPhon" class="min-w-48" />
+                        เป็นผู้ <FiLLBox /> รับเงินค่าจัดการศพ <FiLLBox /> รับเงินสงเคราะห์ <FiLLBox /> อื่นๆ ที่พึ่งได้รับ
+                    </p>
+                    <p>แทนข้าพเจ้าเพื่อนำเงินดังกล่าวชำระหนี้ของ <FiLL :data="data?.affiliation" class="min-w-40" /> ที่มีต่อสหกรณ์ออมทรัพย์<FiLL :data="data?.savings" class="min-w-28" /> จำกัด จนเสร็จการ </p>
+                    <p>
+                        <span class="ml-14">ข้าพเจ้าขอรับผิดชอบในการที่ผู้รับยินยอมและรับมอบอำนาจได้กระทำไปตามหนังสือยินยอมและมอบอำนาจนี้
+                        เสมือนว่าข้าพเจ้าได้กระทำด้วยตนเองทั้งสิ้น</span>
+                    </p>
+                    <p>
+                        <span class="ml-14">เพื่อเป็นหลักฐานข้าพเจ้าได้ลงลายมือชื่อ / ลายพิมพ์นิ้วมือ ไว้เป็นสำคัญต่อหน้าพยานแล้ว</span>
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-3 mt-4">
+                    <div ></div>
+                    <div class="col-span-2">
+                        <p class="ml-14">(ลงชื่อ) <BlankSpace class="min-w-52" /> ผู้ยอมและมอบอำนาจ</p>
+                        <p class="ml-24"><span class="ml-2">(<FiLL class="min-w-52" :data="`${data?.fName}  ${data?.lName}`"/>)</span></p>
+                    </div>
+                </div>
+            </div>
         </MorePaperDoc>
     </main>
 </template>

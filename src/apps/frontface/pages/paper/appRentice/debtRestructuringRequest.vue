@@ -9,7 +9,7 @@
                 <div class="grid grid-cols-2">
                     <div></div>
                     <div class="text-start">
-                        <p class="mt-6">เขียนที่ <FiLL :data="data?.location" class="underline underline-offset-4 text-base text-right" no-line /></p>
+                        <p class="mt-6">เขียนที่ <FiLL :data="data?.location"  /></p>
                         <p class="mt-2">วันที่ <FiLL  class="text-base" :data="data?.dateReceived"date-format="full" no-line /></p>
                     </div>
                     
@@ -28,13 +28,13 @@
                 <p>และดอกเบี้ยงวดรายเดือนทุกเดือนงวดละ <FiLL :data="data?.oldDebtEachInstallment" class="min-w-24" /> บาท รวม <FiLL :data="data?.nb" class="min-w-20" /> งวด</p>
                 <p>ข้อ 2. ข้าพเจ้าไม่สามารถชำระหนี้ได้ตามสัญญาเนื่องจาก <FiLL :data="data?.unablePayDebtDueTo" class="min-w-60" /></p>
                 <p>ข้อ 3. ข้าพเจ้าได้แนบเอกสารหลักฐานที่แสดงให้เห็นว่ามีเหตุจำเป็นได้แก่ <FiLL :data="data?.evidenceReason" class="min-w-60" /></p>
-                <p>ข้อ 4. ข้าพเจ้าจึงขอปรับโครงสร้างหนี้ดังนี้ <FiLL :data="data?.requestDebtRestructuring" class="min-w-60" /></p>
+                <p>ข้อ 4. ข้าพเจ้าจึงขอปรับโครงสร้างหนี้ดังนี้ <FiLL :data="data?.requestDebtRestructuring" class="min-w-72" /></p>
                 <p class="ml-32 mt-4">จึงเรียนมาเพื่อโปรดพิจารณา</p>
                 <div class="grid grid-cols-2 mt-6">
                     <div></div>
                     <div class="text-center">
                         <p>ขอแสงความนับถือ</p>
-                        <p><BlankSpace class="min-w-44" /></p>
+                        <p class="mt-4"><BlankSpace class="min-w-44" /></p>
                         <p>( <FiLL class="min-w-44" :data="`${data?.fName}  ${data?.lName}`"/> )</p>
                         <p>สมาชิกเลขที่ <FiLL :data="data?.member" class="min-w-28" /></p>
                     </div>
@@ -51,7 +51,7 @@
                 <div class="grid grid-cols-2">
                     <div></div>
                     <div class="text-start">
-                        <p class="mt-6">เขียนที่ <FiLL :data="data?.location" class="underline underline-offset-4 text-base" no-line /></p>
+                        <p class="mt-6">เขียนที่ <FiLL :data="data?.location"  /></p>
                         <p class="mt-2 mb-2">วันที่ <FiLL  class="text-base" :data="data?.dateReceived"date-format="full" no-line /></p>
                     </div>
                 </div>
@@ -105,7 +105,7 @@
                     </div>
                 </div>
                 <div>
-                    <p class="font-bold">เจ้าของหลักทรัพย์ค้ำประกันลงนามรับทราบการปรับโครงสร้างหนี้ จำนวน 1 คน</p>
+                    <p class="font-bold mt-2 mb-2">เจ้าของหลักทรัพย์ค้ำประกันลงนามรับทราบการปรับโครงสร้างหนี้ จำนวน 1 คน</p>
                         1.ข้าพเจ้า(ลงชื่อ) <BlankSpace class="min-w-32" /> รับทราบการปรับโครงสร้างหนี้   (ลงชื่อ) <BlankSpace class="min-w-32" /> คู่สมรสผู้ค้ำประกัน
                         <p class="mt-2"><span class="ml-16">(<FiLL class="min-w-56" :data="`${data?.fOwnerCollateral1}  ${data?.lOwnerCollateral1}`"/>)</span> <span class="ml-32">(<FiLL class="min-w-56" :data="`${data?.fMarryOwnerCollateral1}  ${data?.lMarryOwnerCollateral1}`"/>)</span></p>
                             
@@ -132,7 +132,7 @@
                 <div class="grid grid-cols-2">
                     <div></div>
                     <div class="text-start">
-                        <p class="mt-6">เขียนที่ <FiLL :data="data?.location" class="underline underline-offset-4 text-base" no-line /></p>
+                        <p class="mt-6">เขียนที่ สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
                         <p class="mt-2 mb-6">วันที่ <FiLL  class="text-base" :data="data?.dateReceived"date-format="full" no-line /></p>
                     </div>
                 </div>

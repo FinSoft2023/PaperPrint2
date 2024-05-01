@@ -3,13 +3,13 @@ export default defineEventHandler(async (event) => {
       fName: "สืบสกุล",            //ชื่อข้าพเจ้า
       lName: "สุขสำราญ",           //นามสกุล
       newfName: "สารีกา",            //ชื่อข้าพเจ้าใหม่
-      newlName: "เจริญดี",           //นามสกุลใหม่
+      newlName: "สุขสำราญ",           //นามสกุลใหม่
       officerFName:"ทินเดีย",           //ชื่อเจ้าหน้าที่
       officerLName:"สารุ",           //นามสกุลเจ้าหน้าที่
       officerPOsition:"ธุรการ",           //ตำแหน่งเจ้าหน้าที่
       age:"30",                          //อายุ
       idcard:"1428856552645",            //เลขบัตรประจำตัว
-      savings   :"ไทยพาณิชย์",                     //สหกรณ์ออมทรัพย์
+      savings   :"ไทยพาณิชย์",                  //สหกรณ์ออมทรัพย์
       district:"เมือง",                   //ตำบลที่อยู่ & //อำเภอ
       housenb:"32/59",                   //บ้านเลขที่
       group: 5,                        //หมู่
@@ -29,6 +29,7 @@ export default defineEventHandler(async (event) => {
       position: "ประธาน",           //ตำแหน่งข้าพเจ้า
       member: 21,               //สมาชิกเลขที่
       numberRegis: 563,        //เลขทะเบียน
+      objective:"ส่งบุตรเข้าศึกษา", //วัตถุประสงค์
       nb: 10,                    //ที่  &  // ส่งหุ้น
       agency: "กระทรวงสาธารณสุข",   //หน่วยงาน
       newnbAccount: "6895420004" ,       //เลขบัญชีใหม่
@@ -38,8 +39,12 @@ export default defineEventHandler(async (event) => {
       salary:50000,          //เงินเดือนขอเปลี่ยนแปลงค่าหุ้น  &  //เงินกู้
       stockValue: 5000,          //ส่งค่าหุ้น
       stockValueno: 3500,           //ขอลดค่าหุ้น
+      guaranteedShares:45000,      //หุ้นค้ำประกัน
+      period:5,           //งวด
+      eachPeriod:9000,   //แต่ละงวด
       mount: "มกราคม",           //เดือน
       year:"2566",                //ปี
+      ordinaryDebt:15000,          //หนี้สามัญ
       affiliation:"โรงพยาบาลศรีสะเกษ",  //สังกัด
       loanbook:"405/96",         //หนังสือเงินกู้ที่
       location:"สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด",
@@ -97,6 +102,8 @@ export default defineEventHandler(async (event) => {
       numberBoardYes:"6",                          //จำนวนคณะกรรมการให้ผ่าน
       numberBoardNo:"2",                          //จำนวนคณะกรรมการไม่ให้ผ่าน
       summaryLoan:"ผ่านการพิจารณาจากคณะกรรมการ",            //สรุปการกู้   
+      fNamePresident:"อุทัย",                                //ชื่อนายกสมาคมฌาปนกิจสงเคราะห์
+      lNamePresident:"ศรีเทพ",                                //นามสกุลนายกสมาคมฌาปนกิจสงเคราะห์
       email:"oo@gmail.com",
 
 
@@ -111,6 +118,10 @@ export default defineEventHandler(async (event) => {
             //เอาไปใส่หน้าที่ 6
             // ชื่อนามสกุล                เกี่ยวข้อง         ส่วนเเบ่งเงิน         
          ],
+         beneficiary:[
+            {prefix: "นาง", fn: "สารีกา", ln: "สุขสำราญ", status: "คู่สมรส", ratio: "50"},
+            {prefix: "นาย", fn: "สมพง", ln: "สุขสำราญ", status: "บุตร", ratio: "50"}
+         ]
 
    }
 });

@@ -38,7 +38,7 @@
         </div>
         <p class="text-center font-semibold mt-10">จึงลงลายมือชื่อไว้เป็นหลักฐาน</p>
         <div class="grid justify-items-center mt-10">
-        <p class="pl-72">ลงชื่อ............................................................</p>
+        <p class="pl-72">ลงชื่อ<BlankSpace class="min-w-52" /></p>
         <div class="pl-80">
    (<FiLL class="min-w-52" :data="`${data?.fName}  ${data?.lName}`"/> ) 
         </div><br>
@@ -49,7 +49,7 @@
         <p><span class="ml-28">เจ้าหน้าที่ได้ดำเนินการเปลี่ยนแปลงในระบบโปรแกรมเรียบร้อยแล้ว</span>
         </p><br>
    
-        <p class="ml-40">ลงชื่อ............................................................</p>
+        <p class="ml-40">ลงชื่อ<BlankSpace class="min-w-52" /></p>
         <div class="pl-48">
    (<FiLL class="min-w-52" :data="`${data?.officerFName}  ${data?.officerLName}`"/> ) 
         </div><br>

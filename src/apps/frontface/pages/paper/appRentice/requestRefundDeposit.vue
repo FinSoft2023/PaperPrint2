@@ -35,7 +35,7 @@
         
         <p class=" ml-28 mt-8">จึงเรียนมาเพื่อโปรดพิจารณาอนุมัติ</p><br>
         <div class="grid justify-items-center mt-10">
-        <p class="pl-80">...............................................................</p>
+        <p class="pl-80"><BlankSpace class="min-w-52" /></p>
         <div class="pl-80">
    (<FiLL class="min-w-52" :data="`${data?.fName}  ${data?.lName}`"/> ) 
         </div><br>

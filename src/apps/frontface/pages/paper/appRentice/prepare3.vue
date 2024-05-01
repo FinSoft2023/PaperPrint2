@@ -38,15 +38,15 @@
                 <div class="border-2 border-black p-1 ">
 
                   <p class=" text-xs font-semibold">เอกสารประกอบ
-                   <p class="text-xs font-semibold" > <FiLLBox /> 1. สำเนาบัตรประชาชน หรือบัตรข้าราชการผู้สมัคร</p>
-                   <p class="text-xs font-semibold" > <FiLLBox /> 2. สำเนาทะเบียนบ้านผู้สมัคร</p>
-                   <p class="text-xs font-semibold" > <FiLLBox /> 3. ใบรับรองเเพทย์ของรัฐฉบับจริง มีอายุไม่เกิน 30 วัน</p>
-                   <p class="text-xs font-semibold" > <FiLLBox /> 4. ใบรับรองสุขภาพตนเอง</p>
-                   <p class="text-xs font-semibold" > <FiLLBox /> 5. สำเนาบัตรปรชาชน เเละทะเบียนบ้านผู้รับเงินสังเคราะห์</p>
-                   <p class="text-xs font-semibold" > <FiLLBox /> 6. รูปถ่าย ณ วันยื่นเอกสาร</p>
-                   <p class="text-xs font-semibold" > <FiLLBox /> 7. หนังสือรับรองการเป็นสมาชิกประเภทสามัญของ สอ.</p>
-                   <p class="text-xs font-semibold" > <FiLLBox /> 8. สำเนาทะเบียนสมรส (ถ้ามี)</p>
-                   <p class="text-xs font-semibold" > <FiLLBox /> 9. ใบสำคัญการเปลี่ยนชื่อ-นามสกุล (ถ้ามี)</p>
+                   <p class="text-xs font-semibold" > <FiLLBox  :checked="data?.fName"  /> 1. สำเนาบัตรประชาชน หรือบัตรข้าราชการผู้สมัคร</p>
+                   <p class="text-xs font-semibold" > <FiLLBox  :checked="data?.fName"  /> 2. สำเนาทะเบียนบ้านผู้สมัคร</p>
+                   <p class="text-xs font-semibold" > <FiLLBox  :checked="data?.fName"  /> 3. ใบรับรองเเพทย์ของรัฐฉบับจริง มีอายุไม่เกิน 30 วัน</p>
+                   <p class="text-xs font-semibold" > <FiLLBox  :checked="data?.fName"  /> 4. ใบรับรองสุขภาพตนเอง</p>
+                   <p class="text-xs font-semibold" > <FiLLBox  :checked="data?.fName"  /> 5. สำเนาบัตรปรชาชน เเละทะเบียนบ้านผู้รับเงินสังเคราะห์</p>
+                   <p class="text-xs font-semibold" > <FiLLBox  :checked="data?.fName"  /> 6. รูปถ่าย ณ วันยื่นเอกสาร</p>
+                   <p class="text-xs font-semibold" > <FiLLBox  :checked="data?.fName"  /> 7. หนังสือรับรองการเป็นสมาชิกประเภทสามัญของ สอ.</p>
+                   <p class="text-xs font-semibold" > <FiLLBox  :checked="data?.fName"  /> 8. สำเนาทะเบียนสมรส (ถ้ามี)</p>
+                   <p class="text-xs font-semibold" > <FiLLBox  :checked="data?.fName"  /> 9. ใบสำคัญการเปลี่ยนชื่อ-นามสกุล (ถ้ามี)</p>
 
 
 
@@ -70,7 +70,7 @@
                   </p>
                 </div>
                 <div class="border-2 border-black p-1 ">
-                <p class="text-xs font-semibold" > <FiLLBox /> ศูนย์ประสารงาน</p>
+                <p class="text-xs font-semibold" > <FiLLBox  :checked="data?.fName"  /> ศูนย์ประสารงาน</p>
                 <p class="text-xs font-semibold" > <FiLLBox /> ศูนย์ประสารงานระดับจังหวัด</p>
 
                 </div>
@@ -453,7 +453,7 @@
        <p class="text-base text-end "> วันที่ <FiLL  class="min-w-80 " :data="data?.dateReceived" date-format="full" /></p>
        </div>
      <p class="text-base mt-2 "> <span class="pl-14">ข้าพเจ้า (นางสาว/นาง/นาย) </span>
-              ......................................
+      <FiLL class="min-w-60" :data="`${data?.prefix} ${data?.fName}  ${data?.lName}`"/>
              เลขประจำตัวประชาชน <FiLL :data="data?.idcard" class="min-w-36" />  
              อายุ <FiLL :data="data?.age" class="min-w-20" /> ปี
           </p> 
@@ -481,13 +481,13 @@
               <p class="text-base  "><span class="pl-14"> ข้าพเจ้ายินยอมเปิดเผยประวัติสุขภาพของข้าพเจ้า และขอมอบอำนาจให้ สส.ชสอ. ขอประวัติการรักษาของข้าพเจ้า
                 จากสถานพยาบาลที่เกี่ยวข้องได้ </span></p>
                 <p class="mt-4 text-center">ลงชื่อ............................................................</p>
-                <p class="mt-2 text-center">ตัวบรรจง(<FiLL class="min-w-56" :data="`${data?.fNameWitness1}  ${data?.lNameWitness1}`"/>)</p>
+                <p class="mt-2 text-center">ตัวบรรจง(............................................................ )</p>
                 <p class="mt-2 text-center">(ผู้สมัครสมาชิก สส.ชสอ.)</p>
 
                 <p class="mt-4 text-center">ลงชื่อ............................................................
                 <span class="ml-8"> ลงชื่อ............................................................ </span></p>
-                <p class="mt-2 text-center">ตัวบรรจง(<FiLL class="min-w-56" :data="`${data?.fNameGuarantor2}  ${data?.lNameGuarantor2}`"/>)
-                <span class="ml-8"> ตัวบรรจง(<FiLL class="min-w-56" :data="`${data?.fNameGuarantor1}  ${data?.lNameGuarantor1}`"/>) </span></p>
+                <p class="mt-2 text-center">ตัวบรรจง(............................................................ )
+                <span class="ml-8"> ตัวบรรจง(............................................................ ) </span></p>
                 <p class="mt-2 text-center">พยาน (เจ้าหน้าที่ศูนย์ประสานงาน)
                   <span class="ml-16"> พยาน (ผู้มีชื่อรับเงินวงเคราะห์) </span>
                 </p>
@@ -504,13 +504,14 @@
     <p class="text-lg font-semibold">ขั้นตอนการสมัครสมาชิก สส.ชสอ. ประเภทสามัญ</p>
 </div>
 
-              <p class="text-base font-semibold pl-4 mt-4">สหกรณ์ออมทรัพย์...................................................................................
-                รหัส............................พื้นที่........................
-                ชื่อสกุลผู้สมัคร.................................................................เลขบัตรประชาชน..............................................................
-                วัน/เดือน/ปี เกิด........................................อายุ......................ปี วันที่สมัคร..................................................................
-                เลขฌาปนกิจ................................รอบสมัคร..................................วันที่เริ่มเป็นสมาชิก............................................
+              <p class="text-base font-semibold pl-4 mt-4">สหกรณ์ออมทรัพย์<FiLL  class="min-w-72 " :data="data?.affiliation" />
+                รหัส<FiLL  class="min-w-32 " :data="data?.year" />พื้นที่ <FiLL  class="min-w-32 " :data="data?.numberRegis"  />
+                ชื่อสกุลผู้สมัคร<FiLL class="min-w-64" :data="`${data?.fMarryOwnerCollateral2}  ${data?.lMarryOwnerCollateral2}`"/>เลขบัตรประชาชน<FiLL  class="min-w-64 " :data="data?.idcard" />
+                วัน/เดือน/ปี เกิด<FiLL  class="min-w-56 " :data="data?.dateReceived" date-format="full" />อายุ<FiLL  class="min-w-20 " :data="data?.memberGuarantor1"  />ปี วันที่สมัคร<FiLL  class="min-w-52 " :data="data?.dateReceived" date-format="full" />
+                เลขฌาปนกิจ<FiLL  class="min-w-32 " :data="data?.memberGuarantor1" />รอบสมัคร<FiLL  class="min-w-20 " :data="data?.memberGuarantor2"  />วันที่เริ่มเป็นสมาชิก<FiLL  class="min-w-56 " :data="data?.dateReceived" date-format="full" />
+              
               </p>
-
+<br>
 
             </div>
             <p class="text-base font-semibold pl-4 mt-2 "> เอกสารหลักฐานการสมัคร สส.ชสอ. ดังนี้ </p>
@@ -522,12 +523,12 @@
           <p class="text-base pl-5 "><FiLLBox :checked="data?.memberGuarantor2"/> 6. รูปถ่าย ณ วันยื่นเอกสาร ตามแบบฟอร์มที่สมาคมกําหนด</p>
           <p class="text-base pl-5 "><FiLLBox :checked="data?.memberGuarantor2"/> 7. สําเนาบัตรประชาชน หรือ บัตรข้าราชการของผู้สมัคร</p>
           <p class="text-base pl-5 "><FiLLBox :checked="data?.memberGuarantor2"/> 8. สําเนาทะเบียนบ้านของผู้สมัคร</p>
-          <p class="text-base pl-5 "><FiLLBox :checked="data?.memberGuarantor2"/> 9. สําเนาบัตรประชาชน หรือ บัตรข้าราชการของผู้รับเงินสงเคราะห์ จํานวน.............คน</p>
-          <p class="text-base pl-5 "><FiLLBox :checked="data?.memberGuarantor2"/> 10. สําเนาทะเบียนบ้านของผู้รับเงินสงเคราะห์ จํานวน..............คน</p>
+          <p class="text-base pl-5 "><FiLLBox :checked="data?.memberGuarantor2"/> 9. สําเนาบัตรประชาชน หรือ บัตรข้าราชการของผู้รับเงินสงเคราะห์ จํานวน<FiLL  class="min-w-20 " :data="data?.group"  />คน</p>
+          <p class="text-base pl-5 "><FiLLBox :checked="data?.memberGuarantor2"/> 10. สําเนาทะเบียนบ้านของผู้รับเงินสงเคราะห์ จํานวน<FiLL  class="min-w-20 " :data="data?.group"  />.คน</p>
           <p class="text-base pl-5 "><FiLLBox :checked="data?.memberGuarantor2"/> 11. ใบรับรองแพทย์ออกโดยโรงพยาบาล หรือสถานพยาบาลของรัฐฉบับจริง (อายุไม่เกิน 30 วัน นับถึงวันที่สมัคร)</p>
           <p class="text-base pl-5 "><FiLLBox :checked="data?.memberGuarantor2"/> 12. หลักฐานการเป็นสมาชิกประเภทสามัญของสหกรณ์ออมทรัพย์ต้นสังกัด</p>
           <p class="text-base pl-5 "><FiLLBox :checked="data?.memberGuarantor2"/> 13. สําเนาทะเบียนสมรส (ถ้ามี)</p>
-          <p class="text-base pl-5 "><FiLLBox :checked="data?.memberGuarantor2"/> 14. เอกสารหลักฐานอื่นๆ....................................................................................................................................................</p>
+          <p class="text-base pl-5 "><FiLLBox /> 14. เอกสารหลักฐานอื่นๆ....................................................................................................................................................</p>
  
             <div class="grid grid-cols-2 mt-4">
  
@@ -542,20 +543,20 @@
  <div class="border-solid border-2 border-slate-950 ">
    
 
-<p class="text-base pl-6">เอกสารหลักฐาน <span class="pl-4"><FiLLBox /> ครบถ้วน <FiLLBox /> ไม่ครบ</span></p>
+<p class="text-base pl-6">เอกสารหลักฐาน <span class="pl-4"><FiLLBox :checked="data?.memberGuarantor2"/> ครบถ้วน <FiLLBox /> ไม่ครบ</span></p>
 <p class="text-base pl-6">อื่นๆ..............................................................................</p>
-<p class="text-base text-center mt-4">(........................................................)</p>
-<p class="text-base pl-14 mt-2">ตำแหน่ง.......................................................</p>
+<p class="text-base text-center mt-4">(<FiLL class="min-w-56" :data="`${data?.fNameWitness1}  ${data?.lNameWitness1}`"/>)</p>
+<p class="text-base pl-14 mt-2">ตำแหน่ง<FiLL :data="data?.position" class="min-w-28" /></p>
 <p class="text-base text-center mt-1">ผู้ตรวจสอบเอกสาร</p>
-<p class="text-base text-center mt-1">........../........../..........</p>
+<p class="text-base text-center mt-1"><FiLL  class="min-w-80 " :data="data?.dateReceived" date-format="short" /></p>
  </div>
  <div class="border-solid border-2 border-slate-950 ">
-  <p class="text-base pl-6">เอกสารหลักฐาน <span class="pl-4"><FiLLBox /> ครบถ้วน <FiLLBox /> ไม่ครบ</span></p>
+  <p class="text-base pl-6">เอกสารหลักฐาน <span class="pl-4"><FiLLBox :checked="data?.memberGuarantor2"/> ครบถ้วน <FiLLBox /> ไม่ครบ</span></p>
 <p class="text-base pl-6">อื่นๆ..............................................................................</p>
-<p class="text-base text-center mt-4">(........................................................)</p>
-<p class="text-base pl-14 mt-2">ตำแหน่ง.......................................................</p>
+<p class="text-base text-center mt-4">(<FiLL class="min-w-56" :data="`${data?.fNameGuarantor1}  ${data?.lNameGuarantor1}`"/>)</p>
+<p class="text-base pl-14 mt-2">ตำแหน่ง<FiLL :data="data?.positionCommander" class="min-w-28" /></p>
 <p class="text-base text-center mt-1">ผู้พิจรณาคุณสมบัติ</p>
-<p class="text-base text-center mt-1">........../........../..........</p>
+<p class="text-base text-center mt-1"><FiLL  class="min-w-80 " :data="data?.dateReceived" date-format="short" /></p>
 </div>
 
 </div>

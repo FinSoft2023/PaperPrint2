@@ -13,7 +13,7 @@
         </div>
         <div class="grid justify-items-start mt-6 text-pretty text-base">
           <p><span class="ml-28"> ข้าพเจ้า (นาย/นาง/นางสาว)</span>
-            <FiLL class="min-w-36" :data="`${data?.fName}  ${data?.lName}`"/> สมาชิกเลขทะเบียนที่ <FiLL :data="data?.numberRegis" class="min-w-20" />
+            <FiLL class="min-w-36" :data="` ${data?.prefix} ${data?.fName}  ${data?.lName}`"/> สมาชิกเลขทะเบียนที่ <FiLL :data="data?.numberRegis" class="min-w-20" />
             ตำเเหน่ง <FiLL :data="data?.position" class="min-w-28" /> สังกัดโรงพยาบาลศรีสะเกษ อำเภอเมือง จังหวัดศรีสะเกษ
               เบอร์โทรศัพท์ <FiLL :data="data?.nbPhon" class="min-w-40"/>
           </p>

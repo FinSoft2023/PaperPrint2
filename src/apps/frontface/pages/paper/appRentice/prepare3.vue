@@ -485,8 +485,8 @@
                   <span class="ml-28"> พยาน (ผู้มีชื่อรับเงินวงเคราะห์) </span>
                 </p>
 </MorePaperDoc> 
-<MorePaperDoc>
-<!-- กู้สามัญทั่วไป general7  -->
+<MorePaperDoc>  <!-- กู้สามัญทั่วไป general7  -->
+
 <br><br> 
 <div class="flex flex-col items-end row-span-2 mt-14">
                 <p class="font-bold mb-2">สส.ชสอ. ส.7</p>

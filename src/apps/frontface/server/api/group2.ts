@@ -102,6 +102,8 @@ export default defineEventHandler(async (event) => {
       numberBoardYes:"6",                          //จำนวนคณะกรรมการให้ผ่าน
       numberBoardNo:"2",                          //จำนวนคณะกรรมการไม่ให้ผ่าน
       summaryLoan:"ผ่านการพิจารณาจากคณะกรรมการ",            //สรุปการกู้   
+      fNamePresident:"อุทัย",                                //ชื่อนายกสมาคมฌาปนกิจสงเคราะห์
+      lNamePresident:"ศรีเทพ",                                //นามสกุลนายกสมาคมฌาปนกิจสงเคราะห์
       email:"oo@gmail.com",
 
 
@@ -116,6 +118,10 @@ export default defineEventHandler(async (event) => {
             //เอาไปใส่หน้าที่ 6
             // ชื่อนามสกุล                เกี่ยวข้อง         ส่วนเเบ่งเงิน         
          ],
+         beneficiary:[
+            {prefix: "นาง", fn: "สารีกา", ln: "สุขสำราญ", status: "คู่สมรส", ratio: "50"},
+            {prefix: "นาย", fn: "สมพง", ln: "สุขสำราญ", status: "บุตร", ratio: "50"}
+         ]
 
    }
 });

@@ -458,6 +458,9 @@
 
         <MorePaperDoc> <!-- หน้า 9 -->
             <div>
+                <div class="flex flex-col items-end row-span-2">
+                    <p class="mb-2 mr-12">สสธท. 3</p>
+                </div>
                 <div class="text-center">
                     <img class="w-[120px] h-auto mx-auto" src="https://cypphcoop.com/mediafiles/data/sorsortortor.png" alt="Logo" />
                 </div>

@@ -264,9 +264,9 @@
             <p class="ml-16 font-semibold"> สรุปความเห็นและข้อแนะนำของแพทย์<BlankSpace class="min-w-60" /><BlankSpace class="min-w-20" /></p> 
               <BlankSpace class="min-w-80" /><BlankSpace class="min-w-80" /><BlankSpace class="min-w-28" />
               <p class="text-base ml-96"> ลงชื่อ<BlankSpace class="min-w-60" /><br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;( <FiLL class="min-w-56" :data="`${data?.lOwnerCollateral1}  ${data?.lMarryOwnerCollateral1}`"/> ) <br>
+                <span class="ml-8">( <FiLL class="min-w-56" :data="`${data?.lOwnerCollateral1}  ${data?.lMarryOwnerCollateral1}`"/> ) </span><br>
 </p>
-<p class="text-sm pl-96"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;แพทย์ผู้ตรวจร่างกาย</p>
+<p class="text-sm pl-96"> <span class="ml-24">แพทย์ผู้ตรวจร่างกาย</span></p>
 <p class="text-sm "> <span class="font-semibold">หมายเหตุ</span> <span class="ml-4">(1) </span> ต้องเป็นแพทย์แผนปัจจุบันชั้นหนึ่ง จากสถานพยาบาลของรัฐตามกฎหมายว่าด้วยสถานพยาบาล
   <br><span class="ml-20">(2) </span> ใบรับรองแพทย์ฉบับนี้ให้ใช้ได้ไม่เกิน 30 วัน นับแต่วันที่ตรวจร่างกาย
   <br><span class="ml-20 font-semibold underline underline-offset-1 ">(3)  หากพบว่าเป็นโรค ตาม ข้อ (3) หรือตามที่คระกรรมการเห็นว่าอันตราย ให้การสมัครเป็นสมาชิิกตกเป็นโมฆะทันที</span>
@@ -277,27 +277,20 @@
         </MorePaperDoc>
 
         <MorePaperDoc>    <!-- กู้สามัญทั่วไป general5  -->
-                        
-
-                        <div class="mr-3">
-                        <div class="grid grid-cols-1 grid-rows-2 justify-center h-10">
-                        <div ></div>
-
-                        <div class=" items-center row-span-2">
-                          <div class="text-base text-center mt-6">
-                                      <p>-2-</p>
-                                      <p class="text-base font-semibold mt-4 ">ถ้อยเเถลงเเละให้การยินยอมของผู้สมัครสมาชิก สสธท.</p>
-                                  </div>
-                        </div>
-
-                        <div class="flex flex-col items-end row-span-2 mt-4">
-                          <img class="w-[100px] h-auto"
-                            src="https://cypphcoop.com/mediafiles/data/sorsortortor.png"
-                            alt="Logo" />
-                            <p class="mr-6">สสธท.2</p>
-                        </div>
-                      </div>
-                    </div>
+          <div class="mr-3">
+            <div class="grid grid-cols-1 grid-rows-2 justify-center h-10">
+              <div class=" items-center row-span-2">
+                <div class="text-base text-center mt-6">
+                  <p>-2-</p>
+                  <p class="text-base font-semibold mt-4 ">ถ้อยเเถลงเเละให้การยินยอมของผู้สมัครสมาชิก สสธท.</p>
+                </div>
+              </div>
+              <div class="flex flex-col items-end row-span-2 mt-4">
+                <img class="w-[100px] h-auto" src="https://cypphcoop.com/mediafiles/data/sorsortortor.png" alt="Logo" />
+                <p class="mr-6">สสธท.2</p>
+              </div>
+            </div>
+          </div>
 
             <div class="grid justify-items-start mt-28 text-lg">
             <p><span class="ml-10">เขียนที่</span> <FiLL :data="data?.location" class="min-w-80 text-base" /> วันที่ <FiLL  class="min-w-56 text-base" :data="data?.dateReceived"date-format="full" /></p>
@@ -354,18 +347,8 @@
             </p>
              </div>
 
-             <div class="grid grid-cols-1 text-center ">
-            <div></div>
-            <div></div>
-            <div ></div>
-            <div></div>
-            <div ></div>
-            <div ></div>
-            <div ></div>
-            <div ><br></div>
-            <div ></div>
-            <div class="text-center text-base mr-4">ลงชื่อ<BlankSpace class="min-w-56" /></div>
-            <div ></div>
+            <div class="grid grid-cols-1 text-center ">
+            <div class="text-center text-base mr-4 mt-8">ลงชื่อ<BlankSpace class="min-w-56" /></div>
             <div class="text-center mt-2">
               (<FiLL class="min-w-52" :data="`${data?.fName}  ${data?.lName}`"/>)
               <p class="text-center text-base mt-2">
@@ -398,146 +381,103 @@
             </div>
                 </div>
             </div>
-              
-
-            
- 
-            
             </div>
-
-
-
-
-
-                        
 
         </MorePaperDoc>
 
         <MorePaperDoc>      <!-- กู้สามัญทั่วไป general6  -->
+          <div>
+                <div class="flex flex-col items-end row-span-2">
+                    <p class="mb-2 mr-12">สสธท. 3</p>
+                </div>
+                <div class="text-center">
+                    <img class="w-[120px] h-auto mx-auto" src="https://cypphcoop.com/mediafiles/data/sorsortortor.png" alt="Logo" />
+                </div>
+                <div class="mb-2">
+                    <p class="text-center font-bold mt-2 text-xl">สงเคราะห์เงินรับให้มอบการเจตนาแสดงหนังสือ</p>
+                    <p class="text-center font-bold text-xl">สมาคมฌาปนกิจสงเคราะห์สมาชิกสหกรณ์ออมทรัพย์สาธารณสุขไทย</p>
+                </div>
+                <div class="text-base text-end mb-2">
+                    <p> เขียนที่ <FiLL :data="data?.location" class="min-w-96" /></p>
+                    <p> วันที่ <FiLL  :data="data?.dateReceived" class="min-w-96 "  date-format="full" /></p>
+                </div>
+                <p>
+                    <span class="ml-20">ข้าพเจ้า</span> <FiLL class="min-w-60" :data="`${data?.fName}  ${data?.lName}`"/> อายุ <FiLL :data="data?.age" class="min-w-20" /> ปี เกิดวันที่ <FiLL  class="min-w-44 " :data="data?.dateReceived" date-format="full" />
+                    <p>สมาชิกสมาคมฌาปนกิจสงเคราะห์สมาชิกสหกรณ์ออมทรัพย์สาธารณสุขไทย เลขทะเบียนที่<FiLL :data="data?.member" class="min-w-40" /></p>
+                    <p>อยู่บ้านเลขที่ <FiLL :data="data?.housenb" class="min-w-24" /> หมู่ที่ <FiLL :data="data?.group" class="min-w-16" /> ถนน <FiLL :data="data?.road" class="min-w-44" /> ตำบล <FiLL :data="data?.district" class="min-w-48" /></p>
+                    <p>อำเภอ <FiLL :data="data?.district" class="min-w-56" /> จังหวัด <FiLL :data="data?.province" class="min-w-56" /> รหัสไปรษณีย์ <FiLL :data="data?.zipcode" class="min-w-24" /> </p>
+                    <p>โทรศัพท์  <FiLL :data="data?.nbPhon" class="min-w-32" /> มือถือ <FiLL :data="data?.nbPhon" class="min-w-96" /></p>
+                </p>
+                <div class="mt-10">
+                    <p class="ml-20">1. สถานภาพ</p>
+                    <p class="ml-20"><FiLLBox />โสด <span class="ml-12"><FiLLBox :checked="data?.newfName" />สมรส คู่สมรสชื่อ </span><FiLL class="min-w-60" :data="`${data?.newfName}  ${data?.newlName}`"/> <FiLLBox />หย่า หรือ หม้าย</p>
+                    <p><span class="ml-20">2.</span> ข้าพเจ้าขอแสดงเจตนาการรับเงินสงเคราะห์ที่ สสธท. พึงจ่าย ให้ผู้จัดการศพข้าพเจ้าคือ <FiLL class="min-w-60" :data="`${data?.newfName}  ${data?.newlName}`"/> เกี่ยวข้องเป็น <FiLL :data="data?.newStatus" class="min-w-28" /> ของข้าพเจ้า(10%ของเงินสงเคราะห์) ส่วนที่เหลือมอบให้บุคคล ดังต่อไปนี้เป็นผู้รับเงินสงเคราะห์ คือ</p>
+                </div>
+                <LineFiLL :data="data?.beneficiary" :limit="5" class="mt-6 mb-6">
+                    <template #data="{ index, item }">
+                        <p class="text-center">
+                            2.<FiLL :data="index" decimal normal no-line />
+                            <FiLL :data="`${item.prefix}${item.fn}  ${item.ln}`" class="min-w-56" />
+                            เกี่ยวข้องเป็น
+                            <FiLL :data="item.status" class="min-w-20" />
+                            ของข้าพเจ้า สัดส่วน
+                            <FiLL :data="item.ratio" class="min-w-10" />
+                            %
+                        </p>
+                    </template>
+                    <template #default="{ index }">
+                        <p class="text-center">
+                            2.<FiLL :data="index" decimal normal no-line />
+                            <BlankSpace class="min-w-56" />
+                            เกี่ยวข้องเป็น
+                            <BlankSpace class="min-w-20" />
+                            ของข้าพเจ้า สัดส่วน
+                            <BlankSpace class="min-w-10" />
+                            %
+                        </p>
+                    </template>
+                </LineFiLL>
+                <div class="mx-20">
+                    โดยมีเงื่อนไขดังนี้ 
+                    <span class="ml-2"><FiLLBox /> ได้รับเต็มจำนวนเพียงผู้เดียว <FiLLBox /> ได้รับส่วนแบ่งเท่าๆกัน</span>
+                    <br><span class="ml-32"><FiLLBox /> อื่นๆระบุ <BlankSpace class="min-w-96" /></span>
+                </div>
+                <p>
+                    <span class="ml-20">อนึ่ง</span> ข้าพเจ้าขอรับรองว่า การแสดงเจตนาครั้งนี้เป็นไปด้วยความสมัครใจ ไม่มีผู้ใดบังคับ ข่มขู่ หรือกระทำ
+                    การใดๆ ให้ข้าพเจ้าแสดงเจตนาดังกล่าว จึงได้ลงลายมือชื่อไว้เป็นสำคัญ ท้ายหนังสือนี้
+                </p>
+
+
+
+                <div class="grid grid-rows-2 grid-flow-col mt-6">
+                    <div class="row-span-3">
+                    <div ></div>
+                    </div>
+                    <div class="row-span-2 col-span-2  ">
+                    <div ></div>
+                    <div class="text-center text-base ml-72 mr-6">(ลงชื่อ)<BlankSpace class="min-w-52" />ผู้ให้คำยินยอม</div>
+                    <div ></div>
+                    <div class="text-center ml-56">
+                        (<FiLL class="min-w-52" :data="`${data?.fName}  ${data?.lName}`"/>)
+                        <p class="text-center text-base">
+                        ผู้สมัครสมาชิก สสธท.
+                        </p>
+                    </div>
+                    <div class="text-center text-base ml-56 mt-2 mr-2">(ลงชื่อ)<BlankSpace class="min-w-52" />พยาน</div>
+                    <div ></div>
+                    <div class="text-center ml-56">
+                        (<FiLL class="min-w-52" :data="`${data?.fNameWitness1}  ${data?.lNameWitness1}`"/>)
                         
-
-                          <div class="grid grid-cols-3 grid-rows-2 justify-center h-10">
-                        <div class="items-start mt-8">
-                          
-                          </div>
-
-              <div class="flex flex-col items-center row-span-2 mt-16">
-                <img class="w-[120px] h-auto"
-                            src="https://cypphcoop.com/mediafiles/data/sorsortortor.png"
-                            alt="Logo" />
-              </div>
-
-              <div class="flex flex-col items-end row-span-2">
-                <p class="mb-2 mr-12">สสธท. 3</p>
-              </div>
-            </div>
-
-            <div class="grid justify-items-center mt-36 text-lg font-semibold">
-            <p>หนังสือแสดงเจตนาการมอบให้รับเงินสงเคราะห์</p>
-            <p>สมาคมฌาปนกิจสงเคราะห์สมาชิกสหกรณ์ออมทรัพย์สาธารณสุขไทย</p>
-            </div>
-
-            <div class="mr-14">
-            <div class="grid justify-items-end mt-2 text-base ">
-            <p>เขียนที่ <FiLL :data="data?.location" class="min-w-80" /></p>
-            <p>วันที่ <FiLL class="min-w-80 mr-2" :data="data?.dateReceived"
-                      date-format="full" /></p>
-            </div>
-
-            <div class="grid justify-items-start mt-2 text-pretty text-base ">
-            <p><span class="ml-20">ข้าพเจ้า </span> 
-              <FiLL class="min-w-60" :data="` ${data?.fName}  ${data?.lName}`"/> อายุ <FiLL :data="data?.age" class="min-w-16" /> ปี วันเกิดที่ 
-              <FiLL class="min-w-44" :data="data?.dateReceived"
-                      date-format="full" /> สมาชิกสมาคมฌาปนกิจสงเคราะห์สมาชิกสหกรณ์ออมทรัพย์สาธารณสุขไทย เลขทะเบียนที่ <FiLL :data="data?.numberRegis" class="min-w-36" />
-              อยู่บ้านเลขที่ <FiLL :data="data?.housenb" class="min-w-16" /> หมู่ที่ <FiLL :data="data?.group" class="min-w-10" /> ถนน <FiLL :data="data?.road" class="min-w-20" /> 
-              ตำบล <FiLL :data="data?.district" class="min-w-16" /> อำเภอ <FiLL :data="data?.district" class="min-w-16" /> จังหวัด <FiLL :data="data?.province" class="min-w-24" /> 
-              รหัสไปรษณีย์ <FiLL :data="data?.zipcode" class="min-w-16" /> โทรศัพท์ <FiLL :data="data?.nbPhon" class="min-w-56 " /> มือถือ <FiLL :data="data?.nbPhon" class="min-w-60" />
-            </p>
-          </div>
-
-          <div class="grid justify-items-start mt-8 text-pretty text-base p-1 ">
-            <p><span class="ml-20">1. สถานภาพ</span></p>
-            <p class="ml-20"><FiLLBox /> โสด <span class="ml-10"><FiLLBox  :checked="data?.fName"  />สมรส คู่สมรสชื่อ </span><FiLL class="min-w-60" :data="` ${data?.newfName}  ${data?.lName}`"/>
-            <FiLLBox /> หย่า หรือ หม้าย </p>
-            <p><span class="ml-20">2. ข้าพเจ้าขอแสดงเจตนาการรับเงินสงเคราะห์ที่ สสธท. พึงจ่าย ให้ผู้จัดการศพข้าพเจ้า</span></p>
-            <p>คือ <FiLL class="min-w-60" :data="` ${data?.newfName}  ${data?.lName}`"/> เกี่ยวข้องเป็น <FiLL :data="data?.newStatus" class="min-w-32" /> ของข้าพเจ้า(10%ของเงินสงเคราะห์)
-              ส่วนที่เหลือมอบให้บุคคล ดังต่อไปนี้เป็นผู้รับเงินสงเคราะห์ คือ</p>
-              
-            <div class="mt-8">
-              <LineFiLL :data="data?.repaymentPlan"
-          :limit="5">
-          <template #data="{ index, item }">
-            <p class=" text-base pl-8"></p>
-            <p class="text-start text-base"><span class="ml-20">2. </span>
-              <FiLL :data="index"
-                number
-                normal no-line/>
-                
-                <FiLL class="min-w-56" :data="`${item.fn}  ${item.ln}`" />  
-                    
-              เกี่ยวข้องเป็น
-              
-              <FiLL :data="item.status" class="min-w-20" />
-              
-              ของข้าพเจ้า สัดส่วน <FiLL :data="item.share" class="min-w-16" /> % 
-            </p>
-          </template>
-          <template #default="{ index }">
-            <p class="text-start text-base"><span class="ml-20">2. </span>
-              <FiLL :data="index"
-                number
-                normal no-line/>
-                
-                <BlankSpace class="min-w-56" /> เกี่ยวข้องเป็น <BlankSpace class="min-w-20" />
-              ของข้าพเจ้า สัดส่วน<BlankSpace class="min-w-16" /> %
-            </p>
-          </template>
-        </LineFiLL>
-          </div>
-
-          <div class="mt-6">
-            <p><span class="ml-20">โดยมีเงื่อนไขดังนี้</span> <FiLLBox /> ได้รับเต็มจำนวนเพียงผู้เดียว  <FiLLBox  :checked="data?.fName"  /> ได้รับส่วนแบ่งเท่าๆกัน</p>
-            <p class="ml-10"><span class="ml-40"><FiLLBox />อื่นๆ ระบุ<BlankSpace class="min-w-96" /><BlankSpace class="min-w-12" /></span> </p>
-            <p><span class="ml-20">อนึ่ง ข้าพเจ้าขอรับรองว่า การแสดงเจตนาครั้งนี้เป็นไปด้วยความสมัครใจ ไม่มีผู้ใดบังคับ ข่มขู่ หรือกระทำการใดๆ 
-            ให้ข้าพเจ้าแสดงเจตนาดังกล่าว จึงได้ลงลายมือชื่อไว้เป็นสำคัญ ท้ายหนังสือนี้</span> </p>
-
-          </div>
-            </div>
-          <div class="grid grid-rows-2 grid-flow-col mt-6">
-                <div class="row-span-3">
-                  <div ></div>
-                </div>
-                <div class="row-span-2 col-span-2  ">
-                  <div ></div>
-                  <div class="text-center text-base ml-72 mr-6">(ลงชื่อ)<BlankSpace class="min-w-52" />ผู้ให้คำยินยอม</div>
-                  <div ></div>
-                  <div class="text-center ml-56">
-                    (<FiLL class="min-w-52" :data="`${data?.fName}  ${data?.lName}`"/>)
-                    <p class="text-center text-base">
-                      ผู้สมัครสมาชิก สสธท.
-                    </p>
-                  </div>
-                  <div class="text-center text-base ml-56 mt-2 mr-2">(ลงชื่อ)<BlankSpace class="min-w-52" />พยาน</div>
-                  <div ></div>
-                  <div class="text-center ml-56">
-                    (<FiLL class="min-w-52" :data="`${data?.fNameWitness1}  ${data?.lNameWitness1}`"/>)
-                    
-                  </div>
-                  <div class="text-center text-base ml-72 mt-2 ">(ลงชื่อ)<BlankSpace class="min-w-52" />เจ้าหน้าที่ สสธท.</div>
-                  <div ></div>
-                  <div class="text-center ml-56">
-                    (<FiLL class="min-w-52" :data="`${data?.officerFName}  ${data?.officerLName}`"/>)
-                    
-                  </div>
+                    </div>
+                    <div class="text-center text-base ml-72 mt-2 ">(ลงชื่อ)<BlankSpace class="min-w-52" />เจ้าหน้าที่ สสธท.</div>
+                    <div ></div>
+                    <div class="text-center ml-56">
+                        (<FiLL class="min-w-52" :data="`${data?.officerFName}  ${data?.officerLName}`"/>)
+                        
+                    </div>
+                    </div>
                 </div>
             </div>
-              
-
-            
- 
-            
-            </div>
-
         </MorePaperDoc>
 
         <MorePaperDoc>    <!-- กู้สามัญทั่วไป general7  -->

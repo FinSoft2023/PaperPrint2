@@ -557,7 +557,7 @@
 
 </div>
 </MorePaperDoc>
-<MorePaperDoc>
+<MorePaperDoc>    <!-- กู้สามัญทั่วไป general8  -->
     <div class="mx-3">
         <div class="flex text-cenetr">
         <div class="items-start ">

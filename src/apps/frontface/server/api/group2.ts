@@ -105,7 +105,8 @@ export default defineEventHandler(async (event) => {
       fNamePresident:"อุทัย",                                //ชื่อนายกสมาคมฌาปนกิจสงเคราะห์
       lNamePresident:"ศรีเทพ",                                //นามสกุลนายกสมาคมฌาปนกิจสงเคราะห์
       email:"oo@gmail.com",
-
+      coordinationCenter1 : "โรงพยาบาลร้อยเอ็ด",     //ศูนย์ประสานงาน1
+      coordinationCenter2 :    "โรงพยาบาลเลย",     //ศูนย์ประสานงาน2
 
          dateReceived: new Date().toISOString(), //วันที่ปัจจุบัน  full จะได้ผลลัพธ์ 1 เมษายน พศ.2567    short ผลลัพธ์  01/04/2567
          collateral:[

@@ -13,7 +13,7 @@
             <div class="text-xl font-medium">
                 <p>
                     ส่วนราชการ <FiLL :data="data?.location" class="underline underline-offset-4 text-base " no-line /> ที่ <FiLL :data="data?.nb" class="underline underline-offset-4 text-base" no-line /> วันที่ <FiLL  class="underline underline-offset-4 text-base" :data="data?.dateReceived"date-format="full" no-line /><br>
-                    เรื่อง <FiLL :data="data?.subject" class="underline underline-offset-4 text-base" no-line />
+                    เรื่อง <FiLL :data="data?.subject1" class="underline underline-offset-4 text-base" no-line />
                 </p>
             </div>
             <div class="mt-4 text-base">

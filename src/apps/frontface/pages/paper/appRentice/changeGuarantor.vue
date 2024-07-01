@@ -60,8 +60,6 @@
             </div>
 
         </PaperDoc>
-
-
         <MorePaperDoc>
            
                         <!-- กู้สามัญทั่วไป general2  -->
@@ -149,8 +147,6 @@
                 <p>(โปรดพลิก)</p>
                 </div>
         </MorePaperDoc>
-
-
         <MorePaperDoc>
                         <!-- กู้สามัญทั่วไป general3  -->
 

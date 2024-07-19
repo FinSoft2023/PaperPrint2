@@ -19,8 +19,8 @@
             </diV>
 
             <diV class="text-md font-md text-center  col-span-2" >
-                <p class="flex justify-start">เลขที่: </p>
-                <p class="flex justify-start">วันที่:</p>
+                <p class="flex justify-start">เลขที่: <FiLL :data="data?.number" no-line /> </p>
+                <p class="flex justify-start">วันที่: <FiLL :data="data?.dayMonthYear" no-line /></p>
             </diV>
           </div>
           <div class="grid grid-cols-3 grid-rows-2 justify-center h-16">
@@ -45,16 +45,16 @@
               <div class="items-start mt-6 w-50">
                 <div>
                     <p class="mt-3">ชื่อและนามสกุล :
-              <FiLL :data="data?.receivedLocation" no-line />
+              <FiLL :data="data?.fname" no-line /> <FiLL :data="data?.lname" no-line />
             </p>
             <p class="mt-3">หมายเลขโทรศัพท์ :
-              <FiLL :data="data?.receivedLocation" no-line />
+              <FiLL :data="data?.phone" no-line />
             </p>
             <p class="mt-3">ที่อยู่ :
-              <FiLL :data="data?.receivedLocation" no-line />
+              <FiLL :data="data?.location" no-line />
             </p>
             <p class="mt-3">หมายเลขทะเบียนรถ :
-              <FiLL :data="data?.receivedLocation" no-line />
+              <FiLL :data="data?.idCar" no-line />
             </p>
                 </div>
                 </div>
@@ -134,13 +134,13 @@
 
 <div class="grid justify-items-start">
       <p class="mt-3">ช่องทางการชำระ : 
-          <FiLL :data="data?.receivedLocation" no-line />
+          <FiLL :data="data?.transfer" no-line /> : <FiLL :data="data?.bank" no-line />
       </p>
       <p class="mt-3">จำนวนเงินเป็นตัวอักษร : 
-          <FiLL :data="data?.receivedLocation" no-line />
+          <FiLL :data="data?.mt" no-line />
       </p>
       <p class="mt-3">หมายเหตุ : 
-          <FiLL :data="data?.receivedLocation" no-line />
+          <FiLL :data="data?.note" no-line />
       </p>
       </div>
 
@@ -148,7 +148,7 @@
         <div class="items-start mt-6 w-50">
           <div>
               <p class="mt-3">วันที่ :
-        <FiLL :data="data?.receivedLocation" no-line />
+        <FiLL :data="data?.dayMonthYear" no-line />
       </p>
       <p class="mt-3">ลายเซ็นผู้จ่ายเงิน 
         <FiLL :data="data?.receivedLocation" no-line />
@@ -165,7 +165,7 @@
         <div class="flex flex-col items-end row-span-2 mt-6">
           <div >
               <p class="mt-3">วันที่ :
-        <FiLL :data="data?.receivedLocation" no-line />
+        <FiLL :data="data?.dayMonthYear" no-line />
       </p>
       <p class="mt-3">ลายเซ็นผู้จ่ายเงิน 
         <FiLL :data="data?.receivedLocation" no-line />
@@ -194,5 +194,5 @@
 <script setup
         lang="ts">
 
-        const { data } = await useFetch<any>('/api/group2');
+        const { data } = await useFetch<any>('/api/cts');
 </script>

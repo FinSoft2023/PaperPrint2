@@ -4,7 +4,7 @@
       <div class="grid grid-cols-3 justify-center">
         <div class="flex items-start">
           <div class="border-2 border-black p-2">
-            <p>รับที่
+            <p>รับที่ 
               <FiLL :data="data?.receivedLocation" />
             </p>
             <p>วันที่
@@ -25,7 +25,7 @@
             <p>หนังสือกู้ที่
               <FiLL :data="data?.receivedLocation" no-line />
             </p>
-            <p>วันที่.............................................</p>
+            <p>วันที่ 22/11/67</p>
             <p>บัญชีเงินกู้ที่
               <FiLL :data="data?.loanAccountNumber" />
             </p>

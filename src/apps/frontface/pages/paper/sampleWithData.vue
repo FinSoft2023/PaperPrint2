@@ -25,7 +25,7 @@
             <p>หนังสือกู้ที่
               <FiLL :data="data?.receivedLocation" no-line />
             </p>
-            <p>วันที่ 22/11/67</p>
+            <p>วันที่.......................................</p>
             <p>บัญชีเงินกู้ที่
               <FiLL :data="data?.loanAccountNumber" />
             </p>

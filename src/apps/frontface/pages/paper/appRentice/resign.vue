@@ -8,7 +8,7 @@
                   src="https://www.saving-sskh.com/images/logo-saving.png"
                   alt="Logo" />
                   </div>
-                  <h1 class="text-xl text-center font-semibold mb-2 mt-16 border-2 border-black p-2 w-72 ml-32">ใบลาออกจากสมาชิกสหกรณ์ฯ</h1>
+                  <h1 class="text-xl text-center font-semibold mb-2 mt-16 border-2 border-black p-2 w-72 ml-32">ใบลาออกจากสมาชิกสหกรณ์</h1>
             </div>
                 
       <div class="mx-7">

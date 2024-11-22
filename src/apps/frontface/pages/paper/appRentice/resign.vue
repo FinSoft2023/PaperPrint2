@@ -8,7 +8,7 @@
                   src="https://www.saving-sskh.com/images/logo-saving.png"
                   alt="Logo" />
                   </div>
-                  <h1 class="text-xl text-center font-semibold mb-2 mt-16 border-2 border-black p-2 w-72 ml-32">ใบลาออกจากสมาชิกสหกรณ์</h1>
+                  <h1 class="text-xl text-center font-semibold mb-2 mt-16 border-2 border-black p-2 w-72 ml-32">ใบลาออกจากสมาชิกสหกรณ์ฯ</h1>
             </div>
                 
       <div class="mx-7">
@@ -29,7 +29,7 @@
               </div>
               <br>
               <span class="ml-32">
-              ข้าพเจ้า นาย<FiLL class="min-w-72" :data="`${data?.fName}  ${data?.lName}`"/>  สมาชิกเลขที่ <FiLL class="min-w-32" :data="data?.member" />
+              ข้าพเจ้า นาย/นาง/นางสาว<FiLL class="min-w-72" :data="`${data?.fName}  ${data?.lName}`"/>  สมาชิกเลขที่ <FiLL class="min-w-32" :data="data?.member" />
           สังกัด <FiLL class="min-w-52":data="data?.affiliation" /> เบอร์โทรศัพท์<FiLL class="min-w-32":data="data?.nbPhon" />อายุการเป็นสมาชิก<FiLL class="min-w-8":data="data?.period" /> ปี<FiLL class="min-w-8":data="data?.nb" />เดือน
             <p class="mt-2">มีความประสงค์ขอลาออกจากสมาชิกสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกต จำกัด เนื่องจากมีความจำเป็น<br>
                ต้องใช้เงิน/ต้องการปลดหนี้/ย้ายไปปฏิบัติราชการที่อื่น/ลาออกจากราชการ/เกษียณอายุราชการ
@@ -80,7 +80,7 @@
 </div>
             <p class="pl-6">...................................................................................................................................................................................................
             </p>
-            <div class="font-semibold underline ml-6">บันทึกข้อมูลเจ้าหน้าที่สหกรณ์
+            <div class="font-semibold underline ml-6">บันทึกข้อมูลเจ้าหน้าที่สหกรณ์ฯ
             </div>
             <div class="mt-8 ml-6">เงินค่าหุ้นชึ่งมีอยู่ในสหกรณ์ฯ  <span class="ml-2">เมื่อวันที่ <FiLL :data="data?.dateReceived"date-format="short"  />
                  ส่งงวดละ <FiLL class="min-w-16":data="data?.stockValue" />บาท จำนวนเงิน<FiLL class="min-w-16" :data="data?.stockValue" />บาท</span><br>
@@ -89,7 +89,7 @@
                                     
                     <p class="text-center ml-56"> ดอกเบี้ย ณ วันนี้ <FiLL class="min-w-28" :data="data?.satang" />คิดเป็นเงิน<FiLL class="min-w-16" :data="data?.satang" />บาท
                     </p>
-                    <div class="mt-8 ml-60">................................................เจ้าหน้าที่สหกรณ์ฯ
+                    <div class="mt-8 ml-60">................................................เจ้าหน้าที่สหกรณ์
                     </div>
                     <div class="ml-60">(<FiLL class="min-w-40 ":data="`${data?.fMarryOwnerCollateral1}  ${data?.lMarryOwnerCollateral1}`" />)
                     </div>

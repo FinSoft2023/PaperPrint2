@@ -4,7 +4,7 @@
             <div class="grid grid-cols-3 grid-rows-2 justify-center h-10">
               <div class="items-start mt-8">
                 <div class="border-2 border-black p-1  ">
-                  <p class="text-sm ">รับที่
+                  <p class="text-sm ">รับที่csc
                     <FiLL  :data="data?.receivedLocation" class="min-w-36"/>
                   </p>
                   <p class=" text-sm">วันที่

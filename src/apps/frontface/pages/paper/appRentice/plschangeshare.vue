@@ -32,7 +32,7 @@
             <FiLL class="min-w-36" :data="`${data?.stockValueno} `"/>
           </span> <span class="font-normal ml-10">  บาท</span> </p>
         </div>
-        <p class=" ml-28 mt-10">ทั้งนี่ ขอให้การเปลี่ยนแปลงตั้งแต่เดือน <FiLL class="min-w-36" :data="`${data?.mount} `"/>พ.ศ <FiLL class="min-w-28" :data="`${data?.year} `"/> เป็นต้นไป</p>
+        <p class=" ml-28 mt-10">ทั้งนี่ ขอให้การเปลี่ยนแปลงมีผลตั้งแต่เดือน <FiLL class="min-w-36" :data="`${data?.mount} `"/>พ.ศ <FiLL class="min-w-28" :data="`${data?.year} `"/> เป็นต้นไป</p>
         <div class="grid justify-items-center mt-10">
         <p class="pl-72">ลงชื่อ<BlankSpace class="min-w-52" /></p>
         <div class="pl-80">
@@ -45,7 +45,7 @@
         <p><span class="ml-28 ">สมาชิกส่งชำระหุ้นมาแล้ว
           <FiLL class="min-w-36" :data="`${data?.nb} `"/>
           </span> <span class="font-normal ml-2"> งวด </span>
-          <p><span class="ml-28 ">มีเรือนหุ้น
+          <p><span class="ml-28 ">มีทุนเรือนหุ้น
             <FiLL class="min-w-36" :data="`${data?.bath} `"/>
           </span> <span class="font-normal ml-6"> บาท </span>
         </p>

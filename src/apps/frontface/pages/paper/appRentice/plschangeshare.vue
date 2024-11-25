@@ -23,13 +23,13 @@
           <p><span class="ml-28"> มีความประสงค์ขอเปลี่ยนแปลงการส่ง</span></p>
           ชำระค่าหุ้นรายเดือนดังนี้
           <p class="text-center font-semibold ml-28"> จากเดิม <span class=" ml-12">  ส่งค่าหุ้นเดือนละ
-            <FiLL class="min-w-36" :data="`${data?.stockValue} `"/> <span class="font-normal ml-4"> บาท</span> </span></p>
+            <FiLL class="min-w-36" :data=" data?.stockValue"/> <span class="font-normal ml-4"> บาท</span> </span></p>
           <p class="text-center font-semibold ml-28"><FiLLBox /><span class="ml-2"> ขอเพิ่ม </span><span class="font-normal ml-6"> ส่งเป็นเดือนละ
             <BlankSpace class="min-w-36" />
           </span> <span class="font-normal ml-10">  บาท</span> </p>
           
           <p class="text-center font-semibold ml-28"><FiLLBox :checked="data?.stockValueno" /><span class="ml-2"> ขอลด </span><span class="font-normal ml-8">  ส่งเป็นเดือนละ
-            <FiLL class="min-w-36" :data="`${data?.stockValueno} `"/>
+            <FiLL class="min-w-36" :data="data?.stockValueno"/>
           </span> <span class="font-normal ml-10">  บาท</span> </p>
         </div>
         <p class=" ml-28 mt-10">ทั้งนี่ ขอให้การเปลี่ยนแปลงมีผลตั้งแต่เดือน <FiLL class="min-w-36" :data="`${data?.mount} `"/>พ.ศ <FiLL class="min-w-28" :data="`${data?.year} `"/> เป็นต้นไป</p>
@@ -46,11 +46,11 @@
           <FiLL class="min-w-36" :data="`${data?.nb} `"/>
           </span> <span class="font-normal ml-2"> งวด </span>
           <p><span class="ml-28 ">มีทุนเรือนหุ้น
-            <FiLL class="min-w-36" :data="`${data?.bath} `"/>
+            <FiLL class="min-w-36" :data="data?.bath"/>
           </span> <span class="font-normal ml-6"> บาท </span>
         </p>
         <p><span class="ml-28 ">มีหนี้ทั้งสิ้น
-          <FiLL class="min-w-36" :data="`${data?.togetherBath} `"/>
+          <FiLL class="min-w-36" :data="data?.togetherBath"/>
           </span> <span class="font-normal ml-2"> บาท </span>
           </p>
         </p><br>

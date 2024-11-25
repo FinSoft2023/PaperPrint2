@@ -12,7 +12,7 @@
             <div class="flex flex-col items-end">
                 <div class=" p-2">
                     <p>รับที่ <FiLL :data="data?.location" class="min-w-40" /></p>
-                    <p>วันที่ <FiLL  class="text-base" :data="data?.dateReceived"date-format="short"  /></p>
+                    <p>วันที่ <FiLL  class="text-base" :data="data?.dateReceived" date-format="short"  /></p>
                     <p>สัญญาที่กู้ที่ <FiLL :data="data?.loanbook" class="min-w-20" /></p>
                 </div>
             </div> 
@@ -26,7 +26,7 @@
         <div class="flex flex-col items-end">
             <div class="text-start">
                 <p class="mt-6">เขียนที่สำนักงานสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
-                <p class="mt-2">วันที่ <FiLL  class="text-base" :data="data?.dateReceived"date-format="full"  /></p>
+                <p class="mt-2">วันที่ <FiLL  class="text-base" :data="data?.dateReceived" date-format="full"  /></p>
             </div>
         </div>
         <p class="text-left mt-6">เรียน คณะกรรมการดำเนินการสหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>

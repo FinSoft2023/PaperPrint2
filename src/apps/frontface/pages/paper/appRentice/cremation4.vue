@@ -36,7 +36,7 @@
                    <p class="text-xs font-semibold" > <FiLLBox /> 1. สำเนาบัตรข้าราชการหรือบัตรประชาชน พร้อมรับรองสำเนา</p>
                    <p class="text-xs font-semibold" > <FiLLBox /> 2. สำเนาหนังสือสำคัญ สสรท. พร้อมรับรองสำเนา</p>
                    <p class="text-xs font-semibold" > <FiLLBox /> 3. ใบรับรองแพทย์ฉบับจริง มีอายุไม่เกิน 30 วัน
-                                                                     (ตามแบบฟอร์มใบรับรองแพทย์ของ กสสท.)</p>
+                                                                     (ตามแบบฟอร์มใบรับรองแพทย์ของ กสธท.)</p>
 
 
 
@@ -68,24 +68,24 @@
       <p class="text-base ml-96"> เขียนที่ <FiLL :data="data?.location" class="min-w-80" />
        <br>วันที่ <FiLL  class="min-w-56 " :data="data?.dateReceived" date-format="full" /></p>
      
-       <p class="text-base"> <span class="ml-12">ข้าพเจ้า</span> (นางสาว/นาง/นาย) 
+       <p class="text-base"> <span class="ml-12">ข้าพเจ้า</span> (นาย/นาง/นางสาว) 
               <FiLL class="min-w-80" :data="`${data?.prefix} ${data?.fName}  ${data?.lName}`"/>
-            อายุ <FiLL :data="data?.age" class="min-w-24" /> ปี เลขประจำตัวประชาชน <FiLL :data="data?.idcard" class="min-w-96" />
+            อายุ <FiLL :data="data?.age" class="min-w-24" /> ปี <br> เลขประจำตัวประชาชน <FiLL :data="data?.idcard" class="min-w-96" />
             เกิดวันที่ <FiLL  class="min-w-56 " :data="data?.dateReceived" date-format="full" /> 
           </p> 
 
         
-          <span class="text-base ml-12">1. เลขทะเบียนสมาชิก กสรท. ที่<FiLL :data="data?.member" class="min-w-16" /></span>
+          <span class="text-base ml-12">1. เลขทะเบียนสมาชิก กสธท. ที่<FiLL :data="data?.member" class="min-w-16" /></span>
           <span class="text-base ml-6"><FiLLBox checked /> สหกรณ์ออมทรัพย์<FiLL :data="data?.affiliation" class="min-w-48" />จำกัด</span>
           <br>
           <span class="text-base ml-6"><FiLLBox /> สมัครตรง กสธท.........</span>
           <br>
-          <span class="text-base ml-6"><FiLLBox /> เป็นสมาชิกสามัญ สสธท. และ กลธท. ด้านที่ 2</span>
-          <span class="text-base ml-6"><FiLLBox /> เป็นเจ้าหน้าที่ กสธท./สสธท</span>
+          <span class="text-base ml-6"><FiLLBox /> เป็นสมาชิกสามัญ สสธท. และ กลธท. ล้านที่ 2</span>
+          <span class="text-base ml-6"><FiLLBox /> เป็นเจ้าหน้าที่ กสธท./สสธท.</span>
           <br>
           <span class="text-base ml-6"><FiLLBox /> เป็นกรรมการ/ผู้ตรวจสอบกิจการ/เจ้าหน้าที่ ชสอ.</span>
           <br>
-          <span class="text-base ml-6"><FiLLBox /> เป็นสมาชิกสมทบ สสธท. และ กสชท. ล้านที่ 2 (ประเภทสมทบสหกรณ์ออมทรัพย์) ที่เป็นพนักงานราชการ/พกส./ 
+          <span class="text-base ml-6"><FiLLBox /> เป็นสมาชิกสมทบ สสธท. และ กสธท. ล้านที่ 2 (ประเภทสมทบสหกรณ์ออมทรัพย์) ที่เป็นพนักงานราชการ/พกส./ 
                                                    ลูกจ้างชั่วคราว ในสังกัดกระทรวงสาธารณสุข</span>
           <br>
           <span class="text-base ml-6"><FiLLBox /> เป็นสมาชิกสมทบคู่สมรส/สมทบบุตร สสชท, และ กลธท. ด้านที่ 2 ที่ประกอบอาชีพ (โปรดระบุ)..........<br>ยกเว้นอาชีพเกษตรกร และผู้ไม่ได้ประกอบอาชีพ</span>
@@ -97,15 +97,15 @@
       โทรศัพท์ <FiLL :data="data?.nbPhon" class="min-w-32" />  โทรศัพท์ <FiLL :data="data?.nbPhon" class="min-w-32" /> 
 
 <br>
-<span class="text-base ml-12"> 3. ขอสมัครเป็นสมาชิกของกองทุนสวัสดิการสมาชิกของสหกรณ์ออมทรัพย์สาธารณสุขไทย (กสธท.) ด้านที่ 3</span>
+<span class="text-base ml-12"> 3. ขอสมัครเป็นสมาชิกของกองทุนสวัสดิการสมาชิกของสหกรณ์ออมทรัพย์สาธารณสุขไทย (กสธท.) ล้านที่ 3</span>
 <br>
 <span class="text-base ml-12"> 4. การชำระเงินค่าสมัครและเบี้ยประกันชีวิต ดังนี้</span>
 <br>
-<span class="text-base ml-20"> 4.1 การชำระเงินครั้งแรกเริ่มสมัคร เป็นเงิน.... ...บาท (ค่าสมัคร 100 บาท และเบี้ยประกันชีวิต.......บาท)</span>
+<span class="text-base ml-20"> 4.1 การชำระเงินครั้งแรกเริ่มสมัคร เป็นเงิน........บาท (ค่าสมัคร 100 บาท และเบี้ยประกันชีวิต.......บาท)</span>
 <br>
 <span class="text-base ml-20"> 4.2 การชำระเงินครั้งต่อไป ข้าพเจ้ายินยอมให้หักและชำระเงินเบี้ยประกันต่ออายุ กลธท. ล้านที่ 3 ดังนี้</span>
 <br> 
-<span class="text-base ml-24"><FiLLBox /> เป็นสมาชิกสามัญ สสธท. และ กลธท. ด้านที่ 2</span>
+<span class="text-base ml-24"><FiLLBox /> ชำระเป็นเงินสดที่ กสธท. หรือศูนย์ประสานงาน กสธท.</span>
 <br> 
 <span class="text-base ml-24"><FiLLBox checked/> นำชำระเอง / โอนเข้าระบบ KTB teller payment ของธนาคารกรุงไทย สาขานนทบุรี ชื่อบัญชี กองทุน
 สวัสดิการสมาชิกของสหกรณ์ออมทรัพย์สาธารณสุขไทย รหัสหน่วยงาน Company Code : 92778 ค่าธรรมเนียมการโอน 10 บาท</span>
@@ -113,13 +113,13 @@
 <span class="text-base ml-24"><FiLLBox />ชำระจากเงินปันผล เฉลี่ยคืน จากสหกรณ์ต้นสังกัด</span>
 <br>
 <span class="text-base ml-12"> 5. หากข้าพเจ้าเสียชีวิต ข้าพเจ้ายินยอมมอบเงินสวัสดิการสงเคราะห์ให้สหกรณ์ต้นสังกัด เพื่อชำระหนี้ของข้าพเจ้า (กรณีสหกรณ์ต้น
-สังกัดเป็นศูนย์ประสานงาน) และส่วนที่เหลือมอบให้บุคคล ตามที่กำหนดไว้ในใบสมัครหรือหนังสือเปลี่ยนแปลงของสมาคม สสขท.</span>
+สังกัดเป็นศูนย์ประสานงาน) และส่วนที่เหลือมอบให้บุคคล ตามที่กำหนดไว้ในใบสมัครหรือหนังสือเปลี่ยนแปลงของสมาคม สสธท.</span>
 <br>
 <span class="text-base ml-12"> 6. ข้าพเจ้าขอสัญญาว่า เมื่อคณะกรรมการอนุมัติให้ข้าพเจ้าเป็นสมาชิกแล้ว ข้าพเจ้าจะปฏิบัติตามระเบียบและประกาศของ
 กองทุนสวัสดิการสมาชิกของสหกรณ์ออมทรัพย์สาธารณสุขไทย ทุกประการ และจะส่งเสริม สนับสนุน กสธท. ให้เจริญรุ่งเรืองยิ่งๆ ขึ้นไป</span>
 <br>
-<span class="text-base ml-12"> 6. ข้าพเจ้า<FiLL class="min-w-40" :data="`${data?.fName}  ${data?.lName}`"/>ขอรับรองว่า ข้าพเจ้ามีสุขภาพสมบูรณ์แข็งแรง (ไม่เคยมีประวัติ
-การรักษาโรคตามใบรับรองแพทย์ที่ กสอท. กำหนด) มาก่อนวันสมัคร ตามระเบียบ กสธท. ข้อ 9.3 หากข้าพเจ้ารู้แล้วละเว้นเสีย
+<span class="text-base ml-12"> 7. ข้าพเจ้า<FiLL class="min-w-40" :data="`${data?.fName}  ${data?.lName}`"/>ขอรับรองว่า ข้าพเจ้ามีสุขภาพสมบูรณ์แข็งแรง (ไม่เคยมีประวัติ
+การรักษาโรคตามใบรับรองแพทย์ที่ กสธท. กำหนด) มาก่อนวันสมัคร ตามระเบียบ กสธท. ข้อ 9.3 หากข้าพเจ้ารู้แล้วละเว้นเสีย
 ไม่เปิดเผยข้อความจริงหรือแถลงข้อความนั้น เป็นความเท็จ ข้าพเจ้ายินยอม ให้ กสธท. ใช้สิทธิ์ตัดรายชื่อพ้นสมาชิกภาพ
 กสธท. ตามระเบียบ กสธท. ข้อ 14 (1) (3) และ (7) ได้</span>
         </MorePaperDoc>
@@ -130,12 +130,12 @@
                         <div class="border-solid border-2 border-slate-950 text-xs">
                             <p class="ml-4 mr-4">
                             <p> ได้ตรวจสอบแล้ว </p>
-                            <p> เป็นสมาชิก สตท. ทะเบียนเลขที่....และ </p>
-                            <p> เป็นสมาชิก กสรท. ทะเบียนเลขที่....จริง</p>
+                            <p> เป็นสมาชิก สสธท. ทะเบียนเลขที่....และ </p>
+                            <p> เป็นสมาชิก กสธท. ทะเบียนเลขที่....จริง</p>
                             <div class="ml-2">
                               <p class="mt-4">................................................................</p>
                               <p>(<span class="px-20"></span>)</p>
-                              <p class="ml-8">เจ้าหน้าที่ศูนย์/กสธท</p>
+                              <p class="ml-8">เจ้าหน้าที่ศูนย์/กสธท.</p>
                             </div>
                           </p>
                             
@@ -150,7 +150,7 @@
                         
                     </div>
                     
-                    <div class="text-center text-base ml-56 mt-2 mr-2">(ลงชื่อ)<BlankSpace class="min-w-52" />พยาน</div>
+                    <div class="text-center text-base  mt-2 mr-2">(ลงชื่อ)<BlankSpace class="min-w-52" />กรรมการสหกรณ์/เจ้าหน้าที่ต้นสังกัด</div>
                     <div ></div>
                     
                     <div class="text-center ">
@@ -243,9 +243,9 @@
 <p class="text-sm "> <span class="font-semibold">หมายเหตุ</span> <span class="ml-4">(1) </span> ต้องเป็นแพทย์แผนปัจจุบันชั้นหนึ่ง จากสถานพยาบาลของรัฐ ตามกฎหมายว่าด้วยสถานพยาบาล
   <br><span class="ml-20">(2) </span> ใบรับรองแพทย์ฉบับนี้ให้ใช้ได้ไม่เกิน 30 วัน นับแต่วันที่ตรวจร่างกาย
   <br><span class="ml-20 font-semibold underline underline-offset-1 ">(3)  หากพบว่าเป็นโรค ตาม ข้อ (3) หรือตามที่คณะกรรมการเห็นว่าอันตราย กสธท. จะไม่รับ
-<br><span class="ml-24 font-semibold underline underline-offset-1 ">เป็นสมาชิก</span></span>
+  <br><span class="ml-24 font-semibold underline underline-offset-1 ">เป็นสมาชิก</span></span>
   <br><span class="ml-20 font-semibold ">(4)  ให้ผู้สมัครใช้ใบรับรองแพทย์ตามแบบที่ กสธท. กำหนดนี้เท่านั้นเพื่อประกอบการสมัครเป็น
-    <br><span class="ml-24 font-semibold ">สมาชิก กสธท. เริ่มใช้ตั้งแต่ </span><span class="underline underline-offset-1 font-semibold">วันที่ 1 เมษายน 2564</span></span> 
+    <br><span class="ml-24 font-semibold ">สมาชิก กสธท. เริ่มใช้ตั้งแต่ </span><span class="underline underline-offset-1 font-semibold">วันที่ 1 ตุลาคม 2563</span></span> 
   <span class="font-semibold"> เป็นต้นไป</span>
 </p>
         </MorePaperDoc>
@@ -260,13 +260,13 @@
                         <div class=" items-center row-span-2">
                           <div class="text-base text-center mt-6">
                                       <p>-2-</p>
-                                      <p class="text-base font-semibold mt-4 ">ถ้อยเเถลงเเละให้การยินยอมของผู้สมัครสมาชิก สสธท.</p>
+                                      <p class="text-base font-semibold mt-4 ">ถ้อยเเถลงเเละให้การยินยอมของผู้สมัครสมาชิก กสธท.</p>
                                   </div>
                         </div>
 
                         <div class="flex flex-col items-end row-span-2 mt-12">
                           
-                            <p class="mr-6">สสธท.2</p>
+                            <p class="mr-6">กสธท.2</p>
                         </div>
                       </div>
                     </div>
@@ -280,11 +280,11 @@
               <FiLL class="min-w-96" :data="`${data?.prefix} ${data?.fName}  ${data?.lName}`"/>
             </p>
             <p>เลขประจำตัวประชาชน <FiLL :data="data?.idcard" class="min-w-44" /> อายุ <FiLL :data="data?.age" class="min-w-20" /> ปี</p>
-            <p><span class="ml-14">ข้าพเจ้า</span>ข้าพเจ้าขอให้ประวัติสุขภาพของข้าพเจ้าเพื่อประกอบการสมัครสมาชิก สสธท. ดังนี้
+            <p><span class="ml-14">ข้าพเจ้า</span>ข้าพเจ้าขอให้ประวัติสุขภาพของข้าพเจ้าเพื่อประกอบการสมัครสมาชิก กสธท. ดังนี้
             </p>
             <p><FiLLBox  :checked="data?.fName"  /> 1. มีสุขภาพแข็งแรง</p>
             <p><FiLLBox  :checked="data?.fName"  /> 2. ไม่เป็นผู้มีกายทุพพลภาพ จนไม่สามารถปฏิบัติหน้าที่ได้</p>
-            <p><FiLLBox  :checked="data?.fName"  /> 3. ไม่มีจิตฟันเฟือน ไม่สมประกอบ</p>
+            <p><FiLLBox  :checked="data?.fName"  /> 3. ไม่มีจิตฟั่นเฟือน ไม่สมประกอบ</p>
             <p><span class="ml-5">4.</span> <span class="underline">ประวัติการรักษาโรคต่อไปนี้</span></p>
             
 
@@ -317,11 +317,11 @@
               <p class="mr-2"><span class="ml-14">5.</span> โรคร้ายแรงอื่น ๆ (ระบุ)<BlankSpace class="min-w-60" /><BlankSpace class="min-w-56" /></p>
              <div class="mt-2 mr-20">
               <p><span class="ml-10 mt-16 text-pretty">ข้าพเจ้าขอยืนยันว่าถ้อยแถลงที่ให้ไว้เป็นความจริงทุกประการ</span> <span class="underline">หากข้าพเจ้าแถลงข้อความอันเป็นเท็จแล้ว
-                  ให้ สสธท. ตัดสิทธิ์จากการเป็นสมาชิก สสธท. ตามข้อบังคับสมาคม พ.ศ. 2564 ข้อ 15(4) ได้ทันที 
-                  และข้าพเจ้าตลอดทั้งทายาทหรือผู้รับเงินสงเคราะห์ของข้าพเจ้าจะไม่ขอรับสิทธิ์และใช้สิทธิ์ใด ๆ และขอสละสิทธิ์ในการที่จะ
-                  รับเงินสงเคราะห์ครอบครัวเมื่อข้าพเจ้าเสียชีวิต รวมทั้ง ข้าพเจ้าไม่ติดใจที่จะเรียกร้องเงินสงเคราะห์หรือเงินอื่นใดจาก สสธท. ทั้งสิ้น</span>โดยข้าพเจ้ายินยอมปฏิบัติตามข้อบังคับสมาคมทุกประการ
+                  ให้ กสธท. ตัดสิทธิ์จากการเป็นสมาชิก กสธท. ตามระเบียบ กสธท. พ.ศ. 2566 ข้อ 14(3) ได้ทันที 
+                  และข้าพขอสละสิทธิ์ในการที่จะรับเงินสวัสดิการสงเคราะห์ครอบครัวเมื่อข้าพเจ้าเสียชีวิต รวมทั้ง ข้าพเจ้าไม่ติดใจที่จะเรียกร้องเงินสวัสดิการสงเคราะห์หรือเงินอื่นใดจาก กสธท. ทั้งสิ้น</span> 
+                  <br> โดยข้าพเจ้ายินยอมปฏิบัติตามข้อบังคับสมาคมทุกประการ
             </p>
-            <p class="mt-4"><span class="ml-10 ">ข้าพเจ้า</span>ยินยอมเปิดเผยประวัติสุขภาพของข้าพเจ้า&nbsp; โดยมอบให้&nbsp; สสธท.&nbsp; ขอประวัติการรักษาของข้าพเจ้า
+            <p class="mt-4"><span class="ml-10 ">ข้าพเจ้า</span>ยินยอมเปิดเผยประวัติสุขภาพของข้าพเจ้า&nbsp; โดยมอบให้&nbsp; กสธท.&nbsp; ขอประวัติการรักษาของข้าพเจ้า
               จากสถานพยาบาลที่เกี่ยวข้องได้
             </p>
              </div>
@@ -341,7 +341,7 @@
             <div class="text-center mt-2">
               (<FiLL class="min-w-52" :data="`${data?.fName}  ${data?.lName}`"/>)
               <p class="text-center text-base mt-2">
-                (ผู้สมัครสมาชิก สสธท.)
+                (ผู้สมัครสมาชิก กสธท.)
               </p>
             </div>
             </div>
@@ -365,7 +365,7 @@
             <div class="text-center mt-2 ">
               (<FiLL class="min-w-52" :data="`${data?.fNameWitness1}  ${data?.lNameWitness1}`"/>)
               <p class="text-center text-base mt-2">
-                พยาน/ผู้มีชื่อรับเงินสงเคราะห์
+                พยาน/ผู้มีชื่อรับเงินสวัสดิการสงเคราะห์
               </p>
             </div>
                 </div>

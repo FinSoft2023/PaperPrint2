@@ -81,13 +81,13 @@
       <p class="text-base ml-96"> เขียนที่ <FiLL :data="data?.location" class="min-w-80" />
        <br>วันที่ <FiLL  class="min-w-56 " :data="data?.dateReceived" date-format="full" /></p>
      
-       <p class="text-base"> <span class="ml-12">ข้าพเจ้า</span> (นางสาว/นาง/นาย) 
+       <p class="text-base"> <span class="ml-12">ข้าพเจ้า</span> (นาย/นาง/นางสาว) 
               <FiLL class="min-w-80" :data="`${data?.prefix} ${data?.fName}  ${data?.lName}`"/>
-            อายุ <FiLL :data="data?.age" class="min-w-24" /> ปี เลขประจำตัวประชาชน <FiLL :data="data?.idcard" class="min-w-96" />
+            อายุ <FiLL :data="data?.age" class="min-w-24" /> ปี <br>เลขประจำตัวประชาชน <FiLL :data="data?.idcard" class="min-w-96" />
             เกิดวันที่ <FiLL  class="min-w-56 " :data="data?.dateReceived" date-format="full" /> คู่สมรสชื่อ <FiLL class="min-w-96" :data="`${data?.newprefix} ${data?.newfName}  ${data?.lName}`"/>
           </p> 
           <p class="text-base"> (1) <FiLLBox :checked="data?.savings"/> สมาชิกสามัญของสหกรณ์ออมทรัพย์ <FiLL :data="data?.savings" class="min-w-40" />จำกัด เลขสมาชิกสหกรณ์ <FiLL :data="data?.member" class="min-w-32" />
-          <span class="text-base ml-6"><FiLLBox /> อื่นๆ </span>(ระบุ)<BlankSpace class="min-w-80" /><BlankSpace class="min-w-8" />
+          <br><span class="text-base ml-6"><FiLLBox /> อื่นๆ </span>(ระบุ)<BlankSpace class="min-w-80" /><BlankSpace class="min-w-8" />
           </p>
           <p class="text-base"> (2) ตำแหน่ง <FiLL :data="data?.position" class="min-w-40" /> หรือปฏิบัติหน้าที่ <FiLL :data="data?.position" class="min-w-40" />
       <br> <span class="text-base ml-6"> สถานที่ปฏิบัติงาน / ชื่อหน่วยงาน </span><FiLL :data="data?.agency" class="min-w-80" /> <br> <span class="text-base ml-6">ตำบล (แขวง)</span> <FiLL :data="data?.district" class="min-w-44" />
@@ -115,14 +115,14 @@
                 </div>
             </div>
             <span class="text-base ml-12"><FiLLBox :checked="data?.savings"/> เงินสงเคราะห์ล่วงหน้า..............5,500.....บาท</span> <br>
-            <span class="text-base ml-20">รวมชำระหนี้ครั้งนี้ เป็นเงิน..........5,500.....บาท</span> (ห้าพันห้าร้อยยี่สิบบาทถ้วน)<br>
+            <span class="text-base ml-20">รวมชำระหนี้ครั้งนี้ เป็นเงิน..........5,540.....บาท</span> (ห้าพันห้าร้อยสี่สิบบาทถ้วน)<br>
             <span class="text-base ml-12">4.2 การชำระเงินครั้งต่อไป ข้าพเจ้ายินยอมให้หักและชำระเงินสงเคราะห์ล่วงหน้า ดังน้ี</span><br>
             <span class="text-base ml-12"> <FiLLBox :checked="data?.savings"/> ชำเป็นเงินสดที่สมาคมหรือศุนย์ประสานงานสมาคม</span><br>
-            <span class="text-base ml-12"> <FiLLBox :checked="data?.savings"/> ชำระเงินเข้าบัญชีสมาคมธนาคารไทยพาณิชย์ สาขาเดอะคริสตัล ราชพฤกษ์ ชื่อบัญชี สมาคมฌาปนกิจ</span>สงเคราะห์สมาชิกสหกรณ์ออมทรัพย์สาธารณสุขไทย
-            สมาคมฌาปนกิจสงเคราะห์สมาชิกสหกรณ์ออมทรัพย์สาธารณสุขไทย ประเภทกระแสรายวัน (Bill Payment Pay- In Slip) เลขบัญชี 458-0-39888-5<br>
+            <span class="text-base ml-12"> <FiLLBox :checked="data?.savings"/> ชำระเงินเข้าบัญชีสมาคม ธนาคารไทยพาณิชย์ สาขาเดอะคริสตัล ราชพฤกษ์ ชื่อบัญชี สมาคมฌาปนกิจ</span>สงเคราะห์สมาชิกสหกรณ์ออมทรัพย์สาธารณสุขไทย
+            ประเภทกระแสรายวัน (Bill Payment Pay- In Slip) เลขบัญชี 468-0-39888-5<br>
             <span class="text-base ml-12"> <FiLLBox :checked="data?.savings"/> ชำระจากเงินปันผล เฉลี่ยคืน จากสหกรณ์ต้นสังกัด <br>
               <span class="text-base ml-12"> ข้าพเจ้าได้ทราบและเข้าใจวัตถุประสงค์ </span> ข้อบังคับ ระเบียบ และประกาศของสมาคมฌาปนกิจสงเคราะห์</span>
-            สมาชิกสามัญของสหกรณ์ออมทรัพย์สาธารณสุขไทย แล้ว มีความประสงค์สมัครเป็นสมาชิก และยินยอมปฏิบัติตามข้อบังคับและเงื่อไขดังกล่าวทุกประการ<br>
+            สมาชิกสามัญของสหกรณ์ออมทรัพย์สาธารณสุขไทย แล้ว มีความประสงค์สมัครเป็นสมาชิก และยินยอมปฏิบัติตามข้อบังคับและเงื่อนไขดังกล่าวทุกประการ<br>
 </p> 
 <p class="text-base pl-96 ">ลงชื่อ<BlankSpace class="min-w-52" />ผู้สมัคร </p>
 <p class="text-base pl-96 ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;( <FiLL class="min-w-52" :data="`${data?.prefix} ${data?.fName}  ${data?.lName}`"/> )</p>
@@ -149,7 +149,7 @@
       อำเภอ/เขต <FiLL :data="data?.district" class="min-w-32" /> จังหวัด <FiLL :data="data?.province" class="min-w-32" />
       โทรศัพท์<FiLL :data="data?.nbPhon" class="min-w-32" /> 
 </p> 
-<p class="text-base "> <span class="ml-6">ขอรับรองว่าผู้สมัคร</span>  นาย/นาง/นางสาว <FiLL class="min-w-52" :data="`${data?.newprefix} ${data?.newfName}  ${data?.lName}`"/>ฃ
+<p class="text-base "> <span class="ml-6">ขอรับรองว่าผู้สมัคร</span>  นาย/นาง/นางสาว <FiLL class="min-w-52" :data="`${data?.newprefix} ${data?.newfName}  ${data?.lName}`"/>
 มีคุณสมบัติตามข้อบังคับ ข้อ 10.1 ของสมาคมฌาปนกิจสงเคราะห์สมาชิกออมทรัพย์สาธารณสุขไทยทุกประการ
 </p>
 <p class="text-base ml-96"> ลงชื่อ<BlankSpace class="min-w-60" />ผู้รับรอง <br>
@@ -171,7 +171,7 @@
 <p class="text-sm pl-96"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  กรรมการผู้ได้รับมอบหมาย</p>
 <p class="text-center text-lg font-semibold">ความเห็นสำหรับคณะกรรมการสมาคม สสธท.</p><br>
 <p class="text-sm ml-12 "> คำสั่ง <FiLLBox :checked="data?.savings"/> อนุมัติรับเข้าเป็นสมาชิก สสธท. ตั้งแต่วันที่ <FiLL  class="min-w-56 " :data="data?.dateReceived" date-format="short" />
-  ตามมติที่ประชุมคณะกรรมการสมาคม ครั้งที่ <FiLL  class="min-w-20 " :data="data?.member" /> เมื่อวันที่ <FiLL  class="min-w-56 " :data="data?.dateReceived" date-format="short" />
+  <br>ตามมติที่ประชุมคณะกรรมการสมาคม ครั้งที่ <FiLL  class="min-w-20 " :data="data?.member" /> เมื่อวันที่ <FiLL  class="min-w-56 " :data="data?.dateReceived" date-format="short" />
   <br> <span class="ml-9"><FiLLBox /> ไม่อนุมัติ </span>  เนื่องจาก<BlankSpace class="min-w-64" />
 </p>
 
@@ -221,13 +221,14 @@
                         <p class="text-base font-semibold ">ส่วนที่ 1 ของผู้ขอใบรับรองแพทย์สมัครสมาชิก สสธท.</p>
                         <p class="text-base"> <span class="ml-12">ข้าพเจ้า</span> นาย/นาง/นางสาว 
               <FiLL class="min-w-80" :data="`${data?.fName}  ${data?.lName}`"/>
-              อายุ <FiLL :data="data?.age" class="min-w-24" /> ปี เลขประจำตัวประชาชน <FiLL :data="data?.idcard" class="min-w-96" />
-            ข้าพเจ้ามีสุขภาพดังนี้ โรคตามข้อ (3.1) - (3.9) ในส่วนที่ 2 ของแพทย์ <FiLLBox :checked="data?.savings"/> ไม่มี <FiLLBox /> มี (ระบุ) <BlankSpace class="min-w-96" />
-          โรคประจำตัวอื่นๆ<BlankSpace class="min-w-80" /><BlankSpace class="min-w-64" /><BlankSpace class="min-w-12" />
+              อายุ <FiLL :data="data?.age" class="min-w-24" /> ปี <br>เลขประจำตัวประชาชน <FiLL :data="data?.idcard" class="min-w-96" />
+            ข้าพเจ้ามีสุขภาพ ดังนี้ <br>โรคตามข้อ (3.1) - (3.9) ในส่วนที่ 2 ของแพทย์ <FiLLBox :checked="data?.savings"/> ไม่มี <FiLLBox /> มี (ระบุ) <BlankSpace class="min-w-96" />
+          <br> โรคประจำตัวอื่นๆ<BlankSpace class="min-w-80" /><BlankSpace class="min-w-64" /><BlankSpace class="min-w-12" />
+          <span class="ml-12">ข้าพเจ้าขอรับรองว่าข้อความข้างต้นเป็นความจริงทุกประการ</span>
         <br>  <span class="ml-12">ลงชื่อ <FiLL class="min-w-60" :data="`${data?.fName}  ${data?.lName}`"/></span>วันที่<FiLL  class="min-w-56 " :data="data?.dateReceived" date-format="full" />
 
           </p> 
-          <p class="text-base font-semibold ">ส่วนที่ 2 ของแพทย์</p>
+          <p class="text-base font-semibold">ส่วนที่ 2 ของแพทย์</p>
           <p class="text-base"> สถานที่ตรวจ <FiLL :data="data?.affiliation" class="min-w-96" />วันที่<FiLL  class="min-w-56 " :data="data?.dateReceived" date-format="full" />
           <span class="ml-12">ข้าพเจ้า</span>นายแพทย์/แพทย์หญิง  <FiLL class="min-w-96" :data="`${data?.lOwnerCollateral1}  ${data?.lMarryOwnerCollateral1}`"/>
 <br> ใบอนุญาติประกอบวิชาชีพเวชกรรม เลขที่ <FiLL :data="data?.newInstallments" class="min-w-96" /><br>
@@ -305,7 +306,7 @@
             </p>
             <p><FiLLBox  :checked="data?.fName"  /> 1. มีสุขภาพแข็งแรง</p>
             <p><FiLLBox  :checked="data?.fName"  /> 2. ไม่เป็นผู้มีกายทุพพลภาพ จนไม่สามารถปฏิบัติหน้าที่ได้</p>
-            <p><FiLLBox  :checked="data?.fName"  /> 3. ไม่มีจิตฟันเฟือน ไม่สมประกอบ</p>
+            <p><FiLLBox  :checked="data?.fName"  /> 3. ไม่มีจิตฟั่นเฟือน ไม่สมประกอบ</p>
             <p><span class="ml-5">4.</span> <span class="underline">ประวัติการรักษาโรคต่อไปนี้</span></p>
             
 
@@ -340,7 +341,7 @@
               <p><span class="ml-10 mt-16 text-pretty">ข้าพเจ้าขอยืนยันว่าถ้อยแถลงที่ให้ไว้เป็นความจริงทุกประการ</span> <span class="underline">หากข้าพเจ้าแถลงข้อความอันเป็นเท็จแล้ว
                   ให้ สสธท. ตัดสิทธิ์จากการเป็นสมาชิก สสธท. ตามข้อบังคับสมาคม พ.ศ. 2564 ข้อ 15(4) ได้ทันที 
                   และข้าพเจ้าตลอดทั้งทายาทหรือผู้รับเงินสงเคราะห์ของข้าพเจ้าจะไม่ขอรับสิทธิ์และใช้สิทธิ์ใด ๆ และขอสละสิทธิ์ในการที่จะ
-                  รับเงินสงเคราะห์ครอบครัวเมื่อข้าพเจ้าเสียชีวิต รวมทั้ง ข้าพเจ้าไม่ติดใจที่จะเรียกร้องเงินสงเคราะห์หรือเงินอื่นใดจาก สสธท. ทั้งสิ้น</span>โดยข้าพเจ้ายินยอมปฏิบัติตามข้อบังคับสมาคมทุกประการ
+                  รับเงินสงเคราะห์ครอบครัวเมื่อข้าพเจ้าเสียชีวิต รวมทั้ง ข้าพเจ้าไม่ติดใจที่จะเรียกร้องเงินสงเคราะห์หรือเงินอื่นใดจาก สสธท. ทั้งสิ้น</span> โดยข้าพเจ้ายินยอมปฏิบัติตามข้อบังคับสมาคมทุกประการ
             </p>
             <p class="mt-4"><span class="ml-10 ">ข้าพเจ้า</span>ยินยอมเปิดเผยประวัติสุขภาพของข้าพเจ้า&nbsp; โดยมอบให้&nbsp; สสธท.&nbsp; ขอประวัติการรักษาของข้าพเจ้า
               จากสถานพยาบาลที่เกี่ยวข้องได้
@@ -394,7 +395,7 @@
                     <img class="w-[120px] h-auto mx-auto" src="https://cypphcoop.com/mediafiles/data/sorsortortor.png" alt="Logo" />
                 </div>
                 <div class="mb-2">
-                    <p class="text-center font-bold mt-2 text-xl">สงเคราะห์เงินรับให้มอบการเจตนาแสดงหนังสือ</p>
+                    <p class="text-center font-bold mt-2 text-xl">หนังสือแสดงเจตนาการมอบให้รับเงินสงเคราะห์</p>
                     <p class="text-center font-bold text-xl">สมาคมฌาปนกิจสงเคราะห์สมาชิกสหกรณ์ออมทรัพย์สาธารณสุขไทย</p>
                 </div>
                 <div class="text-base text-end mb-2">
@@ -411,7 +412,7 @@
                 <div class="mt-10">
                     <p class="ml-20">1. สถานภาพ</p>
                     <p class="ml-20"><FiLLBox />โสด <span class="ml-12"><FiLLBox :checked="data?.newfName" />สมรส คู่สมรสชื่อ </span><FiLL class="min-w-60" :data="`${data?.newfName}  ${data?.newlName}`"/> <FiLLBox />หย่า หรือ หม้าย</p>
-                    <p><span class="ml-20">2.</span> ข้าพเจ้าขอแสดงเจตนาการรับเงินสงเคราะห์ที่ สสธท. พึงจ่าย ให้ผู้จัดการศพข้าพเจ้าคือ <FiLL class="min-w-60" :data="`${data?.newfName}  ${data?.newlName}`"/> เกี่ยวข้องเป็น <FiLL :data="data?.newStatus" class="min-w-28" /> ของข้าพเจ้า(10%ของเงินสงเคราะห์) ส่วนที่เหลือมอบให้บุคคล ดังต่อไปนี้เป็นผู้รับเงินสงเคราะห์ คือ</p>
+                    <p><span class="ml-20">2.</span> ข้าพเจ้าขอแสดงเจตนาการรับเงินสงเคราะห์ที่ สสธท. พึงจ่าย ให้ผู้จัดการศพข้าพเจ้า <br> คือ <FiLL class="min-w-60" :data="`${data?.newfName}  ${data?.newlName}`"/> เกี่ยวข้องเป็น <FiLL :data="data?.newStatus" class="min-w-28" /> ของข้าพเจ้า(10%ของเงินสงเคราะห์) <br> ส่วนที่เหลือมอบให้บุคคล ดังต่อไปนี้เป็นผู้รับเงินสงเคราะห์ คือ</p>
                 </div>
                 <LineFiLL :data="data?.beneficiary" :limit="5" class="mt-6 mb-6">
                     <template #data="{ index, item }">
@@ -500,7 +501,7 @@
 
                 <div class="grid justify-items-start mt-6 text-pretty text-base ">
                     <p><span class="ml-14">โดยหนังสือฉบับนี้ข้าพเจ้า </span> 
-                        <FiLL class="min-w-60" :data="` ${data?.fName}  ${data?.lName}`"/> ซึ่งเป็นผู้ถือบัตรประจำตัวประชาชนเลขที่ <FiLL :data="data?.idcard" class="min-w-40" /> 
+                        <FiLL class="min-w-60" :data="` ${data?.fName}  ${data?.lName}`"/> ซึ่งเป็นผู้ถือบัตรประจำตัวประชาชน <br> เลขที่ <FiLL :data="data?.idcard" class="min-w-40" /> 
                         ที่อยู่ปัจจุบันเลขที่ <FiLL :data="data?.housenb" class="min-w-20" /> หมู่ที่ <FiLL :data="data?.group" class="min-w-14" />  ซอย <FiLL :data="data?.group" class="min-w-14" /> ถนน <FiLL :data="data?.road" class="min-w-32" /> 
                         ตำบล(แขวง) <FiLL :data="data?.district" class="min-w-24" /> อำเภอ(เขต) <FiLL :data="data?.district" class="min-w-24" /> จังหวัด <FiLL :data="data?.province" class="min-w-28" /> 
                         รหัสไปรษณีย์ <FiLL :data="data?.zipcode" class="min-w-24" /> โทรศัพท์บ้าน <FiLL :data="data?.nbPhon" class="min-w-44 " /> โทรศัพท์มือถือ <FiLL :data="data?.nbPhon" class="min-w-44" />
@@ -508,7 +509,7 @@
                         ที่อยู่ปัจจุบันเลขที่ <FiLL :data="data?.housenb" class="min-w-20" /> หมู่ที่ <FiLL :data="data?.group" class="min-w-12" />  ซอย <FiLL :data="data?.group" class="min-w-12" /> ถนน <FiLL :data="data?.road" class="min-w-32" /> 
                         ตำบล(แขวง) <FiLL :data="data?.district" class="min-w-28" /> อำเภอ(เขต) <FiLL :data="data?.district" class="min-w-28" /> จังหวัด <FiLL :data="data?.province" class="min-w-36" /> 
                         รหัสไปรษณีย์ <FiLL :data="data?.zipcode" class="min-w-24" /> โทรศัพท์บ้าน <FiLL :data="data?.nbPhon" class="min-w-44 " /> โทรศัพท์มือถือ <FiLL :data="data?.nbPhon" class="min-w-48" />
-                        เป็นผู้ <FiLLBox /> รับเงินค่าจัดการศพ <FiLLBox /> รับเงินสงเคราะห์ <FiLLBox /> อื่นๆ ที่พึ่งได้รับ
+                        <br> เป็นผู้ <FiLLBox /> รับเงินค่าจัดการศพ <FiLLBox /> รับเงินสงเคราะห์ <FiLLBox /> อื่น ๆ ที่พึ่งได้รับ
                     </p>
                     <p>แทนข้าพเจ้าเพื่อนำเงินดังกล่าวชำระหนี้ของ <FiLL :data="data?.affiliation" class="min-w-40" /> ที่มีต่อสหกรณ์ออมทรัพย์<FiLL :data="data?.savings" class="min-w-28" /> จำกัด จนเสร็จการ </p>
                     <p>
@@ -592,8 +593,7 @@
                 </div>
             </div>
             <p>
-              <span class="ml-14">ข้าพเจ้าขอรับรองว่าเป็นลายมือชื่อ&nbsp; /&nbsp; ลายพิมพ์นิ้วมือของผู้ยืนยอมและมอบอำนาจและผู้รับยินยอม
-                และรับมอบอำนาจจริงและได้ลงลายมือชื่อ&nbsp;/&nbsp; ลายพิมพ์นิ้วมือต่อหน้าข้าพเจ้า</span>
+              <span class="ml-14">ข้าพเจ้าขอรับรองว่าเป็นลายมือชื่อ&nbsp; /&nbsp; ลายพิมพ์นิ้วมือของผู้ยืนยอมและมอบอำนาจ และผู้รับยินยอมและรับมอบอำนาจจริงและได้ลงลายมือชื่อ&nbsp;/&nbsp; ลายพิมพ์นิ้วมือต่อหน้าข้าพเจ้า</span>
             </p>
             <div class="grid grid-rows-2 grid-flow-col mt-2">
                 <div class="row-span-3">

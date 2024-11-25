@@ -2,7 +2,7 @@
     <main class="font-sans">
       <MorePaperDoc>
         <div class="grid justify-items-center mt-20">
-          <p class="pl-96">สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
+          <p class="pl-96">เขียนที่ สหกรณ์ออมทรัพย์โรงพยาบาลศรีสะเกษ จำกัด</p>
           <p class="pl-72">วันที่ <FiLL :data="data?.dateReceived" date-format="full" class="min-w-60"/></p>
         </div>
         <div class="grid justify-items-start mt-6 ">
@@ -13,7 +13,7 @@
         </div>
         <div class="grid justify-items-start mt-6 text-pretty text-base">
           <p><span class="ml-28"> ข้าพเจ้า (นาย/นาง/นางสาว)</span>
-            <FiLL class="min-w-36" :data="` ${data?.prefix} ${data?.fName}  ${data?.lName}`"/> สมาชิกเลขทะเบียนที่ <FiLL :data="data?.numberRegis" class="min-w-20" />
+            <FiLL class="min-w-36" :data="` ${data?.prefix} ${data?.fName}  ${data?.lName}`"/> สมาชิกเลขที่ <FiLL :data="data?.numberRegis" class="min-w-20" />
             ตำเเหน่ง <FiLL :data="data?.position" class="min-w-28" /> สังกัดโรงพยาบาลศรีสะเกษ อำเภอเมือง จังหวัดศรีสะเกษ
               เบอร์โทรศัพท์ <FiLL :data="data?.nbPhon" class="min-w-40"/>
           </p>

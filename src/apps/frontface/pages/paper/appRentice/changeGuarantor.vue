@@ -29,7 +29,7 @@
               <p><span class="ml-20">ด้วย ข้าพเจ้า</span><FiLL class="min-w-56" :data="`${data?.fName}  ${data?.lName}`"/>ตำเเหน่ง <FiLL :data="data?.position" class="min-w-28" /> สังกัดโรงพยาบาลศรีสะเกษ สมาชิกสหกรณ์ออมทรัพย์ฯ 
                 เลขทะเบียนที่<FiLL :data="data?.numberRegis" class="min-w-20" />มีความประสงค์ขอเปลี่ยนเเปลงผู้ค้ำประกันเงินกู้สามัญ / เงินกู้พิเศษ ตามสัญญาเลขที่<FiLL :data="data?.nb" class="min-w-16" />ลงวันที่<FiLL  class="min-w-52" :data="data?.dateReceived"date-format="full" />
                 จำนวนเงินกู้<FiLL :data="data?.salary" class="min-w-28" /> บาท จากเดิม (นาย/นาง/นางสาว)<FiLL class="min-w-56" :data="`${data?.prefix} ${data?.fName}  ${data?.lName}`"/>ตำเเหน่ง<FiLL :data="data?.position" class="min-w-36" />สมาชิกเลขที่<FiLL :data="data?.member" class="min-w-24" />
-                สังกัด<FiLL :data="data?.affiliation" class="min-w-60" />เปลี่ยนเเปลงเป็น(นาย/นาง/นางสาว)<FiLL class="min-w-56" :data="`${data?.newprefix} ${data?.officerLName}  ${data?.newlName}`"/>ตำเเหน่ง<FiLL :data="data?.officerPOsition" class="min-w-36" />สมชิกเลขที่<FiLL :data="data?.satang" class="min-w-24" />สังกัด<FiLL :data="data?.affiliation" class="min-w-60" />
+                สังกัด<FiLL :data="data?.affiliation" class="min-w-60" />เปลี่ยนเเปลงเป็น(นาย/นาง/นางสาว)<FiLL class="min-w-56" :data="`${data?.newprefix} ${data?.officerLName}  ${data?.newlName}`"/>ตำเเหน่ง<FiLL :data="data?.officerPOsition" class="min-w-36" />สมาชิกเลขที่<FiLL :data="data?.satang" class="min-w-24" />สังกัด<FiLL :data="data?.affiliation" class="min-w-60" />
               </p>
               <p class="mt-4 text-base ">
                   <span class="ml-20">จึงเรียนมาเพื่อโปรดพิจารณา</span>

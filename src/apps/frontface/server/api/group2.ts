@@ -23,7 +23,7 @@ export default defineEventHandler(async (event) => {
       explanation:"ไม่มี",            //คำชี้แจง
       ofFname: "นาตาชา",             //ชื่อคนโดนฌาปนกิจ
       ofLname: "โรมานอฟ",             //นามสกุล
-      deaddate: 20/12/2564 ,       //วันที่ตาย
+      deaddate: "20/12/2564" ,       //วันที่ตาย
       nbAccount: "2012365412" ,       //เลขบัญชี
       nbPhon:"0865579988",            //เบอร์โทรข้าพเจ้า
       position: "ประธาน",           //ตำแหน่งข้าพเจ้า

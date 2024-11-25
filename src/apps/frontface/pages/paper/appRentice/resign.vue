@@ -8,13 +8,13 @@
                   src="https://www.saving-sskh.com/images/logo-saving.png"
                   alt="Logo" />
                   </div>
-                  <h1 class="text-xl text-center font-semibold mb-2 mt-16 border-2 border-black p-2 w-72 ml-32">ใบลาออกจากสมาชิกสหกรณ์</h1>
+                  <h1 class="text-xl text-center font-semibold mb-2 mt-16 border-2 border-black p-2 w-72 ml-32">ใบลาออกจากสมาชิกสหกรณ์ฯ</h1>
             </div>
                 
       <div class="mx-7">
         <div class="flex flex-col items-end mt-4">
         <p>เขียนที่ <FiLL :data="data?.location"  /></p>
-        <div class="text-center mt-2 ">
+        <div class="text-center mt-2 "> 
         <p class="mr-52">วันที่  <FiLL :data="data?.dateReceived"date-format="full"  /> 
         </p>
         </div>
@@ -37,7 +37,7 @@
         </span>
         <div class="mt-4">
             <span class="ml-32">
-                เมื่อที่ประชุมคณะกรรมการดำเนินการได้มีมติอนุมัติให้ข้าพเจ้าลาออกจากสหกรณ์ฯแล้ว ข้าพเจ้า
+                เมื่อที่ประชุมคณะกรรมการดำเนินการได้มีมติอนุมัติให้ข้าพเจ้าลาออกจากสหกรณ์ฯ แล้ว ข้าพเจ้า
             </span>
             <span>
                 จะมารับเงินค่าหุ้นที่มีอยู่ในสหกรณ์ด้วยตนเอง

@@ -37,7 +37,7 @@
                    <p class="text-xs font-semibold" > <FiLLBox /> 1. สำเนาบัตรข้าราชการหรือบัตรประชาชน พร้อมรับรองสำเนา</p>
                    <p class="text-xs font-semibold" > <FiLLBox /> 2. สำเนาหนังสือสำคัญ สสรท. พร้อมรับรองสำเนา</p>
                    <p class="text-xs font-semibold" > <FiLLBox /> 3. ใบรับรองแพทย์ฉบับจริง มีอายุไม่เกิน 30 วัน
-                                                                     (ตามแบบฟอร์มใบรับรองแพทย์ของ กสสท.)</p>
+                                                                     (ตามแบบฟอร์มใบรับรองแพทย์ของ กสธท.)</p>
 
 
 
@@ -55,7 +55,7 @@
               </div>
 
               <div class="flex flex-col items-end row-span-2">
-                  <p class="text-sm mt-8 mr-12 font-semibold">กสสท.1
+                  <p class="text-sm mt-8 mr-12 font-semibold">กสธท.1
                   </p><br>
                   <p class="text-sm font-semibold ">เลขทะเบียนสมาชิก กสธท. <FiLL class="min-w-20" :data="data?.member" /></p>
                   
@@ -183,14 +183,14 @@
               </div>
 <div class="flex flex-col items-center row-span-2 mt-12">
                           
-                            <p class="text-base font-semibold">สสธท.2</p>
+                            <p class="text-base font-semibold">กสธท.2</p>
               </div>
             </div>
             <br>
               <p class="text-xs text-center"> ตราประทับ<br>สถานพยาบาล<br>ของรัฐ</p>
 <br><br>
                         <p class="text-base font-semibold text-center">ใบรับรองแพทย์</p>
-                        <p class="text-base font-semibold ">ส่วนที่ 1 ของผู้ขอใบรับรองแพทย์สมัครสมาชิก สสธท.</p>
+                        <p class="text-base font-semibold ">ส่วนที่ 1 ของผู้ขอใบรับรองแพทย์สมัครสมาชิก กสธท.</p>
                         <p class="text-base"> <span class="ml-12">ข้าพเจ้า</span> นาย/นาง/นางสาว 
               <FiLL class="min-w-96" :data="`${data?.fName}  ${data?.lName}`"/></p>
               <p> เลขประจำตัวประชาชน <FiLL :data="data?.idcard" class="min-w-80" />ข้าพเจ้ามีประวัติสุขภาพ ดังนี้ </p>
@@ -258,11 +258,11 @@
               <div class=" items-center row-span-2">
                 <div class="text-base text-center mt-6">
                   <p>-2-</p>
-                  <p class="text-base font-semibold mt-4 ">ถ้อยเเถลงเเละให้การยินยอมของผู้สมัครสมาชิก สสธท.</p>
+                  <p class="text-base font-semibold mt-4 ">ถ้อยเเถลงเเละให้การยินยอมของผู้สมัครสมาชิก กสธท.</p>
                 </div>
               </div>
               <div class="flex flex-col items-end row-span-2 mt-4">
-                <p class="mr-6">สสธท.2</p>
+                <p class="mr-6">กสธท.2</p>
               </div>
             </div>
           </div>
@@ -312,7 +312,7 @@
             <div>
               <p class="mr-2"><span class="ml-14">5.</span> โรคร้ายแรงอื่น ๆ (ระบุ)<BlankSpace class="min-w-60" /><BlankSpace class="min-w-52" /></p>
              <div class="mt-2 mr-20">
-              <p><span class="ml-10 mt-16 text-pretty">ข้าพเจ้าขอยืนยันว่าถ้อยแถลงที่ให้ไว้เป็นความจริงทุกประการ</span> <span class="underline">ประการ หากข้าพเจ้าแถลงข้อความอันเป็นเท็จแล้วให้ กสธท. ตัดสิทธิ์จากการเป็นสมาชิก กสธท. ตามระเบียบ กสธท. พ.ศ. 2566 ข้อ 14 (3) ได้ทันทีและข้าพเจ้าขอสละสิทธิ์ในการที่จะรับเงินสวัสดิการสงเคราะห์ครอบครัวเมื่อข้าพเจ้าเสียชีวิต รวมทั้งข้าพเจ้าไม่ติดใจที่จะเรียกร้องเงินสวัสดิการสงเคราะห์ครอบครัวหรือเงินอื่นใดจาก กสธท. ทั้งสิ้</span>
+              <p><span class="ml-10 mt-16 text-pretty">ข้าพเจ้าขอยืนยันว่าถ้อยแถลงที่ให้ไว้เป็นความจริงทุกประการ</span> <span class="underline">ประการ หากข้าพเจ้าแถลงข้อความอันเป็นเท็จแล้วให้ กสธท. ตัดสิทธิ์จากการเป็นสมาชิก กสธท. ตามระเบียบ กสธท. พ.ศ. 2566 ข้อ 14 (3) ได้ทันทีและข้าพเจ้าขอสละสิทธิ์ในการที่จะรับเงินสวัสดิการสงเคราะห์ครอบครัวเมื่อข้าพเจ้าเสียชีวิต รวมทั้งข้าพเจ้าไม่ติดใจที่จะเรียกร้องเงินสวัสดิการสงเคราะห์ครอบครัวหรือเงินอื่นใดจาก กสธท. ทั้งสิ้น</span>
                 โดยข้าพเจ้ายินยอมปฏิบัติตามระเบียบ กสธท. ทุกประการ
             </p>
             <p class="mt-4"><span class="ml-10 ">ข้าพเจ้า</span>ยินยอมเปิดเผยประวัติสุขภาพของข้าพเจ้า โดยมอบให้ กสธท. ขอประวัติการรักษาของข้าพเจ้าจากสถานพยาบาลที่เกี่ยวข้องได้

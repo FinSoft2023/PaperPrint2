@@ -41,7 +41,7 @@
                    <p class="text-xs font-semibold" > <FiLLBox  :checked="data?.fName"  /> 2. สำเนาทะเบียนบ้านผู้สมัคร</p>
                    <p class="text-xs font-semibold" > <FiLLBox  :checked="data?.fName"  /> 3. ใบรับรองเเพทย์ของรัฐฉบับจริง มีอายุไม่เกิน 30 วัน</p>
                    <p class="text-xs font-semibold" > <FiLLBox  :checked="data?.fName"  /> 4. ใบรับรองสุขภาพตนเอง</p>
-                   <p class="text-xs font-semibold" > <FiLLBox  :checked="data?.fName"  /> 5. สำเนาบัตรปรชาชน เเละทะเบียนบ้านผู้รับเงินสังเคราะห์</p>
+                   <p class="text-xs font-semibold" > <FiLLBox  :checked="data?.fName"  /> 5. สำเนาบัตรปรชาชน เเละทะเบียนบ้านผู้รับเงินสงเคราะห์</p>
                    <p class="text-xs font-semibold" > <FiLLBox  :checked="data?.fName"  /> 6. รูปถ่าย ณ วันยื่นเอกสาร</p>
                    <p class="text-xs font-semibold" > <FiLLBox  :checked="data?.fName"  /> 7. หนังสือรับรองการเป็นสมาชิกประเภทสามัญของ สอ.</p>
                    <p class="text-xs font-semibold" > <FiLLBox  :checked="data?.fName"  /> 8. สำเนาทะเบียนสมรส (ถ้ามี)</p>
@@ -79,8 +79,8 @@
                   </p>
                 </div>
                 <div class="border-2 border-black p-1 ">
-                <p class="text-xs font-semibold" >เลขฌาปนกิจ</p>
-                <p class="text-xs font-semibold" >รอบสมัคร</p>
+                <p class="text-xs font-semibold" >เลขฌาปนกิจ.....................</p>
+                <p class="text-xs font-semibold" >รอบสมัคร............/.............</p>
 
                 </div>
                 </div>
@@ -94,7 +94,7 @@
       <p class="text-base text-end"> เขียนที่ <FiLL :data="data?.location" class="min-w-80" /></p>
        <p class="text-base text-end "> วันที่ <FiLL  class="min-w-80 " :data="data?.dateReceived" date-format="full" /></p>
        <p  class="text-base text-start font-semibold">(1) <span class="underline underline-offset-2">ข้อมูลสมาชิก</span> :</p>
-     <p class="text-base mt-1 "> ข้าพเจ้า (นางสาว/นาง/นาย) 
+     <p class="text-base mt-1 "> ข้าพเจ้า (นาย/นาง/นางสาว) 
               <FiLL class="min-w-60" :data="`${data?.prefix} ${data?.fName}  ${data?.lName}`"/> วัน/เดือน/ปี/ เกิด <FiLL  class="min-w-40 " :data="data?.dateReceived" date-format="full" />
             อายุ <FiLL :data="data?.age" class="min-w-20" /> ปี เลขประจำตัวประชาชน <FiLL :data="data?.idcard" class="min-w-60" /> เพศ <FiLLBox  :checked="data?.fName"  /> ชาย <FiLLBox /> หญิง
           </p> 
@@ -143,7 +143,7 @@
         <div class="grid justify-items-start text-pretty text-base mt-1">
           <p><span class="ml-11">ตรวจสอบแล้วขอรับรองว่า </span>
             นาย/นาง/นางสาว <FiLL class="min-w-52" :data="`${data?.prefix} ${data?.fName}  ${data?.lName}`"/> เป็นผู้มีคุณสมบัติ
-            ในการสมัครสมาชิก สส.ชสอ. รวมทั้งได้แบบเอกสารหลักฐานประกอบการสมัคร และชำระเงินค่าสมัคร เงินบำรุง และ
+            ในการสมัครสมาชิก สส.ชสอ. รวมทั้งได้แนบเอกสารหลักฐานประกอบการสมัคร และชำระเงินค่าสมัคร เงินบำรุง และ
             เงินค่าสงเคราะห์ล่วงหน้าครบถ้วน ตามข้อบังคับ ระเบียบ และประกาศ สส.ชสอ. เรื่อง การรับสมัครสมาชิก สส.ชสอ. หรือ
             การเปิดรับสมัครเป็นกรณีพิเศษ แล้วแต่กรณี
           </p>
@@ -170,7 +170,7 @@
                 <div class="border-2 border-black p-2">
                   <p class="text-sm font-bold ">ผู้มีอำนาจเสนอ (แล้วแต่กรณี)
                   </p>
-                  <p class="text-sm"><FiLLBox /> เหรัญยิก/เลขานุการ ศุนย์ฯ </p>            
+                  <p class="text-sm"><FiLLBox /> เหรัญญิก/เลขานุการ ศุนย์ฯ </p>            
                   <p class="text-sm "><FiLLBox /> อุปนายก ศูนย์ฯ </p>
                   <p class="text-sm "><FiLLBox :checked="data?.fName" /> ประธาน ศูนย์ฯ </p>
                 </div>
@@ -293,8 +293,8 @@
           </template>
         </LineFiLL>
         </div>
-        <p> <span class="ml-20 font-bold">อนึ่งข้าพเจ้าขอรับรองว่า การแสดงเจตาครั้งนี้เป็นไปด้วยความสมุครใจ ไม่มีผู้ใดบังคับ ข่มขู่ หรือกระทำการ
-              ใดๆ ให้ข้าพเจ้าแสดงเจตนาดังกล่าว จึงได้ลงมือไว้เป็นสำคัญ ท้ายหนังสือนี้</span></p>
+        <p> <span class="ml-20 font-bold">อนึ่งข้าพเจ้าขอรับรองว่า การแสดงเจตาครั้งนี้เป็นไปด้วยความสมัครใจ ไม่มีผู้ใดบังคับ ข่มขู่ หรือกระทำการ
+              ใด ๆ ให้ข้าพเจ้าแสดงเจตนาดังกล่าว จึงได้ลงมือไว้เป็นสำคัญ ท้ายหนังสือนี้</span></p>
               <p class="mt-2">(ลงชื่อ)<BlankSpace class="min-w-52" />ผู้ให้คำยินยอม
                 <span class="ml-4"> (ลงชื่อ)<BlankSpace class="min-w-52" />พยาน </span></p>
               <p class="mt-2">(ลงชื่อ)<BlankSpace class="min-w-52" />ผู้จัดการ/จนท.ศูนย์ฯ
@@ -312,7 +312,7 @@
                 <p> <span class="underline font-bold">ลงลายมือชื่อผู้รับเงินสงเคราะห์ไว้เป็นหลักฐานการยินยอมให้หักเงินเพื่อชำระหนี้</span></p>
             <div class="grid justify-items-start text-pretty text-base mt-2 ">
             <p><span class=" ml-20">1. ผู้รับเงินสงเคราะห์และหรือผู้จัดการศพ</span>
-              ซึ่งต้องเป็นบุคคล (ตามข้อบังคับ สมาคมหมวด 7 ข้อ23 และประกาศกระทรวงพัฒนาสังคมฯ เรื่องวิธีจ่ายเงินค่าจัดการศพและสงเคราะห์ครอบครัวฯ ข้อ3) ดังต่อไปนนี้
+              ซึ่งต้องเป็นบุคคล (ตามข้อบังคับ สมาคมหมวด 7 ข้อ 23 และประกาศกระทรวงพัฒนาสังคมฯ เรื่องวิธีจ่ายเงินค่าจัดการศพและสงเคราะห์ครอบครัวฯ ข้อ 3) ดังต่อไปนี้
             </p>
             <p class="mt-2"> <span class="ml-32 mt-"></span>1.1 สามี ภรรยา บัตร บิดา มารดา 
               <span class="ml-20"> 1.4 ปู่ ย่า ตา ยาย</span></p>
@@ -320,7 +320,7 @@
               <span class="ml-20"> 1.5 ลุง ป้า น้า อา</span></p>
               <p class="mt-2"> <span class="ml-32"></span> 1.3 พี่น้องร่วมบิดาหรือมารดาเดียวกัน 
               <span class="ml-14"> 1.6 ผู้อุปการะเลี้ยงดูหรือผู้อยู่ในอุปการะเลี้ยงดู</span></p>
-              <p class="mt-2"> <span class="ml-32 "></span>ถ้าไม่มีบุคคลที่สมัครสมาชิกระบุไว้ในใบสมัคร ให้สมาคมฯ แบ่งแบ่งจ่าเงินดังกล่าวให้แก่บุคลลใน ข้อ 1 ตามลำดับ
+              <p class="mt-2"> <span class="ml-32 "></span>ถ้าไม่มีบุคคลที่สมัครสมาชิกระบุไว้ในใบสมัคร ให้สมาคมฯ จ่ายเงินดังกล่าวให้แก่บุคคลใน ข้อ 1 ตามลำดับ
                 ก่อนหลัง ถ้ามีอยู่ในลำดับเดียวกันหลายคน ให้สมาคมฯ แบ่งเงินค่าจัดการศพหรือค่าจัดการศพและสงเคราะห์ครอบครัว
                 ที่เหลืออยู่ให้แก่ทุกคนในสัดส่วนที่เท่ากัน หากไม่อาจแบ่งเงินให้แก่บุคคลใดได้ให้เงินนั้นตกเป็นของแผ่นดิน
               </p>
@@ -468,9 +468,9 @@
           <p  class="text-base text-start pl-14">5. <span> โรคร้ายแรงอื่นๆ (ระบุ)<BlankSpace class="min-w-96" /><BlankSpace class="min-w-16" /><BlankSpace class="min-w-2" />  </span> </p>
           <p  class="text-base text-start "><span class="pl-14">ข้าพเจ้าขอรับรองและยืนยันว่า บันทึกถ้อยคำดังกล่าวที่ได้ให้ไว้ข้างต้น เป็นความสัตย์จริงทุกประการ </span>
             <span class="underline underline-offset-2 font-semibold"> หากบันทึกถ้อยที่ได้แจ้งไว้ไม่ตรงกับวามเป็นจริงแล้ว ขอให้ สส.ชสอ. ตัดสิทธิให้ข้าพเจ้าเป็นผู้ขาดคุณสมบัติการเป็นสมาชิกได้
-              ความคิดคณพกรรมการ สส.ชสอ. ข้าพเจ้าและผู้รับเงินสงเคราะห์ของข้าพเจ้าจะไม่ขอรับสิทธิและสิทธิใดๆ ในการที่
+              ตามมติคณะกรรมการ สส.ชสอ. ข้าพเจ้าและผู้รับเงินสงเคราะห์ของข้าพเจ้าจะไม่ขอรับสิทธิและสิทธิใดๆ ในการที่
             ได้รับเงินสงเคราะห์ตามที่กำหนด เมื่อข้าพเจ้าได้เสียชีวิตตามข้อ (4.1)-(4.9) ทั้งสิ้น </span> </p>
-            <p class="text-base  "><span class="pl-14"> ข้าพเจ้าได้รับทราบเงื่อนไขและข้อกำหนดแล้วว่าภายใน 1 ปี นับตั้งแต่ที่ สส.ชสอ. มีมติรับขพเจ้าเข้าเป็นสมาชิกแล้ว
+            <p class="text-base  "><span class="pl-14"> ข้าพเจ้าได้รับทราบเงื่อนไขและข้อกำหนดแล้วว่าภายใน 1 ปี นับตั้งแต่ที่ สส.ชสอ. มีมติรับข้าพเจ้าเข้าเป็นสมาชิกแล้ว
               หากข้าพเจ้าเสียชีวิตก่อนกำหนด 1 ปี ทาง สส.ชสอ. จะไม่จ่าเงินสงเคราะห์ให้ผู้รับเงินสงเคราะห์ </span></p>
               <p class="text-base  "><span class="pl-14"> ข้าพเจ้ายินยอมเปิดเผยประวัติสุขภาพของข้าพเจ้า และขอมอบอำนาจให้ สส.ชสอ. ขอประวัติการรักษาของข้าพเจ้า
                 จากสถานพยาบาลที่เกี่ยวข้องได้ </span></p>
@@ -530,7 +530,7 @@
   <p class="text-center text-sm font-semibold">เจ้าหน้าที่ศูนย์ ผู้ตรวจสอบ</p>
  </div>
  <div class="border-solid border-2 border-slate-950 "> 
-  <p class="text-center text-sm font-semibold ps-2">คณะกรรมการศูนย์ ผู้พิจรณา</p>
+  <p class="text-center text-sm font-semibold ps-2">คณะกรรมการศูนย์ ผู้พิจารณา</p>
 </div>
 </div>
 <div class="grid grid-cols-2">
@@ -549,11 +549,12 @@
 <p class="text-base pl-6">อื่นๆ <BlankSpace class="min-w-60" /></p>
 <p class="text-base text-center mt-4">(<FiLL class="min-w-56" :data="`${data?.fNameGuarantor1}  ${data?.lNameGuarantor1}`"/>)</p>
 <p class="text-base pl-14 mt-2">ตำแหน่ง<FiLL :data="data?.positionCommander" class="min-w-28" /></p>
-<p class="text-base text-center mt-1">ผู้พิจรณาคุณสมบัติ</p>
+<p class="text-base text-center mt-1">ผู้พิจารณาคุณสมบัติ</p>
 <p class="text-base text-center mt-1"><FiLL  class="min-w-80 " :data="data?.dateReceived" date-format="short" /></p>
 </div>
-
 </div>
+<p class="text-base mt-2"> หมายเหตุ : โปรดตรวจสอบการกรอกข้อมูลสมาชิก และเอกสารหลักฐานอย่างละเอียด เพื่อความสะดวกในการพิจารณาสมาชิก 
+  และลดขั้นตอนการรับข้อมูลเพิ่ม...ขอบคุณครับ </p>
 </MorePaperDoc>
 
     </main>

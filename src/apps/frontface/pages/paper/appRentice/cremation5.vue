@@ -19,7 +19,7 @@
                         <p>5.ผู้สมัครต้องมาสมัครด้วยตนเอง เท่านั้น</p>
                         <p>6.ชำระค่าสมัครและเงินสงเคราะห์ล่วงหน้า ด้วยการโอนเข้าบัญชีธนาคารของสหกรณ์ฯ</p>
                         <p>จำนวน 5,540.-บาท ผู้สมัครอายุไม่เกิน 54 ปี บริบูรณ์ ณ วันสมัคร</p>
-                        <p>7.เปิดรับสมัครวันที่ 1-25 ของทุกเดือน ช่วงปลายเดือนจะไม่รับสมัคร แต่ตรวจลอบเอกสารได้</p>
+                        <p>7.เปิดรับสมัครวันที่ 1-25 ของทุกเดือน ช่วงปลายเดือนจะไม่รับสมัคร แต่ตรวจสอบเอกสารได้</p>
                     
                     </div>
                     <div class="flex flex-col items-end">
@@ -50,7 +50,8 @@
       <p class="text-xs font-semibold"><FiLLBox checked/> 4. ใบสำคัญการเปลี่ยนชื่อ-นามสกุล (ถ้ามี)</p>
       <p class="text-xs font-semibold"><FiLLBox checked/> 5. ใบรับรองแพทย์ฉบับจริง ที่ สสธท.กำหนด มีอายุไม่เกิน 30 วัน</p>
       <p class="text-xs font-semibold"><FiLLBox checked/> 6. สำเนาบัตรและสำเนาทะเบียนบ้านผู้รับเงินสงเคราะห์</p>
-      <p class="text-xs font-semibold"><FiLLBox checked/> 7. กรณีสมาชิกสมัครตรง ต้องมีใบเสร็จรับเงินงวดสุดท้าย หรือใบรับรองของสหกรณ์ต้นสังกัด</p>
+      <p class="text-xs font-semibold"><FiLLBox checked/> 7. กรณีสมาชิกสมัครประเภทสมทบสหกรณ์ฯ ต้องแนบสำเนาบัตรพนักงานราชการ/ลูกจ้างชั่วคราว ในหน่วยงานสังกัดกระทรวงสาธารณสุข พร้อมรับรองสำเนา</p>
+      <p class="text-xs font-semibold"><FiLLBox checked/> 8. กรณีสมาชิกสมัครตรง ต้องมีใบเสร็จรับเงินงวดสุดท้าย หรือใบรับรองของสหกรณ์ต้นสังกัด</p>
     </div>
   </div>
 
@@ -65,15 +66,69 @@
   </div>
 </div>
 
-<p class="text-lg text-center font-semibold ml-32 mt-48">ใบสมัครสมาชิก <span class="underline underline-offset-2">ประเภทสามัญ</span> (วาระปกติ)<br> สมาคมฌาปนกิจสงเคราะห์สมาชิกสหกรณ์ออมทรัพย์สาธารณสุขไทย (สสธท.)</p>
-<p class="text-base ml-96">เขียนที่ <FiLL :data="data?.location" class="min-w-80" /><br>วันที่ <FiLL  class="min-w-56 " :data="data?.dateReceived" date-format="full" /></p>
-<p class="text-base mt-2"> <span class="ml-12">ข้าพเจ้า</span> (นางสาว/นาง/นาย) <FiLL class="min-w-80" :data="`${data?.prefix} ${data?.fName}  ${data?.lName}`"/> อายุ <FiLL :data="data?.age" class="min-w-32" /> ปี <br>เลขประจำตัวประชาชน <FiLL :data="data?.idcard" class="min-w-72" /> เกิดวันที่ <FiLL  class="min-w-56 " :data="data?.dateReceived" date-format="full" /> <br>คู่สมรสชื่อ <FiLL class="min-w-80" :data="`${data?.prefixMrs} ${data?.newfName}  ${data?.lName}`"/></p> 
-<p class="text-base">(1) <FiLLBox :checked="data?.savings"/> สมาชิกสามัญของสหกรณ์ออมทรัพย์ <FiLL :data="data?.savings" class="min-w-40" />จำกัด เลขสมาชิกสหกรณ์ <FiLL :data="data?.member" class="min-w-32" /><span class="text-base ml-6"><FiLLBox /> อื่นๆ </span>(ระบุ)<BlankSpace class="min-w-56" /></p>
-<p class="text-base">(2) ตำแหน่ง <FiLL :data="data?.position" class="min-w-40" /> หรือปฏิบัติหน้าที่ <FiLL :data="data?.position" class="min-w-40" /><br> <span class="text-base ml-6"> สถานที่ปฏิบัติงาน / ชื่อหน่วยงาน </span><FiLL :data="data?.agency" class="min-w-60" /> ตำบล (แขวง) <FiLL :data="data?.district" class="min-w-28" /><br><span class="text-base ml-6">อำเภอ (เขต)</span> <FiLL :data="data?.district" class="min-w-32" />  จังหวัด <FiLL :data="data?.province" class="min-w-32" /> รหัสไปรษณี <FiLL :data="data?.zipcode" class="min-w-32" /><br> <span class="text-base ml-6">โทรศัพท์ (ที่ทำงาน)</span> <FiLL :data="data?.nbPhon" class="min-w-32" /></p>
-<p class="text-base">(3)  สถานที่อยู่(ในการจัดส่งเอกสาร) <br><span class="text-base ml-6">บ้านเลขที่ </span><FiLL :data="data?.housenb" class="min-w-32" /> หมู่ที่ <FiLL :data="data?.group" class="min-w-32" /> ซอย .................... ถนน <FiLL :data="data?.road" class="min-w-32" /><br> <span class="text-base ml-6">ตำบล (แขวง)</span> <FiLL :data="data?.district" class="min-w-32" />อำเภอ (เขต) <FiLL :data="data?.district" class="min-w-32" /> จังหวัด <FiLL :data="data?.province" class="min-w-32" /><br>  <span class="text-base ml-6">รหัสไปรษณี</span> <FiLL :data="data?.zipcode" class="min-w-32" /> โทรศัพท์ (บ้าน) <FiLL :data="data?.nbPhon" class="min-w-32" />  โทรศัพท์ (มือถือ) <FiLL :data="data?.nbPhon" class="min-w-32" /></p>
-<p class="text-base">(4) การชำระเงิน ดังนี้ <br><span class="text-base ml-12">4.1การชำระเงินครั้งแรก</span><br><div class="grid grid-rows-2 grid-flow-col"><div class="row-span-3"><p class="ml-12" ><FiLLBox :checked="data?.savings"/> ค่าสมัครสมาชิกครั้งแรก</p><p class="ml-12"> <FiLLBox :checked="data?.savings"/> ค่าบำรุงรายปี </p></div><div class="row-span-2 col-span-2 ml-10"><p>เป็นเงิน 20 บาท</p><p>เป็นเงิน 20 บาท</p></div></div><span class="text-base ml-12"><FiLLBox :checked="data?.savings"/> เงินสงเคราะห์ล่วงหน้า..............5,500.....บาท</span> <br><span class="text-base ml-20">รวมชำระหนี้ครั้งนี้ เป็นเงิน..........5,540.....บาท</span> (ห้าพันห้าร้อยสี่สิบบาทถ้วน)<br><span class="text-base ml-12">4.2 การชำระเงินครั้งต่อไป ข้าพเจ้ายินยอมให้หักและชำระเงินสงเคราะห์ล่วงหน้า ดังน้ี</span><br><span class="text-base ml-12"> <FiLLBox :checked="data?.savings"/> ชำเป็นเงินสดที่สมาคมหรือศุนย์ประสานงานสมาคม</span><br><span class="text-base ml-12"> <FiLLBox :checked="data?.savings"/> ชำระเงินเข้าบัญชีสมาคมธนาคารไทยพาณิชย์ สาขาเดอะคริสตัล ราชพฤกษ์ ชื่อบัญชี สมาคมฌาปนกิจ</span>สงเคราะห์สมาชิกสหกรณ์ออมทรัพย์สาธารณสุขไทย<br><span class="text-base ml-12"> <FiLLBox :checked="data?.savings"/> ชำระจากเงินปันผล เฉลี่ยคืน จากสหกรณ์ต้นสังกัด <br><span class="text-base ml-12"> ข้าพเจ้าได้ทราบและเข้าใจวัตถุประสงค์ </span> ข้อบังคับ ระเบียบ และประกาศของสมาคมฌาปนกิจสงเคราะห์</span>สมาชิกสามัญของสหกรณ์ออมทรัพย์สาธารณสุขไทย แล้ว มีความประสงค์สมัครเป็นสมาชิก และยินยอมปฏิบัติตามข้อบังคับและเงื่อไขดังกล่าวทุกประการ<br></p> 
-<p class="text-base pl-96 ">ลงชื่อ<BlankSpace class="min-w-56" />ผู้สมัคร </p>
-<p class="text-base pl-96 ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;( <FiLL class="min-w-52" :data="`${data?.prefix} ${data?.fName}  ${data?.lName}`"/> )</p>
+        <p class="text-lg text-center font-semibold ml-32 mt-48">ใบสมัครสมาชิก <span class="underline underline-offset-2">ประเภทสามัญ</span> (วาระปกติ)<br> สมาคมฌาปนกิจสงเคราะห์สมาชิกสหกรณ์ออมทรัพย์สาธารณสุขไทย (สสธท.)</p>
+        <p class="text-base ml-96">เขียนที่ <FiLL :data="data?.location" class="min-w-80" /><br>วันที่ <FiLL  class="min-w-56 " :data="data?.dateReceived" date-format="full" /></p>
+        <p class="text-base mt-2"> <span class="ml-12">ข้าพเจ้า</span> (นาย/นาง/นางสาว) <FiLL class="min-w-80" :data="`${data?.prefix} ${data?.fName}  ${data?.lName}`"/> อายุ <FiLL :data="data?.age" class="min-w-32" /> ปี <br>เลขประจำตัวประชาชน <FiLL :data="data?.idcard" class="min-w-72" /> เกิดวันที่ <FiLL  class="min-w-56 " :data="data?.dateReceived" date-format="full" /> <br>คู่สมรสชื่อ <FiLL class="min-w-80" :data="`${data?.prefixMrs} ${data?.newfName}  ${data?.lName}`"/></p> 
+        <p class="text-base">(1) <FiLLBox :checked="data?.savings"/> สมาชิกสมทบของสหกรณ์ออมทรัพย์ 
+            <FiLL :data="data?.savings" class="min-w-40" />จำกัด เลขสมาชิกสหกรณ์ 
+            <FiLL :data="data?.member" class="min-w-32" />
+            <br><span class="text-base ml-6"><FiLLBox /> พนักงานข้าราชการ </span>
+            <span class="text-base ml-6"><FiLLBox /> พกส. </span> 
+            <span class="text-base ml-6"><FiLLBox /> ลูกจ้างชั่วคราว </span>
+            <span class="text-base ml-6"><FiLLBox /> เจ้าหน้าที่ สสธท./กสธท. </span>
+            <br><span class="text-base ml-6"><FiLLBox /> กรรมการ / ผู้ตรวจสอบฯ / เจ้าหน้าที่ ชสอ. </span>
+            <span class="text-base ml-6"><FiLLBox /> คู่สมรส /  </span>
+            <span class="text-base ml-6"><FiLLBox /> บุตรของสมาชิก สสธท. ตามข้อบังคับ 
+            <br>ข้อ 10.1 (1) ข้อ 10.2 (2) ประกอบอาชีพ (โปรดระบุ) <BlankSpace class="min-w-56" /></span>
+        </p>
+        <p class="text-base">
+            (2) ตำแหน่ง  <FiLL :data="data?.position" class="min-w-40" />  
+            หรือปฏิบัติหน้าที่<FiLL :data="data?.position" class="min-w-40" />
+            <br> <span class="text-base ml-6"> สถานที่ปฏิบัติงาน / ชื่อหน่วยงาน </span>
+            <FiLL :data="data?.agency" class="min-w-60" /> ตำบล (แขวง) 
+            <FiLL :data="data?.district" class="min-w-28" />
+            <br><span class="text-base ml-6">อำเภอ (เขต)</span> 
+            <FiLL :data="data?.district" class="min-w-32" />  จังหวัด 
+            <FiLL :data="data?.province" class="min-w-32" /> รหัสไปรษณี 
+            <FiLL :data="data?.zipcode" class="min-w-32" />
+            <br> <span class="text-base ml-6">โทรศัพท์ (ที่ทำงาน)</span> 
+            <FiLL :data="data?.nbPhon" class="min-w-32" />
+            <br> <span class="text-base ml-6"></span> 
+            ระบุชื่อ - สกุล(สามัญ)<BlankSpace  class="min-w-32" />
+            เลขสมาชิก สอ.<BlankSpace class="min-w-32" />
+            เลขฌาปนกิจ<BlankSpace class="min-w-32" />
+        </p>
+        <p class="text-base">
+            (3)  สถานที่อยู่(ในการจัดส่งเอกสาร) 
+            <br><span class="text-base ml-6"> 
+            บ้านเลขที่ <FiLL :data="data?.housenb" class="min-w-32" /></span> หมู่ที่ 
+            <FiLL :data="data?.group" class="min-w-32" /> 
+            ซอย <BlankSpace class="min-w-32" /> 
+            ถนน <FiLL :data="data?.road" class="min-w-32" /><br> <span class="text-base ml-6">ตำบล (แขวง)</span> 
+            <FiLL :data="data?.district" class="min-w-32" />อำเภอ (เขต) <FiLL :data="data?.district" class="min-w-32" /> จังหวัด 
+            <FiLL :data="data?.province" class="min-w-32" /><br>  <span class="text-base ml-6">รหัสไปรษณี</span> 
+            <FiLL :data="data?.zipcode" class="min-w-32" /> 
+            โทรศัพท์บ้าน/มือถือ <FiLL :data="data?.nbPhon" class="min-w-32" />  
+        </p>
+        <p class="text-base">(4) การชำระเงิน ดังนี้ <br>
+            <span class="text-base ml-12">4.1การชำระเงินครั้งแรก</span>
+            <br><div class="grid grid-rows-2 grid-flow-col"><div class="row-span-3">
+                <p class="ml-12" ><FiLLBox :checked="data?.savings"/> ค่าสมัครสมาชิกครั้งแรก</p>
+                <p class="ml-12"> <FiLLBox :checked="data?.savings"/> ค่าบำรุงรายปี </p></div>
+                <div class="row-span-2 col-span-2 ml-10"><p>เป็นเงิน 20 บาท</p><p>เป็นเงิน 20 บาท</p>
+                </div>
+            </div><span class="text-base ml-12"><FiLLBox :checked="data?.savings"/> เงินสงเคราะห์ล่วงหน้า..............5,500.....บาท</span> 
+            <br><span class="text-base ml-20">รวมชำระหนี้ครั้งนี้ เป็นเงิน..........5,540.....บาท</span> (ห้าพันห้าร้อยสี่สิบบาทถ้วน)
+            <br><span class="text-base ml-12">4.2 การชำระเงินครั้งต่อไป ข้าพเจ้ายินยอมให้หักและชำระเงินสงเคราะห์ล่วงหน้า ดังนี้</span>
+            <br><span class="text-base ml-12"> <FiLLBox :checked="data?.savings"/> ชำเป็นเงินสดที่สมาคมหรือศุนย์ประสานงานสมาคม</span>
+            <br><span class="text-base ml-12"> <FiLLBox :checked="data?.savings"/> ชำระเงินเข้าบัญชีสมาคมธนาคารไทยพาณิชย์ สาขาเดอะคริสตัล ราชพฤกษ์ ชื่อบัญชี สมาคมฌาปนกิจ</span>
+            สงเคราะห์สมาชิกสหกรณ์ออมทรัพย์สาธารณสุขไทย ประเภทกระแสรายวัน (bill Payment Pay- in Silp) เลขที่บัญชี 468-0-39888-5
+            <br><span class="text-base ml-12"> <FiLLBox :checked="data?.savings"/> ชำระจากเงินปันผล เฉลี่ยคืน จากสหกรณ์ต้นสังกัด 
+            <br><span class="text-base ml-12"> ข้าพเจ้าได้ทราบและเข้าใจวัตถุประสงค์ </span> ข้อบังคับ ระเบียบ และประกาศของสมาคมฌาปนกิจสงเคราะห์</span>
+            สมาชิกสามัญของสหกรณ์ออมทรัพย์สาธารณสุขไทย แล้ว มีความประสงค์สมัครเป็นสมาชิก และยินยอมปฏิบัติตามข้อบังคับและเงื่อนไขดังกล่าวทุกประการ<br>
+        </p> 
+        <p class="text-base pl-96 ">ลงชื่อ<BlankSpace class="min-w-56" />ผู้สมัคร </p>
+        <p class="text-base pl-96 ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;( <FiLL class="min-w-52" :data="`${data?.prefix} ${data?.fName}  ${data?.lName}`"/> )</p>
 
             
 </MorePaperDoc>
@@ -104,7 +159,7 @@
 </p>
 <!-- สำหรับเจ้าหน้าที่สมาคม -->
 <p class="text-center text-lg font-semibold mt-2"> สำหรับเจ้าหน้าที่สมาคมประจำศูนย์ประสานงานสหกรณ์ออมทรัพย์</p><br>
-<p class="text-base "><span class="ml-12">ตรวจสอบแล้วขอรับรองว่าผู้สมัครเป็นผู้มีคุณสมบัติในการสมัครสมาชิก</span>  สสธท. และได้แนบหลักฐานประกอบกาสมัครครบถ้วน พร้อมชำระเงินค่าสมัคร
+<p class="text-base "><span class="ml-12">ตรวจสอบแล้วขอรับรองว่าผู้สมัครเป็นผู้มีคุณสมบัติในการสมัครสมาชิก</span>  สสธท. และได้แนบหลักฐานประกอบการสมัครครบถ้วน พร้อมชำระเงินค่าสมัคร
 และเงินค่าสงเคราะห์ล่วงหน้า ตามข้อบังคับ ระเบียบและประกาศการรับสมัครสมาชิก สสธท. ตามรอบการรับสมัคร หรือ การเปิดรับสมัครเป็นกรณีพิเศษ แล้วแต่กรณี
 </p>
 <!-- ลงชื่อเจ้าหน้าที่ -->
@@ -113,7 +168,9 @@
 </p>
 <!-- ความเห็นของกรรมการ -->
 <p class="text-center text-lg font-semibold mt-2">ความเห็นของคณะกรรมการศูนย์ประสานงานสหกรณ์ออมทรัพย์</p><br>
-<p class="text-sm ml-12 "> เสนอ <FiLLBox :checked="data?.savings"/> เห็นควรอนุมัติให้สมัครเป็นสมาชิก สสธท. <br> <span class="ml-9"><FiLLBox /> ไม่เห็นควรอนุมัติ </span>เนื่องจาก<BlankSpace class="min-w-56" />
+<p class="text-sm ml-12 "> เสนอ 
+    <FiLLBox :checked="data?.savings"/> เห็นควรอนุมัติให้สมัครเป็นสมาชิก สสธท. 
+    <br> <span class="ml-9"><FiLLBox /> ไม่เห็นควรอนุมัติ </span>เนื่องจาก<BlankSpace class="min-w-56" />
 </p>
 <!-- ลงชื่อกรรมการ -->
 <p class="text-base text-end mr-24"> ลงชื่อ<BlankSpace class="min-w-56" /><br>
@@ -224,8 +281,9 @@
 <p class="text-sm text-end mr-24"> แพทย์ผู้ตรวจร่างกาย</p>
 <p class="text-sm "> <span class="font-semibold">หมายเหตุ</span> <span class="ml-4">(1) </span> ต้องเป็นแพทย์แผนปัจจุบันชั้นหนึ่ง จากสถานพยาบาลของรัฐตามกฎหมายว่าด้วยสถานพยาบาล
     <br><span class="ml-20">(2) </span> ใบรับรองแพทย์ฉบับนี้ให้ใช้ได้ไม่เกิน 30 วัน นับแต่วันที่ตรวจร่างกาย
-    <br><span class="ml-20 font-semibold underline underline-offset-1 ">(3)  หากพบว่าเป็นโรค ตาม ข้อ (3) หรือตามที่คระกรรมการเห็นว่าอันตราย ให้การสมัครเป็นสมาชิิกตกเป็นโมฆะทันที</span>
-    <br><span class="ml-20 font-semibold ">(4)  ให้ผู้สมัครใช้ใบรับรองแพทย์ตามแบบที่สมาคมฯ กำหนดนี้เท่านั้นเพื่อประกอบการสมัครเป็นสมาชิก สสธท. เริ่มใช้ตั้งแต่</span><span class="underline underline-offset-1 font-semibold">วันที่ 1 เมษายน 2564</span> 
+    <br><span class="ml-20 font-semibold underline underline-offset-1 ">(3)  หากพบว่าเป็นโรค ตาม ข้อ (3) หรือตามที่คระกรรมการเห็นว่าอันตราย ให้การสมัครเป็นสมาชิกตกเป็นโมฆะทันที</span>
+    <br><span class="ml-20 font-semibold ">(4)  ให้ผู้สมัครใช้ใบรับรองแพทย์ตามแบบที่สมาคมฯ กำหนดนี้เท่านั้นเพื่อประกอบการสมัครเป็นสมาชิก สสธท. โดยเริ่มใช้ตั้งแต่</span>
+    <span class="underline underline-offset-1 font-semibold">วันที่ 1 กรกฎาคม 2566</span> 
     <span class="font-semibold"> เป็นต้นไป</span>
 </p>
 
@@ -260,10 +318,10 @@
         <FiLL class="min-w-96" :data="`${data?.prefix} ${data?.fName}  ${data?.lName}`"/>
     </p>
     <p>เลขประจำตัวประชาชน <FiLL :data="data?.idcard" class="min-w-44" /> อายุ <FiLL :data="data?.age" class="min-w-20" /> ปี</p>
-    <p><span class="ml-14">ข้าพเจ้า</span>ข้าพเจ้าขอให้ประวัติสุขภาพของข้าพเจ้าเพื่อประกอบการสมัครสมาชิก สสธท. ดังนี้</p>
+    <p><span class="ml-14">ข้าพเจ้า</span>ขอให้ประวัติสุขภาพของข้าพเจ้าเพื่อประกอบการสมัครสมาชิก สสธท. ดังนี้</p>
     <p><FiLLBox  :checked="data?.fName"  /> 1. มีสุขภาพแข็งแรง</p>
     <p><FiLLBox  :checked="data?.fName"  /> 2. ไม่เป็นผู้มีกายทุพพลภาพ จนไม่สามารถปฏิบัติหน้าที่ได้</p>
-    <p><FiLLBox  :checked="data?.fName"  /> 3. ไม่มีจิตฟันเฟือน ไม่สมประกอบ</p>
+    <p><FiLLBox  :checked="data?.fName"  /> 3. ไม่มีจิตฟั่นเฟือน ไม่สมประกอบ</p>
     <p><span class="ml-5">4.</span> <span class="underline">ประวัติการรักษาโรคต่อไปนี้</span></p>
 
     <div class="grid grid-rows-2 grid-flow-col">
@@ -297,7 +355,7 @@
 <div>
     <div class="mt-2 mr-10">
         <p><span class="ml-10 mt-16 text-pretty">ข้าพเจ้าขอยืนยันว่าถ้อยแถลงที่ให้ไว้เป็นความจริงทุกประการ</span> <span class="underline">หากข้าพเจ้าแถลงข้อความอันเป็นเท็จแล้ว
-            ให้ สสธท. ตัดสิทธิ์จากการเป็นสมาชิก สสธท. ตามข้อบังคับสมาคม พ.ศ. 2564 ข้อ 15(4) ได้ทันที 
+            ให้ สสธท. ตัดสิทธิ์จากการเป็นสมาชิก สสธท. ตามข้อบังคับสมาคม พ.ศ. 2566 ข้อ 15(4) ได้ทันที 
             และข้าพเจ้าตลอดทั้งทายาทหรือผู้รับเงินสงเคราะห์ของข้าพเจ้าจะไม่ขอรับสิทธิ์และใช้สิทธิ์ใด ๆ และขอสละสิทธิ์ในการที่จะ
             รับเงินสงเคราะห์ครอบครัวเมื่อข้าพเจ้าเสียชีวิต รวมทั้ง ข้าพเจ้าไม่ติดใจที่จะเรียกร้องเงินสงเคราะห์หรือเงินอื่นใดจาก สสธท. ทั้งสิ้น</span>โดยข้าพเจ้ายินยอมปฏิบัติตามข้อบังคับสมาคมทุกประการ
         </p>
@@ -413,8 +471,8 @@
                     <li>โรคไขกระดูกฝ่อ (Aplastic Anemia)</li>
                     <li>โรคลมชัก (Epilepsy) ที่มีภาวะชัก ในระยะ 1 ปีล่าสุด</li>
                     <li>โรคผิวหนังแข็ง (Scleroderma)</li>
-                    <li>โรคไดวายเรื้อรัง (CKD) ระยะที่ 4 ขึ้นไป</li>
-                    <li>โรคยีโมฟีเลีย (HEMOPHILIA)</li>
+                    <li>โรคไตวายเรื้อรัง (CKD) ระยะที่ 4 ขึ้นไป</li>
+                    <li>โรคฮีโมฟีเลีย (HEMOPHILIA)</li>
                     <li>โรคอ้วน (Obesity) ที่มีดัชนีมวลกาย (BMI) มากกว่า 35 ร่วมกับโรคเบาหวาน และโรคความดันโลหิตสูง</li>
                     <li>โรคเกล็ดเลือดต่ำจากภูมิคุ้มกัน (ITP : Immune thrombocytopenia)</li>
                 </ol>
@@ -465,7 +523,7 @@
                     <img class="w-[120px] h-auto mx-auto" src="https://cypphcoop.com/mediafiles/data/sorsortortor.png" alt="Logo" />
                 </div>
                 <div class="mb-2">
-                    <p class="text-center font-bold mt-2 text-xl">สงเคราะห์เงินรับให้มอบการเจตนาแสดงหนังสือ</p>
+                    <p class="text-center font-bold mt-2 text-xl">หนังสือแสดงเจตนาการมอบให้รับเงินสงเคราะห์</p>
                     <p class="text-center font-bold text-xl">สมาคมฌาปนกิจสงเคราะห์สมาชิกสหกรณ์ออมทรัพย์สาธารณสุขไทย</p>
                 </div>
                 <div class="text-base text-end mb-2">
@@ -482,7 +540,8 @@
                 <div class="mt-10">
                     <p class="ml-20">1. สถานภาพ</p>
                     <p class="ml-20"><FiLLBox />โสด <span class="ml-12"><FiLLBox :checked="data?.newfName" />สมรส คู่สมรสชื่อ </span><FiLL class="min-w-60" :data="`${data?.newfName}  ${data?.newlName}`"/> <FiLLBox />หย่า หรือ หม้าย</p>
-                    <p><span class="ml-20">2.</span> ข้าพเจ้าขอแสดงเจตนาการรับเงินสงเคราะห์ที่ สสธท. พึงจ่าย ให้ผู้จัดการศพข้าพเจ้าคือ <FiLL class="min-w-60" :data="`${data?.newfName}  ${data?.newlName}`"/> เกี่ยวข้องเป็น <FiLL :data="data?.newStatus" class="min-w-28" /> ของข้าพเจ้า(10%ของเงินสงเคราะห์) ส่วนที่เหลือมอบให้บุคคล ดังต่อไปนี้เป็นผู้รับเงินสงเคราะห์ คือ</p>
+                    <p><span class="ml-20">2.</span> ข้าพเจ้าขอแสดงเจตนาการรับเงินสงเคราะห์ที่ สสธท. พึงจ่าย ให้ผู้จัดการศพข้าพเจ้า
+                        <br>คือ <FiLL class="min-w-60" :data="`${data?.newfName}  ${data?.newlName}`"/> เกี่ยวข้องเป็น <FiLL :data="data?.newStatus" class="min-w-28" /> ของข้าพเจ้า(10%ของเงินสงเคราะห์) ส่วนที่เหลือมอบให้บุคคล ดังต่อไปนี้เป็นผู้รับเงินสงเคราะห์ คือ</p>
                 </div>
                 <LineFiLL :data="data?.beneficiary" :limit="5" class="mt-6 mb-6">
                     <template #data="{ index, item }">
@@ -515,7 +574,7 @@
                 </div>
                 <p>
                     <span class="ml-20">อนึ่ง</span> ข้าพเจ้าขอรับรองว่า การแสดงเจตนาครั้งนี้เป็นไปด้วยความสมัครใจ ไม่มีผู้ใดบังคับ ข่มขู่ หรือกระทำ
-                    การใดๆ ให้ข้าพเจ้าแสดงเจตนาดังกล่าว จึงได้ลงลายมือชื่อไว้เป็นสำคัญ ท้ายหนังสือนี้
+                    การใด ๆ ให้ข้าพเจ้าแสดงเจตนาดังกล่าว จึงได้ลงลายมือชื่อไว้เป็นสำคัญ ท้ายหนังสือนี้
                 </p>
 
 

@@ -3,7 +3,7 @@
         <PaperDoc> <!-- หน้า 1 -->
             <div class="border-solid border-2 border-slate-950 mt-20">
                 <p class="font-bold underline">ขั้นตอนการสมัครสมาชิก สสธท. ประเภทสมทบ(แอดไลน์ 0943934878 เพื่อสอบถามรายละเอียด)รับเฉพาะ 
-                    <p class="font-bold underline"> ค่สมรส และบุตรที่บรรลุนิติภาวะ (20 ปีขึ้นไป) และประกอบอาชีพแล้ว หรือนักศึกษา ไม่รับอาชีพเกษตรกร</p>
+                    <p class="font-bold underline"> คู่สมรส และบุตรที่บรรลุนิติภาวะ (20 ปีขึ้นไป) และประกอบอาชีพแล้ว หรือนักศึกษา ไม่รับอาชีพเกษตรกร</p>
                 </p>
                 <div class="grid grid-cols-3 justify-center">
                     <div class="flex flex-col items-start col-span-2">
@@ -66,9 +66,16 @@
   </div>
 </div>
 
-        <p class="text-lg text-center font-semibold ml-32 mt-48">ใบสมัครสมาชิก <span class="underline underline-offset-2">ประเภทสามัญ</span> (วาระปกติ)<br> สมาคมฌาปนกิจสงเคราะห์สมาชิกสหกรณ์ออมทรัพย์สาธารณสุขไทย (สสธท.)</p>
+        <p class="text-lg text-center font-semibold ml-32 mt-48">ใบสมัครสมาชิก 
+            <span class="underline underline-offset-2">ประเภทสามัญ</span> 
+            (วาระปกติ)<br> สมาคมฌาปนกิจสงเคราะห์สมาชิกสหกรณ์ออมทรัพย์สาธารณสุขไทย (สสธท.)</p>
         <p class="text-base ml-96">เขียนที่ <FiLL :data="data?.location" class="min-w-80" /><br>วันที่ <FiLL  class="min-w-56 " :data="data?.dateReceived" date-format="full" /></p>
-        <p class="text-base mt-2"> <span class="ml-12">ข้าพเจ้า</span> (นาย/นาง/นางสาว) <FiLL class="min-w-80" :data="`${data?.prefix} ${data?.fName}  ${data?.lName}`"/> อายุ <FiLL :data="data?.age" class="min-w-32" /> ปี <br>เลขประจำตัวประชาชน <FiLL :data="data?.idcard" class="min-w-72" /> เกิดวันที่ <FiLL  class="min-w-56 " :data="data?.dateReceived" date-format="full" /> <br>คู่สมรสชื่อ <FiLL class="min-w-80" :data="`${data?.prefixMrs} ${data?.newfName}  ${data?.lName}`"/></p> 
+        <p class="text-base mt-2"> <span class="ml-12">ข้าพเจ้า</span> 
+            (นาย/นาง/นางสาว) <FiLL class="min-w-80" :data="`${data?.prefix} ${data?.fName}  ${data?.lName}`"/> 
+            อายุ <FiLL :data="data?.age" class="min-w-32" /> 
+            ปี <br>เลขประจำตัวประชาชน <FiLL :data="data?.idcard" class="min-w-72" /> 
+            เกิดวันที่ <FiLL  class="min-w-56 " :data="data?.dateReceived" date-format="full" /> 
+            <br>คู่สมรสชื่อ <FiLL class="min-w-80" :data="`${data?.prefixMrs} ${data?.newfName}  ${data?.lName}`"/></p> 
         <p class="text-base">(1) <FiLLBox :checked="data?.savings"/> สมาชิกสมทบของสหกรณ์ออมทรัพย์ 
             <FiLL :data="data?.savings" class="min-w-40" />จำกัด เลขสมาชิกสหกรณ์ 
             <FiLL :data="data?.member" class="min-w-32" />
@@ -95,7 +102,7 @@
             <FiLL :data="data?.nbPhon" class="min-w-32" />
             <br> <span class="text-base ml-6"></span> 
             ระบุชื่อ - สกุล(สามัญ)<BlankSpace  class="min-w-32" />
-            เลขสมาชิก สอ.<BlankSpace class="min-w-32" />
+            เลขสมาชิก สอ. <BlankSpace class="min-w-32" />
             เลขฌาปนกิจ<BlankSpace class="min-w-32" />
         </p>
         <p class="text-base">
@@ -111,7 +118,7 @@
             โทรศัพท์บ้าน/มือถือ <FiLL :data="data?.nbPhon" class="min-w-32" />  
         </p>
         <p class="text-base">(4) การชำระเงิน ดังนี้ <br>
-            <span class="text-base ml-12">4.1การชำระเงินครั้งแรก</span>
+            <span class="text-base ml-12">4.1 การชำระเงินครั้งแรก</span>
             <br><div class="grid grid-rows-2 grid-flow-col"><div class="row-span-3">
                 <p class="ml-12" ><FiLLBox :checked="data?.savings"/> ค่าสมัครสมาชิกครั้งแรก</p>
                 <p class="ml-12"> <FiLLBox :checked="data?.savings"/> ค่าบำรุงรายปี </p></div>
@@ -120,7 +127,7 @@
             </div><span class="text-base ml-12"><FiLLBox :checked="data?.savings"/> เงินสงเคราะห์ล่วงหน้า..............5,500.....บาท</span> 
             <br><span class="text-base ml-20">รวมชำระหนี้ครั้งนี้ เป็นเงิน..........5,540.....บาท</span> (ห้าพันห้าร้อยสี่สิบบาทถ้วน)
             <br><span class="text-base ml-12">4.2 การชำระเงินครั้งต่อไป ข้าพเจ้ายินยอมให้หักและชำระเงินสงเคราะห์ล่วงหน้า ดังนี้</span>
-            <br><span class="text-base ml-12"> <FiLLBox :checked="data?.savings"/> ชำเป็นเงินสดที่สมาคมหรือศุนย์ประสานงานสมาคม</span>
+            <br><span class="text-base ml-12"> <FiLLBox :checked="data?.savings"/> ชำเป็นเงินสดที่สมาคมหรือศูนย์ประสานงานสมาคม</span>
             <br><span class="text-base ml-12"> <FiLLBox :checked="data?.savings"/> ชำระเงินเข้าบัญชีสมาคมธนาคารไทยพาณิชย์ สาขาเดอะคริสตัล ราชพฤกษ์ ชื่อบัญชี สมาคมฌาปนกิจ</span>
             สงเคราะห์สมาชิกสหกรณ์ออมทรัพย์สาธารณสุขไทย ประเภทกระแสรายวัน (bill Payment Pay- in Silp) เลขที่บัญชี 468-0-39888-5
             <br><span class="text-base ml-12"> <FiLLBox :checked="data?.savings"/> ชำระจากเงินปันผล เฉลี่ยคืน จากสหกรณ์ต้นสังกัด 
@@ -463,11 +470,11 @@
                     หรือค่าความดันตัวล่าง (Diastolic pressure) ตั้งแต่ 110 ม.ม.ปรอท ขึ้นไป</li>
                     <li>โรคเบาหวาน (DM) ที่มีค่าน้ำตาลสะสม (HbA1c) มากกว่า 8% และค่าน้ำตาลในเลือด (FBS)
                     มากกว่า 180 mg/dl</li>
-                    <li>โรคติดเชื้อไวรัสตับอักเสบบี (Hepatitis B virus infection) ที่มีภาวะดับอักเสบร่วมด้วย สูงกว่า
+                    <li>โรคติดเชื้อไวรัสตับอักเสบบี (Hepatitis B virus infection) ที่มีภาวะตับอักเสบร่วมด้วย สูงกว่า
                     ปกติ 2 เท่าขึ้นไป</li>
-                    <li>โรคติดเชื้อไวรัสตับอักเสบซี (Hepatis C virus infection) ที่มีภาวะดับอักเสบร่วมด้วย สูงกว่า
+                    <li>โรคติดเชื้อไวรัสตับอักเสบซี (Hepatis C virus infection) ที่มีภาวะตับอักเสบร่วมด้วย สูงกว่า
                     ปกติ 2 เท่าขึ้นไป</li>
-                    <li>โรคไขมันพอกตับ (Fatty liver) ที่มีภาวะดับอักเสบร่วมด้วย สูงกว่าปกติ 2 เท่าขึ้นไป</li>
+                    <li>โรคไขมันพอกตับ (Fatty liver) ที่มีภาวะตับอักเสบร่วมด้วย สูงกว่าปกติ 2 เท่าขึ้นไป</li>
                     <li>โรคไขกระดูกฝ่อ (Aplastic Anemia)</li>
                     <li>โรคลมชัก (Epilepsy) ที่มีภาวะชัก ในระยะ 1 ปีล่าสุด</li>
                     <li>โรคผิวหนังแข็ง (Scleroderma)</li>
@@ -722,7 +729,7 @@
                 </div>
             </div>
             <p>
-              <span class="ml-14">ข้าพเจ้าขอรับรองว่าเป็นลายมือชื่อ&nbsp; /&nbsp; ลายพิมพ์นิ้วมือของผู้ยืนยอมและมอบอำนาจและผู้รับยินยอม
+              <span class="ml-14">ข้าพเจ้าขอรับรองว่าเป็นลายมือชื่อ&nbsp; /&nbsp; ลายพิมพ์นิ้วมือของผู้ยินยอมและมอบอำนาจและผู้รับยินยอม
                 และรับมอบอำนาจจริงและได้ลงลายมือชื่อ&nbsp;/&nbsp; ลายพิมพ์นิ้วมือต่อหน้าข้าพเจ้า</span>
             </p>
             <div class="grid grid-rows-2 grid-flow-col mt-2">

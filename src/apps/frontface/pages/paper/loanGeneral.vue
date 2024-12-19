@@ -1,4 +1,4 @@
-<template>
+  <template>
     <main>
         <PaperDoc>
             <div class="grid grid-cols-3 grid-rows-2 justify-center h-10">

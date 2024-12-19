@@ -47,8 +47,8 @@ export default defineEventHandler(async (event) => {
      bank: 'ออมสิน',                     //ชื่อธนาคาร
      branchBank: 'ในเมือง',                     //สาขาธนาคาร
      remberRegistration : '12565',      // เลขที่ทะเบียนสมาชิก
-     remaining : "20000" ,              // เงินคงเหลือ
-     makepayment : "2000" ,            // ชำระเงินรายเดือน
+     remaining : "20,000" ,              // เงินคงเหลือ
+     makepayment : "2,000" ,            // ชำระเงินรายเดือน
 
      loanLetterNumber:"255/30",         //หนังสือที่
      loanAccountNumber:"655/1",         // บัญชีเลขที่
